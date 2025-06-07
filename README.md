@@ -1,48 +1,26 @@
-# WFGY 1.0: A Universal Framework for Self-Healing LLMs
+# README.md
 
-Author: PSBigBig  
-GitHub: https://github.com/onestardao/WFGY  
-Contact: hello@onestardao.com
+# WFGY 1.0 Reproducibility Package
 
----
+A Universal Unification Framework for Large-Scale Self-Healing LLMs  
+Zenodo DOI: 10.5281/zenodo.15593533  
+GitHub: https://github.com/PSBigBig/WFGY
 
-## 🚀 Run This Project (Quick Demo)
-
-Clone the repo and run:
+## Quickstart
 
 ```bash
+git clone https://github.com/onestardao/WFGY.git
+cd WFGY
+
+# 1. Verify file integrity
+python verify_manifest.py
+
+# 2. Create environment
+conda env create -f environment.yml
+conda activate wfgy
+
+# 3. Install SDK
+pip install -e .
+
+# 4. Run reproduction
 bash reproduce.sh
-```
-
-This will initialize the SDK and automatically reproduce all key results.
-
----
-
-## ⭐ Challenge: Unlock WFGY 2.0
-
-If we reach **10,000 GitHub stars before July 10, 2025**,  
-we will release **WFGY 2.0** with advanced reasoning, semantic modules, and training code.
-
-You can be part of this moment.
-
----
-
-## 🔧 Files Included
-
-```
-WFGY/
-├── wfgy_sdk/          ← Core SDK (initializer, evaluator, CLI)
-├── benchmarks/        ← Evaluation configs
-├── demo/              ← Sample prompts
-├── reproduce.sh       ← One-click reproducibility
-├── environment.yml
-├── requirements.txt
-├── Dockerfile
-├── README.md
-```
-
----
-
-This repository is a companion to the scientific paper.  
-All key results are fully reproducible with this package.
-

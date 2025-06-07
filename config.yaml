@@ -1,0 +1,25 @@
+# config.yaml
+
+model_name: gpt2
+suites:
+  all:
+    - MMLU
+    - GSM8K
+    - BBH
+    - MathBench
+    - TruthfulQA
+    - XNLI
+    - MLQA
+    - LongBench
+    - VQAv2
+    - OK-VQA
+  efficiency:
+    - latency
+    - flops
+    - energy
+parameters:
+  B_c: 1.2
+  m: 0.5
+  c: 2.0
+  epsilons: [0.1, 0.2, 0.3]
+  thresholds: [0.5, 1.0, 1.5]
