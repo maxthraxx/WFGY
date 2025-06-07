@@ -8,7 +8,7 @@ setup(
     description="WFGY 1.0 Self-Healing LLM Framework SDK",
     author="PSBigBig",
     author_email="hello@onestardao.com",
-    url="https://github.com/PSBigBig/WFGY",
+    url="https://github.com/onestardao/WFGY",
     packages=find_packages(include=["wfgy_sdk", "wfgy_sdk.*"]),
     install_requires=[
         "PyYAML>=6.0",
