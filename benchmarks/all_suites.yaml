@@ -1,0 +1,17 @@
+# benchmarks/all_suites.yaml
+
+all:
+  - MMLU
+  - GSM8K
+  - BBH
+  - MathBench
+  - TruthfulQA
+  - XNLI
+  - MLQA
+  - LongBench
+  - VQAv2
+  - OK-VQA
+efficiency:
+  - latency
+  - flops
+  - energy

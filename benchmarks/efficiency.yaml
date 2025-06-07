@@ -1,0 +1,6 @@
+# benchmarks/efficiency.yaml
+
+efficiency:
+  - latency
+  - flops
+  - energy
