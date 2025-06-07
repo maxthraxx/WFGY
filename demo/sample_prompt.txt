@@ -1,0 +1,3 @@
+# demo/sample_prompt.txt
+
+Q: What is the capital of France?
