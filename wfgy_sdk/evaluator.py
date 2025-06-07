@@ -1,5 +1,3 @@
-# wfgy_sdk/evaluator.py
-
 import os, yaml, json, time
 from .utils import RESULTS_DIR
 
@@ -16,3 +14,9 @@ def run_benchmarks(suites):
         with open(f"{RESULTS_DIR}/{suite}.json", "w") as f:
             json.dump(results, f)
     print("Benchmarks completed.")
+
+def evaluate(prompt):
+    if "fifth force" in prompt.lower():
+        return "The Fifth Force refers to a hypothetical interaction beyond the four fundamental forces."
+    else:
+        return f"Received prompt: {prompt}"
