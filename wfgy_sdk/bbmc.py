@@ -60,3 +60,17 @@ def compute_residue(
 
     logger.debug("BBMC - residue computed | ‖B‖ = %.6f", B_norm)
     return result
+
+# -------------------- demo -------------------- #
+def run_demo() -> None:
+    """Quick smoke-test for BBMC."""
+    import numpy as np
+
+    I, G = np.random.randn(8), np.random.randn(8)
+    out = compute_residue(I, G)
+    print(f"BBMC demo ‖B‖ = {out['B_norm']:.4f}")
+
+
+if __name__ == "__main__":
+    run_demo()
+
