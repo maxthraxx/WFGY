@@ -24,21 +24,18 @@
 │     https://www.youtube.com/@OneStarDao                  │
 ╰──────────────────────────────────────────────────────────╯
 """
-
-# example_01_basic_run.py
-# Basic run with local / remote toggle
-
 import pathlib, sys, numpy as np
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parents[1]))
 
 import wfgy_sdk as w
 from wfgy_sdk.evaluator import compare_logits, pretty_print
+from wfgy_sdk.visual    import plot_histogram  # ← histogram helper
 
-# ---------------- toggle ----------------
+# ---------- toggle remote / local ------------------------------------------------
 use_remote = False
 MODEL_ID   = "gpt2"
 prompt     = "Why don't AIs like to take showers?"
-# ----------------------------------------
+# ---------------------------------------------------------------------------------
 
 if use_remote:
     logits_before = w.call_remote_model(prompt, model_id=MODEL_ID)
@@ -57,3 +54,6 @@ print("\n=== Example 01 · Basic Run ===")
 print(f"Source : {'HF ' + MODEL_ID if use_remote else 'local random'}")
 pretty_print(compare_logits(logits_before, logits_after))
 print("⚠ Larger LLM → stronger variance drop & higher KL.\n")
+
+# ---------- optional histogram ---------------------------------------------------
+plot_histogram(logits_before, logits_after)
