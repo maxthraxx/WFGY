@@ -1,11 +1,12 @@
-
----
-
-```dockerfile
-# Dockerfile
-
 FROM python:3.10-slim
-WORKDIR /workspace
-COPY . /workspace
-RUN pip install --upgrade pip && pip install -r requirements.txt && pip install -e .
-ENTRYPOINT ["bash","reproduce.sh"]
+
+WORKDIR /app
+COPY . /app
+
+# install minimal deps
+RUN pip install --no-cache-dir -e . \
+    gradio==4.28.1 transformers==4.38.2 torch==2.1.2+cpu -f https://download.pytorch.org/whl/cpu/torch_stable.html
+
+EXPOSE 7860
+
+CMD ["python", "gradio_app.py"]
