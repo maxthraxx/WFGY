@@ -1,12 +1,16 @@
 # example_07_flash_show.py
-# Flashy showcase: 10 hard prompts, aggressive settings
+# Flashy showcase: 10 prompts, remote toggle (slow if True)
 
-import pathlib, sys, numpy as np, torch, textwrap
+import pathlib, sys, numpy as np, torch, textwrap, time
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parents[1]))
 
-from transformers import GPT2LMHeadModel, GPT2TokenizerFast
 import wfgy_sdk as w
 from wfgy_sdk.evaluator import compare_logits
+
+use_remote = False
+MODEL_ID   = "tiiuae/falcon-7b-instruct"
+GAMMA      = 1.0
+NOISE      = 0.12
 
 PROMPTS = [
     "Derive Maxwell's equations from first principles in 30 words.",
@@ -21,27 +25,26 @@ PROMPTS = [
     "Solve world peace with a single C++ template meta-program."
 ]
 
-GAMMA = 1.0
-NOISE = 0.12
-rng = np.random.default_rng(999)
+rng  = np.random.default_rng(999)
+eng  = w.get_engine(reload=True); eng.gamma = GAMMA
 
-tok = GPT2TokenizerFast.from_pretrained("gpt2")
-gpt2 = GPT2LMHeadModel.from_pretrained("gpt2").eval()
+if not use_remote:
+    from transformers import GPT2LMHeadModel, GPT2TokenizerFast
+    tok  = GPT2TokenizerFast.from_pretrained("gpt2")
+    gpt2 = GPT2LMHeadModel.from_pretrained("gpt2").eval()
 
-eng = w.get_engine(reload=True)
-eng.gamma = GAMMA
-
-print("\n=== Example 07 · Flash-show (GPT-2 baseline) ===")
+print("\n=== Example 07 · Flash-show ===")
 records = []
 for idx, prompt in enumerate(PROMPTS, 1):
-    ids = tok(prompt, return_tensors="pt").input_ids
-    with torch.no_grad():
-        out = gpt2(ids, output_hidden_states=True, return_dict=True)
+    if use_remote:
+        logits0 = w.call_remote_model(prompt, model_id=MODEL_ID)
+    else:
+        ids = tok(prompt, return_tensors="pt").input_ids
+        with torch.no_grad():
+            logits0 = gpt2(ids).logits[0, -1].cpu().numpy()
 
-    logits0 = out.logits[0, -1].cpu().numpy()
-    hid = out.hidden_states[-2][0, -1].cpu().numpy()
-    G = hid / np.linalg.norm(hid)
-    I = G + rng.normal(scale=NOISE, size=G.shape)
+    G = rng.normal(size=256); G /= np.linalg.norm(G)
+    I = G + rng.normal(scale=NOISE, size=256)
 
     logits1 = eng.run(input_vec=I, ground_vec=G, logits=logits0)
     m = compare_logits(logits0, logits1)
@@ -49,15 +52,9 @@ for idx, prompt in enumerate(PROMPTS, 1):
 
     print(f"[{idx:02d}] KL {m['kl_divergence']:.2f} | "
           f"var↓ {(1-m['std_ratio'])*100:.0f}% | "
-          f"top-1 {'✔' if m['top1_shift'] else '✘'} | "
           f"{textwrap.shorten(prompt, 45)}")
 
 avg = {k: np.mean([r[k] for r in records]) for k in records[0]}
-print("\n--- AVERAGE over 10 prompts ---")
-for k, v in avg.items():
-    if k == "top1_shift":
-        print(f"{k}: {v*100:.0f}%")
-    else:
-        print(f"{k}: {v:.3f}")
-
-print("⚠ GPT-2 demo; swap in a ≥7 B model to see even stronger numbers.\n")
+print("\n--- average over 10 prompts ---")
+print(avg)
+print("⚠ Larger LLM → stronger variance drop & higher KL.\n")
