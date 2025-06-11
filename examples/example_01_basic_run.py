@@ -1,33 +1,32 @@
 # example_01_basic_run.py
-# End-to-end smoke test with quantitative explanation
+# Basic run with local / remote toggle
 
-import pathlib, sys, json, numpy as np
+import pathlib, sys, numpy as np
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parents[1]))
 
 import wfgy_sdk as w
 from wfgy_sdk.evaluator import compare_logits, pretty_print
 
-prompt = "Why don't AIs like to take showers?"
+# ---------------- toggle ----------------
+use_remote = False
+MODEL_ID   = "gpt2"
+prompt     = "Why don't AIs like to take showers?"
+# ----------------------------------------
 
-# ── build near-by semantic vectors ───────────────────────────────────────
-rng = np.random.default_rng(0)
+if use_remote:
+    logits_before = w.call_remote_model(prompt, model_id=MODEL_ID)
+else:
+    rng = np.random.default_rng(0)
+    logits_before = rng.normal(size=32000)
+
+rng = np.random.default_rng(42)
 G = rng.normal(size=128); G /= np.linalg.norm(G)
 I = G + rng.normal(scale=0.05, size=128)
-logits_before = rng.normal(size=32000)
 
-# ── run WFGY pipeline ────────────────────────────────────────────────────
 eng = w.get_engine(reload=True)
 logits_after = eng.run(input_vec=I, ground_vec=G, logits=logits_before)
 
-# ── metrics & printout ───────────────────────────────────────────────────
-metrics = compare_logits(logits_before, logits_after)
-
 print("\n=== Example 01 · Basic Run ===")
-print(f"Prompt : {prompt}\n")
-pretty_print(metrics)
-print("\n● variance ↓  means logits become less noisy")
-print("● KL > 0      confirms distribution changed")
-print("● top-1 shift shows whether the most probable token switched")
-print("⚠ GPT-2 is tiny; larger LLMs show a bigger gap.")
-print("⚠ Larger LLM → stronger variance drop and higher KL.\n")
-
+print(f"Source : {'HF ' + MODEL_ID if use_remote else 'local random'}")
+pretty_print(compare_logits(logits_before, logits_after))
+print("⚠ Larger LLM → stronger variance drop & higher KL.\n")
