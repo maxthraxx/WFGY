@@ -1,17 +1,25 @@
 # example_02_self_reflection.py
-# Three successive runs on a single engine
+# Three successive runs on one engine with metrics
 
-import pathlib, sys
+import pathlib, sys, numpy as np
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parents[1]))
 
-import numpy as np, wfgy_sdk as w
+import wfgy_sdk as w
+from wfgy_sdk.evaluator import compare_logits
+
 rng = np.random.default_rng(1)
 eng = w.get_engine(reload=True)
 
+print("\n=== Example 02 · Self-reflection loop ===")
 for step in range(3):
     G = rng.normal(size=64); G /= np.linalg.norm(G)
     I = G + rng.normal(scale=0.05, size=64)
-    logits = rng.normal(size=4096)
+    logits_before = rng.normal(size=4096)
 
-    out = eng.run(input_vec=I, ground_vec=G, logits=logits)
-    print(f"[Round {step}] logit[0] after WFGY = {out[0]:.4f}")
+    logits_after = eng.run(input_vec=I, ground_vec=G, logits=logits_before)
+    m = compare_logits(logits_before, logits_after)
+
+    print(f"[Round {step}] "
+          f"variance ratio {m['std_ratio']:.2f} | "
+          f"KL {m['kl_divergence']:.2f} | "
+          f"top-1 shift {'✔' if m['top1_shift'] else '✘'}")
