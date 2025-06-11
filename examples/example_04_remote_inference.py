@@ -32,3 +32,5 @@ for idx, p in enumerate(prompts, 1):
     print(f"[Stage {idx}] KL {m['kl_divergence']:.2f} | "
           f"variance ratio {m['std_ratio']:.2f} | "
           f"top-1 {'✔' if m['top1_shift'] else '✘'}")
+    print("⚠ Larger LLM → stronger variance drop and higher KL.")
+
