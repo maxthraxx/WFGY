@@ -72,3 +72,15 @@ def bbpf_progression(
         k_paths, deviations.mean(), f_S
     )
     return paths, weights, float(f_S)
+
+def run_demo() -> None:
+    """Quick smoke-test for BBPF."""
+    import numpy as np
+
+    vec = np.random.randn(16)
+    paths, w, f_S = bbpf_progression(vec, k_paths=4)
+    print(f"BBPF demo k=4 | f_S = {f_S:.4f}")
+
+
+if __name__ == "__main__":
+    run_demo()
