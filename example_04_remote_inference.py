@@ -1,11 +1,11 @@
 from wfgy_core import WFGYRunner
 
-# Manually set your token here for testing only (DO NOT commit it)
+# Inject your Hugging Face token for remote inference
 hf_token = "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"
 
 runner = WFGYRunner(
     model_id="mistralai/Mixtral-8x7B-Instruct-v0.1",
-    use_remote=True,
+    remote=True,
     hf_token=hf_token
 )
 
