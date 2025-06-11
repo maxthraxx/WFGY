@@ -1,13 +1,16 @@
+import os
 from wfgy_core import WFGYRunner
 
-if __name__ == "__main__":
-    runner = WFGYRunner(
-        model_id="tiiuae/falcon-7b-instruct",
-        remote=True
-    )
-    runner.run(
-        prompt="What happens when you ask an AI about the meaning of life?",
-        reflect=True,
-        style="default",
-        show_ascii=True
-    )
+# Set Hugging Face token via environment variable (must be defined before running)
+hf_token = os.environ.get("HF_TOKEN")
+
+if not hf_token:
+    raise ValueError("HF_TOKEN not found in environment variables. Set it before running.")
+
+runner = WFGYRunner(
+    model_id="mistralai/Mixtral-8x7B-Instruct-v0.1",
+    use_remote=True,
+    hf_token=hf_token
+)
+
+runner.run("Why don't AIs like to take showers?")
