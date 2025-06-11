@@ -4,16 +4,16 @@ from transformers import pipeline, AutoTokenizer, AutoModelForCausalLM
 from huggingface_hub import InferenceClient
 
 class WFGYRunner:
-    def __init__(self, model_id="HuggingFaceH4/zephyr-7b-alpha", use_remote=True):
+    def __init__(self, model_id="tiiuae/falcon-7b-instruct", use_remote=True):
         self.use_remote = use_remote
         self.device = "cuda" if torch.cuda.is_available() else "cpu"
         self.model_id = model_id
 
         if self.use_remote:
-            try:
-                self.client = InferenceClient(model=self.model_id, token=os.environ.get("HF_TOKEN"))
-            except Exception as e:
-                raise RuntimeError(f"Hugging Face remote mode failed: {e}")
+            token = os.environ.get("HF_TOKEN")
+            if not token:
+                raise RuntimeError("Missing HF_TOKEN environment variable.")
+            self.client = InferenceClient(model=self.model_id, token=token)
         else:
             self.tokenizer = AutoTokenizer.from_pretrained(model_id)
             self.model = AutoModelForCausalLM.from_pretrained(model_id)
