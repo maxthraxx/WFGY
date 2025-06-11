@@ -1,5 +1,10 @@
-# examples/example_01_basic_run.py
+# example_01_basic_run.py
 # End-to-end smoke test
+
+# ── make repo root importable ─────────────────────────────────────────────
+import pathlib, sys
+sys.path.insert(0, str(pathlib.Path(__file__).resolve().parents[1]))
+# ─────────────────────────────────────────────────────────────────────────
 
 import numpy as np
 import wfgy_sdk as w
@@ -7,9 +12,8 @@ import wfgy_sdk as w
 prompt = "Why don't AIs like to take showers?"
 
 rng = np.random.default_rng(0)
-G = rng.normal(size=128)
-G /= np.linalg.norm(G)                              # unit vector
-I = G + rng.normal(scale=0.05, size=128)            # small perturbation
+G = rng.normal(size=128); G /= np.linalg.norm(G)
+I = G + rng.normal(scale=0.05, size=128)
 
 logits = rng.normal(size=32000)
 
