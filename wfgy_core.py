@@ -20,18 +20,18 @@ class WFGYRunner:
             self.pipe = pipeline("text-generation", model=self.model, tokenizer=self.tokenizer)
 
     def run(self, prompt, **kwargs):
-        print("╭──────────────────────────────╮")
-        print("│   🤖 INITIATING WFGY CORE    │")
-        print("│   ⚙️  MODULE: Semantic Boost │")
-        print("╰──────────────────────────────╯\n")
-        print("=== Prompt ===")
-        print(prompt)
+    print("╭──────────────────────────────╮")
+    print("│   🤖 INITIATING WFGY CORE    │")
+    print("│   ⚙️  MODULE: Semantic Boost │")
+    print("╰──────────────────────────────╯\n")
+    print("=== Prompt ===")
+    print(prompt)
 
-        if self.use_remote:
-            result = self.client.text_generation(prompt, **kwargs)
-            print("\n=== Output ===")
-            print(result.generated_text.strip())
-        else:
-            result = self.pipe(prompt, **kwargs)[0]["generated_text"]
-            print("\n=== Output ===")
-            print(result.strip())
+    if self.use_remote:
+        result = self.client.text_generation(prompt, **kwargs)
+        print("\n=== Output ===")
+        print(result.strip())  # 
+    else:
+        result = self.pipe(prompt, **kwargs)[0]["generated_text"]
+        print("\n=== Output ===")
+        print(result.strip())
