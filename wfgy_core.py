@@ -17,7 +17,7 @@ def ascii_header(style="default"):
 class WFGYRunner:
     def __init__(self, config=None):
         self.device = "cpu"
-        self.model_id = "gpt2-medium"
+        self.model_id = "gpt2-xl"
         self.tokenizer = AutoTokenizer.from_pretrained(self.model_id)
         self.model = AutoModelForCausalLM.from_pretrained(self.model_id)
 
