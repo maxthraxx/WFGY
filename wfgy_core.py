@@ -1,6 +1,5 @@
 import torch
-from transformers import AutoTokenizer, AutoModelForCausalLM
-from huggingface_hub import InferenceClient
+from transformers import pipeline, AutoTokenizer, AutoModelForCausalLM
 
 class WFGYRunner:
     def __init__(
@@ -15,10 +14,15 @@ class WFGYRunner:
         self.device = "cuda" if torch.cuda.is_available() else "cpu"
 
         if self.remote:
-            self.client = InferenceClient(
+            self.generator = pipeline(
+                "text-generation",
                 model=self.model_id,
-                token=self.token,
-                provider="hf-inference"
+                use_auth_token=self.token,
+                device=0 if self.device == "cuda" else -1,
+                temperature=0.8,
+                top_p=0.95,
+                repetition_penalty=1.2,
+                do_sample=True
             )
         else:
             self.tokenizer = AutoTokenizer.from_pretrained(self.model_id)
@@ -37,27 +41,20 @@ class WFGYRunner:
         print(f"\n=== Prompt ===\n{prompt}")
 
         if self.remote:
-            result = self.client.text_generation(
-                prompt,
-                max_new_tokens=256,
-                repetition_penalty=1.2,
-                temperature=0.8,
-                top_p=0.95,
-                do_sample=True
-            )
+            output = self.generator(prompt, max_new_tokens=256)[0]["generated_text"]
         else:
             input_ids = self.tokenizer(prompt, return_tensors="pt").input_ids.to(self.device)
             output_ids = self.model.generate(
-                input_ids,
+                input_ids=input_ids,
                 max_new_tokens=256,
                 repetition_penalty=1.2,
                 temperature=0.8,
                 top_p=0.95,
                 do_sample=True
             )
-            result = self.tokenizer.decode(output_ids[0], skip_special_tokens=True)
+            output = self.tokenizer.decode(output_ids[0], skip_special_tokens=True)
 
-        print(f"\n=== Output ===\n{result}")
+        print(f"\n=== Output ===\n{output}")
         print("\n=== BBMC Residue ===\n1.618")
         print("=== BBPF Paths ===\n[[1.0, 2.0, 3.0], [1.1, 2.1, 2.9]]")
         print("=== BBCR Reset State ===\n0.1")
@@ -69,6 +66,6 @@ class WFGYRunner:
             print("Here is a prompt before transformation:")
             print(prompt)
             print("\nHere is the transformed response:")
-            print(result)
+            print(output)
             for _ in range(9):
                 print("\nIn exactly one sentence, explain how the tone or style has changed.")
