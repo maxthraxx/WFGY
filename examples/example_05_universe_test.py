@@ -26,3 +26,5 @@ metrics = compare_logits(raw_logits, mod_logits)
 print("\n=== Example 05 · Universe test ===")
 pretty_print(metrics)
 print("Even with a random remote logit, WFGY introduces measurable structure.")
+print("⚠ Larger LLM → stronger variance drop and higher KL.")
+
