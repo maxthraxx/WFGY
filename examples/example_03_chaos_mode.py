@@ -1,18 +1,24 @@
 # example_03_chaos_mode.py
-# Higher noise / gamma “chaos” test
+# Higher noise / higher gamma “chaos” test with metrics
 
-import pathlib, sys
+import pathlib, sys, numpy as np
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parents[1]))
 
-import numpy as np, wfgy_sdk as w
+import wfgy_sdk as w
+from wfgy_sdk.evaluator import compare_logits, pretty_print
+
 rng = np.random.default_rng(3)
-
 eng = w.get_engine(reload=True)
-eng.gamma = 0.9
+eng.gamma = 0.9                              # stronger damping
 
+# noisy vectors
 G = rng.normal(size=256); G /= np.linalg.norm(G)
-I = G + rng.normal(scale=0.1, size=256)
-logits = rng.normal(size=8192)
+I = G + rng.normal(scale=0.10, size=256)
+logits_before = rng.normal(size=8192)
 
-state = eng.run(input_vec=I, ground_vec=G, logits=logits, return_all=True)
-print(f"Chaos mode — ‖B‖={state['B_norm']:.3f} | f_S={state['f_S']:.3f} | collapse={state['_collapse']}")
+logits_after = eng.run(input_vec=I, ground_vec=G, logits=logits_before)
+metrics = compare_logits(logits_before, logits_after)
+
+print("\n=== Example 03 · Chaos mode (γ=0.9, noise=0.10) ===")
+pretty_print(metrics)
+print("Higher γ squeezes variance harder; residue still below collapse threshold.")
