@@ -1,35 +1,74 @@
+# bbpf.py
+# Progression Formula (BBPF) — multi-path perturbation
+# Author: PSBigBig & Contributors
+# License: MIT
+
+from __future__ import annotations
+import logging
+from typing import List, Tuple
+
 import numpy as np
 
-def bbpf_progression(x: np.ndarray, epsilon: float = 0.1, num_paths: int = 3,
-                     P: list = None) -> list:
+logger = logging.getLogger(__name__)
+
+
+def bbpf_progression(
+    state_vec: np.ndarray,
+    *,
+    k_paths: int = 3,
+    noise_scale: float = 1e-2,
+    seed: int | None = None
+) -> Tuple[List[np.ndarray], np.ndarray, float]:
     """
-    Perform BBPF multi-path semantic progression via perturbation and path weighting.
+    Generate k perturbed paths and compute a progression stability score f_S.
 
-    Args:
-        x (np.ndarray): Current semantic state
-        epsilon (float): Standard deviation for random perturbation
-        num_paths (int): Number of progression paths to generate
-        P (list of float, optional): Weight for each path. If None, uniform weights are used.
+    Parameters
+    ----------
+    state_vec : np.ndarray
+        The vector to perturb (usually the residue vector B).
+    k_paths : int, optional
+        Number of perturbation paths (k ≥ 3 recommended).
+    noise_scale : float, optional
+        Standard deviation of Gaussian noise.
+    seed : int or None, optional
+        RNG seed for reproducibility.
 
-    Returns:
-        list of np.ndarray: List of progressed semantic states
+    Returns
+    -------
+    paths : List[np.ndarray]
+        List of perturbed vectors.
+    weights : np.ndarray
+        Normalised weights P_i (size = k_paths).
+    f_S : float
+        Progression stability indicator (0 → unstable, 1 → fully stable).
+
+    Notes
+    -----
+    - f_S is defined as 1 / (1 + mean‖Δ‖), where Δ is deviation
+      between each perturbed path and the original vector.
     """
-    if P is None:
-        P = [1.0 / num_paths] * num_paths
+    if seed is not None:
+        np.random.seed(seed)
 
+    dim = state_vec.size
     paths = []
-    for i in range(num_paths):
-        perturbation = np.random.normal(0, epsilon, size=x.shape)
-        new_state = x + P[i] * perturbation
-        paths.append(new_state)
+    deviations = []
 
-    return paths
+    for _ in range(k_paths):
+        noise = np.random.normal(0.0, noise_scale, size=dim)
+        perturbed = state_vec + noise
+        paths.append(perturbed)
+        deviations.append(np.linalg.norm(noise, ord=2))
 
-def run_demo():
-    x = np.array([1.0, 2.0, 3.0])
-    paths = bbpf_progression(x, epsilon=0.1, num_paths=3)
-    for i, p in enumerate(paths):
-        print(f"Path {i+1}: {p}")
+    deviations = np.asarray(deviations)
+    weights = deviations.max() - deviations  # smaller dev → higher weight
+    weights = weights / weights.sum()
 
-if __name__ == "__main__":
-    run_demo()
+    # Stability indicator; smaller mean deviation → f_S ↑
+    f_S = 1.0 / (1.0 + deviations.mean())
+
+    logger.debug(
+        "BBPF - %d paths | mean Δ = %.6e | f_S = %.6f",
+        k_paths, deviations.mean(), f_S
+    )
+    return paths, weights, float(f_S)
