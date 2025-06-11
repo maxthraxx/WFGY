@@ -1,25 +1,25 @@
-from transformers import pipeline, AutoModelForCausalLM, AutoTokenizer
+from transformers import AutoModelForCausalLM, AutoTokenizer
 import torch
 
-# ASCII banner display
+
 def ascii_header(style="default"):
     if style == "default":
-        print("╭──────────────────────────────╮")
+        print("\n╭──────────────────────────────╮")
         print("│   🤖 INITIATING WFGY CORE    │")
         print("│   ⚙️  MODULE: Semantic Boost │")
         print("╰──────────────────────────────╯\n")
     elif style == "scientific":
-        print("=== [ WFGY SYSTEM INITIALIZED | MODE: SCIENCE ] ===\n")
+        print("\n=== [ WFGY SYSTEM INITIALIZED | MODE: SCIENCE ] ===\n")
     elif style == "meme":
-        print("🔥💥 W.F.G.Y. ONLINE 💥🔥\n[WARNING] 💬 Semantic Overdrive Engaged!\n")
+        print("\n🔥💥 W.F.G.Y. ONLINE 💥🔥\n[WARNING] 💬 Semantic Overdrive Engaged!\n")
 
-# Main logic
+
 class WFGYRunner:
     def __init__(self, config=None):
-        self.device = "cpu"
+        self.device = "cuda" if torch.cuda.is_available() else "cpu"
         self.model_id = "gpt2-xl"
         self.tokenizer = AutoTokenizer.from_pretrained(self.model_id)
-        self.model = AutoModelForCausalLM.from_pretrained(self.model_id)
+        self.model = AutoModelForCausalLM.from_pretrained(self.model_id).to(self.device)
 
     def run(self, prompt, reflect=False, style="default", show_ascii=False):
         if show_ascii:
