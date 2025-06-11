@@ -1,25 +1,29 @@
 # example_02_self_reflection.py
 
 from wfgy_core import WFGYRunner
-
-# Use default configuration for balanced modulation
 from default_config import DEFAULT_CONFIG
+from transformers import pipeline
 
+# Define input prompt
 prompt = "Why don't AIs like to take showers?"
 
-# Self-reflection prompt suffix
-reflection_prompt = " Can you reflect on how your response has changed? Describe in one sentence."
-
-# Initialize WFGY
+# Initialize WFGY runner
 runner = WFGYRunner(config=DEFAULT_CONFIG)
-
-# Run WFGY
 results = runner.run(prompt)
 
-# Simulate reflection response (for demo purposes, echoing the transformation)
-reflection_output = f"Before WFGY, I was more literal. Afterward, my tone became more creative and playful."
+# Build reflection input
+reflection_input = (
+    f"Before WFGY: {prompt}\n"
+    f"After WFGY: {results['output']}\n"
+    "What is the difference in tone or meaning? Describe in one sentence."
+)
 
-# Output formatting
+# Load GPT2 model for reflection
+reflector = pipeline("text-generation", model="gpt2")
+generated = reflector(reflection_input, max_length=50, do_sample=True, temperature=0.8)[0]["generated_text"]
+reflection_output = generated.strip()
+
+# Display output
 print("=== Prompt ===")
 print(prompt)
 
@@ -39,5 +43,5 @@ print("=== BBAM Modulated ===")
 print(results["BBAM_modulated"])
 
 print("=== Self-Reflection ===")
-print(prompt + reflection_prompt)
+print(reflection_input)
 print(reflection_output)
