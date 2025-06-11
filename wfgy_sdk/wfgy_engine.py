@@ -1,4 +1,4 @@
-# wfgy_engine.py
+# wfgy_sdk/wfgy_engine.py
 # Orchestrator for the Four Treasures (WFGY Engine)
 # Author: PSBigBig & Contributors
 # License: MIT
@@ -9,10 +9,11 @@ from typing import Any, Dict
 
 import numpy as np
 
-from bbmc import compute_residue
-from bbpf import bbpf_progression
-from bbcr import check_collapse, collapse_rebirth
-from bbam import modulate_attention
+# --- use relative imports inside the package ---
+from .bbmc import compute_residue
+from .bbpf import bbpf_progression
+from .bbcr import check_collapse, collapse_rebirth
+from .bbam import modulate_attention
 
 logger = logging.getLogger(__name__)
 
