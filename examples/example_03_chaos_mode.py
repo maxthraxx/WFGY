@@ -22,3 +22,5 @@ metrics = compare_logits(logits_before, logits_after)
 print("\n=== Example 03 · Chaos mode (γ=0.9, noise=0.10) ===")
 pretty_print(metrics)
 print("Higher γ squeezes variance harder; residue still below collapse threshold.")
+print("⚠ Larger LLM → stronger variance drop and higher KL.")
+
