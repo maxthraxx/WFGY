@@ -1,23 +1,34 @@
 # wfgy_sdk/__init__.py
-# High-level convenience API
+# Public API layer for WFGY SDK 1.0
 # Author: PSBigBig & Contributors
 # License: MIT
 
 from __future__ import annotations
-import numpy as np
 from typing import Dict, Any
+import numpy as np
 
 from .wfgy_engine import WFGYEngine
+from . import bbmc, bbpf, bbcr, bbam  # re-export for convenience
 
-__all__ = ["enable", "disable", "get_engine"]
+__all__ = [
+    "get_engine",
+    "enable",
+    "disable",
+    "bbmc",
+    "bbpf",
+    "bbcr",
+    "bbam",
+]
 
-# SINGLETON engine ----------------------------------------------------------
+# ------------------------------------------------------------------#
+# Singleton Engine
+# ------------------------------------------------------------------#
 _engine: WFGYEngine | None = None
 
 
 def get_engine(reload: bool = False) -> WFGYEngine:
     """
-    Return a singleton WFGYEngine (reload=True 重新建立).
+    Return a singleton WFGYEngine.  reload=True 會重建新實例。
     """
     global _engine
     if _engine is None or reload:
@@ -25,44 +36,40 @@ def get_engine(reload: bool = False) -> WFGYEngine:
     return _engine
 
 
-# PUBLIC API ----------------------------------------------------------------
+# ------------------------------------------------------------------#
+# High-level helpers (compatible with舊 enable/disable 流程)
+# ------------------------------------------------------------------#
 def enable(model: Dict[str, Any]) -> Dict[str, Any]:
     """
-    Run the full WFGY pipeline on a model-like dict.
+    Apply the full WFGY pipeline to `model`.
 
-    Expected keys in `model`:
-      - "I"  : np.ndarray   # input semantic vector
-      - "G"  : np.ndarray   # ground-truth vector
-      - "attention_logits": np.ndarray
-    Output keys added / overwritten:
-      - "attention": np.ndarray  # modulated logits
-      - "wfgy_state": dict       # diagnostics (B_norm, f_S, etc.)
+    Expected keys:
+        "I"  : np.ndarray  # input semantic vector
+        "G"  : np.ndarray  # ground-truth vector
+        "attention_logits": np.ndarray  # raw logits to modulate
     """
     eng = get_engine()
-    mod_out = eng.run(
-        input_vec=model["I"],
-        ground_vec=model["G"],
-        logits=model["attention_logits"],
-        return_all=True,   # 取 diagnostics
+    result = eng.run(
+        input_vec=np.asarray(model["I"], dtype=float),
+        ground_vec=np.asarray(model["G"], dtype=float),
+        logits=np.asarray(model["attention_logits"], dtype=float),
+        return_all=True,
     )
 
-    model["attention"] = mod_out["logits_mod"]
+    # mutate & return
+    model["attention"] = result["logits_mod"]
     model["wfgy_state"] = {
-        "B_norm": mod_out["B_norm"],
-        "f_S": mod_out["f_S"],
-        "collapse": mod_out["_collapse"],
+        "B_norm": result["B_norm"],
+        "f_S": result["f_S"],
+        "collapse": result["_collapse"],
     }
-    print("✅ WFGY 1.0 ENABLED — B_norm={:.4f}, f_S={:.4f}".format(
-        mod_out["B_norm"], mod_out["f_S"]
-    ))
     return model
 
 
 def disable(model: Dict[str, Any]) -> Dict[str, Any]:
     """
-    Remove WFGY-related keys for a clean shutdown.
+    Remove WFGY-specific keys from `model` (soft shutdown).
     """
     for k in ("attention", "wfgy_state"):
         model.pop(k, None)
-    print("❌ WFGY disabled")
     return model
