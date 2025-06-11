@@ -1,7 +1,7 @@
 from wfgy_core import WFGYRunner
 
 runner = WFGYRunner(
-    model_id="mistralai/Mistral-7B-Instruct-v0.1",
+    model_id="tiiuae/falcon-7b-instruct",
     use_remote=True
 )
 
