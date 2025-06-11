@@ -58,3 +58,15 @@ def modulate_attention(
         "BBAM - local window=%d applied to %d logits", window_size, logits.size
     )
     return modulated
+
+def run_demo() -> None:
+    """Quick smoke-test for BBAM."""
+    import numpy as np
+
+    logits = np.random.randn(20)
+    mod = modulate_attention(logits, gamma=0.6)
+    print(f"BBAM demo | first 3 logits before/after: {logits[:3]} -> {mod[:3]}")
+
+
+if __name__ == "__main__":
+    run_demo()
