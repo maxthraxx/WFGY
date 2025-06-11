@@ -1,5 +1,5 @@
 # example_02_self_reflection.py
-# Three successive runs on one engine with metrics
+# Three successive runs on a single engine, with metrics
 
 import pathlib, sys, numpy as np
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parents[1]))
@@ -18,9 +18,8 @@ for step in range(3):
 
     logits_after = eng.run(input_vec=I, ground_vec=G, logits=logits_before)
     m = compare_logits(logits_before, logits_after)
+    print(f"[Round {step}] KL {m['kl_divergence']:.2f} | "
+          f"var↓ {(1-m['std_ratio'])*100:.0f}% | "
+          f"top-1 {'✔' if m['top1_shift'] else '✘'}")
 
-    print(f"[Round {step}] "
-          f"variance ratio {m['std_ratio']:.2f} | "
-          f"KL {m['kl_divergence']:.2f} | "
-          f"top-1 shift {'✔' if m['top1_shift'] else '✘'}")
-
+print("⚠ Larger LLM → stronger variance drop & higher KL.\n")
