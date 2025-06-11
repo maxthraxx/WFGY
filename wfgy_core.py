@@ -1,54 +1,36 @@
-from transformers import AutoTokenizer, AutoModelForCausalLM
+from transformers import AutoTokenizer, AutoModelForCausalLM, pipeline
 from huggingface_hub import InferenceClient
-import torch
+import os
 
 class WFGYRunner:
-    def __init__(self, model_id="gpt2-xl", remote=False, hf_token=None):
+    def __init__(self, model_id="mistralai/Mixtral-8x7B-Instruct-v0.1", hf_token=None, use_remote=False):
         self.model_id = model_id
-        self.remote = remote
-        self.hf_token = hf_token
-        self.device = "cuda" if torch.cuda.is_available() else "cpu"
+        self.hf_token = hf_token or os.getenv("HF_TOKEN")
+        self.use_remote = use_remote
 
-        if self.remote:
-            self.client = InferenceClient(model=model_id, token=hf_token)
+        if not self.hf_token:
+            raise ValueError("HF_TOKEN not found in environment variables. Set it before running.")
+
+        if self.use_remote:
+            self.client = InferenceClient(model=model_id, token=self.hf_token)
         else:
-            self.tokenizer = AutoTokenizer.from_pretrained(model_id)
-            self.model = AutoModelForCausalLM.from_pretrained(model_id)
-            self.model.to(self.device)
+            self.tokenizer = AutoTokenizer.from_pretrained(model_id, token=self.hf_token)
+            self.model = AutoModelForCausalLM.from_pretrained(model_id, token=self.hf_token)
+            self.pipe = pipeline("text-generation", model=self.model, tokenizer=self.tokenizer)
 
-    def run(self, prompt, max_new_tokens=256, temperature=0.8, top_p=0.95,
-            do_sample=True, repetition_penalty=1.2, show_ascii=True):
-        
-        if show_ascii:
-            print("╭──────────────────────────────╮")
-            print("│   🤖 INITIATING WFGY CORE    │")
-            print("│   ⚙️  MODULE: Semantic Boost │")
-            print("╰──────────────────────────────╯")
-
-        print("\n=== Prompt ===")
+    def run(self, prompt, **kwargs):
+        print("╭──────────────────────────────╮")
+        print("│   🤖 INITIATING WFGY CORE    │")
+        print("│   ⚙️  MODULE: Semantic Boost │")
+        print("╰──────────────────────────────╯\n")
+        print("=== Prompt ===")
         print(prompt)
 
-        if self.remote:
-            output = self.client.text_generation(
-                prompt,
-                max_new_tokens=max_new_tokens,
-                temperature=temperature,
-                top_p=top_p,
-                do_sample=do_sample,
-                repetition_penalty=repetition_penalty
-            )
+        if self.use_remote:
+            result = self.client.text_generation(prompt, **kwargs)
             print("\n=== Output ===")
-            print(output)
+            print(result.generated_text.strip())
         else:
-            inputs = self.tokenizer(prompt, return_tensors="pt").to(self.device)
-            outputs = self.model.generate(
-                **inputs,
-                max_new_tokens=max_new_tokens,
-                temperature=temperature,
-                top_p=top_p,
-                do_sample=do_sample,
-                repetition_penalty=repetition_penalty
-            )
-            decoded = self.tokenizer.decode(outputs[0], skip_special_tokens=True)
+            result = self.pipe(prompt, **kwargs)[0]["generated_text"]
             print("\n=== Output ===")
-            print(decoded)
+            print(result.strip())
