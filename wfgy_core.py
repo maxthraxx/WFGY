@@ -2,14 +2,15 @@ from transformers import AutoTokenizer, AutoModelForCausalLM, pipeline
 from huggingface_hub import InferenceClient
 import os
 
+
 class WFGYRunner:
-    def __init__(self, model_id="mistralai/Mixtral-8x7B-Instruct-v0.1", hf_token=None, use_remote=False):
+    def __init__(self, model_id="tiiuae/falcon-7b-instruct", hf_token=None, use_remote=False):
         self.model_id = model_id
-        self.hf_token = hf_token or os.getenv("HF_TOKEN")
         self.use_remote = use_remote
+        self.hf_token = hf_token or os.environ.get("HF_TOKEN")
 
         if not self.hf_token:
-            raise ValueError("HF_TOKEN not found in environment variables. Set it before running.")
+            raise ValueError("HF_TOKEN not found in environment variables or passed to constructor.")
 
         if self.use_remote:
             self.client = InferenceClient(model=model_id, token=self.hf_token)
