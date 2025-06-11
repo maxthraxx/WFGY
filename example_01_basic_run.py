@@ -15,7 +15,7 @@ runner = WFGYRunner()
 prompt = "Why doesn't AI like to take showers?"
 
 # Run WFGY processing
-before_output, after_output, residue_score = runner.run(prompt)
+before_output, after_output = runner.run(prompt)
 
 # Display results
 print("=== 🧼 Prompt ===")
