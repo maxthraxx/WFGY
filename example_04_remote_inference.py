@@ -2,7 +2,7 @@ from wfgy_core import WFGYRunner
 
 if __name__ == "__main__":
     runner = WFGYRunner(
-        model_id="mistralai/Mistral-7B-Instruct-v0.2",  
+        model_id="mistralai/Mistral-7B-Instruct-v0.2",
         remote=True
     )
     runner.run(
