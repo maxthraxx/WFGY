@@ -5,7 +5,7 @@
 │ 💌  Contact : hello@onestardao.com  /  TG @PSBigBig       │
 │ 🌐  Docs    : https://onestardao.com/papers               │
 │ 🐙  GitHub  : https://github.com/onestardao/WFGY          │
-│                                                      ⭐  │
+│                                                          │
 │ ★ Star WFGY 1.0 → Unlock 2.0                             │
 │   10k ⭐ by **Aug 1st** = next-gen AI alchemy             │
 │   Your click = our quantum leap                          │
