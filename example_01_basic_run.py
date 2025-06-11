@@ -1,29 +1,26 @@
-from wfgy_core import WFGYRunner
+# example_01_basic_run.py
+# Basic WFGY smoke test (local, deterministic)
+# Run: python examples/example_01_basic_run.py
 
-# Create the runner
-runner = WFGYRunner()
+import numpy as np
+import wfgy_sdk as w
 
-# Test prompt
 prompt = "Why don't AIs like to take showers?"
+# Mock semantic vectors (demo purpose only)
+I = np.random.randn(64)
+G = np.random.randn(64)
+logits = np.random.randn(32000)
 
-# Run the model
-result = runner.run(prompt)
+engine = w.get_engine(reload=True)          # singleton; debug ON by default
+state = engine.run(
+    input_vec=I,
+    ground_vec=G,
+    logits=logits,
+    return_all=True
+)
 
-# Output results
-print("=== Prompt ===")
-print(result["prompt"])
-
-print("=== Output ===")
-print(result["output"])
-
-print("=== BBMC Residue ===")
-print(result["BBMC_residue"])
-
-print("=== BBPF Paths ===")
-print(result["BBPF_paths"])
-
-print("=== BBCR Reset State ===")
-print(result["BBCR_reset_state"])
-
-print("=== BBAM Modulated ===")
-print(result["BBAM_modulated"])
+print("\n=== Prompt ===")
+print(prompt)
+print("=== Modulated logits (slice) ===")
+print(state["logits_mod"][:10])
+print(f"=== Residue ‖B‖ = {state['B_norm']:.4f} | f_S = {state['f_S']:.4f} | collapse = {state['_collapse']}")
