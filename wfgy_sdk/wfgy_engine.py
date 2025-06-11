@@ -1,6 +1,5 @@
 # wfgy_sdk/wfgy_engine.py
 # Orchestrator for the Four Treasures (WFGY Engine)
-# Author: PSBigBig & Contributors
 # License: MIT
 
 from __future__ import annotations
@@ -9,7 +8,6 @@ from typing import Any, Dict
 
 import numpy as np
 
-# --- use relative imports inside the package ---
 from .bbmc import compute_residue
 from .bbpf import bbpf_progression
 from .bbcr import check_collapse, collapse_rebirth
@@ -20,13 +18,13 @@ logger = logging.getLogger(__name__)
 
 class WFGYEngine:
     """
-    High-level wrapper executing BBMC → BBPF → BBCR → BBAM pipeline.
+    BBMC → BBPF → BBCR → BBAM high-level pipeline.
     """
 
     def __init__(
         self,
         *,
-        Bc: float = 1.0,
+        Bc: float = 2.0,     # raise threshold to avoid false collapses
         eps: float = 0.05,
         gamma: float = 0.5,
         debug: bool = False
@@ -36,7 +34,7 @@ class WFGYEngine:
         self.gamma = gamma
         self.debug = debug
 
-    # ------------------------ internal helpers ------------------------
+    # ---------------- internal helpers ---------------- #
 
     def _compute_state(
         self,
@@ -46,14 +44,19 @@ class WFGYEngine:
         m: float,
         c: float
     ) -> Dict[str, Any]:
-        """Return full state dict; may be called repeatedly after collapse."""
-        # --- BBMC ---
-        bbmc_out = compute_residue(input_vec, ground_vec, m=m, c=c)
+        """
+        Run BBMC + BBPF, return raw state dict (may be retried by BBCR).
+        """
+        bbmc_out = compute_residue(
+            input_vec,
+            ground_vec,
+            m=m,
+            c=c,
+            normalise=True           # ALWAYS normalise
+        )
 
-        # --- BBPF ---
         paths, weights, f_S = bbpf_progression(bbmc_out["B_vec"])
 
-        # --- BBCR decision ---
         collapse_flag = check_collapse(
             residue_norm=bbmc_out["B_norm"],
             f_S=f_S,
@@ -61,7 +64,7 @@ class WFGYEngine:
             eps=self.eps
         )
 
-        state = {
+        return {
             "B_vec": bbmc_out["B_vec"],
             "B_norm": bbmc_out["B_norm"],
             "paths": paths,
@@ -70,9 +73,8 @@ class WFGYEngine:
             "_collapse": collapse_flag,
             "_logits_raw": logits,
         }
-        return state
 
-    # ----------------------------- public ------------------------------
+    # ---------------- public API ---------------- #
 
     def run(
         self,
@@ -80,45 +82,20 @@ class WFGYEngine:
         input_vec: np.ndarray,
         ground_vec: np.ndarray,
         logits: np.ndarray,
-        m: float = 1.0,
-        c: float = 1.0,
+        m: float = 0.1,
+        c: float = 0.5,
         window_size: int | None = None,
         return_all: bool = False
     ) -> Dict[str, Any] | np.ndarray:
         """
-        Execute full WFGY reasoning cycle and return modulated logits
-        (plus diagnostics if return_all=True).
-
-        Parameters
-        ----------
-        input_vec : np.ndarray
-            Input semantic vector I.
-        ground_vec : np.ndarray
-            Ground semantic vector G.
-        logits : np.ndarray
-            Raw logits prior to modulation.
-        m, c : float
-            BBMC parameters.
-        window_size : int or None
-            Local window for BBAM (None → global variant).
-        return_all : bool
-            If True, return detailed diagnostics.
-
-        Returns
-        -------
-        np.ndarray or dict
-            Modulated logits, or full state dictionary if return_all=True.
+        Execute full WFGY cycle.  Returns either modulated logits or diagnostics dict.
         """
 
-        def _reset_state() -> Dict[str, Any]:
-            return self._compute_state(
-                input_vec, ground_vec, logits, m, c
-            )
+        def _reset() -> Dict[str, Any]:
+            return self._compute_state(input_vec, ground_vec, logits, m, c)
 
-        # Execute collapse-rebirth loop
-        state = collapse_rebirth(_reset_state)
+        state = collapse_rebirth(_reset)
 
-        # --- BBAM ---
         logits_mod = modulate_attention(
             state["_logits_raw"],
             gamma=self.gamma,
@@ -128,7 +105,7 @@ class WFGYEngine:
 
         if self.debug:
             logger.info(
-                "WFGY run complete | ‖B‖=%.6f | f_S=%.6f | collapse=%s",
+                "WFGY done | ‖B‖=%.4f | f_S=%.3f | collapse=%s",
                 state["B_norm"], state["f_S"], state["_collapse"]
             )
 
