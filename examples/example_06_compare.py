@@ -1,46 +1,33 @@
 # example_06_compare.py
-# Compare GPT-2 logits before/after WFGY with inline metrics
+# GPT-2 local vs optional remote compare
 
-import pathlib, sys, json, numpy as np, torch
+import pathlib, sys, numpy as np, torch
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parents[1]))
 
 from transformers import GPT2LMHeadModel, GPT2TokenizerFast
 import wfgy_sdk as w
 from wfgy_sdk.evaluator import compare_logits, pretty_print
 
-prompt = (
-    "Explain the Navier–Stokes millennium problem in 50 words "
-    "(this is intentionally hard for GPT-2)."
-)
+use_remote = False
+MODEL_ID   = "gpt2"            # remote model id
 
-# --- Load GPT-2 -----------------------------------------------------------
-tok = GPT2TokenizerFast.from_pretrained("gpt2")
-gpt2 = GPT2LMHeadModel.from_pretrained("gpt2").eval()
+prompt = "Explain the Navier–Stokes millennium problem in 50 words."
 
-ids = tok(prompt, return_tensors="pt").input_ids
-with torch.no_grad():
-    out = gpt2(ids, output_hidden_states=True, return_dict=True)
+if use_remote:
+    logits_before = w.call_remote_model(prompt, model_id=MODEL_ID)
+else:
+    tok = GPT2TokenizerFast.from_pretrained("gpt2")
+    gpt2 = GPT2LMHeadModel.from_pretrained("gpt2").eval()
+    ids = tok(prompt, return_tensors="pt").input_ids
+    with torch.no_grad():
+        logits_before = gpt2(ids).logits[0, -1].cpu().numpy()
 
-logits_before = out.logits[0, -1].cpu().numpy()
+G = np.random.randn(256); G /= np.linalg.norm(G)
+I = G + np.random.normal(scale=0.05, size=256)
 
-# --- Build semantic vectors ----------------------------------------------
-hidden = out.hidden_states[-2][0, -1].cpu().numpy()
-ground = hidden / np.linalg.norm(hidden)
-inp = ground + np.random.normal(scale=0.05, size=ground.shape)
-
-# --- Run WFGY -------------------------------------------------------------
 eng = w.get_engine(reload=True)
-logits_after = eng.run(input_vec=inp, ground_vec=ground, logits=logits_before)
+logits_after = eng.run(input_vec=I, ground_vec=G, logits=logits_before)
 
-# --- Metrics & explanation -----------------------------------------------
-metrics = compare_logits(logits_before, logits_after)
-print("\n=== Quantitative Effect of WFGY (GPT-2) ===")
-pretty_print(metrics)
-
-print("\n=== Quick guide ===")
-print("• variance ↓  → logits become less noisy (attention is focused)")
-print("• KL > 0      → distribution genuinely changed, not numerical noise")
-print("• top-1 shift → most probable token switched ⇒ semantic nudge")
-print("⚠ GPT-2 is tiny; bigger models show even larger improvement.")
-print("⚠ Larger LLM → stronger variance drop and higher KL.")
-
+print("\n=== Example 06 · Logit compare ===")
+pretty_print(compare_logits(logits_before, logits_after))
+print("⚠ Larger LLM → stronger variance drop & higher KL.\n")
