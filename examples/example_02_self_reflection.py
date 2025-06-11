@@ -23,3 +23,5 @@ for step in range(3):
           f"variance ratio {m['std_ratio']:.2f} | "
           f"KL {m['kl_divergence']:.2f} | "
           f"top-1 shift {'✔' if m['top1_shift'] else '✘'}")
+    print("⚠ Larger LLM → stronger variance drop and higher KL.")
+
