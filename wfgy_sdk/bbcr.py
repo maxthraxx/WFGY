@@ -92,3 +92,14 @@ def collapse_rebirth(
         "BBCR - Max retries reached; returning last unstable state"
     )
     return state
+
+def run_demo() -> None:
+    """Quick smoke-test for BBCR collapse logic."""
+    traj = np.array([0.3, 0.21, 0.15, 0.14])
+    lam = compute_lyapunov(traj)
+    collapse = check_collapse(residue_norm=1.2, f_S=0.8, Bc=1.0, eps=0.05)
+    print(f"BBCR demo λ ≈ {lam:.3f} | collapse? {collapse}")
+
+
+if __name__ == "__main__":
+    run_demo()
