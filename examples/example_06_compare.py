@@ -42,3 +42,5 @@ print("• variance ↓  → logits become less noisy (attention is focused)")
 print("• KL > 0      → distribution genuinely changed, not numerical noise")
 print("• top-1 shift → most probable token switched ⇒ semantic nudge")
 print("⚠ GPT-2 is tiny; bigger models show even larger improvement.")
+print("⚠ Larger LLM → stronger variance drop and higher KL.")
+
