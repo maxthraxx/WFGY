@@ -1,21 +1,21 @@
-# wfgy_sdk/cli.py
-
-import argparse
-from .initializer import initialize
-from .evaluator import evaluate
+# cli.py
+import argparse, wfgy_sdk as w
+from wfgy_sdk.evaluator import compare_logits, pretty_print
+import numpy as np
 
 def main():
-    parser = argparse.ArgumentParser(description="WFGY CLI")
-    parser.add_argument("--init", action="store_true", help="Initialize demo data")
-    parser.add_argument("--prompt", type=str, help="Input prompt for evaluation")
+    parser = argparse.ArgumentParser()
+    parser.add_argument("prompt", help="text prompt to test")
+    parser.add_argument("--model", default="gpt2",
+                        help="huggingface model id (public)")
     args = parser.parse_args()
 
-    if args.init:
-        initialize()
-        return
+    logits = w.call_remote_model(args.prompt, model_id=args.model)
+    G = np.random.randn(128); G /= np.linalg.norm(G)
+    I = G + np.random.normal(scale=0.05, size=128)
 
-    if args.prompt:
-        result = evaluate(args.prompt)
-        print("Result:", result)
-    else:
-        print("Please provide a prompt using --prompt")
+    logits_mod = w.get_engine().run(input_vec=I, ground_vec=G, logits=logits)
+    pretty_print(compare_logits(logits, logits_mod))
+
+if __name__ == "__main__":
+    main()
