@@ -4,7 +4,7 @@ from transformers import pipeline, AutoTokenizer, AutoModelForCausalLM
 from huggingface_hub import InferenceClient
 
 class WFGYRunner:
-    def __init__(self, model_id = "tiiuae/falcon-7b-instruct", use_remote=False):
+    def __init__(self, model_id="HuggingFaceH4/zephyr-7b-alpha", use_remote=False):
         self.use_remote = use_remote
         self.device = "cuda" if torch.cuda.is_available() else "cpu"
         self.model_id = model_id
