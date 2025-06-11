@@ -1,4 +1,3 @@
-# example_02_self_reflection.py
 from wfgy_core import WFGYRunner
 
 if __name__ == "__main__":
