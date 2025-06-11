@@ -18,7 +18,7 @@ class WFGYRunner:
             self.client = InferenceClient(
                 model=self.model_id,
                 token=self.token,
-                provider="huggingface"
+                provider="hf-inference"
             )
         else:
             self.tokenizer = AutoTokenizer.from_pretrained(self.model_id)
