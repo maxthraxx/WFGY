@@ -1,26 +1,62 @@
+# bbmc.py
+# Semantic Residue (BBMC) — rigorous implementation
+# Author: PSBigBig & Contributors
+# License: MIT
+
+from __future__ import annotations
+import logging
+from typing import Tuple, Dict
+
 import numpy as np
 
-def compute_residue(I: np.ndarray, G: np.ndarray, m: float = 0.8, c: float = 1.0) -> float:
+logger = logging.getLogger(__name__)
+
+
+def compute_residue(
+    input_vec: np.ndarray,
+    ground_vec: np.ndarray,
+    m: float = 1.0,
+    c: float = 1.0,
+    return_vector: bool = True
+) -> Dict[str, np.ndarray | float]:
     """
-    Compute semantic residue based on BBMC formula: B = I - G + mc^2
+    Compute the semantic residue B = I - G + m*c^2.
 
-    Args:
-        I (np.ndarray): Input semantic vector
-        G (np.ndarray): Ground-truth semantic vector
-        m (float): Matching coefficient
-        c (float): Context factor
+    Parameters
+    ----------
+    input_vec : np.ndarray
+        Input semantic vector I.
+    ground_vec : np.ndarray
+        Ground-truth semantic vector G.
+    m : float, optional
+        Matching coefficient.
+    c : float, optional
+        Context factor.
+    return_vector : bool, optional
+        If True, include the full residue vector in the output.
 
-    Returns:
-        float: L2 norm of semantic residue vector
+    Returns
+    -------
+    dict
+        {
+            "B_vec": np.ndarray,        # Only if return_vector is True
+            "B_norm": float             # L2 norm of B_vec
+        }
+
+    Raises
+    ------
+    ValueError
+        If the shapes of input_vec and ground_vec do not match.
     """
-    B = I - G + m * c ** 2
-    return np.linalg.norm(B)
+    if input_vec.shape != ground_vec.shape:
+        raise ValueError("input_vec and ground_vec must have identical shape")
 
-def run_demo():
-    I = np.array([1.2, 0.7, 0.5])
-    G = np.array([1.0, 0.6, 0.4])
-    residue = compute_residue(I, G)
-    print(f"BBMC residue: {residue:.4f}")
+    B_vec = input_vec - ground_vec + m * (c ** 2)
+    B_norm = float(np.linalg.norm(B_vec, ord=2))
 
-if __name__ == "__main__":
-    run_demo()
+    result = {"B_norm": B_norm}
+    if return_vector:
+        result["B_vec"] = B_vec
+
+    logger.debug("BBMC - residue computed | ‖B‖ = %.6f", B_norm)
+    return result
