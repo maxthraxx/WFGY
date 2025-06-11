@@ -1,7 +1,7 @@
 from wfgy_core import WFGYRunner
 
 runner = WFGYRunner(
-    model_id="google/flan-t5-xxl",  # ✅ 改這行
+    model_id="mistralai/Mistral-7B-Instruct-v0.1",
     use_remote=True
 )
 
