@@ -1,4 +1,3 @@
-
 """
 ╭──────────────────────────────────────────────────────────╮
 │  WFGY SDK · Self-Healing Variance Gate for Any LLM       │
