@@ -1,14 +1,13 @@
 # example_07_flash_show.py
-# Flashy showcase: 10 hard prompts, aggressive gamma, full metrics
+# Flashy showcase: 10 hard prompts, aggressive settings
 
-import pathlib, sys, numpy as np, torch, json, textwrap
+import pathlib, sys, numpy as np, torch, textwrap
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parents[1]))
 
 from transformers import GPT2LMHeadModel, GPT2TokenizerFast
 import wfgy_sdk as w
 from wfgy_sdk.evaluator import compare_logits
 
-# ── config ──────────────────────────────────────────────────────────────
 PROMPTS = [
     "Derive Maxwell's equations from first principles in 30 words.",
     "Explain Gödel's incompleteness in terms of topological fixed points.",
@@ -22,20 +21,19 @@ PROMPTS = [
     "Solve world peace with a single C++ template meta-program."
 ]
 
-GAMMA = 1.0          # stronger variance gating
-NOISE = 0.12         # larger semantic perturbation
+GAMMA = 1.0
+NOISE = 0.12
 rng = np.random.default_rng(999)
 
-# ── load GPT-2 once ─────────────────────────────────────────────────────
 tok = GPT2TokenizerFast.from_pretrained("gpt2")
 gpt2 = GPT2LMHeadModel.from_pretrained("gpt2").eval()
 
 eng = w.get_engine(reload=True)
 eng.gamma = GAMMA
 
-records = []
 print("\n=== Example 07 · Flash-show (GPT-2 baseline) ===")
-for i, prompt in enumerate(PROMPTS, 1):
+records = []
+for idx, prompt in enumerate(PROMPTS, 1):
     ids = tok(prompt, return_tensors="pt").input_ids
     with torch.no_grad():
         out = gpt2(ids, output_hidden_states=True, return_dict=True)
@@ -49,13 +47,17 @@ for i, prompt in enumerate(PROMPTS, 1):
     m = compare_logits(logits0, logits1)
     records.append(m)
 
-    print(f"[{i:02d}] KL {m['kl_divergence']:.2f} | "
-          f"var↓ {m['std_ratio']*100:.0f}% | "
+    print(f"[{idx:02d}] KL {m['kl_divergence']:.2f} | "
+          f"var↓ {(1-m['std_ratio'])*100:.0f}% | "
           f"top-1 {'✔' if m['top1_shift'] else '✘'} | "
-          f"{textwrap.shorten(prompt, 40)}")
+          f"{textwrap.shorten(prompt, 45)}")
 
-# ── aggregate ───────────────────────────────────────────────────────────
 avg = {k: np.mean([r[k] for r in records]) for k in records[0]}
 print("\n--- AVERAGE over 10 prompts ---")
-print(json.dumps(avg, indent=2))
-print("⚠ GPT-2 demo; swap in a ≥7 B model to see even stronger numbers.")
+for k, v in avg.items():
+    if k == "top1_shift":
+        print(f"{k}: {v*100:.0f}%")
+    else:
+        print(f"{k}: {v:.3f}")
+
+print("⚠ GPT-2 demo; swap in a ≥7 B model to see even stronger numbers.\n")
