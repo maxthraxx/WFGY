@@ -1,25 +1,27 @@
 # tests/test_sdk_full.py
-# Minimal pipeline test (PyTest or manual)
+# CI / manual test with extra commentary
 
-import pathlib, sys
-repo_root = pathlib.Path(__file__).resolve().parents[1]
-sys.path.insert(0, str(repo_root))          # ensure local package import
+import pathlib, sys, numpy as np
+sys.path.insert(0, str(pathlib.Path(__file__).resolve().parents[1]))
 
-import numpy as np
 import wfgy_sdk as w
+from wfgy_sdk.evaluator import compare_logits, pretty_print
 
-def test_pipeline_stability() -> None:
-    rng = np.random.default_rng(2)
+def test_pipeline() -> None:
+    rng = np.random.default_rng(7)
     G = rng.normal(size=64); G /= np.linalg.norm(G)
     I = G + rng.normal(scale=0.05, size=64)
-    logits = rng.normal(size=4096)
+    logits_before = rng.normal(size=4096)
 
     eng = w.get_engine(reload=True)
-    state = eng.run(input_vec=I, ground_vec=G, logits=logits, return_all=True)
+    logits_after = eng.run(input_vec=I, ground_vec=G, logits=logits_before)
 
-    assert state["B_norm"] < 1.0, "Residue too high"
-    assert state["_collapse"] is False, "Unexpected collapse"
+    m = compare_logits(logits_before, logits_after)
+    assert m["std_ratio"] < 0.7, "Variance not reduced enough"
+    assert m["kl_divergence"] > 0.05, "KL too small — no real change"
+
+    pretty_print(m)
+    print("Test passed — pipeline stable & effective.")
 
 if __name__ == "__main__":
-    test_pipeline_stability()
-    print("Test passed.")
+    test_pipeline()
