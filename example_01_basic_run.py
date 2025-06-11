@@ -1,30 +1,29 @@
-# example_01_basic_run.py
-
-import os
-import sys
-
-# Add WFGY SDK path
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "WFGY")))
-
 from wfgy_core import WFGYRunner
 
-# Initialize the WFGY runner
+# Create the runner
 runner = WFGYRunner()
 
-# Define a hilarious input prompt
-prompt = "Why doesn't AI like to take showers?"
+# Test prompt
+prompt = "Why don't AIs like to take showers?"
 
-# Run WFGY processing
-before_output, after_output = runner.run(prompt)
+# Run the model
+result = runner.run(prompt)
 
-# Display results
-print("=== 🧼 Prompt ===")
-print(prompt)
+# Output results
+print("=== Prompt ===")
+print(result["prompt"])
 
-print("\n=== 🤖 Before WFGY ===")
-print(before_output)
+print("=== Output ===")
+print(result["output"])
 
-print("\n=== 🚿 After WFGY ===")
-print(after_output)
+print("=== BBMC Residue ===")
+print(result["BBMC_residue"])
 
-print(f"\n=== 📊 Semantic Residue Score (B) ===\n{residue_score:.4f}")
+print("=== BBPF Paths ===")
+print(result["BBPF_paths"])
+
+print("=== BBCR Reset State ===")
+print(result["BBCR_reset_state"])
+
+print("=== BBAM Modulated ===")
+print(result["BBAM_modulated"])
