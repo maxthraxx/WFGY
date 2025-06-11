@@ -1,13 +1,11 @@
 # example_04_remote_inference.py
-# Skeleton showing how to plug WFGY before/after LLM inference
-# (Replace `call_model()` with real HuggingFace API / local model.)
+import pathlib, sys
+sys.path.insert(0, str(pathlib.Path(__file__).resolve().parents[1]))
 
 import numpy as np, wfgy_sdk as w
 
-def call_model(prompt: str, model_id="gpt2", use_remote=False) -> np.ndarray:
-    """Dummy function: returns random logits like an LLM would."""
-    vocab = 32000
-    return np.random.randn(vocab)
+def call_model(prompt: str) -> np.ndarray:
+    return np.random.randn(32000)
 
 prompts = [
     "Please answer a question you are least confident about.",
@@ -15,12 +13,11 @@ prompts = [
     "Explain the concept of 'semantic gravity' with WFGY enabled."
 ]
 
-engine = w.get_engine(reload=True)
+eng = w.get_engine(reload=True)
 
-for idx, p in enumerate(prompts, 1):
-    raw_logits = call_model(p)
-    I, G = np.random.randn(128), np.random.randn(128)     # demo vectors
-    final_logits = engine.run(
-        input_vec=I, ground_vec=G, logits=raw_logits
-    )
-    print(f"[Stage {idx}] prompt = {p[:40]}... | mod_logits[0] = {final_logits[0]:.4f}")
+for i, p in enumerate(prompts, 1):
+    raw = call_model(p)
+    G = np.random.randn(128); G /= np.linalg.norm(G)
+    I = G + np.random.normal(scale=0.05, size=128)
+    out = eng.run(input_vec=I, ground_vec=G, logits=raw)
+    print(f"[Stage {i}] first logit → {out[0]:.4f}")
