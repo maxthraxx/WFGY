@@ -1,12 +1,26 @@
 # default_config.py
+# Centralised defaults for WFGY SDK 1.0
+# Author: PSBigBig & Contributors
+# License: MIT
 
-# WFGY default parameters for stable semantic enhancement
 DEFAULT_CONFIG = {
-    "bbmc_alpha": 0.88,               # Controls strength of semantic residue alignment (higher = more correction)
-    "bbpf_noise_level": 0.03,         # Small noise level for creative reasoning without chaos
-    "bbcr_reset_value": 0.05,         # Controls system "reset baseline" – low = more persistent state
-    "bbam_modulation_scale": 0.92     # Balances modulation effect – 1.0 = strong modulation
+    # --- BBMC (Semantic Residue) ---
+    "m": 1.0,                  # Matching coefficient
+    "c": 1.0,                  # Context factor
+
+    # --- BBPF (Progression) ---
+    "noise_scale": 0.02,       # Gaussian noise σ
+    "k_paths": 3,              # Number of perturbation paths
+
+    # --- BBCR (Collapse-Rebirth) ---
+    "Bc": 1.0,                 # Residue threshold
+    "eps": 0.05,               # f_S threshold
+    "max_retries": 3,          # Max collapse cycles
+
+    # --- BBAM (Attention Modulation) ---
+    "gamma": 0.5,              # Variance gate strength
+    "window_size": None        # Use global σ (set int for local)
 }
 
-# Humorous prompt for basic testing
-prompt_humorous = "Why don't AIs like to take showers?"
+# Humorous prompt for smoke test
+PROMPT_HUMOROUS = "Why don't AIs like to take showers?"
