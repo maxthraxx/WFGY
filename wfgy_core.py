@@ -1,5 +1,6 @@
 class WFGYRunner:
-    def __init__(self):
+    def __init__(self, config=None):
+        self.config = config or {}
         print("WFGY 1.0 Initialized ✅")
 
     def run(self, prompt: str) -> dict:
