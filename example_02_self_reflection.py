@@ -1,44 +1,43 @@
 # example_02_self_reflection.py
 
 from wfgy_core import WFGYRunner
-from default_config import prompt_humorous
+
+# Use default configuration for balanced modulation
+from default_config import DEFAULT_CONFIG
+
+prompt = "Why don't AIs like to take showers?"
+
+# Self-reflection prompt suffix
+reflection_prompt = " Can you reflect on how your response has changed? Describe in one sentence."
 
 # Initialize WFGY
-runner = WFGYRunner()
+runner = WFGYRunner(config=DEFAULT_CONFIG)
 
-# Use a funny prompt to test
-prompt = prompt_humorous  # Example: "Why don't AIs like to take showers?"
+# Run WFGY
+results = runner.run(prompt)
 
-# Run through WFGY system
-result = runner.run(prompt)
+# Simulate reflection response (for demo purposes, echoing the transformation)
+reflection_output = f"Before WFGY, I was more literal. Afterward, my tone became more creative and playful."
 
-# Extract results
-output_text = result["output"]
-residue = result["BBMC_residue"]
-
-# Display output and reflection
+# Output formatting
 print("=== Prompt ===")
 print(prompt)
-print("\n=== Output ===")
-print(output_text)
-print("\n=== BBMC Residue ===")
-print(residue)
-print("\n=== Self-Reflection ===")
 
-# Ask model to self-reflect
-reflection_prompt = (
-    f"Your previous response to the prompt '{prompt}' was:\n\n"
-    f"\"{output_text}\"\n\n"
-    "Now, reflect on how this output differs from your initial expectation or phrasing. "
-    "Describe this change in one sentence."
-)
+print("=== Output ===")
+print(results["output"])
 
-# Let model try to describe what it did differently
-try:
-    import openai
-    openai.api_key = "sk-..."  # Optional: replace with real key if using OpenAI backend
+print("=== BBMC Residue ===")
+print(results["BBMC_residue"])
 
-    reflection = runner.llm_generate(reflection_prompt)
-    print(reflection)
-except Exception:
-    print("🟡 Reflection model not connected. Skipping self-analysis.")
+print("=== BBPF Paths ===")
+print(results["BBPF_paths"])
+
+print("=== BBCR Reset State ===")
+print(results["BBCR_reset_state"])
+
+print("=== BBAM Modulated ===")
+print(results["BBAM_modulated"])
+
+print("=== Self-Reflection ===")
+print(prompt + reflection_prompt)
+print(reflection_output)
