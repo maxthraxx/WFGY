@@ -28,6 +28,6 @@ pretty_print(metrics)
 print("\n● variance ↓  means logits become less noisy")
 print("● KL > 0      confirms distribution changed")
 print("● top-1 shift shows whether the most probable token switched")
-print("⚠ GPT-2 is tiny; larger LLMs show a bigger gap.\n")
-print("⚠ Larger LLM → stronger variance drop and higher KL.")
+print("⚠ GPT-2 is tiny; larger LLMs show a bigger gap.")
+print("⚠ Larger LLM → stronger variance drop and higher KL.\n")
 
