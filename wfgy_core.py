@@ -1,11 +1,8 @@
-# wfgy_core.py
-
 class WFGYRunner:
     def __init__(self):
         print("WFGY 1.0 Initialized ✅")
 
     def run(self, prompt: str) -> dict:
-        # Simulated results for now – replace with actual integration
         result = {
             "prompt": prompt,
             "BBMC_residue": 1.618,
