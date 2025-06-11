@@ -1,65 +1,94 @@
+# bbcr.py
+# Collapse-Rebirth (BBCR) — stability enforcement
+# Author: PSBigBig & Contributors
+# License: MIT
+
+from __future__ import annotations
+import logging
+from typing import Callable, Dict
+
 import numpy as np
 
-def check_collapse(B: float, f_S: float, Bc: float = 1.2, epsilon: float = 0.01) -> bool:
+logger = logging.getLogger(__name__)
+
+
+def compute_lyapunov(trajectory: np.ndarray) -> float:
     """
-    Determine if collapse should be triggered based on residue and progression metric.
+    Approximate Lyapunov exponent from a sequence of scalar errors.
 
-    Args:
-        B (float): Current semantic residue
-        f_S (float): Current progression metric
-        Bc (float): Collapse threshold for semantic residue
-        epsilon (float): Minimum acceptable progression value
+    Parameters
+    ----------
+    trajectory : np.ndarray
+        Sequence of error magnitudes over iterations.
 
-    Returns:
-        bool: True if collapse condition is met
+    Returns
+    -------
+    float
+        Estimated Lyapunov exponent λ (>0 indicates divergence).
     """
-    return B >= Bc or f_S < epsilon
+    if trajectory.size < 2:
+        return 0.0
+    diffs = np.diff(np.log(np.clip(trajectory, 1e-12, None)))
+    return float(diffs.mean())
 
-def reset_state(state: np.ndarray, delta_B: float = 0.1, alpha: float = 0.8) -> np.ndarray:
+
+def check_collapse(
+    residue_norm: float,
+    f_S: float,
+    *,
+    Bc: float = 1.0,
+    eps: float = 0.05
+) -> bool:
     """
-    Perform semantic reset with memory-based adjustment.
+    Determine whether to trigger collapse-rebirth.
 
-    Args:
-        state (np.ndarray): Current semantic state
-        delta_B (float): Residue memory from previous step
-        alpha (float): Shrink factor to reduce instability
+    Collapse if either:
+      (i) residue_norm ≥ Bc, OR
+      (ii) f_S ≤ eps
 
-    Returns:
-        np.ndarray: Reinitialized state
+    Returns
+    -------
+    bool
+        True if collapse condition is met.
     """
-    print(">> BBCR Triggered: Performing semantic reset...")
-    return alpha * (state * 0.0 + delta_B)
+    collapse = (residue_norm >= Bc) or (f_S <= eps)
+    logger.debug(
+        "BBCR - Check collapse | ‖B‖=%.6f (≥%.2f?) | f_S=%.6f (≤%.2f?) → %s",
+        residue_norm, Bc, f_S, eps, collapse
+    )
+    return collapse
 
-def compute_lyapunov(B: float, f_S: float, lambd: float = 1.0) -> float:
+
+def collapse_rebirth(
+    state_reset_fn: Callable[[], Dict[str, float | np.ndarray]],
+    *,
+    max_retries: int = 3
+) -> Dict[str, float | np.ndarray]:
     """
-    Compute Lyapunov stability function.
+    Execute collapse-rebirth loop until stability is reached
+    or maximum retries exhausted.
 
-    Args:
-        B (float): Semantic residue
-        f_S (float): Progression metric
-        lambd (float): Scaling factor for progression term
+    Parameters
+    ----------
+    state_reset_fn : Callable
+        A zero-arg function that recomputes the full state
+        (residue, f_S, etc.) after rebirth.
+    max_retries : int, optional
+        Maximum number of collapse cycles.
 
-    Returns:
-        float: Lyapunov value
+    Returns
+    -------
+    dict
+        Final stable state dictionary.
     """
-    return B ** 2 + lambd * f_S
+    for attempt in range(max_retries):
+        state = state_reset_fn()
+        if not state.get("_collapse", False):
+            logger.debug("BBCR - Stable after %d collapse(s)", attempt)
+            return state
+        logger.debug("BBCR - Collapse %d → retry", attempt + 1)
 
-def run_demo():
-    state = np.array([1.0, 2.0, 3.0])
-    B = 1.6
-    f_S = 0.005
-    V_t = compute_lyapunov(B, f_S)
-
-    if check_collapse(B, f_S):
-        state = reset_state(state, delta_B=0.2)
-        B_new = 0.8
-        f_S_new = 0.02
-        V_t1 = compute_lyapunov(B_new, f_S_new)
-        print(f"Lyapunov before: {V_t:.4f} → after reset: {V_t1:.4f}")
-    else:
-        print(">> No collapse. Continuing...")
-
-    print(f"Current state: {state}")
-
-if __name__ == "__main__":
-    run_demo()
+    logger.warning(
+        "BBCR - Max retries reached; returning last unstable state"
+    )
+    return state
