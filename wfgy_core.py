@@ -4,7 +4,7 @@ from transformers import pipeline, AutoTokenizer, AutoModelForCausalLM
 from huggingface_hub import InferenceClient
 
 class WFGYRunner:
-    def __init__(self, model_id="google/flan-t5-xxl", use_remote=False):
+    def __init__(self, model_id="mistralai/Mistral-7B-Instruct-v0.1", use_remote=False):
         self.use_remote = use_remote
         self.device = "cuda" if torch.cuda.is_available() else "cpu"
         self.model_id = model_id
@@ -33,7 +33,7 @@ class WFGYRunner:
         print(prompt)
 
         if self.use_remote:
-            result = self.client.text2text_generation(
+            result = self.client.text_generation(
                 prompt=prompt,
                 max_new_tokens=max_new_tokens,
                 temperature=temperature
