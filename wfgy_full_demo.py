@@ -1,85 +1,72 @@
 """
-WFGY full demo · Colab-safe version
- – auto-detects whether ENGINE.run accepts `bbmc_scale`
- – prints single-prompt metrics + histogram + 5-prompt table
+WFGY full demo (CPU-only; 1-click Colab & HF Space)
+Shows single-prompt histogram + batch table.
 """
 
-import io, inspect, numpy as np, matplotlib.pyplot as plt
-from PIL import Image
+import numpy as np, torch, matplotlib.pyplot as plt
 from tabulate import tabulate
-from transformers import AutoTokenizer, AutoModelForCausalLM, set_seed
+from transformers import AutoModelForCausalLM, AutoTokenizer, set_seed
+from wfgy_sdk import get_engine
+from wfgy_sdk.evaluator import compare_logits   # unchanged helper
 
-import wfgy_sdk as w
-from wfgy_sdk.evaluator import compare_logits
-from wfgy_sdk.visual    import plot_histogram
+MODEL   = "sshleifer/tiny-gpt2"
+SEED    = 42
+BOOST   = 1.0          # default demo slider value
+ENGINE  = get_engine() # singleton
 
-# ───── model (tiny GPT-2) ─────
-MODEL = "sshleifer/tiny-gpt2"
-tok   = AutoTokenizer.from_pretrained(MODEL)
-mdl   = AutoModelForCausalLM.from_pretrained(MODEL)
-set_seed(42)
-
-ENGINE       = w.get_engine()
-BOOST        = 1.2             # semantic deviation for demo
-RUN_HAS_ARG  = "bbmc_scale" in inspect.signature(ENGINE.run).parameters
-
-# ───── helpers ─────
-def run_once(prompt: str):
-    ids  = tok(prompt, return_tensors="pt").input_ids
-    rawL = mdl(ids).logits[0, -1].detach().cpu().numpy()
-
-    G = np.random.randn(256); G /= np.linalg.norm(G)
-    I = G + np.random.normal(scale=BOOST, size=256)
-
-    if RUN_HAS_ARG:
-        modL = ENGINE.run(I, G, rawL, bbmc_scale=BOOST)
-    else:
-        modL = ENGINE.run(I, G, rawL)
-
-    metrics = compare_logits(rawL, modL)
-    raw_txt = prompt + tok.decode(int(rawL.argmax()))
-    mod_txt = prompt + tok.decode(int(modL.argmax()))
-    return raw_txt, mod_txt, metrics, rawL, modL
+set_seed(SEED)
+tok = AutoTokenizer.from_pretrained(MODEL)
+mdl = AutoModelForCausalLM.from_pretrained(MODEL)
 
 
-def save_hist(path, before, after):
-    fig = plot_histogram(before, after) or plt.gcf()
-    fig.savefig(path, bbox_inches="tight")
-    plt.close(fig)
+def run_once(prompt: str, boost: float = 1.0):
+    inp   = tok(prompt, return_tensors="pt")
+    rawL  = mdl(**inp).logits[0, -1].detach().cpu().float().numpy()
+
+    I = np.random.randn(256).astype(np.float32)
+    G = np.random.randn(256).astype(np.float32)
+
+    modL = ENGINE.run(
+        logits=rawL,
+        input_vec=I,
+        ground_vec=G,
+        boost=boost,
+    )
+    m = compare_logits(rawL, modL)
+    return prompt + tok.decode(int(rawL.argmax())), \
+           prompt + tok.decode(int(modL.argmax())), \
+           m, rawL, modL
 
 
-# ───── single prompt demo ─────
+# ----- SINGLE PROMPT ------------------------------------------------------- #
 prompt = "Describe quantum tunnelling in emojis."
+raw, mod, metrics, rl, ml = run_once(prompt, BOOST)
+
 print("=== Single-Prompt Demo ===")
-rtxt, mtxt, m, rl, ml = run_once(prompt)
-
 print("Prompt           :", prompt)
-print("Raw continuation :", rtxt[len(prompt):])
-print("WFGY continuation:", mtxt[len(prompt):])
-print(f"variance ↓ {(1-m['std_ratio'])*100:.0f}% | "
-      f"KL {m['kl_divergence']:.02f} | "
-      f"top-1 {'✔' if m['top1_shift'] else '✘'}")
+print("Raw continuation :", raw.split(prompt)[-1])
+print("WFGY continuation:", mod.split(prompt)[-1])
+print(f"variance ↓ {int(metrics['var_drop']*100)}% | KL {metrics['kl']:.2f} | top-1 {'✔' if metrics['top1'] else '✘'}")
 
-save_hist("single_hist.png", rl, ml)
-print("[saved → single_hist.png]\n")
+plt.figure(figsize=(6,4))
+plt.hist(rl, bins=90, alpha=.7, label="before")
+plt.hist(ml, bins=90, alpha=.7, label="after")
+plt.legend(); plt.title("Logit Distribution Before vs After WFGY")
+plt.savefig("single_hist.png")
+print("[saved → single_hist.png]")
 
-# ───── batch table ─────
-prompts = [
+# ----- BATCH ---------------------------------------------------------------- #
+batch = [
     "Explain black holes in one sentence.",
     "Give me a haiku about entropy.",
     "Summarise Gödel's theorem for a child.",
     "Name three uses of quantum dots.",
     "Why do leaves change colour?"
 ]
-rows = []
-for p in prompts:
-    _, _, mt, *_ = run_once(p)
-    rows.append([
-        p[:33] + ("…" if len(p) > 33 else ""),
-        f"{(1-mt['std_ratio'])*100:.0f} %",
-        f"{mt['kl_divergence']:.02f}",
-        "✔" if mt["top1_shift"] else "✘"
-    ])
+table = []
+for p in batch:
+    _, _, m, *_ = run_once(p, BOOST)
+    table.append([p[:30] + "…", f"{int(m['var_drop']*100)} %", f"{m['kl']:+.2f}", "✔" if m['top1'] else "✘"])
 
-print("=== Batch Metrics ===")
-print(tabulate(rows, headers=["Prompt", "var ↓", "KL", "top-1"]))
+print("\n=== Batch Metrics ===")
+print(tabulate(table, headers=["Prompt", "var ↓", "KL", "top-1"]))
