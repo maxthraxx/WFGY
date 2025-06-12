@@ -1,10 +1,12 @@
 #!/usr/bin/env python
 # ===============================================================
 #  WFGY full CLI demo – single prompt + batch table + histogram
-#  Pure CPU → fits Colab Free & HF Space
+#  Pure CPU → Colab Free & HF Space 均能跑
 # ===============================================================
 
-import random, json, math, os
+import random, os, json, math
+from typing import Tuple, List
+
 import numpy as np
 import matplotlib.pyplot as plt
 from tabulate import tabulate
@@ -25,8 +27,8 @@ np.random.seed(42)
 random.seed(42)
 
 # --------------------------------------------------------------
-def one_pass(prompt: str):
-    """Run one prompt → returns helper tuple."""
+def one_pass(prompt: str) -> Tuple[str, str, dict, np.ndarray, np.ndarray]:
+    """Run one prompt through raw GPT-2 + WFGY."""
     toks  = tokenizer(prompt, return_tensors="pt")
     rawL  = model(**toks).logits[0, -1].detach().cpu().numpy()
 
@@ -34,7 +36,7 @@ def one_pass(prompt: str):
     G = np.random.randn(256).astype(np.float32)
     I = G + np.random.normal(scale=0.05, size=256).astype(np.float32)
 
-    modL  = ENGINE.run(I, G, rawL)              # 3-positional-arg API
+    modL  = ENGINE.run(I, G, rawL)              # 3-arg API
     mets  = compare_logits(rawL, modL)
 
     return (
@@ -69,10 +71,10 @@ if __name__ == "__main__":
         "Give me a haiku about entropy.",
         "Summarise Gödel's theorem for a child.",
         "Name three uses of quantum dots.",
-        "Why do leaves change colour?",
+        "Why do leaves change colour?"
     ]
 
-    table = []
+    table: List[List[str]] = []
     for p in prompts:
         _, _, mm, *_ = one_pass(p)
         table.append([
