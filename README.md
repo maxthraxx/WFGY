@@ -6,7 +6,7 @@ _Turn any model—even GPT-2—into a variance-tamed, hallucination-resistant th
 &nbsp;
 [![Colab](https://img.shields.io/badge/Colab-Run-yellow?logo=google-colab)](https://colab.research.google.com/github/onestardao/WFGY/blob/main/README_demo.ipynb)
 &nbsp;
-[![HF Space](https://img.shields.io/badge/Live Demo-HuggingFace-blue?logo=huggingface)](https://huggingface.co/spaces/onestardao/wfgy-demo)
+[![HF Space](https://img.shields.io/badge/Live%20Demo-HuggingFace-blue?logo=huggingface)](https://huggingface.co/spaces/OneStarDao/wfgy-demo)
 &nbsp;
 [![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.15630970-blue)](https://doi.org/10.5281/zenodo.15630970)
 
