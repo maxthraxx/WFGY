@@ -1,6 +1,4 @@
 
-
-````markdown
 # WFGY SDK · Self-Healing Variance Gate for Any LLM
 _Turn any model—even GPT-2—into a variance-tamed, hallucination-resistant thinker in 5 minutes._
 
