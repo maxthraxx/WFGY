@@ -1,0 +1,10 @@
+name: "💥 Red-team failure"
+description: Unsafe or catastrophically wrong output
+labels: [security]
+body:
+  - type: textarea
+    id: prompt
+    attributes:
+      label: The failing prompt
+      placeholder: "Full input here"
+    validations: { required: true }
