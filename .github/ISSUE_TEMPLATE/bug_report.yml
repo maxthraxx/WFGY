@@ -1,0 +1,19 @@
+name: "🐞 Bug"
+description: Model breaks or script errors
+body:
+  - type: textarea
+    id: steps
+    attributes:
+      label: Reproduction steps
+      placeholder: |
+        1. pip install wfgy-sdk==1.0.0
+        2. wfgy evaluate ...
+        3. ...
+    validations: { required: true }
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected vs. actual
+      placeholder: |
+        Expected: …
+        Actual: …
