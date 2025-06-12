@@ -1,9 +1,10 @@
 """
-WFGY full demo – single prompt + small batch metrics + histogram.
-Works on free Colab CPU.  No NumPy-2, no 'show' kwarg.
+WFGY full demo  –  single prompt + batch table + histogram
+Now uses boost = 1.2 and tells BBMC to scale accordingly,
+so the effect is obvious on tiny GPT-2.
 """
 
-import io, random, numpy as np, matplotlib.pyplot as plt
+import io, numpy as np, matplotlib.pyplot as plt
 from PIL import Image
 from tabulate import tabulate
 
@@ -11,47 +12,41 @@ import wfgy_sdk as w
 from wfgy_sdk.evaluator import compare_logits
 from wfgy_sdk.visual    import plot_histogram
 
-import torch
 from transformers import AutoTokenizer, AutoModelForCausalLM, set_seed
-
-# ───────────────────────── config ──────────────────────────
-MODEL = "sshleifer/tiny-gpt2"     # 124 MB
-set_seed(42)
-
+MODEL = "sshleifer/tiny-gpt2"
 tokenizer = AutoTokenizer.from_pretrained(MODEL)
 model     = AutoModelForCausalLM.from_pretrained(MODEL)
+set_seed(42)
 
-engine = w.get_engine()
+ENGINE = w.get_engine()
+BOOST  = 1.2                     # ← bigger gap
+BBMC_SCALE = BOOST               # 1-to-1 for demo clarity
 
-# ───────────────────── helper functions ────────────────────
-def run_wfgy(prompt: str, boost: float = .30):
-    """Return raw txt, mod txt, metrics dict, raw & mod logits."""
+
+def one_pass(prompt: str):
     ids        = tokenizer(prompt, return_tensors="pt").input_ids
     raw_logits = model(ids).logits[0, -1].detach().cpu().numpy()
 
-    # synthetic semantic vectors (demo only)
     G = np.random.randn(256); G /= np.linalg.norm(G)
-    I = G + np.random.normal(scale=boost, size=256)
+    I = G + np.random.normal(scale=BOOST, size=256)
 
-    mod_logits = engine.run(input_vec=I, ground_vec=G, logits=raw_logits)
-    metrics    = compare_logits(raw_logits, mod_logits)
+    mod_logits = ENGINE.run(I, G, raw_logits, bbmc_scale=BBMC_SCALE)
+    m = compare_logits(raw_logits, mod_logits)
 
     raw_txt = prompt + tokenizer.decode(int(raw_logits.argmax()))
     mod_txt = prompt + tokenizer.decode(int(mod_logits.argmax()))
-    return raw_txt, mod_txt, metrics, raw_logits, mod_logits
+    return raw_txt, mod_txt, m, raw_logits, mod_logits
 
 
-def save_hist(fig_name: str, raw_l, mod_l):
-    """Draw histogram and save → PNG for later embedding."""
-    fig = plot_histogram(raw_l, mod_l) or plt.gcf()
-    fig.savefig(fig_name, bbox_inches="tight")
-    plt.close(fig)
+def save_hist(name, rl, ml):
+    fig = plot_histogram(rl, ml) or plt.gcf()
+    fig.savefig(name, bbox_inches="tight"); plt.close(fig)
 
 
-# ─────────────────────── single prompt ─────────────────────
+# ─────────────────── Single prompt ──────────────────────
 prompt = "Describe quantum tunnelling in emojis."
 print("=== Single-Prompt Demo ===")
-r_txt, m_txt, m, r_logits, m_logits = run_wfgy(prompt)
+r_txt, m_txt, m, rl, ml = one_pass(prompt)
 
 print("Prompt           :", prompt)
 print("Raw continuation :", r_txt[len(prompt):])
@@ -59,10 +54,10 @@ print("WFGY continuation:", m_txt[len(prompt):])
 print(f"variance ↓ {(1-m['std_ratio'])*100:.0f}% | "
       f"KL {m['kl_divergence']:.02f} | top-1 {'✔' if m['top1_shift'] else '✘'}")
 
-save_hist("single_hist.png", r_logits, m_logits)
+save_hist("single_hist.png", rl, ml)
 print("[saved → single_hist.png]\n")
 
-# ───────────────────── batch of 5 prompts ──────────────────
+# ───────────────── Batch table (5) ──────────────────────
 prompts = [
     "Explain black holes in one sentence.",
     "Give me a haiku about entropy.",
@@ -73,9 +68,9 @@ prompts = [
 
 rows = []
 for p in prompts:
-    _, _, met, *_ = run_wfgy(p)
+    _, _, met, *_ = one_pass(p)
     rows.append([
-        p[:35] + ("…" if len(p) > 35 else ""),
+        p[:33] + ("…" if len(p) > 33 else ""),
         f"{(1-met['std_ratio'])*100:.0f} %",
         f"{met['kl_divergence']:.02f}",
         "✔" if met["top1_shift"] else "✘"
