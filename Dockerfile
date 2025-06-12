@@ -1,7 +1,4 @@
-Below is a **ready-to-paste Dockerfile** that keeps your original *CPU-only, 35 MB* image size, yet adds an optional CUDA switch for local power-users.
-If you prefer the slim CPU image exactly as before, just delete the *GPU block* comment.
 
-```dockerfile
 #######################################################################
 # Dockerfile — WFGY SDK 1-click inference container (CPU by default)  #
 #   • Build on Hugging-Face Spaces, Colab, or local Docker Desktop.    #
