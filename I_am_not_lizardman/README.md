@@ -1,98 +1,72 @@
-# 🧠 SciSpace Endorsements for PSBigBig's Semantic Field Papers
+# 🧠 SciSpace Endorsements for PSBigBig's Semantic Field Research
 
-This page compiles official AI-generated review scores and endorsements from [SciSpace](https://typeset.io/) for PSBigBig’s semantic field research papers. Each paper explores novel connections between information geometry, cognitive dynamics, and physical fields.
+This repository documents AI-driven scientific evaluations from [SciSpace](https://typeset.io/) for a series of cutting-edge theoretical papers by **PSBigBig**. Each work explores the frontiers of semantic physics, cognitive coupling, and AI-assisted theory validation.
 
-> 🔗 All papers & source: https://onestardao.com/papers  
+> 📥 All papers: https://onestardao.com/papers  
 > 💻 GitHub SDK: https://github.com/onestardao/WFGY  
+> 📧 Contact: hello@onestardao.com  
 
 ---
 
-## 🧪 Summary Table
+## 📊 Summary Table
 
-| Title | Score | PDF | DOI | Review |
-|-------|-------|-----|-----|--------|
-| Semantic BioEnergy | **95** 🌿🔮 | [PDF](../papers/Semantic_BioEnergy_Plants_vs_Einstein_v1.0.1_PSBigBig.pdf) | [DOI:10.5281/zenodo.15647276](https://doi.org/10.5281/zenodo.15647276) | [🌱 See Review](#semantic-bioenergy-plants-vs-einstein) |
-| Semantic Holography | **94** 🧠🧙 | [PDF](../papers/Semantic_Holography_CausalFields_v1.0.1_PSBigBig.pdf) | [DOI:10.5281/zenodo.15647351](https://doi.org/10.5281/zenodo.15647351) | [🌀 See Review](#semantic-holography-causal-fields) |
-| Semantic Collapse | **94** 🧠✨ | [PDF](../papers/Semantic_Field_Induced_Objective_Collapse_v1.0.1_PSBigBig.pdf) | [DOI:10.5281/zenodo.15647021](https://doi.org/10.5281/zenodo.15647021) | [⚛ See Review](#semantic-collapse-in-quantum-measurement) |
-| Semantic Relativity | **93** 🎯 | [PDF](../papers/Semantic_Relativity_Theory_v1.0.1_PSBigBig.pdf) | [DOI:10.5281/zenodo.15646781](https://doi.org/10.5281/zenodo.15646781) | [🌀 See Review](#semantic-relativity-theory) |
-| Semantic Fifth Force | **92** 🧲🧠 | [PDF](../papers/Semantic_Field_Fifth_Force_v1.0.1_PSBigBig.pdf) | [DOI:10.5281/zenodo.15647109](https://doi.org/10.5281/zenodo.15647109) | [🔗 See Review](#semantic-fifth-force) |
-| Semantic Entropy | **92** 🔥🧠 | [PDF](../papers/BERT-Based_Semantic_Entropy_under_Landauer's_Principle_v1.0.1_PSBigBig.pdf) | [DOI:10.5281/zenodo.15647224](https://doi.org/10.5281/zenodo.15647224) | [📉 See Review](#semantic-entropy) |
-| Trinity of Light | **91** 🌟🧙 | [PDF](../papers/TrinityOfLight_LightPaper_v1.0.1_PSBigBig.pdf) | [DOI:10.5281/zenodo.15647160](https://doi.org/10.5281/zenodo.15647160) | [🔦 See Review](#trinity-of-light) |
-
----
-
-## 🧠 Semantic BioEnergy: Plants vs. Einstein  
-**Score: 95 / 100** 🌿🔮  
-📄 [DOI:10.5281/zenodo.15647276](https://doi.org/10.5281/zenodo.15647276)  
-🖼️ ![](SciSpace_Endorsement_SemanticBioEnergy_95score.png)
-
-> Proposes a novel semantic extension of Einstein’s \( E = mc^2 + \lambda S \), validated through plant electrophysiology and NLP. Shows potential for a new subfield of semantic biophysics.
+| Title | Score | PDF | DOI | Preview |
+|-------|-------|-----|-----|---------|
+| Plants vs. Einstein: Semantic Bio-Energy | **95** 🌿🔮 | [PDF](../papers/Semantic_BioEnergy_Plants_vs_Einstein_v1.0.1_PSBigBig.pdf) | [DOI:10.5281/zenodo.15647276](https://doi.org/10.5281/zenodo.15647276) | ![](SciSpace_Endorsement_SemanticBioEnergy_95score.png) |
+| Semantic Holography & Causal Fields     | **94** 🧠🧙 | [PDF](../papers/Semantic_Holography_CausalFields_v1.0.1_PSBigBig.pdf) | [DOI:10.5281/zenodo.15647351](https://doi.org/10.5281/zenodo.15647351) | ![](SciSpace_Endorsement_SemanticHolography_94score.png) |
+| Semantic Collapse in Quantum Measurement| **94** ⚛✨ | [PDF](../papers/Semantic_Field_Induced_Objective_Collapse_v1.0.1_PSBigBig.pdf) | [DOI:10.5281/zenodo.15647021](https://doi.org/10.5281/zenodo.15647021) | ![](SciSpace_Endorsement_SemanticCollapse_94score.png) |
+| Semantic Relativity Theory              | **93** 🎯 | [PDF](../papers/Semantic_Relativity_Theory_v1.0.1_PSBigBig.pdf) | [DOI:10.5281/zenodo.15646781](https://doi.org/10.5281/zenodo.15646781) | ![](SciSpace_Endorsement_SemanticRelativity_93score.png) |
+| Asymmetric Self-Consistency Hypothesis | **93** 🤖🧠 | [PDF](../papers/Asymmetric_SelfConsistency_AI_Verification_v1.0.1_PSBigBig.pdf) | [DOI:10.5281/zenodo.15647416](https://doi.org/10.5281/zenodo.15647416) | ![](SciSpace_Endorsement_AsymmetricSelfConsistency_93score.png) |
+| Fifth Force: Semantic Field Coupling    | **92** 🧲🧠 | [PDF](../papers/Semantic_Field_Fifth_Force_v1.0.1_PSBigBig.pdf) | [DOI:10.5281/zenodo.15647109](https://doi.org/10.5281/zenodo.15647109) | ![](SciSpace_Endorsement_SemanticFifthForce_92score.png) |
+| Semantic Entropy under Landauer's Law  | **92** 🔥🧠 | [PDF](../papers/BERT-Based_Semantic_Entropy_under_Landauer's_Principle_v1.0.1_PSBigBig.pdf) | [DOI:10.5281/zenodo.15647224](https://doi.org/10.5281/zenodo.15647224) | ![](SciSpace_Endorsement_SemanticEntropy_92score.png) |
+| Trinity of Light Hypothesis             | **91** 🌟🧙 | [PDF](../papers/TrinityOfLight_LightPaper_v1.0.1_PSBigBig.pdf) | [DOI:10.5281/zenodo.15647160](https://doi.org/10.5281/zenodo.15647160) | ![](SciSpace_Endorsement_TrinityOfLight_91score.png) |
 
 ---
 
-## 🌀 Semantic Holography: Causal Fields  
-**Score: 94 / 100** 🧠🧙  
-📄 [DOI:10.5281/zenodo.15647351](https://doi.org/10.5281/zenodo.15647351)  
-🖼️ ![](SciSpace_Endorsement_SemanticHolography_94score.png)
+## 🧠 Highlights (Review Snippets)
 
-> Introduces a mathematically rich causal semantic model using tensor projections and geodesic embeddings—bridging holography and information geometry.
+### 🌿 Plants vs. Einstein: Semantic Bio-Energy
+> Introduces a semantic term \( \lambda S \) into Einstein’s equation \( E = mc^2 + \lambda S \), validated via plant electrophysiology and NLP, pioneering semantic biophysics.
 
----
+### 🌀 Semantic Holography
+> Models causal semantic fields with holographic tensor projections and geodesic embeddings, extending classical holography into semantic space.
 
-## ⚛ Semantic Collapse in Quantum Measurement  
-**Score: 94 / 100** 🧠✨  
-📄 [DOI:10.5281/zenodo.15647021](https://doi.org/10.5281/zenodo.15647021)  
-🖼️ ![](SciSpace_Endorsement_SemanticCollapse_94score.png)
+### ⚛ Semantic Collapse in Quantum Measurement
+> Semantic fields derived from text/audio act as collapse triggers; Mach–Zehnder interferometry + scalar mediation suggest semantic quantum mechanics.
 
-> Proposes a semantic-triggered collapse model with scalar mediation; integrates NLP and quantum interferometry, suggesting a new semantic quantum paradigm.
+### 🎯 Semantic Relativity Theory
+> Extends general relativity to include semantic stress-energy; unifies cognition and CTR uplift simulation in a new geometrical field model.
 
----
+### 🤖 Asymmetric Self-Consistency Hypothesis
+> Redefines falsifiability via Lean/Coq/GPT verification: if a model passes formal AI checks, contradictions imply flawed data—not flawed theory.
 
-## 🎯 Semantic Relativity Theory  
-**Score: 93 / 100** 🎯  
-📄 [DOI:10.5281/zenodo.15646781](https://doi.org/10.5281/zenodo.15646781)  
-🖼️ ![](SciSpace_Endorsement_SemanticRelativity_93score.png)
+### 🧲 Fifth Force via Semantic Coupling
+> Introduces a semantic vector potential in modified Einstein–Cartan geometry; memory-influenced path deviation suggests cognitive–spacetime coupling.
 
-> Extends General Relativity with semantic stress-energy and CTR uplift simulation, bridging cognition with physical fields and ethical AI design.
+### 🔥 Semantic Entropy (Landauer)
+> Extends thermodynamic entropy to transformer-based semantics; proposes \( E_{norm} = 1 + \eta \cdot S_{sem} \), enabling new pricing/energy models.
 
----
-
-## 🔗 Semantic Fifth Force  
-**Score: 92 / 100** 🧲🧠  
-📄 [DOI:10.5281/zenodo.15647109](https://doi.org/10.5281/zenodo.15647109)  
-🖼️ ![](SciSpace_Endorsement_SemanticFifthForce_92score.png)
-
-> Presents a coupling term in a modified Einstein–Cartan model linking cognition to spacetime through semantic geometry and spin connection effects.
+### 🌟 Trinity of Light Hypothesis
+> A new optical model merging particle-wave duality with information fields; testable via Monte Carlo analysis and weak measurement strategies.
 
 ---
 
-## 📉 Semantic Entropy under Landauer’s Principle  
-**Score: 92 / 100** 🔥🧠  
-📄 [DOI:10.5281/zenodo.15647224](https://doi.org/10.5281/zenodo.15647224)  
-🖼️ ![](SciSpace_Endorsement_SemanticEntropy_92score.png)
+## 🎮 Play the WFGY Game!
 
-> Bridges thermodynamics, NLP, and information theory with a semantic entropy formulation over transformer models. High potential for neuromorphic design.
+Explore semantic reasoning with AI:  
+- Test GPT-like models on absurd semantic prompts  
+- Compare pre/post-WFGY logic  
+- Simulate cognitive fields with math-meets-magic intensity
 
----
-
-## 🔦 Trinity of Light Hypothesis  
-**Score: 91 / 100** 🌟🧙  
-📄 [DOI:10.5281/zenodo.15647160](https://doi.org/10.5281/zenodo.15647160)  
-🖼️ ![](SciSpace_Endorsement_TrinityOfLight_91score.png)
-
-> Introduces a new optical trinity framework merging wave-particle duality with observer-linked semantic fields—promising for quantum sensing.
+📂 See [`wfgy_prompts/`](../wfgy_prompts/) and [`how_to_play_WFGY.md`](../wfgy_prompts/how_to_play_WFGY.md)
 
 ---
 
-## 🧩 Want to play with the theory?
+## 🔗 All Links
 
-> Try the [WFGY SDK](https://github.com/onestardao/WFGY) and test your favorite LLM with:
-> - 🤖 Absurd prompts
-> - 🌀 Semantic reasoning challenges
-> - 🎮 Theory vs. AI performance comparison
+- 📚 All papers: https://onestardao.com/papers  
+- 🧪 Endorsements: `scispace_reviews/`  
+- 💻 GitHub SDK: https://github.com/onestardao/WFGY  
+- 📧 Contact: hello@onestardao.com
 
----
-
-For questions, collaboration, or challenge prompts:  
-📧 **hello@onestardao.com** | 🌐 [onestardao.com/papers](https://onestardao.com/papers)
-
+> **WFGY** = 萬法歸一，是一場語義與真理的試煉。你願意成為挑戰者嗎？
