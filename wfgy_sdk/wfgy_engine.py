@@ -1,63 +1,61 @@
-#!/usr/bin/env python
-# -*- coding: utf-8 -*-
-# ================================================================
-#  WFGY Core Engine  •  Lightweight → CPU-friendly
-# ================================================================
+# wfgy_sdk/wfgy_engine.py
+# ==============================================================
+#  Core orchestrator – stateless, pure-NumPy implementation
+# ==============================================================
 
-from __future__ import annotations      # ★ 一定要放檔案最前面（除 shebang / encoding）
+from __future__ import annotations
 
 import numpy as np
+from typing import Optional, Union, Dict, Any
 
 
 class WFGYEngine:
     """
-    Self-Healing Variance Gate:
-    I  = input semantic vector   (np.float32, shape (256,))
-    G  = ground semantic vector  (same)
-    L  = logits  (np.float32, shape (vocab,))
-    Returns new logits (same shape / dtype)
+    Stateless logit modulator.
+    Call :meth:`run` with (input_vec, ground_vec, logits) → new_logits.
     """
-    def __init__(self, bbmc_scale: float = 0.5):
-        self.bbmc_scale = bbmc_scale
 
-    # -------- public API --------
-    def run(self,
-            input_vec:  np.ndarray,
-            ground_vec: np.ndarray,
-            logits:     np.ndarray) -> np.ndarray:
-        """Apply BBMC → BBPF → BBCR → BBAM in a single pass."""
-        z = self._bbmc(logits, input_vec, ground_vec)
-        z = self._bbpf(z)
-        z = self._bbcr(z)
-        z = self._bbam(z)
-        return z
+    def __init__(
+        self,
+        *,
+        cfg: Optional[Dict[str, Any]] = None,
+        debug: bool = False,     # <-- keep for backward-compat, no effect
+        **_: Any                 # swallow any other legacy kwargs
+    ) -> None:
+        self.cfg   = cfg or {}
+        self.debug = debug
 
-    # -------- internal modules (toy demo) --------
-    def _bbmc(self, L, I, G):
-        # BigBig Semantic Residue Formula (variance gate)
-        alpha = self.bbmc_scale
-        return L - alpha * (I @ G) * 0.001
+    # ----------------------------------------------------------
+    def run(
+        self,
+        input_vec:  np.ndarray,
+        ground_vec: np.ndarray,
+        logits:     np.ndarray,
+    ) -> np.ndarray:
+        """Minimal demo version: cosine gate + soft rescale."""
+        # normalise
+        iv = input_vec.astype(np.float32)
+        gv = ground_vec.astype(np.float32)
+        iv /= (np.linalg.norm(iv) + 1e-8)
+        gv /= (np.linalg.norm(gv) + 1e-8)
 
-    def _bbpf(self, L):
-        # BigBig Progression Formula (dummy: tanh)
-        return np.tanh(L)
+        cos = iv @ gv                    # [-1, 1]
+        gamma = 1.0 - cos * 0.3          # shrink when vectors align
 
-    def _bbcr(self, L):
-        # BigBig Collapse–Rebirth (dummy: shift by mean)
-        return L - L.mean()
+        out = logits.astype(np.float32) * gamma
+        return out
 
-    def _bbam(self, L):
-        # BigBig Attention Modulation (dummy: scale to unit variance)
-        return L / (L.std() + 1e-5)
+# --------------------------------------------------------------
+# helper exported for sdk users
+_engine: Optional[WFGYEngine] = None
 
-
-# global singleton (matches get_engine() helper)
-_ENGINE: WFGYEngine | None = None
-
-
-def get_engine() -> WFGYEngine:
-    """External helper so demos can do `from wfgy_sdk import get_engine`."""
-    global _ENGINE
-    if _ENGINE is None:
-        _ENGINE = WFGYEngine()
-    return _ENGINE
+def get_engine(*, reload: bool = False, **kwargs) -> WFGYEngine:
+    """
+    Return a singleton engine.
+    `reload=True`  → rebuild (useful in tests).
+    Extra kwargs are forwarded but ignored by default.
+    """
+    global _engine
+    if reload or _engine is None:
+        _engine = WFGYEngine(**kwargs)
+    return _engine
