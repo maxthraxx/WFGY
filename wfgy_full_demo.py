@@ -1,72 +1,85 @@
-"""
-WFGY full demo (CPU-only; 1-click Colab & HF Space)
-Shows single-prompt histogram + batch table.
-"""
-
-import numpy as np, torch, matplotlib.pyplot as plt
+#!/usr/bin/env python
+# WFGY full CLI demo  –  single prompt + batch metrics + histogram
+# ---------------------------------------------------------------
+import os, json, math, random
+import numpy as np
+import matplotlib.pyplot as plt
 from tabulate import tabulate
-from transformers import AutoModelForCausalLM, AutoTokenizer, set_seed
+from transformers import AutoTokenizer, AutoModelForCausalLM, set_seed
+
 from wfgy_sdk import get_engine
-from wfgy_sdk.evaluator import compare_logits   # unchanged helper
+from wfgy_sdk.evaluator import compare_logits, pretty_print, plot_histogram
 
-MODEL   = "sshleifer/tiny-gpt2"
-SEED    = 42
-BOOST   = 1.0          # default demo slider value
-ENGINE  = get_engine() # singleton
+# ---------------------------------------------------------------
+MODEL      = "sshleifer/tiny-gpt2"      # 124 MB checkpoint – works on free Colab CPU
+tokenizer  = AutoTokenizer.from_pretrained(MODEL)
+model      = AutoModelForCausalLM.from_pretrained(MODEL)
+ENGINE     = get_engine()
 
-set_seed(SEED)
-tok = AutoTokenizer.from_pretrained(MODEL)
-mdl = AutoModelForCausalLM.from_pretrained(MODEL)
+# reproducibility
+set_seed(42)
+np.random.seed(42)
+random.seed(42)
 
+# ---------------------------------------------------------------
+def one_pass(prompt: str):
+    """Returns (raw_text, mod_text, metrics_dict, raw_logits, mod_logits)."""
+    toks   = tokenizer(prompt, return_tensors="pt")
+    rawL   = model(**toks).logits[0, -1].detach().cpu().numpy()
 
-def run_once(prompt: str, boost: float = 1.0):
-    inp   = tok(prompt, return_tensors="pt")
-    rawL  = mdl(**inp).logits[0, -1].detach().cpu().float().numpy()
-
-    I = np.random.randn(256).astype(np.float32)
+    # demo-only random semantic vectors
     G = np.random.randn(256).astype(np.float32)
+    I = G + np.random.normal(scale=0.05, size=256).astype(np.float32)
 
-    modL = ENGINE.run(
-        logits=rawL,
-        input_vec=I,
-        ground_vec=G,
-        boost=boost,
-    )
-    m = compare_logits(rawL, modL)
-    return prompt + tok.decode(int(rawL.argmax())), \
-           prompt + tok.decode(int(modL.argmax())), \
-           m, rawL, modL
+    modL  = ENGINE.run(I, G, rawL)          # <-- strictly 3 positional args
+    mets  = compare_logits(rawL, modL)
+
+    raw_txt = prompt + tokenizer.decode(int(rawL.argmax()))
+    mod_txt = prompt + tokenizer.decode(int(modL.argmax()))
+    return raw_txt, mod_txt, mets, rawL, modL
 
 
-# ----- SINGLE PROMPT ------------------------------------------------------- #
-prompt = "Describe quantum tunnelling in emojis."
-raw, mod, metrics, rl, ml = run_once(prompt, BOOST)
+# ---------------------------------------------------------------
+if __name__ == "__main__":
+    # ---------- 1. single-prompt demo ----------
+    print("=== Single-Prompt Demo ===")
+    prompt = "Describe quantum tunnelling in emojis."
+    rtxt, mtxt, m, rl, ml = one_pass(prompt)
 
-print("=== Single-Prompt Demo ===")
-print("Prompt           :", prompt)
-print("Raw continuation :", raw.split(prompt)[-1])
-print("WFGY continuation:", mod.split(prompt)[-1])
-print(f"variance ↓ {int(metrics['var_drop']*100)}% | KL {metrics['kl']:.2f} | top-1 {'✔' if metrics['top1'] else '✘'}")
+    print(f"Prompt           : {prompt}")
+    print(f"Raw continuation : {rtxt[len(prompt):]}")
+    print(f"WFGY continuation: {mtxt[len(prompt):]}")
+    pretty_print(m)
 
-plt.figure(figsize=(6,4))
-plt.hist(rl, bins=90, alpha=.7, label="before")
-plt.hist(ml, bins=90, alpha=.7, label="after")
-plt.legend(); plt.title("Logit Distribution Before vs After WFGY")
-plt.savefig("single_hist.png")
-print("[saved → single_hist.png]")
+    fig = plot_histogram(rl, ml)            # no `show=` arg anymore
+    plt.savefig("single_hist.png")
+    print("[saved → single_hist.png]\n")
 
-# ----- BATCH ---------------------------------------------------------------- #
-batch = [
-    "Explain black holes in one sentence.",
-    "Give me a haiku about entropy.",
-    "Summarise Gödel's theorem for a child.",
-    "Name three uses of quantum dots.",
-    "Why do leaves change colour?"
-]
-table = []
-for p in batch:
-    _, _, m, *_ = run_once(p, BOOST)
-    table.append([p[:30] + "…", f"{int(m['var_drop']*100)} %", f"{m['kl']:+.2f}", "✔" if m['top1'] else "✘"])
+    # ---------- 2. batch metrics ----------
+    print("=== Batch Metrics ===")
+    batch_prompts = [
+        "Explain black holes in one sentence.",
+        "Give me a haiku about entropy.",
+        "Summarise Gödel's theorem for a child.",
+        "Name three uses of quantum dots.",
+        "Why do leaves change colour?"
+    ]
 
-print("\n=== Batch Metrics ===")
-print(tabulate(table, headers=["Prompt", "var ↓", "KL", "top-1"]))
+    rows = []
+    for p in batch_prompts:
+        _, _, mm, _, _ = one_pass(p)
+        rows.append([
+            p[:30] + ("…" if len(p) > 30 else ""),
+            f"{int(mm['var_drop']*100)} %",
+            f"{mm['kl']:.2f}",
+            "✔" if mm['top1'] else "✘"
+        ])
+
+    print(tabulate(rows,
+                   headers=["Prompt", "var ↓", "KL", "top-1"],
+                   tablefmt="github"))
+
+    # reminder
+    print("\nPDF mode – feed I_am_not_lizardman/WFGY_1.0.pdf "
+          "to any chat-LLM and prepend 'Use WFGY:'.\n"
+          "⭐ 10 000 GitHub stars before 2025-08-01 unlocks WFGY 2.0.\n")
