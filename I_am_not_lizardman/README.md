@@ -44,9 +44,6 @@ WFGY_v1.0.1/
 
 WFGY (萬法歸一) is a universal framework for semantic reasoning, error repair, and self-healing in large language models (LLMs). It integrates three core components:
 
-
-WFGY (萬法歸一) is a universal framework for semantic reasoning and self-healing in LLMs, combining four orthogonal modules:
-
 - **BBMC – BigBig Semantic Residue Formula**  
 
   B = I - G + m c^2
@@ -68,10 +65,6 @@ WFGY (萬法歸一) is a universal framework for semantic reasoning and self-hea
 
 
   ã_i = a_i * exp(-γ * σ(a))
-
-
-```
-
 
 
 The WFGY 1.0 paper outlines the full theory and implementation path, while this repository includes:
