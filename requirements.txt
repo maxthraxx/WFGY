@@ -1,9 +1,7 @@
-# WFGY runtime – pinned for reproducible builds
-numpy<2.0                # use quotes so the shell doesn’t treat < as redirection
-torch==2.2.2+cpu           # change to +cu121 etc. if you need CUDA later
+numpy<2.0
+torch==2.2.2+cpu
 transformers==4.41.2
 sentence-transformers==4.1.0
 tabulate
 gradio==4.31.5
 matplotlib
--e .
