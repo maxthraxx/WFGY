@@ -5,9 +5,9 @@ This repo includes **8 groundbreaking papers** evaluated by SciSpace AI and orga
 
 > 📂 Dataset DOI: (to be added)  
 > 💻 SDK: https://github.com/onestardao/WFGY  
-> 📧 Contact: hello@onestardao.com
-> 🔥Prompt Revolution PDF on Zenodo(https://doi.org/10.5281/zenodo.15657017)
-> 🧾 Full checksum file: `SHA256SUMS.txt`
+> 📧 Contact: hello@onestardao.com  
+> 🔥Prompt Revolution PDF on Zenodo(https://doi.org/10.5281/zenodo.15657017)  
+> 🧾 Full checksum file: `SHA256SUMS.txt`  
 
 
 ---
