@@ -8,12 +8,10 @@ import matplotlib.pyplot as plt
 from tabulate import tabulate
 
 
-# ───────────────────────────────────────────────
-# Metrics
-# ───────────────────────────────────────────────
-
+# ──────────────────────────────
+# internal helpers
+# ──────────────────────────────
 def _safe_std(x: np.ndarray) -> float:
-    """Return std, never zero (avoids divide-by-zero)."""
     s = float(np.std(x))
     return s if s > 0 else 1e-12
 
@@ -24,38 +22,43 @@ def softmax(x: np.ndarray) -> np.ndarray:
     return e / e.sum()
 
 
+# ──────────────────────────────
+# main public function
+# ──────────────────────────────
 def compare_logits(old: np.ndarray, new: np.ndarray) -> dict:
-    """
-    Return a metrics dict expected by both the CI test
-    (needs 'std_ratio') and the demo Space (uses 'var_drop').
-    """
-    sr = _safe_std(new) / _safe_std(old)          # std ratio  < 0.7  passes CI
-    var_drop = 1.0 - sr                          # convenience for UI
+    sr = _safe_std(new) / _safe_std(old)          # std ratio (≤ 0.7 passes)
+    var_drop = 1.0 - sr
     p, q = softmax(old), softmax(new)
-    kl = np.sum(p * np.log((p + 1e-8) / (q + 1e-8)))
+    kl_val = float(np.sum(p * np.log((p + 1e-8) / (q + 1e-8))))
     top1_same = int(old.argmax() == new.argmax())
+
     return {
-        "std_ratio": sr,
-        "var_drop": var_drop,
-        "kl": kl,
-        "top1": top1_same,
+        "std_ratio"     : sr,
+        "var_drop"      : var_drop,
+        "kl_divergence" : kl_val,   # name used by CI test
+        "kl"            : kl_val,   # alias for Space UI
+        "top1"          : top1_same,
     }
 
 
+# ──────────────────────────────
+# CLI pretty-print
+# ──────────────────────────────
 def pretty_print(m: dict) -> str:
-    """Github-style table for CLI demo."""
     tbl = tabulate(
-        [[f"{m['std_ratio']:.3f}", f"{m['var_drop']*100:4.1f} %", f"{m['kl']:.3f}", "✔" if m['top1'] else "✘"]],
+        [[f"{m['std_ratio']:.3f}",
+          f"{m['var_drop']*100:4.1f} %",
+          f"{m['kl_divergence']:.3f}",
+          "✔" if m['top1'] else "✘"]],
         headers=["std_ratio", "▼ var", "KL", "Top-1"],
         tablefmt="github",
     )
     return tbl
 
 
-# ───────────────────────────────────────────────
-# Visual
-# ───────────────────────────────────────────────
-
+# ──────────────────────────────
+# histogram
+# ──────────────────────────────
 def plot_histogram(old: np.ndarray, new: np.ndarray, bins: int = 50) -> plt.Figure:
     fig, ax = plt.subplots(figsize=(6, 3.5), dpi=110)
     ax.hist(old, bins=bins, alpha=0.6, label="Raw", log=True)
