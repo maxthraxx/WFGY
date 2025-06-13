@@ -11,7 +11,7 @@ setup(
     python_requires=">=3.10",
     install_requires=[
         "numpy<2.0",
-        "torch==2.2.2+cpu",
+        "torch==2.2.2",
         "transformers==4.41.2",
         "tabulate",
         "matplotlib",
