@@ -1,17 +1,8 @@
-# requirements.txt
-numpy>=1.24
-PyYAML>=6.0
-
-# ↓ This is an example/demo script, can be deleted as needed
-transformers>=4.30.0
-torch>=2.0.0
-sentence_transformers>=2.2.2
-datasets>=2.12.0
-evaluate>=0.4.0
-accelerate>=0.18.0
-tensorboard
-tqdm
-scipy
-click
-requests
-onnx>=1.15.0
+# WFGY runtime – pinned for reproducible builds
+"numpy<2.0"                # use quotes so the shell doesn’t treat < as redirection
+torch==2.2.2+cpu           # change to +cu121 etc. if you need CUDA later
+transformers==4.41.2
+sentence-transformers==4.1.0
+tabulate
+matplotlib
+gradio==4.31.5
