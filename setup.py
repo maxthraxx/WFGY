@@ -50,6 +50,7 @@ setup(
         "click",
         "requests",
         "matplotlib"
+        "tabulate",
     ],
     entry_points={
         "console_scripts": [
