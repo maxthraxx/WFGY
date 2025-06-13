@@ -42,18 +42,29 @@ WFGY_v1.0.1/
 
 ## 📘 What is WFGY?
 
-**WFGY** (萬法歸一) is a unification framework for semantic reasoning, error repair, and self-healing in large language models.
-It defines three core modules:
+WFGY (萬法歸一) is a universal framework for semantic reasoning, error repair, and self-healing in large language models (LLMs). It integrates three core components:
 
-* **Semantic Residue** $\mathcal{B} = I - G + mc^2$
-* **Reasoning Progression** $\nabla_t f(x)^\omega$
-* **Reversal Logic** $\Phi(R)$
+1. **BBMC** – BigBig Meaning Correction:
+\[
+\mathcal{B} = I - G + mc^2
+\]
 
-These modules form a feedback-driven system that enables LLMs to align, amplify, and restructure their outputs across uncertain or evolving tasks.
+2. **BBPF** – BigBig Progression Formula:
+\[
+\text{BBPF}(x, t) = \left( \nabla_t f(x) \right)^{\omega}
+\]
+
+3. **BBPF-R** – Reversal Formula for Collapse Recovery:
+\[
+\text{BBPF-R} = \Phi(R)
+\]
+
+Together, they form a self-healing reasoning system: aligning meaning, amplifying progress, and reversing collapse.
+
 
 The WFGY 1.0 paper outlines the full theory and implementation path, while this repository includes:
 
-* 8 peer-reviewed semantic physics papers
+* 8+1 peer-reviewed semantic physics papers
 * Prompt games and evaluations
 * SDK implementation (see GitHub main repo)
 
@@ -61,25 +72,17 @@ The WFGY 1.0 paper outlines the full theory and implementation path, while this 
 
 ## 🧠 Highlights (Review Snippets from Papers)
 
-### 🌿 Plants vs. Einstein: Semantic Bio-Energy
-
-> Introduces a semantic term $\lambda S$ into Einstein’s equation $E = mc^2 + \lambda S$, validated via plant electrophysiology and NLP, pioneering semantic biophysics.
-
-### 🌀 Semantic Holography
-
-> Models causal semantic fields with holographic tensor projections and geodesic embeddings, extending classical holography into semantic space.
-
-### ⚛ Semantic Collapse in Quantum Measurement
-
-> Semantic fields derived from text/audio act as collapse triggers; Mach–Zehnder interferometry + scalar mediation suggest semantic quantum mechanics.
-
 ### 🎯 Semantic Relativity Theory
 
 > Extends general relativity to include semantic stress-energy; unifies cognition and CTR uplift simulation in a new geometrical field model.
 
-### 🤖 Asymmetric Self-Consistency Hypothesis
+### 🌿 Plants vs. Einstein: Semantic Bio-Energy
 
-> Redefines falsifiability via Lean/Coq/GPT verification: if a model passes formal AI checks, contradictions imply flawed data—not flawed theory.
+> Introduces a semantic term $\lambda S$ into Einstein’s equation $E = mc^2 + \lambda S$, validated via plant electrophysiology and NLP, pioneering semantic biophysics.
+
+### ⚛ Semantic Collapse in Quantum Measurement
+
+> Semantic fields derived from text/audio act as collapse triggers; Mach–Zehnder interferometry + scalar mediation suggest semantic quantum mechanics.
 
 ### 🧲 Fifth Force via Semantic Coupling
 
@@ -89,10 +92,17 @@ The WFGY 1.0 paper outlines the full theory and implementation path, while this 
 
 > Extends thermodynamic entropy to transformer-based semantics; proposes $E_{norm} = 1 + \eta \cdot S_{sem}$, enabling new pricing/energy models.
 
+### 🌀 Semantic Holography
+
+> Models causal semantic fields with holographic tensor projections and geodesic embeddings, extending classical holography into semantic space.
+
 ### 🌟 Trinity of Light Hypothesis
 
-> A new optical model merging particle-wave duality with information fields; testable via Monte Carlo analysis and weak measurement strategies.
+A new optical model merging particle-wave duality with information fields; testable via Monte Carlo analysis and weak measurement strategies.
+ 
+### 🤖 Asymmetric Self-Consistency Hypothesis
 
+> Redefines falsifiability via Lean/Coq/GPT verification: if a model passes formal AI checks, contradictions imply flawed data—not flawed theory.
 ---
 
 ## 🎮 Play the WFGY Game!
