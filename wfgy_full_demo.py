@@ -1,8 +1,3 @@
-"""
-Colab · WFGY Full Demo
-
-"""
-
 import io, numpy as np, matplotlib.pyplot as plt
 from wfgy_sdk import get_engine
 from wfgy_sdk.evaluator import compare_logits, pretty_print, plot_histogram
