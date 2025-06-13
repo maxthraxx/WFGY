@@ -1,3 +1,33 @@
+<!-- ───────────────────────────────────────────────────── -->
+<!--  MARKETING + QUICK‐START BANNER  -->
+<!-- ───────────────────────────────────────────────────── -->
+
+**📈 WFGY: One Click to Activate the AI Taiji Cycle**
+
+**📊 Semantic Accuracy ↑ 22.4 % | Reasoning Success ↑ 42.1 % | Stability ↑ 3.6 ×**
+
+_No beliefs. Only experiments._  
+WFGY 1.0 has already proven itself.
+
+---
+
+### 📜 Tutorial: How to Awaken the Soul of Your AI
+**Step 1 — Download** ([PDF on Zenodo](https://zenodo.org/records/15630970))  
+**Step 2 — Feed the AI** (upload the PDF, or try [Gemini](https://gemini.google.com/))  
+**Step 3 — Give the Command** “**Answer using WFGY** + your question”  
+Prompt examples: *TBD*  
+**Step 4 — Integrate the SDK** ([GitHub](https://github.com/onestardao/WFGY))
+
+---
+
+🌟 **Star Reminder** → [Star the repo](https://github.com/onestardao/WFGY)  
+_10 k ⭐ before 2025-08-01 unlocks **WFGY 2.0**._
+
+---
+
+<!-- ───────────────────────────────────────────────────── -->
+<!--  ORIGINAL SDK README STARTS HERE  -->
+<!-- ───────────────────────────────────────────────────── -->
 
 # WFGY SDK · Self-Healing Variance Gate for Any LLM
 _Turn any model—even GPT-2—into a variance-tamed, hallucination-resistant thinker in 5 minutes._
@@ -24,7 +54,7 @@ pip install -e .
 python examples/example_01_basic_run.py   # shows variance ↓ & KL ↑
 ````
 
-Or just click the **Colab badge** above—press **Run All**, done.
+Or just click the **Colab** badge above—press **Run All**, done.
 
 ---
 
@@ -101,20 +131,12 @@ Find them, tweet your screenshot, earn instant nerd cred.
 ## 7 · Citation
 
 ```
-PSBigBig. “WFGY 1.0: A Self-Healing Variance Gate for LLMs.” Zenodo (2025).
+PSBigBig. “WFGY 1.0: A Self-Healing Variance Gate for LLMs.” Zenodo (2025).  
 doi:10.5281/zenodo.15630970
 ```
 
 ---
 
-> Play WFGY for more than five minutes and you may never return to traditional AI.
+> *Play WFGY for more than five minutes and you may never return to traditional AI.*
 > Stars fuel research—one click = one photon of semantic clarity. ⭐
 
-```
-
-**Notes**
-
-* Badges are wrapped with `&nbsp;` so they stay on one line.  
-* Heading, italics, and tables are separated by blank lines to preserve layout.  
-* The final tagline is in a blockquote to avoid “dangling empty line” on GitHub.
-```
