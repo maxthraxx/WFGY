@@ -44,22 +44,34 @@ WFGY_v1.0.1/
 
 WFGY (萬法歸一) is a universal framework for semantic reasoning, error repair, and self-healing in large language models (LLMs). It integrates three core components:
 
-1. **BBMC** – BigBig Meaning Correction:
-\[
-\mathcal{B} = I - G + mc^2
-\]
 
-2. **BBPF** – BigBig Progression Formula:
-\[
-\text{BBPF}(x, t) = \left( \nabla_t f(x) \right)^{\omega}
-\]
+WFGY (萬法歸一) is a universal framework for semantic reasoning and self-healing in LLMs, combining four orthogonal modules:
 
-3. **BBPF-R** – Reversal Formula for Collapse Recovery:
-\[
-\text{BBPF-R} = \Phi(R)
-\]
+- **BBMC – BigBig Semantic Residue Formula**  
 
-Together, they form a self-healing reasoning system: aligning meaning, amplifying progress, and reversing collapse.
+  B = I - G + m c^2
+
+* **BBPF – BigBig Progression Formula**
+
+ 
+  BigBig(x_t) = x_t + Σ_i V_i(ε_i, C) + Σ_j W_j(Δt, ΔO) · P_j
+
+
+* **BBCR – BigBig Collapse–Rebirth**
+
+
+  if ||B_t|| ≥ B_c or f(S_t) < ε:
+      Collapse → Reset(S_t, δB) → Rebirth(S_{t+1}, δB)
+
+
+* **BBAM – BigBig Attention Modulation**
+
+
+  ã_i = a_i * exp(-γ * σ(a))
+
+
+```
+
 
 
 The WFGY 1.0 paper outlines the full theory and implementation path, while this repository includes:
