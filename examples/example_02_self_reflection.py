@@ -53,6 +53,6 @@ for step in range(3):
     m = compare_logits(logits_before, logits_after)
     print(f"[Round {step}] KL {m['kl_divergence']:.2f} | "
           f"var↓ {(1-m['std_ratio'])*100:.0f}% | "
-          f"top-1 {'✔' if m['top1_shift'] else '✘'}")
+          f"top-1 {'✔' if not m["top1"] else '✘'}")
 
 print("⚠ Larger LLM → stronger variance drop & higher KL.\n")
