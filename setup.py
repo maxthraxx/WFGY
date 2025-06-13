@@ -1,6 +1,3 @@
-"""
-WFGY SDK · setup.py  (only the install_requires list is touched)
-"""
 from setuptools import setup, find_packages
 
 setup(
@@ -13,21 +10,11 @@ setup(
     packages=find_packages(include=["wfgy_sdk", "wfgy_sdk.*"]),
     python_requires=">=3.10",
     install_requires=[
-        "numpy>=1.24",
-        "PyYAML>=6.0",
-        "transformers>=4.30.0",
-        "torch>=2.0.0",
-        "sentence_transformers>=2.2.2",
-        "datasets>=2.12.0",
-        "evaluate>=0.4.0",
-        "accelerate>=0.18.0",
-        "tensorboard",
-        "tqdm",
-        "scipy",
-        "click",
-        "requests",
-        "matplotlib",          # ← NEW (comma kept)
-        "tabulate",            # ← NEW (comma kept)
+        "numpy<2.0",
+        "torch==2.2.2+cpu",
+        "transformers==4.41.2",
+        "tabulate",
+        "matplotlib",
     ],
     entry_points={
         "console_scripts": [
