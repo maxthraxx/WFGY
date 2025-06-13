@@ -27,8 +27,6 @@ This repo includes **8+1 groundbreaking papers** evaluated by SciSpace AI and or
 
 ## 📂 Folder Structure (v1.0.1)
 
-以下是你優化後的 **WFGY\_v1.0.1** 資料夾結構 + 精煉簡介 + Highlight，已整合 WFGY 簡要介紹，文字邏輯一致、社群感清晰，適合用於 GitHub、Zenodo 或 README：
-
 ---
 
 ```plaintext
@@ -37,7 +35,6 @@ WFGY_v1.0.1/
 ├── papers/                      # 8 LaTeX-formatted research papers
 ├── scispace_reviews/           # PNG endorsement screenshots (official reviews)
 ├── wfgy_prompts/               # Prompt game sets (multilingual, WIP)
-├── SHA256SUMS.txt              # Full-file checksum for verification
 └── README.md
 ```
 
