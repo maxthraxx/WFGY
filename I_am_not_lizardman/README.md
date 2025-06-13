@@ -98,11 +98,12 @@ The WFGY 1.0 paper outlines the full theory and implementation path, while this 
 
 ### 🌟 Trinity of Light Hypothesis
 
-A new optical model merging particle-wave duality with information fields; testable via Monte Carlo analysis and weak measurement strategies.
+> A new optical model merging particle-wave duality with information fields; testable via Monte Carlo analysis and weak measurement strategies.
  
 ### 🤖 Asymmetric Self-Consistency Hypothesis
 
 > Redefines falsifiability via Lean/Coq/GPT verification: if a model passes formal AI checks, contradictions imply flawed data—not flawed theory.
+> 
 ---
 
 ## 🎮 Play the WFGY Game!
