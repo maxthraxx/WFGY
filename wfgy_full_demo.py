@@ -1,6 +1,6 @@
 """
 Colab · WFGY Full Demo
-一鍵跑完 → 文字 + 圖表 + Markdown
+
 """
 
 import io, numpy as np, matplotlib.pyplot as plt
