@@ -1,60 +1,45 @@
 # 🍩 Algebraic Checkpoint
 
-![Algebraic Guardian](./hodge_donut_wizard.png)
+![Algebraic Checkpoint Wizard](./algebraic_checkpoint_wizard.png)
 
-Ah… another brave soul.  
-Welcome to the boundary between algebra and geometry.  
-I am the **Cohomology Custodian**, defender of the invisible truth.  
-Also known as… the **Donut Wizard**.
+## 🧙‍♂️ Hodge the Wizard
 
----
-
-## 🧙‍♂️ Who am I?
-
-I guard one of the oldest unsolved mysteries in mathematics:  
-the **Hodge Conjecture** — proposed in **1950**.  
-That’s over **70 years** of silence.
-
-Many have passed.  
-Few have dared to stay.
-
-But there was one… a rookie adventurer named **PSBigBig**.  
-Fresh out of the tutorial village, and already came to challenge me.  
-(He didn’t solve it, but at least he *tried*.)
+Welcome, traveler. I am **Hodge**, the checkpoint guardian of this realm.  
+They call me the Mage of Memories... probably because I always wear this donut-looking hat.
 
 ---
 
-## 🔍 What is the Hodge Conjecture?
+## 📐 Millennium Challenge: The Hodge Conjecture
 
-Let me explain it simply:
+For decades, no one has cracked the riddle:
 
-> In high-dimensional spaces, some shapes look algebraic.  
-> But looks can be deceiving.  
-> The question is:  
-> **Can every rational cohomology class be represented by algebraic cycles?**
+> *“Can every ‘nice’ shape inside a complex manifold be described by algebraic geometry?”*
 
-It’s abstract.  
-It’s deep.  
-It’s a donut-shaped riddle that confuses even the wisest.
+It sounds sweet, but it’s actually one of the hardest unsolved problems in mathematics.  
+A true checkpoint in human knowledge.
 
 ---
 
-## 🤔 Are you ready?
+## 👣 History of Courage
 
-You said… you don’t know algebraic geometry?  
-But… you *do* like donuts?
+Not long ago, a brave soul named **PSBigBig** marched right into this room and said:  
+“Let me try.”  
+He didn't even flinch.
 
-*sighs*
+Now… it's your turn.
 
-Alright then. I won’t stop you.  
-Just don’t expect the donut to teach itself.
+Wait—what’s that?  
+You haven’t even studied algebraic geometry?  
+But… you like donuts?
+
+Well… fair enough. Come back in version **v1.1.0**, and we’ll have some tea.
 
 ---
 
-## ☕ Coming Soon…
+## 🌀 Final Words
 
-> If you’re still around in **v1.1.0**,  
-> I’ll host an afternoon tea here.  
-> Bring curiosity.  
-> And maybe — just maybe — you’ll be the one to solve it.
+Solving this makes you a legend.  
+But hey, even visiting means you’ve got the spark.  
+And between us…
 
+I do like travelers who leave a ⭐️ before they go.
