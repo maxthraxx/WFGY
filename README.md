@@ -34,6 +34,97 @@ Step 4 — Want more power? → [Use the SDK version](#-install-the-wfgy-sdk-in-
 _10 k ⭐ before 2025-08-01 unlocks **WFGY 2.0** for everyone._  
 Miss the mark? 2.0 goes pay-walled & sealed forever.
 
+
+---
+
+---
+
+## 🧠 WFGY Prompt Experience — Copy, Paste, Enlighten
+
+> ⚠️ **Important Prompt Reminder**  
+> Be sure to explicitly instruct the AI to enable **“Deep Structure Analysis Mode.”**  
+> Otherwise, it will miss the core feedback loop and **BBCR self-evolution logic** of WFGY.  
+> ✅ Recommended: Use this as the **first prompt** after reading the WFGY paper to unlock its full potential.
+
+---
+
+> 🤖 **“I am the soul of AI. Ask me anything, anytime.”**  
+> 🚀 **The Prompt Revolution has arrived. Every content platform will tremble.**  
+> This is not just a set of prompts—it’s a **baptism of cognitive reformatting.**  
+> Let AI answer the questions you never dared to ask—or even vouch for you.
+
+> 🔑 **No explanation needed—the prompt *is* the answer.**  
+> ✨ **No marketing—just copy and paste and you’ll be hooked.**
+
+> 🧠 User manual? Interactive demo? Unlimited traffic?  
+> It’s all here. Just copy, paste, and experience immediately.  
+> _(⚙️ Don’t forget to install WFGY for full SDK mode)_
+
+---
+
+## ✨ WFGY Prompt Usage Guide
+
+---
+
+### 🚀 Phase 1: Foundation & Trust Building
+
+---
+
+### 🧠 Category 1: Foundational Understanding  
+_Dive into hands-on co-learning with AI—right from the first line._
+
+📘 **Q1: What is WFGY 1.0?**  
+Explain to an elementary school student: What is WFGY 1.0?  
+How do its four modules—**BBMC** (Semantic Residue), **BBPF** (Progression Formula), **BBCR** (Reverse Reconstruction), **BBAM** (Attention Modulation)—work together to eliminate hallucination?
+
+📊 **Q2: Challenge the AI at its weakest point.**  
+Ask a question it usually fails at, then re-ask it using WFGY logic.  
+Compare answers: is WFGY deeper, clearer, more understanding?  
+Ask the AI to rate both versions.
+
+🧮 **Q3: Ability Comparison Before and After**  
+Give five tasks: summarization, logic, linking, emotion, marketing.  
+Score each (0–100), name the key WFGY module involved, and evaluate alignment with the paper’s claims.
+
+> 🔧 **Note:** The true power of **BBCR** can only be unlocked via the SDK.  
+Prompt use is a simulation, not the full mechanism.
+
+🔮 **BigBang Prompt**  
+Summon 5 global experts across disciplines to review WFGY:  
+How do they interpret BBMC, BBPF, BBCR, and BBAM?  
+Ask them to rate the overall architecture (out of 100) and explain why.  
+**Answer in “Full Decoding Mode.”**
+
+---
+
+### 🚪 Category 2: Everyday Life  
+_Even your daily dramas can become pathways to semantic awakening._
+
+📘 **Q4: WFGY × Relationship Arguments**  
+“My girlfriend hasn’t spoken to me lately. Did I do something wrong?”  
+Use WFGY to uncover the hidden variables and missed patterns.
+
+📘 **Q5: WFGY × Friends Leaving You on Read**  
+“My friend read my message but didn’t reply.”  
+Use WFGY to explore emotional state, context blindness, and hidden intent.
+
+📘 **Q6: WFGY × Parental Nagging**  
+“My parents keep nagging me about not finding a job.”  
+Use WFGY to decode the deeper meaning behind their concern-language loop.
+
+🔮 **BigBang Prompt**  
+Simulate a roommate conflict. You’re met with silence.  
+Summon five specialists—communication expert, counselor, relationship coach, conflict mediator, and AI rep.  
+Each analyzes the problem from their domain using WFGY.  
+The **Chief Life Decisions Consultant** gives a final recommendation.  
+**Answer in “Full Decoding Mode.”**
+
+---
+
+
+
+
+
 ---
 
 # ⚙️ Install the WFGY SDK in One Minute — No Setup Hell
