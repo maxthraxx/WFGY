@@ -36,15 +36,15 @@ Miss the mark? 2.0 goes pay-walled & sealed forever.
 
 ---
 
+> 🔑 **No explanation needed—the prompt *is* the answer.**  
+> ✨ **No marketing—just copy and paste. The effect speaks.**
+
+---
+
 > ⚠️ **Important Prompt Reminder**  
 > Be sure to explicitly instruct the AI to enable **“Deep Structure Analysis Mode.”**  
 > Otherwise, it will miss the core feedback loop and **BBCR self-evolution logic** of WFGY.  
 > ✅ Use this as your **first prompt** after reading the WFGY paper to unlock its full potential.
-
----
-
-> 🔑 **No explanation needed—the prompt *is* the answer.**  
-> ✨ **No marketing—just copy and paste. The effect speaks.**
 
 ---
 
