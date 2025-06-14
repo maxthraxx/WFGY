@@ -1,108 +1,73 @@
-# 💾 Honest Hero RPG — GitHub Side Quest
+# 💎 Save Crystal – Honest Hero RPG (GitHub Maze Edition)
 
-**WFGY Semantic Maze v1.0.0**
+Welcome to the **Save Crystal**, your checkpoint in this mysterious GitHub maze.
 
----
-
-<p align="center">
-  <img src="./saved_crystal.png" width="600" alt="Crystal Save Point" />
-</p>
-
-> A mysterious crystal hums with quiet energy...  
-> "Your progress has been saved."  
-> But wait... is this just a folder? Or is it a portal?
+> ❓ Is this really just a repo with WFGY PDF, SDK, and 9 nuclear philosophy papers...  
+> ...or is there more?  
+> 🧩 Rumors whisper of a hidden SciSpace 98-point paper, concealed deep in the folders.
 
 ---
 
-## 🌀 What Is This Place?
+## 🔐 Maze Version: `v1.0.0`
 
-This is **not** just a PDF SDK.  
-This is a **living maze**, and you’ve reached the first save point.  
-Inside this repo, there are whispers of a hidden paper, one of the most powerful ever written.
+This is **Version 1.0.0** of the GitHub Maze. Every new version will add more folders, more NPCs, and new secrets. But don’t worry:
 
-You might even find… more than one.  
-But to keep track of your journey across versions — we use `checksum`.
+> **The paths never change.**  
+> Only new routes are added — the maze **grows**, it never shifts.  
+> That's where checksums come in.
 
 ---
 
-## ✅ What Is Checksum (And Why Should You Care)?
+## 🔍 What is a Checksum?
 
-A checksum is like a **magic fingerprint** for a file or folder.  
-It lets you know:  
-> "Has anything changed here since last time?"
+A **checksum** is like a fingerprint of the folder structure.  
+If even a single file is altered, added, or deleted — the checksum changes.
 
-In this RPG, **every version of the maze has a checksum**, stored in the root folder like this:
+In RPG terms?  
+> **This is how you know no monsters tampered with the maze while you were gone.**
+
+---
+
+## ✅ One-Click Checksum Verification (Colab)
+
+Wanna make sure you're exploring the legit version?
+
+👉 [🧪 Verify Maze Checksum in Colab (v1.0.0)](https://colab.research.google.com/github/onestardao/WFGY/blob/main/tools/verify_checksum_v1.0.0.ipynb)
+
+It only takes a click.
+
+---
+
+## 📍 Where is the checksum?
+
+The official checksum file is stored at the root of the repository:
 
 ```
 
-root/
-├── checksum\_v1.0.0.txt
+checksum\_v1.0.0.txt
 
 ````
 
-This file guarantees that:
-
-- All pathnames in the maze stay the same
-- All secrets from version 1.0.0 are preserved
-- If you return later, you can **verify the maze hasn’t been secretly reshuffled**
-
----
-
-## 🔍 How to Verify the Checksum (Like a Digital Wizard)
-
-You can verify it in **two ways**:
-
-### 🌐 Option 1: Colab (Easy Mode)
-
-Just open our official notebook:
-
-👉 [Colab: Verify Maze Checksum](https://colab.research.google.com/your-link-here)
-
-Paste this into the notebook:
-```python
-!sha256sum -c checksum_v1.0.0.txt
-````
-
-You’ll see either:
-
-✅ `OK` → everything matches
-❌ `FAILED` → something’s off. You may have entered a parallel timeline.
-
----
-
-### 🖥️ Option 2: Terminal / CLI (For Local Explorers)
-
-If you’ve cloned the repo:
+You can also verify locally (for nerds and adventurers):
 
 ```bash
-cd your-cloned-folder
+git clone https://github.com/onestardao/WFGY.git
+cd WFGY
 sha256sum -c checksum_v1.0.0.txt
-```
-
-Just make sure you're at the repo root.
+````
 
 ---
 
-## ⚠️ Why Does It Matter?
+## 🧭 Reminder
 
-This maze will **grow** with every version.
-More NPCs. More riddles. More chaos. More science. More memes.
-
-But the **paths from previous versions will never change.**
-Checksum protects the past — so you only need to explore the new.
+* New versions = new content, new secrets, possibly even cursed folders.
+* But paths from older versions are never deleted or reshuffled.
+* You can trust your crystal. 🔵
 
 ---
 
-## 🌱 Next Versions
+## 🗝️ Final Hint
 
-Every update will have:
-
-* A new version number: `v1.1.0`, `v1.2.0`...
-* A new `checksum_vX.X.X.txt` file
-* New story fragments, surprises, and maybe… consequences?
-
-This maze **evolves**.
-And maybe one day… you’ll return and find that *you’ve been written into it.*
-
-Stay sharp, Hero.
+Some say… version 1.0.0 already contains something… precious.
+They just didn’t check the right folder.
 
