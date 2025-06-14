@@ -66,7 +66,7 @@ You are now stuck in the footnote dimension.
 &nbsp;  
 &nbsp;  
 &nbsp;  
-&nbsp;  &nbsp;  
+&nbsp;   
 &nbsp;  
 &nbsp;  
 &nbsp;  
@@ -85,7 +85,84 @@ You are now stuck in the footnote dimension.
 &nbsp;  
 &nbsp;  
 &nbsp;  
-&nbsp;  &nbsp;  
+&nbsp;   
+&nbsp;  
+&nbsp;  
+&nbsp;  
+&nbsp;  
+&nbsp;  
+&nbsp;  
+&nbsp;  
+&nbsp;  
+&nbsp;  
+&nbsp;  
+&nbsp;  
+&nbsp;  
+&nbsp;  
+&nbsp;  
+&nbsp;  
+&nbsp;  
+&nbsp;  
+&nbsp;  
+&nbsp;  
+&nbsp;  
+&nbsp;  
+&nbsp;  
+&nbsp;  
+&nbsp;  
+&nbsp;  
+&nbsp;  
+&nbsp;  
+&nbsp;  
+&nbsp;  
+&nbsp;  
+&nbsp;  
+&nbsp;  
+&nbsp;  
+&nbsp;  
+&nbsp;  
+&nbsp;  
+&nbsp;  
+&nbsp;  
+&nbsp;   
+&nbsp;  
+&nbsp;  
+&nbsp;  
+&nbsp;  
+&nbsp;  
+&nbsp;  
+&nbsp;  
+&nbsp;  
+&nbsp;  
+&nbsp;  
+&nbsp;  
+&nbsp;  
+&nbsp;  
+&nbsp;  
+&nbsp;  
+&nbsp;  
+&nbsp;  
+&nbsp;  
+&nbsp;  
+&nbsp;  
+&nbsp;  
+&nbsp;  
+&nbsp;  
+&nbsp;  
+&nbsp;  
+&nbsp;  
+&nbsp;  
+&nbsp;  
+&nbsp;  
+&nbsp;  
+&nbsp;  
+&nbsp;  
+&nbsp;  
+&nbsp;  
+&nbsp;  
+&nbsp;  
+&nbsp;  
+&nbsp;  
 &nbsp;  
 &nbsp;  
 &nbsp;  
@@ -112,12 +189,17 @@ You are now stuck in the footnote dimension.
 
 
 
+🎉 Congratulations, brave one.
 
+To prevent cheating, I — the Trickster Slime King — secretly transformed the PDF into a Zenodo link.
 
----
+You’ve discovered the hidden paper:  
+**BigBig Progression Formula: A Unified Perturbation Framework for Semantic Reasoning and Cognitive Simulation**  
+It’s one of the core WFGY mathematical scrolls.  
+(Yes... each formula will eventually have its own paper.)
 
-🧪 Debug:  
-Some people might try to brute-force this cave...  
-😏 I might have hidden it here after all:  ⠀⠀⠀⠀⠀⠀⠀⠀  
+Take it. Study it.  
+And remember — the more stars you give, the more this game will evolve. 🌟
+
 https://zenodo.org/records/15564318
-
+</sup></sub>
