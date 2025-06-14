@@ -3,6 +3,13 @@
 <!-- ───────────────────────────────────────────────────── -->
 
 # WFGY: One Click to Activate the AI Taiji Cycle
+[![CI](https://github.com/onestardao/WFGY/actions/workflows/ci.yml/badge.svg)](https://github.com/onestardao/WFGY/actions/workflows/ci.yml)
+&nbsp;
+[![Colab](https://img.shields.io/badge/Colab-Run-yellow?logo=google-colab)](https://colab.research.google.com/github/onestardao/WFGY/blob/main/README_demo.ipynb)
+&nbsp;
+[![HF Space](https://img.shields.io/badge/Live%20Demo-HuggingFace-blue?logo=huggingface)](https://huggingface.co/spaces/OneStarDao/wfgy-demo)
+&nbsp;
+[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.15630970-blue)](https://doi.org/10.5281/zenodo.15630970)
 
 **Semantic Accuracy ↑ 22.4 % | Reasoning Success ↑ 42.1 % | Stability ↑ 3.6 ×**
 
