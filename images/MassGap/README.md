@@ -1,6 +1,6 @@
-![YM Wizard](./YM_wizard.png)
-
 # 🧙‍♂️ I Am Yang–Mills, Guardian of the Mass Gap
+
+![YM Wizard](./YM_wizard.png)
 
 So… you’ve made it this far.
 
