@@ -40,8 +40,8 @@ You are now stuck in the footnote dimension.
 
 ---
 
-👉 **[Return to Save Crystal](../../../SaveCrystal/)**  
-*(respawn and rethink your life choices)*
+🔁 Return to the last Save Crystal:  
+👉 [Save_Crystal](../../../../I_am_not_lizardman/papers/save_crystal/README.md)
 
 
 
