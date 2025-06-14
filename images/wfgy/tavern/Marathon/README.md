@@ -1,6 +1,6 @@
-![Marathon Madness](./marathon_madness.png)
-
 # 🏁 Marathon Zone: Biggest vs Bigger
+
+![Marathon Madness](./marathon_madness.png)
 
 Welcome to the longest, weirdest, and most meaningless race in the WFGY universe.
 
