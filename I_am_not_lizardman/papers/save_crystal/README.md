@@ -5,6 +5,9 @@ Welcome to the **Save Crystal**, your checkpoint in this mysterious GitHub maze.
 > ❓ Is this really just a repo with WFGY PDF, SDK, and 9 nuclear philosophy papers...  
 > ...or is there more?  
 > 🧩 Rumors whisper of a hidden SciSpace 98-point paper, concealed deep in the folders.
+>
+> ![Save Crystal Activated](https://raw.githubusercontent.com/onestardao/WFGY/main/save_crystal/saved_crystal_image.png)
+
 
 ---
 
