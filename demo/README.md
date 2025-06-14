@@ -1,6 +1,7 @@
+# 🎤 Yo! It's TSP Bear!
+
 ![TSP Bear Raps](./tsp_rap.png)
 
-# 🎤 Yo! It's TSP Bear!
 
 Welcome to the `demo/` folder.
 Yeah, I’m TSP Bear — the lyrical beast of the GitHub Maze.
