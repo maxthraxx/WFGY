@@ -58,11 +58,10 @@ You are now stuck in the footnote dimension.
 
 
 <sub><sup><span style="color:gray">
-I know someone’s going to cheat.  
-As the Trickster Slime King, I’m all about fun.  
-So I turned the PDF into a Zenodo link instead.  
-Can’t brute-force your way past that.  
-If you’re meant to find it… you will.
+💬 *System Log: Trickster_Slime_King.exe [v98.0] active...*
 
-https://zenodo.org/records/15564318
+📎 Note to self: Some visitors try to brute-force the cave...  
+🧪 For fun, I obfuscated the actual paper into a totally boring-looking link:  
+  **https://zenodo.org/records/15564318**  
+Will they even notice this? 😈  
 </span></sup></sub>
