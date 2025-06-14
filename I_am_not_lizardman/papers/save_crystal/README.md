@@ -1,6 +1,6 @@
 ![Crystal Save Point](./saved_crystal.png)
 
-# 💾 Save Crystal — Maze v1.0.0
+# 💾 Save Crystal — Honest Hero RPG GitHub Maze v1.0.0
 
 Welcome, brave explorer of the WFGY GitHub Maze.
 
