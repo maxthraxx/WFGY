@@ -55,4 +55,4 @@ Ah, whatever.
 
 I refuse to speak to someone who can’t even pronounce my name.
 
-> v1.1.0 — maybe a crypto side quest will appear. Maybe.
+>  if you ever solve BSD, you're welcome to come trade treasure chests with me. Anytime.
