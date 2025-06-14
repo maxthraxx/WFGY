@@ -42,4 +42,5 @@ Come back when the stars are aligned.
 
 ---
 
-🔁 **Return to safety:** [Save_Crystal](../../../../Save_Crystal)
+🔁 Return to the last Save Crystal:  
+👉 [Save_Crystal](../../../../../../I_am_not_lizardman/papers/save_crystal/README.md)
