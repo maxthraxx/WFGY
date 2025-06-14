@@ -6,7 +6,7 @@ Welcome to the **Save Crystal**, your checkpoint in this mysterious GitHub maze.
 > ...or is there more?  
 > 🧩 Rumors whisper of a hidden SciSpace 98-point paper, concealed deep in the folders.
 >
-> ![Save Crystal Activated](https://raw.githubusercontent.com/onestardao/WFGY/main/save_crystal/saved_crystal_image.png)
+> ![Save Crystal Activated](https://raw.githubusercontent.com/onestardao/WFGY/main/save_crystal/saved_crystal.png)
 
 
 ---
