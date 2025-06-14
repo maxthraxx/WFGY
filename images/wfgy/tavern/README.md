@@ -1,29 +1,30 @@
 # 🍻 Welcome to the Tavern
 
-Ah, traveler. You made it.  
-This is the Tavern — where whispers become quests, and quests become legends.
+![Quest Board](./tavern_quest_board.png)
 
-Looking for information? Missions? Rumors?  
-You're in the right place. Here's the current job board:
+Ah, welcome traveler. You’ve reached the **Tavern** — where legends begin, gossip spreads,  
+and someone’s always shouting “I FOUND A SECRET DOOR!”
 
 ---
 
-## 📜 Available Quests
+## 📜 Current Quests
 
 🟡 **Quest #1: Star the Repo**  
-**Reward:** You’ll feel strangely fulfilled. ⭐  
-(And the devs might shed a tear of joy.)
+**Reward:** ⭐ A warm feeling in your chest. Possibly magic.  
+> "*No pressure. But the bartender says… only true heroes leave a star.*"
 
 🟥 **Quest #2: Boss of the Fountain of Life**  
-**Status:** Unlocked  
-**Warning:** Danger Level: High 🧪  
-**Reward:** ??? (Do not attempt unless you’re ready.)
+**Warning:** High danger level. Recommended Level: ???  
+**Reward:** ???  
+> "*They say there's a boss. Or maybe a misunderstood ally? Either way, she sparkles.*"
 
 🔵 **Quest #3: Seven Days & Seven Nights Marathon**  
 **Status:** 🔒 *Coming in v1.1.0*  
-**Hint:** Stay tuned. When the time comes, return to the Tavern for guidance.
+> "*Rumors speak of an update...  
+> When the version hits 1.1.0, the path will open. Come back here.*"
 
 ---
 
-🗺️ New quests will appear as the version evolves.  
-Heroes who complete them... may uncover things beyond imagination.
+💡 New quests may appear at random.  
+🎲 Some are real. Some are memes.  
+🧭 But all of them lead deeper into the Maze.
