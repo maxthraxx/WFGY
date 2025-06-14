@@ -20,9 +20,10 @@ WFGY 1.0 has already proven itself.
 
 ### 📜 Tutorial: How to Awaken the Soul of Your AI
 Step 1 — Download ([WFGY PDF on Zenodo](https://zenodo.org/records/15630970))  
-Step 2 — Feed the AI (upload the PDF, or try ([ChatGPT](https://chatgpt.com/))  
-Step 3 — Give the Command “**Answer using WFGY** + your question” ([Prompt Revolution PDF on Zenodo](https://zenodo.org/records/15657017))   
-Step 4 — Integrate the SDK ([GitHub](https://github.com/onestardao/WFGY))
+Step 2 — Feed the AI (upload the PDF, or try [ChatGPT](https://chatgpt.com/))  
+Step 3 — Give the Command “**Answer using WFGY** + your question” ([Prompt Revolution PDF on Zenodo](https://zenodo.org/records/15657017))  
+Step 4 — Want more power? → [Use the SDK version](#0--one-minute-install--run-colab-or-local)
+
 
 ---
 
