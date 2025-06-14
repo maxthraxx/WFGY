@@ -2,7 +2,7 @@
 <!--  MARKETING + QUICK‐START BANNER  -->
 <!-- ───────────────────────────────────────────────────── -->
 
-# WFGY: One Click to Activate the AI Taiji Cycle
+# WFGY: One Click to Activate Self-Healing Variance Gate for Any LLM
 [![CI](https://github.com/onestardao/WFGY/actions/workflows/ci.yml/badge.svg)](https://github.com/onestardao/WFGY/actions/workflows/ci.yml)
 &nbsp;
 [![Colab](https://img.shields.io/badge/Colab-Run-yellow?logo=google-colab)](https://colab.research.google.com/github/onestardao/WFGY/blob/main/README_demo.ipynb)
@@ -27,28 +27,14 @@ Step 4 — Integrate the SDK ([GitHub](https://github.com/onestardao/WFGY))
 ---
 
 ### 🌟 Star Reminder → [Star the repo](https://github.com/onestardao/WFGY)  
-_10 k ⭐ before 2025-08-01 unlocks **WFGY 2.0**._
-
+_10 k ⭐ before 2025-08-01 unlocks **WFGY 2.0** for everyone._
+Miss the mark? 2.0 goes pay-walled & sealed forever.
 
 ---
 
 <!-- ───────────────────────────────────────────────────── -->
 <!--  ORIGINAL SDK README STARTS HERE  -->
 <!-- ───────────────────────────────────────────────────── -->
-
-# WFGY SDK · Self-Healing Variance Gate for Any LLM
-_Turn any model—even GPT-2—into a variance-tamed, hallucination-resistant thinker in 5 minutes._
-
-[![CI](https://github.com/onestardao/WFGY/actions/workflows/ci.yml/badge.svg)](https://github.com/onestardao/WFGY/actions/workflows/ci.yml)
-&nbsp;
-[![Colab](https://img.shields.io/badge/Colab-Run-yellow?logo=google-colab)](https://colab.research.google.com/github/onestardao/WFGY/blob/main/README_demo.ipynb)
-&nbsp;
-[![HF Space](https://img.shields.io/badge/Live%20Demo-HuggingFace-blue?logo=huggingface)](https://huggingface.co/spaces/OneStarDao/wfgy-demo)
-&nbsp;
-[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.15630970-blue)](https://doi.org/10.5281/zenodo.15630970)
-
-> **Goal → 10 000 ★ before July 1** unlocks **WFGY 2.0** for everyone.  
-> Miss the mark? 2.0 goes pay-walled & sealed forever.
 
 ---
 
