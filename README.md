@@ -33,9 +33,7 @@ Miss the mark? 2.0 goes pay-walled & sealed forever.
 
 ---
 
-<!-- ───────────────────────────────────────────────────── -->
-## ⚙️ Install the WFGY SDK in One Minute — No Setup Hell
-<!-- ───────────────────────────────────────────────────── -->
+# ⚙️ Install the WFGY SDK in One Minute — No Setup Hell
 
 ---
 
