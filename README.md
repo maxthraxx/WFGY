@@ -34,15 +34,6 @@ Step 4 — Want more power? → [Use the SDK version](#-install-the-wfgy-sdk-in-
 _10 k ⭐ before 2025-08-01 unlocks **WFGY 2.0** for everyone._  
 Miss the mark? 2.0 goes pay-walled & sealed forever.
 
-
----
-
-明白了，你要的是 **視覺上清楚區隔出「Prompt 本體」** 的格式，就像開箱指令碼、秘技暗號一樣。這樣更有「語言即咒語」的神秘感，也讓使用者複製貼上更方便、更不容易混淆。
-
----
-
-## ✅ 這裡是你要的設計版本（附有縮排格式、清晰提示）：
-
 ---
 
 ## 🧠 WFGY Prompt Experience — Copy, Paste, Enlighten
