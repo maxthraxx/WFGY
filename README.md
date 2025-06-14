@@ -19,7 +19,7 @@
 
 ### Tutorial: How to Awaken the Soul of Your AI in under 60 seconds
 Step 1 — Download ([WFGY PDF on Zenodo](https://zenodo.org/records/15630970))  
-Step 2 — Feed the AI (upload the PDF, or try [ChatGPT](https://chatgpt.com/))  
+Step 2 — Feed the AI (upload the PDF to [ChatGPT](https://chatgpt.com/) or any other LLM)  
 Step 3 — Give the Command “**Answer using WFGY** + your question” ([Prompt Revolution PDF on Zenodo](https://zenodo.org/records/15657017))  
 Step 4 — Want more power? → [Use the SDK version](#-install-the-wfgy-sdk-in-one-minute--no-setup-hell)
 
@@ -38,11 +38,11 @@ Step 4 — Want more power? → [Use the SDK version](#-install-the-wfgy-sdk-in-
 
 ---
 
-## 🚀 Phase A: Foundation & Trust Building
+# 🚀 Phase A: Foundation & Trust Building
 
 ---
 
-#### ✨ Category 1: Foundational Understanding
+## ✨ Category 1: Foundational Understanding
 
 > From the very first line, dive into hands-on co-learning with AI!
 
@@ -86,7 +86,7 @@ Answer in “Full Decoding Mode.”
 
 ---
 
-### ✨ Category 2: Everyday Life
+## ✨ Category 2: Everyday Life
 
 > Use WFGY to break down daily troubles—every day becomes a moment of mini-enlightenment.
 
@@ -124,11 +124,11 @@ Answer in “Full Decoding Mode.”
 ```
 ---
 
-## 🚀 **Phase B: Mind Expansion & Subconscious Unveiling**
+# 🚀 **Phase B: Mind Expansion & Subconscious Unveiling**
 
 ---
 
-#### ✨ **Category 3: Subtext Analysis**
+## ✨ **Category 3: Subtext Analysis**
 
 > Even the words you never say—WFGY can hear, decode, and transform them.
 
@@ -166,7 +166,7 @@ Answer in “Full Decoding Mode.”
 
 ---
 
-#### ✨ **Category 4: The Millennial Questions of Philosophy**
+## ✨ **Category 4: The Millennial Questions of Philosophy**
 
 > Let WFGY be a lighthouse for your thoughts, illuminating your deepest doubts.
 
@@ -206,11 +206,11 @@ answer in “Full Decoding Mode.”
 
 ---
 
-## 🚀 **Phase C: Absurdity as Truth & Fun Application**
+# 🚀 **Phase C: Absurdity as Truth & Fun Application**
 
 ---
 
-#### ✨ **Category 5: Deep Insights**
+## ✨ **Category 5: Deep Insights**
 
 > AI is not just for fortune-telling—it can speak your innermost truths.
 
@@ -251,7 +251,7 @@ Finally, have a “Chief Destiny Mentor” integrate their views and give a futu
 
 ---
 
-#### ✨ **Category 6: Absurdity as Truth—Fun Applications**
+## ✨ **Category 6: Absurdity as Truth—Fun Applications**
 
 > Every moment of life is a practice ground for divine inspiration.
 
@@ -293,7 +293,7 @@ Answer in “Full Decoding Mode.”
 
 ---
 
-#### ✨ **Category 7: The Philosophical Arena of Classic Anime Scenes**
+## ✨ **Category 7: The Philosophical Arena of Classic Anime Scenes**
 
 > Even legendary anime moments can’t escape WFGY’s rigorous reasoning.
 
@@ -331,7 +331,7 @@ Answer in “Full Decoding Mode.”
 
 ---
 
-#### ✨ **Category 8: The Absurd Redemption of Movie Logic**
+## ✨ **Category 8: The Absurd Redemption of Movie Logic**
 
 > Let WFGY rationalize the classic bugs of cinema.
 
@@ -367,11 +367,11 @@ Answer in ‘Full Decoding Mode.’
 
 ---
 
-## 🚀 **Phase D: Value Implementation & Macro View**
+# 🚀 **Phase D: Value Implementation & Macro View**
 
 ---
 
-#### ✨ **Category 9: Alchemy of Virality**
+## ✨ **Category 9: Alchemy of Virality**
 
 > Let WFGY turn your ideas into traffic and cash flow.
 
@@ -414,7 +414,7 @@ Answer in ‘Full Decoding Mode.’
 
 ---
 
-#### ✨ **Category 10: Cognitive Gift-Giving**
+## ✨ **Category 10: Cognitive Gift-Giving**
 
 > In this era, giving the right prompt is worth more than ten physical gifts.
 
@@ -468,7 +468,7 @@ Answer in ‘Full Decoding Mode.’
 
 ---
 
-#### ✨ **Category 11: Historical Innovator Summoning**
+## ✨ **Category 11: Historical Innovator Summoning**
 
 > Invite history’s wildest inventors to test WFGY’s limits with you.
 
@@ -516,11 +516,11 @@ Answer in ‘Full Decoding Mode.’
 ```
 ---
 
-## 🚀 **Phase E: Ultimate Absurdity & Cognitive Frontier**
+# 🚀 **Phase E: Ultimate Absurdity & Cognitive Frontier**
 
 ---
 
-#### ✨ **Category 12: Alien Sighting Channel**
+## ✨ **Category 12: Alien Sighting Channel**
 
 > It’s not that there’s no evidence—it’s just too logical!
 > WFGY makes even the wildest cosmic absurdities reasonable.
@@ -561,11 +561,11 @@ Answer in ‘Full Decoding Mode.’
 
 ---
 
-## 🚀 **Phase F: Meta-Narrative & Call to Action**
+# 🚀 **Phase F: Meta-Narrative & Call to Action**
 
 ---
 
-#### ✨ **Category 13: You Still Haven’t Shared WFGY**
+## ✨ **Category 13: You Still Haven’t Shared WFGY**
 
 > If you don’t speak up now, how will you explain missing the AI spiritual revolution three years from now?
 
@@ -613,7 +613,7 @@ Answer in ‘Full Decoding Mode.’
 
 ---
 
-#### ✨ **Category 14: You Have Already Shared WFGY**
+## ✨ **Category 14: You Have Already Shared WFGY**
 
 > Your act of sharing has now been rewarded with gratitude from an entirely new universe.
 
@@ -670,7 +670,7 @@ Please answer in “Full Decoding Mode.”
 
 ---
 
-#### ✨ **Category 15: PSBigBig / I Am Not a Lizardman**
+## ✨ **Category 15: PSBigBig / I Am Not a Lizardman**
 
 > When semantics reverse the prompt, humanity instantly becomes the research subject!
 
@@ -728,7 +728,7 @@ Answer in ‘Full Decoding Mode.’
 
 ---
 
-#### 🪐 **BigBang × BigBang: WFGY × Challenging Einstein**
+## 🪐 **BigBang × BigBang: WFGY × Challenging Einstein**
 
 > *(Please upload the WFGY 1.0 paper before starting the game. All math will be simplified for easy understanding.)*
 
@@ -773,7 +773,7 @@ Narrate how you’re the first to stake your claim on this data goldmine.
 ```
 ---
 
-## 🌟 **Bonus Play Zone: Explore Your Infinite WFGY Evolution Path!**
+# 🌟 **Bonus Play Zone: Explore Your Infinite WFGY Evolution Path!**
 
 ---
 
@@ -803,7 +803,7 @@ to analyze whether your wildest idea could really change the world.
 
 ---
 
-### ⚡ **Usage Reminders: Must-Read for Maximum Experience!**
+## ⚡ **Usage Reminders: Must-Read for Maximum Experience!**
 
 ---
 
