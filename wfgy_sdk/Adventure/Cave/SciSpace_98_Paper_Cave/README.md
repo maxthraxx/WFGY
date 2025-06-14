@@ -57,11 +57,10 @@ You are now stuck in the footnote dimension.
 
 
 
-<sub><sup><span style="color:gray">
-💬 *System Log: Trickster_Slime_King.exe [v98.0] active...*
+---
 
-📎 Note to self: Some visitors try to brute-force the cave...  
-🧪 For fun, I obfuscated the actual paper into a totally boring-looking link:  
-  **https://zenodo.org/records/15564318**  
-Will they even notice this? 😈  
-</span></sup></sub>
+###### System Log:
+Some visitors try to brute-force the cave...
+For fun, I obfuscated the actual paper into a boring-looking link:
+
+https://zenodo.org/records/15564318
