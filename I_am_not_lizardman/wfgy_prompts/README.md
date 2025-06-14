@@ -1,9 +1,9 @@
-# WFGY SDK v1.0.0
+# WFGY v1.0.0
 
-This is the first official snapshot of the WFGY SDK.
+This is the first official snapshot of the WFGY.
 
 All source code and configuration files are preserved in this archive for reproducibility and verification.  
-A SHA-256 checksum file (`SHA256SUMS.txt`) is included for content integrity.
+A SHA-256 checksum file (`checksum_v1.0.0.txt`) is included for content integrity.
 
 📄 Prompt Revolution (PDF): [https://doi.org/10.5281/zenodo.15657017](https://doi.org/10.5281/zenodo.15657017)
 
