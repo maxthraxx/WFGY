@@ -1,4 +1,4 @@
-![You Shouldn't Have Opened This](./DS_boss_warning.png)
+![You Shouldn't Have Opened This](./DS_Boss.png)
 
 # 💀 You Opened the Door
 
