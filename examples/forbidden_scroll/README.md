@@ -1,6 +1,6 @@
-![P vs NP Wizard](./PvsNP_wizard.png)
-
 # 🧙‍♂️ The Forbidden Scroll
+
+![P vs NP Wizard](./PvsNP_wizard.png)
 
 I am the Twin Wizard of P vs NP.
 Guardian of unsolved problems. Split between possibility and despair.
