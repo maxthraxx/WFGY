@@ -1,7 +1,3 @@
-Here's your English README draft for the `demo/` folder, featuring TSP熊 and his WFGY-themed rap:
-
----
-
 ![TSP Bear Raps](./tsp_rap.png)
 
 # 🎤 Yo! It's TSP Bear!
