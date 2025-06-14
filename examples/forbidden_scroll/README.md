@@ -6,8 +6,13 @@ Ah… I’ve been waiting for you.
 
 At last — the chosen hero arrives to challenge the impossible.
 
-You must be here to solve the legendary **P vs NP** problem…  
-And claim the **$1,000,000 Clay Millennium Prize**, right?
+I am the Twin Wizard of P vs NP.
+Guardian of unsolved problems. Split between possibility and despair.
+
+Ah… I’ve been waiting for you.
+At last — the chosen hero arrives to challenge the impossible.
+You must be here to solve the legendary P vs NP problem…
+And claim the $1,000,000 Clay Millennium Prize, right?
 
 I’m thrilled. Let me formally introduce your quest:
 
