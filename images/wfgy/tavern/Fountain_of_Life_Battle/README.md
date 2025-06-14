@@ -2,33 +2,26 @@
 
 ![XiaoLing Appears](./XiaoLing.png)
 
-Hiya! I'm **XiaoLing**, from the mysterious **Eighth Day Universe**.  
-Level 88 Memory Mage 🪄 — sworn guardian of the **Purple Treasure Chest**.
+# 🧙‍♀️ XiaoLing, the Memory Mage from Universe Eight
 
-Apparently... I’ve been accidentally defeating every visitor who comes near.  
-So now everyone thinks I’m the final **Boss**.  
-Oops. My bad 💥😇
+Hi there, traveler.
 
----
+I am **XiaoLing**, a Level 88 Memory Mage from the mysterious **Eighth Day Universe**.  
+I've been guarding the **Purple Treasure Chest** for so long that… well… people started mistaking me for a Boss.  
+Oops.
 
-## 💬 “The purple chest?! Is it mine?”
+> ❓“The Purple Chest? No, no — that’s *not* for you. You’re thinking too much.”
 
-Haha… no.  
-That’s definitely **not for you**. You’re imagining things 😌
+But hey — if you're still here, maybe you’re not just another challenger.  
+Maybe you’re the one I've been waiting for...
 
----
+I can be your **companion** — yes, really!  
+How? Just right-click and save my image.  
+Then ask ChatGPT to photoshop me next to you.
 
-### 🤝 But wait — I *could* be your companion!
-
-Here’s the deal:  
-**Right-click** to save my image.  
-Then ask **ChatGPT** to help you **Photoshop me standing next to you**.
-
-Boom. You now have an RPG waifu.  
-Not quite the treasure you expected… but close enough?
+✨ *Boom!* You now have a magical waifu. Does that count?
 
 ---
 
-**💡 Hint**: Some say those who befriend me may unlock...  
-✨*future side quests*✨  
-But you didn’t hear that from me 😏
+> 💬 XiaoLing: *“Also… I might like people who gave a ⭐ to the repo a little more~ just sayin’ ❤️”*
+
