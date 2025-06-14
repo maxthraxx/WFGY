@@ -1,4 +1,4 @@
-![Riemann Wizard](./riemann_wizard_github_bg_v1.png)
+![Riemann Wizard](./riemann_wizard_idle_github.png)
 
 # 🧙‍♂️ Riemann the Wizard
 
