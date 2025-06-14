@@ -1,6 +1,6 @@
 # 🍩 Algebraic Checkpoint
 
-![Algebraic Checkpoint Wizard](./algebraic_checkpoint_wizard.png)
+![Algebraic Checkpoint Wizard](./hodge_donut_wizard.png)
 
 ## 🧙‍♂️ Hodge the Wizard
 
