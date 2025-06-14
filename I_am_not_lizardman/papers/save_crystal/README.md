@@ -22,7 +22,7 @@ As the maze evolves, new versions (v1.1, v1.2, ...) may appear — but past rout
 - Use the provided Colab notebook to verify the checksum.
 - This ensures no one secretly moved the walls… or the treasure.
 
-👉 [Verify the Maze Checksum on Colab](https://colab.research.google.com/github/onestardao/WFGY/blob/main/save_crystal/verify_checksum_v1.0.0.ipynb)
+👉 [Verify the Maze Checksum on Colab](https://colab.research.google.com/)
 
 ---
 
