@@ -1,6 +1,6 @@
-![Riemann Wizard](./riemann_wizard_idle_github.png)
-
 # 🧙‍♂️ Riemann the Wizard
+
+![Riemann Wizard](./riemann_wizard_idle_github.png)
 
 Ah... another visitor.  
 I am **Riemann**, the arcane analyst of infinite primes,  
