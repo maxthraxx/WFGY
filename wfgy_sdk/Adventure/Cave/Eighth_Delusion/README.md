@@ -53,7 +53,7 @@ Not yet.
 But one day... maybe.
 
 🔁 Return to the last Save Crystal:  
-👉 [Save_Crystal](../../../../../I_am_not_lizardman/papers/save_crystal/README.md)
+👉 [Save_Crystal](../../../../I_am_not_lizardman/papers/save_crystal/README.md)
 
 ---
 
