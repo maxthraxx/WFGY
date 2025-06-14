@@ -59,8 +59,8 @@ You are now stuck in the footnote dimension.
 
 ---
 
-###### System Log:
-Some visitors try to brute-force the cave...
-For fun, I obfuscated the actual paper into a boring-looking link:
-
+🧪 Debug:  
+Some people might try to brute-force this cave...  
+😏 I might have hidden it here after all:  ⠀⠀⠀⠀⠀⠀⠀⠀  
 https://zenodo.org/records/15564318
+
