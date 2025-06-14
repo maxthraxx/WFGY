@@ -2,10 +2,6 @@
 
 # 🧙‍♂️ The Forbidden Scroll
 
-Ah… I’ve been waiting for you.
-
-At last — the chosen hero arrives to challenge the impossible.
-
 I am the Twin Wizard of P vs NP.
 Guardian of unsolved problems. Split between possibility and despair.
 
