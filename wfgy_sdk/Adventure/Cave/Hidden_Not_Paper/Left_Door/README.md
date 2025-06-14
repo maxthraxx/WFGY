@@ -33,7 +33,7 @@ A real report compiled by PSBigBig during the hardest chapter of Honest Hero RPG
 
 ---
 
-📦 [Open the artifact here](./AI_Image_Hallucination_4592_Trial.pdf)
+📦 [Open the artifact here](./RoarAgainstAI_BigBig_4592.pdf)
 
 🖼️ *Image: Grape Hero defeating the enemy and celebrating beside the glowing chest (GrapeHero_Wins_MinionBattle.png)*
 
