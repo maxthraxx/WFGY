@@ -1,8 +1,6 @@
-# 🍇 Hidden_In_Plain_Sight/
+## 🍷 Hey there, brave traveler...
 
 ![GrapeHero](./GrapeHero.png)
-
-## 🍷 Hey there, brave traveler...
 
 I am **GrapeSeed ScaleBlade** — legendary warrior of 🍇 *Fruitonia* and part-time salad topping.  
 People call me the 🛡️ *Juicy Guardian*, and I'm here to help you survive the chaos ahead!
