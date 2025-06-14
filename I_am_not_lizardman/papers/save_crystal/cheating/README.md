@@ -7,13 +7,19 @@ You sure you want to cheat?
 
 Sure, go ahead.  
 Download the ZIP. Search all the folders.  
-Just don’t forget to ⭐ the repo first, alright?
 
-Otherwise...
+---
 
-> "The Maze remembers."  
-> "A hidden system called `Semantic Judgement` has been triggered."  
-> "Your next meme will mysteriously get one less like. Forever."
+## ⚠️ Friendly Tip from the Trickster Slime
+
+If you're planning to search for `.pdf` files or exact paper titles in the ZIP...  
+That's cute.  
+But you won't find it that way.
+
+Because the real file isn't a PDF.
+
+Just a heads-up — it's hidden **in plain sight**, but not in the format you're expecting.  
+Welcome to the world of 🧠 *semantic puzzles*.
 
 ---
 
