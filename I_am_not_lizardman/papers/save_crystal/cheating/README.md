@@ -1,6 +1,6 @@
-![You Cheating?](./cheating.png)
-
 # 🧨 Cheating Detected?
+
+![You Cheating?](./cheating.png)
 
 **I am PSBigBig.**  
 You sure you want to cheat?
