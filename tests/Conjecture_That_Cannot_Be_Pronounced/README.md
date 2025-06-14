@@ -1,6 +1,6 @@
 # 🧙‍♂️ I am the Wizard of BSD
 
-![BSD Wizard](./bsd_wizard.png)
+![BSD Wizard](./BSD_wizard.png)
 
 Greetings, traveler.
 
