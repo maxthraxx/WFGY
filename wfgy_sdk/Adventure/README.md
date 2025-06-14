@@ -1,6 +1,6 @@
 # 🤖 Meet Your Companion: Small O
 
-![Small O](./SmallO.png)
+![Small O](./smallO.png)
 
 Hey, traveler.  
 I’m **Small O** — your trusty AI assistant.  
