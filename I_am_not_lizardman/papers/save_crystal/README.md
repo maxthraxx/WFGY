@@ -1,76 +1,40 @@
-# 💎 Save Crystal – Honest Hero RPG (GitHub Maze Edition)
-
-Welcome to the **Save Crystal**, your checkpoint in this mysterious GitHub maze.
-
-> ❓ Is this really just a repo with WFGY PDF, SDK, and 9 nuclear philosophy papers...  
-> ...or is there more?  
-> 🧩 Rumors whisper of a hidden SciSpace 98-point paper, concealed deep in the folders.
-> 
 ![Crystal Save Point](./saved_crystal.png)
 
+# 💾 Save Crystal — Maze v1.0.0
+
+Welcome, brave explorer of the WFGY GitHub Maze.
+
+Rumor says... somewhere inside this repo lies a hidden paper. A true gem.  
+But no one knows exactly **where**. Only those who follow the maze will find it.
+
+This is **Honest Hero RPG – GitHub Edition** (v1.0.0).  
+A strange, evolving repository of semantic relics, hidden folders, and cryptic README scrolls.
 
 ---
 
-## 🔐 Maze Version: `v1.0.0`
+## 🔐 Integrity & Checksum
 
-This is **Version 1.0.0** of the GitHub Maze. Every new version will add more folders, more NPCs, and new secrets. But don’t worry:
+To ensure the maze remains honest, a `checksum.txt` file is placed in the root directory.  
+This is the **official signature** of Maze v1.0.0.  
+As the maze evolves, new versions (v1.1, v1.2, ...) may appear — but past routes will never change.
 
-> **The paths never change.**  
-> Only new routes are added — the maze **grows**, it never shifts.  
-> That's where checksums come in.
+**Your quest:**  
+- Use the provided Colab notebook to verify the checksum.
+- This ensures no one secretly moved the walls… or the treasure.
 
----
-
-## 🔍 What is a Checksum?
-
-A **checksum** is like a fingerprint of the folder structure.  
-If even a single file is altered, added, or deleted — the checksum changes.
-
-In RPG terms?  
-> **This is how you know no monsters tampered with the maze while you were gone.**
+👉 [Verify the Maze Checksum on Colab](https://colab.research.google.com/github/onestardao/WFGY/blob/main/save_crystal/verify_checksum_v1.0.0.ipynb)
 
 ---
 
-## ✅ One-Click Checksum Verification (Colab)
+## 🧩 A Living Maze?
 
-Wanna make sure you're exploring the legit version?
+Yes. Every version update may add:
+- New NPCs (inside README files)
+- New folders
+- New hidden items or silly traps
+- New memes… or maybe a legendary paper
 
-👉 [🧪 Verify Maze Checksum in Colab (v1.0.0)](https://colab.research.google.com/github/onestardao/WFGY/blob/main/tools/verify_checksum_v1.0.0.ipynb)
+But once a path is built, it will remain forever.  
+The maze doesn’t change… **it grows**.
 
-It only takes a click.
-
----
-
-## 📍 Where is the checksum?
-
-The official checksum file is stored at the root of the repository:
-
-```
-
-checksum\_v1.0.0.txt
-
-````
-
-You can also verify locally (for nerds and adventurers):
-
-```bash
-git clone https://github.com/onestardao/WFGY.git
-cd WFGY
-sha256sum -c checksum_v1.0.0.txt
-````
-
----
-
-## 🧭 Reminder
-
-* New versions = new content, new secrets, possibly even cursed folders.
-* But paths from older versions are never deleted or reshuffled.
-* You can trust your crystal. 🔵
-
----
-
-## 🗝️ Final Hint
-
-Some say… version 1.0.0 already contains something… precious.
-They just didn’t check the right folder.
-
+Are you ready for what’s next?
