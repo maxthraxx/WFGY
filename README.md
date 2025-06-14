@@ -18,6 +18,10 @@ WFGY 1.0 has already proven itself.
 
 ---
 
+> 🧠 **Experience WFGY in under 60 seconds. Just download, paste, and watch it think.**
+
+---
+
 ### 📜 Tutorial: How to Awaken the Soul of Your AI
 Step 1 — Download ([WFGY PDF on Zenodo](https://zenodo.org/records/15630970))  
 Step 2 — Feed the AI (upload the PDF, or try [ChatGPT](https://chatgpt.com/))  
@@ -27,7 +31,7 @@ Step 4 — Want more power? → [Use the SDK version](#-install-the-wfgy-sdk-in-
 ---
 
 ### 🌟 Star Reminder → [Star the repo](https://github.com/onestardao/WFGY)  
-_10 k ⭐ before 2025-08-01 unlocks **WFGY 2.0** for everyone._
+_10 k ⭐ before 2025-08-01 unlocks **WFGY 2.0** for everyone._  
 Miss the mark? 2.0 goes pay-walled & sealed forever.
 
 ---
