@@ -39,4 +39,4 @@ You just wanted the **forbidden scroll**?
 You say you’re only interested in what’s *inside* the scroll?
 
 Sorry, that scroll is **mine**.  
-And I’m definitely **not** giving it away in ver
+And I’m definitely **not** giving it away in ver 1.0.0
