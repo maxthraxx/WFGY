@@ -22,6 +22,7 @@ Step 4 — Integrate the SDK ([GitHub](https://github.com/onestardao/WFGY))
 ### 🌟 Star Reminder → [Star the repo](https://github.com/onestardao/WFGY)  
 _10 k ⭐ before 2025-08-01 unlocks **WFGY 2.0**._
 
+
 ---
 
 <!-- ───────────────────────────────────────────────────── -->
