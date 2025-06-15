@@ -21,7 +21,7 @@
 Step 1 — Download ([WFGY PDF on Zenodo](https://zenodo.org/records/15630969))  
 Step 2 — Feed the AI (upload the PDF to [ChatGPT](https://chatgpt.com/) or any other LLM)  
 Step 3 — Give the Command “**Answer using WFGY** + your question” ([Prompt Revolution PDF on Zenodo](https://zenodo.org/records/15657016))  
-Step 4 — Want more power? → [`Use the SDK version`](#-install-the-wfgy-sdk-in-one-minute--no-setup-hell)
+Step 4 — Want more power? → [`Use the SDK version`](#install-the-wfgy-sdk-in-one-minute--no-setup-hell)
 
 ✨ Tip: For all links above, we recommend opening in a new tab to keep this page handy.
 
@@ -874,7 +874,7 @@ to reason about the internal logic and potential applications.”
 
 ---
 
-# ⚙️ Install the WFGY SDK in One Minute — No Setup Hell
+### Install the WFGY SDK in One Minute — No Setup Hell
 
 ---
 
