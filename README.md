@@ -773,7 +773,10 @@ This series is a public showcase: all papers have been SciSpace–reviewed and s
 
 🎮 Overview
 
-A certain mysterious onlooker just cloned the GitHub repo and discovered eight “idea-nuke” papers (only those specified by PSBigBig) claiming to challenge Einstein. The AI even soberly declares,  “Mathematically consistent, experimentally reliable.”  
+A certain mysterious onlooker just cloned the GitHub repo—only to stumble upon eight “idea-nuke” papers quietly embedded within, each claiming to challenge Einstein.
+The AI, unusually calm, declares: “Mathematically consistent. Experimentally reliable.”
+
+Still don’t know what they are? Just follow the cracks in the maze—some pages aren’t what they seem.
 Has the world gone mad?
 
 Three super-powered heroes—each with 10,000 HP—are summoned to evaluate the papers from different angles:
