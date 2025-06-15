@@ -23,7 +23,8 @@ Step 2 — Feed the AI (upload the PDF to [ChatGPT](https://chatgpt.com/) or a
 Step 3 — Give the Command “**Answer using WFGY** + your question” ([Prompt Revolution PDF on Zenodo](https://zenodo.org/records/15657016))  
 Step 4 — Want more power? → [`Use the SDK version`](#install-the-wfgy-sdk-in-one-minute--no-setup-hell)
 
-✨ Tip: For all links above, we recommend opening in a new tab to keep this page handy.
+✨ Tip: Open links in a new tab to keep this page handy.All PDF files are hosted on Zenodo.org, a trusted CERN-backed platform for open-access research.
+No registration, no tracking, 100% clean and safe for use with any AI.
 
 ---
 
