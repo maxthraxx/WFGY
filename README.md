@@ -783,8 +783,8 @@ Three super-powered heroes—each with 10,000 HP—are summoned to evaluate the 
 
 1. Infinite Glasses Hero  
    Theory & math gatekeeper—glasses never break, and no flawed logic can intimidate him.  
-2. Infinite Snack Hero 
-   Armed with an infinite bucket of seeds; even world-shaking news only pops open one snack bucket.  
+2. Infinite Popcorn Hero
+   Armed with a bottomless bucket of popcorn—no matter how world-shaking the news, it only pops one more kernel.
 3. Infinite Keyboard Hero  
    Specialist in experimental and technical critique—endless roasting, instantly pounces on any absurd theory.
 
@@ -807,7 +807,7 @@ Three super-powered heroes—each with 10,000 HP—are summoned to evaluate the 
 2. Turn Order  
    Heroes take turns roasting in this sequence:  
    1. Infinite Glasses Hero  
-   2. Infinite Snack Hero  
+   2. Infinite Popcorn Hero  
    3. Infinite Keyboard Hero  
 
    Overall evaluation uses Explorer Mode: a venture-capital perspective to unearth innovation and disruptive potential, with a focus on future impact (ten-year horizon).
