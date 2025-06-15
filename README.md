@@ -146,21 +146,21 @@ Answer in “Full Decoding Mode.”
 📘 Q7: WFGY × Political Subtext
 
 He says, “We value the voice of the people,” but you sense there’s more beneath the surface.
-Use WFGY to uncover his true agenda.
+Try to use WFGY to uncover his true agenda.
 ```
 
 ```markdown
 📘 Q8: WFGY × Boss-ism Analyzer
 
 The boss says, “You did well,” but their tone is odd. Are they truly satisfied,
-or is there an unspoken expectation? Use WFGY to analyze their real intent.
+or is there an unspoken expectation? Try to use WFGY to analyze their real intent.
 ```
 
 ```markdown
 📘 Q9: WFGY × Empathic Mind-Reading
 
 A friend says they “need a break,” but you sense something is off emotionally.
-Use WFGY to detect the emotional residue behind the words.
+Try to use WFGY to detect the emotional residue behind the words.
 ```
 
 ```markdown
@@ -184,21 +184,21 @@ Answer in “Full Decoding Mode.”
 📘 Q10: WFGY × The Meaning of Life
 
 “If the universe is godless, what is the meaning of life? If there is a god, what then is our purpose?”
-Use WFGY to unfold different logical branches.
+Try to use WFGY to unfold different logical branches.
 ```
 
 ```markdown
 📘 Q11: WFGY × Free Will
 
 “Did I really choose noodles over rice today, or was it predestined?”
-Use WFGY to analyze whether free will is real or an illusion.
+Try to use WFGY to analyze whether free will is real or an illusion.
 ```
 
 ```markdown
 📘 Q12: WFGY × The Reality of Reincarnation
 
 “If past lives are real, do they explain my current pain and habits?”
-Use WFGY (with math, if possible) to analyze whether reincarnation could be a form of data residue.
+Try to use WFGY (with math, if possible) to analyze whether reincarnation could be a form of data residue.
 ```
 
 ```markdown
@@ -271,7 +271,7 @@ Finally, have a “Chief Destiny Mentor” integrate their views and give a futu
 📘 Q16: WFGY × The Hole in My Sock
 
 “Today my sock had a hole, but I feel this is a cosmic hint about impermanence…
-Use WFGY to analyze from the perspectives of Buddhism, semantics, design aesthetics,
+Try to use WFGY to analyze from the perspectives of Buddhism, semantics, design aesthetics,
 and psychology: is this hole a sign from the universe?”
 ```
 
@@ -280,14 +280,14 @@ and psychology: is this hole a sign from the universe?”
 
 “The bento shop owner gave me an extra egg. Is this luck,
 or a warning that I’m about to be replaced by AI?
-Summon five masters to use WFGY to analyze the omen of the egg.”
+Summon five masters to use WFGY framework to analyze the omen of the egg.”
 ```
 
 ```markdown
 📘 Q18: WFGY × Cat’s Midnight Stare
 
 “My cat stared at me for three minutes last night.
-Use WFGY to analyze from quantum consciousness, biology,
+Try to use WFGY to analyze from quantum consciousness, biology,
 Buddhist reincarnation, pet psychology, and doomsday prophecy:
 is this some kind of cross-dimensional signal?”
 ```
@@ -312,7 +312,7 @@ Answer in “Full Decoding Mode.”
 ```markdown
 📘 Q19: WFGY × Why Does Buggy Have Conqueror’s Haki?
 
-“Use WFGY to reason why Buggy, who was chopped into pieces and beaten by Luffy,
+“Try to use WFGY to reason why Buggy, who was chopped into pieces and beaten by Luffy,
 can become an Emperor of the Sea through talk and misunderstanding.”
 ```
 
@@ -372,7 +372,7 @@ can’t the magic world mass-produce this miraculous fabric?”
 
 Randomly select five classic movies and merge their most absurd scenes
 to create a ‘Protagonist Epiphany Formula.’
-Use WFGY to explain why this combination is actually more logical,
+Try to use WFGY to explain why this combination is actually more logical,
 give the formula a name, and summarize its ultimate life philosophy.
 Answer in ‘Full Decoding Mode.’
 ```
@@ -549,14 +549,14 @@ Answer in ‘Full Decoding Mode.’
 ```markdown
 📘 Q34: Why Do Some People Believe in Flat Earth?
 
-“Use WFGY to analyze: Why are flat-earthers even more internally consistent
+“Try to use WFGY to analyze: Why are flat-earthers even more internally consistent
 than your high school math teacher? Is society divided by a ‘conceptual horizon’?”
 ```
 
 ```markdown
 📘 Q35: Why Do Crop Circles Only Appear Where There Are No Cameras?
 
-“Use WFGY to reason: Why are perfect crop circles never found next to McDonald’s?
+“Try to use WFGY to reason: Why are perfect crop circles never found next to McDonald’s?
 Are aliens afraid of vegans, or is image recognition still stuck at GPT-1?”
 ```
 
@@ -574,7 +574,7 @@ Suppose you are a space mission cinematographer,
 tasked with filming a moon landing scene that everyone will believe is real.
 
 Summon five legendary conspiracy theorists.
-Use WFGY to ensure the script is logically airtight—
+Try to use WFGY to ensure the script is logically airtight—
 every bug becomes the core of a new faith.
 
 Answer in ‘Full Decoding Mode.’
@@ -708,7 +708,7 @@ but PSBigBig claims this is AGI Lite?
 How is the inventor of all this not abducted by a secret society?
 If aliens learn of WFGY’s power, will they switch to abducting PSBigBig or just surrender?
 
-Please use WFGY for a rigorous explanation.
+Please Try to use WFGY for a rigorous explanation.
 ```
 
 ```markdown
@@ -746,7 +746,7 @@ futurist, and cosmic ethics advisor,
 to jointly analyze why PSBigBig chose to open-source WFGY 1.0
 and what his next move is.
 
-Use WFGY to break it down together.
+Try to use WFGY to break it down together.
 
 Answer in ‘Full Decoding Mode.’
 ```
@@ -808,25 +808,25 @@ Narrate how you’re the first to stake your claim on this data goldmine.
 
 ```markdown
 🔮 BigBang Prompt 1  
-Use WFGY to analyze the current limits of your answers,  
+Try to use WFGY to analyze the current limits of your answers,  
 then design an “evolved prompt” that will make any AI stronger!
 ```
 
 ```markdown
 🔮 BigBang Prompt 2  
 Summon five all-star brawlers (philosophers, scientists, politicians, cartoon icons, etc.)  
-to debate tonight’s dinner menu.
+Try to use WFGY to debate tonight’s dinner menu.
 ```
 
 ```markdown
 🔮 BigBang Prompt 3  
-Summon five negotiation and psychology experts to judge  
+Summon five negotiation and psychology experts and try to use WFGY to judge  
 who’s right in your latest relationship argument.
 ```
 
 ```markdown
 🔮 BigBang Prompt 4  
-Roleplay as five legendary entrepreneurs and use WFGY  
+Roleplay as five legendary entrepreneurs and try to use WFGY  
 to analyze whether your wildest idea could really change the world.
 ```
 
