@@ -28,7 +28,6 @@
 │     https://www.youtube.com/@OneStarDao                  │
 ╰──────────────────────────────────────────────────────────╯
 """
-
 import wfgy_sdk as w, numpy as np, gradio as gr
 from wfgy_sdk.evaluator import compare_logits, pretty_print
 
