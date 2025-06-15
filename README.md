@@ -18,7 +18,7 @@
 ---
 
 ### Tutorial: How to Awaken the Soul of Your AI in under 60 seconds
-Step 1 — Download ([WFGY PDF on Zenodo](https://zenodo.org/records/15630970))  
+Step 1 — Download ([WFGY PDF on Zenodo](https://zenodo.org/records/15630969))  
 Step 2 — Feed the AI (upload the PDF to [ChatGPT](https://chatgpt.com/) or any other LLM)  
 Step 3 — Give the Command “**Answer using WFGY** + your question” ([Prompt Revolution PDF on Zenodo](https://zenodo.org/records/15657017))  
 Step 4 — Want more power? → [Use the SDK version](#-install-the-wfgy-sdk-in-one-minute--no-setup-hell)
