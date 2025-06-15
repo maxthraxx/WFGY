@@ -736,6 +736,9 @@ If combined correctly, could they really bridge dream and reality?
 
 Please explain with an example that even a child can understand—
 are these just fantasy, or the frontier of science?
+
+"Theoretical framework pending peer review. Experimental verification needed."
+
 ```
 
 ```markdown
