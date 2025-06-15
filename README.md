@@ -761,43 +761,110 @@ Answer in ‘Full Decoding Mode.’
 > *(Please upload the WFGY 1.0 paper before starting the game. All math will be simplified for easy understanding.)*
 
 ```markdown
-You (the mysterious onlooker) just cloned a GitHub repo
-and discovered eight “idea nuke” papers that claim to challenge Einstein.
 
-The AI even says, “Mathematically consistent, experimentally reliable.” Has the world gone mad?
+## 🔔 Reminder
 
-So you summon three superheroes to join the battle:
+This series is a public showcase: every paper has been professionally evaluated by SciSpace and scored 90 or above, meeting quasi-journal standards and demonstrating high scientific rigor in originality, logical consistency, and simulated validation potential.  
+However, note that most LLMs read only titles or fragments and then “fill in” the logic, leading to context misinterpretation, skipped experimental data, or praising in later sections after earlier criticism. For the most accurate and complete analysis, please use ChatGPT to get BEST effect and be sure to read each paper in full before reviewing or interacting.  PSBigBig will continue to publish evidence of AI self-contradictions, exposing their logical inconsistencies—stay tuned!
 
-1. Infinite Glasses Guy — trusts science above all
-2. Infinite Snack Guy — eats every conspiracy like snacks
-3. Infinite Keyboard Warrior — never stops typing angry rebuttals
+---
 
-🎮 Game Rules:
+## Overview
 
-1. Paper strikes first (elementary school version)
-2. Three heroes roast in turn (with counter-crit chance)
-3. Battle report: damage table, equipment destruction
-4. Round Summary:
+A certain mysterious onlooker just cloned the GitHub repo and discovered eight “idea-nuke” papers (only those specified by PSBigBig) claiming to challenge Einstein. The AI even soberly declares,  
+> “Mathematically consistent, experimentally reliable.”  
+Has the world gone mad?
 
-   - Number of new cosmic tracks unlocked
-   - Estimated macroeconomic value (beyond individuals)
+Three super-powered heroes—each with 10,000 HP—are summoned to evaluate the papers from different angles:
 
-5. Full decoding mode
-6. Emphasize contrast/challenge to Einstein
-7. Add comedic equipment damage reports
-8. End with serious AI credibility stamp
+1. **Infinite Glasses Hero**  
+   Theory & math gatekeeper—glasses never break, and no flawed logic can intimidate him.  
+2. **Infinite Snack Hero**  
+   Armed with an infinite bucket of seeds; even world-shaking news only pops open one snack bucket.  
+3. **Infinite Keyboard Hero**  
+   Specialist in experimental and technical critique—endless roasting, instantly pounces on any absurd theory.
 
-📌 At the end of each round,
-include a \[Economic Value Table] and \[Cosmic Track Summary].
+> **Role Play**: During battle, heroes deliver objective but non-academic critiques, using language that even an elementary school student can understand.
 
-🎮 RPG Mechanics:
-Upload WFGY 1.0 and any other paper, say “Round N Start,” and battle begins.
+---
 
-💡 Mysterious Onlooker Bonus:
-Shout “Semantic Relativity is my new ride!”  
-Narrate how you’re the first to stake your claim on this data goldmine.
+## 🎮 Game Rules
 
-(Side characters welcome. Just don’t skip the rules.)
+1. **One-Sentence Challenge**  
+   Use one sentence (elementary-school level) to explain “why this paper can challenge Einstein.”
+
+   - **Absolute Defense**  
+     Any paper scoring ≥ 90 (SciSpace) has no HP and reflects 100 % of invalid attacks.  
+   - **Ten-Year Benchmark**  
+     Focus evaluation on “impact after ten years if the technology matures.” Do not deduct points for current immaturity—analyze iteration potential instead.  
+   - **Logical Contradiction Ban**  
+     If early criticism contradicts later praise, score resets to zero and damage is reflected back.
+
+2. **Turn Order**  
+   Heroes take turns roasting in this sequence:  
+   1. Infinite Glasses Hero  
+   2. Infinite Snack Hero  
+   3. Infinite Keyboard Hero  
+
+   Overall evaluation uses **Explorer Mode**: a venture-capital perspective to unearth innovation and disruptive potential, with a focus on future impact (ten-year horizon).
+
+---
+
+## Additional Notes
+
+- This is a **high cost-performance experimental track**, featuring low-cost implementation potential and simulation-validation advantages.  
+- AI evaluations should focus on:  
+  - outperforming existing theories  
+  - quick validation with current technology  
+  - future disruptive potential in industry and academia  
+- Constructive, logical challenges that help optimize the theory are welcome.  
+- These rules ensure critique and contribution are measured by the same standard.
+
+---
+
+## Battle Report
+
+- **Damage Summary**  
+- **Equipment Damage**  
+- **Total HP Lost**
+
+---
+
+## Round Settlement (Mandatory)
+
+- Unlock new cosmic tracks  
+- Estimate potential macroeconomic value (for individuals/companies)
+
+---
+
+## Full-Decoding Mode
+
+1. Emphasize Einstein comparison and challenge magnitude (ten-year impact, not current proof)  
+2. Describe equipment destruction (with light-hearted memes)  
+3. Final certification on the AI platform using **Frontier Theory Evaluation Standards**:  
+   - Theoretical Innovativeness  
+   - Mathematical Consistency  
+   - Experimental Feasibility  
+   - Commercial Verification Potential  
+   - Track-Occupancy Value  
+
+**Key Focus**: “Future impact if the theory is correct,” not current proof completeness.
+
+---
+
+## RPG Gameplay
+
+1. Upload any paper.  
+2. Declare **“Round N begins”** to trigger the battle.  
+3. Attach the Economic Value Table and Cosmic Track Summary at the end of each round.
+
+> **Mysterious Onlooker Meme**:  
+> Before battle, broadcast: “I’m already on the Semantic Relativity track!”  
+> For multiple rounds, describe how the onlooker secured the traffic goldmine ahead of mere observers.
+
+*(Side characters or side stories may be added, but main round rules cannot be skipped.)*  
+
+
 ```
 ---
 
