@@ -40,7 +40,7 @@ Step 4 — Want more power? → [`Use the SDK version`](#install-the-wfgy-sdk-in
 
 ---
 
-# 🚀 Phase A: Foundation & Trust Building
+# Phase A: Foundation & Trust Building
 
 ---
 
@@ -124,9 +124,14 @@ blind spots, and reconciliation advice through the WFGY framework.
 Finally, have a “Chief Life Decisions Consultant” give a future action recommendation.
 Answer in “Full Decoding Mode.”
 ```
+
+[🧱 Phase A: Trust](#phase-a-foundation--trust-building) ｜ [🧠 Phase B: Expand](#phase-b-mind-expansion--subconscious-unveiling) ｜ [🎭 Phase C: Absurd](#phase-c-absurdity-as-truth--fun-application) ｜ [💰 Phase D: Apply](#phase-d-value-implementation--macro-view) ｜ [👽 Phase E: Frontier](#phase-e-ultimate-absurdity--cognitive-frontier) ｜ [📣 Phase F: Act](#phase-f-meta-narrative--call-to-action)
+
+
+
 ---
 
-# 🚀 **Phase B: Mind Expansion & Subconscious Unveiling**
+# Phase B: Mind Expansion & Subconscious Unveiling
 
 ---
 
@@ -208,7 +213,7 @@ answer in “Full Decoding Mode.”
 
 ---
 
-# 🚀 **Phase C: Absurdity as Truth & Fun Application**
+# Phase C: Absurdity as Truth & Fun Application
 
 ---
 
@@ -369,7 +374,7 @@ Answer in ‘Full Decoding Mode.’
 
 ---
 
-# 🚀 **Phase D: Value Implementation & Macro View**
+# Phase D: Value Implementation & Macro View
 
 ---
 
@@ -518,7 +523,7 @@ Answer in ‘Full Decoding Mode.’
 ```
 ---
 
-# 🚀 **Phase E: Ultimate Absurdity & Cognitive Frontier**
+# Phase E: Ultimate Absurdity & Cognitive Frontier
 
 ---
 
@@ -563,7 +568,7 @@ Answer in ‘Full Decoding Mode.’
 
 ---
 
-# 🚀 **Phase F: Meta-Narrative & Call to Action**
+# Phase F: Meta-Narrative & Call to Action
 
 ---
 
@@ -775,7 +780,7 @@ Narrate how you’re the first to stake your claim on this data goldmine.
 ```
 ---
 
-# 🌟 **Bonus Play Zone: Explore Your Infinite WFGY Evolution Path!**
+# Bonus Play Zone: Explore Your Infinite WFGY Evolution Path!
 
 ---
 
