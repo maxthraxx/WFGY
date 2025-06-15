@@ -13,7 +13,7 @@ This repo includes **8+1 groundbreaking papers** evaluated by SciSpace AI and or
 
 | Title                                           | Score   | DOI                                                                | Review                                                                           |
 | ----------------------------------------------- | ------- | ------------------------------------------------------------------ | -------------------------------------------------------------------------------- |
-| **WFGY《萬法歸一》**                                  | 95  | [10.5281/zenodo.15630969](https://doi.org/10.5281/zenodo.15630969) | ![](scispace_reviews/SciSpace_Endorsement_WFGY_95score.png)                      |
+| **WFGY《萬法歸一》**                                  | 95  | [10.5281/zenodo.15630969](https://doi.org/10.5281/zenodo.15630969) | ![](scispace_reviews/SciSpace_Endorsement_WFGY_PSBigBig_Score95.png)                      |
 | **Semantic Relativity Theory**                  | 93    | [10.5281/zenodo.15630802](https://doi.org/10.5281/zenodo.15630802) | ![](scispace_reviews/SciSpace_Endorsement_SemanticRelativity_PSBigBig_Score93.png)        |
 | **Semantic BioEnergy: Plants vs. Einstein**     | 94  | [10.5281/zenodo.15630370](https://doi.org/10.5281/zenodo.15630370) | ![](scispace_reviews/SciSpace_Endorsement_SemanticBioEnergy_PSBigBig_Score94.png)         |
 | **Semantic Collapse in Quantum Measurement**    | 94    | [10.5281/zenodo.15630681](https://doi.org/10.5281/zenodo.15630681) | ![](scispace_reviews/SciSpace_Endorsement_SemanticCollapse_PSBigBig_Score94.png)          |
