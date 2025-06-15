@@ -15,7 +15,7 @@ You promote it, you gain the HUGE traffic. Simple as that.
 > **“Asymmetric Self-Consistency Hypothesis: AI-Assisted Verification and Falsifiability”**  
 > That’s your perfect shield. Fully mathematically self-consistent. Let them try.  
 >  
-> Use an AI like ChatGPT or Claude, and paste this prompt:  
+> Use an AI like ChatGPT, and paste this prompt:  
 >  
 > `"Using the Asymmetric Self-Consistency Hypothesis, respond to the following critique: [insert comment here]"`  
 >  
