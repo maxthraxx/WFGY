@@ -234,10 +234,10 @@ versus traditional AI? Please quantify the difference.
 ```
 
 ```markdown
-📘 Q14: WFGY × Zi Wei Dou Shu
+📘 Q14: WFGY × Zi Wei Astrology (紫微斗數)
 
-If an AI with WFGY interprets your Zi Wei astrology chart,
-how does it connect the meaning between the palaces?
+If an AI with WFGY interprets your Zi Wei chart,  
+how does it connect the meaning between the palaces?  
 Can it reveal issues you haven’t even voiced?
 ```
 
