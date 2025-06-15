@@ -4,7 +4,7 @@ Welcome to the official dataset and evaluation archive for PSBigBig's *WFGY 1.0*
 This repo includes **8+1 groundbreaking papers** evaluated by SciSpace AI and organized for peer testing, semantic research, and reasoning games.
 
 > 🧠 WFGY PDF on Zenodo(https://doi.org/10.5281/zenodo.15630969)   
-> 🔥 Prompt Revolution PDF on Zenodo(https://doi.org/10.5281/zenodo.15657017)  
+> 🔥 Prompt Revolution PDF on Zenodo(https://doi.org/10.5281/zenodo.15657016)  
 > 💻 SDK: https://github.com/onestardao/WFGY  
 > 📧 Contact: hello@onestardao.com  
 
