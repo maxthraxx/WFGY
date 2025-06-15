@@ -28,7 +28,6 @@
 │     https://www.youtube.com/@OneStarDao                  │
 ╰──────────────────────────────────────────────────────────╯
 """
-
 # default_config.py
 # Centralised defaults for WFGY SDK 1.0
 # Author: PSBigBig & Contributors
