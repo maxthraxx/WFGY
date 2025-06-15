@@ -874,7 +874,7 @@ to reason about the internal logic and potential applications.”
 
 ---
 
-### Install the WFGY SDK in One Minute — No Setup Hell
+# Install the WFGY SDK in One Minute — No Setup Hell
 
 ---
 
