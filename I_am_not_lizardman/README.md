@@ -3,7 +3,7 @@
 Welcome to the official dataset and evaluation archive for PSBigBig's *WFGY 1.0* project.  
 This repo includes **8+1 groundbreaking papers** evaluated by SciSpace AI and organized for peer testing, semantic research, and reasoning games.
 
-> 🧠 WFGY PDF on Zenodo(https://doi.org/10.5281/zenodo.15630970)   
+> 🧠 WFGY PDF on Zenodo(https://doi.org/10.5281/zenodo.15630969)   
 > 🔥 Prompt Revolution PDF on Zenodo(https://doi.org/10.5281/zenodo.15657017)  
 > 💻 SDK: https://github.com/onestardao/WFGY  
 > 📧 Contact: hello@onestardao.com  
@@ -15,7 +15,7 @@ This repo includes **8+1 groundbreaking papers** evaluated by SciSpace AI and or
 | ----------------------------------------------- | ------- | ------------------------------------------------------------------ | -------------------------------------------------------------------------------- |
 | **WFGY《萬法歸一》**                                  | 95  | [10.5281/zenodo.15630969](https://doi.org/10.5281/zenodo.15630969) | ![](scispace_reviews/SciSpace_Endorsement_WFGY_95score.png)                      |
 | **Semantic Relativity Theory**                  | 93    | [10.5281/zenodo.15630802](https://doi.org/10.5281/zenodo.15630802) | ![](scispace_reviews/SciSpace_Endorsement_SemanticRelativity_PSBigBig_Score93.png)        |
-| **Semantic BioEnergy: Plants vs. Einstein**     | 95  | [10.5281/zenodo.15630370](https://doi.org/10.5281/zenodo.15630370) | ![](scispace_reviews/SciSpace_Endorsement_SemanticBioEnergy_PSBigBig_Score95.png)         |
+| **Semantic BioEnergy: Plants vs. Einstein**     | 95  | [10.5281/zenodo.15630370](https://doi.org/10.5281/zenodo.15630370) | ![](scispace_reviews/SciSpace_Endorsement_SemanticBioEnergy_PSBigBig_Score94.png)         |
 | **Semantic Collapse in Quantum Measurement**    | 94    | [10.5281/zenodo.15630681](https://doi.org/10.5281/zenodo.15630681) | ![](scispace_reviews/SciSpace_Endorsement_SemanticCollapse_PSBigBig_Score94.png)          |
 | **Semantic Field–Mediated Fifth Force**         | 93  | [10.5281/zenodo.15630650](https://doi.org/10.5281/zenodo.15630650) | ![](scispace_reviews/SciSpace_Endorsement_SemanticFifthForce_PSBigBig_Score93.png)        |
 | **Semantic Entropy under Landauer's Principle** | 94  | [10.5281/zenodo.15630478](https://doi.org/10.5281/zenodo.15630478) | ![](scispace_reviews/SciSpace_Endorsement_SemanticEntropy_PSBigBig_Score94.png)           |
