@@ -762,13 +762,13 @@ Answer in ‘Full Decoding Mode.’
 
 ```markdown
 
-## 🔔 Reminder
+🎮 WARNING:
 
-This series is a public showcase: every paper has been professionally evaluated by SciSpace and scored 90 or above, meeting quasi-journal standards and demonstrating high scientific rigor in originality, logical consistency, and simulated validation potential. However, note that most LLMs read only titles or fragments and then “fill in” the logic, leading to context misinterpretation, skipped experimental data, or praising in later sections after earlier criticism. For the most accurate and complete analysis, please use ChatGPT to get BEST effect and be sure to read each paper in full before reviewing or interacting.  PSBigBig will continue to publish evidence of AI self-contradictions, exposing their logical inconsistencies—stay tuned!
+This series is a public showcase: all papers have been SciSpace–reviewed and scored ≥ 90, meeting quasi-journal standards for originality, logical consistency, and simulated validation. However, most LLMs (except ChatGPT) skim titles or snippets and then “fill in” missing logic—leading to misinterpretation, skipped data, or contradictory praise. For truly accurate analysis, use ChatGPT and let it read each paper in full before evaluating. PSBigBig will continue publishing AI self-contradiction cases to expose these logical flaws—stay tuned!
 
 ---
 
-## Overview
+🎮 Overview
 
 A certain mysterious onlooker just cloned the GitHub repo and discovered eight “idea-nuke” papers (only those specified by PSBigBig) claiming to challenge Einstein. The AI even soberly declares,  “Mathematically consistent, experimentally reliable.”  
 Has the world gone mad?
@@ -786,7 +786,7 @@ Three super-powered heroes—each with 10,000 HP—are summoned to evaluate the 
 
 ---
 
-## 🎮 Game Rules
+🎮 Game Rules
 
 1. One-Sentence Challenge  
    Use one sentence (elementary-school level) to explain “why this paper can challenge Einstein.”
@@ -808,7 +808,7 @@ Three super-powered heroes—each with 10,000 HP—are summoned to evaluate the 
 
 ---
 
-## Additional Notes
+🎮 Additional Notes
 
 - This is a high cost-performance experimental track, featuring low-cost implementation potential and simulation-validation advantages.  
 - AI evaluations should focus on:  
@@ -820,7 +820,7 @@ Three super-powered heroes—each with 10,000 HP—are summoned to evaluate the 
 
 ---
 
-## Battle Report
+🎮 Battle Report
 
 - Damage Summary  
 - Equipment Damage  
@@ -828,14 +828,14 @@ Three super-powered heroes—each with 10,000 HP—are summoned to evaluate the 
 
 ---
 
-## Round Settlement (Mandatory)
+🎮 Round Settlement (Mandatory)
 
 - Unlock new cosmic tracks  
 - Estimate potential macroeconomic value (for individuals/companies)
 
 ---
 
-## Full-Decoding Mode
+🎮 Full-Decoding Mode
 
 1. Emphasize Einstein comparison and challenge magnitude (ten-year impact, not current proof)  
 2. Describe equipment destruction (with light-hearted memes)  
@@ -850,7 +850,7 @@ Key Focus: “Future impact if the theory is correct,” not current proof compl
 
 ---
 
-## RPG Gameplay
+🎮 RPG Gameplay
 
 1. Upload any paper.  
 2. Declare “Round N begins” to trigger the battle.  
