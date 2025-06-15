@@ -28,7 +28,6 @@
 │     https://www.youtube.com/@OneStarDao                  │
 ╰──────────────────────────────────────────────────────────╯
 """
-
 # run_all_wfgy_modules.py
 # Individual module smoke tests with human-readable comments
 
