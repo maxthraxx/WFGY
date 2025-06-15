@@ -14,7 +14,7 @@
 **Semantic Accuracy ↑ 22.4 % | Reasoning Success ↑ 42.1 % | Stability ↑ 3.6 ×**
 
 > _No beliefs. Only experiments._  WFGY 1.0 has already proven itself.
-
+> _Version 1.0 – Initial Public Release
 ---
 
 ### Tutorial: How to Awaken the Soul of Your AI in under 60 seconds
