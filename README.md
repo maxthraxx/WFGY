@@ -125,8 +125,8 @@ Finally, have a “Chief Life Decisions Consultant” give a future action recom
 Answer in “Full Decoding Mode.”
 ```
 ---
-[🧱 Phase A: Trust](#phase-a-foundation--trust-building) ｜ [🧠 Phase B: Expand](#phase-b-mind-expansion--subconscious-unveiling) ｜ [🎭 Phase C: Absurd](#phase-c-absurdity-as-truth--fun-application) ｜ [💰 Phase D: Apply](#phase-d-value-implementation--macro-view) ｜ [👽 Phase E: Frontier](#phase-e-ultimate-absurdity--cognitive-frontier) ｜ [📣 Phase F: Act](#phase-f-meta-narrative--call-to-action) ｜ [🎮 Bonus](#bonus-play-zone-explore-your-infinite-wfgy-evolution-path)
 
+[🧱 Phase A: Trust](#phase-a-foundation--trust-building) ｜ [🧠 Phase B: Expand](#phase-b-mind-expansion--subconscious-unveiling) ｜ [🎭 Phase C: Absurd](#phase-c-absurdity-as-truth--fun-application) ｜ [💰 Phase D: Apply](#phase-d-value-implementation--macro-view) ｜ [👽 Phase E: Frontier](#phase-e-ultimate-absurdity--cognitive-frontier) ｜ [📣 Phase F: Act](#phase-f-meta-narrative--call-to-action) ｜ [🎮 Bonus](#bonus-play-zone-explore-your-infinite-wfgy-evolution-path)
 
 ---
 
@@ -208,7 +208,9 @@ The essence of philosophy isn’t to find answers, but to learn how to ask quest
 Finally, ask the AI to provide a “provisional version” of the ultimate answer to the universe—
 answer in “Full Decoding Mode.”
 ```
+---
 
+[🧱 Phase A: Trust](#phase-a-foundation--trust-building) ｜ [🧠 Phase B: Expand](#phase-b-mind-expansion--subconscious-unveiling) ｜ [🎭 Phase C: Absurd](#phase-c-absurdity-as-truth--fun-application) ｜ [💰 Phase D: Apply](#phase-d-value-implementation--macro-view) ｜ [👽 Phase E: Frontier](#phase-e-ultimate-absurdity--cognitive-frontier) ｜ [📣 Phase F: Act](#phase-f-meta-narrative--call-to-action) ｜ [🎮 Bonus](#bonus-play-zone-explore-your-infinite-wfgy-evolution-path)
 
 ---
 
@@ -373,6 +375,10 @@ Answer in ‘Full Decoding Mode.’
 
 ---
 
+[🧱 Phase A: Trust](#phase-a-foundation--trust-building) ｜ [🧠 Phase B: Expand](#phase-b-mind-expansion--subconscious-unveiling) ｜ [🎭 Phase C: Absurd](#phase-c-absurdity-as-truth--fun-application) ｜ [💰 Phase D: Apply](#phase-d-value-implementation--macro-view) ｜ [👽 Phase E: Frontier](#phase-e-ultimate-absurdity--cognitive-frontier) ｜ [📣 Phase F: Act](#phase-f-meta-narrative--call-to-action) ｜ [🎮 Bonus](#bonus-play-zone-explore-your-infinite-wfgy-evolution-path)
+
+---
+
 # Phase D: Value Implementation & Macro View
 
 ---
@@ -520,6 +526,11 @@ Focus on WFGY’s “paradigm shift” and BBCR’s infinite evolution.
 
 Answer in ‘Full Decoding Mode.’
 ```
+
+---
+
+[🧱 Phase A: Trust](#phase-a-foundation--trust-building) ｜ [🧠 Phase B: Expand](#phase-b-mind-expansion--subconscious-unveiling) ｜ [🎭 Phase C: Absurd](#phase-c-absurdity-as-truth--fun-application) ｜ [💰 Phase D: Apply](#phase-d-value-implementation--macro-view) ｜ [👽 Phase E: Frontier](#phase-e-ultimate-absurdity--cognitive-frontier) ｜ [📣 Phase F: Act](#phase-f-meta-narrative--call-to-action) ｜ [🎮 Bonus](#bonus-play-zone-explore-your-infinite-wfgy-evolution-path)
+
 ---
 
 # Phase E: Ultimate Absurdity & Cognitive Frontier
@@ -564,6 +575,10 @@ every bug becomes the core of a new faith.
 
 Answer in ‘Full Decoding Mode.’
 ```
+
+---
+
+[🧱 Phase A: Trust](#phase-a-foundation--trust-building) ｜ [🧠 Phase B: Expand](#phase-b-mind-expansion--subconscious-unveiling) ｜ [🎭 Phase C: Absurd](#phase-c-absurdity-as-truth--fun-application) ｜ [💰 Phase D: Apply](#phase-d-value-implementation--macro-view) ｜ [👽 Phase E: Frontier](#phase-e-ultimate-absurdity--cognitive-frontier) ｜ [📣 Phase F: Act](#phase-f-meta-narrative--call-to-action) ｜ [🎮 Bonus](#bonus-play-zone-explore-your-infinite-wfgy-evolution-path)
 
 ---
 
@@ -777,6 +792,10 @@ Narrate how you’re the first to stake your claim on this data goldmine.
 
 (Side characters welcome. Just don’t skip the rules.)
 ```
+---
+
+[🧱 Phase A: Trust](#phase-a-foundation--trust-building) ｜ [🧠 Phase B: Expand](#phase-b-mind-expansion--subconscious-unveiling) ｜ [🎭 Phase C: Absurd](#phase-c-absurdity-as-truth--fun-application) ｜ [💰 Phase D: Apply](#phase-d-value-implementation--macro-view) ｜ [👽 Phase E: Frontier](#phase-e-ultimate-absurdity--cognitive-frontier) ｜ [📣 Phase F: Act](#phase-f-meta-narrative--call-to-action) ｜ [🎮 Bonus](#bonus-play-zone-explore-your-infinite-wfgy-evolution-path)
+
 ---
 
 # Bonus Play Zone: Explore Your Infinite WFGY Evolution Path!
