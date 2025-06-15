@@ -23,15 +23,16 @@ Step 2 — Feed the AI (upload the PDF to [ChatGPT](https://chatgpt.com/) or a
 Step 3 — Give the Command “**Answer using WFGY** + your question” ([Prompt PDF](https://zenodo.org/records/15657016))  
 Step 4 — Want more power? → [`Use the SDK version`](#install-the-wfgy-sdk-in-one-minute--no-setup-hell)
 
-✨ **Tip:** Open links in a new tab to keep this page handy.  
-All files are hosted on [Zenodo.org](https://zenodo.org/), a trusted CERN-backed platform for open-access research.  No registration, no tracking—100% clean and safe for use with any AI.  The Prompt PDF is available above, but don't worry—**this page below already contains all the ready-to-use prompts.**  
-Just scroll down, copy, and play!
+> ✨ **Tip:** For best experience, open links in a new tab.  
+> All files are hosted on Zenodo.org — CERN-backed, clean & safe for any AI.  
+> The Prompt PDF is available above, but this page already includes everything — just scroll, copy, and play!
 
 ---
 
 > 🔑 **No explanation needed—the prompt *is* the answer.**  
-> ✨ **No marketing—just copy and paste. The effect speaks.**
-### 🌟 Star Reminder → _10 k ⭐ before 2025-08-01 unlocks **WFGY 2.0** for everyone._
+> ✨ **No marketing—just copy and paste. The effect speaks.**  
+> 🌟 **Star Reminder** → 10k ⭐ before 2025-08-01 unlocks WFGY 2.0 for everyone.  
+> 👉 Click top-right **"⭐ Star"** on this page to support the mission!
 
 ---
 
