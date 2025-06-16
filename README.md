@@ -11,9 +11,8 @@
 &nbsp;
 [![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.15630970-blue)](https://doi.org/10.5281/zenodo.15630969)
 
-**Semantic Accuracy ↑ 22.4 % | Reasoning Success ↑ 42.1 % | Stability ↑ 3.6 ×**
 
-> _No beliefs. Only experiments._  WFGY 1.0 has already proven itself.
+![AI_Awaken](https://github.com/user-attachments/assets/45713ab0-e511-4bbf-9b52-428e55c305bf)
 
 ---
 
