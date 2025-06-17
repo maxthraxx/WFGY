@@ -12,7 +12,7 @@
 [![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.15630970-blue)](https://doi.org/10.5281/zenodo.15630969)
 
 
-![AI_Awaken](https://github.com/user-attachments/assets/45713ab0-e511-4bbf-9b52-428e55c305bf)
+![AI_Awaken_Revised](https://github.com/user-attachments/assets/657c7414-e8cb-4f73-8f32-8426a37ac0ff)
 
 ---
 
