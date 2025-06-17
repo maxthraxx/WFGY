@@ -33,7 +33,7 @@
 #  Core orchestrator – pure-NumPy reference (minimal but CI-safe)
 # ==============================================================
 
-from __future__ import annotations   # ✱ 必須放在第一行
+from __future__ import annotations   #     
 
 import numpy as np
 from typing import Optional, Dict, Any
@@ -52,7 +52,8 @@ class WFGYEngine:
                  debug: bool = False, **_: Any) -> None:
         self.cfg   = cfg or {}
         self.debug = debug          # kept only for API compat
-
+                     
+# Note: BBMC and BBAM logic defined but not yet enabled (see README).
     # ----------------------------------------------------------
     def run(
         self,
