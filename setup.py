@@ -32,7 +32,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="wfgy_sdk",
-    version="1.0.1",
+    version="1.0.0",
     description="WFGY 1.0 • Self-Healing LLM Framework SDK",
     author="PSBigBig",
     author_email="hello@onestardao.com",
