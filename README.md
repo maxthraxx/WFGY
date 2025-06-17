@@ -1129,3 +1129,16 @@ We invite you to use WFGY on GitHub to generate more experimental ideas you hadn
 
 ---
 
+🧪 Developer Note:
+
+The following modules are included in this SDK but are not yet integrated into the core engine:
+
+• BBMC – BigBig Meaning Correction (semantic residuals)  
+• BBAM – BigBig Attention Modulation (variance-based attention control)  
+• BBPF – BigBig Progression Formula (semantic evolution modeling)  
+• BBCR – BigBig Collapse Reversal (recovery from semantic drift)
+
+This release focuses on a minimal, reproducible baseline.  
+Integration of semantic reasoning logic will be introduced in future updates.
+
+
