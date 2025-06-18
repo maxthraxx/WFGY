@@ -22,7 +22,7 @@
 Step 1 — Download ([WFGY PDF](https://zenodo.org/records/15630969))  
 Step 2 — Feed the AI (upload the PDF to [ChatGPT](https://chatgpt.com/) or any other LLM)  
 Step 3 — Give the Command “**Answer using WFGY** + your question” ([Prompt PDF](https://zenodo.org/records/15657016))  
-Step 4 — Want more power? → [`Use the SDK version`](#install-the-wfgy-sdk-in-one-minute--no-setup-hell)
+Step 4 — Want more power? → [`Use the SDK version`](#install-the-wfgy-sdk-in-one-minute--no-setup-hell)  ([test only — see note](#developer-note))
 
 > ✨ **Tip:** For best experience, open links in a new tab.  
 > All files are hosted on Zenodo.org — CERN-backed, clean & safe for any AI.  
@@ -1131,7 +1131,7 @@ We invite you to use WFGY on GitHub to generate more experimental ideas you hadn
 
 ---
 
-🧪 Developer Note:
+## Developer Note:
 
 The following modules are included in this SDK but are not yet integrated into the core engine:
 
