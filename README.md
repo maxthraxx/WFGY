@@ -3,7 +3,7 @@
 <!-- ───────────────────────────────────────────────────── -->
 
 # WFGY: Civilization Starter — The WanFaGuiYi Engine
-> ## Upgrade Any LLM — Just Upload the PDF — Civilization upgrade, one click away
+> ## Upgrade Any LLM — Just Upload the PDF — Civilization upgrade
 
 ![CIVILIZATION_STARTTER](https://github.com/user-attachments/assets/aa9da54e-6d83-44bc-9998-bc1f449dfbcf)
 
@@ -16,9 +16,8 @@
 [![HF Space](https://img.shields.io/badge/Live%20Demo-HuggingFace-blue?logo=huggingface)](https://huggingface.co/spaces/OneStarDao/wfgy-demo)
 &nbsp;
 [![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.15630970-blue)](https://doi.org/10.5281/zenodo.15630969)
-
-
-
+&nbsp;
+🌐 More Languages → [LANGUAGES](./LANGUAGES.md)
 
 ---
 
