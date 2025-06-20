@@ -2,7 +2,7 @@
 <!--  MARKETING + QUICK‐START BANNER  -->
 <!-- ───────────────────────────────────────────────────── -->
 # WFGY 文明启动｜万法归一的AI革命，全球唯一「文明升级」引擎
-> ## 重新定义语义推理。用 PDF 一键启动任意 LLM 的文明升级
+> ## 重新定义语义推理：用 PDF 一键启动任意 LLM 的文明升级
 
 ![CIVILIZATION_STARTTER](https://github.com/user-attachments/assets/aa9da54e-6d83-44bc-9998-bc1f449dfbcf)
 
