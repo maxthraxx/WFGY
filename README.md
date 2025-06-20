@@ -3,7 +3,7 @@
 <!-- ───────────────────────────────────────────────────── -->
 
 # WFGY: Civilization Starter — The WanFaGuiYi Engine
-> ## Redefine Semantic Reasoning. Unlock “One-Click” Civilization Upgrade for Any LLM.  
+> ## Upgrade Any LLM — Just Upload the PDF.  
 
 ![CIVILIZATION_STARTTER](https://github.com/user-attachments/assets/aa9da54e-6d83-44bc-9998-bc1f449dfbcf)
 
