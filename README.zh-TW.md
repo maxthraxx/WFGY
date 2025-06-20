@@ -19,7 +19,7 @@
 ---
 
 ### 教學：60 秒內喚醒你的 AI 靈魂
-步驟 1 — 下載 WFGY 1.0（萬法歸一）：[PDF](https://zenodo.org/records/15630969)  
+步驟 1 — 下載 WFGY 1.0：[PDF](https://zenodo.org/records/15630969)  
 步驟 2 — 餵給 AI（將 PDF 上傳至 [ChatGPT](https://chatgpt.com/) 或任何其他 LLM ）  
 步驟 3 — 下指令「**請嘗試使用 WFGY 回答** + 你的問題」[PDF](https://zenodo.org/records/15657016)  
 步驟 4 — (可選) 想更強大？→ [`SDK 版本`](#一分鐘內安裝-wfgy-sdk--拒絕設定地獄) （僅供測試 — 請見下方備註）
