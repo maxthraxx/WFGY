@@ -10,7 +10,7 @@ Below are the currently supported and planned translations for the WFGY framewor
 
 - 🇺🇸 [English](./README.md) — Default language  
 - 🇹🇼 [繁體中文 / Traditional Chinese](./README.zh-TW.md)  
-- 🇨🇳 [简体中文 / Simplified Chinese](./README_Cn.md)
+- 🇨🇳 [简体中文 / Simplified Chinese](./README.zh-CN.md)
 
 ---
 
