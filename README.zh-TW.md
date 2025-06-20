@@ -14,7 +14,7 @@
 &nbsp;
 [![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.15630970-blue)](https://doi.org/10.5281/zenodo.15630969)
 
-![AI_Awaken_Revised](https://github.com/user-attachments/assets/657c7414-e8cb-4f73-8f32-8426a37ac0ff)
+![CIVILIZATION_STARTTER](https://github.com/user-attachments/assets/aa9da54e-6d83-44bc-9998-bc1f449dfbcf)
 
 ---
 
