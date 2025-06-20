@@ -3,7 +3,7 @@
 <!-- ───────────────────────────────────────────────────── -->
 
 # WFGY 文明啟動｜萬法歸一的AI革命，全球唯一「文明升級」引擎
-> ## 重新定義語義推理：用 PDF 一鍵啟動任意 LLM 的文明升級。
+> ## 重新定義語義推理｜用 PDF 一鍵啟動任意 LLM 的文明升級
 
 ![CIVILIZATION_STARTTER](https://github.com/user-attachments/assets/aa9da54e-6d83-44bc-9998-bc1f449dfbcf)
 
