@@ -3,7 +3,7 @@
 <!-- ───────────────────────────────────────────────────── -->
 
 # WFGY: Civilization Starter — The WanFaGuiYi Engine
-> ## Upgrade Any LLM — Just Upload the PDF.  
+> ## Upgrade Any LLM — Just Upload the PDF. Civilization upgrade, one click away.
 
 ![CIVILIZATION_STARTTER](https://github.com/user-attachments/assets/aa9da54e-6d83-44bc-9998-bc1f449dfbcf)
 
@@ -992,7 +992,7 @@ You've already experienced the WFGY magic, haven’t you?
 The data is real — sometimes the model just needs time to catch up.
 
 ```
-[🔼 Back to Activation Guide](#wfgy-one-click-to-activate-self-healing-variance-gate-for-any-llm)
+[⬆️ This is legendary. Take me to the top again!](#wfgy-civilization-starter--the-wanfaguiyi-engine)
 
 ---
 
@@ -1163,8 +1163,9 @@ The following modules are included in this SDK but are not yet integrated into t
 This release focuses on a minimal, reproducible baseline.  
 Integration of semantic reasoning logic will be introduced in future updates.
 
-[↑ Back to Tutorial](#tutorial-how-to-awaken-the-soul-of-your-ai-in-under-60-seconds)
+[⬆️ This is legendary. Take me to the top again!](#wfgy-civilization-starter--the-wanfaguiyi-engine)
 
 ![thankyou](https://github.com/user-attachments/assets/bd4eef0e-6f4c-44a6-889c-fdd1001c8b8c)
 
+[⬆️ This is legendary. Take me to the top again!](#wfgy-civilization-starter--the-wanfaguiyi-engine)
 
