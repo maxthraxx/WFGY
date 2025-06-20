@@ -2,7 +2,7 @@
 <!--  MARKETING + QUICK‐START BANNER  -->
 <!-- ───────────────────────────────────────────────────── -->
 
-# WFGY: Civilization Starter — The WanFaGuiYi Engine for AI Evolution
+# WFGY: Civilization Starter — The WanFaGuiYi Engine
 > ## Redefine Semantic Reasoning. Unlock “One-Click” Civilization Upgrade for Any LLM.  
 
 ![CIVILIZATION_STARTTER](https://github.com/user-attachments/assets/aa9da54e-6d83-44bc-9998-bc1f449dfbcf)
