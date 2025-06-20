@@ -3,7 +3,7 @@
 <!-- ───────────────────────────────────────────────────── -->
 
 # WFGY: Civilization Starter — The WanFaGuiYi Engine
-> ## Upgrade Any LLM — Just Upload the PDF. Civilization upgrade, one click away.
+> ## Upgrade Any LLM — Just Upload the PDF — Civilization upgrade, one click away
 
 ![CIVILIZATION_STARTTER](https://github.com/user-attachments/assets/aa9da54e-6d83-44bc-9998-bc1f449dfbcf)
 
