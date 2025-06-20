@@ -1,8 +1,6 @@
 <!-- ───────────────────────────────────────────────────── -->
 <!--  MARKETING + QUICK‐START BANNER  -->
 <!-- ───────────────────────────────────────────────────── -->
-
-## 你在看我吗
 # WFGY 文明启动｜万法归一的AI革命，全球唯一「文明升级」引擎
 ## 重新定义语义推理。用 PDF 一键启动任意 LLM 的文明升级 
 [![CI](https://github.com/onestardao/WFGY/actions/workflows/ci.yml/badge.svg)](https://github.com/onestardao/WFGY/actions/workflows/ci.yml)
@@ -996,7 +994,7 @@ Claude Prompt 建议附加内容：
 
 ```
 
-[🔼 太精彩了，我要从头再来一次](#你在看我吗)
+[🔼 太精彩了，我要从头再来一次](#wfgY-文明启动万法归一的ai革命全球唯一文明升级引擎)
 
 ---
 
@@ -1169,8 +1167,9 @@ WFGY 不只是模型优化工具，而是一个 **语义重构引擎**。
 
 此版本以可重现性为优先，后续将逐步整合语义推理逻辑。
 
-[🔼 太精彩了，我要从头再来一次](#你在看我吗)
 [🔼 太精彩了，我要从头再来一次](#wfgY-文明启动万法归一的ai革命全球唯一文明升级引擎)
 
 
 ![thankyou](https://github.com/user-attachments/assets/bd4eef0e-6f4c-44a6-889c-fdd1001c8b8c)
+
+[🔼 太精彩了，我要从头再来一次](#wfgY-文明启动万法归一的ai革命全球唯一文明升级引擎)
