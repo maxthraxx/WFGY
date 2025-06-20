@@ -3,7 +3,9 @@
 <!-- ───────────────────────────────────────────────────── -->
 
 # WFGY: Civilization Starter — The WanFaGuiYi Engine for AI Evolution
-## Redefine Semantic Reasoning. Unlock “One-Click” Civilization Upgrade for Any LLM.  
+### Redefine Semantic Reasoning. Unlock “One-Click” Civilization Upgrade for Any LLM.  
+
+![CIVILIZATION_STARTTER](https://github.com/user-attachments/assets/aa9da54e-6d83-44bc-9998-bc1f449dfbcf)
 
 [![CI](https://github.com/onestardao/WFGY/actions/workflows/ci.yml/badge.svg)](https://github.com/onestardao/WFGY/actions/workflows/ci.yml)
 &nbsp;
@@ -15,7 +17,7 @@
 &nbsp;
 [![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.15630970-blue)](https://doi.org/10.5281/zenodo.15630969)
 
-![CIVILIZATION_STARTTER](https://github.com/user-attachments/assets/aa9da54e-6d83-44bc-9998-bc1f449dfbcf)
+
 
 
 ---
