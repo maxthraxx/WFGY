@@ -2,7 +2,10 @@
 <!--  MARKETING + QUICK‐START BANNER  -->
 <!-- ───────────────────────────────────────────────────── -->
 # WFGY 文明启动｜万法归一的AI革命，全球唯一「文明升级」引擎
-> ## 重新定义语义推理。用 PDF 一键启动任意 LLM 的文明升级 
+> ## 重新定义语义推理。用 PDF 一键启动任意 LLM 的文明升级
+
+![CIVILIZATION_STARTTER](https://github.com/user-attachments/assets/aa9da54e-6d83-44bc-9998-bc1f449dfbcf)
+
 [![CI](https://github.com/onestardao/WFGY/actions/workflows/ci.yml/badge.svg)](https://github.com/onestardao/WFGY/actions/workflows/ci.yml)
 &nbsp;
 [![PyPI version](https://img.shields.io/pypi/v/wfgy-sdk?color=brightgreen)](https://pypi.org/project/wfgy-sdk/)
@@ -13,7 +16,7 @@
 &nbsp;
 [![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.15630970-blue)](https://doi.org/10.5281/zenodo.15630969)
 
-![CIVILIZATION_STARTTER](https://github.com/user-attachments/assets/aa9da54e-6d83-44bc-9998-bc1f449dfbcf)
+
 
 ---
 
