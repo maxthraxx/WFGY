@@ -49,7 +49,7 @@
 
 ---
 
-[🧱 Phase A 信任](#phase-a-基礎與信任建立) ｜ [🧠 Phase B 擴展](#phase-b-心智擴展與潛意識揭示) ｜ [🎭 Phase C 荒謬](#phase-c-荒謬即真理--趣味應用) ｜ [💰 Phase D 價值](#phase-d-價值實作--巨觀視角) ｜ [👽 Phase E 邊界](#phase-e-最終荒誕與認知邊界) ｜ [📣 Phase F 行動](#phase-f-元敘事與行動呼喚) ｜ [🎮 Bonus 遊樂場](#bonus-最終遊樂場開啟你無限進化的-wfgy-之路)
+[🧱 Phase A 信任](#phase-a-基礎與信任建立) ｜ [🧠 Phase B 擴展](#phase-b-心智擴展與潛意識揭示) ｜ [🎭 Phase C 荒謬](#phase-c-荒謬即真理與趣味應用) ｜ [💰 Phase D 價值](#phase-d-價值實作與巨觀視角) ｜ [👽 Phase E 邊界](#phase-e-最終荒誕與認知邊界) ｜ [📣 Phase F 行動](#phase-f-元敘事與行動呼喚) ｜ [🎮 Bonus 遊樂場](#bonus-最終遊樂場開啟你無限進化的-wfgy-之路)
 
 
 ---
@@ -229,7 +229,7 @@ BBAM（注意力調變）——它們怎麼運作？
 
 ---
 
-# Phase C 荒謬即真理 - 趣味應用
+# Phase C 荒謬即真理與趣味應用
 
 ---
 
@@ -389,7 +389,7 @@ WFGY 解析力量與代價的關係。
 ```
 ---
 
-# Phase D 價值實作 - 巨觀視角
+# Phase D 價值實作與巨觀視角
 
 ---
 
