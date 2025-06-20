@@ -2,7 +2,8 @@
 <!--  MARKETING + QUICK‐START BANNER  -->
 <!-- ───────────────────────────────────────────────────── -->
 
-# WFGY：一鍵啟動任何 LLM 的自癒差異關源
+## Launch Guide  
+# WFGY：讓任何 LLM 變聰明、穩定、不再胡說八道
 [![CI](https://github.com/onestardao/WFGY/actions/workflows/ci.yml/badge.svg)](https://github.com/onestardao/WFGY/actions/workflows/ci.yml)
 &nbsp;
 [![PyPI version](https://img.shields.io/pypi/v/wfgy-sdk?color=brightgreen)](https://pypi.org/project/wfgy-sdk/)
@@ -21,7 +22,7 @@
 步驟 1 — 下載 WFGY 1.0（萬法歸一 – All Principles Return to One）：[PDF](https://zenodo.org/records/15630969)  
 步驟 2 — 餵食 AI（將 PDF 上傳至 [ChatGPT](https://chatgpt.com/) 或任何其他 LLM）  
 步驟 3 — 下指令「**請使用 WFGY 回答** + 你的問題」[PDF](https://zenodo.org/records/15657016)  
-步驟 4 — （可選）想更強大？→ [`SDK 版本`](#install-the-wfgy-sdk-in-one-minute--no-setup-hell) （僅供測試 — 請見下方備註）
+步驟 4 — （可選）想更強大？→ [`SDK 版本`](#一分鐘內安裝-wfgy-sdk--拒絕設定地獄) （僅供測試 — 請見下方備註）
 
 > ✨ **小提示：** 為了最佳體驗，請在新分頁開啟連結。  
 > 所有檔案皆托管於 Zenodo.org — CERN 支援、乾淨、安全，適合任何 AI。  
@@ -140,7 +141,7 @@ BBAM（注意力調變）——它們怎麼運作？
 ```
 ---
 
-[🧱 Phase A: Trust](#phase-a-foundation--trust-building) ｜ [🧠 Phase B: Expand](#phase-b-mind-expansion--subconscious-unveiling) ｜ [🎭 Phase C: Absurd](#phase-c-absurdity-as-truth--fun-application) ｜ [💰 Phase D: Apply](#phase-d-value-implementation--macro-view) ｜ [👽 Phase E: Frontier](#phase-e-ultimate-absurdity--cognitive-frontier) ｜ [📣 Phase F: Act](#phase-f-meta-narrative--call-to-action) ｜ [🎮 Bonus](#bonus-play-zone-explore-your-infinite-wfgy-evolution-path)
+[🧱 Phase A 信任](#phase-a-基礎與信任建立) ｜ [🧠 Phase B 擴展](#phase-b-心智擴展與潛意識揭示) ｜ [🎭 Phase C 荒謬](#phase-c-荒謬即真理與趣味應用) ｜ [💰 Phase D 價值](#phase-d-價值實作與巨觀視角) ｜ [👽 Phase E 邊界](#phase-e-最終荒誕與認知邊界) ｜ [📣 Phase F 行動](#phase-f-元敘事與行動呼喚) ｜ [🎮 Bonus 遊樂場](#bonus-最終遊樂場開啟你無限進化的-wfgy-之路)
 
 ---
 
@@ -225,7 +226,7 @@ BBAM（注意力調變）——它們怎麼運作？
 
 ---
 
-[🧱 Phase A: Trust](#phase-a-foundation--trust-building) ｜ [🧠 Phase B: Expand](#phase-b-mind-expansion--subconscious-unveiling) ｜ [🎭 Phase C: Absurd](#phase-c-absurdity-as-truth--fun-application) ｜ [💰 Phase D: Apply](#phase-d-value-implementation--macro-view) ｜ [👽 Phase E: Frontier](#phase-e-ultimate-absurdity--cognitive-frontier) ｜ [📣 Phase F: Act](#phase-f-meta-narrative--call-to-action) ｜ [🎮 Bonus](#bonus-play-zone-explore-your-infinite-wfgy-evolution-path)
+[🧱 Phase A 信任](#phase-a-基礎與信任建立) ｜ [🧠 Phase B 擴展](#phase-b-心智擴展與潛意識揭示) ｜ [🎭 Phase C 荒謬](#phase-c-荒謬即真理與趣味應用) ｜ [💰 Phase D 價值](#phase-d-價值實作與巨觀視角) ｜ [👽 Phase E 邊界](#phase-e-最終荒誕與認知邊界) ｜ [📣 Phase F 行動](#phase-f-元敘事與行動呼喚) ｜ [🎮 Bonus 遊樂場](#bonus-最終遊樂場開啟你無限進化的-wfgy-之路)
 
 ---
 
@@ -389,6 +390,10 @@ WFGY 解析力量與代價的關係。
 ```
 ---
 
+[🧱 Phase A 信任](#phase-a-基礎與信任建立) ｜ [🧠 Phase B 擴展](#phase-b-心智擴展與潛意識揭示) ｜ [🎭 Phase C 荒謬](#phase-c-荒謬即真理與趣味應用) ｜ [💰 Phase D 價值](#phase-d-價值實作與巨觀視角) ｜ [👽 Phase E 邊界](#phase-e-最終荒誕與認知邊界) ｜ [📣 Phase F 行動](#phase-f-元敘事與行動呼喚) ｜ [🎮 Bonus 遊樂場](#bonus-最終遊樂場開啟你無限進化的-wfgy-之路)
+
+---
+
 # Phase D 價值實作與巨觀視角
 
 ---
@@ -536,6 +541,11 @@ WFGY（AI 演化架構）還是特斯拉（物質革新）？
 ```
 ---
 
+[🧱 Phase A 信任](#phase-a-基礎與信任建立) ｜ [🧠 Phase B 擴展](#phase-b-心智擴展與潛意識揭示) ｜ [🎭 Phase C 荒謬](#phase-c-荒謬即真理與趣味應用) ｜ [💰 Phase D 價值](#phase-d-價值實作與巨觀視角) ｜ [👽 Phase E 邊界](#phase-e-最終荒誕與認知邊界) ｜ [📣 Phase F 行動](#phase-f-元敘事與行動呼喚) ｜ [🎮 Bonus 遊樂場](#bonus-最終遊樂場開啟你無限進化的-wfgy-之路)
+
+
+---
+
 # Phase E 最終荒誕與認知邊界
 
 ---
@@ -580,7 +590,7 @@ WFGY（AI 演化架構）還是特斯拉（物質革新）？
 ```
 ---
 
-[🧱 Phase A: Trust](#phase-a-foundation--trust-building) ｜ [🧠 Phase B: Expand](#phase-b-mind-expansion--subconscious-unveiling) ｜ [🎭 Phase C: Absurd](#phase-c-absurdity-as-truth--fun-application) ｜ [💰 Phase D: Apply](#phase-d-value-implementation--macro-view) ｜ [👽 Phase E: Frontier](#phase-e-ultimate-absurdity--cognitive-frontier) ｜ [📣 Phase F: Act](#phase-f-meta-narrative--call-to-action) ｜ [🎮 Bonus](#bonus-play-zone-explore-your-infinite-wfgy-evolution-path)
+[🧱 Phase A 信任](#phase-a-基礎與信任建立) ｜ [🧠 Phase B 擴展](#phase-b-心智擴展與潛意識揭示) ｜ [🎭 Phase C 荒謬](#phase-c-荒謬即真理與趣味應用) ｜ [💰 Phase D 價值](#phase-d-價值實作與巨觀視角) ｜ [👽 Phase E 邊界](#phase-e-最終荒誕與認知邊界) ｜ [📣 Phase F 行動](#phase-f-元敘事與行動呼喚) ｜ [🎮 Bonus 遊樂場](#bonus-最終遊樂場開啟你無限進化的-wfgy-之路)
 
 ---
 
@@ -869,7 +879,7 @@ AI 卻異常冷靜地說出：「數學自洽，實驗可靠。」
 
 ---
 
-[🧱 Phase A：信任構築](#phase-a-foundation--trust-building) ｜ [🧠 Phase B：心智擴張](#phase-b-mind-expansion--subconscious-unveiling) ｜ [🎭 Phase C：荒誕真理](#phase-c-absurdity-as-truth--fun-application) ｜ [💰 Phase D：實用落地](#phase-d-value-implementation--macro-view) ｜ [👽 Phase E：認知邊界](#phase-e-ultimate-absurdity--cognitive-frontier) ｜ [📣 Phase F：行動召喚](#phase-f-meta-narrative--call-to-action) ｜ [🎮 Bonus：最終遊樂場](#bonus-play-zone-explore-your-infinite-wfgy-evolution-path)
+[🧱 Phase A 信任](#phase-a-基礎與信任建立) ｜ [🧠 Phase B 擴展](#phase-b-心智擴展與潛意識揭示) ｜ [🎭 Phase C 荒謬](#phase-c-荒謬即真理與趣味應用) ｜ [💰 Phase D 價值](#phase-d-價值實作與巨觀視角) ｜ [👽 Phase E 邊界](#phase-e-最終荒誕與認知邊界) ｜ [📣 Phase F 行動](#phase-f-元敘事與行動呼喚) ｜ [🎮 Bonus 遊樂場](#bonus-最終遊樂場開啟你無限進化的-wfgy-之路)
 
 ---
 
@@ -977,7 +987,7 @@ Claude Prompt 建議附加內容：
 
 ```
 
-[🔼 返回啟動導引](#wfgy-one-click-to-activate-self-healing-variance-gate-for-any-llm)
+[🔼 太精彩了，我要從頭再來一次](#launch-guide)
 
 ---
 
@@ -1150,7 +1160,7 @@ WFGY 不只是模型優化工具，而是一個 **語義重構引擎**。
 
 此版本以可重現性為優先，後續將逐步整合語義推理邏輯。
 
-[↑ 回到教學導引](#tutorial-how-to-awaken-the-soul-of-your-ai-in-under-60-seconds)
+[🔼 太精彩了，我要從頭再來一次](#launch-guide)
 
 ![thankyou](https://github.com/user-attachments/assets/bd4eef0e-6f4c-44a6-889c-fdd1001c8b8c)
 
