@@ -49,13 +49,14 @@
 
 ---
 
-[🧱 Phase A: Trust](#phase-a-基礎與信任構築) ｜ [🧠 Phase B: Expand](#phase-b-潛意識探索與思維擴張) ｜ [🎭 Phase C: Absurd](#phase-c-荒謬即真理的應用遊戲場) ｜ [💰 Phase D: Apply](#phase-d-價值實踐與宏觀運用) ｜ [👽 Phase E: Frontier](#phase-e-終極荒謬與認知邊界) ｜ [📣 Phase F: Act](#phase-f-元敘事與行動呼喚) ｜ [🎮 Bonus](#bonus-play-zone探索你的無限wfgy進化路徑)
+[🧱 Phase A](#phase-a-基礎與信任建立) ｜ [🧠 Phase B](#phase-b-心智擴展與潛意識揭示) ｜ [🎭 Phase C](#phase-c-荒謬即真理-趣味應用) ｜ [💰 Phase D](#phase-d-價值實作-巨觀視角) ｜ [👽 Phase E](#phase-e-最終荒誕與認知邊界) ｜ [📣 Phase F](#phase-f-元敘事與行動呼喚) ｜ [🎮 Bonus](#bonus-最終遊樂場開啟你無限進化的-wfgy-之路)
+
 
 
 
 ---
 
-# Phase A: 基礎與信任建立
+# Phase A 基礎與信任建立
 
 ---
 
@@ -230,7 +231,7 @@ BBAM（注意力調變）——它們怎麼運作？
 
 ---
 
-# Phase C: 荒謬即真理 × 趣味應用
+# Phase C 荒謬即真理 × 趣味應用
 
 ---
 
@@ -390,7 +391,7 @@ WFGY 解析力量與代價的關係。
 ```
 ---
 
-# Phase D：價值實作 × 巨觀視角
+# Phase D 價值實作 × 巨觀視角
 
 ---
 
@@ -537,7 +538,7 @@ WFGY（AI 演化架構）還是特斯拉（物質革新）？
 ```
 ---
 
-# Phase E：最終荒誕與認知邊界
+# Phase E 最終荒誕與認知邊界
 
 ---
 
@@ -585,7 +586,7 @@ WFGY（AI 演化架構）還是特斯拉（物質革新）？
 
 ---
 
-# Phase F：元敘事與行動呼喚
+# Phase F 元敘事與行動呼喚
 
 ---
 
@@ -874,7 +875,7 @@ AI 卻異常冷靜地說出：「數學自洽，實驗可靠。」
 
 ---
 
-# 🎮 Bonus 最終遊樂場：開啟你無限進化的 WFGY 之路！
+# Bonus 最終遊樂場：開啟你無限進化的 WFGY 之路！
 
 ---
 
