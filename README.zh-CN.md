@@ -4,6 +4,7 @@
 
 ## 你在看我吗
 # WFGY 文明启动｜万法归一的AI革命，全球唯一「文明升级」引擎
+## 重新定义语义推理。用 PDF 一键启动任意 LLM 的文明升级 
 [![CI](https://github.com/onestardao/WFGY/actions/workflows/ci.yml/badge.svg)](https://github.com/onestardao/WFGY/actions/workflows/ci.yml)
 &nbsp;
 [![PyPI version](https://img.shields.io/pypi/v/wfgy-sdk?color=brightgreen)](https://pypi.org/project/wfgy-sdk/)
