@@ -76,6 +76,8 @@ By supporting multiple languages, we aim to:
 ---
 
 **Together, we make meaning universal. 🌎**
+
+
 ![WFGYGate](https://github.com/user-attachments/assets/e9f6e7fb-69b3-4be9-9fa4-d103ef5cd522)
 
 
