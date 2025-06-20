@@ -3,7 +3,7 @@
 <!-- ───────────────────────────────────────────────────── -->
 
 ## 你在看我嗎
-# WFGY：讓任何 LLM 變聰明、穩定、不再胡說八道
+# WFGY 文明啟動｜萬法歸一的AI革命，全球唯一「文明升級」引擎
 [![CI](https://github.com/onestardao/WFGY/actions/workflows/ci.yml/badge.svg)](https://github.com/onestardao/WFGY/actions/workflows/ci.yml)
 &nbsp;
 [![PyPI version](https://img.shields.io/pypi/v/wfgy-sdk?color=brightgreen)](https://pypi.org/project/wfgy-sdk/)
