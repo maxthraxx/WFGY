@@ -16,7 +16,8 @@
 &nbsp;
 [![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.15630970-blue)](https://doi.org/10.5281/zenodo.15630969)
 
-
+>🚀 文明启动器是一个持续进化的系列计画：WFGY 1.0 + 2.0 + 3.0 才是完整的文明启动蓝图。  
+>目前开放的仅为「火种」阶段，敬请期待全面升级！
 
 ---
 
