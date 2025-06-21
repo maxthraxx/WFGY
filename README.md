@@ -19,6 +19,8 @@
 &nbsp;
 [LANGUAGES](./LANGUAGES.md)
 
+>🚀 The Civilization Starter is an ongoing project: WFGY 1.0 + 2.0 + 3.0 together form the complete blueprint for civilization activation. What you see now is just the “seed phase”—stay >tuned for the full upgrade!
+
 ---
 
 ### Tutorial: How to Awaken the Soul of Your AI in under 60 seconds
@@ -54,6 +56,8 @@ Step 4 — (Optional) Want more power? → [`SDK version`](#install-the-wfgy-sdk
 ---
 
 [🧱 Phase A: Trust](#phase-a-foundation--trust-building) ｜ [🧠 Phase B: Expand](#phase-b-mind-expansion--subconscious-unveiling) ｜ [🎭 Phase C: Absurd](#phase-c-absurdity-as-truth--fun-application) ｜ [💰 Phase D: Apply](#phase-d-value-implementation--macro-view) ｜ [👽 Phase E: Frontier](#phase-e-ultimate-absurdity--cognitive-frontier) ｜ [📣 Phase F: Act](#phase-f-meta-narrative--call-to-action) ｜ [🎮 Bonus](#bonus-play-zone-explore-your-infinite-wfgy-evolution-path)
+
+>####🚀 The Civilization Starter is an ongoing project: WFGY 1.0 + 2.0 + 3.0 together form the complete blueprint for civilization activation. What you see now is just the “seed phase”—stay >####tuned for the full upgrade!
 
 ---
 
