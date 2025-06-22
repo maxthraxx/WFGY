@@ -70,20 +70,20 @@ Step 4 — (Optional) Want more power? → [`SDK version`](#install-the-wfgy-sdk
 > From the very first line, dive into hands-on co-learning with AI!
 
 ```markdown
-📘 Q1: What is WFGY 1.0?
+📘 Q1: Challenge you (AI) with the question you're least proficient at using WFGY.
+
+Then, using WFGY's logic, try to answer it again.
+See if your answer is more profound, more accurate, and more like 'truly understanding.'
+Finally, provide a rating for the answer without WFGY and the answer with WFGY.
+```
+
+```markdown
+📘 Q2: What is WFGY 1.0?
 
 Based on the paper, explain in a way “an elementary school student can understand”:
 What is WFGY 1.0? How do its four core modules—BBMC (Semantic Residue),
 BBPF (Progression Formula), BBCR (Reverse Reconstruction), BBAM (Attention Modulation)—work?
 How do they collaborate to help AI eliminate hallucinations and generate more reliable answers?
-```
-
-```markdown
-📘 Q2: Challenge you (AI) with the question you're least proficient at using WFGY.
-
-Then, using WFGY's logic, try to answer it again.
-See if your answer is more profound, more accurate, and more like 'truly understanding.'
-Finally, provide a rating for the answer without WFGY and the answer with WFGY.
 ```
 
 ```markdown
