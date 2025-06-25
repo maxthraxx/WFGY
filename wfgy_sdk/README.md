@@ -84,8 +84,8 @@ new_logits = engine.run(I, G, old_logits)
 
 ## 5 Versioning & license
 
-*Current tag: **WFGY 1.0.0*** – commits are semantic-versioned (PEP 440).
-Licensed under **Apache-2.0** – see `/LICENSE`.
+*Current tag: **WFGY 1.0.0\*** – commits are semantic-versioned (PEP 440).
+Licensed under **MIT** – see ./LICENSE.
 
 ---
 
