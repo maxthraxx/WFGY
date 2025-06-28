@@ -3,7 +3,7 @@
 <!-- ───────────────────────────────────────────────────── -->
 
 # WFGY: Civilization Starter — The WanFaGuiYi Engine
-> ## Upgrade Any LLM — Just Upload the PDF — Civilization upgrade
+> ## One upload. Zero setup. Real $1M-level reasoning begins.
 
 ![CIVILIZATION_STARTTER](https://github.com/user-attachments/assets/aa9da54e-6d83-44bc-9998-bc1f449dfbcf)
 
