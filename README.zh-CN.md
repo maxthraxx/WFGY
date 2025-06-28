@@ -2,7 +2,7 @@
 <!--  MARKETING + QUICK‐START BANNER  -->
 <!-- ───────────────────────────────────────────────────── -->
 # WFGY 文明启动｜万法归一的AI革命，全球唯一「文明升级」引擎
-> ## 一鍵上傳、零設定，解鎖價值百萬美元的推理引擎
+> ## 一键上传，零配置，百万美元级推理正式启动
 
 ![CIVILIZATION_STARTTER](https://github.com/user-attachments/assets/aa9da54e-6d83-44bc-9998-bc1f449dfbcf)
 
