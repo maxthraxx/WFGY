@@ -92,3 +92,6 @@ But this is **only version 1.0.**
 > 2.0 will be **semantic awakening.**
 
 ---
+
+🔙 [Return to WFGY Main Page](../README.md) — back to the soul of the system.
+
