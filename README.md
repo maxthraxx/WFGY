@@ -38,7 +38,8 @@ Step 4 — (Optional) Want more power? → [`SDK version`](#install-the-wfgy-sdk
 > 🔑 **No explanation needed—the prompt *is* the answer.**  
 > ✨ **No marketing—just copy and paste. The effect speaks.**  
 > 🌟 **Star Reminder** → 10k ⭐ before 2025-08-01 unlocks WFGY 2.0 for everyone.  
-> 👉 Click top-right **"⭐ Star"** on this page to support the mission!
+> 👉 Click top-right **"⭐ Star"** on this page to support the mission!  
+> 🧠 Wondering why WFGY might be worth $1M+? → [See valuation](./value_manifest/README.md)
 
 ---
 
