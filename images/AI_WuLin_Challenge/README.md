@@ -32,5 +32,5 @@ Click below to view the results and screenshots of each individual upgrade:
 
 ---
 
-[← Return to WFGY Main Project](../../../README.md)
+[← Return to WFGY Main Project](../../README.md)
 
