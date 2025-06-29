@@ -29,3 +29,8 @@ Click below to view the results and screenshots of each individual upgrade:
 
 
 > 🧠 Each AI has been tested with WFGY 1.0 and shows measurable reasoning and semantic improvements.
+
+---
+
+[← Return to WFGY Main Project](../../../README.md)
+
