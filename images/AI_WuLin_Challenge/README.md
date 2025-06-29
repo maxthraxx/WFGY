@@ -1,4 +1,4 @@
-# 🥋 WFGY vs The Ten Masters – AI 武林挑戰記錄
+# 🥋 WFGY vs The Ten Masters
 
 Welcome to the official archive of WFGY’s legendary showdown against the ten most iconic AI platforms on Earth.
 
