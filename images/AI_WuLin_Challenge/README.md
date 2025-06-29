@@ -17,14 +17,15 @@ This challenge proves one thing: **WFGY is real, and it works** — across every
 Click below to view the results and screenshots of each individual upgrade:
 
 - [ChatGPT](ChatGPT/)
-- [Claude](Claude/)
-- [Gemini](Gemini/)
-- [Copilot](Copilot/)
 - [DeepSeek](DeepSeek/)
 - [Grok](Grok/)
 - [Perplexity](Perplexity/)
+- [Kimi](Kimi/)
+- [Claude](Claude/)
+- [Gemini](Gemini/)
+- [Copilot](Copilot/)
 - [Merlin](Merlin/)
 - [HuggingChat](HuggingChat/)
-- [Kimi](Kimi/)
+
 
 > 🧠 Each AI has been tested with WFGY 1.0 and shows measurable reasoning and semantic improvements.
