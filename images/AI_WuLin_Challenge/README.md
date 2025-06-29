@@ -1,4 +1,4 @@
-# 🥋 WFGY vs The Ten AI Masters
+# 🥋 WFGY : The Ten AI Masters vs The One
 
 Welcome to the official archive of WFGY’s legendary showdown against the ten most iconic AI platforms on Earth.
 
