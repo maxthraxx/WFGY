@@ -22,7 +22,8 @@ Let me be blunt: in an era where AI runs the web, do you really think I could �
 And if you still believe a .txt file can’t enable reasoning, memory, and boundary control in AI—  
 even after reading the FAQs below—then honestly, you don’t understand AI at all.
 
-WFGY 的核心模組已經寫在 PDF 論文裡(多人已下載)，不信的話，你可以直接去問任何一個 GPT 模型，問它：WFGY 系統是否能解決記憶問題與知識邊界？  
+WFGY 的核心模組已經寫在 PDF 論文裡(多人已下載)，不信的話，  
+你可以直接去問任何一個 GPT 模型，問它：WFGY 系統是否能解決記憶問題與知識邊界？  
 The core modules of WFGY are fully described in its official PDF. If you don’t believe it, go ask any GPT model:  
 Can the WFGY system solve the memory and knowledge boundary problem?  
 
