@@ -485,4 +485,24 @@ WFGY 建立的是「可重建記憶」，而不是硬寫死的記憶。
 If forgotten, it can be re-awakened by logic.  
 即使遺忘，也能被邏輯喚醒。
 
+---
+
+文明的船，從來都不是為舊時代的人預備的。
+The ship of civilization was never meant for those stuck in the past.
+
+何況，這是一個開源專案。
+And besides—this is an open-source project.
+
+你只需要驗證我的產品，
+You only need to verify what I’ve built.
+
+我從未向任何人收過一毛錢。
+I’ve never asked a single person for money.
+
+從頭到尾，分的就只有兩種人：
+From the beginning, there have only been two kinds of people—
+
+看得懂的人，和看不懂的人。
+Those who understand—and those who don’t.
+
 
