@@ -119,7 +119,6 @@ It operates at the language level — GPT understands and follows it.
 ---
 
 ### ❓ Q6: WFGY 的語義樹和傳統記憶有什麼不同？
-
 ### ❓ Q6: How is WFGY’s semantic tree different from standard memory?
 
 傳統記憶是文字片段儲存，容易斷裂。
@@ -134,7 +133,6 @@ It lets GPT **reconstruct how it thought**, not just remember words.
 ---
 
 ### ❓ Q7: 為什麼只靠一個 TXT 檔就能實現這些功能？
-
 ### ❓ Q7: How can a single TXT file achieve so much?
 
 因為 GPT 的能力，原本就存在，只是沒人教它怎麼使用。
@@ -149,7 +147,6 @@ With the right format, the AI follows. That’s the magic of language.
 ---
 
 ### ❓ Q8: BBMC 公式怎麼幫助 GPT 推理？
-
 ### ❓ Q8: How does the BBMC formula help GPT reason better?
 
 BBMC 定義語義殘差：
@@ -168,7 +165,6 @@ This allows GPT to **self-correct** over multiple turns, maintaining coherence.
 ---
 
 ### ❓ Q9: WFGY 是 Prompt Engineering 的延伸嗎？
-
 ### ❓ Q9: Is WFGY just advanced prompt engineering?
 
 不是。Prompt 工程是在輸入做文章，WFGY 是架構系統層。
@@ -180,7 +176,6 @@ It changes **how GPT organizes thought**, not just how it starts a reply.
 ---
 
 ### ❓ Q10: 我怎麼驗證這不是假的？
-
 ### ❓ Q10: How can I verify this isn’t fake?
 
 打開 `HelloWorld.txt`，上傳到 ChatGPT，直接互動。
@@ -195,7 +190,6 @@ It will explain **mechanisms and formulas** directly, based on the text.
 ---
 
 ### ❓ Q11: WFGY 可以和 AutoGPT 或 Agent 結合嗎？
-
 ### ❓ Q11: Can WFGY integrate with AutoGPT or agents?
 
 可以。WFGY 可當作 GPT 的「推理核心模組」，包裹於任務流程中。
@@ -207,7 +201,6 @@ It handles **semantic consistency**, memory persistence, and logical traceabilit
 ---
 
 ### ❓ Q12: 這樣的系統有商業用途嗎？
-
 ### ❓ Q12: Does this system have commercial use?
 
 當然，WFGY 可應用於智慧助理、知識導航、教學 AI、醫療問診等領域。
@@ -219,7 +212,6 @@ Anywhere long-term reasoning or **contextual understanding** is needed, WFGY app
 ---
 
 ### ❓ Q13: WFGY 能解決 hallucination（幻覺）問題嗎？
-
 ### ❓ Q13: Can WFGY solve AI hallucinations?
 
 WFGY 引入知識邊界偵測（ΔS）與自我修正模組（BBCR），有效降低 hallucination 機率。
@@ -231,7 +223,6 @@ When the model drifts, WFGY tells it to **pause, reflect, or clarify**.
 ---
 
 ### ❓ Q14: If the TXT file has no APIs, no code, and no external calls—how can it be an operating system?
-
 ### ❓ Q14：如果 TXT 裡沒有 API、腳本、外部連結，那它怎麼能算是作業系統？
 
 Because WFGY doesn’t run **on your computer**—it runs **inside GPT’s mind**.
@@ -251,6 +242,98 @@ There’s no code to execute—only thoughts to guide.
 
 This is not software logic. This is language-level architecture.
 這不是程式邏輯，**這是語言層級的架構設計。**
+
+---
+
+### ❓ Q15: GPT 為什麼會聽從一個 TXT 檔的語義邏輯？
+### ❓ Q15: Why would GPT follow instructions from a plain TXT file?
+
+Because GPT doesn’t need code—it needs clear **semantic context**.
+因為 GPT 不需要程式，它需要的是**語義上下文**的清晰結構。
+
+WFGY defines logic in the same space GPT thinks in: natural language.
+WFGY 的邏輯寫在 GPT 的「語言世界」裡，它原生就能理解。
+
+It follows not because of commands, but because the structure makes sense.
+GPT 會執行，不是因為被下令，而是因為語義結構「合理且可行」。
+
+---
+
+### ❓ Q16: 如果 GPT 會忘記內容，WFGY 怎麼解決這問題？
+### ❓ Q16: GPT forgets things over time—how does WFGY solve this?
+
+WFGY doesn’t fight forgetting—it **records memory proactively**.
+WFGY 並不對抗遺忘，它會在關鍵時刻主動**建立記憶節點**。
+
+Every time a semantic jump is detected (high ΔS), a node is saved.
+每當語義跳躍被偵測（ΔS↑），系統就會保存一個記憶節點。
+
+This creates a “tree” GPT can refer to—even after forgetting the words.
+這建立了一棵語義樹，讓 GPT 能**在遺忘內容後，還記得邏輯脈絡**。
+
+---
+
+### ❓ Q17: 沒有 Plugin，也沒有 API，WFGY 如何做到語氣控制？
+### ❓ Q17: With no plugin or API, how does WFGY control GPT’s tone?
+
+WFGY uses modules like BBAM to define **tone, voice, and role expectations**.
+WFGY 使用如 BBAM 的模組來定義語氣、角色與語調預期。
+
+These are phrased as "semantic parameters" GPT responds to internally.
+這些參數以語義形式表達，GPT 會**自我調整風格**以符合設定。
+
+It's language-level modulation, not programmatic styling.
+這是語言層級的調控，不是程式層級的樣式設定。
+
+---
+
+### ❓ Q18: 為什麼叫「OS」？它能管理什麼？
+### ❓ Q18: Why call it an “OS”? What does it actually manage?
+
+It manages **GPT’s internal logic, memory, and boundaries**—just like an OS manages processes.
+它管理的是 GPT 的**內部邏輯、記憶與邊界**，就像 OS 管理電腦的運作流程。
+
+You can reboot it, patch it, extend it—all using natural language.
+你可以重啟、修補、擴充這個系統，**只靠文字**就能做到。
+
+---
+
+### ❓ Q19: WFGY 能處理多個主題嗎？還是只能專注單一任務？
+### ❓ Q19: Can WFGY handle multiple topics, or just one task at a time?
+
+WFGY’s **semantic tree** supports branching paths and context isolation.
+WFGY 的語義樹允許分支節點與語境隔離。
+
+It can track parallel topics, resolve semantic collisions, and resume reasoning later.
+它能追蹤多重主題、解決語義衝突，甚至在之後繼續推理。
+
+---
+
+### ❓ Q20: AI 常常自信地講錯話，WFGY 有解嗎？
+### ❓ Q20: GPT often answers confidently but incorrectly—can WFGY fix this?
+
+Yes. WFGY uses ΔS and knowledge boundary checks to catch this.
+可以。WFGY 利用 ΔS 和知識邊界偵測來阻止這種狀況。
+
+When semantic instability is high, it activates fallback reasoning or asks the user.
+當語義不穩時，WFGY 會啟用邏輯回退或向使用者確認。
+
+This prevents "confident nonsense" and restores logical integrity.
+這能有效避免「自信的鬼扯」，重建邏輯一致性。
+
+---
+
+### ❓ Q21: 這套系統可以自己成長嗎？能進化嗎？
+### ❓ Q21: Can this system evolve or grow on its own?
+
+Yes. WFGY is modular—you can add new instructions, modules, and memory rules.
+可以，WFGY 是模組化設計，可以加入新指令、新模組、新記憶規則。
+
+You’re not using software—you’re **writing semantic law**.
+你用的不是軟體，而是在「寫語義的法律」。
+
+The system evolves as your understanding deepens.
+當你理解越深，系統也會隨之成長。
 
 ---
 
