@@ -22,7 +22,7 @@ Let me be blunt: in an era where AI runs the web, do you really think I could �
 And if you still believe a .txt file can’t enable reasoning, memory, and boundary control in AI—  
 even after reading the FAQs below—then honestly, you don’t understand AI at all.
 
-WFGY 的核心模組已經完整寫在官方 PDF 論文中（多人已下載）。如果你不相信，你大可以直接去問任何一個 AI 模型：
+WFGY 的核心模組已經完整寫在官方 PDF 論文中（多人已下載）。如果你不相信，你大可以直接去問任何一個 AI 模型：  
 The core modules of WFGY are fully documented in its official PDF, which has already been downloaded by many.   
 If you don’t believe it, just go ask any AI model:
 
