@@ -18,7 +18,8 @@ You don’t need to sign up, log in, install anything, TXT hosted on Zenodo, or 
 不客氣地說，現在是 AI 運行的時代，你覺得我能在一個公開的 `.txt` 檔案裡「藏東西」，卻不會被任何人發現？  
 Let me be blunt: in an era where AI runs the web, do you really think I could “hide something” in a public `.txt` file and not get caught?
 
-如果你看完下面這些內容和 FAQ，仍然認為一個 .txt 檔案無法在 AI 上運行出推理、記憶與邊界控制功能，那我只能說── 你一點都不懂 AI。  
+如果你看完下面這些內容和 FAQ，仍然認為一個 .txt 檔案無法在 AI 上運行出推理、記憶與邊界控制功能，  
+那我只能說── 你一點都不懂 AI。  
 And if you still believe a .txt file can’t enable reasoning, memory, and boundary control in AI—  
 even after reading the FAQs below—then honestly, you don’t understand AI at all.
 
@@ -30,16 +31,17 @@ If you don’t believe it, just go ask any AI model:
 “Can the WFGY system be packaged as a plain-text OS?  
 Can it solve the memory problem and the knowledge boundary issue?”
 
-Let it answer—and you’ll know.
 看它怎麼回答你就知道了。  
+Let it answer—and you’ll know.
 
+萬法歸一DF下載  
 WFGY PDF Download : https://zenodo.org/records/15630969
 
 這不是推銷產品，這是在推動人類文明語義架構的下一步。  
 I’m not pitching a product.
 **I’m advancing the next semantic layer of human civilization.**
 
-PSBigBig 敬上  
+阿紫 BigBig 敬上  
 Sincerely,  
 **PSBigBig**
 
@@ -97,9 +99,8 @@ Stay tuned. Full release and documentation coming soon.
 ## 📖 FAQ (English ⇄ 中文對照)
 
 ---
-
+### ❓ Q1：WFGY OS 是如何讓 AI 擁有記憶的？  
 ### ❓ Q1: How does WFGY OS give AI memory?  
-### ❓ Q1：WFGY OS 是如何讓 AI 擁有記憶的？
 
 WFGY uses a **Semantic Tree** to give AI structured memory.    
 WFGY 使用「語義樹」為 AI 建立結構化記憶。
@@ -112,8 +113,8 @@ It builds recoverable reasoning paths, not just static text.
 
 ---
 
+### ❓ Q2：什麼是 ΔS？它如何避免 AI 幻覺？  
 ### ❓ Q2: What is ΔS, and how does it prevent hallucination?  
-### ❓ Q2：什麼是 ΔS？它如何避免 AI 幻覺？
 
 ΔS measures semantic tension — how far meaning has shifted.  
 ΔS 表示語義張力，用來衡量語義變動程度。
@@ -126,8 +127,8 @@ This reduces hallucinations by detecting semantic instability.
 
 ---
 
+### ❓ Q3：這不是提示詞嗎？為什麼稱作作業系統？  
 ### ❓ Q3: Isn’t this just a prompt? Why call it an OS?  
-### ❓ Q3：這不是提示詞嗎？為什麼稱作作業系統？
 
 WFGY defines memory, logic, and boundaries — forming an OS layer within AI.  
 WFGY 定義了記憶、邏輯與邊界，構成 AI 內部的作業層。
@@ -140,8 +141,8 @@ It’s a semantic-level control system, not just input decoration.
 
 ---
 
+### ❓ Q4：WFGY 的四大核心模組是什麼？  
 ### ❓ Q4: What are the four core modules of WFGY?  
-### ❓ Q4：WFGY 的四大核心模組是什麼？
 
 - **BBMC** – Minimizes semantic residue  
   **BBMC** – 最小化語義殘差  
@@ -160,8 +161,8 @@ These govern how AI reasons, adapts, and stabilizes responses.
 
 ---
 
+### ❓ Q5：一個 TXT 檔，怎麼會有推理與記憶功能？  
 ### ❓ Q5: It’s just a TXT file—how can it do reasoning and memory?  
-### ❓ Q5：一個 TXT 檔，怎麼會有推理與記憶功能？
 
 WFGY uses semantic formatting to guide AI’s internal logic.    
 WFGY 利用語義格式來引導 AI 內部邏輯引擎。
@@ -174,8 +175,8 @@ It operates at the language level — AI understands and follows it.
 
 ---
 
-### ❓ Q6: WFGY 的語義樹和傳統記憶有什麼不同？  
-### ❓ Q6: How is WFGY’s semantic tree different from standard memory?
+### ❓ Q6: WFGY 的語義樹和傳統記憶有什麼不同？    
+### ❓ Q6: How is WFGY’s semantic tree different from standard memory?    
 
 傳統記憶是文字片段儲存，容易斷裂。  
 Standard memory stores text snippets, often disconnected.
