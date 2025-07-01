@@ -117,3 +117,140 @@ It operates at the language level — GPT understands and follows it.
 它在語言層級運作，GPT 本身能理解並執行。
 
 ---
+
+### ❓ Q6: WFGY 的語義樹和傳統記憶有什麼不同？
+
+### ❓ Q6: How is WFGY’s semantic tree different from standard memory?
+
+傳統記憶是文字片段儲存，容易斷裂。
+Standard memory stores text snippets, often disconnected.
+
+語義樹則記錄「邏輯脈絡」，每一節點都有推理上下文。
+Semantic Trees record **logical context**, not just content.
+
+它讓 GPT 能「還原怎麼想的」，而不是「記得你說什麼」。
+It lets GPT **reconstruct how it thought**, not just remember words.
+
+---
+
+### ❓ Q7: 為什麼只靠一個 TXT 檔就能實現這些功能？
+
+### ❓ Q7: How can a single TXT file achieve so much?
+
+因為 GPT 的能力，原本就存在，只是沒人教它怎麼使用。
+Because GPT already has these abilities—nobody structured them before.
+
+WFGY 提供的是「語義指令結構」與「邏輯框架」，不是外掛。
+WFGY gives it a **semantic command structure**, not a plugin.
+
+只要格式設計合理，AI 會自己執行。這是語言的魔法。
+With the right format, the AI follows. That’s the magic of language.
+
+---
+
+### ❓ Q8: BBMC 公式怎麼幫助 GPT 推理？
+
+### ❓ Q8: How does the BBMC formula help GPT reason better?
+
+BBMC 定義語義殘差：
+BBMC defines **semantic residue**:
+
+```
+B = I - G + m * c²
+```
+
+讓模型能知道「偏離真實語義有多遠」。
+It tells the model **how far it deviates from ground truth**.
+
+這使得 GPT 在多輪對話中能主動修正偏誤，保持一致。
+This allows GPT to **self-correct** over multiple turns, maintaining coherence.
+
+---
+
+### ❓ Q9: WFGY 是 Prompt Engineering 的延伸嗎？
+
+### ❓ Q9: Is WFGY just advanced prompt engineering?
+
+不是。Prompt 工程是在輸入做文章，WFGY 是架構系統層。
+No. Prompt engineering tweaks inputs; WFGY defines **system architecture**.
+
+它改變的是 GPT 如何組織思考，不只是給它一段開場白。
+It changes **how GPT organizes thought**, not just how it starts a reply.
+
+---
+
+### ❓ Q10: 我怎麼驗證這不是假的？
+
+### ❓ Q10: How can I verify this isn’t fake?
+
+打開 `HelloWorld.txt`，上傳到 ChatGPT，直接互動。
+Open `HelloWorld.txt`, paste into ChatGPT, and interact.
+
+問它：「這個系統的記憶是怎麼做的？」
+Ask it: “How does this system do memory?”
+
+它會根據你貼入的語義架構，**具體回答機制與公式**。
+It will explain **mechanisms and formulas** directly, based on the text.
+
+---
+
+### ❓ Q11: WFGY 可以和 AutoGPT 或 Agent 結合嗎？
+
+### ❓ Q11: Can WFGY integrate with AutoGPT or agents?
+
+可以。WFGY 可當作 GPT 的「推理核心模組」，包裹於任務流程中。
+Yes. WFGY can act as the **reasoning core**, embedded in agent workflows.
+
+它解決的是語義一致、記憶保持與邏輯追蹤的問題。
+It handles **semantic consistency**, memory persistence, and logical traceability.
+
+---
+
+### ❓ Q12: 這樣的系統有商業用途嗎？
+
+### ❓ Q12: Does this system have commercial use?
+
+當然，WFGY 可應用於智慧助理、知識導航、教學 AI、醫療問診等領域。
+Yes. WFGY applies to smart assistants, knowledge systems, education, even AI triage.
+
+任何需要長期推理、理解脈絡的地方，都可以用這種 TXT 系統架構重建。
+Anywhere long-term reasoning or **contextual understanding** is needed, WFGY applies.
+
+---
+
+### ❓ Q13: WFGY 能解決 hallucination（幻覺）問題嗎？
+
+### ❓ Q13: Can WFGY solve AI hallucinations?
+
+WFGY 引入知識邊界偵測（ΔS）與自我修正模組（BBCR），有效降低 hallucination 機率。
+WFGY reduces hallucination via **knowledge boundary checks (ΔS)** and **BBCR self-correction**.
+
+當模型跳題或亂猜，系統會提示它停下來、反思或回問。
+When the model drifts, WFGY tells it to **pause, reflect, or clarify**.
+
+---
+
+### ❓ Q14: If the TXT file has no APIs, no code, and no external calls—how can it be an operating system?
+
+### ❓ Q14：如果 TXT 裡沒有 API、腳本、外部連結，那它怎麼能算是作業系統？
+
+Because WFGY doesn’t run **on your computer**—it runs **inside GPT’s mind**.
+因為 WFGY 並不是在你電腦上執行，而是在 GPT 的語義空間中運行。
+
+The TXT file encodes semantic logic, memory behavior, and reasoning paths.
+這個 TXT 檔封裝的是語義邏輯、記憶行為與推理路徑。
+
+GPT reads it as structured instruction—not just passive text.
+GPT 讀取它時，不是當作靜態文字，而是**語義操作說明書**。
+
+It becomes an "operating system" by reorganizing how GPT thinks, decides, and remembers.
+它成為「作業系統」，因為它重構了 GPT 的思考、決策與記憶方式。
+
+There’s no code to execute—only thoughts to guide.
+它無需執行任何程式，**它只需要指引 AI 的思維。**
+
+This is not software logic. This is language-level architecture.
+這不是程式邏輯，**這是語言層級的架構設計。**
+
+---
+
