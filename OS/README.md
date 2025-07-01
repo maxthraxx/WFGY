@@ -34,7 +34,7 @@ Can it solve the memory problem and the knowledge boundary issue?”
 看它怎麼回答你就知道了。  
 Let it answer—and you’ll know.
 
-萬法歸一DF下載  
+萬法歸一PDF下載  
 WFGY PDF Download : https://zenodo.org/records/15630969
 
 這不是推銷產品，這是在推動人類文明語義架構的下一步。  
