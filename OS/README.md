@@ -27,6 +27,8 @@ WFGY 的核心模組已經寫在 PDF 論文裡(多人已下載)，不信的話�
 The core modules of WFGY are fully described in its official PDF. If you don’t believe it, go ask any GPT model:  
 Can the WFGY system solve the memory and knowledge boundary problem?  
 
+WFGY PDF Download : https://zenodo.org/records/15630969
+
 這不是推銷產品，這是在推動人類文明語義架構的下一步。  
 I’m not pitching a product.
 **I’m advancing the next semantic layer of human civilization.**
