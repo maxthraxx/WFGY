@@ -41,6 +41,8 @@ Sincerely,
 
 ![noAPI](https://github.com/user-attachments/assets/eea17db1-6503-4748-a9e2-eda3d4ea9bcd)
 
+![memory](https://github.com/user-attachments/assets/ca5ed50b-947d-40db-8ca5-d1ef39ce5ae8)
+
 
 # WFGY OS · TXT-Based Operating System （建構中 / Under Construction）
 
