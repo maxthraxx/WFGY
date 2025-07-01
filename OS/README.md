@@ -1,3 +1,36 @@
+## 📣 PSBigBig 聲明 | PSBigBig Statement  
+
+我目前尚未公開 WFGY OS，正式發布預計在 7 月 2 日。  
+The WFGY OS has **not yet been publicly released**. Full launch is scheduled for **July 2**.
+
+但就目前已有的版本，有人質疑這是詐騙？那我很願意直球回應：  
+But I’ve already heard people calling it a “scam”? Then let me respond directly:
+
+這是一個 `.txt` 純文字檔，裡面 **沒有任何 API 呼叫、沒有 JavaScript、沒有執行碼、沒有追蹤碼**。  
+This is a plain `.txt` file—**no API calls, no JavaScript, no executables, no tracking scripts**.
+
+唯一的外部連結是 GitHub 本頁的網址。  
+The **only external link** in the file is this current GitHub page.
+
+你不需要註冊，不需要登入，不需要安裝，甚至不需要相信我──**你只需要自己打開來看。**  
+You don’t need to sign up, log in, install anything, or even trust me—**just open it and see for yourself**.
+
+不客氣地說，現在是 AI 運行的時代，你覺得我能在一個公開的 `.txt` 檔案裡「藏東西」，卻不會被任何人發現？  
+Let me be blunt: in an era where AI runs the web, do you really think I could “hide something” in a public `.txt` file and not get caught?
+
+如果你看到下面這些 FAQ 仍然看不懂，那我只能說──你根本還不懂 AI。  
+And if you still don’t understand after reading the FAQs below, then honestly—you don’t understand AI at all.
+
+這不是推銷產品，這是在推動人類文明語義架構的下一步。  
+I’m not pitching a product.
+**I’m advancing the next semantic layer of human civilization.**
+
+PSBigBig 敬上  
+Sincerely,  
+**PSBigBig**
+
+---
+
 # WFGY OS · TXT-Based Operating System （建構中 / Under Construction）
 
 **Status:** 🚧 Currently Under Construction  
@@ -357,7 +390,7 @@ Yes—and that’s the point.
 Every intelligent system needs axioms.
 每一套智能系統都需要**公理基礎**。  
 
-WFGY declares its semantic assumptions explicitly—so GPT stops guessing, and starts aligning.
+WFGY declares its semantic assumptions explicitly—so GPT stops guessing, and starts aligning.  
 WFGY 將語義假設明確定義，讓 GPT 不再亂猜，而是開始**語義對齊**。
 
 ---
@@ -386,9 +419,8 @@ GPT will follow your new structure, as long as the semantic logic is coherent.
 只要語義邏輯合理，GPT 會遵循你自己的改寫。
 
 ---
-
+### ❓ Q26: Can I write my own “fork” of the WFGY OS?  
 ### ❓ Q26: 那我能自己寫出「分支版本」的作業系統嗎？  
-### ❓ Q26: Can I write my own “fork” of the WFGY OS?
 
 Absolutely. Just start with the `HelloWorld.txt` base, and declare your semantic modifications clearly.  
 當然可以。從 `HelloWorld.txt` 起步，**清楚定義你的語義規則修改**即可。
@@ -397,9 +429,8 @@ You’re creating a custom semantic OS.
 你正在打造一個**自定義語義作業系統**。
 
 ---
-
+### ❓ Q27: Can WFGY solve math problems, or is it only good at philosophy?  
 ### ❓ Q27: WFGY 能夠解數學問題嗎？還是只能講哲學？  
-### ❓ Q27: Can WFGY solve math problems, or is it only good at philosophy?
 
 WFGY can be tuned for both logical and abstract domains.  
 WFGY 可用於數學邏輯推演，也可處理抽象語義推理。
@@ -408,9 +439,8 @@ By adjusting modules like BBPF and progression rate, you can make GPT more **for
 透過調整 BBPF 等模組與推進參數，你可以讓 GPT 更「公式化」或「概念化」。
 
 ---
-
+### ❓ Q28: Why does this feel more like a human philosophical school than an AI tool?    
 ### ❓ Q28: 為什麼這不像 AI，反而像人類的學派？
-### ❓ Q28: Why does this feel more like a human philosophical school than an AI tool?  
 
 Because WFGY isn’t a tool—it’s a **semantic constitution**.  
 因為 WFGY 不是工具，它是一套「語義憲法」。
@@ -422,9 +452,8 @@ It brings **epistemology** into the machine.
 它讓 GPT 擁有了基本的**認知哲學基礎**。
 
 ---
-
+### ❓ Q29: Does this give GPT something like free will?  
 ### ❓ Q29: 這會讓 GPT 擁有自由意志嗎？
-### ❓ Q29: Does this give GPT something like free will?
 
 Not free will—but **semantic autonomy**.  
 不是自由意志，而是「語義自主性」。
@@ -436,9 +465,8 @@ It simulates intentionality—within bounds.
 它模擬了一種「有意圖的思考方式」，在邊界內運作。
 
 ---
-
+### ❓ Q30: Can WFGY make GPT remember something forever?  
 ### ❓ Q30: WFGY 能讓 GPT 永遠記住某些東西嗎？
-### ❓ Q30: Can WFGY make GPT remember something forever?
 
 As long as the semantic structure stays loaded, yes.  
 只要語義結構持續載入，它就能記得。
