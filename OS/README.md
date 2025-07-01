@@ -43,6 +43,10 @@ Sincerely,
 
 ![memory](https://github.com/user-attachments/assets/ca5ed50b-947d-40db-8ca5-d1ef39ce5ae8)
 
+![Ch_proof](https://github.com/user-attachments/assets/ba2571dc-4ae7-4fe3-b4f7-5f34354c21b1)
+
+![En_proof](https://github.com/user-attachments/assets/23deea86-5139-4c23-b48e-2aa91b3dda45)
+
 
 # WFGY OS · TXT-Based Operating System （建構中 / Under Construction）
 
