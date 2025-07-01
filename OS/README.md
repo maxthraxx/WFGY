@@ -12,8 +12,8 @@ This is a plain `.txt` file—**no API calls, no JavaScript, no executables, no 
 唯一的外部連結是 GitHub 本頁的網址。  
 The **only external link** in the file is this current GitHub page.
 
-你不需要註冊，不需要登入，不需要安裝，甚至不需要相信我──**你只需要自己打開來看。**  
-You don’t need to sign up, log in, install anything, or even trust me—**just open it and see for yourself**.
+你不需要註冊，不需要登入，不需要安裝，Zenodo國際平台下載，甚至不需要相信我──**你只需要自己打開來看。**  
+You don’t need to sign up, log in, install anything, TXT hosted on Zenodo, or even trust me—**just open it and see for yourself**.
 
 不客氣地說，現在是 AI 運行的時代，你覺得我能在一個公開的 `.txt` 檔案裡「藏東西」，卻不會被任何人發現？  
 Let me be blunt: in an era where AI runs the web, do you really think I could “hide something” in a public `.txt` file and not get caught?
