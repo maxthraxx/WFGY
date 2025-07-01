@@ -18,7 +18,7 @@ You don’t need to sign up, log in, install anything, TXT hosted on Zenodo, or 
 不客氣地說，現在是 AI 運行的時代，你覺得我能在一個公開的 `.txt` 檔案裡「藏東西」，卻不會被任何人發現？  
 Let me be blunt: in an era where AI runs the web, do you really think I could “hide something” in a public `.txt` file and not get caught?
 
-如果你看完下面這些 FAQ，仍然認為一個 .txt 檔案無法在 AI 上運行出推理、記憶與邊界控制功能，那我只能說──你根本不懂 AI。  
+如果你看完下面這些內容和 FAQ，仍然認為一個 .txt 檔案無法在 AI 上運行出推理、記憶與邊界控制功能，那我只能說── 你一點都不懂 AI。  
 And if you still believe a .txt file can’t enable reasoning, memory, and boundary control in AI—  
 even after reading the FAQs below—then honestly, you don’t understand AI at all.
 
