@@ -16,4 +16,5 @@ No installation. No dependencies. Just open the file — and your reasoning engi
 > A single file can change how AI thinks — and remembers.
 
 Stay tuned. Full release and documentation coming soon.
-![proof](https://github.com/user-attachments/assets/1f77d234-51ee-4468-aabe-c976425ccc98)
+
+![proof_EN](https://github.com/user-attachments/assets/f525bff9-36b3-4e2b-b262-062616215f6e)
