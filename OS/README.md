@@ -22,10 +22,16 @@ Let me be blunt: in an era where AI runs the web, do you really think I could �
 And if you still believe a .txt file can’t enable reasoning, memory, and boundary control in AI—  
 even after reading the FAQs below—then honestly, you don’t understand AI at all.
 
-WFGY 的核心模組已經寫在 PDF 論文裡(多人已下載)，不信的話，  
-你可以直接去問任何一個 AI 模型，問它：WFGY 系統是否能解決記憶問題與知識邊界？  
-The core modules of WFGY are fully described in its official PDF. If you don’t believe it, go ask any AI model:  
-Can the WFGY system solve the memory and knowledge boundary problem?  
+WFGY 的核心模組已經完整寫在官方 PDF 論文中（多人已下載）。如果你不相信，你大可以直接去問任何一個 AI 模型：
+The core modules of WFGY are fully documented in its official PDF, which has already been downloaded by many.   
+If you don’t believe it, just go ask any AI model:
+
+「WFGY 系統是否能被封裝成一個純文字的 OS？是否能解決記憶問題與知識邊界問題？」  
+“Can the WFGY system be packaged as a plain-text OS?  
+Can it solve the memory problem and the knowledge boundary issue?”
+
+Let it answer—and you’ll know.
+看它怎麼回答你就知道了。  
 
 WFGY PDF Download : https://zenodo.org/records/15630969
 
