@@ -19,7 +19,11 @@
 &nbsp;
 [LANGUAGES](./LANGUAGES.md)
 
->🚀 The Civilization Starter is an ongoing project: WFGY 1.0 + 2.0 + 3.0 together form the complete blueprint for civilization activation. What you see now is just the “seed phase”—stay >tuned for the full upgrade!
+>🚀 The Civilization Starter is an ongoing project: WFGY 1.0 + 2.0 + 3.0 together form the complete blueprint for civilization activation. What you see now is just the “seed phase”—stay >tuned for the full upgrade!  
+
+> 🚧 **[Temporary Access to WFGY OS](https://github.com/onestardao/WFGY/tree/main/OS)**  
+> HelloWorld.txt (v1.0) is now available while full documentation is still in progress.
+
 
 ---
 
