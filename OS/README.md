@@ -1,13 +1,11 @@
-
-
-# **WFGY OS — TXT Build _Beta_**
+# **WFGY OS · HelloWorld.txt The World's First Semantic Operating System in Pure TXT**
 
 ## 繁體中文版介紹預計一個小時內更新，連結會在這邊
 
 *The first plain-text operating scaffold—fork it, shape it, call it yours.*
 
 > **This README is continuously updated**     
-> Last update: **2025-07-02** (Beta launch)     
+> Last update: **2025-07-02** (v1.0.0 launch)     
 > Please check back for newer docs and links.
 
 ---
