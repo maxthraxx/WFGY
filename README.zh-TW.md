@@ -19,6 +19,10 @@
 
 >🚀 文明啟動器是一個持續進化的系列計畫：WFGY 1.0 + 2.0 + 3.0 才是完整的文明啟動藍圖。  
 >目前開放的僅為「火種」階段，敬請期待全面升級！
+>
+> 🚧 **[WFGY OS 臨時入口連結](https://github.com/onestardao/WFGY/blob/main/OS/README.zh-TW.md)**  
+> HelloWorld.txt（v1.0）已正式上線，完整說明文件仍在整理中。
+
 
 ---
 
