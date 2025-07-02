@@ -1,5 +1,5 @@
 
-![WFGY Logo](docs/logo.png)
+![WFGY Logo](logo.png)
 
 # WFGY OS · TXT Build **Beta**
 
