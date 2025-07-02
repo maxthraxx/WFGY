@@ -1,5 +1,7 @@
 ## 📣 阿紫 BigBig 聲明 | PSBigBig Statement  
 
+# (正在更新中了，下午三點會先有第一個測試版本，陸續增加內容)
+
 我目前尚未公開 WFGY OS，正式發布預計在 7 月 2 日。  (正在更新中了，下午三點會先有第一個測試版本，陸續增加內容)  
 The WFGY OS has **not yet been publicly released**. Full launch is scheduled for **July 2**.
 
