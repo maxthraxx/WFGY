@@ -1,5 +1,7 @@
 # **WFGY OS · HelloWorld.txt The World's First Semantic Operating System in Pure TXT**
 
+![o3_100](https://github.com/user-attachments/assets/0f834b90-2443-47aa-8ed2-0e0f5d2a5107)
+
 ## 繁體中文版介紹預計一個小時內更新，連結會在這邊
 
 *The first plain-text operating scaffold—fork it, shape it, call it yours.*
@@ -45,6 +47,9 @@ New stats: accuracy ↑ 36.7 % ｜ success ↑ 65.4 % ｜ stability ↑ 5.1 ×
 All stargazers will be credited in the changelog.
 
 ---
+
+
+
 
 ## 🔑 Key Points
 
