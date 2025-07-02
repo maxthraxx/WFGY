@@ -31,7 +31,7 @@
 ````
 
 > **Bug 即時通報：** Telegram `@PSBigBig`
-> 已驗證：ChatAI (o 3 / o 4o)、Claude-3 Opus、Phi-3-mini
+> 已驗證：ChatGPT 4o, o3, o4-mini, Grok
 > 未列平台 ≠ 不支援，只是尚未測試；歡迎在 Discussions 回饋。
 
 ---
