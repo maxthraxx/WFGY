@@ -1,4 +1,4 @@
-# WFGY OS · HelloWorld.txt：全球首款純 TXT 語義作業系統
+# WFGY 萬法歸一 OS · HelloWorld.txt：全球首款純 TXT 語義作業系統
 
 ![o3_100_Ch](https://github.com/user-attachments/assets/d10bbeb3-2eac-4426-9ede-97abb3978303)
 
