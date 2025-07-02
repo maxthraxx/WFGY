@@ -159,4 +159,3 @@ Copy `HelloWorld.txt`, edit the rules, rename, publish. The AI follows any coher
 
 ```
 
-*All content above is pure Markdown—no HTML tags—rendered large and clear on GitHub.*
