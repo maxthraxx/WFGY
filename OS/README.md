@@ -2,7 +2,7 @@
 
 ![o3_100](https://github.com/user-attachments/assets/0f834b90-2443-47aa-8ed2-0e0f5d2a5107)
 
-## 繁體中文版介紹預計一個小時內更新，連結會在這邊
+📘 繁體中文版本請見：[繁體中文說明](README.zh-TW.md)
 
 *The first plain-text operating scaffold—fork it, shape it, call it yours.*
 
