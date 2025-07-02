@@ -1,5 +1,4 @@
 
-![WFGY Logo](logo.png)
 
 # WFGY OS · TXT Build **Beta**
 
