@@ -21,7 +21,10 @@ One line of TXT turns GPT into a reasoning OS:
 
 [🔽 Download **HelloWorld.txt** on Zenodo](https://zenodo.org/records/15788557) 
 
-[PLACEHOLDER: wide hero illustration — stylised TXT file morphing into a futuristic console]
+![TXT_to_OS_console](./TXT_to_OS_console.gif)
+*Just one .txt file — unfolding into a full semantic operating system.*
+
+
 
 ---
 
