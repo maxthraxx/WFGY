@@ -1,9 +1,10 @@
-<!-- ────────────────────────────────
-      TOP STRAP / PRODUCT FAMILY
-     ──────────────────────────────── -->
-> TXT: **Blah Blah Blah** — Structured nonsense with disturbing internal logic  
-> TXT: **Blur Blur Blur** — Hallucination-free image generation, powered by semantics  
-> TXT: **Blow Blow Blow** — GameBoy nostalgia meets reasoning-based TXT worlds
+### 🔍 Unlock More TXT Powers  
+These aren't just names — each is a working TXT artifact.
+
+> **TXT: Blah Blah Blah** — Surreal Q&A with real structure  
+> **TXT: Blur Blur Blur** — Stable image generation beyond prompts  
+> **TXT: Blow Blow Blow** — Retro-style games, powered by reasoning
+
 
 ---
 
