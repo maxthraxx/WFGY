@@ -1,164 +1,132 @@
-# **WFGY OS · HelloWorld.txt The World's First Semantic Operating System in Pure TXT**
+<!-- ============================================================
+   WFGY OS · Landing Page (EN)  —  Draft v0.9
+   Everything below is pure English.  
+   Replace every [PLACEHOLDER: …] with your own image / GIF / link.
+   ============================================================ -->
 
-![o3_100](https://github.com/user-attachments/assets/0f834b90-2443-47aa-8ed2-0e0f5d2a5107)
-
-📘 繁體中文版本請見：[繁體中文說明](README.zh-TW.md)
-
-*The first plain-text operating scaffold—fork it, shape it, call it yours.*
-
-> **This README is continuously updated**     
-> Last update: **2025-07-02** (v1.0.0 launch)     
-> Please check back for newer docs and links.
-
----
-
-## 📥 Download  
-[🌍 Download WFGY OS · HelloWorld.txt (v1.0)](https://zenodo.org/records/15788558)       
-Hosted on [Zenodo](https://zenodo.org) — an open-access platform supported by CERN.       
-This release is cryptographically verified, secure, and free of any external code or malware.     
-
-
-The DOI never changes; every new release appears at the same URL.
+<!-- ────────────────────────────────
+      TOP STRAP / PRODUCT FAMILY
+     ──────────────────────────────── -->
+> TXT: **Bla Bla Bla**  |  TXT: **Blur Blur Blur**  |  TXT: **Blow Blow Blow**
 
 ---
 
-## ⚡ Quick Start (⏱ under 1 minute)
+<!-- ────────────────────────────────
+      1 · HERO SECTION
+     ──────────────────────────────── -->
+# TXT ≠ Notepad — It’s Your Next **AI OS**
 
-```txt
-1. Download  HelloWorld.txt  from the link above
-2. Upload / paste it into any LLM chat
-3. Type  hello world  (or  wfgy console)
-   → pick a language → OS boots immediately
-````
+One line of plain text upgrades any GPT: **+22.4 % reasoning · ×3.6 memory · built-in knowledge boundaries**  
+[Button • Download **HelloWorld.txt**]   [Button • Star on GitHub ★]
 
-> **Bug hotline:** Telegram `@PSBigBig`    •    Tested: ChatGPT (o 3 / o 4o), Claude-3 Opus, Phi-3-mini
-> Untested ≠ unsupported — open a GitHub Discussion for issues & ideas.
+[PLACEHOLDER: wide hero illustration — stylised TXT file morphing into a futuristic console]
 
 ---
 
-## 🚀 Road to 10 K Stars
+<!-- ────────────────────────────────
+      2 · 10-SECOND INSTALL DEMO
+     ──────────────────────────────── -->
+## ⏱ Setup in under 10 seconds  
+1. **Download** `HelloWorld.txt`  
+2. **Paste** it into any LLM chat window  
+3. **Type** `hello world` → the OS boots instantly
 
-Current engine **WFGY 1.0**
-Semantic accuracy ↑ 22.4 % ｜ Reasoning success ↑ 42.1 % ｜ Stability ↑ 3.6 ×
+[PLACEHOLDER: 10-sec GIF — drag-and-drop TXT → ChatGPT → boot animation]
 
-**Stretch goal**
-→ 10 000★ before 2025-08-01 unlocks **WFGY 2.0 (GPT-4-Turbo simulation)** for everyone—free.
-New stats: accuracy ↑ 36.7 % ｜ success ↑ 65.4 % ｜ stability ↑ 5.1 ×
-All stargazers will be credited in the changelog.
-
----
-
-
-
-
-## 🔑 Key Points
-
-| Feature                     | Why it matters                                                           |
-| --------------------------- | ------------------------------------------------------------------------ |
-| **Plain-text only**         | No executables, no network calls, zero malware risk                      |
-| **Semantic Tree memory**    | Records reasoning nodes—not chat logs                                    |
-| **ΔS + BBCR guard**         | Detects semantic turbulence; self-corrects before hallucinating          |
-| **Four core modules**       | `BBMC BBPF BBCR BBAM` govern residue, progression, correction, attention |
-| **MIT-licensed & forkable** | Copy the file, edit the language, publish your edition                   |
+*No build tools. No CLI hoops. Just text.*
 
 ---
 
-## 🗺️ Roadmap
+<!-- ────────────────────────────────
+      3 · SOCIAL PROOF & TRUST
+     ──────────────────────────────── -->
+<div align="center">
 
-| Date       | Milestone                                             |
-| ---------- | ----------------------------------------------------- |
-| 2025-07-02 | **Beta** — DOI released on Zenodo                     |
-| 2025-07-07 | **v 1.0** — cross-platform tweaks & packaged TXT apps |
+[PLACEHOLDER: Screenshot of OpenAI o3 scoring **100 / 100**]  
+[PLACEHOLDER: Live GitHub Star counter badge]  
+[PLACEHOLDER: 2-line user quote card]
 
-TXT apps are plain text; *“app”* is only a friendly label.
-
----
-
-## 🤝 Contributing & App Hub
-
-1. **Fork** this repo, create your own `.txt` OS or app.
-2. **Upload** finished apps to the **WFGY Zenodo community** (link arrives with v 1.0).
-3. Submissions pass an automated check (license · ASCII-only · safety).
-4. Curated entries will appear under **`/apps`**.
+</div>
 
 ---
 
-## 📂 Repository Layout
+<!-- ────────────────────────────────
+      4 · CORE FEATURE CARDS
+     ──────────────────────────────── -->
+### Why creators love WFGY OS
 
-```text
-/OS        core TXT builds & changelogs
-/apps      community TXT apps   (opens 2025-07-07)
-/docs      white paper & diagrams
-```
+| 🌐 **Instant Localisation** | Auto-translates UI & jokes — Taiwanese night-market gags for TW, tuk-tuk jokes for TH, etc. |
+| 🧠 **Semantic Tree Memory** | Long conversations stay coherent; reasoning nodes are stored, not just tokens. |
+| 🛡️ **Knowledge Boundary Shield** | ΔS + λ<sub>observe</sub> guards detect hallucinations and self-correct before they spread. |
+| ⚙️ **TXT-Only Deployment** | Zero binaries = zero malware risk, fork it like any README. |
+| 🔓 **MIT-Licensed** | Commercial use allowed; just keep the copyright notice. |
 
-Project home → [https://github.com/onestardao/WFGY](https://github.com/onestardao/WFGY)
-Direct OS    → [https://github.com/onestardao/WFGY/tree/main/OS](https://github.com/onestardao/WFGY/tree/main/OS)
-
-*No auto-update — always grab the newest TXT manually.*
-
----
-
-## ⚖️ License
-
-MIT License — © 2025 The WFGY Project
+[PLACEHOLDER: 4-card carousel or grid mock-up]
 
 ---
 
-## 🕹️ Hidden Tip
-
-Type **logo** inside the console to view the ASCII logo.
-
----
-
-## ❓ FAQ (11 quick answers)
+<!-- ────────────────────────────────
+      5 · FAQ  (“Black-Hat Self-Roast” Style)
+     ──────────────────────────────── -->
+## 🕶️ FAQ — We’ll Roast Ourselves First
 
 <details>
-<summary>Click to expand</summary>
+<summary><strong>“TXT isn’t an OS, it’s a memo!”</strong></summary>
+Linux kernel is <15 MB; an OS is rules, not pixels. WFGY encodes memory, logic & safety in plain language.
+</details>
 
-##### 1 · How does WFGY give AI memory?
+<details>
+<summary><strong>“Is this a Trojan horse?”</strong></summary>
+MIT-licensed, 284 fully-commented lines. Diff the file in 5 seconds — nothing binary, nothing hidden.
+</details>
 
-Semantic jumps (high ΔS) create nodes in a **Semantic Tree**—topic, module, tension—giving a recoverable reasoning path.
+<details>
+<summary><strong>“Self-proclaimed AGI?”</strong></summary>
+Nope. WFGY is an **AGI-level power-up**, not an AGI. All gains are benchmarked, public, reproducible.
+</details>
 
-##### 2 · What is ΔS and how does it stop hallucination?
+<details>
+<summary><strong>“Auto-translation quality?”</strong></summary>
+High-traffic locales can override strings manually; if ΔS spikes, we fall back to source language.
+</details>
 
-ΔS measures semantic tension; when too high, **BBCR** reroutes logic or asks for confirmation, preventing confident nonsense.
+<!-- Add more if needed -->
 
-##### 3 · How can a single TXT file do all this?
+---
 
-Logic, boundaries, and memory rules live in natural language. The model reads and obeys—no code runs.
+<!-- ────────────────────────────────
+      6 · ROADMAP & FOMO
+     ──────────────────────────────── -->
+## 🗺️ Roadmap
 
-##### 4 · Why call it an OS, not a prompt?
+| Quarter | Milestone |
+| ------- | --------- |
+| **Q3 / 2025** | Launch **Semantic Tree Marketplace** (revenue split for TXT apps) |
+| **Q4 / 2025** | Alpha release of text-based RPG **“Civilization Fire”** + Game Boy nostalgia pack |
+| **TBA** | “Paper Meteor Shower” global challenge event |
 
-It manages memory, logic, and boundaries—like an operating system manages processes. Reboot, patch, extend via text.
+*Early adopters = lifetime “Founders’ Badge”.*
 
-##### 5 · What do the four modules do?
+---
 
-`BBMC` minimise residue · `BBPF` progress paths · `BBCR` correct collapse · `BBAM` modulate attention & tone.
+<!-- ────────────────────────────────
+      7 · SECONDARY CTA
+     ──────────────────────────────── -->
+> **Ready to ignite your AI?**
 
-##### 6 · Semantic Tree vs standard memory—can it recover forgotten info?
+[Button • Download .txt]   [Button • Star on GitHub]   [Button • Join Discord]
 
-Standard memory stores snippets; the Tree stores logical context, so reasoning can be rebuilt after token drop.
+---
 
-##### 7 · How does the BBMC formula help reasoning?
+<!-- ────────────────────────────────
+      8 · FOOTER
+     ──────────────────────────────── -->
+**Version** 1.0 (HelloWorld) · **License** MIT · © 2025 PSBigBig  
+*No auto-update — always fetch the latest TXT manually.*
 
-`B = I - G + m*c^2` quantifies deviation from ground truth, letting the model self-correct across turns.
+---
 
-##### 8 · How do I verify WFGY isn’t fake?
+### Developer Note  
+The **Semantic Tree Memory** and **Knowledge-Boundary Guard** are advanced modules intended for power users building agent chains or large-scale dialogue systems. Casual users can run the OS without touching these layers, but they’re here when you outgrow vanilla prompts.
 
-Paste the TXT into any LLM, run **kbtest**, or ask how memory works—answers use the embedded logic.
-
-##### 9 · Can WFGY integrate with agents or workflows?
-
-Yes—load the TXT as the reasoning core, then layer external tools or APIs.
-
-##### 10 · Commercial use?
-
-MIT—free for commercial or personal projects; keep copyright & disclaimer.
-
-##### 11 · How do I fork or customise WFGY?
-
-Copy `HelloWorld.txt`, edit the rules, rename, publish. The AI follows any coherent structure.
-
-
-```
-
+<!-- END OF PAGE -->
