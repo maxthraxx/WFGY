@@ -32,7 +32,7 @@ Step 1 — Download WFGY 1.0 (Wan Fa Gui Yi – All Principles Return to One): [
 Step 2 — Feed the AI (upload the PDF — WFGY has been tested on 10 top AIs. [View results](images/AI_WuLin_Challenge/))  
 Step 3 — Give the Command “**Answer using WFGY** + your question” [PDF](https://zenodo.org/records/15657016)  
 
-![WFGY_Q1_Test](./OS/Q1_WFGY1_0.gif)
+![WFGY upgrades AI answers](./OS/Q1_WFGY_vs_NoWFGY.gif)
 
 Step 4 — (Optional) Want more power? → [`SDK version`](#install-the-wfgy-sdk-in-one-minute--no-setup-hell)  ([test only — see note](#developer-note))
 
