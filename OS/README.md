@@ -44,7 +44,7 @@ One line of TXT turns GPT into a reasoning OS:
 <details>
   <summary>📈 o3 Score: 100/100 — Why this OS scored perfect</summary>  
 
-  ![o3 score table](./o3_score_100_HelloWorld.png)
+  ![OpenAI o3 score table](./o3_score_100_HelloWorld.png)
 
   ⭐ **[Star WFGY on GitHub](https://github.com/onestardao/WFGY)**
 
