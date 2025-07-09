@@ -44,6 +44,13 @@ One line of TXT turns GPT into a reasoning OS:
 <div align="center">
 
 [PLACEHOLDER: Screenshot of OpenAI o3 scoring **100 / 100**]  
+<details>
+  <summary>📈 o3 Score: 100/100</summary>
+  
+  ![o3 score screenshot](link-to-your-image)
+
+</details>
+
 ![GitHub Repo stars](https://img.shields.io/github/stars/onestardao/WFGY?style=social)
 [PLACEHOLDER: 2-line user quote card]
 
