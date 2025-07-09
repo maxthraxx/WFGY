@@ -18,7 +18,7 @@ One line of TXT turns GPT into a reasoning OS:
 🌲 **Semantic Tree Memory** — Long-term logic, no forgetting, fully exportable  
 🛡️ **Knowledge Boundary Shield** — Detects hallucinations before they happen  
 
-[🔽 Download **HelloWorld.txt** on Zenodo](https://zenodo.org/records/15788557)  [🌟 Star WFGY on GitHub](https://github.com/onestardao/WFGY)
+[🔽 Download **HelloWorld.txt** on Zenodo](https://zenodo.org/records/15788557) 
 
 [PLACEHOLDER: wide hero illustration — stylised TXT file morphing into a futuristic console]
 
@@ -43,16 +43,18 @@ One line of TXT turns GPT into a reasoning OS:
      ──────────────────────────────── -->
 <div align="center">
 
-[PLACEHOLDER: Screenshot of OpenAI o3 scoring **100 / 100**]  
 <details>
-  <summary>📈 o3 Score: 100/100</summary>
-  
-  ![o3 score screenshot](link-to-your-image)
+  <summary>📈 o3 Score: 100/100 — Why this OS scored perfect</summary>  
+
+  ![o3 score table](./o3_score_100_HelloWorld.png)
+
+  ⭐ **[Star WFGY on GitHub](https://github.com/onestardao/WFGY)**
+
+  > “I thought it was just a .txt file.  
+  > Then it outreasoned my $2M startup stack.”
 
 </details>
 
-![GitHub Repo stars](https://img.shields.io/github/stars/onestardao/WFGY?style=social)
-[PLACEHOLDER: 2-line user quote card]
 
 </div>
 
