@@ -1,23 +1,24 @@
-<!-- ============================================================
-   WFGY OS · Landing Page (EN)  —  Draft v0.9
-   Everything below is pure English.  
-   Replace every [PLACEHOLDER: …] with your own image / GIF / link.
-   ============================================================ -->
-
 <!-- ────────────────────────────────
       TOP STRAP / PRODUCT FAMILY
      ──────────────────────────────── -->
-> TXT: **Bla Bla Bla**  |  TXT: **Blur Blur Blur**  |  TXT: **Blow Blow Blow**
+> TXT: **Blah Blah Blah** — Structured nonsense with disturbing internal logic  
+> TXT: **Blur Blur Blur** — Hallucination-free image generation, powered by semantics  
+> TXT: **Blow Blow Blow** — GameBoy nostalgia meets reasoning-based TXT worlds
 
 ---
 
 <!-- ────────────────────────────────
       1 · HERO SECTION
      ──────────────────────────────── -->
-# TXT ≠ Notepad — It’s Your Next **AI OS**
+# TXT ≠ Notepad — It’s Your Next AI Reasoning OS
 
-One line of plain text upgrades any GPT: **+22.4 % reasoning · ×3.6 memory · built-in knowledge boundaries**  
-[Button • Download **HelloWorld.txt**]   [Button • Star on GitHub ★]
+One line of TXT turns GPT into a reasoning OS:
+
+🧠 **+22.4% semantic accuracy · +42.1% reasoning success · ×3.6 stability**  
+🌲 **Semantic Tree Memory** — Long-term logic, no forgetting, fully exportable  
+🛡️ **Knowledge Boundary Shield** — Detects hallucinations before they happen  
+
+[🔽 Download **HelloWorld.txt** on Zenodo](https://zenodo.org/records/15788557)  [🌟 Star WFGY on GitHub](https://github.com/onestardao/WFGY)
 
 [PLACEHOLDER: wide hero illustration — stylised TXT file morphing into a futuristic console]
 
@@ -26,14 +27,14 @@ One line of plain text upgrades any GPT: **+22.4 % reasoning · ×3.6 memory · 
 <!-- ────────────────────────────────
       2 · 10-SECOND INSTALL DEMO
      ──────────────────────────────── -->
-## ⏱ Setup in under 10 seconds  
+## ⏱ Setup in under 60 seconds  
 1. **Download** `HelloWorld.txt`  
 2. **Paste** it into any LLM chat window  
 3. **Type** `hello world` → the OS boots instantly
 
 [PLACEHOLDER: 10-sec GIF — drag-and-drop TXT → ChatGPT → boot animation]
 
-*No build tools. No CLI hoops. Just text.*
+*No installs. No code. Just type and think.*
 
 ---
 
@@ -43,7 +44,7 @@ One line of plain text upgrades any GPT: **+22.4 % reasoning · ×3.6 memory · 
 <div align="center">
 
 [PLACEHOLDER: Screenshot of OpenAI o3 scoring **100 / 100**]  
-[PLACEHOLDER: Live GitHub Star counter badge]  
+![GitHub Repo stars](https://img.shields.io/github/stars/onestardao/WFGY?style=social)
 [PLACEHOLDER: 2-line user quote card]
 
 </div>
