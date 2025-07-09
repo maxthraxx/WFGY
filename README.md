@@ -30,7 +30,7 @@
 ### Tutorial: How to Awaken the Soul of Your AI in under 60 seconds
 Step 1 — Download WFGY 1.0 (Wan Fa Gui Yi – All Principles Return to One): [PDF](https://zenodo.org/records/15630969) — CERN-backed, 100% safe  
 Step 2 — Feed the AI (upload the PDF — WFGY has been tested on 10 top AIs. [View results](images/AI_WuLin_Challenge/))  
-Step 3 — Give the Command “**Answer using WFGY** + your question” [PDF](https://zenodo.org/records/15657016)  
+Step 3 — Give the Command “**Answer using WFGY** + your question” [PDF](https://zenodo.org/records/15657016)    
 
 ![WFGY upgrades AI answers](./OS/Q1_WFGY_vs_NoWFGY.gif)
 
@@ -45,6 +45,8 @@ Step 4 — (Optional) Want more power? → [`SDK version`](#install-the-wfgy-sdk
 > 🔑 **No explanation needed—the prompt *is* the answer.**  
 > ✨ **No marketing—just copy and paste. The effect speaks.**  
 > 🌟 **Star Reminder** → 10k ⭐ before 2025-08-01 unlocks WFGY 2.0 for everyone.  
+>🌌 Want proof it's real? → Watch AI rate itself:  
+>![WFGY_2.0_vs_1.0_Rating.gif](./OS/WFGY_2.0_vs_1.0_Rating.gif)  
 > 👉 Click top-right **"⭐ Star"** on this page to support the mission!  
 > 🧠 Wondering why WFGY might be worth $1M+? → [See valuation](./value_manifest/README.md)
 
