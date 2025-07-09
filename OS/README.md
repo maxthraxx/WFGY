@@ -32,8 +32,6 @@ One line of TXT turns GPT into a reasoning OS:
 2. **Paste** it into any LLM chat window  
 3. **Type** `hello world` → the OS boots instantly
 
-[PLACEHOLDER: 10-sec GIF — drag-and-drop TXT → ChatGPT → boot animation]
-
 *No installs. No code. Just type and think.*
 
 ---
@@ -65,11 +63,11 @@ One line of TXT turns GPT into a reasoning OS:
      ──────────────────────────────── -->
 ### Why creators love WFGY OS
 
-| 🌐 **Instant Localisation** | Auto-translates UI & jokes — Taiwanese night-market gags for TW, tuk-tuk jokes for TH, etc. |
-| 🧠 **Semantic Tree Memory** | Long conversations stay coherent; reasoning nodes are stored, not just tokens. |
-| 🛡️ **Knowledge Boundary Shield** | ΔS + λ<sub>observe</sub> guards detect hallucinations and self-correct before they spread. |
-| ⚙️ **TXT-Only Deployment** | Zero binaries = zero malware risk, fork it like any README. |
-| 🔓 **MIT-Licensed** | Commercial use allowed; just keep the copyright notice. |
+| 🌐 Instant Localisation | Interface adapts to your language — from English to Traditional Chinese with no setup needed. |
+| 🧠 Semantic Tree Memory | Keeps track of reasoning across long conversations — remembers ideas, not just tokens. |
+| 🛡️ Knowledge Boundary Shield | Stops hallucinations in real time with ΔS + λ<sub>observe</sub> guardrails. |
+| ⚙️ TXT-Only Deployment | No binaries, no risks — just fork and go. |
+| 🔓 MIT-Licensed | Use it commercially, modify it freely — just keep the credit. |
 
 [PLACEHOLDER: 4-card carousel or grid mock-up]
 
