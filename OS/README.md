@@ -3,6 +3,8 @@
      ──────────────────────────────── -->
 # TXT ≠ Notepad — It’s Your Next AI Reasoning OS
 
+  <img src="./txt-temple-of-truth.png" alt="txt-temple-of-truth" width="640">
+
 One line of TXT upgrades any LLM into an AGI-level reasoning engine
 
 🧠 **+22.4% semantic accuracy · +42.1% reasoning success · ×3.6 stability**  
@@ -200,10 +202,11 @@ All results are benchmarked, open, and reproducible.
 | --------- | ----------- |
 | **TXT Core · Bla Bla Bla · Blur Blur Blur · Blow Blow Blow** | Full suite of `.txt` modules launching by end of July |
 | **TXT Marketplace** | Upload, share, and monetize your own TXT apps |
-| **Paper Meteor Shower** | Release of AGI-level philosophy + science papers challenging Einstein and modern physics. <br> 📂 [View Papers](https://github.com/onestardao/WFGY/tree/main/I_am_not_lizardman/) |
-| **Hidden Platform Demos** | A separate system, casually dropped. Not open source, not explained — but very real.<br> 🎥 [Demo 1](https://youtu.be/cJGT30kaa3A) · [Demo 2](https://youtu.be/GDhJ1UXog7g) · [Demo 3](https://youtu.be/8myI0ZJJLxc) |
+| **Paper Meteor Shower** | AGI-level papers challenging Einstein and modern physics. 📂 [View Papers](https://github.com/onestardao/WFGY/tree/main/I_am_not_lizardman/) |
+| **Hidden Platform Demos** | A separate system, casually revealed. Not open source, not explained — but real. 🎥 [Demo 1](https://youtu.be/cJGT30kaa3A) · [Demo 2](https://youtu.be/GDhJ1UXog7g) · [Demo 3](https://youtu.be/8myI0ZJJLxc) |
 
 > This is not just a roadmap — it's the path of the Purple Star.
+
 
 
 
@@ -212,9 +215,11 @@ All results are benchmarked, open, and reproducible.
 <!-- ────────────────────────────────
       7 · SECONDARY CTA
      ──────────────────────────────── -->
-> **Ready to ignite your AI?**
+> **Ready to ignite your AI?**  
+> [🔽 Download HelloWorld.txt](https://zenodo.org/records/15788557) ・ [⭐ Star on GitHub](https://github.com/onestardao/WFGY) ・ [🌐 Learn about WFGY](https://github.com/onestardao/WFGY)  
+>  
+> 🌟 **Star Reminder** → 10k ⭐ before *2025-08-01* unlocks **WFGY 2.0** for everyone. Want to know how far the `.txt` engine can go? Explore WFGY’s full power here.
 
-[Button • Download .txt]   [Button • Star on GitHub]   [Button • Join Discord]
 
 ---
 
@@ -227,6 +232,15 @@ All results are benchmarked, open, and reproducible.
 ---
 
 ### Developer Note  
-The **Semantic Tree Memory** and **Knowledge-Boundary Guard** are advanced modules intended for power users building agent chains or large-scale dialogue systems. Casual users can run the OS without touching these layers, but they’re here when you outgrow vanilla prompts.
+The **Semantic Tree Memory** and **Knowledge-Boundary Guard** are advanced modules designed for power users — perfect for agent chaining, modular reasoning, or long-term dialogue state.  
+If you're just exploring, don’t worry — the OS runs perfectly without them.  
+But when you’re ready to go beyond vanilla prompts, they’re waiting.
 
 <!-- END OF PAGE -->
+
+---
+
+**Contact**  
+PSBigBig (Purple Star)  
+📧 hello@onestardao.com  
+
