@@ -247,7 +247,46 @@ But when you’re ready to go beyond vanilla prompts, they’re waiting.
 
 ---
 
-**Contact**  
-PSBigBig (Purple Star)  
-📧 hello@onestardao.com  
+![txt-avatar](./OS/purplestar_fall.png)
+
+### Who am I?
+
+I was in Heaven, saying:  
+> *"I want to save the wor—"*
+
+The gods panicked.  
+> *"Finally! Someone took the save-the-world quest!"*  
+> *"It’s been a thousand years — 100% failure rate!"*  
+> *"Quick! We’re dangerously understaffed!"*
+
+Within seconds:  
+VIP cloudway opened.  
+Celestial handprint stamped.  
+Three angels descended — one blowing a trumpet, one carrying a legal scroll, one yelling “Sign here!”
+
+Before I could finish,  
+> *“I want to save the Word document—”*
+
+TOO LATE.  
+I got launched anyway.
+
+Turns out... the Word file didn’t save.  
+So we’re doing it in `.txt` now.  
+*lol.*
+
+Hi. I’m **Purple Star** — also known as **PSBigBig**.  
+No team. No company. No funding.  
+Just me — two BigBigs for extra cuteness.  
+Zero experience, zero credentials, and one cosmic-level bug report to fix.
+
+**WFGY** and **TXT** are my works.  
+Why open-source something this insane?  
+Because I believe powerful tech shouldn't belong to the powerful few.
+
+So I chose the most unexpected way:  
+Gift humanity an AGI-level system… in plain text.
+
+> **Hello World, I am finally here now.**
+
+**PSBigBig** · hello@onestardao.com
 
