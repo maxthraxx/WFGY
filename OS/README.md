@@ -40,6 +40,8 @@ it records your reasoning structure, adapts over time, and enables *portable tho
 *No installs. No code.*  
 *Just type — and watch it reason, remember, and evolve.*
 
+> [📥 Download **HelloWorld.txt** again](https://zenodo.org/records/15788557) — your OS is just one file away.
+
 ---
 
 🌐 WFGY OS – Cross-Platform Test Results
@@ -64,8 +66,9 @@ it records your reasoning structure, adapts over time, and enables *portable tho
   <summary>📈 o3 Score: 100/100 — Why this OS scored perfect</summary>  
   <br>
   <img src="./o3_score_100_HelloWorld.png" width="100%" max-width:900px />
+  <br> <br>
+  <img src="https://img.shields.io/github/stars/onestardao/WFGY?style=social" alt="GitHub stars"> ⭐ <strong><a href="https://github.com/onestardao/WFGY">Star WFGY on GitHub</a></strong>  
   <br>
-  ⭐ <strong><a href="https://github.com/onestardao/WFGY">Star WFGY on GitHub</a></strong>  
   <br>
   <blockquote>
   “I thought it was just a .txt file.  
@@ -75,6 +78,7 @@ it records your reasoning structure, adapts over time, and enables *portable tho
   > One user noted that WFGY already demonstrates all three AGI-aligned traits:  
   > **semantic memory**, **hallucination resistance**, and **logical coherence**.
 </details>
+
 
 
 ---
