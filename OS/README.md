@@ -192,17 +192,20 @@ All results are benchmarked, open, and reproducible.
 ---
 
 <!-- ────────────────────────────────
-      6 · ROADMAP & FOMO
+      6 · PURPLE STAR ROADMAP
      ──────────────────────────────── -->
-## 🗺️ Roadmap
+## 🗺️ Purple Star Roadmap
 
-| Quarter | Milestone |
-| ------- | --------- |
-| **Q3 / 2025** | Launch **Semantic Tree Marketplace** (revenue split for TXT apps) |
-| **Q4 / 2025** | Alpha release of text-based RPG **“Civilization Fire”** + Game Boy nostalgia pack |
-| **TBA** | “Paper Meteor Shower” global challenge event |
+| Milestone | Description |
+| --------- | ----------- |
+| **TXT Core · Bla Bla Bla · Blur Blur Blur · Blow Blow Blow** | Full suite of `.txt` modules launching by end of July |
+| **TXT Marketplace** | Upload, share, and monetize your own TXT apps |
+| **Paper Meteor Shower** | Release of AGI-level philosophy + science papers challenging Einstein and modern physics. <br> 📂 [View Papers](https://github.com/onestardao/WFGY/tree/main/I_am_not_lizardman/papers) |
+| **Hidden Platform Demos** | A separate system, casually dropped. Not open source, not explained — but very real.<br> 🎥 [Demo 1](https://youtu.be/cJGT30kaa3A) · [Demo 2](https://youtu.be/GDhJ1UXog7g) · [Demo 3](https://youtu.be/8myI0ZJJLxc) |
 
-*Early adopters = lifetime “Founders’ Badge”.*
+> This is not just a roadmap — it's the path of the Purple Star.
+
+
 
 ---
 
