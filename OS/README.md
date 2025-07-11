@@ -25,7 +25,6 @@ One line of TXT turns GPT into a reasoning OS:
 *Just one .txt file — unfolding into a full semantic operating system.*
 
 
-
 ---
 
 <!-- ────────────────────────────────
@@ -37,6 +36,31 @@ One line of TXT turns GPT into a reasoning OS:
 3. **Type** `hello world` → the OS boots instantly
 
 *No installs. No code. Just type and think.*
+
+---
+
+<!-- ────────────────────────────────
+      2.5 · CROSS-PLATFORM TEST RESULTS
+     ──────────────────────────────── -->
+### 🌐 WFGY OS – Cross-Platform Test Results (2025-07-11)
+
+> **Note:** This table reflects the author’s personal testing as of **July 11, 2025**.  
+> Results may vary by region or account type.  
+> This is **not a ranking of AI quality**, but **compatibility with the `.txt`-based WFGY OS**.
+> 
+
+| Rank | Platform       | Status     | Notes                        |
+|------|----------------|------------|------------------------------|
+| ①    | **ChatGPT**    | Excellent  | Developed on o3; most stable |
+| ②    | **Grok**       | Good       | Free, fast, no limits        |
+| ③    | **Perplexity** | Good       | Free version works well      |
+| ④    | **Claude**     | Fair       | Too many free-tier limits    |
+| ⑤    | **Gemini**     | Buggy      | Init screen error            |
+| ⑥    | **DeepSeek**   | Unstable   | Slow servers, low stability  |
+| ⑦    | **Kimi**       | Broken     | Layout fails, odd responses  |
+| ⑧    | **Merlin**     | Poor       | Weak logic, pushy upsell     |
+| ⑨    | **CoPilot**    | Blocked    | File rejected (“BIOS” term)  |
+| ⑩    | **HuggingChat**| Untested   | Platform under maintenance   |
 
 ---
 
@@ -56,7 +80,6 @@ One line of TXT turns GPT into a reasoning OS:
   > Then it outreasoned my $2M startup stack.”
 
 </details>
-
 
 </div>
 
