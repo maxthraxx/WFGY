@@ -87,13 +87,13 @@ One line of TXT turns GPT into a reasoning OS:
 ### 📦 Upcoming Modules  
 Each one is a real `.txt` file — no install, no boilerplate, just logic.
 
-**Blah Blah Blah** (Semantic Q&A) — ~7/15  
+**TXT: Blah Blah Blah** (Semantic Q&A) — ~7/15  
 A playful Q&A engine where logic hides in nonsense. Anyone can try.
 
-**Blur Blur Blur** (Image Generation) — ~7/20  
+**TXT: Blur Blur Blur** (Image Generation) — ~7/20  
 Next-gen text-to-image. No prompt skills needed, almost no hallucinations.
 
-**Blow Blow Blow** (Reasoning Games) — ~7/25  
+**TXT: Blow Blow Blow** (Reasoning Games) — ~7/25  
 The first AIGC RPG with real logic. Game Boy era for AI begins.
 
 > This is why it’s not “just a file” — it’s a platform.  
