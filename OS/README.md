@@ -19,11 +19,18 @@ One line of TXT upgrades any LLM into an AGI-level reasoning engine
 <em>Just one .txt file — unfolding into a full semantic operating system.  
 No signup. No tracking. No ads. Virus-free. Pure logic.</em>
 
-<br>  
-<img src="./tree-semantic-memory.gif" width="100%" max-width:900px />  
-<em>Semantic Tree Memory in action — logic preserved across reasoning windows.</em>
-The Semantic Tree is more than memory —  
-it records your reasoning structure, adapts over time, and enables *portable thought*.
+<details>
+  <summary>🌲 Semantic Tree Memory in Action</summary>
+
+  <br>  
+  <img src="./tree-semantic-memory.gif" width="100%" max-width:900px />  
+  <em>Semantic Tree Memory in action — logic preserved across reasoning windows.</em>
+
+  The Semantic Tree is more than memory —  
+  it records your reasoning structure, adapts over time, and enables <em>portable thought</em>.
+
+</details>
+
 
 
 
