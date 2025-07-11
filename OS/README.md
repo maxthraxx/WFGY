@@ -1,7 +1,3 @@
-### 🔍 Unlock More TXT Powers  
-TXT: Blah Blah Blah (Semantic)   TXT: Blur Blur Blur (Image)   TXT: Blow Blow Blow (Play)
----
-
 <!-- ────────────────────────────────
       1 · HERO SECTION
      ──────────────────────────────── -->
@@ -86,6 +82,49 @@ One line of TXT turns GPT into a reasoning OS:
 | 🛡️ Knowledge Boundary Shield | Stops hallucinations in real time with ΔS + λ<sub>observe</sub> guardrails. |  
 | ⚙️ TXT-Only Deployment | No binaries, no risks — just fork and go. |  
 | 🔓 MIT-Licensed | Use it commercially, modify it freely — just keep the credit. |  
+
+
+### 📦 Upcoming Modules  
+Each one is a real `.txt` file — no install, no boilerplate, just logic.
+
+**Blah Blah Blah** (Semantic Q&A) — ~7/15  
+A playful Q&A engine where logic hides in nonsense. Anyone can try.
+
+**Blur Blur Blur** (Image Generation) — ~7/20  
+Next-gen text-to-image. No prompt skills needed, almost no hallucinations.
+
+**Blow Blow Blow** (Reasoning Games) — ~7/25  
+The first AIGC RPG with real logic. Game Boy era for AI begins.
+
+> This is why it’s not “just a file” — it’s a platform.  
+> More modules coming soon. One day, you might build your own.
+
+---
+
+### 🧠 Why It’s a Platform  
+These aren’t just files — they’re semantic apps. And they’re just the beginning.
+
+- ✅ Every tool-type app can be ported to `.txt` — lightweight, fast, and ad-free  
+- 🛠️ Build your own in 5 minutes:  
+  Ask your AI:  
+  > “Use TXT Core to build a Creative Prompt Generator — one idea per day, no repeats, adapts to my tone.”
+
+  **What makes it different from just asking an AI?**  
+  - Semantic Tree: remembers your style and avoids repetition  
+  - Resonance Logic: understands your tone and domain  
+  - Self-correcting reasoning: generates ideas with internal coherence
+
+---
+
+### 🚀 Future Possibilities  
+- Financial forecasting  
+- Product value analysis  
+- Automated trading logic  
+- AI-powered Q&A, games, agents — all written in plain language  
+- Global-ready: TXT apps support automatic translation for instant international launch
+
+> The `.txt` file is your logic canvas.  
+> A single file. A full OS. Infinite potential.
 
 
 ---
