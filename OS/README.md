@@ -84,11 +84,11 @@ One line of TXT turns GPT into a reasoning OS:
      ──────────────────────────────── -->
 ### Why creators love WFGY OS
 
-| 🌐 Instant Localisation | Interface adapts to your language — from English to Traditional Chinese with no setup needed. |
-| 🧠 Semantic Tree Memory | Keeps track of reasoning across long conversations — remembers ideas, not just tokens. |
-| 🛡️ Knowledge Boundary Shield | Stops hallucinations in real time with ΔS + λ<sub>observe</sub> guardrails. |
-| ⚙️ TXT-Only Deployment | No binaries, no risks — just fork and go. |
-| 🔓 MIT-Licensed | Use it commercially, modify it freely — just keep the credit. |
+| 🌐 Instant Localisation | Interface adapts to your language — from English to Traditional Chinese with no setup needed. |  
+| 🧠 Semantic Tree Memory | Keeps track of reasoning across long conversations — remembers ideas, not just tokens. |  
+| 🛡️ Knowledge Boundary Shield | Stops hallucinations in real time with ΔS + λ<sub>observe</sub> guardrails. |  
+| ⚙️ TXT-Only Deployment | No binaries, no risks — just fork and go. |  
+| 🔓 MIT-Licensed | Use it commercially, modify it freely — just keep the credit. |  
 
 [PLACEHOLDER: 4-card carousel or grid mock-up]
 
