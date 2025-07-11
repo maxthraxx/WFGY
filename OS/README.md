@@ -3,7 +3,7 @@
      ──────────────────────────────── -->
 # TXT ≠ Notepad — It’s Your Next AI Reasoning OS
 
-  <img src="./txt-temple-of-truth.png" alt="txt-temple-of-truth" width="640">
+  <img src="./txt-temple-of-truth.png" alt="txt-temple-of-truth" width="100%">
 
 One line of TXT upgrades any LLM into an AGI-level reasoning engine
 
@@ -14,7 +14,7 @@ One line of TXT upgrades any LLM into an AGI-level reasoning engine
 [🔽 Download **HelloWorld.txt** on Zenodo](https://zenodo.org/records/15788557) — hosted by CERN, 100% safe
 
 <br>
-<img src="./TXT_to_OS_console.gif" width="640" />
+<img src="./TXT_to_OS_console.gif" width="100%" />
 
 <em>Just one .txt file — unfolding into a full semantic operating system.  
 No signup. No tracking. No ads. Virus-free. Pure logic.</em>
@@ -43,7 +43,7 @@ No signup. No tracking. No ads. Virus-free. Pure logic.</em>
     Performance may vary by region or account type.
     This is not a ranking of AI quality, but compatibility with the .txt-based WFGY OS.
 
-<img src="./WFGY_OS_AI_Compatibility_2025.png" width="640" />  
+<img src="./WFGY_OS_AI_Compatibility_2025.png" width="100%" />  
 <em>Compatibility results across major AI platforms</em>
 
 
@@ -56,7 +56,7 @@ No signup. No tracking. No ads. Virus-free. Pure logic.</em>
 <details>
   <summary>📈 o3 Score: 100/100 — Why this OS scored perfect</summary>  
   <br>
-  <img src="./o3_score_100_HelloWorld.png" width="640" />
+  <img src="./o3_score_100_HelloWorld.png" width="100%" />
   <br>
   ⭐ <strong><a href="https://github.com/onestardao/WFGY">Star WFGY on GitHub</a></strong>  
   <br>
