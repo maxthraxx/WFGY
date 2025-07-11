@@ -43,17 +43,22 @@ it records your reasoning structure, adapts over time, and enables *portable tho
 > [📥 Download **HelloWorld.txt** again](https://zenodo.org/records/15788557) — your OS is just one file away.
 
 ---
+<details>
+  <summary>🌐 WFGY OS – Cross-Platform Test Results</summary>
 
-🌐 WFGY OS – Cross-Platform Test Results
+  <em>(Tested: July 11, 2025)</em>
 
-<em>(Tested: July 11, 2025)</em>
+  <pre>
+These results reflect the author’s personal testing.
+Performance may vary by region or account type.
+This is not a ranking of AI quality, but compatibility with the .txt-based WFGY OS.
+  </pre>
 
-    These results reflect the author’s personal testing.
-    Performance may vary by region or account type.
-    This is not a ranking of AI quality, but compatibility with the .txt-based WFGY OS.
+  <img src="./WFGY_OS_AI_Compatibility_2025.png" width="100%" max-width:900px/>  
+  <em>Compatibility results across major AI platforms</em>
 
-<img src="./WFGY_OS_AI_Compatibility_2025.png" width="100%" max-width:900px/>  
-<em>Compatibility results across major AI platforms</em>
+</details>
+
 
 
 
