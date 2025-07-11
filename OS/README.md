@@ -100,26 +100,52 @@ One line of TXT turns GPT into a reasoning OS:
 ## 🕶️ FAQ — We’ll Roast Ourselves First
 
 <details>
-<summary><strong>“TXT isn’t an OS, it’s a memo!”</strong></summary>
-Linux kernel is <15 MB; an OS is rules, not pixels. WFGY encodes memory, logic & safety in plain language.
+<summary><strong>“Wait... a TXT file is an OS?”</strong></summary>
+Yes. Operating systems are made of logic, memory, and rules — not pixels.  
+WFGY encodes semantic memory and reasoning protocols inside a .txt file, readable by any AI.
 </details>
 
 <details>
-<summary><strong>“Is this a Trojan horse?”</strong></summary>
-MIT-licensed, 284 fully-commented lines. Diff the file in 5 seconds — nothing binary, nothing hidden.
+<summary><strong>“Is it really open source? Can I edit or fork it?”</strong></summary>
+Fully MIT licensed. Fork it, remix it, rebrand it. Change two lines and call it your own.  
+There’s no telemetry, no DRM — just text.
 </details>
 
 <details>
-<summary><strong>“Self-proclaimed AGI?”</strong></summary>
-Nope. WFGY is an **AGI-level power-up**, not an AGI. All gains are benchmarked, public, reproducible.
+<summary><strong>“Could it be hiding anything? API calls? Trackers?”</strong></summary>
+Nope. It’s 100% plain text. No JavaScript, no API calls, no trackers.  
+You can diff it, scan it, reverse it — what you see is all there is.  
+We didn’t even include GitHub links inside the file, to keep it fully clean.
 </details>
 
 <details>
-<summary><strong>“Auto-translation quality?”</strong></summary>
-High-traffic locales can override strings manually; if ΔS spikes, we fall back to source language.
+<summary><strong>“How do I update it?”</strong></summary>
+It doesn’t auto-update — by design.  
+New versions are posted on this GitHub repo, so just bookmark this page.  
+And here’s the twist: when your AI model improves, WFGY performs better without any edits.
 </details>
 
-<!-- Add more if needed -->
+<details>
+<summary><strong>“Does it translate automatically?”</strong></summary>
+Yes. The interface adapts to your language automatically.  
+Translation quality depends on which AI model you use.  
+No extra setup required — just paste and go.
+</details>
+
+<details>
+<summary><strong>“Is this just prompt engineering again?”</strong></summary>
+Not quite. WFGY defines a **full reasoning structure** — including memory trees, safety bounds, and error logic.  
+It’s a framework, not a trick.
+</details>
+
+<details>
+<summary><strong>“Is this trying to be AGI?”</strong></summary>
+No. WFGY is not AGI.  
+It’s an AGI-aligned toolchain for human-level reasoning and modular memory.  
+All results are benchmarked, open, and reproducible.
+</details>
+
+
 
 ---
 
