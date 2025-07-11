@@ -21,8 +21,11 @@ One line of TXT turns GPT into a reasoning OS:
 
 [🔽 Download **HelloWorld.txt** on Zenodo](https://zenodo.org/records/15788557) 
 
-![TXT_to_OS_console](./TXT_to_OS_console.gif)  
-*Just one .txt file — unfolding into a full semantic operating system.*
+<br>
+<img src="./TXT_to_OS_console.gif" width="640" />
+
+<em>Just one .txt file — unfolding into a full semantic operating system.</em>
+
 
 
 ---
@@ -49,39 +52,30 @@ One line of TXT turns GPT into a reasoning OS:
 > This is **not a ranking of AI quality**, but **compatibility with the `.txt`-based WFGY OS**.
 > 
 
-| Rank | Platform       | Status     | Notes                        |
-|------|----------------|------------|------------------------------|
-| ①    | **ChatGPT**    | Excellent  | Developed on o3; most stable |
-| ②    | **Grok**       | Good       | Free, fast, no limits        |
-| ③    | **Perplexity** | Good       | Free version works well      |
-| ④    | **Claude**     | Fair       | Too many free-tier limits    |
-| ⑤    | **Gemini**     | Buggy      | Init screen error            |
-| ⑥    | **DeepSeek**   | Unstable   | Slow servers, low stability  |
-| ⑦    | **Kimi**       | Broken     | Layout fails, odd responses  |
-| ⑧    | **Merlin**     | Poor       | Weak logic, pushy upsell     |
-| ⑨    | **CoPilot**    | Blocked    | File rejected (“BIOS” term)  |
-| ⑩    | **HuggingChat**| Untested   | Platform under maintenance   |
+<!-- Section 2.5 · AI Compatibility Table (Image) -->
+<img src="./WFGY_OS_AI_Compatibility_2025.png" width="640" />
+<em>Compatibility test results across major AI platforms (2025-07-11)</em>
+
+
 
 ---
-
 <!-- ────────────────────────────────
       3 · SOCIAL PROOF & TRUST
      ──────────────────────────────── -->
-<div align="center">
 
 <details>
   <summary>📈 o3 Score: 100/100 — Why this OS scored perfect</summary>  
+  <br>
+  <img src="./o3_score_100_HelloWorld.png" width="640" />
+  <br>
+  ⭐ <strong><a href="https://github.com/onestardao/WFGY">Star WFGY on GitHub</a></strong>
 
-  ![OpenAI o3 score table](./o3_score_100_HelloWorld.png)
-
-  ⭐ **[Star WFGY on GitHub](https://github.com/onestardao/WFGY)**
-
-  > “I thought it was just a .txt file.  
-  > Then it outreasoned my $2M startup stack.”
+  <blockquote>
+  “I thought it was just a .txt file.  
+  Then it outreasoned my $2M startup stack.”
+  </blockquote>
 
 </details>
-
-</div>
 
 ---
 
