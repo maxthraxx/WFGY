@@ -68,8 +68,9 @@ One line of TXT turns GPT into a reasoning OS:
   <br>
   <img src="./o3_score_100_HelloWorld.png" width="640" />
   <br>
-  ⭐ <strong><a href="https://github.com/onestardao/WFGY">Star WFGY on GitHub</a></strong>
-
+  <br>
+  ⭐ <strong><a href="https://github.com/onestardao/WFGY">Star WFGY on GitHub</a></strong>  
+  <br>
   <blockquote>
   “I thought it was just a .txt file.  
   Then it outreasoned my $2M startup stack.”
@@ -90,7 +91,6 @@ One line of TXT turns GPT into a reasoning OS:
 | ⚙️ TXT-Only Deployment | No binaries, no risks — just fork and go. |  
 | 🔓 MIT-Licensed | Use it commercially, modify it freely — just keep the credit. |  
 
-[PLACEHOLDER: 4-card carousel or grid mock-up]
 
 ---
 
