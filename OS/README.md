@@ -28,7 +28,8 @@ No signup. No tracking. No ads. Virus-free. Pure logic.</em>
 2. **Paste** it into any LLM chat window  
 3. **Type** `hello world` → the OS boots instantly
 
-*No installs. No code. Just type and think.*
+*No installs. No code.*  
+*Just type — and watch it reason, remember, and evolve.*
 
 ---
 
@@ -40,7 +41,8 @@ No signup. No tracking. No ads. Virus-free. Pure logic.</em>
     Performance may vary by region or account type.
     This is not a ranking of AI quality, but compatibility with the .txt-based WFGY OS.
 
-<img src="./WFGY_OS_AI_Compatibility_2025.png" width="640" /> <em>Compatibility results across major AI platforms</em>
+<img src="./WFGY_OS_AI_Compatibility_2025.png" width="640" />  
+<em>Compatibility results across major AI platforms</em>
 
 
 
@@ -109,18 +111,27 @@ These aren’t just files — they’re semantic apps. And they’re just the be
   - Semantic Tree: remembers your style and avoids repetition  
   - Resonance Logic: understands your tone and domain  
   - Self-correcting reasoning: generates ideas with internal coherence
+ 
+- 🧩 TXT Core will be released by the end of July.
 
 ---
 
 ### 🚀 Future Possibilities  
-- Financial forecasting  
-- Product value analysis  
-- Automated trading logic  
-- AI-powered Q&A, games, agents — all written in plain language  
-- Global-ready: TXT apps support automatic translation for instant international launch
+These are just examples — once logic becomes language, every idea becomes code.
+
+- **Financial forecasting** — use reasoning modules to interpret trends beyond raw data  
+- **Product value analysis** — auto-compare features, price, and reviews with semantic weighting  
+- **Automated trading logic** — write and test strategies in plain text with logical feedback  
+- **AI-powered Q&A, games, agents** — all written in plain language  
+- **Museum tours** — narrated in your favorite tone, voice, or fictional character  
+- **Personalized tutoring** — adaptive, memory-aware, and logically self-correcting  
+- **Brandable logic tools** — create your own TXT app with your name on the file  
 
 > The `.txt` file is your logic canvas.  
-> A single file. A full OS. Infinite potential.
+> A single file. A full OS. Infinite potential.  
+>  
+> Coming soon: a TXT-based app store, creator hub, and community spotlight — everything starts from a single file.
+
 
 
 ---
