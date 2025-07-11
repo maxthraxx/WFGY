@@ -68,15 +68,17 @@ One line of TXT turns GPT into a reasoning OS:
   <br>
   <img src="./o3_score_100_HelloWorld.png" width="640" />
   <br>
-  <br>
   ⭐ <strong><a href="https://github.com/onestardao/WFGY">Star WFGY on GitHub</a></strong>  
   <br>
   <blockquote>
   “I thought it was just a .txt file.  
-  Then it outreasoned my $2M startup stack.”
+  Then it outreasoned my $2M startup stack.”  
   </blockquote>
 
+  > One user noted that WFGY already demonstrates all three AGI-aligned traits:  
+  > **semantic memory**, **hallucination resistance**, and **logical coherence**.
 </details>
+
 
 ---
 
