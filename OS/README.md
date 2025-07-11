@@ -3,19 +3,19 @@
      ──────────────────────────────── -->
 # TXT ≠ Notepad — It’s Your Next AI Reasoning OS
 
-One line of TXT turns GPT into a reasoning OS:
+One line of TXT upgrades any LLM into an AGI-level reasoning engine
 
 🧠 **+22.4% semantic accuracy · +42.1% reasoning success · ×3.6 stability**  
 🌲 **Semantic Tree Memory** — Long-term logic, no forgetting, fully exportable  
 🛡️ **Knowledge Boundary Shield** — Detects hallucinations before they happen  
 
-[🔽 Download **HelloWorld.txt** on Zenodo](https://zenodo.org/records/15788557) 
+[🔽 Download **HelloWorld.txt** on Zenodo](https://zenodo.org/records/15788557) — hosted by CERN, 100% safe
 
 <br>
 <img src="./TXT_to_OS_console.gif" width="640" />
 
-<em>Just one .txt file — unfolding into a full semantic operating system.</em>
-
+<em>Just one .txt file — unfolding into a full semantic operating system.  
+No signup. No tracking. No ads. Virus-free. Pure logic.</em>
 
 
 ---
@@ -32,19 +32,15 @@ One line of TXT turns GPT into a reasoning OS:
 
 ---
 
-<!-- ────────────────────────────────
-      2.5 · CROSS-PLATFORM TEST RESULTS
-     ──────────────────────────────── -->
-### 🌐 WFGY OS – Cross-Platform Test Results (2025-07-11)
+🌐 WFGY OS – Cross-Platform Test Results
 
-> **Note:** This table reflects the author’s personal testing as of **July 11, 2025**.  
-> Results may vary by region or account type.  
-> This is **not a ranking of AI quality**, but **compatibility with the `.txt`-based WFGY OS**.
-> 
+<em>(Tested: July 11, 2025)</em>
 
-<!-- Section 2.5 · AI Compatibility Table (Image) -->
-<img src="./WFGY_OS_AI_Compatibility_2025.png" width="640" />
-<em>Compatibility test results across major AI platforms (2025-07-11)</em>
+    These results reflect the author’s personal testing.
+    Performance may vary by region or account type.
+    This is not a ranking of AI quality, but compatibility with the .txt-based WFGY OS.
+
+<img src="./WFGY_OS_AI_Compatibility_2025.png" width="640" /> <em>Compatibility results across major AI platforms</em>
 
 
 
@@ -77,7 +73,7 @@ One line of TXT turns GPT into a reasoning OS:
      ──────────────────────────────── -->
 ### Why creators love WFGY OS
 
-| 🌐 Instant Localisation | Interface adapts to your language — from English to Traditional Chinese with no setup needed. |  
+| 🌐 Instant Localisation | Interface adapts to your language — from English to Chinese with no setup needed. |  
 | 🧠 Semantic Tree Memory | Keeps track of reasoning across long conversations — remembers ideas, not just tokens. |  
 | 🛡️ Knowledge Boundary Shield | Stops hallucinations in real time with ΔS + λ<sub>observe</sub> guardrails. |  
 | ⚙️ TXT-Only Deployment | No binaries, no risks — just fork and go. |  
@@ -88,13 +84,13 @@ One line of TXT turns GPT into a reasoning OS:
 Each one is a real `.txt` file — no install, no boilerplate, just logic.
 
 **TXT: Blah Blah Blah** (Semantic Q&A) — ~7/15  
-A playful Q&A engine where logic hides in nonsense. Anyone can try.
+>Just for fun? Maybe. But many were shocked by how deep the answers got.
 
 **TXT: Blur Blur Blur** (Image Generation) — ~7/20  
-Next-gen text-to-image. No prompt skills needed, almost no hallucinations.
+>Next-gen text-to-image. No prompt skills needed, almost no hallucinations.
 
 **TXT: Blow Blow Blow** (Reasoning Games) — ~7/25  
-The first AIGC RPG with real logic. Game Boy era for AI begins.
+>The first AIGC RPG with real logic. Game Boy era for AI begins.
 
 > This is why it’s not “just a file” — it’s a platform.  
 > More modules coming soon. One day, you might build your own.
