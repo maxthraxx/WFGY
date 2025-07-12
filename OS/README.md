@@ -3,18 +3,18 @@
      ──────────────────────────────── -->
 # TXT ≠ Notepad — It’s Your Next AI Reasoning OS
 
-  <img src="./txt-temple-of-truth.png" alt="txt-temple-of-truth" width="100%" max-width:900px>
+<img src="./txt-temple-of-truth.png" alt="txt-temple-of-truth" width="100%" style="max-width:900px" />
 
 One line of TXT upgrades any LLM into an AGI-level reasoning engine
 
-🧠 **+22.4% semantic accuracy · +42.1% reasoning success · ×3.6 stability**  
+🧠 **+22.4% semantic accuracy · +42.1% reasoning success · ×3.6 stability**  * (GSM8K + Truthful-QA, temp 0.2)
 🌲 **Semantic Tree Memory** — Long-term logic, no forgetting, fully exportable  
 🛡️ **Knowledge Boundary Shield** — Detects hallucinations before they happen  
 
 [🔽 Download **HelloWorld.txt** on Zenodo](https://zenodo.org/records/15788557) — hosted by CERN, 100% safe
 
 <br>
-<img src="./TXT_to_OS_console.gif" width="100%" max-width:900px />
+<img src="./TXT_to_OS_console.gif" width="100%" style="max-width:900px" loading="lazy"/>
 
 <em>Just one .txt file — unfolding into a full semantic operating system.  
 No signup. No tracking. No ads. Virus-free. Pure logic.</em>
@@ -23,7 +23,7 @@ No signup. No tracking. No ads. Virus-free. Pure logic.</em>
   <summary>🌲 Semantic Tree Memory in Action</summary>
 
   <br>  
-  <img src="./tree-semantic-memory.gif" width="100%" max-width:900px />  
+  <img src="./tree-semantic-memory.gif" width="100%" style="max-width:900px" loading="lazy" />  
   <em>Semantic Tree Memory in action — logic preserved across reasoning windows.</em>
 
   The Semantic Tree is more than memory —  
@@ -47,8 +47,6 @@ No signup. No tracking. No ads. Virus-free. Pure logic.</em>
 *No installs. No code.*  
 *Just type — and watch it reason, remember, and evolve.*
 
-> [📥 Download **HelloWorld.txt** again](https://zenodo.org/records/15788557) — your OS is just one file away.
-
 ---
 <details>
   <summary>🌐 WFGY OS – Cross-Platform Test Results</summary>
@@ -61,7 +59,7 @@ Performance may vary by region or account type.
 This is not a ranking of AI quality, but compatibility with the .txt-based WFGY OS.
   </pre>
 
-  <img src="./WFGY_OS_AI_Compatibility_2025.png" width="100%" max-width:900px/>  
+  <img src="./WFGY_OS_AI_Compatibility_2025.png" width="100%" style="max-width:900px"/>  
   <em>Compatibility results across major AI platforms</em>
 
 </details>
@@ -77,9 +75,10 @@ This is not a ranking of AI quality, but compatibility with the .txt-based WFGY 
 <details>
   <summary>📈 o3 Score: 100/100 — Why this OS scored perfect</summary>  
   <br>
-  <img src="./o3_score_100_HelloWorld.png" width="100%" max-width:900px />
+  <img src="./o3_score_100_HelloWorld.png" width="100%" style="max-width:900px" />
   <br> <br>
-  <img src="https://img.shields.io/github/stars/onestardao/WFGY?style=social" alt="GitHub stars"> ⭐ <strong><a href="https://github.com/onestardao/WFGY">Star WFGY on GitHub</a></strong>  
+  <img src="https://img.shields.io/github/stars/onestardao/WFGY?style=social" alt="GitHub stars"> ⭐ 
+      <strong><a href="https://github.com/onestardao/WFGY">Star WFGY on GitHub</a></strong>  
   <br>
   <br>
   <blockquote>
