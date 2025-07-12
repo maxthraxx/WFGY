@@ -2,7 +2,7 @@
 
 ![blurblurblur](./blurblurblur.png)
 
->⚠️ Beta Landing Page – Official Launch on July 20  
+> ⚠️ Beta Landing Page – Official Launch on July 20  
 > Content is being updated frequently. Bookmark this page to follow the evolution.
 
 > **This isn’t just a prompt tool. It’s a structural language-control system for images.**
@@ -15,11 +15,15 @@ Now, things are different.
 
 **Blur Blur Blur**, powered by our `.txt` OS,  
 can generate **almost hallucination-free**, **structurally logical** images with just **2–3 lines of semantic instruction**.  
-In certain scenes — like educational diagrams, product illustrations, or narrative storyboards  
+In certain scenes — like educational diagrams, product illustrations, or narrative storyboards —  
 the results can approach **near-commercial quality**.
 
 This is the first system that treats **language as a spatial control tool** —  
 not aesthetic parameter tuning, but **semantic × spatial × logical × modular cooperation**.
+
+> 🧩 Built as a working prototype of future **multimodal embedding orchestration** —  
+> a roadmap many AI labs are still theorizing about, now running in `.txt` form.
+
 
 ---
 
