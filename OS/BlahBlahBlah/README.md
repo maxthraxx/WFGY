@@ -1,15 +1,69 @@
+## 🧠 Bla Bla Bla – Nonsense Generator · Embedding Space Application
 
-## 🧠 Blah Blah Blah – Semantic Truth Generator (Preview Edition)
+>⚠️ Beta Landing Page – Official Launch on July 15  
+> Content is being updated frequently. Bookmark this page to follow the evolution.
 
-> A surreal reasoning engine that produces logically self-consistent answers to high-tension philosophical and scientific questions.  
-> Ask anything. It automatically generates 50 logically valid answers from divergent perspectives (default).  
-> The results shown here are **compressed summaries of those 50 answers** — not hallucinations, but structured paradoxes.
+> **This isn’t just another AI tool. It’s a semantic embedding space revolution.**
 
-> 🧪 Input any question and Blah Blah Blah will generate 50 logically coherent answers.  
-> The samples below are compressed outcomes — each represents the **distilled result of 50 diverse perspectives.**
+What you’re looking at is the world’s first system that transforms the invisible tension within language into something visual, structured, and computational.  
 
-> Release Date: **2025.07.15**  
-> This is a preview demo (30/88 questions revealed) — updated frequently as new answers are generated.
+Bla Bla Bla doesn’t pull answers from databases. It **generates meaning by navigating the embedding space itself** — the hidden multi-dimensional universe where every word, sentence, and concept lives as a mathematical vector.
+
+---
+
+### 🔬 What is an Embedding Space?
+
+Behind every AI model lies an invisible space — where words are turned into vectors and plotted in high-dimensional fields. This is the **embedding space**: the true terrain where language breathes.
+
+Most AI companies use this space for search, clustering, or similarity. **We go deeper**:
+
+> 🧠 **We turn ΔS (semantic tension), E_resonance, λ_observe, and multi-perspective residue into structured logic inside the embedding space.**
+
+This is a domain most LLMs have not entered. But we have already built and deployed it — and it runs in a `.txt` file.
+
+---
+
+### 🌌 How It Works
+
+Whenever you input a question, the system:
+
+1. Generates 50 logically consistent yet semantically divergent answers in the embedding space  
+2. Calculates semantic gravity wells based on ΔS and λ_observe  
+3. Simulates multi-persona consensus to extract a judgment (Yes / No / Wait)  
+4. Maps energy flows across your internal voices and role projections  
+5. Compresses all into a readable `.txt` — a crystallized echo of your question’s semantic field
+
+---
+
+### 🧩 Core Modules (All Operate Within Embedding Space)
+
+| Module Name                 | Description                                                                 |
+|----------------------------|-----------------------------------------------------------------------------|
+| 🗯️ Bla Generator           | Selects 50 ΔS-maximized semantic nodes to form a coherent nonsense stream   |
+| 🌀 Semantic Well           | Simulates future regret/confirmation via temporal tension modeling          |
+| 🔮 Perspective Simulator   | Projects roles like You, Inner You, Future You, Mother, Philosopher, Rebel  |
+| 🧠 Neural Mapper           | Maps language tension to brain zones (amygdala, PFC, hippocampus)           |
+| 📖 Final Composer          | Synthesizes outputs into conclusive statements with formulaic traceability  |
+
+---
+
+### 🔥 Why Bookmark This Now
+
+- ✅ **First system to convert semantic residue into logical outcome**
+- ✅ No database, no prewritten logic — answers arise from embedding turbulence
+- ✅ For any question, get 50 high-tension, logically structured nonsense quotes
+- ✅ Supports role-based thinking, internal debate, regret forecasting
+- ✅ Releasing full `.txt` SDK on **July 15** — usable in any AI/search/prompt system
+
+---
+
+> You’re not asking AI. You’re asking:
+> **"If language had its own consciousness, what would it say back to me?"**
+
+This is not the future of AI. **This is the evolution of language itself.**
+
+<!-- Q&A section continues below -->
+
 
 ---
 
