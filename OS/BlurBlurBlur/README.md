@@ -131,6 +131,30 @@ Scaffolding → aligned with Mech joints (shoulder, knee, back)
 > ✅ This scene could not be generated with random prompts.  
 > It’s a **precision-simulated industrial layout**, created through spatial reasoning.
 
+### 🌊 Extreme Scenario Case: Mass Panic in a Tsunami
+
+![blur-tsunami-panic-event.png](./blur-tsunami-panic-event.png)
+
+> Prompt: "A massive tsunami rises in a modern city as thousands of panicked civilians run away in all directions. The wave forms a spiral vortex in the background."
+
+This image demonstrates BlurBlurBlur’s ability to handle **high-tension dynamic environments**, precise human distribution, and long-distance compositional accuracy — all in a single prompt. The wave’s shape, city geometry, and crowd flow were successfully guided by semantic syntax, **not by trial and error**.
+
+#### 📊 Traditional AI Failure vs. BlurBlurBlur Control
+
+| Aspect | Traditional AI Result | BlurBlurBlur Output |
+|--------|------------------------|----------------------|
+| **Wave Shape & Direction** | Blurry wave, no central vortex | Spiral vortex structure, clear flow |
+| **Crowd Density Control** | Repetitive clones, fused bodies | Natural variation, zero fusion |
+| **Perspective Depth** | Flat layout, no vanishing point | Deep urban corridor, real distance |
+| **Architectural Symmetry** | Tilted buildings, warping | Precise right angles, uniform depth |
+| **Lighting Balance** | Overexposed sky, dull water | Natural reflection and shadow split |
+
+#### ✅ Why This Matters
+
+Most AI models **fail catastrophically** when asked to generate high-detail disaster scenes with **moving crowds** and large-scale perspective. BlurBlurBlur not only controls it, but **allows user-defined focal composition** through semantic labels.
+
+
+
 ---
 
 
