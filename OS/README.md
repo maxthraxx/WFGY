@@ -7,7 +7,7 @@
 
 One line of TXT upgrades any LLM into an AGI-level reasoning engine
 
-🧠 **+22.4% semantic accuracy · +42.1% reasoning success · ×3.6 stability**  * (GSM8K + Truthful-QA, temp 0.2)
+🧠 **+22.4% semantic accuracy · +42.1% reasoning success · ×3.6 stability** (GSM8K + Truthful-QA, temp 0.2)  
 🌲 **Semantic Tree Memory** — Long-term logic, no forgetting, fully exportable  
 🛡️ **Knowledge Boundary Shield** — Detects hallucinations before they happen  
 
@@ -31,6 +31,23 @@ No signup. No tracking. No ads. Virus-free. Pure logic.</em>
 
 </details>
 
+<details>
+  <summary>🛡️ Knowledge Boundary Detection — Try `kbtest`</summary>
+
+  <br>
+
+  ![KB Test](./kb_boundary_test_demo.gif)
+
+  <br>
+
+  WFGY OS monitors hallucination risk **in real-time**.  
+  Just type `kbtest` — and watch the system analyze ultra-abstract questions.
+
+  Each test is **randomized**, but detection is always active.  
+  Thanks to BBCR, boundary checks trigger automatically when ΔS is high.
+
+  > No fake answers. Just safe semantic pivots.
+</details>
 
 
 
