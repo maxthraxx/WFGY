@@ -1,11 +1,11 @@
 ## 🧠 Bla Bla Bla – Nonsense Generator · Embedding Space Application
 
->⚠️ Beta Landing Page – Official Launch on July 15  
-> Content is being updated frequently. Bookmark this page to follow the evolution.
-
 <p align="center">
   <img src="./blahblahblah.png" alt="Blah Blah Blah Main Banner" width="100%">
 </p>
+
+>⚠️ Beta Landing Page – Official Launch on July 15  
+> Content is being updated frequently. Bookmark this page to follow the evolution.
 
 
 > **This isn’t just another AI tool. It’s a semantic embedding space revolution.**
