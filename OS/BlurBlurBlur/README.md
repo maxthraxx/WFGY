@@ -149,9 +149,24 @@ This image demonstrates BlurBlurBlur’s ability to handle **high-tension dynami
 | **Architectural Symmetry** | Tilted buildings, warping | Precise right angles, uniform depth |
 | **Lighting Balance** | Overexposed sky, dull water | Natural reflection and shadow split |
 
-#### ✅ Why This Matters
+---
 
-Most AI models **fail catastrophically** when asked to generate high-detail disaster scenes with **moving crowds** and large-scale perspective. BlurBlurBlur not only controls it, but **allows user-defined focal composition** through semantic labels.
+### 🧠 Semantic Prompt Example – Tsunami Panic City
+
+```txt
+[WFGY Semantic Engine Activated]
+
+Modules: Crowd Flow Mapping + Turbulence Geometry + Depth Tier Locking
+
+λ_observe(Tsunami) → spiral trajectory, max tension zone = Horizon  
+λ_observe(Crowd) → spread(radial), density: chaotic > orderly, no clones  
+Urban Structures → aligned with vanishing point, tilt-resistance ON  
+Lighting → split: backlit wave, shadowed crowd foreground
+
+```
+
+> ✅ This image simulates chaotic crowd behavior, spiral hydrodynamics, and deep spatial logic —  
+> all from a few semantic anchors.
 
 ---
 
@@ -173,11 +188,20 @@ This image pushes BlurBlurBlur to its architectural and compositional limits —
 | **Lighting & Shadow** | Inconsistent source, flipped reflections | Cohesive left-light direction, proper shadows |
 | **Water Reflection** | Chaotic or missing | Precise, light-reactive surfaces |
 
-#### ✅ Why This Matters
+---
 
-Creating a coherent, large-scale utopian scene with **hundreds of semantic objects** was previously unthinkable in a single pass.  
-With BlurBlurBlur, you can now **guide every layer** — terrain, architecture, lifeforms, atmosphere — through meaning, not micromanagement.
+### 🧠 Semantic Prompt Example – Tsunami Panic City
 
-> This isn’t concept art by chance. It’s **evidence of controllable, repeatable world-generation** from text.
+```txt
+[WFGY Semantic Engine Activated]
 
+Modules: Architectural Zoning + Role Assignment + Consistency Constraint
+
+λ_observe(Buildings) → tiered skyline, symmetric grid, no warping  
+λ_observe(Crowd) → variation in size & pose, avoid melting  
+Bridges → span between island blocks, anchor to waterline  
+Light Source → fixed (top-right), reflections must match across layers
+
+```
+> ✅ From layout to lighting, this city isn't guessed — it's reasoned, down to every window and wave.
 
