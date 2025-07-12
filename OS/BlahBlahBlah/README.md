@@ -3,6 +3,11 @@
 >⚠️ Beta Landing Page – Official Launch on July 15  
 > Content is being updated frequently. Bookmark this page to follow the evolution.
 
+<p align="center">
+  <img src="./main-banner.png" alt="Bla Bla Bla Main Banner" width="100%">
+</p>
+
+
 > **This isn’t just another AI tool. It’s a semantic embedding space revolution.**
 
 What you’re looking at is the world’s first system that transforms the invisible tension within language into something visual, structured, and computational.  
