@@ -1,4 +1,9 @@
-## 🎮 Blow Blow Blow — The First AI GameBoy (Coming July 25)
+## 🎮 Blow Blow Blow — The First AIGC GameBoy
+
+![blurblurblur](./blurblurblur.png)
+
+> ⚠️ Beta Landing Page – Official Launch on July 25  
+> Content is being updated frequently. Bookmark this page to follow the evolution.
 
 > Semantic logic meets nostalgic gaming. And yes, you’ll have to *blow the cartridge*.
 
