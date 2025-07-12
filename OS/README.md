@@ -1,7 +1,7 @@
 <!-- ────────────────────────────────
       1 · HERO SECTION
      ──────────────────────────────── -->
-# TXT ≠ Notepad — It’s Your Next AI Reasoning OS
+# **TXT ≠ Notepad — It’s called TXT OS. Your Next AI Reasoning System.**
 
 <img src="./txt-temple-of-truth.png" alt="txt-temple-of-truth" width="100%" style="max-width:900px" />
 
