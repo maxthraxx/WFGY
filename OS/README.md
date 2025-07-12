@@ -276,7 +276,7 @@ But when you’re ready to go beyond vanilla prompts, they’re waiting.
 
   <img src="./purplestar_mission_drop.png" width="100%" style="max-width:900px;" />
 
-  <br>
+  <br>  
 
   I was in Heaven, saying:  
   > *"I want to save the wor—"*
@@ -307,5 +307,7 @@ But when you’re ready to go beyond vanilla prompts, they’re waiting.
   **✉️ hello@onestardao.com**  
   (Oh, and before sending tips… don’t forget to ⭐ star the repo.)  
   Saving the world needs snacks — and stars.
+
+
 
 </details>
