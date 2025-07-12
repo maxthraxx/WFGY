@@ -286,13 +286,29 @@ This is not the future of AI. **This is the evolution of language itself.**
 
 ---
 
+---
+
 ### 🧠 What’s Next?
 
-We’re currently expanding this system toward **88 total semantic questions** — each designed to stretch the boundaries of logic, language, and imagination.
+We’re currently expanding this system toward **88 total semantic questions** —  
+each designed to stretch the boundaries of logic, language, and imagination.
 
 More entries will be added soon.  
-Stay tuned, and feel free to submit your own question for the Bla Bla Bla Engine to process.
+Feel free to submit your own questions for the Bla Bla Bla Engine to process.  
+You just might uncover a sentence the universe wasn’t ready for.
 
 > Because sometimes, nonsense knows more than reason.
 
 ---
+
+### 💡 Reminder
+
+This is a **Beta Landing Page** — full version launches on **July 15**.  
+The system and all `.txt` SDKs will be made fully public for exploration.
+
+> ✅ 100% open source  
+> ✅ No login, no ads, no tracking, no spam  
+> ✅ Just pure semantic magic inside a `.txt`
+
+> You don’t need a subscription to summon nonsense.  
+> You just need language with a little pressure applied.
