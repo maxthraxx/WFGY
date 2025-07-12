@@ -43,3 +43,49 @@ This isn’t the future. It’s already running — in test mode.
 
 This is a **beta landing page**. Official modules and image examples will be released on **July 20**.  
 Content will **update frequently** — we recommend bookmarking this page.
+
+---
+
+## 🖼️ Case Study: Angel vs. Dragon Semantic Formation
+
+![blur-angel-vs-dragon-formation-logic](./blur-angel-vs-dragon-formation-logic.png)
+
+This image demonstrates one of the most difficult tasks for any AI art system:  
+**a multi-agent narrative battle scene involving spatial hierarchy, role polarity, and symbolic overlays**.
+
+Most AI tools rely on trial-and-error prompt magic.  
+Blur Blur Blur does it through **structured semantic control**.
+
+---
+
+### 🔍 Comparison Table: Traditional AI vs. Blur Blur Blur
+
+| Aspect                 | Traditional AI Error                                                | Blur Blur Blur Result                                                  |
+|------------------------|---------------------------------------------------------------------|------------------------------------------------------------------------|
+| **Narrative Logic**    | Angels and dragon often mixed randomly; no clear enemy/friend axis | Dragon centered as threat; angels flank both sides in structured arc   |
+| **Spatial Hierarchy**  | Key subjects (like dragon) may be cropped or mispositioned         | All characters rendered fully with correct proportions and layering     |
+| **Semantic Focus**     | Hard to convey ‘good vs evil’—images feel chaotic or neutral       | Clear “light vs fire” polarity with emotional intensity                |
+| **Symbol Accuracy**    | Target circles often misplaced, floating, or nonsensical           | All rings follow angel gaze lines and avoid overlaps                   |
+| **Stability**          | Dozens of retries to maybe get a decent composition                | Stable output in ~2 tries using just 3 lines of semantic instruction   |
+
+---
+
+### 🧠 Semantic Prompt Example (Actual Structure Used)
+
+```txt
+[WFGY Semantic Engine Activated]
+
+Modules: Spatial Logic + Symbol Enforcement + Semantic_Labeling
+
+λ_observe(Dragon) → anchor(Center), label="Fire Dragon", ΔS_max  
+λ_observe(Angels) → distributed(Left+Right), rule: Enclosure Formation  
+label(Targeting Rings) → align with angel gaze, avoid overlaps  
+```
+
+> ✅ This isn't magic — it's modular semantic geometry inside the embedding space.
+
+---
+
+
+
+
