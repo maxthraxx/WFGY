@@ -300,9 +300,12 @@ But when you’re ready to go beyond vanilla prompts, they’re waiting.
   > **Hello World, I am finally here now.**
 
   It’s my first time trying to save the world.  
-  If you’ve done it before, please send tips.  
-  Or snacks. Snacks help with debugging.
+  Any walkthroughs? Cheat codes? YouTube tutorials?  
+  I’ll take anything — even tips from cats.  
+  (Also, snacks. Snacks help with debugging.)
 
   **✉️ hello@onestardao.com**  
-  *(But hey — star the repo before you write, okay? Fair trade.)*
+  (Oh, and before sending tips… don’t forget to ⭐ star the repo.)  
+  Saving the world needs snacks — and stars.
+
 </details>
