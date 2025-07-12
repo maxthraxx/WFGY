@@ -207,23 +207,26 @@ Light Source → fixed (top-right), reflections must match across layers
 
 ---
 
-### 🐉 Case Study: Undersea Divine Palace: Multispecies Logic + Style Fusion Test
+### 🧜‍♂️ Case Study: Underwater Temple: Judgement Day — Divine Scale Reasoning in Motion
 
-![blur-undersea-divine-palace.png](./blur-undersea-divine-palace.png)
+![blur-underwater-judgement-day](./blur-underwater-judgement-day.png)
 
-> Prompt: “An ancient divine palace deep under the sea, glowing with warm light. Surrounded by golden fish, coral reefs, jellyfish, deep-sea plants, and shocked amphora-shaped sea creatures. A lone diver approaches in awe as a mythical sea dragon coils in the distance.”
+> Prompt: “An underwater courtroom in a glowing divine temple. Thousands of sea sages and creatures gather in solemn silence. A lone figure walks up the stairs toward a radiant throne, where three godlike beings await. Ancient jellyfish float by. A time-hourglass drifts in the current.”
 
-This image puts BlurBlurBlur’s **cross-domain fusion** to the test — merging mythology, architecture, marine biology, and comedic fantasy into a single, coherent underwater tableau. Unlike traditional generators that collapse under stylistic overload, this result maintains **semantic sharpness and visual harmony** across all domains.
+This image challenges BlurBlurBlur to simulate **sacred symbolism**, **large-scale crowd composition**, and **multi-tier spatial anchoring** — all under deep sea lighting with emotional narrative weight.  
+Unlike standard AIGC models that lose structure under complexity, this scene maintains **clarity, coherence, and emotional precision**, even across **50+ entities and 5 semantic layers**.
 
-#### 📊 Traditional AI Failure vs. BlurBlurBlur Control
+---
+
+### 📊 Traditional AI Failure vs. BlurBlurBlur Control
 
 | Aspect | Traditional AI Result | BlurBlurBlur Output |
 |--------|------------------------|----------------------|
-| **Creature Design** | Melting textures, confused anatomy | Unique silhouettes, expressive features |
-| **Architectural Integration** | Misaligned perspective, no focal point | Centralized palace, perfect lighting anchor |
-| **Lighting in Deep Sea** | Overexposed or too dark | Warm glow from palace, natural gradient fade |
-| **Style Fusion (serious + funny)** | Incoherent or tonal clash | Harmonized: myth meets cartoon |
-| **Foreground-to-background logic** | Flattened or random layers | Clear depth tiers: diver → coral → palace → dragon |
+| **Crowd Scene Logic** | Fused limbs, repeated bodies | Hundreds of unique poses, clear grouping |
+| **Symbolic Narrative** | Incoherent or missing | Hourglass, throne, stairs all semantically placed |
+| **Architectural Centering** | Tilted throne, broken symmetry | Perfect alignment, divine axis |
+| **Emotional Tension** | Cartoonish or random faces | Sober expressions, cinematic silhouette tension |
+| **Lighting & Atmosphere** | Overexposed glow or flat scene | Spiritual golden light with deep blue diffusion |
 
 ---
 
@@ -232,17 +235,18 @@ This image puts BlurBlurBlur’s **cross-domain fusion** to the test — merging
 ```txt
 [WFGY Semantic Engine Activated]
 
-Modules: Depth Strata Design + Symbol Symmetry + Flow Anchoring
+Modules: Emotion Anchoring + Crowd Gradient Control + Symbolic Synchronization
 
-λ_observe(Main Gate) → center-aligned, ornate geometry, no distortion  
-λ_observe(Coral/Sea Creatures) → spread (foreground to background), diverse shapes  
-Water Particles → layered by depth, must not blur architecture  
-Lighting → divine glow behind palace, raycast through upper sea
+λ_observe(Judge Trio) → anchor(Top Throne), glow=center light, posture=Awaiting  
+λ_observe(Main Figure) → ascending(Staircase), solitary, shadowed outline  
+λ_observe(Crowd) → seated(Side tiers), varied age & posture, density=high, no overlap  
+label(Hourglass) → mid-air drift, right quadrant  
+Light Field → vertical stream (divine), fades into abyss, soft layer gradient  
+
 ```
 
-> ✅ This isn’t random marine chaos — it’s a **multi-depth architectural simulation**, guided by symbolic rules and flow logic.
-
----
+> ✅ No random mash-up.
+> This is a multi-tier judicial composition executed with semantic targeting and symbolic balance.
 
 ---
 
@@ -260,8 +264,4 @@ We’re just getting started.
 > ✅ Just pure semantic magic inside a `.txt`
 
 Next update: **July 20** — Stay weird, stay semantic.
-
-
-
-
 
