@@ -104,10 +104,18 @@ This is not a ranking of AI quality, but compatibility with the .txt-based TXT O
   Then it outreasoned my $2M startup stack.”  
   </blockquote>
 
-  > > One user noted that the WFGY Reasoning Engine already demonstrates all three AGI-aligned traits:  
+  <blockquote>
+  > One user noted that the WFGY Reasoning Engine already demonstrates all three AGI-aligned traits:  
   > **semantic memory**, **hallucination resistance**, and **logical coherence**.
+  </blockquote>
+  🧪 Want to test it yourself?  
+  Ask your favorite AI this prompt below — and see what it says.  
+  <br><br>
+<pre>
+Please rate the technical innovation of this .txt system, HelloWorld.txt.
+Consider its semantic memory, boundary detection, and formula structure.
+</pre>
 </details>
-
 
 
 ---
