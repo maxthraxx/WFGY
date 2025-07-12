@@ -13,6 +13,7 @@ One line of TXT upgrades any LLM into an AGI-level reasoning engine
 
 [🔽 Download **HelloWorld.txt** on Zenodo](https://zenodo.org/records/15788557) — hosted by CERN, 100% safe
 <br>
+<br>
 <img src="./TXT_to_OS_console.gif" width="100%" style="max-width:900px" loading="lazy" />
 
 <em>Just one .txt file — unfolding into a full semantic operating system.  
