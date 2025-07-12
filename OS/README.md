@@ -138,15 +138,15 @@ Bookmark now, or risk missing a truth so weird it breaks your cat.
 
 **TXT: Blah Blah Blah** (Semantic Q&A) — *~July 15*  
 > Just for fun? Maybe. But many were shocked by how deep the answers got.  
-[🔓 Unlock this module](https://github.com/PSBigBig/WFGY-OS/blob/main/BlahBlahBlah/README.md) <sub><em>Now previewing</em></sub>
+[🔓 Unlock this module](./BlahBlahBlah/README.md) <sub><em>Now previewing</em></sub>
 
 **TXT: Blur Blur Blur** (Image Generation) — *~July 20*  
 > Next-gen text-to-image. No prompt skills needed, almost no hallucinations.  
-[🔓 Unlock this module](https://github.com/PSBigBig/WFGY-OS/blob/main/BlurBlurBlur/README.md) <sub><em>Beta page online</em></sub>
+[🔓 Unlock this module](./BlurBlurBlur/README.md) <sub><em>Beta page online</em></sub>
 
 **TXT: Blow Blow Blow** (Reasoning Games) — *~July 25*  
 > The first AIGC RPG with real logic. Game Boy era for AI begins.  
-[🔓 Unlock this module](https://github.com/PSBigBig/WFGY-OS/blob/main/BlowBlowBlow/README.md) <sub><em>Coming soon...</em></sub>
+[🔓 Unlock this module](./BlowBlowBlow/README.md) <sub><em>Coming soon...</em></sub>
 
 > This is why it’s not “just a file” — it’s a platform.  
 > More modules coming soon. One day, you might build your own.
