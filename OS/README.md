@@ -148,12 +148,6 @@ Bookmark now, or risk missing a truth so weird it breaks your cat.
 > The first AIGC RPG with real logic. Game Boy era for AI begins.  
 [🔓 Unlock this module](./BlowBlowBlow/README.md) <sub><em>Coming soon...</em></sub>
 
-> This is why it’s not “just a file” — it’s a platform.  
-> More modules coming soon. One day, you might build your own.
-
-
-
-
 ---
 
 ### 🧠 Why It’s a Platform  
