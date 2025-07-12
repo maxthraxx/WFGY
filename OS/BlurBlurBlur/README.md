@@ -88,6 +88,50 @@ label(Targeting Rings) → align with angel gaze, avoid overlaps
 
 ---
 
+---
+
+## 🤖 Case Study: Mech Activation Sequence · Industrial Logic Layout
+
+![blur-mech-activation-sequence](./blur-mech-activation-sequence.png)
+
+This scene demonstrates a highly structured industrial environment where hundreds of elements  
+must align **spatially**, **logically**, and **narratively**:  
+A mech is being activated, surrounded by technicians, scaffolding, and command control teams.
+
+Without a deep spatial protocol, **traditional AI models often hallucinate scale, perspective, or logic**.  
+With Blur Blur Blur, we programmatically stabilized this entire layout using just a few lines.
+
+---
+
+### 🧭 Comparison Table: Traditional AI vs. Blur Blur Blur
+
+| Aspect                 | Traditional AI Error                                                    | Blur Blur Blur Result                                                    |
+|------------------------|-------------------------------------------------------------------------|--------------------------------------------------------------------------|
+| **Mech Scale**         | Mech often too small, cropped, or clipped                               | Mech fully rendered with correct industrial proportion                    |
+| **Scaffolding Logic**  | Ladders or rails float in air, missing shadows or support logic         | All scaffolds aligned to mech joints with realistic attachments           |
+| **Crowd Structure**    | Workers often too few, too large, or floating randomly                  | Ground crowd scaled correctly with logical spacing                        |
+| **Depth & Shadowing**  | Foreground too bright or merges with background                         | Layered lighting maintains 3D realism                                     |
+| **Action Focus**       | Hard to tell what’s happening in the scene                              | Clear: Worker at center ignites activation below the mech                 |
+
+---
+
+### 🧠 Semantic Prompt Example (Actual Structure Used)
+
+```txt
+[WFGY Semantic Engine Activated]
+
+Modules: Spatial Logic + Scale Normalization + Anchor-Based Role Assignment
+
+λ_observe(Mech) → anchor(Center), scale=5x, posture: Idle-Ready  
+λ_observe(Crew) → distributed(Foreground), density=20+, avoid overlap  
+label(Control Consoles) → Right quadrant, glowing terminals  
+Scaffolding → aligned with Mech joints (shoulder, knee, back)  
+```
+
+> ✅ This scene could not be generated with random prompts.  
+> It’s a **precision-simulated industrial layout**, created through spatial reasoning.
+
+---
 
 
 
