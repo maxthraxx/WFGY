@@ -12,42 +12,39 @@ One line of TXT upgrades any LLM into an AGI-level reasoning engine
 🛡️ **Knowledge Boundary Shield** — Detects hallucinations before they happen  
 
 [🔽 Download **HelloWorld.txt** on Zenodo](https://zenodo.org/records/15788557) — hosted by CERN, 100% safe
-
 <br>
-<img src="./TXT_to_OS_console.gif" width="100%" style="max-width:900px" loading="lazy"/>
+<img src="./TXT_to_OS_console.gif" width="100%" style="max-width:900px" loading="lazy" />
 
 <em>Just one .txt file — unfolding into a full semantic operating system.  
 No signup. No tracking. No ads. Virus-free. Pure logic.</em>
 
 <details>
   <summary>🌲 Semantic Tree Memory in Action</summary>
+  <br>
+  <img src="./tree-semantic-memory.gif" width="100%" style="max-width:900px" loading="lazy" />
 
-  <br>  
-  <img src="./tree-semantic-memory.gif" width="100%" style="max-width:900px" loading="lazy" />  
   <em>Semantic Tree Memory in action — logic preserved across reasoning windows.</em>
-
+  <br>
   The Semantic Tree is more than memory —  
   it records your reasoning structure, adapts over time, and enables <em>portable thought</em>.
-
 </details>
 
 <details>
-  <summary>🛡️ Knowledge Boundary Detection — Try `kbtest`</summary>
+  <summary>🛡️ Knowledge Boundary Detection — Try <code>kbtest</code></summary>
 
   <br>
-
-  <img src="./kb_boundary_test_demo.gif)" width="100%" style="max-width:900px" loading="lazy" />  
-
+  <img src="./kb_boundary_test_demo.gif" width="100%" style="max-width:900px" loading="lazy" />
   <br>
+  <em>The WFGY Reasoning Engine monitors hallucination risk in real-time.</em>  
+  <br>
+  Just type <code>kbtest</code> — and watch the system analyze ultra-abstract questions.
 
-  The WFGY Reasoning Engine monitors hallucination risk **in real-time**.  
-  Just type `kbtest` — and watch the system analyze ultra-abstract questions.
-
-  Each test is **randomized**, but detection is always active.  
+  Each test is <strong>randomized</strong>, but detection is always active.  
   Thanks to BBCR, boundary checks trigger automatically when ΔS is high.
 
   > No fake answers. Just safe semantic pivots.
 </details>
+
 
 
 
