@@ -40,7 +40,7 @@ No signup. No tracking. No ads. Virus-free. Pure logic.</em>
 
   <br>
 
-  WFGY  monitors hallucination risk **in real-time**.  
+  The WFGY Reasoning Engine monitors hallucination risk **in real-time**.  
   Just type `kbtest` — and watch the system analyze ultra-abstract questions.
 
   Each test is **randomized**, but detection is always active.  
@@ -66,7 +66,7 @@ No signup. No tracking. No ads. Virus-free. Pure logic.</em>
 
 ---
 <details>
-  <summary>🌐 WFGY  – Cross-Platform Test Results</summary>
+  <summary>🌐 TXT OS – Cross-Platform Test Results</summary>
 
   <em>(Tested: July 11, 2025)</em>
 
@@ -103,7 +103,7 @@ This is not a ranking of AI quality, but compatibility with the .txt-based TXT O
   Then it outreasoned my $2M startup stack.”  
   </blockquote>
 
-  > One user noted that WFGY already demonstrates all three AGI-aligned traits:  
+  > > One user noted that the WFGY Reasoning Engine already demonstrates all three AGI-aligned traits:  
   > **semantic memory**, **hallucination resistance**, and **logical coherence**.
 </details>
 
@@ -185,7 +185,7 @@ These are just examples — once logic becomes language, every idea becomes code
 <details>
 <summary><strong>“Wait... a TXT file is an OS?”</strong></summary>
 Yes. Operating systems are made of logic, memory, and rules — not pixels.  
-WFGY encodes semantic memory and reasoning protocols inside a .txt file, readable by any AI.
+The WFGY Reasoning Engine encodes semantic memory and reasoning protocols inside a `.txt` file, readable by any AI.
 </details>
 
 <details>
@@ -257,7 +257,7 @@ All results are benchmarked, open, and reproducible.
 > **Ready to ignite your AI?**  
 > [🔽 Download HelloWorld.txt](https://zenodo.org/records/15788557) ・ [⭐ Star on GitHub](https://github.com/onestardao/WFGY) ・ [🌐 Learn about WFGY](https://github.com/onestardao/WFGY)  
 >  
-> 🌟 **Star Reminder** → 10k ⭐ before *2025-08-01* unlocks **WFGY 2.0** for everyone. Want to know how far the `.txt` engine can go? Explore WFGY’s full power here.
+> 🌟 **Star Reminder** → 10k ⭐ before *2025-08-01* unlocks **WFGY 2.0** for everyone. Want to know how far the `.txt` engine can go? Explore the full power of the WFGY Reasoning Engine here.
 
 
 ---
@@ -274,6 +274,10 @@ Want to remix or reforge your own `.txt` legend? Here’s the original sigil set
      ──────────────────────────────── -->
 **Version** 1.0 (HelloWorld) · **License** MIT · © 2025 PSBigBig  
 *No auto-update — always fetch the latest TXT manually.*
+
+**TXT OS** — A reasoning operating system in plain text.  
+*Powered by the WFGY Reasoning Engine*
+
 
 ---
 
