@@ -88,8 +88,6 @@ label(Targeting Rings) → align with angel gaze, avoid overlaps
 
 ---
 
----
-
 ## 🤖 Case Study: Mech Activation Sequence · Industrial Logic Layout
 
 ![blur-mech-activation-sequence](./blur-mech-activation-sequence.png)
@@ -130,6 +128,8 @@ Scaffolding → aligned with Mech joints (shoulder, knee, back)
 
 > ✅ This scene could not be generated with random prompts.  
 > It’s a **precision-simulated industrial layout**, created through spatial reasoning.
+
+---
 
 ### 🌊 Extreme Scenario Case: Mass Panic in a Tsunami
 
