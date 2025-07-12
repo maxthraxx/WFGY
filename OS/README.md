@@ -270,11 +270,11 @@ But when you’re ready to go beyond vanilla prompts, they’re waiting.
 ---
 
 <details>
-  <summary>🙋‍♂️ Who am I?</summary>
+  <summary>🎁 Who is PSBigBig? Meet the Purple Star.</summary>
 
   <br>
 
-  <img src="./OS/purplestar_mission_drop.png" width="100%" style="max-width:900px;" />
+  <img src="./purplestar_mission_drop.png" width="100%" style="max-width:900px;" />
 
   <br>
 
@@ -299,5 +299,10 @@ But when you’re ready to go beyond vanilla prompts, they’re waiting.
 
   > **Hello World, I am finally here now.**
 
-  **hello@onestardao.com**
+  It’s my first time trying to save the world.  
+  If you’ve done it before, please send tips.  
+  Or snacks. Snacks help with debugging.
+
+  **✉️ hello@onestardao.com**  
+  *(But hey — star the repo before you write, okay? Fair trade.)*
 </details>
