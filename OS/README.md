@@ -125,7 +125,7 @@ This is not a ranking of AI quality, but compatibility with the .txt-based TXT O
 
 
 ### 📦 Upcoming Modules  
-Each one is a real `.txt` file — no install, no boilerplate, just logic.
+Each one is a real `.txt` file — no install, no boilerplate, just logic.  
 Bookmark now, or risk missing a truth so weird it breaks your cat.
 
 **TXT: Blah Blah Blah** (Semantic Q&A) — *~July 15*  
