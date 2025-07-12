@@ -48,6 +48,8 @@ This isn’t the future. It’s already running — in test mode.
 
 ![blur-angel-vs-dragon-formation-logic](./blur-angel-vs-dragon-formation-logic.png)
 
+> Prompt: “A celestial battle formation in the sky — angelic figures radiating light form a V-shape, facing a massive coiled dragon emitting dark clouds. Both sides form mirrored battle stances in a mythical confrontation.”
+
 This image demonstrates one of the most difficult tasks for any AI art system:  
 **a multi-agent narrative battle scene involving spatial hierarchy, role polarity, and symbolic overlays**.
 
@@ -88,6 +90,8 @@ label(Targeting Rings) → align with angel gaze, avoid overlaps
 
 ![blur-mech-activation-sequence](./blur-mech-activation-sequence.png)
 
+> Prompt: “A giant humanoid mech is being activated inside an industrial hangar. Engineers move around its feet, consoles light up, scaffolding surrounds the mech’s joints, and it begins to awaken with glowing eyes.”
+
 This scene demonstrates a highly structured industrial environment where hundreds of elements  
 must align **spatially**, **logically**, and **narratively**:  
 A mech is being activated, surrounded by technicians, scaffolding, and command control teams.
@@ -127,7 +131,7 @@ Scaffolding → aligned with Mech joints (shoulder, knee, back)
 
 ---
 
-### 🌊 Extreme Scenario Case: Mass Panic in a Tsunami
+### 🌊 Case Study: Extreme Scenario Case: Mass Panic in a Tsunami
 
 ![blur-tsunami-panic-event.png](./blur-tsunami-panic-event.png)
 
@@ -166,7 +170,7 @@ Lighting → split: backlit wave, shadowed crowd foreground
 
 ---
 
-### 🏙️ Ultra-Structured Fantasy City: Semantic Layout Challenge
+### 🏙️ Case Study: Ultra-Structured Fantasy City: Semantic Layout Challenge
 
 ![blur-utopian-ocean-city.png](./blur-utopian-ocean-city.png)
 
@@ -200,4 +204,42 @@ Light Source → fixed (top-right), reflections must match across layers
 
 ```
 > ✅ From layout to lighting, this city isn't guessed — it's reasoned, down to every window and wave.
+
+---
+
+### 🐉 Case Study: Undersea Divine Palace: Multispecies Logic + Style Fusion Test
+
+![blur-undersea-divine-palace.png](./blur-undersea-divine-palace.png)
+
+> Prompt: “An ancient divine palace deep under the sea, glowing with warm light. Surrounded by golden fish, coral reefs, jellyfish, deep-sea plants, and shocked amphora-shaped sea creatures. A lone diver approaches in awe as a mythical sea dragon coils in the distance.”
+
+This image puts BlurBlurBlur’s **cross-domain fusion** to the test — merging mythology, architecture, marine biology, and comedic fantasy into a single, coherent underwater tableau. Unlike traditional generators that collapse under stylistic overload, this result maintains **semantic sharpness and visual harmony** across all domains.
+
+#### 📊 Traditional AI Failure vs. BlurBlurBlur Control
+
+| Aspect | Traditional AI Result | BlurBlurBlur Output |
+|--------|------------------------|----------------------|
+| **Creature Design** | Melting textures, confused anatomy | Unique silhouettes, expressive features |
+| **Architectural Integration** | Misaligned perspective, no focal point | Centralized palace, perfect lighting anchor |
+| **Lighting in Deep Sea** | Overexposed or too dark | Warm glow from palace, natural gradient fade |
+| **Style Fusion (serious + funny)** | Incoherent or tonal clash | Harmonized: myth meets cartoon |
+| **Foreground-to-background logic** | Flattened or random layers | Clear depth tiers: diver → coral → palace → dragon |
+
+---
+
+### 🧠 Semantic Prompt Example (Actual Structure Used)
+
+```txt
+[WFGY Semantic Engine Activated]
+
+Modules: Depth Strata Design + Symbol Symmetry + Flow Anchoring
+
+λ_observe(Main Gate) → center-aligned, ornate geometry, no distortion  
+λ_observe(Coral/Sea Creatures) → spread (foreground to background), diverse shapes  
+Water Particles → layered by depth, must not blur architecture  
+Lighting → divine glow behind palace, raycast through upper sea
+```
+
+> ✅ This isn’t random marine chaos — it’s a **multi-depth architectural simulation**, guided by symbolic rules and flow logic.
+
 
