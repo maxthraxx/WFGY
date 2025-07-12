@@ -1,5 +1,7 @@
 ## 🧠 Blur Blur Blur — A Language-Controlled Visual Generation System (Beta)
 
+![blurblurblur](./blurblurblur.png)
+
 > **This isn’t just a prompt tool. It’s a structural language-control system for images.**
 
 In most AI image generation processes, you input a prompt — and pray.  
