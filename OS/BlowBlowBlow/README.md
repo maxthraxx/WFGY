@@ -1,6 +1,6 @@
 ## 🎮 Blow Blow Blow — The First AIGC GameBoy
 
-![blurblurblur](./blurblurblur.png)
+![blowblowblow](./blowblowblow.png)
 
 > ⚠️ Beta Landing Page – Official Launch on July 25  
 > Content is being updated frequently. Bookmark this page to follow the evolution.
