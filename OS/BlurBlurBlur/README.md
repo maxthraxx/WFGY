@@ -242,4 +242,26 @@ Lighting → divine glow behind palace, raycast through upper sea
 
 > ✅ This isn’t random marine chaos — it’s a **multi-depth architectural simulation**, guided by symbolic rules and flow logic.
 
+---
+
+---
+
+### 🌀 Final Note
+
+If you've scrolled this far, you're either building the future…  
+…or you're just really into dragons, mechs, and semantic syntax.
+
+Either way:  
+**BlurBlurBlur** is not just an image generator — it’s a playground for **language-based worldbuilding**.  
+We’re just getting started.
+
+> ✅ 100% open source  
+> ✅ No login, no ads, no tracking, no spam  
+> ✅ Just pure semantic magic inside a `.txt`
+
+Next update: **July 20** — Stay weird, stay semantic.
+
+
+
+
 
