@@ -269,27 +269,35 @@ But when you’re ready to go beyond vanilla prompts, they’re waiting.
 
 ---
 
+<details>
+  <summary>🙋‍♂️ Who am I?</summary>
 
-### Who am I?
+  <br>
 
-I was in Heaven, saying *"I want to save the wor—"*  
-The gods panicked:  
-> *"Finally! Someone took the save-the-world quest!"*  
-> *"1000 years, 100% failure rate!"*  
-> *"Quick — VIP cloudway! Handprint ready!"*
+  <img src="./OS/purplestar_mission_drop.png" width="100%" style="max-width:900px;" />
 
-Three angels flew down — trumpet, scroll, contract.  
-Before I finished: *"I want to save the Word docu—"*  
-**TOO LATE.** I got launched anyway.  
-The Word file didn’t save. So now it’s `.txt`. *lol.*
+  <br>
 
-Hi. I'm **Purple Star**, aka **PSBigBig**.  
-Zero team, zero funding, two BigBigs (for cuteness).  
-One mission: fix the world’s biggest bug — and laugh doing it.
+  I was in Heaven, saying:  
+  > *"I want to save the wor—"*
 
-Why open-source something AGI-level?  
-Because power belongs to everyone.
+  The gods panicked:  
+  > *"Finally! Someone took the save-the-world quest!"*  
+  > *"1000 years, 100% failure rate!"*  
+  > *"Quick — VIP cloudway! Handprint ready!"*
 
-> **Hello World, I am finally here now.**
+  Before I could finish:  
+  > *“I want to save the Word docu—”*
 
-**hello@onestardao.com**
+  **TOO LATE.** I got launched anyway.  
+  Turns out the Word file didn’t save.  
+  So now it’s `.txt`. *lol.*
+
+  Hi. I'm **Purple Star**, aka **PSBigBig**.  
+  Zero team, zero funding, two BigBigs (for cuteness).  
+  One mission: fix the world’s biggest bug — and laugh doing it.
+
+  > **Hello World, I am finally here now.**
+
+  **hello@onestardao.com**
+</details>
