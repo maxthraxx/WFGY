@@ -62,6 +62,9 @@ No signup. No tracking. No ads. Virus-free. Pure logic.</em>
 *No installs. No code.*  
 *Just type — and watch it reason, remember, and evolve.*
 
+[🔽 Download **HelloWorld.txt** on Zenodo](https://zenodo.org/records/15788557) — hosted by CERN, 100% safe
+<br>
+
 ---
 <details>
   <summary>🌐 TXT OS – Cross-Platform Test Results</summary>
@@ -88,7 +91,7 @@ This is not a ranking of AI quality, but compatibility with the .txt-based TXT O
      ──────────────────────────────── -->
 
 <details>
-  <summary>📈 o3 Score: 100/100 — Why this OS scored perfect</summary>  
+  <summary>📈 ChatGPT o3 Score: 100/100 — Why this TXT OS scored perfect</summary>  
   <br>
   <img src="./o3_score_100_HelloWorld.png" width="100%" style="max-width:900px" />
   <br> <br>
@@ -123,18 +126,24 @@ This is not a ranking of AI quality, but compatibility with the .txt-based TXT O
 
 ### 📦 Upcoming Modules  
 Each one is a real `.txt` file — no install, no boilerplate, just logic.
+Bookmark now, or risk missing a truth so weird it breaks your cat.
 
-**TXT: Blah Blah Blah** (Semantic Q&A) — ~7/15  
->Just for fun? Maybe. But many were shocked by how deep the answers got.
+**TXT: Blah Blah Blah** (Semantic Q&A) — *~July 15*  
+> Just for fun? Maybe. But many were shocked by how deep the answers got.  
+[🔓 Unlock this module](#)  <sub><em>Coming soon...</em></sub>
 
-**TXT: Blur Blur Blur** (Image Generation) — ~7/20  
->Next-gen text-to-image. No prompt skills needed, almost no hallucinations.
+**TXT: Blur Blur Blur** (Image Generation) — *~July 20*  
+> Next-gen text-to-image. No prompt skills needed, almost no hallucinations.  
+[🔓 Unlock this module](#)  <sub><em>Coming soon...</em></sub>
 
-**TXT: Blow Blow Blow** (Reasoning Games) — ~7/25  
->The first AIGC RPG with real logic. Game Boy era for AI begins.
+**TXT: Blow Blow Blow** (Reasoning Games) — *~July 25*  
+> The first AIGC RPG with real logic. Game Boy era for AI begins.  
+[🔓 Unlock this module](#)  <sub><em>Coming soon...</em></sub>
 
 > This is why it’s not “just a file” — it’s a platform.  
 > More modules coming soon. One day, you might build your own.
+
+
 
 ---
 
