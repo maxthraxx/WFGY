@@ -4,7 +4,7 @@
 > Content is being updated frequently. Bookmark this page to follow the evolution.
 
 <p align="center">
-  <img src="./main-banner.png" alt="Bla Bla Bla Main Banner" width="100%">
+  <img src="./blahblahblah.png" alt="Blah Blah Blah Main Banner" width="100%">
 </p>
 
 
