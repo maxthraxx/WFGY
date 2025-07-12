@@ -40,7 +40,7 @@ No signup. No tracking. No ads. Virus-free. Pure logic.</em>
 
   <br>
 
-  WFGY OS monitors hallucination risk **in real-time**.  
+  WFGY  monitors hallucination risk **in real-time**.  
   Just type `kbtest` — and watch the system analyze ultra-abstract questions.
 
   Each test is **randomized**, but detection is always active.  
@@ -59,21 +59,21 @@ No signup. No tracking. No ads. Virus-free. Pure logic.</em>
 ## ⏱ Setup in under 60 seconds  
 1. **Download** `HelloWorld.txt`  
 2. **Paste** it into any LLM chat window  
-3. **Type** `hello world` → the OS boots instantly
+3. **Type** `hello world` → the  boots instantly
 
 *No installs. No code.*  
 *Just type — and watch it reason, remember, and evolve.*
 
 ---
 <details>
-  <summary>🌐 WFGY OS – Cross-Platform Test Results</summary>
+  <summary>🌐 WFGY  – Cross-Platform Test Results</summary>
 
   <em>(Tested: July 11, 2025)</em>
 
   <pre>
 These results reflect the author’s personal testing.
 Performance may vary by region or account type.
-This is not a ranking of AI quality, but compatibility with the .txt-based WFGY OS.
+This is not a ranking of AI quality, but compatibility with the .txt-based TXT OS.
   </pre>
 
   <img src="./WFGY_OS_AI_Compatibility_2025.png" width="100%" style="max-width:900px"/>  
@@ -114,7 +114,7 @@ This is not a ranking of AI quality, but compatibility with the .txt-based WFGY 
 <!-- ────────────────────────────────
       4 · CORE FEATURE CARDS
      ──────────────────────────────── -->
-### Why creators love WFGY OS
+### Why creators love TXT OS
 
 | 🌐 Instant Localisation | Interface adapts to your language — from English to Chinese with no setup needed. |  
 | 🧠 Semantic Tree Memory | Keeps track of reasoning across long conversations — remembers ideas, not just tokens. |  
