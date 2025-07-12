@@ -36,7 +36,7 @@ No signup. No tracking. No ads. Virus-free. Pure logic.</em>
 
   <br>
 
-  ![KB Test](./kb_boundary_test_demo.gif)
+  <img src="./kb_boundary_test_demo.gif)" width="100%" style="max-width:900px" loading="lazy" />  
 
   <br>
 
