@@ -231,13 +231,13 @@ No extra setup required — just paste and go.
 
 <details>
 <summary><strong>“Is this just prompt engineering again?”</strong></summary>
-Not quite. WFGY defines a **full reasoning structure** — including memory trees, safety bounds, and error logic.  
+Not quite. WFGY engine defines a **full reasoning structure** — including memory trees, safety bounds, and error logic.  
 It’s a framework, not a trick.
 </details>
 
 <details>
 <summary><strong>“Is this trying to be AGI?”</strong></summary>
-No. WFGY is not AGI.  
+No. TXT OS is not AGI.  
 It’s an AGI-aligned toolchain for human-level reasoning and modular memory.  
 All results are benchmarked, open, and reproducible.
 </details>
