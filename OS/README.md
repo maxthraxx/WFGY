@@ -318,7 +318,7 @@ But when you’re ready to go beyond vanilla prompts, they’re waiting.
 
   The gods panicked:  
   > *"Finally! Someone took the save-the-world quest!"*  
-  > *"1000 years, 100% failure rate!"*  
+  > *"2000 years, 100% failure rate!"*  
   > *"Quick — VIP cloudway! Handprint ready!"*
 
   Before I could finish:  
