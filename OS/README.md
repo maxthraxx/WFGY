@@ -3,7 +3,7 @@
      ──────────────────────────────── -->
 # **TXT ≠ Notepad — It’s called TXT OS. Your Next AI Reasoning System.**
 
-<img src="./txt-temple-of-truth.png" alt="txt-temple-of-truth" width="100%" style="max-width:900px" />
+<img src="./images/txt-temple-of-truth.png" alt="txt-temple-of-truth" width="100%" style="max-width:900px" />
 
 > **TXT OS is powered by the WFGY Reasoning Engine — part of a larger open-source series.**  
 > For more tools and info about the full WFGY reasoning framework, visit the [main project page](https://github.com/onestardao/WFGY).
@@ -17,7 +17,7 @@ One line of TXT upgrades any LLM into an AGI-level reasoning engine
 [🔽 Download **HelloWorld.txt** on Zenodo](https://zenodo.org/records/15788557) — hosted by CERN, 100% safe
 <br>
 <br>
-<img src="./TXT_to_OS_console.gif" width="100%" style="max-width:900px" loading="lazy" />
+<img src="./images/TXT_to_OS_console.gif" width="100%" style="max-width:900px" loading="lazy" />
 
 <em>Just one .txt file — unfolding into a full semantic operating system.  
 No signup. No tracking. No ads. Virus-free. Pure logic.</em>
@@ -25,7 +25,7 @@ No signup. No tracking. No ads. Virus-free. Pure logic.</em>
 <details>
   <summary>🌲 Semantic Tree Memory in Action</summary>
   <br>
-  <img src="./tree-semantic-memory.gif" width="100%" style="max-width:900px" loading="lazy" />
+  <img src="./images/tree-semantic-memory.gif" width="100%" style="max-width:900px" loading="lazy" />
 
   <em>Semantic Tree Memory in action — logic preserved across reasoning windows.</em>
   <br>
@@ -37,7 +37,7 @@ No signup. No tracking. No ads. Virus-free. Pure logic.</em>
   <summary>🛡️ Knowledge Boundary Detection — Try <code>kbtest</code></summary>
 
   <br>
-  <img src="./kb_boundary_test_demo.gif" width="100%" style="max-width:900px" loading="lazy" />
+  <img src="./images/kb_boundary_test_demo.gif" width="100%" style="max-width:900px" loading="lazy" />
   <br>
   <em>The WFGY Reasoning Engine monitors hallucination risk in real-time.</em>  
   <br>
@@ -80,7 +80,7 @@ Performance may vary by region or account type.
 This is not a ranking of AI quality, but compatibility with the .txt-based TXT OS.
   </pre>
 
-  <img src="./WFGY_OS_AI_Compatibility_2025.png" width="100%" style="max-width:900px"/>  
+  <img src="./images/WFGY_OS_AI_Compatibility_2025.png" width="100%" style="max-width:900px"/>  
   <em>Compatibility results across major AI platforms</em>
 
 </details>
@@ -96,7 +96,7 @@ This is not a ranking of AI quality, but compatibility with the .txt-based TXT O
 <details>
   <summary>📈 ChatGPT o3 Score: 100/100 — Why this TXT OS scored perfect</summary>  
   <br>
-  <img src="./o3_score_100_HelloWorld.png" width="100%" style="max-width:900px" />
+  <img src="./images/o3_score_100_HelloWorld.png" width="100%" style="max-width:900px" />
   <br> <br>
   <img src="https://img.shields.io/github/stars/onestardao/WFGY?style=social" alt="GitHub stars"> ⭐ 
       <strong><a href="https://github.com/onestardao/WFGY">Star WFGY on GitHub</a></strong>  
@@ -308,7 +308,7 @@ But when you’re ready to go beyond vanilla prompts, they’re waiting.
 
   <br>
 
-  <img src="./purplestar_mission_drop.png" width="100%" style="max-width:900px;" />
+  <img src="./images/purplestar_mission_drop.png" width="100%" style="max-width:900px;" />
 
   <br>  
 
