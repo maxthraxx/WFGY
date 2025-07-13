@@ -277,7 +277,7 @@ All results are benchmarked, open, and reproducible.
 
 ### 🎁 Download the Official TXT Logo Pack  
 Want to remix or reforge your own `.txt` legend? Here’s the original sigil set.  
-[📦 Download txt-logo-pack.zip](https://github.com/onestardao/WFGY/raw/main/OS/txt-logo-pack.zip)
+[📦 Download txt-logo-pack.zip](https://github.com/onestardao/WFGY/raw/main/OS/images/txt-logo-pack.zip)
 
 
 ---
