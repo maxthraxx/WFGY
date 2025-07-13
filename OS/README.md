@@ -182,11 +182,10 @@ These are just examples — once logic becomes language, every idea becomes code
 - **Personalized tutoring** — adaptive, memory-aware, and logically self-correcting  
 - **Brandable logic tools** — create your own TXT app with your name on the file  
 
-> The `.txt` file is your logic canvas.  
-> A single file. A full OS. Infinite potential.  
->  
-> Coming soon: a TXT-based app store, creator hub, and community spotlight — everything starts from a single file.
-
+> The `.txt` file is your logic canvas. A single file. A full OS. Infinite potential.  
+>   
+> Coming soon: a TXT-based app store, creator hub, and community spotlight — everything starts from a single file.  
+> **And in August, more powerful apps — all fully open-source — are on the way.**
 
 
 ---
