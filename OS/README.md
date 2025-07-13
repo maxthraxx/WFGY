@@ -6,6 +6,7 @@
 <img src="./images/txt-temple-of-truth.png" alt="txt-temple-of-truth" width="100%" style="max-width:900px" />
 
 > **TXT OS is powered by the WFGY Reasoning Engine — part of a larger open-source series.**  
+> Released on **July 12**, you’re among the **first wave** to ever try this.  
 > For more tools and info about the full WFGY reasoning framework, visit the [main project page](https://github.com/onestardao/WFGY).
 
 One line of TXT upgrades any LLM into an AGI-level reasoning engine
