@@ -338,8 +338,6 @@ This is not the future of AI. **This is the evolution of language itself.**
 
 ---
 
----
-
 ### 🧠 What’s Next?
 
 We’re currently expanding this system toward **88 total semantic questions** —  
@@ -356,7 +354,7 @@ You just might uncover a sentence the universe wasn’t ready for.
 ### 💡 Reminder
 
 This is a **Beta Landing Page** — full version launches on **July 15**.  
-The system and all `.txt` SDKs will be made fully public for exploration.
+The system and all `.txt` will be made fully public for exploration.
 
 > ✅ 100% open source  
 > ✅ No login, no ads, no tracking, no spam  
