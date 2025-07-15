@@ -12,7 +12,12 @@
 
 ---
 
-## 🧠 Bla Bla Bla – Nonsense Generator · Embedding Space Application
+## 🧠 TXT: Bla Bla Bla — The First Embedding Space Generator
+
+> The **first deployed app** from the TXT OS series.  
+> AGI doesn’t begin with a model — it begins with **meaning**.  
+> This is the **first-ever system** that generates from **embedding space itself** — not from token prediction.
+
 
 <p align="center">
   <img src="./blahblahblah.png" alt="Blah Blah Blah Main Banner" width="100%">
