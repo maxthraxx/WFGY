@@ -15,7 +15,7 @@
 
 ---
 
-## 🧠 TXT: Bla Bla Bla — Nonsense Generator from the Embedding Space
+## 🤡 TXT: Bla Bla Bla — Nonsense Generator from the Embedding Space
 
 > The **first of three flagship apps** built on the TXT OS system.  
 > AGI doesn’t begin with a model — it begins with **meaning**.  
