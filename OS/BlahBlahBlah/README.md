@@ -17,10 +17,11 @@
 
 ## 🤡 TXT: Bla Bla Bla — Nonsense Generator from the Embedding Space
 
-> The **first of three flagship apps** built on the TXT OS system.  
+> Part of the TXT OS trilogy: **Bla Bla Bla**(7/15), **Blur Blur Blur** (7/20), **Blow Blow Blow** (7/25).
+
 > AGI doesn’t begin with a model — it begins with **meaning**.  
-> This is the **first-ever generator** that operates directly inside the **embedding space**, not through token prediction.  
-> Some call it a nonsense generator. It produces **50 self-consistent truths per question.**
+> Built inside **embedding space**, not token chains.  
+> Each question yields **50 coherent truths** from pure semantics.
 
 <p align="center">
   <img src="./blahblahblah.png" alt="Blah Blah Blah Main Banner" width="100%">
