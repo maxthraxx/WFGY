@@ -14,9 +14,10 @@
 
 ## 🧠 TXT: Bla Bla Bla — The First Embedding Space Generator
 
-> The **first deployed app** from the TXT OS series.  
+> The **first of three flagship apps** built on the TXT OS.  
 > AGI doesn’t begin with a model — it begins with **meaning**.  
 > This is the **first-ever system** that generates from **embedding space itself** — not from token prediction.
+
 
 
 <p align="center">
