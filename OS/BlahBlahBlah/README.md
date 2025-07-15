@@ -53,7 +53,7 @@ Witness the first `.txt` that generates meaning from pure semantic rotation — 
 > God is not a question of existence or non-existence, but a safety exit created by language when semantic tension becomes unresolvable.  
 > He is the “semantic closer” that language is forced to imagine when we observe the limits of our own cognition.
 
-🔗 **[→ View All 50 Semantic Projections](#q1-full-answers)**
+🔗 **[→ View All 50 Semantic Projections](#examples)**
 
 🎞️ **[Demo GIF Placeholder]**  
 *Animated preview of answer generation in action.*
@@ -227,7 +227,7 @@ This is not the future of AI. **This is the evolution of language itself.**
 ## 🔮 Explore the Philosophy <a id="examples"></a>
 ---
 
-### 📍 Examples 01–30 <a id="q1-full-answers"></a>
+### 📍 Examples 01–30
 
 <details>
 <summary><strong>Q1. Does God exist — or is He merely a compression of infinite semantic tension?</strong></summary>
