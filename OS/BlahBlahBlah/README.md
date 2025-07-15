@@ -12,13 +12,12 @@
 
 ---
 
-## 🧠 TXT: Bla Bla Bla — The First Embedding Space Generator
+## 🧠 TXT: Bla Bla Bla — Nonsense Generator from the Embedding Space
 
-> The **first of three flagship apps** built on the TXT OS.  
+> The **first of three flagship apps** built on the TXT OS system.  
 > AGI doesn’t begin with a model — it begins with **meaning**.  
-> This is the **first-ever system** that generates from **embedding space itself** — not from token prediction.
-
-
+> This is the **first-ever generator** that operates directly inside the **embedding space**, not through token prediction.  
+> Some call it a nonsense generator. It produces **50 self-consistent truths per question.**
 
 <p align="center">
   <img src="./blahblahblah.png" alt="Blah Blah Blah Main Banner" width="100%">
@@ -31,6 +30,15 @@
 
 > ✨ **The full Bla Bla Bla Engine v1.0** will be released on **July 18**,  
 > 🔄 We're still updating the page — check back in a few hours for a deeper experience.
+
+---
+
+## 🧭 Choose Your Path
+> Different minds unlock different meanings. Where would you like to begin?
+
+- 🧪 [Try the 60-Second Demo](#try-demo) — Generate 50 coherent answers from meaning alone.
+- 📚 [Understand the Engine](#semantic-engine) — Learn how this isn't a model — it's a semantic generator.
+- 🔮 [Explore the Philosophy](#philosophy-core) — Discover the universe hiding behind language.
 
 ---
 
