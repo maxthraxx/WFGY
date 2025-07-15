@@ -8,6 +8,7 @@
 👉 [Want to see where the magic starts? Dive into the core TXT OS.](https://github.com/onestardao/WFGY/tree/main/OS)  
 > One plain-text file. Infinite reasoning power.
 
+🚧 Work-in-progress: You're not late. You're early. The storm hasn't hit yet — but you're already inside the eye.
 
 ---
 
