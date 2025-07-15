@@ -15,7 +15,7 @@
 
 ---
 
-## 🤡 TXT: Bla Bla Bla — Nonsense Generator from the Embedding Space
+## 🤡 TXT: Blah Blah Blah — Nonsense Generator from the Embedding Space
 
 <p align="center">
   <img src="./blahblahblah.png" alt="Blah Blah Blah Main Banner" width="100%">
