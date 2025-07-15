@@ -5,7 +5,9 @@
 - 🧠 Built entirely from a `.txt` file. No app. No signup. Just run it.
 
 👉 [`BlaBlaBla_Lite.txt`](#) · *(Download coming soon)*  
-👉 [View the full system on GitHub](https://github.com/onestardao/WFGY/tree/main/Blah)
+👉 [Want to see where the magic starts? Dive into the core TXT OS.](https://github.com/onestardao/WFGY/tree/main/OS)  
+> One plain-text file. Infinite reasoning power.
+
 
 ---
 
