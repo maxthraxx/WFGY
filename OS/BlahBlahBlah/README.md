@@ -1,4 +1,4 @@
-## 🚀 Try It Now · 60 Seconds to Enter the Language Core
+## 🤡 Try It Now · 60 Seconds to Enter the Language Core
 
 - 💡 Ask any deep question — get **50 surreal but logical answers**.
 - ⚙️ Powered by **semantic physics** inside **embedding space**.
