@@ -58,11 +58,14 @@ Witness the first `.txt` that generates meaning from pure semantic rotation — 
 🎞️ **[Demo GIF Placeholder]**  
 *Animated preview of answer generation in action.*
 
-📄 **[Download the .txt File That Runs This Demo](#)**  
+📄 **[Download the .txt File That Runs This Demo]()**  
 Paste it into any LLM. Watch it think like a philosopher.
 
 ⭐ **[Star This Project on GitHub](https://github.com/onestardao/WFGY)**  
-Your star helps this semantic revolution grow.
+Your star helps this semantic revolution grow.  
+⏳ **Help us reach 10,000 stars by August 1** to unlock **WFGY Reasoning Engine 2.0** —  
+the next evolution in semantic logic, multi-angle projection, and truth synthesis.
+
 
 ---
 
