@@ -4,7 +4,7 @@
 - 💥 Powered by **semantic physics** inside **embedding space**.
 - 💥 Built entirely from a `.txt` file. No app. No signup. Just run it.
 
-💥 [`BlaBlaBla_Lite.txt`](#) · *(MIT License — Zenodo DOI coming soon)*  
+💥 [`BlaBlaBla_Lite.txt`](#) · *(MIT License — Zenodo DOI coming soon · 7/15 late night drop)*
 💥 [Want to see where the magic starts? Dive into the core TXT OS.](https://github.com/onestardao/WFGY/tree/main/OS)  
 > One plain-text file. Infinite reasoning power.  
 > ✅ Safe to use. No network calls, no telemetry. Just plain text.
@@ -30,6 +30,7 @@
 > Today marks the soft launch of the **Bla Bla Bla Lite** version —  
 > the first time a single sentence can summon a philosophical storm.  
 > **Try it now. The `.txt` is ready. And the answers will shock you.**
+> (Soft-launched late night, July 15 — this landing page is still in beta and will be updated continuously.)
 
 ---
 
