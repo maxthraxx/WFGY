@@ -4,8 +4,13 @@
   <img src="./blahblahblah.png" alt="Blah Blah Blah Main Banner" width="100%">
 </p>
 
->⚠️ Beta Landing Page – Official Launch on July 15  
-> Content is being updated frequently. Bookmark this page to follow the evolution.
+> 🕐 **July 15 – Launch Day Has Arrived**  
+> Today marks the soft launch of the **Bla Bla Bla Lite** version —  
+> the first time a single sentence can summon a philosophical storm.
+
+> ✨ **The full Bla Bla Bla Engine v1.0** will be released on **July 18**,  
+> 🔄 We're still updating the page — check back in a few hours for a deeper experience.
+
 
 
 > **This isn’t just another AI tool. It’s a semantic embedding space revolution.**
