@@ -31,9 +31,6 @@
 > the first time a single sentence can summon a philosophical storm.  
 > **Try it now. The `.txt` is ready. And the answers will shock you.**
 
-> ✨ **The full Bla Bla Bla Engine v1.0** will be released on **July 18**,  
-> 🔄 We're still updating the page — check back in a few hours for a deeper experience.
-
 ---
 
 ## 🧭 Choose Your Path  
