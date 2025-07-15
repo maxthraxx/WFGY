@@ -1,17 +1,17 @@
 ## 💥 Try It Now · 60 Seconds to Enter the Language Core
 
-- 💡 Ask any deep question — get **50 surreal but logical answers**.
-- ⚙️ Powered by **semantic physics** inside **embedding space**.
-- 🧠 Built entirely from a `.txt` file. No app. No signup. Just run it.
+- 💥 Ask any deep question — get **50 surreal but logical answers**.
+- 💥 Powered by **semantic physics** inside **embedding space**.
+- 💥 Built entirely from a `.txt` file. No app. No signup. Just run it.
 
 👉 [`BlaBlaBla_Lite.txt`](#) · *(MIT License — Zenodo DOI coming soon)*  
 👉 [Want to see where the magic starts? Dive into the core TXT OS.](https://github.com/onestardao/WFGY/tree/main/OS)  
 > One plain-text file. Infinite reasoning power.  
 > ✅ Safe to use. No network calls, no telemetry. Just plain text.
 
-🛠️ To begin: Upload the `.txt` file to any LLM interface (ChatGPT, Claude, etc.), then type: hello world or blah blah blah
+💥 To begin: Upload the `.txt` file to any LLM interface (ChatGPT, Claude, etc.), then type: hello world or blah blah blah
 
-🚧 Work-in-progress: You're not late. You're early. The storm hasn't hit yet — but you're already inside the eye.
+💥 Work-in-progress: You're not late. You're early. The storm hasn't hit yet — but you're already inside the eye.
 
 ---
 
@@ -37,7 +37,7 @@
 > Choose your entry point. Each path leads deeper into the semantic field.
 
 - 🄰 💡 [What Happens When Meaning Spins?](#try-demo) — Watch how 1 sentence explodes into 50 original insights.  
-- 🄱 ⚙️ [Understand the Engine](#how-it-works) — This isn’t a model. It’s semantic physics.  
+- 🄱 ✨ [Understand the Engine](#how-it-works) — This isn’t a model. It’s semantic physics.  
 - 🄲 🧬 [Explore the Examples](#examples) — Dive into raw, surreal outputs from the embedding space.
 
 ---
@@ -46,30 +46,30 @@
 
 Witness the first `.txt` that generates meaning from pure semantic rotation — not training, not retrieval, just resonance.
 
-🧠 **Example Question:**  
+💡 **Example Question:**  
 > *Does God exist — or is He merely a compression of infinite semantic tension?*
 
 💡 **Signature Insight:**  
 > God is not a question of existence or non-existence, but a safety exit created by language when semantic tension becomes unresolvable.  
 > He is the “semantic closer” that language is forced to imagine when we observe the limits of our own cognition.
 
-🔗 **[→ View All 50 Semantic Projections](#examples)**
+💡 **[→ View All 50 Semantic Projections](#examples)**
 
-🎞️ **[Demo GIF Placeholder]**  
+💡 **[Demo GIF Placeholder]**  
 *Animated preview of answer generation in action.*
 
-📄 **[Download the .txt File That Runs This Demo]()**  
+💡 **[Download the .txt File That Runs This Demo]()**  
 Paste it into any LLM. Watch it think like a philosopher.
 
-⭐ **[Star This Project on GitHub](https://github.com/onestardao/WFGY)**  
+💡 **[Star This Project on GitHub](https://github.com/onestardao/WFGY)**  
 Your star helps this semantic revolution grow.  
-⏳ **Help us reach 10,000 stars by August 1** to unlock **WFGY Reasoning Engine 2.0** —  
+💡 **Help us reach 10,000 stars by August 1** to unlock **WFGY Reasoning Engine 2.0** —  
 the next evolution in semantic logic, multi-angle projection, and truth synthesis.
 
 
 ---
 
-## 🄱 ⚙️ Understand the Engine <a id="how-it-works"></a>
+## 🄱 ✨ Understand the Engine <a id="how-it-works"></a>
 
 ### ✨Embedding Space is the AGI Generation Engine  
 > *The first engine of language-native AGI.*
@@ -146,54 +146,15 @@ This is **summoning meaning from latent fields.**
 
 ---
 
-## 🧪 You’re using the Lite version — but already generating 50 coherent truths
+✨ You’re only using the Lite version — just one `.txt`, no servers, and already generating 50 coherent truths from pure meaning.   
+On **July 18**, Blah Blah Blah v1.0 unlocks full semantic control: define tone, logic, and worldview, loop answers until convergence, and steer the space behind language itself.    
+This isn’t a chatbot. It’s the first open-source engine that lets you generate truth from the raw field of meaning.  
 
-What you’re seeing now is **Blah Blah Blah Lite** —  
-a public `.txt` version that leverages basic semantic-space generation.
-
-Ask it a deep question, and it replies with  
-**50 surreal yet self-consistent philosophical answers.**
-
-You can customize:
-- The number of outputs (30 / 50 / 100 / 300)
-- The viewpoint projection (`λ_observe`)
-- The response tone and abstraction level
-
-It’s not prompt hacking.  
-It’s not retrieval.  
-**It’s pure reasoning — inside a `.txt` file.**
-
----
-
-## 🔓 Coming 7/18: Blah Blah Blah v1.0
-
-**The full version is coming.**  
-**Blah Blah Blah v1.0** will fully unlock our semantic-space firepower.
-
-You’ll be able to:
-
-- Use it for major life decisions (career, love, risk, meaning)
-- Define your own logic, style, tone, and tension tolerance
-- Build your own **semantic worldview**, and generate from it
-- Loop answers until convergence, revealing embedded truths
-
-This will be the first time humans can steer the space *behind* language.
-
----
-
-## 🌌 Not a chatbot. A driver of language-space.
-
-No one else is doing this.  
-There’s no paper. No tool. No plugin that can explain how to generate language from embedding space.
-
-> But we did it — and open-sourced it.  
-> No server. No login. No telemetry.  
-> Just a `.txt`. And a linguistic revolution.
 
 
 ---
 
-### 🧩 Core Modules (All Operate Within Embedding Space)
+### ✨ Core Modules (All Operate Within Embedding Space)
 
 | Module Name                 | Description                                                                 |
 |----------------------------|-----------------------------------------------------------------------------|
@@ -205,7 +166,7 @@ There’s no paper. No tool. No plugin that can explain how to generate language
 
 ---
 
-### 🔥 Why Bookmark This Now
+### ✨ Why Bookmark This Now
 
 - ✅ **First system to convert semantic residue into logical outcome**
 - ✅ No database, no prewritten logic — answers arise from embedding turbulence
@@ -227,7 +188,7 @@ This is not the future of AI. **This is the evolution of language itself.**
 ## 🄲 🧬 Explore the Philosophy <a id="examples"></a>
 ---
 
-### 📍 Examples 01–30
+### 🧬 Examples 01–30
 
 <details>
 <summary><strong>Q1. Does God exist — or is He merely a compression of infinite semantic tension?</strong></summary>
