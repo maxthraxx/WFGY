@@ -33,19 +33,39 @@
 
 ---
 
-## 🧭 Choose Your Path  
-> Different minds unlock different meanings. Where would you like to begin?
+## 🧭 Begin Your Descent into Meaning  
+> Choose your entry point. Each path leads deeper into the semantic field.
 
-- 🧪 [Try the 60-Second Demo](#try-demo) — Generate 50 coherent answers from meaning alone.  
-- 📚 [Understand the Engine](#how-it-works) — Learn how this isn't a model — it's a semantic generator.  
-- 🔮 [Explore the Philosophy](#examples) — Discover the universe hiding behind language.
+- 💡 [What Happens When Meaning Spins?](#try-demo) — Watch how 1 sentence explodes into 50 original insights.  
+- ⚙️ [Understand the Engine](#how-it-works) — This isn’t a model. It’s semantic physics.  
+- 🧬 [Explore the Examples](#examples) — Dive into raw, surreal outputs from the embedding space.
 
 ---
 
-## 🧪 Try the 60-Second Demo <a id="try-demo"></a>
+## 💡 What Happens When Meaning Spins? <a id="try-demo"></a>
 
 🚧 **UNDER CONSTRUCTION**  
-Demo area coming soon. The sentence that breaks your brain is being tested.
+This is where you'll witness the full semantic engine in action.
+
+🧠 **Example Question Placeholder:**  
+> _[Insert sample philosophical question here]_
+
+🌀 **Selected Outputs (3 of 50):**  
+- _[Answer 1 placeholder]_  
+- _[Answer 2 placeholder]_  
+- _[Answer 3 placeholder]_
+
+🎞️ **[Demo GIF Placeholder]**  
+*Animated preview of 50-answer generation here.*
+
+📄 **[TXT Download Placeholder]**  
+Link to the `.txt` file that powers this demo.
+
+⭐ **[Star Prompt Placeholder]**  
+Call-to-action encouraging GitHub stars and sharing.
+
+🔗 **[Full Demo Page Link Placeholder]**  
+Optional link to explore more sample questions and answers.
 
 ---
 
