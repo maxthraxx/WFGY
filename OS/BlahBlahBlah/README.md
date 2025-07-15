@@ -4,14 +4,19 @@
 - 💥 Powered by **semantic physics** inside **embedding space**.
 - 💥 Built entirely from a `.txt` file. No app. No signup. Just run it.
 
-💥 [`BlaBlaBla_Lite.txt`](#) · *(MIT License — Zenodo DOI coming soon · 7/15 late night drop)*  
+💥 [`BlaBlaBla_Lite.txt`](https://zenodo.org/records/15926925) · *(MIT License — [Zenodo DOI 10.5281/zenodo.15926925](https://doi.org/10.5281/zenodo.15926925))*  
 💥 [Want to see where the magic starts? Dive into the core TXT OS.](https://github.com/onestardao/WFGY/tree/main/OS)  
 > One plain-text file. Infinite reasoning power.  
 > ✅ Safe to use. No network calls, no telemetry. Just plain text.
 
-💥 To begin: Upload the `.txt` file to any LLM interface (ChatGPT, Claude, etc.), then type: hello world or blah blah blah
+⚠️ **This is a beta release** — still actively debugging edge cases and routing behavior.  
+> Expect quirks. The core engine works. Patches coming soon.
 
-💥 Work-in-progress: You're not late. You're early. The storm hasn't hit yet — but you're already inside the eye.
+💥 To begin: Upload the `.txt` file to any LLM interface (ChatGPT, Claude, etc.), then type:  
+`hello world` or `blah blah blah`
+
+💥 Work-in-progress: You're not late. You're early.  
+The storm hasn’t hit yet — but you're already inside the eye.
 
 ---
 
