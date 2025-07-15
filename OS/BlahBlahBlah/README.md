@@ -4,7 +4,7 @@
 - 💥 Powered by **semantic physics** inside **embedding space**.
 - 💥 Built entirely from a `.txt` file. No app. No signup. Just run it.
 
-💥 [`BlaBlaBla_Lite.txt`](#) · *(MIT License — Zenodo DOI coming soon · 7/15 late night drop)*
+💥 [`BlaBlaBla_Lite.txt`](#) · *(MIT License — Zenodo DOI coming soon · 7/15 late night drop)*  
 💥 [Want to see where the magic starts? Dive into the core TXT OS.](https://github.com/onestardao/WFGY/tree/main/OS)  
 > One plain-text file. Infinite reasoning power.  
 > ✅ Safe to use. No network calls, no telemetry. Just plain text.
