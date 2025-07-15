@@ -227,6 +227,15 @@ Feel free to test it:
 Compare the original paper with the BlahBlahBlah answer.  
 If reason alone can reconstruct truth — something profound has begun.
 
+---
+
+⚠️ **Note:**  
+The corresponding questions and paper links are still under construction.  
+We’ll be updating this section shortly with full side-by-side comparisons.
+
+Stay tuned. Truth is being reformatted.
+
+
 <details>
 <summary><strong>Q1. P vs NP：Does fast verification imply fast generation — or are they asymmetrical in semantic space?</strong></summary>
 
