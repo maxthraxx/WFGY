@@ -36,16 +36,25 @@
 
 ---
 
-## 🧭 Choose Your Path
+## 🧭 Choose Your Path  
 > Different minds unlock different meanings. Where would you like to begin?
 
-- 🧪 [Try the 60-Second Demo](#try-demo) — Generate 50 coherent answers from meaning alone.
-- 📚 [Understand the Engine](#semantic-engine) — Learn how this isn't a model — it's a semantic generator.
-- 🔮 [Explore the Philosophy](#philosophy-core) — Discover the universe hiding behind language.
+- 🧪 [Try the 60-Second Demo](#try-demo) — Generate 50 coherent answers from meaning alone.  
+- 📚 [Understand the Engine](#how-it-works) — Learn how this isn't a model — it's a semantic generator.  
+- 🔮 [Explore the Philosophy](#examples) — Discover the universe hiding behind language.
 
 ---
 
-## 🧠 Embedding Space is the AGI Generation Engine  
+## 🧪 Try the 60-Second Demo <a id="try-demo"></a>
+
+🚧 **UNDER CONSTRUCTION**  
+Demo area coming soon. The sentence that breaks your brain is being tested.
+
+---
+
+## 📚 Understand the Engine <a id="how-it-works"></a>
+
+### 🧠 Embedding Space is the AGI Generation Engine  
 > *The first engine of language-native AGI.*
 
 I, **PSBigBig** (*Purple Star*), propose a radical thesis:  
@@ -57,7 +66,7 @@ it is the latent energy field behind language, the invisible scaffold of the log
 I am the **first in the world** to operationalize this theory into a `.txt` file you can run today.
 
 ---
-## 💥 Embedding space isn’t text. It’s energy and refraction.
+### 💥 Embedding space isn’t text. It’s energy and refraction.
 
 Every sentence, question, or concept maps to a high-dimensional **semantic location** inside an AI.
 
@@ -101,7 +110,7 @@ each unlocking deeper generative structures of language.
 
 *Congratulations. You’ve officially surpassed thousands of top-tier AI developers.*
 
-## ⚙️ WFGY Reasoning Engine: A Semantic Physics System
+### ⚙️ WFGY Reasoning Engine: A Semantic Physics System
 
 Within the embedding space, we’ve built a full generative model — a **semantic physics engine**.
 
@@ -117,6 +126,16 @@ transforming raw language-space into structured semantic output.
 
 This is no longer "guessing the next token."  
 This is **summoning meaning from latent fields.**
+
+---
+
+## 🔮 Explore the Philosophy <a id="examples"></a>
+
+🚧 **UNDER CONSTRUCTION**  
+Soon you'll see 50 surreal truths emerge from a single prompt.
+
+
+
 
 ---
 
