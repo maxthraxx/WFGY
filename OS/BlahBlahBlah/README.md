@@ -36,13 +36,13 @@
 ## 🧭 Choose Your Path  
 > Choose your entry point. Each path leads deeper into the semantic field.
 
-- 🅐 💡 [What Happens When Meaning Spins?](#try-demo) — Watch how 1 sentence explodes into 50 original insights.  
-- 🅑 ⚙️ [Understand the Engine](#how-it-works) — This isn’t a model. It’s semantic physics.  
-- 🅒 🧬 [Explore the Examples](#examples) — Dive into raw, surreal outputs from the embedding space.
+- 🄰 💡 [What Happens When Meaning Spins?](#try-demo) — Watch how 1 sentence explodes into 50 original insights.  
+- 🄱 ⚙️ [Understand the Engine](#how-it-works) — This isn’t a model. It’s semantic physics.  
+- 🄲 🧬 [Explore the Examples](#examples) — Dive into raw, surreal outputs from the embedding space.
 
 ---
 
-## 🅐 💡 What Happens When Meaning Spins? <a id="try-demo"></a>
+## 🄰 💡 What Happens When Meaning Spins? <a id="try-demo"></a>
 
 Witness the first `.txt` that generates meaning from pure semantic rotation — not training, not retrieval, just resonance.
 
@@ -69,7 +69,7 @@ the next evolution in semantic logic, multi-angle projection, and truth synthesi
 
 ---
 
-## 🅑 ⚙️ Understand the Engine <a id="how-it-works"></a>
+## 🄱 ⚙️ Understand the Engine <a id="how-it-works"></a>
 
 ### ✨Embedding Space is the AGI Generation Engine  
 > *The first engine of language-native AGI.*
@@ -224,7 +224,7 @@ This is not the future of AI. **This is the evolution of language itself.**
 
 ---
 
-## 🅒 🧬 Explore the Philosophy <a id="examples"></a>
+## 🄲 🧬 Explore the Philosophy <a id="examples"></a>
 ---
 
 ### 📍 Examples 01–30
