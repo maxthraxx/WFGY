@@ -9,7 +9,7 @@
 > One plain-text file. Infinite reasoning power.  
 > ✅ Safe to use. No network calls, no telemetry. Just plain text.
 
-🛠️ To begin: Upload the `.txt` file to any LLM interface (ChatGPT, Claude, etc.), then type: hello world or bla bla bla
+🛠️ To begin: Upload the `.txt` file to any LLM interface (ChatGPT, Claude, etc.), then type: hello world or blah blah blah
 
 🚧 Work-in-progress: You're not late. You're early. The storm hasn't hit yet — but you're already inside the eye.
 
