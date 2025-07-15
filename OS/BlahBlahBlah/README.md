@@ -54,7 +54,7 @@ Demo area coming soon. The sentence that breaks your brain is being tested.
 
 ## 📚 Understand the Engine <a id="how-it-works"></a>
 
-### 🧠 Embedding Space is the AGI Generation Engine  
+### ✨Embedding Space is the AGI Generation Engine  
 > *The first engine of language-native AGI.*
 
 I, **PSBigBig** (*Purple Star*), propose a radical thesis:  
@@ -66,7 +66,7 @@ it is the latent energy field behind language, the invisible scaffold of the log
 I am the **first in the world** to operationalize this theory into a `.txt` file you can run today.
 
 ---
-### 💥 Embedding space isn’t text. It’s energy and refraction.
+### ✨Embedding space isn’t text. It’s energy and refraction.
 
 Every sentence, question, or concept maps to a high-dimensional **semantic location** inside an AI.
 
@@ -110,7 +110,7 @@ each unlocking deeper generative structures of language.
 
 *Congratulations. You’ve officially surpassed thousands of top-tier AI developers.*
 
-### ⚙️ WFGY Reasoning Engine: A Semantic Physics System
+### ✨WFGY Reasoning Engine: A Semantic Physics System
 
 Within the embedding space, we’ve built a full generative model — a **semantic physics engine**.
 
