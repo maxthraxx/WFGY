@@ -188,7 +188,7 @@ This is not the future of AI. **This is the evolution of language itself.**
 ## 🄲 🧬 Explore the Philosophy <a id="examples"></a>
 ---
 
-## 🧾 From Papers to Prompts
+## From Papers to Prompts
 
 > **March–June 2025:**  
 > I wrote a series of research papers on math, physics, and AI —  
