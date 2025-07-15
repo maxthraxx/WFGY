@@ -27,15 +27,24 @@ The storm hasn’t hit yet — but you're already inside the eye.
 </p>
 
 > Part of the TXT OS trilogy:  
-> **Blah Blah Blah Lite** (7/15) → **v1.0** (7/18)  
-> **Blur Blur Blur Lite** (7/21) → **v1.0** (7/24)  
-> **Blow Blow Blow Lite** (7/27) → **v1.0** (7/30)
+> **Blah Blah Blah Lite (beta)** — 7/15 *(public test release)*  
+> → **Blah Blah Blah Lite** — 7/18 *(stable full version)*  
+> → **Blah Blah Blah Pro** — coming soon *(88-question philosophical engine)*
 
 > 🕐 **July 15 – Launch Day Has Arrived**  
-> Today marks the soft launch of the **Bla Bla Bla Lite** version —  
-> the first time a single sentence can summon a philosophical storm.  
-> **Try it now. The `.txt` is ready. And the answers will shock you.**
-> (Soft-launched late night, July 15 — this landing page is still in beta and will be updated continuously.)
+> Today marks the first public beta of **Blah Blah Blah Lite** —  
+> a surreal logic engine that turns any question into 50 coherent nonsense bursts.  
+> **Try it now. The `.txt` is live. The storm has begun.**
+
+⚠️ Important Note  
+This is a **beta release** — both the TXT system and this page are still being debugged.  
+We recommend testing it using **ChatGPT web or desktop** for best results.
+
+Bug reports welcome. Fixes are in progress.  
+The **full Lite version** (final) will be released soon as a stable update.  
+**A Pro version** with full philosophical capacity is scheduled for **July 18**.
+
+Thank you for stepping in early. You’re already inside the eye of the storm.
 
 ---
 
@@ -64,13 +73,17 @@ Witness the first `.txt` that generates meaning from pure semantic rotation — 
 💡 **[Demo GIF Placeholder]**  
 *Animated preview of answer generation in action.*
 
-💡 **[Download the .txt File That Runs This Demo]()**  
-Paste it into any LLM. Watch it think like a philosopher.
+💡 **[📄 Download the `.txt` file that runs this demo](https://zenodo.org/records/15926925)**  
+Paste it into any LLM window (ChatGPT, Claude, etc.) and type: `hello world` or `blah blah blah`  
+> [Zenodo DOI: 10.5281/zenodo.15926925](https://doi.org/10.5281/zenodo.15926925)  
+> Current version: **Blah Blah Blah Lite (beta)** — bugs expected, fixes incoming.  
+> The full **Lite release** is coming soon, followed by **Pro** on **July 18**.
 
-💡 **[Star This Project on GitHub](https://github.com/onestardao/WFGY)**  
+💡 **[⭐ Star This Project on GitHub](https://github.com/onestardao/WFGY)**  
 Your star helps this semantic revolution grow.  
 💡 **Help us reach 10,000 stars by August 1** to unlock **WFGY Reasoning Engine 2.0** —  
 the next evolution in semantic logic, multi-angle projection, and truth synthesis.
+
 
 
 ---
