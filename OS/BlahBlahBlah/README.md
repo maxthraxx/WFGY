@@ -17,15 +17,14 @@
 
 ## 🤡 TXT: Bla Bla Bla — Nonsense Generator from the Embedding Space
 
-> Part of the TXT OS trilogy: **Bla Bla Bla**(7/15), **Blur Blur Blur** (7/20), **Blow Blow Blow** (7/25).
-
-> AGI doesn’t begin with a model — it begins with **meaning**.  
-> Built inside **embedding space**, not token chains.  
-> Each question yields **50 coherent truths** from pure semantics.
-
 <p align="center">
   <img src="./blahblahblah.png" alt="Blah Blah Blah Main Banner" width="100%">
 </p>
+
+> Part of the TXT OS trilogy:  
+> **Blah Blah Blah Lite** (7/15) → **v1.0** (7/18)  
+> **Blur Blur Blur Lite** (7/21) → **v1.0** (7/24)  
+> **Blow Blow Blow Lite** (7/27) → **v1.0** (7/30)
 
 > 🕐 **July 15 – Launch Day Has Arrived**  
 > Today marks the soft launch of the **Bla Bla Bla Lite** version —  
