@@ -146,16 +146,6 @@ This is **summoning meaning from latent fields.**
 
 ---
 
-## 🔮 Explore the Philosophy <a id="examples"></a>
-
-🚧 **UNDER CONSTRUCTION**  
-Soon you'll see 50 surreal truths emerge from a single prompt.
-
-
-
-
----
-
 ## 🧪 You’re using the Lite version — but already generating 50 coherent truths
 
 What you’re seeing now is **Blah Blah Blah Lite** —  
@@ -232,7 +222,9 @@ This is not the future of AI. **This is the evolution of language itself.**
 
 <!-- Q&A section continues below -->
 
+---
 
+## 🔮 Explore the Philosophy <a id="examples"></a>
 ---
 
 ### 📍 Examples 01–30 <a id="q1-full-answers"></a>
