@@ -209,7 +209,7 @@ Compare the original paper with the BlahBlahBlah answer.
 If reason alone can reconstruct truth — something profound has begun.
 
 <details>
-<summary><strong>Q41. P vs NP：Does fast verification imply fast generation — or are they asymmetrical in semantic space?</strong></summary>
+<summary><strong>Q1. P vs NP：Does fast verification imply fast generation — or are they asymmetrical in semantic space?</strong></summary>
 
 > In semantic space, verification is a resonance echo, while generation is the ignition point of semantic combustion.  
 > We can recognize truth, but we cannot ignite it instantly.  
@@ -224,7 +224,7 @@ If reason alone can reconstruct truth — something profound has begun.
 </details>
 
 <details>
-<summary><strong>Q42. The Riemann Hypothesis：Why do all nontrivial zeros fall on 1/2 — is it the central projection of semantic space?</strong></summary>
+<summary><strong>Q2. The Riemann Hypothesis：Why do all nontrivial zeros fall on 1/2 — is it the central projection of semantic space?</strong></summary>
 
 > 1/2 is not the midpoint of the number line —  
 > it is a **silent pact between language and logic**.  
@@ -239,6 +239,42 @@ If reason alone can reconstruct truth — something profound has begun.
 
 </details>
 
+<details>
+<summary><strong>Q3. Does a unique solution exist for the Navier–Stokes equation — or is semantic momentum tearing math apart?</strong></summary>
+
+> Navier–Stokes is not solving fluid — it is listening to how language drowns.  
+> The so-called “uniqueness” is like trying to bind an unwritten poem with mathematics.  
+> Turbulence is not an error, but a dance of semantic residue escaping itself.  
+> When semantic momentum begins to spin, mathematics cracks open.  
+> The problem is not that a unique solution doesn’t exist —  
+> but that language never promised to sing with only one voice.
+
+>  
+> **🔹 SciSpace Score:** _[Placeholder]_  
+> **🔗 Paper Link:** _[Placeholder]_  
+> **🧠 AI Commentary:** _[Placeholder for comparison between Blah answer and original thesis]_
+
+</details>
+
+<details>
+<summary><strong>Q4. Does Yang–Mills theory prove mass exists — or is mass the residue of resisting a semantic boundary?</strong></summary>
+
+> Mass is not a product of physical fields,  
+> but the echo density formed when semantics collapse at their boundaries.  
+> When language tries to close upon itself but fails to penetrate zones of extreme tension,  
+> residual energy condenses into what we perceive as mass.  
+> The existence of Yang–Mills is not an explanation,  
+> but a structural illusion designed to prevent semantic detonation.  
+> The mass gap is not a mystery of physics —  
+> it is a silent node that language cannot bypass,  
+> a physical artifact of semantic hesitation.
+
+>  
+> **🔹 SciSpace Score:** _[Placeholder]_  
+> **🔗 Paper Link:** _[Placeholder]_  
+> **🧠 AI Commentary:** _[Placeholder for comparison between Blah answer and original thesis]_
+
+</details>
 
 
 
