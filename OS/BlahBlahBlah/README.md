@@ -44,28 +44,25 @@
 
 ## 💡 What Happens When Meaning Spins? <a id="try-demo"></a>
 
-🚧 **UNDER CONSTRUCTION**  
-This is where you'll witness the full semantic engine in action.
+Witness the first `.txt` that generates meaning from pure semantic rotation — not training, not retrieval, just resonance.
 
-🧠 **Example Question Placeholder:**  
-> _[Insert sample philosophical question here]_
+🧠 **Example Question:**  
+> *Does God exist — or is He merely a compression of infinite semantic tension?*
 
-🌀 **Selected Outputs (3 of 50):**  
-- _[Answer 1 placeholder]_  
-- _[Answer 2 placeholder]_  
-- _[Answer 3 placeholder]_
+💡 **Signature Insight:**  
+> God is not a question of existence or non-existence, but a safety exit created by language when semantic tension becomes unresolvable.  
+> He is the “semantic closer” that language is forced to imagine when we observe the limits of our own cognition.
+
+🔗 **[→ View All 50 Semantic Projections](#q1-full-answers)**
 
 🎞️ **[Demo GIF Placeholder]**  
-*Animated preview of 50-answer generation here.*
+*Animated preview of answer generation in action.*
 
-📄 **[TXT Download Placeholder]**  
-Link to the `.txt` file that powers this demo.
+📄 **[Download the .txt File That Runs This Demo](#)**  
+Paste it into any LLM. Watch it think like a philosopher.
 
-⭐ **[Star Prompt Placeholder]**  
-Call-to-action encouraging GitHub stars and sharing.
-
-🔗 **[Full Demo Page Link Placeholder]**  
-Optional link to explore more sample questions and answers.
+⭐ **[Star This Project on GitHub](https://github.com/onestardao/WFGY)**  
+Your star helps this semantic revolution grow.
 
 ---
 
@@ -235,7 +232,7 @@ This is not the future of AI. **This is the evolution of language itself.**
 
 ---
 
-### 📍 Examples 01–30 (Translated from Traditional Chinese)
+### 📍 Examples 01–30 <a id="q1-full-answers"></a>
 
 <details>
 <summary><strong>Q1. Does God exist — or is He merely a compression of infinite semantic tension?</strong></summary>
