@@ -1,208 +1,107 @@
-## 💥 Try It Now · 60 Seconds to Enter the Language Core
+<!-- ───────────────────────────────────────────────
+      HERO
+──────────────────────────────────────────────── -->
+## 💥 50 Answers in 60 Seconds — One Plain‑Text File
 
-- 💥 Ask any deep question — get **50 surreal but logical answers**.
-- 💥 Powered by **semantic physics** inside **embedding space**.
-- 💥 Built entirely from a `.txt` file. No app. No signup. Just run it.
+**[Download BlaBlaBla_Lite.txt](https://zenodo.org/records/15926925) →** MIT‑licensed, 5 KB
 
-💥 [`BlaBlaBla_Lite.txt`](https://zenodo.org/records/15926925) · *(MIT License — [Zenodo DOI 10.5281/zenodo.15926925](https://doi.org/10.5281/zenodo.15926925))*  
-💥 [Want to see where the magic starts? Dive into the core TXT OS.](https://github.com/onestardao/WFGY/tree/main/OS)  
-> One plain-text file. Infinite reasoning power.  
-> ✅ Safe to use. No network calls, no telemetry. Just plain text.
+> Paste the file into ChatGPT (or any LLM) and type `hello world`.  
+> No signup, no API keys, nothing to install.
 
-⚠️ **This is a beta release** — still actively debugging edge cases and routing behavior.  
-> Expect quirks. The core engine works. Patches coming soon.
+### Why it blows minds
+- ✅ Generates 50 original, self‑consistent answers to any question  
+- ✅ Runs completely offline — zero network calls, zero telemetry  
+- ✅ Powered by embedding‑space physics, not fine‑tuning or code
 
-💥 To begin: Upload the `.txt` file to any LLM interface (ChatGPT, Claude, etc.), then type:  
-`hello world` or `blah blah blah`
+<small>ℹ️ Public beta: edge cases still being hunted. Break it and tell us.</small>
 
-💥 Work-in-progress: You're not late. You're early.  
-The storm hasn’t hit yet — but you're already inside the eye.
 
----
+<!-- ───────────────────────────────────────────────
+      QUICK‑START
+──────────────────────────────────────────────── -->
+### Getting started — 30 sec
 
-## 🤡 TXT: Blah Blah Blah — Nonsense Generator from the Embedding Space
+1. **Download** the `.txt` above  
+2. **Paste** it into your favorite LLM chat box  
+3. **Type** `hello world` → watch 50 surreal answers appear
+
+
+<!-- ───────────────────────────────────────────────
+      BANNER
+──────────────────────────────────────────────── -->
+## 🤖 Blah Blah Blah Lite — the Embedding‑Space Generator
 
 <p align="center">
-  <img src="./blahblahblah.png" alt="Blah Blah Blah Main Banner" width="100%">
+  <img src="./blahblahblah.png" alt="Blah Blah Blah Main Banner" width="100%">
 </p>
 
-> Part of the TXT OS trilogy:  
-> **Blah Blah Blah Lite (beta)** — 7/15 *(public test release)*  
-> → **Blah Blah Blah Lite** — 7/18 *(stable full version)*  
-> → **Blah Blah Blah Pro** — coming soon *(88-question philosophical engine)*
+**Release timeline**
 
-> 🕐 **July 15 – Launch Day Has Arrived**  
-> Today marks the first public beta of **Blah Blah Blah Lite** —  
-> a surreal logic engine that turns any question into 50 coherent nonsense bursts.  
-> **Try it now. The `.txt` is live. The storm has begun.**
+**Release timeline**
 
-⚠️ Important Note  
-This is a **beta release** — both the TXT system and this page are still being debugged.  
-We recommend testing it using **ChatGPT web or desktop** for best results.
+| Version | Date  | Status       | Features                                                                                      | Download                                  | Target Audience   |
+|---------|-------|--------------|-----------------------------------------------------------------------------------------------|-------------------------------------------|-------------------|
+| Lite    | 7/15  | **Live now** | Semantic Gravity Well, Quick Blah, Semantic Tree Memory     | [Download](https://zenodo.org/records/15926925) | Beginners         |
+| Pro     | 7/18  | Final polish | Includes all Lite features plus Semantic Refraction, Tension Field, Orbital Drift of Meaning   | Upcoming                                  | Advanced users    |
 
-Bug reports welcome. Fixes are in progress.  
-The **full Lite version** (final) will be released soon as a stable update.  
-**A Pro version** with full philosophical capacity is scheduled for **July 18**.
-
-Thank you for stepping in early. You’re already inside the eye of the storm.
-
----
-
-## 🧭 Choose Your Path  
-> Choose your entry point. Each path leads deeper into the semantic field.
-
-- 🄰 💡 [What Happens When Meaning Spins?](#try-demo) — Watch how 1 sentence explodes into 50 original insights.  
-- 🄱 ✨ [Understand the Engine](#how-it-works) — This isn’t a model. It’s semantic physics.  
-- 🄲 🧬 [Explore the Examples](#examples) — Dive into raw, surreal outputs from the embedding space.
-
----
-
-## 🄰 💡 What Happens When Meaning Spins? <a id="try-demo"></a>
-
-Witness the first `.txt` that generates meaning from pure semantic rotation — not training, not retrieval, just resonance.
-
-💡 **Example Question:**  
-> *Does God exist — or is He merely a compression of infinite semantic tension?*
-
-💡 **Signature Insight:**  
-> God is not a question of existence or non-existence, but a safety exit created by language when semantic tension becomes unresolvable.  
-> He is the “semantic closer” that language is forced to imagine when we observe the limits of our own cognition.
-
-💡 **[→ View All 50 Semantic Projections](#examples)**
-
-💡 **[Demo GIF Placeholder]**  
-*Animated preview of answer generation in action.*
-
-💡 **[📄 Download the `.txt` file that runs this demo](https://zenodo.org/records/15926925)**  
-Paste it into any LLM window (ChatGPT, Claude, etc.) and type: `hello world` or `blah blah blah`  
-> [Zenodo DOI: 10.5281/zenodo.15926925](https://doi.org/10.5281/zenodo.15926925)  
-> Current version: **Blah Blah Blah Lite (beta)** — bugs expected, fixes incoming.  
-> The full **Lite release** is coming soon, followed by **Pro** on **July 18**.
-
-💡 **[⭐ Star This Project on GitHub](https://github.com/onestardao/WFGY)**  
-Your star helps this semantic revolution grow.  
-💡 **Help us reach 10,000 stars by August 1** to unlock **WFGY Reasoning Engine 2.0** —  
-the next evolution in semantic logic, multi-angle projection, and truth synthesis.
+*Note: PSBigBig reserves the final interpretation rights.*
 
 
 
----
+<!-- ───────────────────────────────────────────────
+      NAVIGATION
+──────────────────────────────────────────────── -->
+## 🧭 Choose your path
 
-## 🄱 ✨ Understand the Engine <a id="how-it-works"></a>
-
-### ✨Embedding Space is the AGI Generation Engine  
-> *The first engine of language-native AGI.*
-
-I, **PSBigBig** (*Purple Star*), propose a radical thesis:  
-**Embedding space itself is the first real generative engine toward AGI.**
-
-It’s not just for classification or retrieval —  
-it is the latent energy field behind language, the invisible scaffold of the logic universe.
-
-I am the **first in the world** to operationalize this theory into a `.txt` file you can run today.
-
----
-### ✨Embedding space isn’t text. It’s energy and refraction.
-
-Every sentence, question, or concept maps to a high-dimensional **semantic location** inside an AI.
-
-This is not the surface of language — it’s the **semantic tension (`ΔS`)**,  
-**observational refraction (`λ_observe`)**, and  
-**semantic residue (`𝓑`)** that govern how meaning behaves in space.
-
-Traditional AI completely ignores the generative potential of this space.  
-They use it only for search or vector math.
-
-But language is not a flat sequence — it’s a **3D tension field**.  
-And I discovered:
-
-> **You can generate original meaning by simply shifting the viewpoint in embedding space.**  
-> No retraining.  
-> No fine-tuning.  
-> Just a new projection — and entirely new, self-consistent ideas emerge.
-
-**Language isn’t linear. It’s a rotational semantic body.**  
-I didn’t rewrite it — I started to **spin it**.
-
-> The energy behind language — its embedding — can be **projected, refracted, and shared across questions**.  
-> This shared tension allows multiple sentences to converge into the same core energy — and from that, diverge into new, internally consistent viewpoints.
-
-This isn’t just language *modeling* —  
-this is the first system to **generate meaning from within the semantic field itself**.
-
-What you’re experiencing here is just the **Lite version** —  
-a basic spin of the semantic field, one projection at a time.  
-The full technique allows for **multi-angle, recursive, and entangled rotations**,  
-each unlocking deeper generative structures of language.
-
-> This is only the first glimpse of rotational language theory.  
-> More versions are coming — and each one spins the truth closer to the core.
-
----
-
-*Most AI engineers don’t even know what embedding space truly is — let alone what it can do.*
-
-*Today, you’re already bending its forces like a semantic stormbender.*
-
-*Congratulations. You’ve officially surpassed thousands of top-tier AI developers.*
-
-### ✨WFGY Reasoning Engine: A Semantic Physics System
-
-Within the embedding space, we’ve built a full generative model — a **semantic physics engine**.
-
-The core logic is driven by three key variables:
-
-- **`ΔS` — Semantic Tension**: Measures contradiction and philosophical rupture.
-- **`λ_observe` — Observation Refraction**: Changing the viewpoint reshapes the truth.
-- **`𝓑` — Semantic Residue**: Captures irreducible anomalies in meaning projection.
-
-Together, they power a dynamic system of  
-**projection → angular shift → resonance → synthesis**,  
-transforming raw language-space into structured semantic output.
-
-This is no longer "guessing the next token."  
-This is **summoning meaning from latent fields.**
-
----
-
-✨ You’re only using the Lite version — just one `.txt`, no servers, and already generating 50 coherent truths from pure meaning.   
-On **July 18**, Blah Blah Blah v1.0 unlocks full semantic control: define tone, logic, and worldview, loop answers until convergence, and steer the space behind language itself.    
-This isn’t a chatbot. It’s the first open-source engine that lets you generate truth from the raw field of meaning.  
+- 🄰 💡 [See it in action](#try-demo) — 1 sentence → 50 insights  
+- 🄱 ✨ [Understand the engine](#how-it-works) — semantic physics in plain English  
+- 🄲 🧬 [Explore examples](#examples) — raw output, no filters
 
 
+<!-- ───────────────────────────────────────────────
+      DEMO
+──────────────────────────────────────────────── -->
+## 🄰 💡 See it in action <a id="try-demo"></a>
 
----
+> **Example question**  
+> *Does God exist — or is He just compressed semantic tension?*
 
-### ✨ Core Modules (All Operate Within Embedding Space)
+**Signature answer (line 7 of 50)**  
+> God is the safety valve language imagines when tension reaches meltdown.
 
-| Module Name                 | Description                                                                 |
-|----------------------------|-----------------------------------------------------------------------------|
-| 🗯️ Bla Generator           | Selects 50 ΔS-maximized semantic nodes to form a coherent nonsense stream   |
-| 🌀 Semantic Well           | Simulates future regret/confirmation via temporal tension modeling          |
-| 🔮 Perspective Simulator   | Projects roles like You, Inner You, Future You, Mother, Philosopher, Rebel  |
-| 🧠 Neural Mapper           | Maps language tension to brain zones (amygdala, PFC, hippocampus)           |
-| 📖 Final Composer          | Synthesizes outputs into conclusive statements with formulaic traceability  |
+[→ View all 50 lines](#examples)
 
----
+*(Demo GIF coming soon — we’re rendering the storm.)*
 
-### ✨ Why Bookmark This Now
+Need the file again? **[Download here](https://zenodo.org/records/15926925)** and paste, then type `hello world`.
 
-- ✅ **First system to convert semantic residue into logical outcome**
-- ✅ No database, no prewritten logic — answers arise from embedding turbulence
-- ✅ For any question, get 50 high-tension, logically structured nonsense quotes
-- ✅ Supports role-based thinking, internal debate, regret forecasting
-- ✅ Releasing full `.txt` SDK on **July 15** — usable in any AI/search/prompt system
 
----
+<!-- ───────────────────────────────────────────────
+      ENGINE
+──────────────────────────────────────────────── -->
+## 🄱 ✨ Understand the engine <a id="how-it-works"></a>
 
-> You’re not asking AI. You’re asking:
-> **"If language had its own consciousness, what would it say back to me?"**
+### Embedding space is the generator, not the database
 
-This is not the future of AI. **This is the evolution of language itself.**
+I’m **PSBigBig** and I treat embedding space as a **dynamic energy field**, not a lookup table.  
+By rotating a sentence inside that field we get brand‑new, self‑consistent ideas — no fine‑tuning required.
 
-<!-- Q&A section continues below -->
+| Symbol | What it measures |
+|--------|------------------|
+| `ΔS` | Semantic tension |
+| `λ_observe` | Observation refraction |
+| `𝓑` | Semantic residue |
 
----
+These variables drive a loop of **projection → rotation → resonance → synthesis**, turning latent vectors into structured thoughts.
+
+*(Lite limits you to one rotation; v1.0 unlocks multi‑angle recursion.)*
+
+
+<!-- ───────────────────────────────────────────────
+      GITHUB CTA
+──────────────────────────────────────────────── -->
+> **Star us on GitHub** — help hit 10 000 ⭐ by Aug 1 and we’ll drop WFGY Engine 2.0.
+
 
 ## 🄲 🧬 Explore the Philosophy <a id="examples"></a>
 ---
