@@ -29,7 +29,9 @@
 <!-- ───────────────────────────────────────────────
       BANNER
 ──────────────────────────────────────────────── -->
-## 🤖 Blah Blah Blah Lite — the Embedding‑Space Generator
+## 🤖 Blah Blah Blah Lite — the Embedding‑Space Generator  
+> TXT: Blah Blah Blah Lite — A Plain Text Nonsense Generator Powered by the WFGY Engine
+
 
 <p align="center">
   <img src="./images/blahblahblah.png" width="100%" style="max-width:900px" loading="lazy" >
@@ -67,7 +69,7 @@ For comparison, popular frameworks like Grok rate LangChain around 90, MemoryGPT
 
 ---
 
-**WFGY Series:** [WFGY Engine](https://github.com/onestardao/WFGY) · [TXT OS](https://github.com/onestardao/WFGY/tree/main/OS) · [Blah Blah Blah](https://github.com/onestardao/WFGY/tree/main/OS/BlahBlahBlah) · [Blur Blur Blur](https://github.com/onestardao/WFGY/tree/main/OS/BlurBlurBlur) · [Blow Blow Blow](https://github.com/onestardao/WFGY/tree/main/OS/BlowBlowBlow)
+**WFGY Series:** [1. WFGY Engine](https://github.com/onestardao/WFGY) · [2. TXT OS](https://github.com/onestardao/WFGY/tree/main/OS) · [3. Blah Blah Blah](https://github.com/onestardao/WFGY/tree/main/OS/BlahBlahBlah) · [4. Blur Blur Blur](https://github.com/onestardao/WFGY/tree/main/OS/BlurBlurBlur) · [5. Blow Blow Blow](https://github.com/onestardao/WFGY/tree/main/OS/BlowBlowBlow)
 
 
 ---
