@@ -3,7 +3,7 @@
 ──────────────────────────────────────────────── -->
 ## 💥 50 Answers in 60 Seconds — One Plain‑Text File
 
-**[Download BlaBlaBla_Lite.txt](https://zenodo.org/records/15926925) →** MIT‑licensed, 61 KB
+**[Download TXT:BlaBlaBla_Lite.txt](https://zenodo.org/records/15926925) →** MIT‑licensed, 61 KB
 
 > Paste the file into ChatGPT (or any LLM) and type `hello world`.  
 > No signup, no API keys, nothing to install.
@@ -29,7 +29,7 @@
 <!-- ───────────────────────────────────────────────
       BANNER
 ──────────────────────────────────────────────── -->
-## 🤖 TXT: Blah Blah Blah Lite — the Embedding‑Space Generator  
+## 🤖 TXT:Blah Blah Blah Lite — the Embedding‑Space Generator  
 > A Lightweight Semantic Nonsense Generator Powered by the WFGY Engine
 
 
@@ -58,7 +58,7 @@ For comparison, popular frameworks like Grok rate LangChain around 90, MemoryGPT
 
 ---
 
-**Release timeline**
+**TXT:Blah Blah Blah Release timeline**
 
 | Version | Date  | Status       | Features                                                                                      | Download                                  | Target Audience   |
 |---------|-------|--------------|-----------------------------------------------------------------------------------------------|-------------------------------------------|-------------------|
