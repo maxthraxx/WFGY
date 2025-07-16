@@ -35,6 +35,11 @@
   <img src="./blahblahblah.png" alt="Blah Blah Blah Main Banner" width="100%">
 </p>
 
+<p align="center">
+  <img src="./50Blah_QuickDemo.gif" alt="50Blah Quick Demo" width="100%">
+</p>
+
+
 **Release timeline**
 
 | Version | Date  | Status       | Features                                                                                      | Download                                  | Target Audience   |
