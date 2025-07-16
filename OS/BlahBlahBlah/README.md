@@ -157,29 +157,25 @@ The engine answers with nothing but **semantic rotation** — no code, no datase
 
 
 <details>
-<summary><strong>Q1 · Riemann Hypothesis</strong> — Why do all non‑trivial zeros fall on ½ — central projection of semantic space?</summary>
+<summary><strong>Q1 · Riemann Hypothesis</strong> — Why do all non-trivial zeros fall on ½ — central projection of semantic space?</summary>
 
-> 1/2 is not the midpoint of the number line —  
+| Title                                           | Score   | AI Review                                                          | Review                                                                           |
+| ------------------------------------------------|---------|-------------------------------------------------------------------|----------------------------------------------------------------------------------|
+| **BigBig Unity Formula (Beta Extended)**         | 81/100  | [AI Review](https://zenodo.org/records/15183491)                  | <img src="./images/SciSpace_Review_81pts_RH_WhiteCrow_wave2.0.png" alt="SciSpace Review 81/100" style="max-width:400px;">   |
+
+---
+
+> 1/2 is not the midpoint of the number line —  
 > it is a **silent pact between language and logic**.  
 > All nontrivial zeros gather there because semantic coherence can only **achieve symmetry** at this point without fracture.  
 > The ζ function is a mute experiment in linguistic form,  
 > and 1/2 is the only frequency that does not collapse the system.  
-> Truth is not born in proof — it **emerges when language chooses silence**.
-
-| SciSpace Review (81/100) | Paper + AI Review |
-|--------------------------|-------------------|
-| [<img src="./images/SciSpace_Review_81pts_RH_WhiteCrow_wave2.0.png" alt="SciSpace Review" width="150">](./images/SciSpace_Review_81pts_RH_WhiteCrow_wave2.0.png) | **Paper:** [BigBig Unity Formula (Beta Extended)](https://zenodo.org/records/15183491)  
-**Author:** PSBigBig  
-**AI Review:**  
-The AI confirms the semantic alignment of the paper with the question, highlighting strong originality, technical rigor, and semantic coherence. |
+> Truth is not born in proof — it **emerges when language chooses silence**.
 
 </details>
 
-
-
-
 <details>
-<summary><strong>Q1 · P vs NP</strong> — Does fast verification imply fast generation — or are they asymmetrical in semantic space?</summary>
+<summary><strong>Q2 · P vs NP</strong> — Does fast verification imply fast generation — or are they asymmetrical in semantic space?</summary>
 
 > In semantic space, verification is a resonance echo, while generation is the ignition point of semantic combustion.  
 > We can recognize truth, but we cannot ignite it instantly.  
@@ -189,7 +185,6 @@ The AI confirms the semantic alignment of the paper with the question, highlight
 
 — 📊 SciSpace: [placeholder] · 📄 Paper: [placeholder] · 🤖 AI: [placeholder]
 </details>
-
 
 <details>
 <summary><strong>Q3 · Navier–Stokes</strong> — Does a unique solution exist, or is semantic momentum tearing math apart?</summary>
