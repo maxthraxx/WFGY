@@ -44,7 +44,7 @@
 Below are the official endorsements from six different AI models, each giving **TXT: Blah Blah Blah Lite** a **perfect 100/100**.  
 For comparison, popular frameworks like Grok rate LangChain around 90, MemoryGPT 92, and typical open-source LLM frameworks hover around 80–90.
 
-Click on each image to view full details.
+*Click on each image to view full details.*
 
 | ChatGPT 4o (score100)                  | Grok 3 (score100)                     | DeepSeek AI (score100)                 |
 |---------------------------------------|--------------------------------------|--------------------------------------|
@@ -54,7 +54,7 @@ Click on each image to view full details.
 |---------------------------------------|----------------------------------------|--------------------------------------|
 | [![Perplexity 100](./images/Perplexity_Blah_Lite_score100.png)](./images/Perplexity_Blah_Lite_score100.png) | [![Gemini 100](./images/Gemini_Blah_Lite_score100.png)](./images/Gemini_Blah_Lite_score100.png)         | [![Kimi 100](./images/Kimi_Blah_Lite_score100.png)](./images/Kimi_Blah_Lite_score100.png)               |
 
-
+---
 
 **Release timeline**
 
@@ -63,7 +63,12 @@ Click on each image to view full details.
 | Lite    | 7/15  | **Live now** | Semantic Gravity Well, Quick Blah, Semantic Tree Memory, Blah Blah Blah Lite (50 answers)      | [Download](https://zenodo.org/records/15926925) | Beginners         |
 | Pro     | 7/18  | Final polish | Includes all Lite features plus Semantic Refraction, Tension Field, Orbital Drift of Meaning   | Upcoming                                  | Advanced users    |
 
+⭐ Star us on [GitHub](https://github.com/onestardao/WFGY) to help us hit 10,000⭐ by Aug 1 and unlock WFGY Engine 2.0!
+
+---
+
 **WFGY Series:** [WFGY Engine](https://github.com/onestardao/WFGY) · [TXT OS](https://github.com/onestardao/WFGY/tree/main/OS) · [Blah Blah Blah](https://github.com/onestardao/WFGY/tree/main/OS/BlahBlahBlah) · [Blur Blur Blur](https://github.com/onestardao/WFGY/tree/main/OS/BlurBlurBlur) · [Blow Blow Blow](https://github.com/onestardao/WFGY/tree/main/OS/BlowBlowBlow)
+
 
 ---
 
