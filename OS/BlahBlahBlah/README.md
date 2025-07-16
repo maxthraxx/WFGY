@@ -32,11 +32,11 @@
 ## 🤖 Blah Blah Blah Lite — the Embedding‑Space Generator
 
 <p align="center">
-  <img src="./blahblahblah.png" alt="Blah Blah Blah Main Banner" width="100%">
+  <img src="./images/blahblahblah.png" alt="Blah Blah Blah Main Banner" width="100%">
 </p>
 
 <p align="center">
-  <img src="./50Blah_QuickDemo.gif" alt="50Blah Quick Demo" width="100%">
+  <img src="./images/50Blah_QuickDemo.gif" alt="50Blah Quick Demo" width="100%">
 </p>
 
 
