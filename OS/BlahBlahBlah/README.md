@@ -62,7 +62,7 @@ For comparison, popular frameworks like Grok rate LangChain around 90, MemoryGPT
 
 | Version | Date  | Status       | Features                                                                                      | Download                                  | Target Audience   |
 |---------|-------|--------------|-----------------------------------------------------------------------------------------------|-------------------------------------------|-------------------|
-| Lite    | 7/15  | **Live now** | Semantic Gravity Well, Quick Blah, Semantic Tree Memory, Blah Blah Blah Lite (50 answers)      | [Download](https://zenodo.org/records/15926925) | Beginners         |
+| Lite    | 7/16  | **Live now** | Semantic Gravity Well, Quick Blah, Semantic Tree Memory, Blah Blah Blah Lite (50 answers)      | [Download](https://zenodo.org/records/15926925) | Beginners         |
 | Pro     | 7/18  | Final polish | Includes all Lite features plus Semantic Refraction, Tension Field, Orbital Drift of Meaning   | Upcoming                                  | Advanced users    |
 
 ⭐ Star us on [GitHub](https://github.com/onestardao/WFGY) to help us hit 10,000⭐ by Aug 1 and unlock WFGY Engine 2.0!
