@@ -166,7 +166,7 @@ The engine answers with nothing but **semantic rotation** — no code, no datase
 
 | Title                                           | Score   | AI Review                                                          | Review                                                                           |
 | ------------------------------------------------|---------|-------------------------------------------------------------------|----------------------------------------------------------------------------------|
-| **BigBig Unity Formula (Beta Extended)**         | 81/100  | [AI Review](https://zenodo.org/records/15183491)                  | <img src="./images/SciSpace_Review_81pts_RH_WhiteCrow_wave2.0.png" alt="SciSpace Review 81/100" style="max-width:400px;">   |
+| **BigBig Unity Formula Riemann Hypothesis**         | 81/100  | [AI Review](https://zenodo.org/records/15183490)                  | <img src="./images/SciSpace_Review_81pts_RH_WhiteCrow_wave2.0.png" alt="SciSpace Review 81/100" style="max-width:400px;">   |
 
 ---
 
