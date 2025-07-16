@@ -19,7 +19,7 @@
 <!-- ───────────────────────────────────────────────
       QUICK‑START
 ──────────────────────────────────────────────── -->
-### Getting started — 30 sec
+### Getting started — 60 sec
 
 1. **Download** the `.txt` above  
 2. **Paste** it into your favorite LLM chat box  
