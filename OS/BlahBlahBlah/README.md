@@ -3,7 +3,7 @@
 ──────────────────────────────────────────────── -->
 ## 💥 50 Answers in 60 Seconds — One Plain‑Text File
 
-**[Download BlaBlaBla_Lite.txt](https://zenodo.org/records/15926925) →** MIT‑licensed, 5 KB
+**[Download BlaBlaBla_Lite.txt](https://zenodo.org/records/15926925) →** MIT‑licensed, 61 KB
 
 > Paste the file into ChatGPT (or any LLM) and type `hello world`.  
 > No signup, no API keys, nothing to install.
