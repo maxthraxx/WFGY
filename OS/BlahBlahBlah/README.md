@@ -29,8 +29,8 @@
 <!-- ───────────────────────────────────────────────
       BANNER
 ──────────────────────────────────────────────── -->
-## 🤖 Blah Blah Blah Lite — the Embedding‑Space Generator  
-> TXT: Blah Blah Blah Lite — A Plain Text Nonsense Generator Powered by the WFGY Engine
+## 🤖 TXT: Blah Blah Blah Lite — the Embedding‑Space Generator  
+> A Plain Text Nonsense Generator Powered by the WFGY Engine
 
 
 <p align="center">
