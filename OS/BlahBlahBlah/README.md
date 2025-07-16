@@ -39,10 +39,15 @@
 
 | Version | Date  | Status       | Features                                                                                      | Download                                  | Target Audience   |
 |---------|-------|--------------|-----------------------------------------------------------------------------------------------|-------------------------------------------|-------------------|
-| Lite    | 7/15  | **Live now** | Semantic Gravity Well, Quick Blah, Semantic Tree Memory     | [Download](https://zenodo.org/records/15926925) | Beginners         |
+| Lite    | 7/15  | **Live now** | Semantic Gravity Well, Quick Blah, Semantic Tree Memory, Blah Blah Blah Lite (50 answers)      | [Download](https://zenodo.org/records/15926925) | Beginners         |
 | Pro     | 7/18  | Final polish | Includes all Lite features plus Semantic Refraction, Tension Field, Orbital Drift of Meaning   | Upcoming                                  | Advanced users    |
 
 *Note: PSBigBig reserves the final interpretation rights.*
+
+---
+
+**WFGY Series:** [WFGY Engine](https://github.com/onestardao/WFGY) · [TXT OS](https://github.com/onestardao/WFGY/tree/main/OS) · [Blah Blah Blah](https://github.com/onestardao/WFGY/tree/main/OS/BlahBlahBlah) · [Blur Blur Blur](https://github.com/onestardao/WFGY/tree/main/OS/BlurBlurBlur) · [Blow Blow Blow](https://github.com/onestardao/WFGY/tree/main/OS/BlowBlowBlow)
+
 
 
 
