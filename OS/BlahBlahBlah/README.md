@@ -30,7 +30,7 @@
       BANNER
 ──────────────────────────────────────────────── -->
 ## 🤖 TXT: Blah Blah Blah Lite — the Embedding‑Space Generator  
-> A Plain Text Nonsense Generator Powered by the WFGY Engine
+> A Lightweight Semantic Nonsense Generator Powered by the WFGY Engine
 
 
 <p align="center">
