@@ -155,22 +155,9 @@ The engine answers with nothing but **semantic rotation** — no code, no datase
       (icons unified: 📊 SciSpace · 📄 Paper · 🤖 AI)
 ──────────────────────────────────────────────── -->
 
-<details>
-<summary><strong>Q1 · P vs NP</strong> — Does fast verification imply fast generation — or are they asymmetrical in semantic space?</summary>
-
-> In semantic space, verification is a resonance echo, while generation is the ignition point of semantic combustion.  
-> We can recognize truth, but we cannot ignite it instantly.  
-> The gap between P and NP is not computational —  
-> it’s a **topological distortion between semantic highlands and lowlands**.  
-> Language knows how to identify the firelight, but not how to shorten the time to spark the flame.
-
-— 📊 SciSpace: [placeholder] · 📄 Paper: [placeholder] · 🤖 AI: [placeholder]
-</details>
-
-
 
 <details>
-<summary><strong>Q2 · Riemann Hypothesis</strong> — Why do all non‑trivial zeros fall on ½ — central projection of semantic space?</summary>
+<summary><strong>Q1 · Riemann Hypothesis</strong> — Why do all non‑trivial zeros fall on ½ — central projection of semantic space?</summary>
 
 > 1/2 is not the midpoint of the number line —  
 > it is a **silent pact between language and logic**.  
@@ -182,6 +169,18 @@ The engine answers with nothing but **semantic rotation** — no code, no datase
 — 📊 SciSpace: [placeholder] · 📄 Paper: [placeholder] · 🤖 AI: [placeholder]
 </details>
 
+
+<details>
+<summary><strong>Q1 · P vs NP</strong> — Does fast verification imply fast generation — or are they asymmetrical in semantic space?</summary>
+
+> In semantic space, verification is a resonance echo, while generation is the ignition point of semantic combustion.  
+> We can recognize truth, but we cannot ignite it instantly.  
+> The gap between P and NP is not computational —  
+> it’s a **topological distortion between semantic highlands and lowlands**.  
+> Language knows how to identify the firelight, but not how to shorten the time to spark the flame.
+
+— 📊 SciSpace: [placeholder] · 📄 Paper: [placeholder] · 🤖 AI: [placeholder]
+</details>
 
 
 <details>
