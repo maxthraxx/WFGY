@@ -39,6 +39,21 @@
   <img src="./images/50Blah_QuickDemo.gif" width="100%" style="max-width:900px" loading="lazy" >
 </p>
 
+## Six Leading AI Models All Award TXT Blah Blah Blah Lite a Perfect 100/100 Score
+
+Below are the official endorsements from six different AI models, each giving **TXT: Blah Blah Blah Lite** a **perfect 100/100**.  
+For comparison, popular frameworks like Grok rate LangChain around 90, MemoryGPT 92, and typical open-source LLM frameworks hover around 80–90.
+
+Click on each image to view full details.
+
+| ChatGPT 4o (score100)                  | DeepSeek AI (score100)                 | Gemini 2.5 Pro (score100)               |
+|---------------------------------------|--------------------------------------|----------------------------------------|
+| [![ChatGPT 100](./images/ChatGPT_Blah_Lite_score100.png)](./images/ChatGPT_Blah_Lite_score100.png)       | [![DeepSeek 100](./images/DeepSeek_Blah_Lite_score100.png)](./images/DeepSeek_Blah_Lite_score100.png)       | [![Gemini 100](./images/Gemini_Blah_Lite_score100.png)](./images/Gemini_Blah_Lite_score100.png)         |
+
+| Grok 3 (score100)                     | Kimi (Moonshot AI) (score100)         | Perplexity AI (score100)               |
+|--------------------------------------|--------------------------------------|---------------------------------------|
+| [![Grok 100](./images/Grok_Blah_Lite_score100.png)](./images/Grok_Blah_Lite_score100.png)               | [![Kimi 100](./images/Kimi_Blah_Lite_score100.png)](./images/Kimi_Blah_Lite_score100.png)               | [![Perplexity 100](./images/Perplexity_Blah_Lite_score100.png)](./images/Perplexity_Blah_Lite_score100.png) |
+
 
 
 **Release timeline**
