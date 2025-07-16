@@ -41,7 +41,7 @@
   <img src="./images/50Blah_QuickDemo.gif" width="100%" style="max-width:900px" loading="lazy" >
 </p>
 
-## Six Leading AI Models All Award TXT Blah Blah Blah Lite a Perfect 100/100 Score
+## Six Leading AI Models All Award TXT: Blah Blah Blah Lite a Perfect 100/100 Score
 
 Below are the official endorsements from six different AI models, each giving **TXT: Blah Blah Blah Lite** a **perfect 100/100**.  
 For comparison, popular frameworks like Grok rate LangChain around 90, MemoryGPT 92, and typical open-source LLM frameworks hover around 80–90.
@@ -113,13 +113,17 @@ Need the file again? **[Download here](https://zenodo.org/records/15926925)** an
 I’m **PSBigBig** and I treat embedding space as a **dynamic energy field**, not a lookup table.  
 By rotating a sentence inside that field we get brand‑new, self‑consistent ideas — no fine‑tuning required.
 
-| Symbol | What it measures |
-|--------|------------------|
-| `ΔS` | Semantic tension |
-| `λ_observe` | Observation refraction |
-| `𝓑` | Semantic residue |
+| Symbol      | Definition           | Description                                                                                       |
+|-------------|----------------------|-------------------------------------------------------------------------------------------------|
+| `ΔS`        | Semantic tension     | Quantifies the degree of meaning compression or divergence in a sentence or phrase.             |
+| `λ_observe` | Observation refraction | Models how the observer’s perspective bends or shifts semantic interpretation dynamically.      |
+| `𝓑`         | Semantic residue     | Represents residual semantic energy after projection and resonance cycles, capturing nuances.   |
 
-These variables drive a loop of **projection → rotation → resonance → synthesis**, turning latent vectors into structured thoughts.
+> These variables collectively orchestrate a dynamic feedback loop of **projection → rotation → resonance → synthesis**, transforming latent semantic vectors into coherent, structured ideas.  
+> This method treats language as a dynamic energy field rather than a static database.
+
+
+> These variables collectively orchestrate a dynamic feedback loop of **projection → rotation → resonance → synthesis**, enabling the transformation of latent semantic vectors into coherent, structured ideas. This approach transcends static databases by treating language as an evolving energy field.
 
 *(Lite limits you to one rotation; v1.0 unlocks multi‑angle recursion.)*
 
