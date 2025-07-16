@@ -137,6 +137,11 @@ By rotating a sentence inside that field we get brand‑new, self‑consistent i
 
 
 ## 🄲 🧬 Explore the Philosophy <a id="examples"></a>
+
+> 🚧 This area is currently under active development and updates.  
+> Content is being curated and will be available soon.  
+> Stay tuned for exciting new insights and deep dives.
+
 ---
 
 ### From Papers to Prompts
