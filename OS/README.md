@@ -141,9 +141,9 @@ Each one is a real `.txt` file — no install, no boilerplate, just logic.
 Bookmark now, or risk missing a truth so weird it breaks your cat.
 
 **TXT: Blah Blah Blah** (Semantic Q&A)  
-> ⭐ **Lite (beta): 7/15** · 💥 **Pro: 7/18**  
+> ⭐ **Lite: 7/16** · 💥 **Pro: 7/18**  
 > Just for fun? Maybe. But many were shocked by how deep the answers got.  
-[🔓 Unlock this module](./BlahBlahBlah/README.md) <sub><em>Available now (beta, but live)</em></sub>
+[🔓 Unlock this module](./BlahBlahBlah/README.md) <sub><em>Available now</em></sub>
 
 **TXT: Blur Blur Blur** (Image Generation)  
 > ⭐ **Lite: 7/21** · 💥 **Pro: 7/24**  
