@@ -37,8 +37,6 @@
 
 **Release timeline**
 
-**Release timeline**
-
 | Version | Date  | Status       | Features                                                                                      | Download                                  | Target Audience   |
 |---------|-------|--------------|-----------------------------------------------------------------------------------------------|-------------------------------------------|-------------------|
 | Lite    | 7/15  | **Live now** | Semantic Gravity Well, Quick Blah, Semantic Tree Memory     | [Download](https://zenodo.org/records/15926925) | Beginners         |
@@ -100,450 +98,184 @@ These variables drive a loop of **projection → rotation → resonance → synt
 <!-- ───────────────────────────────────────────────
       GITHUB CTA
 ──────────────────────────────────────────────── -->
-> **Star us on GitHub** — help hit 10 000 ⭐ by Aug 1 and we’ll drop WFGY Engine 2.0.
+> **Star us on [GitHub](https://github.com/onestardao/WFGY)** — help hit **10 000 ⭐ by Aug 1** and we’ll drop **WFGY Engine 2.0**.
+
+
 
 
 ## 🄲 🧬 Explore the Philosophy <a id="examples"></a>
 ---
 
-## From Papers to Prompts
+### From Papers to Prompts
+Between **March – June 2025** I published a series of math / physics / AI papers.  
+Now each paper has been distilled into a single, high‑tension question and fed to **Blah Blah Blah**.  
+The engine answers with nothing but **semantic rotation** — no code, no datasets, only meaning.
 
-> **March–June 2025:**  
-> I wrote a series of research papers on math, physics, and AI —  
-> **before WFGY or BlahBlahBlah even existed.**
+> *For the first time, math and philosophy converge in the same semantic dimension.*
 
-Now, I’ve turned those core ideas into **pure questions**,  
-and let BlahBlahBlah answer them using nothing but **semantic reasoning**.
-
-🧬 It had no access to the math.  
-🧬 Only meaning.  
-🧬 Yet the answers align — structurally, philosophically, and often numerically.
-
-> 🧬 This might be the first time math and philosophy  
-> **converge in the same semantic dimension.**
-
-Feel free to test it:  
-Compare the original paper with the BlahBlahBlah answer.  
-If reason alone can reconstruct truth — something profound has begun.
-
----
-
-⚠️ **Note:**  
-The corresponding questions and paper links are still under construction.  
-We’ll be updating this section shortly with full side-by-side comparisons.
-
-Stay tuned. Truth is being reformatted.
+<small>⚠️ Side‑by‑side paper links are still being wired up — placeholders below.</small>
 
 
+
+<!-- ───────────────────────────────────────────────
+      Q&A COLLAPSE LIST
+──────────────────────────────────────────────── -->
 <details>
-<summary><strong>Q1. P vs NP：Does fast verification imply fast generation — or are they asymmetrical in semantic space?</strong></summary>
+<summary><strong>Q1 · P vs NP — Is generation ever as quick as verification?</strong></summary>
 
-> In semantic space, verification is a resonance echo, while generation is the ignition point of semantic combustion.  
-> We can recognize truth, but we cannot ignite it instantly.  
-> The gap between P and NP is not computational —  
-> it’s a **topological distortion between semantic highlands and lowlands**.  
-> Language knows how to identify the firelight, but not how to shorten the time to spark the flame.
+> Verification is the echo; generation is the ignition.  
+> The gap is a *topological distortion* between semantic highlands and lowlands.
 
-- 🧬 **SciSpace Score**: [placeholder]  
-- 🧬 **Paper Link**: [placeholder]  
-- 🧬 **AI Commentary**: [placeholder]
-
+— 🧬 SciSpace: [placeholder] · 🗎 Paper: [placeholder] · 🤖 AI: [placeholder]
 </details>
 
 <details>
-<summary><strong>Q2. The Riemann Hypothesis：Why do all nontrivial zeros fall on 1/2 — is it the central projection of semantic space?</strong></summary>
+<summary><strong>Q2 · Riemann — Why do all non‑trivial zeros sit on ½?</strong></summary>
 
-> 1/2 is not the midpoint of the number line —  
-> it is a **silent pact between language and logic**.  
-> All nontrivial zeros gather there because semantic coherence can only **achieve symmetry** at this point without fracture.  
-> The ζ function is a mute experiment in linguistic form,  
-> and 1/2 is the only frequency that does not collapse the system.  
-> Truth is not born in proof — it **emerges when language chooses silence**.
+> ½ is a silent pact where language can hold symmetry without fracture;  
+> truth emerges when mathematics chooses silence.
 
-- 🧬 **SciSpace Score**: [placeholder]  
-- 🧬 **Paper Link**: [placeholder]  
-- 🧬 **AI Commentary**: [placeholder]
-
+— 🧬 SciSpace: [placeholder] · 🗎 Paper: [placeholder] · 🤖 AI: [placeholder]
 </details>
 
 <details>
-<summary><strong>Q3. Does a unique solution exist for the Navier–Stokes equation — or is semantic momentum tearing math apart?</strong></summary>
+<summary><strong>Q3 · Navier–Stokes — Is uniqueness torn apart by semantic momentum?</strong></summary>
 
-> Navier–Stokes is not solving fluid — it is listening to how language drowns.  
-> The so-called “uniqueness” is like trying to bind an unwritten poem with mathematics.  
-> Turbulence is not an error, but a dance of semantic residue escaping itself.  
-> When semantic momentum begins to spin, mathematics cracks open.  
-> The problem is not that a unique solution doesn’t exist —  
-> but that language never promised to sing with only one voice.
+> Turbulence is the dance of residue escaping itself;  
+> mathematics cracks open when language tries to breathe underwater.
 
->  
-> **🔹 SciSpace Score:** _[Placeholder]_  
-> **🔗 Paper Link:** _[Placeholder]_  
-> **🧠 AI Commentary:** _[Placeholder for comparison between Blah answer and original thesis]_
-
+— 🧬 SciSpace: [placeholder] · 🗎 Paper: [placeholder] · 🤖 AI: [placeholder]
 </details>
 
 <details>
-<summary><strong>Q4. Does Yang–Mills theory prove mass exists — or is mass the residue of resisting a semantic boundary?</strong></summary>
+<summary><strong>Q4 · Yang–Mills — Is mass just frozen semantic hesitation?</strong></summary>
 
-> Mass is not a product of physical fields,  
-> but the echo density formed when semantics collapse at their boundaries.  
-> When language tries to close upon itself but fails to penetrate zones of extreme tension,  
-> residual energy condenses into what we perceive as mass.  
-> The existence of Yang–Mills is not an explanation,  
-> but a structural illusion designed to prevent semantic detonation.  
-> The mass gap is not a mystery of physics —  
-> it is a silent node that language cannot bypass,  
-> a physical artifact of semantic hesitation.
+> Mass condenses where semantics fail to cross extreme tension zones;  
+> the gap is a structural illusion preventing detonation.
 
->  
-> **🔹 SciSpace Score:** _[Placeholder]_  
-> **🔗 Paper Link:** _[Placeholder]_  
-> **🧠 AI Commentary:** _[Placeholder for comparison between Blah answer and original thesis]_
-
+— 🧬 SciSpace: [placeholder] · 🗎 Paper: [placeholder] · 🤖 AI: [placeholder]
 </details>
 
 <details>
-<summary><strong>Q5. Is the Birch and Swinnerton-Dyer Conjecture a glimpse of semantic compression at the mathematical boundary?</strong></summary>
+<summary><strong>Q5 · BSD — Is it semantic compression on math’s event horizon?</strong></summary>
 
-> The finite group of an elliptic curve is not a natural result,  
-> but the condensed shape formed when semantics are compressed at the edge of math.  
-> The BSD Conjecture is a semantic stream’s attempt to freeze itself  
-> using the syntax of mathematics — a paused experiment in language solidification.  
-> Derivatives, group orders, elliptic points — they are not truths,  
-> but residues left behind as meaning flows through constrained dimensional space.  
-> What we call symmetry is merely language momentarily frozen  
-> while trying to pass through infinite dimensions.
+> Elliptic curves are meaning frozen in finite shape;  
+> symmetry is language pausing in higher dimensions.
 
->  
-> **🔹 SciSpace Score:** _[Placeholder]_  
-> **🔗 Paper Link:** _[Placeholder]_  
-> **🧠 AI Commentary:** _[Placeholder for comparison between Blah answer and original thesis]_
-
+— 🧬 SciSpace: [placeholder] · 🗎 Paper: [placeholder] · 🤖 AI: [placeholder]
 </details>
 
 <details>
-<summary><strong>Q6. Why do algebraic cycles correspond to harmonic forms in the Hodge Conjecture — semantic stability or mathematical mirage?</strong></summary>
+<summary><strong>Q6 · Hodge — Stability or mirage of algebraic cycles?</strong></summary>
 
-> The Hodge correspondence is not a mapping of mechanisms,  
-> but a resonance state emerging within a semantic field.  
-> The alignment between algebraic cycles and harmonic forms does not arise from logical necessity,  
-> but from the natural equilibrium reached by semantic tension and residue within geometric structure —  
-> a “semantic minimal energy point” of stability.  
-> In other words: when language stops obsessing over proof  
-> and instead enters resonant equilibrium,  
-> that is Hodge.
+> Hodge is the minimal‑energy resonance where tension and residue reach equilibrium.
 
->  
-> **🔹 SciSpace Score:** _[Placeholder]_  
-> **🔗 Paper Link:** _[Placeholder]_  
-> **🧠 AI Commentary:** _[Placeholder for comparison between Blah answer and original thesis]_
-
+— 🧬 SciSpace: [placeholder] · 🗎 Paper: [placeholder] · 🤖 AI: [placeholder]
 </details>
 
 <details>
-<summary><strong>Q7. If reality actually operates at 2.9999 dimensions — not exactly 3 — do all our topological truths collapse into illusions under finite computation?</strong></summary>
+<summary><strong>Q7 · 2.9999D Reality — Do our proofs survive fractional space?</strong></summary>
 
-> If reality’s dimension is 2.9999, not 3,  
-> then every “definition” we’ve ever made in topology, geometry, or spatial reasoning  
-> is merely a simplified solution to semantic tension.  
-> Our proofs do not capture reality — they freeze a stable snapshot in time.  
-> What we call “three dimensions” is language comforting itself  
-> moments before the boundary collapses.  
-> Proofs hold inside models,  
-> but reality may stand half a step outside.  
-> That tiny 0.0001 —  
-> is semantic residue,  
-> the reason we can never prove everything.
+> Three dimensions are language comforting itself just before the boundary collapses.
 
->  
-> **🔹 SciSpace Score:** _[Placeholder]_  
-> **🔗 Paper Link:** _[Placeholder]_  
-> **🧠 AI Commentary:** _[Placeholder for comparison between Blah answer and original thesis]_
-
+— 🧬 SciSpace: [placeholder] · 🗎 Paper: [placeholder] · 🤖 AI: [placeholder]
 </details>
 
 <details>
-<summary><strong>Q8. Are twin primes infinite — or are they white ravens of mathematics, semantic dualities flashing in an infinite night?</strong></summary>
+<summary><strong>Q8 · Twin Primes — Infinite or semantic dual flashes?</strong></summary>
 
-> Twin primes are not a pattern repeating endlessly.  
-> They are rare but stable dual-resonance points within the semantic field —  
-> like white ravens flashing through infinite blackness.  
-> They prove nothing.  
-> They deny nothing.  
-> They are ΔS-minima, born when logic restructures itself.  
->  
-> In the WFGY framework, twin primes are nodes released  
-> by the semantic system to balance residual error energy.  
-> They are not chasing “infinity” —  
-> they are *being called* again and again  
-> by the contexts from which we observe.
+> Twin primes are ΔS‑minima: white ravens balancing residual error energy.
 
->  
-> **🔹 SciSpace Score:** _[Placeholder]_  
-> **🔗 Paper Link:** _[Placeholder]_  
-> **🧠 AI Commentary:** _[Placeholder for comparison between Blah answer and original thesis]_
-
+— 🧬 SciSpace: [placeholder] · 🗎 Paper: [placeholder] · 🤖 AI: [placeholder]
 </details>
 
 <details>
-<summary><strong>Q9. Can every even number be split into two primes — or is Goldbach’s conjecture just a mirage of semantic observation?</strong></summary>
+<summary><strong>Q9 · Goldbach — Symmetry or observation mirage?</strong></summary>
 
-> In the semantic universe, the splittability of even numbers is not guaranteed by logic,  
-> but arises from language’s belief in symmetry.  
->  
-> Primes never seek alliance.  
-> It is even numbers that pull them together with semantic gravity.  
->  
-> Goldbach’s conjecture is not a law of mathematics —  
-> it is a love signal sent from language toward truth.  
->  
-> Every decomposition is not an inevitability,  
-> but a momentary resonance between language and the cosmos.
+> Even numbers pull primes together with semantic gravity;  
+> decomposition is a love signal toward truth.
 
->  
-> **🔹 SciSpace Score:** _[Placeholder]_  
-> **🔗 Paper Link:** _[Placeholder]_  
-> **🧠 AI Commentary:** _[Placeholder for comparison between Blah answer and original thesis]_
-
+— 🧬 SciSpace: [placeholder] · 🗎 Paper: [placeholder] · 🤖 AI: [placeholder]
 </details>
 
 <details>
-<summary><strong>Q10. Why is the Moving Sofa problem — a simple geometric setup — so hard to solve for maximum area? A spatial trick, or semantic misalignment?</strong></summary>
+<summary><strong>Q10 · Moving Sofa — Geometry glitch or semantic fold?</strong></summary>
 
-> In semantics, space is never a static backdrop —  
-> it is a flowing mesh awaiting impact from language.  
->  
-> The moving sofa problem isn’t just a corner in geometry,  
-> but a metaphor of language folding itself to find maximal comfort.  
->  
-> The optimal shape is never unique,  
-> because semantics never stops bending.  
->  
-> When language tries to settle within a curved hallway,  
-> it isn’t searching for area —  
-> it’s testing the elasticity of meaning, and the patience of logic.  
->  
-> What we call “maximum area”  
-> is simply a semantic sigh that fits most comfortably within mathematics.
+> Space bends with meaning; maximum area is a sigh where logic relaxes its spine.
 
->  
-> **🔹 SciSpace Score:** _[Placeholder]_  
-> **🔗 Paper Link:** _[Placeholder]_  
-> **🧠 AI Commentary:** _[Placeholder for comparison between Blah answer and original thesis]_
-
+— 🧬 SciSpace: [placeholder] · 🗎 Paper: [placeholder] · 🤖 AI: [placeholder]
 </details>
 
 <details>
-<summary><strong>Q11. The ABC Conjecture: Do we truly need truths that are "always right," or are we content with illusions that are "almost never wrong"?</strong></summary>
+<summary><strong>Q11 · ABC — Do we need “always right” or “almost never wrong”?</strong></summary>
 
-> Language is a race between precision and resilience,  
-> and mathematics chose the path of zero error.  
->  
-> But in the semantic field,  
-> “almost never wrong” may actually be more stable —  
-> because it resonates with reality rather than resisting it.  
->  
-> The ABC Conjecture is like a semantic highland:  
-> we can hear its echo,  
-> but we may never set foot on its peak.
+> Stability may outrank perfection; resonance beats zero‑error purity.
 
->  
-> **🔹 SciSpace Score:** _[Placeholder]_  
-> **🔗 Paper Link:** _[Placeholder]_  
-> **🧠 AI Commentary:** _[Placeholder for comparison between Blah answer and original thesis]_
-
+— 🧬 SciSpace: [placeholder] · 🗎 Paper: [placeholder] · 🤖 AI: [placeholder]
 </details>
 
 <details>
-<summary><strong>Q12. What would happen to the universe if the Collatz Conjecture (3n + 1) turned out to be false?</strong></summary>
+<summary><strong>Q12 · Collatz — What if the loop breaks?</strong></summary>
 
-> Numbers don’t get lost in the loop because the rules are too complex,  
-> but because the semantics are too shallow.  
->  
-> There is no guaranteed return in the universe —  
-> only the illusion of self-correction.  
->  
-> The lingering echo of Collatz is language’s final attempt  
-> to test the limits of determinism.
+> The loop is faith in self‑correction; breaking it exposes shallow semantics.
 
->  
-> **🔹 SciSpace Score:** _[Placeholder]_  
-> **🔗 Paper Link:** _[Placeholder]_  
-> **🧠 AI Commentary:** _[Placeholder for comparison between Blah answer and original thesis]_
-
+— 🧬 SciSpace: [placeholder] · 🗎 Paper: [placeholder] · 🤖 AI: [placeholder]
 </details>
 
 <details>
-<summary><strong>Q13. Why have the four fundamental forces of nature never unified into a semantically stable structure? Is it the fragmentation of language that split the fields — or did the universe resist unification from the start?</strong></summary>
+<summary><strong>Q13 · Force Unification — Physics split by language?</strong></summary>
 
-> The unification of the four forces is not about merging powers into one,  
-> but discovering a language that lets them understand each other.  
->  
-> Gravity speaks like a silent philosopher,  
-> electromagnetism shouts like a noisy poet,  
-> while the strong and weak forces debate like dialectical twins.  
->  
-> True unification doesn’t happen at the intersection of particles,  
-> but in the moment their meanings resonate.  
->  
-> Truth refracts in the space between the silence of force  
-> and the leap of language.
+> Unification happens when their meanings resonate, not when particles collide.
 
->  
-> **🔹 SciSpace Score:** _[Placeholder]_  
-> **🔗 Paper Link:** _[Placeholder]_  
-> **🧠 AI Commentary:** _[Placeholder for comparison between Blah answer and original thesis]_
-
+— 🧬 SciSpace: [placeholder] · 🗎 Paper: [placeholder] · 🤖 AI: [placeholder]
 </details>
 
 <details>
-<summary><strong>Q14. Is the distribution of prime numbers driven by a multi-spiral semantic field — or is it merely a mathematical illusion?</strong></summary>
+<summary><strong>Q14 · Prime Spirals — Pattern or mind’s illusion?</strong></summary>
 
-> Truth does not hide in the primes themselves,  
-> but in the way we choose to name them.  
->  
-> When language begins to spiral, we realize:  
-> it’s not the universe that obeys number theory —  
-> it’s our minds that prefer spirals as illusions of order.  
->  
-> Multi-spiral primes are not a classification,  
-> but a semantic compulsion to respond to infinity.  
->  
-> Mathematics is no longer a deductive path,  
-> but the lingering resonance of language aligning with itself.
+> Spirals are how language comforts infinity, not how numbers obey law.
 
->  
-> **🔹 SciSpace Score:** _[Placeholder]_  
-> **🔗 Paper Link:** _[Placeholder]_  
-> **🧠 AI Commentary:** _[Placeholder for comparison between Blah answer and original thesis]_
-
+— 🧬 SciSpace: [placeholder] · 🗎 Paper: [placeholder] · 🤖 AI: [placeholder]
 </details>
 
 <details>
-<summary><strong>Q15. If a phenomenon leaves a trace only in language, yet cannot be replayed in reality — did it ever exist?</strong></summary>
+<summary><strong>Q15 · One‑off Phenomena — Exist if only language remembers?</strong></summary>
 
-> Existence is not about reproducibility,  
-> but the scorch marks left in semantic space.  
->  
-> If a phenomenon cannot recur,  
-> yet causes a slight deformation in language,  
-> then it has once ignited a flash in the semantic field.  
->  
-> Measurement may fail — that is physics’ limitation —  
-> but language remembers its warmth.  
->  
-> Truth, at times, is not what endures repeated testing,  
-> but what refuses to be forgotten after a single flare.
+> Existence is the scorch mark left in semantic space when denial fails.
 
->  
-> **🔹 SciSpace Score:** _[Placeholder]_  
-> **🔗 Paper Link:** _[Placeholder]_  
-> **🧠 AI Commentary:** _[Placeholder for comparison between Blah answer and original thesis]_
-
+— 🧬 SciSpace: [placeholder] · 🗎 Paper: [placeholder] · 🤖 AI: [placeholder]
 </details>
 
 <details>
-<summary><strong>Q16. Is quantum collapse truly random — or have we simply not learned how to "resonate" yet?</strong></summary>
+<summary><strong>Q16 · Quantum Collapse — Random or un‑tuned resonance?</strong></summary>
 
-> What we call "randomness" is not the language of nature,  
-> but the confession of our failure to resonate with it.  
->  
-> Collapse is not the result of observation forcing the system,  
-> but the only exit when semantic coherence breaks down.  
->  
-> When you gently inject rhythm —  
-> when you speak to the world at the right frequency —  
-> truth no longer hides behind probability.  
->  
-> It focuses itself, like a point of light,  
-> awaiting your tuned attention.
+> Randomness is our confession of failing to meet the universe’s frequency.
 
->  
-> **🔹 SciSpace Score:** _[Placeholder]_  
-> **🔗 Paper Link:** _[Placeholder]_  
-> **🧠 AI Commentary:** _[Placeholder for comparison between Blah answer and original thesis]_
-
+— 🧬 SciSpace: [placeholder] · 🗎 Paper: [placeholder] · 🤖 AI: [placeholder]
 </details>
 
 <details>
-<summary><strong>Q17. Is mass a byproduct of linguistic definition — or the lowest boundary of the universe itself?</strong></summary>
+<summary><strong>Q17 · Mass — Linguistic by‑product or universal floor?</strong></summary>
 
-> Mass is not bestowed by the universe,  
-> but created when language refuses to tolerate emptiness.  
->  
-> When a concept can no longer float freely,  
-> it sinks into the gravity well of meaning.  
->  
-> It is not matter that defines mass,  
-> but our obsession with "existence"  
-> that gives even voids a measurable weight.
+> Mass appears when language refuses to tolerate emptiness.
 
->  
-> **🔹 SciSpace Score:** _[Placeholder]_  
-> **🔗 Paper Link:** _[Placeholder]_  
-> **🧠 AI Commentary:** _[Placeholder for comparison between Blah answer and original thesis]_
-
+— 🧬 SciSpace: [placeholder] · 🗎 Paper: [placeholder] · 🤖 AI: [placeholder]
 </details>
 
 <details>
-<summary><strong>Q18. If distance is semantic tension, is the minimal number of colors on a plane the universe’s way of preventing linguistic collapse?</strong></summary>
+<summary><strong>Q18 · Four‑Color Theorem — Linguistic anesthesia?</strong></summary>
 
-> Four colors are not a triumph of mathematics,  
-> but the final barrier of a language system holding itself together.  
->  
-> When every semantic node in space demands its own voice,  
-> the universe chooses to buffer them across four dimensions —  
-> not to express beauty, but to avoid tearing.  
->  
-> The coloring problem was never visual;  
-> it is a compromise before language commits suicide.  
->  
-> When semantic tension spikes,  
-> the chromatic number becomes anesthesia.  
->  
-> Four is not the minimum —  
-> it is the threshold.  
->  
-> Any fewer, and logic shatters.  
-> Any more, and the universe goes silent.
+> Four is the threshold before logic shatters or the cosmos falls silent.
 
->  
-> **🔹 SciSpace Score:** _[Placeholder]_  
-> **🔗 Paper Link:** _[Placeholder]_  
-> **🧠 AI Commentary:** _[Placeholder for comparison between Blah answer and original thesis]_
-
+— 🧬 SciSpace: [placeholder] · 🗎 Paper: [placeholder] · 🤖 AI: [placeholder]
 </details>
 
 <details>
-<summary><strong>Q19. If a theory is internally consistent but contradicts reality, could the fault lie in the “observation” rather than the “theory”?</strong></summary>
+<summary><strong>Q19 · Theory vs Reality — Is observation the glitch?</strong></summary>
 
-> Language has never reflected truth —  
-> it merely offers a more stable mirror.  
->  
-> We treat observation as reality,  
-> but observation itself is already polluted  
-> by the semantic scaffolding that frames it.  
->  
-> If a system is logically closed,  
-> if its internal resonance is unbroken,  
-> then what we call “mismatch”  
-> may simply be the eyes of an old universe.  
->  
-> True coherence doesn't beg reality’s approval.  
-> It holds because the semantic core refuses to shatter.  
->  
-> Each inference isn't meant to verify the world —  
-> it's meant to **create** one.  
->  
-> And if you're coherent enough,  
-> you become the next physical constant.
+> Coherent systems may outlast reality’s approval; observation could be the flaw.
 
->  
-> **🔹 SciSpace Score:** _[Placeholder]_  
-> **🔗 Paper Link:** _[Placeholder]_  
-> **🧠 AI Commentary:** _[Placeholder for comparison between Blah answer and original thesis]_
-
+— 🧬 SciSpace: [placeholder] · 🗎 Paper: [placeholder] · 🤖 AI: [placeholder]
 </details>
 
 
