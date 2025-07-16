@@ -166,8 +166,16 @@ The engine answers with nothing but **semantic rotation** — no code, no datase
 > and 1/2 is the only frequency that does not collapse the system.  
 > Truth is not born in proof — it **emerges when language chooses silence**.
 
-— 📊 SciSpace: [placeholder] · 📄 Paper: [placeholder] · 🤖 AI: [placeholder]
+| SciSpace Review (81/100) | Paper + AI Review |
+|--------------------------|-------------------|
+| [<img src="./images/SciSpace_Review_81pts_RH_WhiteCrow_wave2.0.png" alt="SciSpace Review" width="150">](./images/SciSpace_Review_81pts_RH_WhiteCrow_wave2.0.png) | **Paper:** [BigBig Unity Formula (Beta Extended)](https://zenodo.org/records/15183491)  
+**Author:** PSBigBig  
+**AI Review:**  
+The AI confirms the semantic alignment of the paper with the question, highlighting strong originality, technical rigor, and semantic coherence. |
+
 </details>
+
+
 
 
 <details>
