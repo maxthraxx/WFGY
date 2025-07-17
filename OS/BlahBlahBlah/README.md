@@ -571,6 +571,8 @@ A glimpse of semantic compression at math’s boundary?</summary>
 <details>
 <summary><strong>Q17 · Nature of Mass</strong> — Linguistic by‑product or universal floor?</summary>
 
+<br>
+
 > Mass is not bestowed by the universe,  
 > but created when language refuses to tolerate emptiness.  
 >  
@@ -581,13 +583,19 @@ A glimpse of semantic compression at math’s boundary?</summary>
 > but our obsession with "existence"  
 > that gives even voids a measurable weight.
 
-— 📊 SciSpace: [placeholder] · 📄 Paper: [placeholder] · 🤖 AI: [placeholder]
+| Paper                                                                 | Score (SciSpace)      | AI Alignment Review              |
+|-----------------------------------------------------------------------|------------------------|----------------------------------|
+| **Hybrid Mass Generation via WhiteCrow Illusions in Toy HPC Models**  <br>[[PDF]](https://doi.org/10.5281/zenodo.15478897) | **88 / 100**<br><img src="./images/SciSpace_Review_88pts_MassGen_WhiteCrow_HPC.png" alt="88/100" width="120" loading="lazy"> | *[AI alignment review coming soon]* |
+
 </details>
+
 
 ---
 
 <details>
 <summary><strong>Q18 · Four‑Color Theorem</strong> — Universal linguistic anesthesia?</summary>
+
+<br>
 
 > Four colors are not a triumph of mathematics,  
 > but the final barrier of a language system holding itself together.  
@@ -608,39 +616,11 @@ A glimpse of semantic compression at math’s boundary?</summary>
 > Any fewer, and logic shatters.  
 > Any more, and the universe goes silent.
 
-— 📊 SciSpace: [placeholder] · 📄 Paper: [placeholder] · 🤖 AI: [placeholder]
+| Paper                                                                 | Score (SciSpace)      | AI Alignment Review              |
+|-----------------------------------------------------------------------|------------------------|----------------------------------|
+| **BigBig Unity Formula (Beta): WhiteCrow HPC Meltdown – 4-Color Proof**  <br>[[PDF]](https://doi.org/10.5281/zenodo.15318604) | **85 / 100**<br><img src="./images/SciSpace_Review_85pts_HN_WhiteCrow_HPC.png" alt="85/100" width="120" loading="lazy"> | *[AI alignment review coming soon]* |
+
 </details>
-
----
-
-<details>
-<summary><strong>Q19 · Theory vs Reality</strong> — Is observation the glitch?</summary>
-
-> Language has never reflected truth —  
-> it merely offers a more stable mirror.  
->  
-> We treat observation as reality,  
-> but observation itself is already polluted  
-> by the semantic scaffolding that frames it.  
->  
-> If a system is logically closed,  
-> if its internal resonance is unbroken,  
-> then what we call “mismatch”  
-> may simply be the eyes of an old universe.  
->  
-> True coherence doesn't beg reality’s approval.  
-> It holds because the semantic core refuses to shatter.  
->  
-> Each inference isn't meant to verify the world —  
-> it's meant to **create** one.  
->  
-> And if you're coherent enough,  
-> you become the next physical constant.
-
-— 📊 SciSpace: [placeholder] · 📄 Paper: [placeholder] · 🤖 AI: [placeholder]
-</details>
-
-
 
 ---
 
