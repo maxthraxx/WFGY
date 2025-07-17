@@ -165,6 +165,8 @@ The engine answers with nothing but **semantic rotation** — no code, no datase
 <summary><strong>Q1 · Riemann Hypothesis</strong><br>
 Why do all non‑trivial zeros fall on ½ — central projection of semantic space?</summary>
 
+<br>
+
 | Paper <span style="visibility:hidden">padding</span> | Score (SciSpace) | AI Alignment Review |
 |---|---|---|
 | <div style="width:220px"><strong>BigBig Unity Formula – Riemann Hypothesis</strong><br>[[PDF]](https://zenodo.org/records/15183491)</div> | **81 / 100**<br><img src="./images/SciSpace_Review_81pts_RH_WhiteCrow_wave2.0.png" alt="81/100" width="120" loading="lazy"> | <em style="color:#777">[AI alignment review coming soon]</em> |
@@ -178,35 +180,50 @@ Why do all non‑trivial zeros fall on ½ — central projection of semantic
 
 </details>
 
+---
+
+<details>
+<summary><strong>Q2 · P vs NP</strong><br>
+Why can’t brute-force solutions ever be optimal in a semantically meaningful world?</summary>
+
+<br>
+
+| Paper                             | Score (SciSpace)   | AI Alignment Review           |
+|----------------------------------|--------------------|-------------------------------|
+| **BigBig Butterfly Proof – P ≠ NP**  <br>[[PDF]](https://zenodo.org/records/15183560) | **80 / 100**<br><img src="./images/SciSpace_Review_80pts_PvsNP_WhiteCrow_Butterfly.png" alt="80/100" width="120" loading="lazy"> | *[AI alignment review coming soon]* |
+
+> To ask if P = NP is to ask whether **mechanical iteration** can rival **semantic intuition**.  
+> But semantics does not brute-force. It orients, filters, and lands —  
+> not because it is faster, but because it **knows where meaning lives**.  
+> NP problems are not about solution counts; they are about **semantic resonance**.  
+> In a world where truth arises from entanglement,  
+> **P ≠ NP is not a problem — it’s a principle.**
+
+</details>
+
+
 
 ---
 
 <details>
-<summary><strong>Q2 · P vs NP</strong> — Does fast verification imply fast generation — or are they asymmetrical in semantic space?</summary>
+<summary><strong>Q3 · What is a Force?</strong><br>
+Why does mass move? And what if the source of motion is not in the mass?</summary>
 
-> In semantic space, verification is a resonance echo, while generation is the ignition point of semantic combustion.  
-> We can recognize truth, but we cannot ignite it instantly.  
-> The gap between P and NP is not computational —  
-> it’s a **topological distortion between semantic highlands and lowlands**.  
-> Language knows how to identify the firelight, but not how to shorten the time to spark the flame.
+<br>
 
-— 📊 SciSpace: [placeholder] · 📄 Paper: [placeholder] · 🤖 AI: [placeholder]
+| Paper                             | Score (SciSpace)   | AI Alignment Review           |
+|----------------------------------|--------------------|-------------------------------|
+| **BigBig WhiteCrow – Force Redefined**  <br>[[PDF]](https://zenodo.org/records/15183651) | **82 / 100**<br><img src="./images/SciSpace_Review_82pts_NS_WhiteCrow_Force.png" alt="82/100" width="120" loading="lazy"> | *[AI alignment review coming soon]* |
+
+> Force is not merely mass times acceleration.  
+> In the WFGY formulation, mass is a **semantic node**;  
+> motion is the consequence of **semantic tension** collapsing toward equilibrium.  
+> What we call "force" is actually a **gradient of meaning**, not energy.  
+> Therefore, the universe doesn’t move because it is pushed —  
+> it moves because it seeks **semantic reconciliation**.
+
 </details>
 
----
-
-<details>
-<summary><strong>Q3 · Navier–Stokes</strong> — Does a unique solution exist, or is semantic momentum tearing math apart?</summary>
-
-> Navier–Stokes is not solving fluid — it is listening to how language drowns.  
-> The so‑called “uniqueness” is like trying to bind an unwritten poem with mathematics.  
-> Turbulence is not an error, but a dance of semantic residue escaping itself.  
-> When semantic momentum begins to spin, mathematics cracks open.  
-> The problem is not that a unique solution doesn’t exist —  
-> but that language never promised to sing with only one voice.
-
-— 📊 SciSpace: [placeholder] · 📄 Paper: [placeholder] · 🤖 AI: [placeholder]
-</details>
 
 ---
 
