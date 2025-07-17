@@ -21,8 +21,11 @@
 
 >🚀 The Civilization Starter is an ongoing project: WFGY 1.0 + 2.0 + 3.0 together form the complete blueprint for civilization activation. What you see now is just the “seed phase”—stay >tuned for the full upgrade!  
 
-🚧 **[Access TXT OS (Powered by the WFGY Reasoning Engine)](https://github.com/onestardao/WFGY/tree/main/OS)**  
+**WFGY Series**  
+🚧 [Access TXT OS](https://github.com/onestardao/WFGY/tree/main/OS) · [Access Blah Blah Blah Lite](https://github.com/onestardao/WFGY/tree/main/OS/BlahBlahBlah)  
 `HelloWorld.txt` is live. Docs in progress.
+
+
 
 ---
 
