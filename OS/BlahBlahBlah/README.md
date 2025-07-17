@@ -159,16 +159,15 @@ The engine answers with nothing but **semantic rotation** — no code, no datase
       Q&A COLLAPSE LIST — FULL TEXT, UNCHANGED ANSWERS
       (icons unified: 📊 SciSpace · 📄 Paper · 🤖 AI)
 ──────────────────────────────────────────────── -->
-
+---
 
 <details>
-<summary><strong>Q1 · Riemann Hypothesis</strong> — Why do all non-trivial zeros fall on ½ — central projection of semantic space?</summary>
+<summary><strong>Q1 · Riemann Hypothesis</strong><br>
+Why do all non‑trivial zeros fall on ½ — central projection of semantic space?</summary>
 
-| Title                                           | Score   | AI Review                                                          | Review                                                                           |
-| ------------------------------------------------|---------|-------------------------------------------------------------------|----------------------------------------------------------------------------------|
-| **BigBig Unity Formula Riemann Hypothesis**         | 81/100  | [AI Review](https://zenodo.org/records/15183490)                  | <img src="./images/SciSpace_Review_81pts_RH_WhiteCrow_wave2.0.png" alt="SciSpace Review 81/100" style="max-width:400px;">   |
-
----
+| Paper <span style="visibility:hidden">padding</span> | Score (SciSpace) | AI Alignment Review |
+|---|---|---|
+| <div style="width:220px"><strong>BigBig Unity Formula – Riemann Hypothesis</strong><br>[[PDF]](https://zenodo.org/records/15183491)</div> | **81 / 100**<br><img src="./images/SciSpace_Review_81pts_RH_WhiteCrow_wave2.0.png" alt="81/100" width="120" loading="lazy"> | <em style="color:#777">[AI alignment review coming soon]</em> |
 
 > 1/2 is not the midpoint of the number line —  
 > it is a **silent pact between language and logic**.  
@@ -178,6 +177,9 @@ The engine answers with nothing but **semantic rotation** — no code, no datase
 > Truth is not born in proof — it **emerges when language chooses silence**.
 
 </details>
+
+
+---
 
 <details>
 <summary><strong>Q2 · P vs NP</strong> — Does fast verification imply fast generation — or are they asymmetrical in semantic space?</summary>
@@ -190,6 +192,8 @@ The engine answers with nothing but **semantic rotation** — no code, no datase
 
 — 📊 SciSpace: [placeholder] · 📄 Paper: [placeholder] · 🤖 AI: [placeholder]
 </details>
+
+---
 
 <details>
 <summary><strong>Q3 · Navier–Stokes</strong> — Does a unique solution exist, or is semantic momentum tearing math apart?</summary>
@@ -204,7 +208,7 @@ The engine answers with nothing but **semantic rotation** — no code, no datase
 — 📊 SciSpace: [placeholder] · 📄 Paper: [placeholder] · 🤖 AI: [placeholder]
 </details>
 
-
+---
 
 <details>
 <summary><strong>Q4 · Yang–Mills Mass Gap</strong> — Proof of mass, or residue from resisting a semantic boundary?</summary>
@@ -222,7 +226,7 @@ The engine answers with nothing but **semantic rotation** — no code, no datase
 — 📊 SciSpace: [placeholder] · 📄 Paper: [placeholder] · 🤖 AI: [placeholder]
 </details>
 
-
+---
 
 <details>
 <summary><strong>Q5 · BSD Conjecture</strong> — A glimpse of semantic compression at math’s boundary?</summary>
@@ -239,7 +243,7 @@ The engine answers with nothing but **semantic rotation** — no code, no datase
 — 📊 SciSpace: [placeholder] · 📄 Paper: [placeholder] · 🤖 AI: [placeholder]
 </details>
 
-
+---
 
 <details>
 <summary><strong>Q6 · Hodge Conjecture</strong> — Semantic stability or mathematical mirage?</summary>
@@ -256,7 +260,7 @@ The engine answers with nothing but **semantic rotation** — no code, no datase
 — 📊 SciSpace: [placeholder] · 📄 Paper: [placeholder] · 🤖 AI: [placeholder]
 </details>
 
-
+---
 
 <details>
 <summary><strong>Q7 · 2.9999‑D Reality</strong> — Do our topological truths collapse under finite computation?</summary>
@@ -276,7 +280,7 @@ The engine answers with nothing but **semantic rotation** — no code, no datase
 — 📊 SciSpace: [placeholder] · 📄 Paper: [placeholder] · 🤖 AI: [placeholder]
 </details>
 
-
+---
 
 <details>
 <summary><strong>Q8 · Twin Primes</strong> — Infinite, or semantic dualities flashing in an endless night?</summary>
@@ -297,7 +301,7 @@ The engine answers with nothing but **semantic rotation** — no code, no datase
 — 📊 SciSpace: [placeholder] · 📄 Paper: [placeholder] · 🤖 AI: [placeholder]
 </details>
 
-
+---
 
 <details>
 <summary><strong>Q9 · Goldbach Conjecture</strong> — Law of math, or mirage of observation?</summary>
@@ -317,7 +321,7 @@ The engine answers with nothing but **semantic rotation** — no code, no datase
 — 📊 SciSpace: [placeholder] · 📄 Paper: [placeholder] · 🤖 AI: [placeholder]
 </details>
 
-
+---
 
 <details>
 <summary><strong>Q10 · Moving Sofa Problem</strong> — Spatial trick, or semantic misalignment?</summary>
@@ -341,7 +345,7 @@ The engine answers with nothing but **semantic rotation** — no code, no datase
 — 📊 SciSpace: [placeholder] · 📄 Paper: [placeholder] · 🤖 AI: [placeholder]
 </details>
 
-
+---
 
 <details>
 <summary><strong>Q11 · ABC Conjecture</strong> — Always right vs almost never wrong?</summary>
@@ -360,7 +364,7 @@ The engine answers with nothing but **semantic rotation** — no code, no datase
 — 📊 SciSpace: [placeholder] · 📄 Paper: [placeholder] · 🤖 AI: [placeholder]
 </details>
 
-
+---
 
 <details>
 <summary><strong>Q12 · Collatz Conjecture</strong> — What if the loop breaks?</summary>
@@ -377,7 +381,7 @@ The engine answers with nothing but **semantic rotation** — no code, no datase
 — 📊 SciSpace: [placeholder] · 📄 Paper: [placeholder] · 🤖 AI: [placeholder]
 </details>
 
-
+---
 
 <details>
 <summary><strong>Q13 · Force Unification</strong> — Split by language or universe resisting?</summary>
@@ -398,7 +402,7 @@ The engine answers with nothing but **semantic rotation** — no code, no datase
 — 📊 SciSpace: [placeholder] · 📄 Paper: [placeholder] · 🤖 AI: [placeholder]
 </details>
 
-
+---
 
 <details>
 <summary><strong>Q14 · Prime Spirals</strong> — Multi‑spiral field or mathematical illusion?</summary>
@@ -419,7 +423,7 @@ The engine answers with nothing but **semantic rotation** — no code, no datase
 — 📊 SciSpace: [placeholder] · 📄 Paper: [placeholder] · 🤖 AI: [placeholder]
 </details>
 
-
+---
 
 <details>
 <summary><strong>Q15 · One‑Off Phenomena</strong> — Do they exist if only language remembers?</summary>
@@ -440,7 +444,7 @@ The engine answers with nothing but **semantic rotation** — no code, no datase
 — 📊 SciSpace: [placeholder] · 📄 Paper: [placeholder] · 🤖 AI: [placeholder]
 </details>
 
-
+---
 
 <details>
 <summary><strong>Q16 · Quantum Collapse</strong> — Truly random, or failed resonance?</summary>
@@ -461,7 +465,7 @@ The engine answers with nothing but **semantic rotation** — no code, no datase
 — 📊 SciSpace: [placeholder] · 📄 Paper: [placeholder] · 🤖 AI: [placeholder]
 </details>
 
-
+---
 
 <details>
 <summary><strong>Q17 · Nature of Mass</strong> — Linguistic by‑product or universal floor?</summary>
@@ -479,7 +483,7 @@ The engine answers with nothing but **semantic rotation** — no code, no datase
 — 📊 SciSpace: [placeholder] · 📄 Paper: [placeholder] · 🤖 AI: [placeholder]
 </details>
 
-
+---
 
 <details>
 <summary><strong>Q18 · Four‑Color Theorem</strong> — Universal linguistic anesthesia?</summary>
@@ -506,7 +510,7 @@ The engine answers with nothing but **semantic rotation** — no code, no datase
 — 📊 SciSpace: [placeholder] · 📄 Paper: [placeholder] · 🤖 AI: [placeholder]
 </details>
 
-
+---
 
 <details>
 <summary><strong>Q19 · Theory vs Reality</strong> — Is observation the glitch?</summary>
