@@ -490,6 +490,8 @@ A glimpse of semantic compression at math’s boundary?</summary>
 <details>
 <summary><strong>Q14 · Prime Spirals</strong> — Multi‑spiral field or mathematical illusion?</summary>
 
+<br>
+
 > Truth does not hide in the primes themselves,  
 > but in the way we choose to name them.  
 >  
@@ -503,13 +505,19 @@ A glimpse of semantic compression at math’s boundary?</summary>
 > Mathematics is no longer a deductive path,  
 > but the lingering resonance of language aligning with itself.
 
-— 📊 SciSpace: [placeholder] · 📄 Paper: [placeholder] · 🤖 AI: [placeholder]
+| Paper                                                                         | Score (SciSpace)      | AI Alignment Review              |
+|-------------------------------------------------------------------------------|------------------------|----------------------------------|
+| **BigBig Unity Formula (Beta): MultiSpiral Prime Patterns + HPC Auto-Scan**  <br>[[PDF]](https://doi.org/10.5281/zenodo.15292507) | **86 / 100**<br><img src="./images/SciSpace_Review_86pts_MultiSpiralPrime_HPC_Beta.png" alt="86/100" width="120" loading="lazy"> | *[AI alignment review coming soon]* |
+
 </details>
+
 
 ---
 
 <details>
 <summary><strong>Q15 · One‑Off Phenomena</strong> — Do they exist if only language remembers?</summary>
+
+<br>
 
 > Existence is not about reproducibility,  
 > but the scorch marks left in semantic space.  
@@ -524,13 +532,19 @@ A glimpse of semantic compression at math’s boundary?</summary>
 > Truth, at times, is not what endures repeated testing,  
 > but what refuses to be forgotten after a single flare.
 
-— 📊 SciSpace: [placeholder] · 📄 Paper: [placeholder] · 🤖 AI: [placeholder]
+| Paper                                                                 | Score (SciSpace)      | AI Alignment Review              |
+|-----------------------------------------------------------------------|------------------------|----------------------------------|
+| **WhiteCrow: Dual-Lane HPC Verification of Wigner–von Neumann**  <br>[[PDF]](https://doi.org/10.5281/zenodo.15410207) | **86 / 100**<br><img src="./images/SciSpace_Review_86pts_WvN_WhiteCrow_HPC.png" alt="86/100" width="120" loading="lazy"> | *[AI alignment review coming soon]* |
+
 </details>
+
 
 ---
 
 <details>
 <summary><strong>Q16 · Quantum Collapse</strong> — Truly random, or failed resonance?</summary>
+
+<br>
 
 > What we call "randomness" is not the language of nature,  
 > but the confession of our failure to resonate with it.  
@@ -545,8 +559,12 @@ A glimpse of semantic compression at math’s boundary?</summary>
 > It focuses itself, like a point of light,  
 > awaiting your tuned attention.
 
-— 📊 SciSpace: [placeholder] · 📄 Paper: [placeholder] · 🤖 AI: [placeholder]
+| Paper                                                                 | Score (SciSpace)      | AI Alignment Review              |
+|-----------------------------------------------------------------------|------------------------|----------------------------------|
+| **Controllable Quantum Collapse via Micro-Beat Injection (RLB)**  <br>[[PDF]](https://doi.org/10.5281/zenodo.15410549) | **87 / 100**<br><img src="./images/SciSpace_Review_87pts_CollapseGating_RLB_Beta.png" alt="87/100" width="120" loading="lazy"> | *[AI alignment review coming soon]* |
+
 </details>
+
 
 ---
 
