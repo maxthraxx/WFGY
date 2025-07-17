@@ -261,10 +261,6 @@ A glimpse of semantic compression at math’s boundary?</summary>
 
 <br>
 
-| Paper                                                              | Score (SciSpace)      | AI Alignment Review                              |
-|-------------------------------------------------------------------|------------------------|--------------------------------------------------|
-| **BigBig Unity Formula (v4.4 Beta) – A WhiteCrow (HPC-Driven) Approach to the BSD Conjecture**  <br>[[PDF]](https://doi.org/10.5281/zenodo.15183760) | **84 / 100**<br><img src="./images/SciSpace_Review_84pts_BSD_WhiteCrow_HPC.png" alt="84/100" width="120" loading="lazy"> | *[AI alignment review coming soon]* |
-
 > The finite group of an elliptic curve is not a natural result,  
 > but the condensed shape formed when semantics are compressed at the edge of math.  
 > The BSD Conjecture is a semantic stream’s attempt to freeze itself  
@@ -274,13 +270,20 @@ A glimpse of semantic compression at math’s boundary?</summary>
 > What we call symmetry is merely language momentarily frozen  
 > while trying to pass through infinite dimensions.
 
+| Paper                                            | Score (SciSpace)      | AI Alignment Review              |
+|--------------------------------------------------|------------------------|----------------------------------|
+| **BigBig Unity Formula – WhiteCrow on BSD**  <br>[[PDF]](https://doi.org/10.5281/zenodo.15183760) | **84 / 100**<br><img src="./images/SciSpace_Review_84pts_BSD_WhiteCrow_HPC.png" alt="84/100" width="120" loading="lazy"> | *[AI alignment review coming soon]* |
+
 </details>
+
 
 
 ---
 
 <details>
 <summary><strong>Q6 · Hodge Conjecture</strong> — Semantic stability or mathematical mirage?</summary>
+
+<br>
 
 > The Hodge correspondence is not a mapping of mechanisms,  
 > but a resonance state emerging within a semantic field.  
@@ -291,13 +294,19 @@ A glimpse of semantic compression at math’s boundary?</summary>
 > and instead enters resonant equilibrium,  
 > that is Hodge.
 
-— 📊 SciSpace: [placeholder] · 📄 Paper: [placeholder] · 🤖 AI: [placeholder]
+| Paper                                           | Score (SciSpace)      | AI Alignment Review              |
+|------------------------------------------------|------------------------|----------------------------------|
+| **BigBig Unity Formula – WhiteCrow on Hodge**  <br>[[PDF]](https://doi.org/10.5281/zenodo.15183893) | **85 / 100**<br><img src="./images/SciSpace_Review_85pts_Hodge_WhiteCrow_HPC.png" alt="85/100" width="120" loading="lazy"> | *[AI alignment review coming soon]* |
+
 </details>
+
 
 ---
 
 <details>
 <summary><strong>Q7 · 2.9999‑D Reality</strong> — Do our topological truths collapse under finite computation?</summary>
+
+<br>
 
 > If reality’s dimension is 2.9999, not 3,  
 > then every “definition” we’ve ever made in topology, geometry, or spatial reasoning  
@@ -311,13 +320,19 @@ A glimpse of semantic compression at math’s boundary?</summary>
 > is semantic residue,  
 > the reason we can never prove everything.
 
-— 📊 SciSpace: [placeholder] · 📄 Paper: [placeholder] · 🤖 AI: [placeholder]
+| Paper                                                 | Score (SciSpace)      | AI Alignment Review              |
+|-------------------------------------------------------|------------------------|----------------------------------|
+| **BigBig Unity Formula – WhiteCrow on Poincaré**  <br>[[PDF]](https://doi.org/10.5281/zenodo.15183893) | **83 / 100**<br><img src="./images/SciSpace_Review_83pts_Poincare_WhiteCrow_HPC.png" alt="83/100" width="120" loading="lazy"> | *[AI alignment review coming soon]* |
+
 </details>
+
 
 ---
 
 <details>
 <summary><strong>Q8 · Twin Primes</strong> — Infinite, or semantic dualities flashing in an endless night?</summary>
+
+<br>
 
 > Twin primes are not a pattern repeating endlessly.  
 > They are rare but stable dual‑resonance points within the semantic field —  
@@ -332,13 +347,19 @@ A glimpse of semantic compression at math’s boundary?</summary>
 > they are *being called* again and again  
 > by the contexts from which we observe.
 
-— 📊 SciSpace: [placeholder] · 📄 Paper: [placeholder] · 🤖 AI: [placeholder]
+| Paper                                                 | Score (SciSpace)      | AI Alignment Review              |
+|-------------------------------------------------------|------------------------|----------------------------------|
+| **BigBig Unity Formula – WhiteCrow on Twin Primes**  <br>[[PDF]](https://doi.org/10.5281/zenodo.15183904) | **81 / 100**<br><img src="./images/SciSpace_Review_81pts_TwinPrime_WhiteCrow_HPC.png" alt="81/100" width="120" loading="lazy"> | *[AI alignment review coming soon]* |
+
 </details>
+
 
 ---
 
 <details>
 <summary><strong>Q9 · Goldbach Conjecture</strong> — Law of math, or mirage of observation?</summary>
+
+<br>
 
 > In the semantic universe, the splittability of even numbers is not guaranteed by logic,  
 > but arises from language’s belief in symmetry.  
@@ -352,13 +373,19 @@ A glimpse of semantic compression at math’s boundary?</summary>
 > Every decomposition is not an inevitability,  
 > but a momentary resonance between language and the cosmos.
 
-— 📊 SciSpace: [placeholder] · 📄 Paper: [placeholder] · 🤖 AI: [placeholder]
+| Paper                                                | Score (SciSpace)      | AI Alignment Review              |
+|------------------------------------------------------|------------------------|----------------------------------|
+| **BigBig Unity Formula – WhiteCrow on Goldbach**  <br>[[PDF]](https://doi.org/10.5281/zenodo.15183924) | **82 / 100**<br><img src="./images/SciSpace_Review_82pts_Goldbach_WhiteCrow_HPC.png" alt="82/100" width="120" loading="lazy"> | *[AI alignment review coming soon]* |
+
 </details>
+
 
 ---
 
 <details>
 <summary><strong>Q10 · Moving Sofa Problem</strong> — Spatial trick, or semantic misalignment?</summary>
+
+<br>
 
 > In semantics, space is never a static backdrop —  
 > it is a flowing mesh awaiting impact from language.  
@@ -376,13 +403,19 @@ A glimpse of semantic compression at math’s boundary?</summary>
 > What we call “maximum area”  
 > is simply a semantic sigh that fits most comfortably within mathematics.
 
-— 📊 SciSpace: [placeholder] · 📄 Paper: [placeholder] · 🤖 AI: [placeholder]
+| Paper                                                   | Score (SciSpace)      | AI Alignment Review              |
+|----------------------------------------------------------|------------------------|----------------------------------|
+| **BigBig Unity Formula – WhiteCrow on Moving Sofa**  <br>[[PDF]](https://doi.org/10.5281/zenodo.15304950) | **84 / 100**<br><img src="./images/SciSpace_Review_84pts_Sofa_WhiteCrow_HPC.png" alt="84/100" width="120" loading="lazy"> | *[AI alignment review coming soon]* |
+
 </details>
+
 
 ---
 
 <details>
 <summary><strong>Q11 · ABC Conjecture</strong> — Always right vs almost never wrong?</summary>
+
+<br>
 
 > Language is a race between precision and resilience,  
 > and mathematics chose the path of zero error.  
@@ -395,13 +428,19 @@ A glimpse of semantic compression at math’s boundary?</summary>
 > we can hear its echo,  
 > but we may never set foot on its peak.
 
-— 📊 SciSpace: [placeholder] · 📄 Paper: [placeholder] · 🤖 AI: [placeholder]
+| Paper                                             | Score (SciSpace)      | AI Alignment Review              |
+|---------------------------------------------------|------------------------|----------------------------------|
+| **BigBig Unity Formula – WhiteCrow on ABC**  <br>[[PDF]](https://doi.org/10.5281/zenodo.15337171) | **84 / 100**<br><img src="./images/SciSpace_Review_84pts_ABC_WhiteCrow_HPC.png" alt="84/100" width="120" loading="lazy"> | *[AI alignment review coming soon]* |
+
 </details>
+
 
 ---
 
 <details>
 <summary><strong>Q12 · Collatz Conjecture</strong> — What if the loop breaks?</summary>
+
+<br>
 
 > Numbers don’t get lost in the loop because the rules are too complex,  
 > but because the semantics are too shallow.  
@@ -412,13 +451,19 @@ A glimpse of semantic compression at math’s boundary?</summary>
 > The lingering echo of Collatz is language’s final attempt  
 > to test the limits of determinism.
 
-— 📊 SciSpace: [placeholder] · 📄 Paper: [placeholder] · 🤖 AI: [placeholder]
+| Paper                                                                 | Score (SciSpace)      | AI Alignment Review              |
+|-----------------------------------------------------------------------|------------------------|----------------------------------|
+| **BigBig Unity Formula (Beta): WhiteCrow HPC Meltdown Approach**  <br>[[PDF]](https://doi.org/10.5281/zenodo.15337141) | **83 / 100**<br><img src="./images/SciSpace_Review_83pts_Collatz_WhiteCrow_HPC.png" alt="83/100" width="120" loading="lazy"> | *[AI alignment review coming soon]* |
+
 </details>
+
 
 ---
 
 <details>
 <summary><strong>Q13 · Force Unification</strong> — Split by language or universe resisting?</summary>
+
+<br>
 
 > The unification of the four forces is not about merging powers into one,  
 > but discovering a language that lets them understand each other.  
@@ -433,8 +478,12 @@ A glimpse of semantic compression at math’s boundary?</summary>
 > Truth refracts in the space between the silence of force  
 > and the leap of language.
 
-— 📊 SciSpace: [placeholder] · 📄 Paper: [placeholder] · 🤖 AI: [placeholder]
+| Paper                                                                 | Score (SciSpace)      | AI Alignment Review              |
+|-----------------------------------------------------------------------|------------------------|----------------------------------|
+| **BigBig Unity Formula (Beta): Four-Force Unification Toy Model**  <br>[[PDF]](https://doi.org/10.5281/zenodo.15369133) | **85 / 100**<br><img src="./images/SciSpace_Review_85pts_Unification_Meltdown_Beta.png" alt="85/100" width="120" loading="lazy"> | *[AI alignment review coming soon]* |
+
 </details>
+
 
 ---
 
