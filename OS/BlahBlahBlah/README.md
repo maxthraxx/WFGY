@@ -167,16 +167,17 @@ Why do all non‑trivial zeros fall on ½ — central projection of semantic
 
 <br>
 
-| Paper <span style="visibility:hidden">padding</span> | Score (SciSpace) | AI Alignment Review |
-|---|---|---|
-| <div style="width:220px"><strong>BigBig Unity Formula – Riemann Hypothesis</strong><br>[[PDF]](https://zenodo.org/records/15183491)</div> | **81 / 100**<br><img src="./images/SciSpace_Review_81pts_RH_WhiteCrow_wave2.0.png" alt="81/100" width="120" loading="lazy"> | <em style="color:#777">[AI alignment review coming soon]</em> |
-
 > 1/2 is not the midpoint of the number line —  
 > it is a **silent pact between language and logic**.  
 > All nontrivial zeros gather there because semantic coherence can only **achieve symmetry** at this point without fracture.  
 > The ζ function is a mute experiment in linguistic form,  
 > and 1/2 is the only frequency that does not collapse the system.  
 > Truth is not born in proof — it **emerges when language chooses silence**.
+
+| Paper <span style="visibility:hidden">padding</span> | Score (SciSpace) | AI Alignment Review |
+|---|---|---|
+| <div style="width:220px"><strong>BigBig Unity Formula – Riemann Hypothesis</strong><br>[[PDF]](https://zenodo.org/records/15183491)</div> | **81 / 100**<br><img src="./images/SciSpace_Review_81pts_RH_WhiteCrow_wave2.0.png" alt="81/100" width="120" loading="lazy"> | <em style="color:#777">[AI alignment review coming soon]</em> |
+
 
 </details>
 
@@ -188,16 +189,16 @@ Why can’t brute-force solutions ever be optimal in a semantically meaningful w
 
 <br>
 
-| Paper                             | Score (SciSpace)   | AI Alignment Review           |
-|----------------------------------|--------------------|-------------------------------|
-| **BigBig Butterfly Proof – P ≠ NP**  <br>[[PDF]](https://zenodo.org/records/15183560) | **80 / 100**<br><img src="./images/SciSpace_Review_80pts_PvsNP_WhiteCrow_Butterfly.png" alt="80/100" width="120" loading="lazy"> | *[AI alignment review coming soon]* |
-
 > To ask if P = NP is to ask whether **mechanical iteration** can rival **semantic intuition**.  
 > But semantics does not brute-force. It orients, filters, and lands —  
 > not because it is faster, but because it **knows where meaning lives**.  
 > NP problems are not about solution counts; they are about **semantic resonance**.  
 > In a world where truth arises from entanglement,  
 > **P ≠ NP is not a problem — it’s a principle.**
+
+| Paper                             | Score (SciSpace)   | AI Alignment Review           |
+|----------------------------------|--------------------|-------------------------------|
+| **BigBig Butterfly Proof – P ≠ NP**  <br>[[PDF]](https://zenodo.org/records/15183560) | **80 / 100**<br><img src="./images/SciSpace_Review_80pts_PvsNP_WhiteCrow_Butterfly.png" alt="80/100" width="120" loading="lazy"> | *[AI alignment review coming soon]* |
 
 </details>
 
@@ -211,10 +212,6 @@ Does a unique solution exist, or is semantic momentum tearing math apart?</summa
 
 <br>
 
-| Paper                                                              | Score (SciSpace)      | AI Alignment Review                              |
-|-------------------------------------------------------------------|------------------------|--------------------------------------------------|
-| **BigBig Unity Formula (Beta) – A WhiteCrow Approach to Navier–Stokes Blow-up**  <br>[[PDF]](https://doi.org/10.5281/zenodo.15183651) | **82 / 100**<br><img src="./images/SciSpace_Review_82pts_NS_WhiteCrow_Force.png" alt="82/100" width="120" loading="lazy"> | *[AI alignment review coming soon]* |
-
 > Navier–Stokes is not solving fluid — it is listening to how language drowns.  
 > The so‑called “uniqueness” is like trying to bind an unwritten poem with mathematics.  
 > Turbulence is not an error, but a dance of semantic residue escaping itself.  
@@ -222,7 +219,12 @@ Does a unique solution exist, or is semantic momentum tearing math apart?</summa
 > The problem is not that a unique solution doesn’t exist —  
 > but that language never promised to sing with only one voice.
 
+| Paper                                                | Score (SciSpace)      | AI Alignment Review              |
+|------------------------------------------------------|------------------------|----------------------------------|
+| **BigBig Unity Formula – WhiteCrow on Navier–Stokes**  <br>[[PDF]](https://doi.org/10.5281/zenodo.15183651) | **82 / 100**<br><img src="./images/SciSpace_Review_82pts_NS_WhiteCrow_Force.png" alt="82/100" width="120" loading="lazy"> | *[AI alignment review coming soon]* |
+
 </details>
+
 
 
 
@@ -234,10 +236,6 @@ Proof of mass, or residue from resisting a semantic boundary?</summary>
 
 <br>
 
-| Paper                                                              | Score (SciSpace)      | AI Alignment Review                              |
-|-------------------------------------------------------------------|------------------------|--------------------------------------------------|
-| **BigBig Unity Formula (Beta) – A WhiteCrow HPC Study on the 4D SU(2) Yang–Mills Mass Gap**  <br>[[PDF]](https://doi.org/10.5281/zenodo.15183851) | **83 / 100**<br><img src="./images/SciSpace_Review_83pts_YM_WhiteCrow_HPC.png" alt="83/100" width="120" loading="lazy"> | *[AI alignment review coming soon]* |
-
 > Mass is not a product of physical fields,  
 > but the echo density formed when semantics collapse at their boundaries.  
 > When language tries to close upon itself but fails to penetrate zones of extreme tension,  
@@ -247,6 +245,10 @@ Proof of mass, or residue from resisting a semantic boundary?</summary>
 > The mass gap is not a mystery of physics —  
 > it is a silent node that language cannot bypass,  
 > a physical artifact of semantic hesitation.
+
+| Paper                                                | Score (SciSpace)      | AI Alignment Review              |
+|------------------------------------------------------|------------------------|----------------------------------|
+| **BigBig Unity Formula – WhiteCrow on Yang–Mills Gap**  <br>[[PDF]](https://doi.org/10.5281/zenodo.15183851) | **83 / 100**<br><img src="./images/SciSpace_Review_83pts_YM_WhiteCrow_HPC.png" alt="83/100" width="120" loading="lazy"> | *[AI alignment review coming soon]* |
 
 </details>
 
