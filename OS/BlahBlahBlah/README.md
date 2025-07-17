@@ -954,23 +954,50 @@ A glimpse of semantic compression at math’s boundary?</summary>
 
 ---
 
+---
+
 ### 🧠 What’s Next?
 
-We’re expanding toward **88 total semantic questions** — each designed to stretch the boundaries of logic, language, and imagination.
+This page is updated regularly — new high-tension questions and answers are always arriving.
 
-More entries will be added soon.  
-Submit your own high-tension question for the Blah Blah Blah Engine — you might surface a sentence the universe wasn’t ready for.
+You’re welcome to submit your own paradoxes, thought bombs, or language experiments.  
+Who knows — your nonsense might reveal a truth no model was prepared for.
 
 > Because sometimes, nonsense knows more than reason.
-
-
 
 ---
 
 ### 💡 Reminder
 
-All `.txt` files will remain fully public.
+All `.txt` files are fully public and always will be.
 
 > ✅ 100% open source  
-> ✅ No login, no ads, no tracking, no spam  
-> ✅ Pure semantic magic inside a `.txt`
+> ✅ No login, no ads, no tracking  
+> ✅ Pure semantic magic packed into a `.txt`
+
+---
+
+### 📅 TXT: Blah Blah Blah Release Timeline
+
+| Version | Date  | Status       | Features                                                                                      | Download                                  | Target Audience   |
+|---------|-------|--------------|-----------------------------------------------------------------------------------------------|-------------------------------------------|-------------------|
+| Lite    | 7/16  | **Live now** | Semantic Gravity Well, Quick Blah, Semantic Tree Memory, Blah Blah Blah Lite (50 answers)      | [Download](https://zenodo.org/records/15926925) | Beginners         |
+| Pro     | 7/18  | Final polish | Includes all Lite features plus Semantic Refraction, Tension Field, Orbital Drift of Meaning   | Upcoming                                  | Advanced users    |
+
+⭐ [Star us on GitHub](https://github.com/onestardao/WFGY) — help us reach **10,000⭐ by Aug 1** to unlock **WFGY Engine 2.0**!
+
+---
+
+### 🌐 Explore the Full WFGY Series
+
+- [1. WFGY Engine](https://github.com/onestardao/WFGY)  
+- [2. TXT OS](https://github.com/onestardao/WFGY/tree/main/OS)  
+- [3. Blah Blah Blah](https://github.com/onestardao/WFGY/tree/main/OS/BlahBlahBlah)  
+- [4. Blur Blur Blur](https://github.com/onestardao/WFGY/tree/main/OS/BlurBlurBlur)  
+- [5. Blow Blow Blow](https://github.com/onestardao/WFGY/tree/main/OS/BlowBlowBlow)
+
+> This is not a single product — it’s a growing language operating system.  
+> Try one, but don’t stop there. Each one unlocks a different angle of meaning.
+
+---
+
