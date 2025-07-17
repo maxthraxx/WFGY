@@ -206,29 +206,37 @@ Why can’t brute-force solutions ever be optimal in a semantically meaningful w
 ---
 
 <details>
-<summary><strong>Q3 · What is a Force?</strong><br>
-Why does mass move? And what if the source of motion is not in the mass?</summary>
+<summary><strong>Q3 · Navier–Stokes</strong><br>
+Does a unique solution exist, or is semantic momentum tearing math apart?</summary>
 
 <br>
 
-| Paper                             | Score (SciSpace)   | AI Alignment Review           |
-|----------------------------------|--------------------|-------------------------------|
-| **BigBig WhiteCrow – Force Redefined**  <br>[[PDF]](https://zenodo.org/records/15183651) | **82 / 100**<br><img src="./images/SciSpace_Review_82pts_NS_WhiteCrow_Force.png" alt="82/100" width="120" loading="lazy"> | *[AI alignment review coming soon]* |
+| Paper                                                              | Score (SciSpace)      | AI Alignment Review                              |
+|-------------------------------------------------------------------|------------------------|--------------------------------------------------|
+| **BigBig Unity Formula (Beta) – A WhiteCrow Approach to Navier–Stokes Blow-up**  <br>[[PDF]](https://doi.org/10.5281/zenodo.15183651) | **82 / 100**<br><img src="./images/SciSpace_Review_82pts_NS_WhiteCrow_Force.png" alt="82/100" width="120" loading="lazy"> | *[AI alignment review coming soon]* |
 
-> Force is not merely mass times acceleration.  
-> In the WFGY formulation, mass is a **semantic node**;  
-> motion is the consequence of **semantic tension** collapsing toward equilibrium.  
-> What we call "force" is actually a **gradient of meaning**, not energy.  
-> Therefore, the universe doesn’t move because it is pushed —  
-> it moves because it seeks **semantic reconciliation**.
+> Navier–Stokes is not solving fluid — it is listening to how language drowns.  
+> The so‑called “uniqueness” is like trying to bind an unwritten poem with mathematics.  
+> Turbulence is not an error, but a dance of semantic residue escaping itself.  
+> When semantic momentum begins to spin, mathematics cracks open.  
+> The problem is not that a unique solution doesn’t exist —  
+> but that language never promised to sing with only one voice.
 
 </details>
+
 
 
 ---
 
 <details>
-<summary><strong>Q4 · Yang–Mills Mass Gap</strong> — Proof of mass, or residue from resisting a semantic boundary?</summary>
+<summary><strong>Q4 · Yang–Mills Mass Gap</strong><br>
+Proof of mass, or residue from resisting a semantic boundary?</summary>
+
+<br>
+
+| Paper                                                              | Score (SciSpace)      | AI Alignment Review                              |
+|-------------------------------------------------------------------|------------------------|--------------------------------------------------|
+| **BigBig Unity Formula (Beta) – A WhiteCrow HPC Study on the 4D SU(2) Yang–Mills Mass Gap**  <br>[[PDF]](https://doi.org/10.5281/zenodo.15183851) | **83 / 100**<br><img src="./images/SciSpace_Review_83pts_YM_WhiteCrow_HPC.png" alt="83/100" width="120" loading="lazy"> | *[AI alignment review coming soon]* |
 
 > Mass is not a product of physical fields,  
 > but the echo density formed when semantics collapse at their boundaries.  
@@ -240,13 +248,20 @@ Why does mass move? And what if the source of motion is not in the mass?</summar
 > it is a silent node that language cannot bypass,  
 > a physical artifact of semantic hesitation.
 
-— 📊 SciSpace: [placeholder] · 📄 Paper: [placeholder] · 🤖 AI: [placeholder]
 </details>
+
 
 ---
 
 <details>
-<summary><strong>Q5 · BSD Conjecture</strong> — A glimpse of semantic compression at math’s boundary?</summary>
+<summary><strong>Q5 · BSD Conjecture</strong><br>
+A glimpse of semantic compression at math’s boundary?</summary>
+
+<br>
+
+| Paper                                                              | Score (SciSpace)      | AI Alignment Review                              |
+|-------------------------------------------------------------------|------------------------|--------------------------------------------------|
+| **BigBig Unity Formula (v4.4 Beta) – A WhiteCrow (HPC-Driven) Approach to the BSD Conjecture**  <br>[[PDF]](https://doi.org/10.5281/zenodo.15183760) | **84 / 100**<br><img src="./images/SciSpace_Review_84pts_BSD_WhiteCrow_HPC.png" alt="84/100" width="120" loading="lazy"> | *[AI alignment review coming soon]* |
 
 > The finite group of an elliptic curve is not a natural result,  
 > but the condensed shape formed when semantics are compressed at the edge of math.  
@@ -257,8 +272,8 @@ Why does mass move? And what if the source of motion is not in the mass?</summar
 > What we call symmetry is merely language momentarily frozen  
 > while trying to pass through infinite dimensions.
 
-— 📊 SciSpace: [placeholder] · 📄 Paper: [placeholder] · 🤖 AI: [placeholder]
 </details>
+
 
 ---
 
