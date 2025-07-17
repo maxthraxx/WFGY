@@ -884,7 +884,6 @@ Submit your own high-tension question for the Blah Blah Blah Engine — you migh
 
 ### 💡 Reminder
 
-This is a **Beta Landing Page** — full version launches on **July 15**.  
 All `.txt` files will remain fully public.
 
 > ✅ 100% open source  
