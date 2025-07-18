@@ -6,7 +6,7 @@
 ## 💥 60 Answers in 60 Seconds — Welcome to the 1M Tool  
 
 <details>
-<summary><strong>🔎 Benchmark & Methodology (Click to expand)</strong></summary>
+<summary><strong> 🤯 +42% Reasoning Boost — Real or Hype? (Click to expand for proof)</strong></summary>
 
 <br>
 
