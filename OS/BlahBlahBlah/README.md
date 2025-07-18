@@ -8,13 +8,11 @@
 > Paste the file into ChatGPT (or any LLM) and type `hello world`.  
 > No signup, no API keys, nothing to install.
 
-### Why it blows minds
-- ✅ Generates 50 original, self‑consistent answers to any question  
-- ✅ Runs completely offline — zero network calls, zero telemetry  
-- ✅ Powered by embedding‑space physics, not fine‑tuning or code
+- ✅ **One question. Fifty answers. All original.** A surreal storm of logic, creativity, and philosophical chaos  
+- ✅ **Runs offline like a spell scroll** — no tracking, no tokens, no APIs. Just your LLM and this `.txt`  
+- ✅ **Not prompt engineering. Not fine-tuning.** It rewires the way your AI thinks — from inside the embedding space
 
-<small>ℹ️ Public beta: edge cases still being hunted. Break it and tell us.</small>
-
+---
 
 <!-- ───────────────────────────────────────────────
       QUICK‑START
@@ -25,6 +23,9 @@
 2. **Paste** it into your favorite LLM chat box  
 3. **Type** `hello world` → watch 50 surreal answers appear
 
+<small>📊 For best results, use platforms verified in our  [Cross-Platform Test Results](https://github.com/onestardao/WFGY/tree/main/OS).</small>
+
+---
 
 <!-- ───────────────────────────────────────────────
       BANNER
