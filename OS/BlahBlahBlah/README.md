@@ -28,10 +28,12 @@
 | **Downloads**  | 2,000                       |
 | **In TXT OS**  | ✔️ Reasoning engine included  |
 
-> TXT OS already includes the full WFGY reasoning engine.<br>
-> Want the theory? Read the core paper above for details.
+> **All products and research here are part of the WFGY series, authored and unified by PSBigBig (Purple Star).**  
+> TXT OS and the WFGY engine share the same world—core logic, benchmarks, and innovations are all from the same creator.  
+> For the full theoretical framework, see the core paper above.
 
 </details>
+
 
 ---
 
