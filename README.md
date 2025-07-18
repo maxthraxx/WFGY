@@ -1184,5 +1184,7 @@ Integration of semantic reasoning logic will be introduced in future updates.
 
 ![thankyou](https://github.com/user-attachments/assets/bd4eef0e-6f4c-44a6-889c-fdd1001c8b8c)
 
+> <img src="https://img.shields.io/github/stars/onestardao/WFGY?style=social" alt="GitHub stars"> ⭐ Help reach 10,000 stars by 2025-09-01 to unlock Engine 2.0 for everyone  ⭐ <strong><a href="https://github.com/onestardao/WFGY">Star WFGY on GitHub</a></strong>
+
 [⬆️ This is legendary. Take me to the top again!](#wfgy-civilization-starter--the-wanfaguiyi-engine)
 
