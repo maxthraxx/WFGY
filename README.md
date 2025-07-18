@@ -46,7 +46,7 @@ Step 4 — (Optional) Want more power? → [`SDK version`](#install-the-wfgy-sdk
 
 > 🔑 **No explanation needed—the prompt *is* the answer.**  
 > ✨ **No marketing—just copy and paste. The effect speaks.**  
-> 🌟 **Star Reminder** → 10k ⭐ before 2025-08-01 unlocks WFGY 2.0 for everyone.  
+> 🌟 **Star Reminder** → 10k ⭐ before 2025-09-01 unlocks WFGY 2.0 for everyone.  
 >🌌 Want proof it's real? → Watch AI rate itself:    
 
 >![WFGY_2.0_vs_1.0_Rating.gif](./OS/images/WFGY_2.0_vs_1.0_Rating.gif) 
