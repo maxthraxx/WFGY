@@ -37,7 +37,7 @@
 
 ---
 
-**[Download TXT: Blah Blah Blah Lite.txt — powered by TXT OS](https://zenodo.org/records/15926925) →** MIT‑licensed, 62.5 KB — Zenodo by CERN 🏛️ 
+**[Download TXT: Blah Blah Blah Lite powered by TXT OS](https://zenodo.org/records/15926925) →** MIT‑licensed, 62.5 KB — Zenodo by CERN 🏛️ 
 [![GitHub Repo stars](https://img.shields.io/github/stars/onestardao/WFGY?style=social)](https://github.com/onestardao/WFGY/stargazers)
 
 
