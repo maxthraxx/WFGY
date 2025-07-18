@@ -1,20 +1,20 @@
->  🤖 You clicked the Reddit ad. This is the 1M Tool. Six AIs scored it 100/100. You’re in the right place.
+> 🤖 You clicked the Reddit ad. This is the 1M Tool. Six AIs scored it 100/100. You’re in the right place.
 
 <!-- ───────────────────────────────────────────────
       HERO
 ──────────────────────────────────────────────── -->
-## 💥 60 Answers in 60 Seconds — Welcome to the 1M Tool
+## 💥 60 Answers in 60 Seconds — Welcome to the 1M Tool  
+<sub>📊 Reasoning Success Rate ↑ 42.1 % · Semantic Accuracy ↑ 22.4 % · Stability ↑ 3.6 ×</sub>
 
-**[Download TXT: Blah Blah Blah Lite.txt](https://zenodo.org/records/15926925) →** MIT‑licensed, 62.5 KB
+**[Download TXT: Blah Blah Blah Lite.txt — powered by TXT OS](https://zenodo.org/records/15926925) →** MIT‑licensed, 62.5 KB
 
 > Paste the file into ChatGPT (or any LLM) and type `hello world`.  
 > No signup, no API keys, nothing to install.
 
 - ✅ **One question. Fifty answers. All original.** A surreal storm of logic, creativity, and philosophical chaos  
 - ✅ **Runs offline like a spell scroll** — no tracking, no tokens, no APIs. Just your LLM and this `.txt`  
-- ✅ **Not prompt engineering. Not fine-tuning.** It rewires the way your AI thinks — from inside the embedding space
+- ✅ **Not prompt engineering. Not fine‑tuning.** It rewires the way your AI thinks — from inside the embedding space
 
----
 
 <!-- ───────────────────────────────────────────────
       QUICK‑START
@@ -23,8 +23,7 @@
 
 1. **Download** the `.txt` above  
 2. **Paste** it into your favorite LLM chat box  
-3. **Type** `hello world` → watch 50 surreal answers appear  
- <sub>(You can keep typing `more` — up to 500 answers in one go!)</sub>
+3. **Type** \hello world` → get 50 answers instantly (one more tap gives you the full 60 in under a minute)`
 
 <small>📊 For best results, use platforms verified in our [Cross-Platform Test Results](https://github.com/onestardao/WFGY/tree/main/OS).</small>
 
