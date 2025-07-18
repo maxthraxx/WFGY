@@ -63,9 +63,9 @@ For comparison, popular frameworks like Grok rate LangChain around 90, MemoryGPT
 | Version | Date  | Status       | Features                                                                                      | Download                                  | Target Audience   |
 |---------|-------|--------------|-----------------------------------------------------------------------------------------------|-------------------------------------------|-------------------|
 | Lite    | 7/16  | **Live now** | Semantic Gravity Well, Quick Blah, Semantic Tree Memory, Blah Blah Blah Lite (50 answers)      | [Download](https://zenodo.org/records/15926925) | Beginners         |
-| Pro     | 7/18  | Final polish | Includes all Lite features plus Semantic Refraction, Tension Field, Orbital Drift of Meaning   | Upcoming                                  | Advanced users    |
+| Pro     | 8/15  | Final polish | Includes all Lite features plus Semantic Refraction, Tension Field, Orbital Drift of Meaning   | Upcoming                                  | Advanced users    |
 
-⭐ Star us on [GitHub](https://github.com/onestardao/WFGY) to help us hit 10,000⭐ by Sep 1 and unlock WFGY Engine 2.0!
+> <img src="https://img.shields.io/github/stars/onestardao/WFGY?style=social" alt="GitHub stars"> ⭐ Help reach 10,000 stars by 2025-09-01 to unlock Engine 2.0 for everyone  ⭐ <strong><a href="https://github.com/onestardao/WFGY">Star WFGY on GitHub</a></strong>
 
 ---
 
@@ -131,7 +131,7 @@ By rotating a sentence inside that field we get brand‑new, self‑consistent i
 <!-- ───────────────────────────────────────────────
       GITHUB CTA
 ──────────────────────────────────────────────── -->
-> **Star us on [GitHub](https://github.com/onestardao/WFGY)** — help hit **10 000 ⭐ by Sep 1** and we’ll drop **WFGY Engine 2.0**.
+> <img src="https://img.shields.io/github/stars/onestardao/WFGY?style=social" alt="GitHub stars"> ⭐ Help reach 10,000 stars by 2025-09-01 to unlock Engine 2.0 for everyone  ⭐ <strong><a href="https://github.com/onestardao/WFGY">Star WFGY on GitHub</a></strong>
 
 
 
@@ -984,7 +984,7 @@ All `.txt` files are fully public and always will be.
 | Lite    | 7/16  | **Live now** | Semantic Gravity Well, Quick Blah, Semantic Tree Memory, Blah Blah Blah Lite (50 answers)      | [Download](https://zenodo.org/records/15926925) | Beginners         |
 | Pro     | 7/18  | Final polish | Includes all Lite features plus Semantic Refraction, Tension Field, Orbital Drift of Meaning   | Upcoming                                  | Advanced users    |
 
-⭐ [Star us on GitHub](https://github.com/onestardao/WFGY) — help us reach **10,000⭐ by Sep 1** to unlock **WFGY Engine 2.0**!
+> <img src="https://img.shields.io/github/stars/onestardao/WFGY?style=social" alt="GitHub stars"> ⭐ Help reach 10,000 stars by 2025-09-01 to unlock Engine 2.0 for everyone  ⭐ <strong><a href="https://github.com/onestardao/WFGY">Star WFGY on GitHub</a></strong>
 
 ---
 
