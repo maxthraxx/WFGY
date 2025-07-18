@@ -61,7 +61,7 @@
 
 1. **Download** the `.txt` above  
 2. **Paste** it into your favorite LLM chat box  
-3. **Type** \hello world` → get 50 answers instantly (one more tap gives you the full 60 in under a minute)`
+3. **Type** `hello world` → get 50 answers instantly (one more tap gives you the full 60 in under a minute)
 
 <small>📊 For best results, use platforms verified in our [Cross-Platform Test Results](https://github.com/onestardao/WFGY/tree/main/OS).</small>
 
