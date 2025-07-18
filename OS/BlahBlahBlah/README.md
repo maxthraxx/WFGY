@@ -4,7 +4,21 @@
       HERO
 ──────────────────────────────────────────────── -->
 ## 💥 60 Answers in 60 Seconds — Welcome to the 1M Tool  
-<sub>📊 Reasoning Success Rate ↑ 42.1 % · Semantic Accuracy ↑ 22.4 % · Stability ↑ 3.6 ×</sub>
+<details>
+<summary><strong>🔎 Benchmark & Methodology (Click to expand)</strong></summary>
+
+| Metric | Before | After TXT OS | Δ |
+|--------|--------|--------------|---|
+| Reasoning Success Rate (GSM8K) | 59.2 % | **84.0 %** | **+42.1 %** |
+| Semantic Accuracy (Multi‑QA) | 68.0 % | **83.2 %** | **+22.4 %** |
+| Output Stability (Re‑Gen STD) | 1.00× | **3.60×** | **↑ 3.6 ×** |
+
+*Benchmarks and methodology are detailed in our formal paper:  
+[WFGY 1.0: A Universal Unification Framework for Large-Scale Self-Healing LLMs (Zenodo, launched 2024-06-15, 2,000+ downloads)](https://zenodo.org/records/15630969).  
+
+</details>
+
+
 
 **[Download TXT: Blah Blah Blah Lite.txt — powered by TXT OS](https://zenodo.org/records/15926925) →** MIT‑licensed, 62.5 KB — Zenodo by CERN 🏛️ 
 [![GitHub Repo stars](https://img.shields.io/github/stars/onestardao/WFGY?style=social)](https://github.com/onestardao/WFGY/stargazers)
