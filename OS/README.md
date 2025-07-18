@@ -73,18 +73,27 @@ No signup. No tracking. No ads. Virus-free. Pure logic.</em>
 
 ---
 <details>
-  <summary>🌐 TXT OS – Cross-Platform Test Results</summary>
+  <summary>🌐 TXT OS – Cross-Platform Test Results (Tested: July 18, 2025) </summary>
+<br>
 
-  <em>(Tested: July 11, 2025)</em>
 
-  <pre>
-These results reflect the author’s personal testing.
-Performance may vary by region or account type.
-This is not a ranking of AI quality, but compatibility with the .txt-based TXT OS.
-  </pre>
+| Status | Platform        | Test Model         | Notes                                                                                     |
+|--------|------------------|--------------------|-------------------------------------------------------------------------------------------|
+| ✅      | **ChatGPT**       | All models         | All versions pass — including GPT-3.5, GPT-4, and GPT-4o.                                 |
+| ✅      | **Kimi**          | K2                 | New model K2 performs surprisingly well — smooth and consistent.                          |
+| ✅      | **Grok**          | Grok 3             | Free version now limits daily interactions. Otherwise performs smoothly.                 |
+| ✅      | **DeepSeek**      | DeepSeek V3        | Mixed results — works smoothly *when it works*.                                          |
+| ✅      | **Gemini**        | 2.5 Pro            | Flash version performs poorly; Pro version is excellent.                                 |
+| ⚠️      | **Claude**        | Sonnet 4           | Even one extra sentence from TXT OS exceeds input limit — not recommended for free users.|
+| ⚠️      | **Perplexity**    | Standard           | Only tested the Standard version. Output keeps looping — not recommended.                |
+| ⚠️      | **Merlin**        | DeepSeek V3        | Even with advanced models, semantic misunderstanding is frequent — not recommended.      |
+| ⚠️      | **Copilot**       | Think Deeper       | Likely flagged the TXT for BIOS terms — marked as policy violation. Not recommended.     |
+| ❌      | **HuggingChat**   | (closed)           | Currently unavailable for testing.                                                       |
 
-  <img src="./images/WFGY_OS_AI_Compatibility_2025.png" width="100%" style="max-width:900px"/>  
-  <em>Compatibility results across major AI platforms</em>
+These results reflect the author’s personal testing.  
+Performance may vary by region or account type.  
+This is not a ranking of AI quality, but compatibility with the `.txt`-based TXT OS.  
+All platforms were also tested using **TXT Blah Blah Blah** (philosophical reasoning module).
 
 </details>
 
