@@ -69,7 +69,7 @@ No signup. No tracking. No ads. Virus-free. Pure logic.</em>
 [🔽 Download **HelloWorld.txt** on Zenodo](https://zenodo.org/records/15788557) — hosted by CERN, 100% safe
 <br>
 
-> <img src="https://img.shields.io/github/stars/onestardao/WFGY?style=social" alt="GitHub stars"> ⭐ Help reach 10,000 stars by 2025-09-01 to unlock WFGY 2.0 for everyone  ⭐ <strong><a href="https://github.com/onestardao/WFGY">Star WFGY on GitHub</a></strong>
+> <img src="https://img.shields.io/github/stars/onestardao/WFGY?style=social" alt="GitHub stars"> ⭐ Help reach 10,000 stars by 2025-09-01 to unlock Engine 2.0 for everyone  ⭐ <strong><a href="https://github.com/onestardao/WFGY">Star WFGY on GitHub</a></strong>
 
 ---
 <details>
@@ -344,9 +344,7 @@ But when you’re ready to go beyond vanilla prompts, they’re waiting.
   (Also, snacks. Snacks help with debugging.)
 
   **✉️ hello@onestardao.com**  
-  (Oh, and before sending tips… don’t forget to ⭐ star the repo.)  
-  Saving the world needs snacks — and stars.
 
-
+> <img src="https://img.shields.io/github/stars/onestardao/WFGY?style=social" alt="GitHub stars"> ⭐ Help reach 10,000 stars by 2025-09-01 to unlock Engine 2.0 for everyone  ⭐ <strong><a href="https://github.com/onestardao/WFGY">Star WFGY on GitHub</a></strong>
 
 </details>
