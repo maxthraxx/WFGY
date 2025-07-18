@@ -19,13 +19,14 @@
 <!-- ───────────────────────────────────────────────
       QUICK‑START
 ──────────────────────────────────────────────── -->
-### Getting started — 60 sec
+### Getting started — 60 sec
 
 1. **Download** the `.txt` above  
 2. **Paste** it into your favorite LLM chat box  
-3. **Type** `hello world` → watch 50 surreal answers appear
+3. **Type** `hello world` → watch 50 surreal answers appear  
+ <sub>(You can keep typing `more` — up to 500 answers in one go!)</sub>
 
-<small>📊 For best results, use platforms verified in our  [Cross-Platform Test Results](https://github.com/onestardao/WFGY/tree/main/OS).</small>
+<small>📊 For best results, use platforms verified in our [Cross-Platform Test Results](https://github.com/onestardao/WFGY/tree/main/OS).</small>
 
 ---
 
