@@ -25,7 +25,7 @@
 |-----------|----------------------------------|
 | **Core Paper** | [WFGY 1.0 Engine](https://zenodo.org/records/15630969) |
 | **Release**    | 2025-06-15                   |
-| **Downloads**  | 2,000+                       |
+| **Downloads**  | 2,000                       |
 | **In TXT OS**  | ✔️ Reasoning engine included  |
 
 > TXT OS already includes the full WFGY reasoning engine.<br>
