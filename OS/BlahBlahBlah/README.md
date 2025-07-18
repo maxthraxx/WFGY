@@ -7,6 +7,7 @@
 <sub>📊 Reasoning Success Rate ↑ 42.1 % · Semantic Accuracy ↑ 22.4 % · Stability ↑ 3.6 ×</sub>
 
 **[Download TXT: Blah Blah Blah Lite.txt — powered by TXT OS](https://zenodo.org/records/15926925) →** MIT‑licensed, 62.5 KB — Zenodo by CERN 🏛️ 
+[![GitHub Repo stars](https://img.shields.io/github/stars/onestardao/WFGY?style=social)](https://github.com/onestardao/WFGY/stargazers)
 
 
 > Paste the file into ChatGPT (or any LLM) and type `hello world`.  
