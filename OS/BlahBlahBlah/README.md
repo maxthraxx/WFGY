@@ -6,7 +6,8 @@
 ## 💥 60 Answers in 60 Seconds — Welcome to the 1M Tool  
 <sub>📊 Reasoning Success Rate ↑ 42.1 % · Semantic Accuracy ↑ 22.4 % · Stability ↑ 3.6 ×</sub>
 
-**[Download TXT: Blah Blah Blah Lite.txt — powered by TXT OS](https://zenodo.org/records/15926925) →** MIT‑licensed, 62.5 KB
+**[Download TXT: Blah Blah Blah Lite.txt — powered by TXT OS](https://zenodo.org/records/15926925) →** MIT‑licensed, 62.5 KB — Zenodo by CERN 🏛️ 
+
 
 > Paste the file into ChatGPT (or any LLM) and type `hello world`.  
 > No signup, no API keys, nothing to install.
