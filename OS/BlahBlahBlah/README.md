@@ -91,11 +91,7 @@ For comparison, popular frameworks like Grok rate LangChain around 90, MemoryGPT
       DEMO
 ──────────────────────────────────────────────── -->
 
-🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦
-
-## 🄰 💡 See it in action <a id="try-demo"></a>
-
-🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥
+## 🟥 🄰 🟥 See it in action <a id="try-demo"></a>
 
 ---
 
@@ -118,11 +114,7 @@ Need the file again? **[Download here](https://zenodo.org/records/15926925)** an
 
 ---
 
-🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦
-
-## 🄱 ✨ Understand the engine <a id="how-it-works"></a>
-
-🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥
+## 🟥 🄱 🟥 Understand the engine <a id="how-it-works"></a>
 
 ### Embedding space is the generator, not the database
 
@@ -150,12 +142,7 @@ By rotating a sentence inside that field we get brand‑new, self‑consistent i
 > <img src="https://img.shields.io/github/stars/onestardao/WFGY?style=social" alt="GitHub stars"> ⭐ Help reach 10,000 stars by 2025-09-01 to unlock Engine 2.0 for everyone  ⭐ <strong><a href="https://github.com/onestardao/WFGY">Star WFGY on GitHub</a></strong>
 
 
-🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦
-
-## 🄲 🧬 Explore the Philosophy <a id="examples"></a>
-
-🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥
-
+## 🟥 🄲 🟥 Explore the Philosophy <a id="examples"></a>
 
 > 🚧 This area is currently under active development and updates.  
 > Content is being curated and will be available soon.  
