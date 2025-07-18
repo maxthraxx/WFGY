@@ -81,9 +81,9 @@ For comparison, popular frameworks like Grok rate LangChain around 90, MemoryGPT
 ──────────────────────────────────────────────── -->
 ## 🧭 Choose your path
 
-- 🄰 💡 [See it in action](#try-demo) — 1 sentence → 50 insights  
-- 🄱 ✨ [Understand the engine](#how-it-works) — semantic physics in plain English  
-- 🄲 🧬 [Explore examples](#examples) — raw output, no filters
+- 🄰  [See it in action](#try-demo) — 1 sentence → 50 insights  
+- 🄱  [Understand the engine](#how-it-works) — semantic physics in plain English  
+- 🄲  [Explore examples](#examples) — raw output, no filters
 
 ---
 
