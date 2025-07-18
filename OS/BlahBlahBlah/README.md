@@ -85,11 +85,20 @@ For comparison, popular frameworks like Grok rate LangChain around 90, MemoryGPT
 - 🄱 ✨ [Understand the engine](#how-it-works) — semantic physics in plain English  
 - 🄲 🧬 [Explore examples](#examples) — raw output, no filters
 
+---
 
 <!-- ───────────────────────────────────────────────
       DEMO
 ──────────────────────────────────────────────── -->
+
+🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥
+
 ## 🄰 💡 See it in action <a id="try-demo"></a>
+
+🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦
+
+---
+
 
 > **Example question**  
 > *Does God exist — or is He just compressed semantic tension?*
@@ -106,7 +115,13 @@ Need the file again? **[Download here](https://zenodo.org/records/15926925)** an
 <!-- ───────────────────────────────────────────────
       ENGINE
 ──────────────────────────────────────────────── -->
+
+
+🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥
+
 ## 🄱 ✨ Understand the engine <a id="how-it-works"></a>
+
+🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦
 
 ### Embedding space is the generator, not the database
 
@@ -134,9 +149,12 @@ By rotating a sentence inside that field we get brand‑new, self‑consistent i
 > <img src="https://img.shields.io/github/stars/onestardao/WFGY?style=social" alt="GitHub stars"> ⭐ Help reach 10,000 stars by 2025-09-01 to unlock Engine 2.0 for everyone  ⭐ <strong><a href="https://github.com/onestardao/WFGY">Star WFGY on GitHub</a></strong>
 
 
-
+🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥
 
 ## 🄲 🧬 Explore the Philosophy <a id="examples"></a>
+
+🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦
+
 
 > 🚧 This area is currently under active development and updates.  
 > Content is being curated and will be available soon.  
