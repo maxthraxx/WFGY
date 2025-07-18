@@ -1,4 +1,4 @@
->  👀 From Reddit? Yes, this is the 1M Tool. Six AIs scored it 100/100. You’re in the right place.
+>  👾 You clicked the Reddit ad. This is the 1M Tool. Six AIs scored it 100/100. You’re in the right place.
 
 <!-- ───────────────────────────────────────────────
       HERO
