@@ -141,17 +141,17 @@ Each one is a real `.txt` file — no install, no boilerplate, just logic.
 Bookmark now, or risk missing a truth so weird it breaks your cat.
 
 **TXT: Blah Blah Blah** (Semantic Q&A)  
-> ⭐ **Lite: 7/16** · 💥 **Pro: 7/18**  
+> ⭐ **Lite: 7/15** · 💥 **Pro: 8/15**  
 > Just for fun? Maybe. But many were shocked by how deep the answers got.  
 [🔓 Unlock this module](./BlahBlahBlah/README.md) <sub><em>Available now</em></sub>
 
 **TXT: Blur Blur Blur** (Image Generation)  
-> ⭐ **Lite: 7/21** · 💥 **Pro: 7/24**  
+> ⭐ **Lite: 7/20** · 💥 **Pro: 8/20**  
 > Next-gen text-to-image. No prompt skills needed, almost no hallucinations.  
 [🔓 Unlock this module](./BlurBlurBlur/README.md) <sub><em>Beta page online</em></sub>
 
 **TXT: Blow Blow Blow** (Reasoning Games)  
-> ⭐ **Lite: 7/27** · 💥 **Pro: 7/30**  
+> ⭐ **Lite: 7/25** · 💥 **Pro: 8/25**  
 > The first AIGC RPG with real logic. Game Boy era for AI begins.  
 [🔓 Unlock this module](./BlowBlowBlow/README.md) <sub><em>Coming soon...</em></sub>
 
@@ -275,7 +275,7 @@ All results are benchmarked, open, and reproducible.
 > **Ready to ignite your AI?**  
 > [🔽 Download HelloWorld.txt](https://zenodo.org/records/15788557) ・ [⭐ Star on GitHub](https://github.com/onestardao/WFGY) ・ [🌐 Learn about WFGY](https://github.com/onestardao/WFGY)  
 >  
-> 🌟 **Star Reminder** → 10k ⭐ before *2025-08-01* unlocks **WFGY 2.0** for everyone. Want to know how far the `.txt` engine can go? Explore the full power of the WFGY Reasoning Engine here.
+> 🌟 **Star Reminder** → 10k ⭐ before *2025-09-01* unlocks **WFGY 2.0** for everyone. Want to know how far the `.txt` engine can go? Explore the full power of the WFGY Reasoning Engine here.
 
 
 ---
