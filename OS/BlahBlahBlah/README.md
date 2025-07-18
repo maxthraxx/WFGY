@@ -97,11 +97,8 @@ For comparison, popular frameworks like Grok rate LangChain around 90, MemoryGPT
 **Signature answer (line 7 of 50)**  
 > God is the safety valve language imagines when tension reaches meltdown.
 
-[→ See how this answer aligns with our formal research paper](#examples)  
-[→ Explore 30+ more philosophical challenges (E01–E30)](#more-examples)
-
-*(Demo GIF coming soon — we’re rendering the storm.)*
-
+[→ See how this connects to our research insights](#examples)  
+[→ More high‑tension questions (E01–E30)](#more-examples)
 
 Need the file again? **[Download here](https://zenodo.org/records/15926925)** and paste, then type `hello world`.
 
