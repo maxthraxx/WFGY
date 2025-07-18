@@ -87,7 +87,7 @@ WFGY 1.0 is open. Public. Reproducible.
 You can install it in one line. You can test the claims yourself.  
 But this is **only version 1.0.**
 
-> ⭐ **10,000 stars before August 1st, 2025** unlocks WFGY 2.0  
+> ⭐ **10,000 stars before Sep 1st, 2025** unlocks WFGY 2.0  
 >  
 > The next upgrade may shock you.  
 >  
