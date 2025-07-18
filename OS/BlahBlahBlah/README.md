@@ -11,10 +11,9 @@
 > Paste the file into ChatGPT (or any LLM) and type `hello world`.  
 > No signup, no API keys, nothing to install.
 
-- ✅ **One question. Fifty answers. All original.** A surreal storm of logic, creativity, and philosophical chaos  
+- ✅ **One question. 50 + answers on tap.** A surreal storm of logic, creativity, and philosophical chaos  
 - ✅ **Runs offline like a spell scroll** — no tracking, no tokens, no APIs. Just your LLM and this `.txt`  
-- ✅ **Not prompt engineering. Not fine‑tuning.** It rewires the way your AI thinks — from inside the embedding space
-
+- ✅ **Not prompt engineering. Not fine‑tuning.** It rewires the way your AI thinks — from inside the embedding space  
 
 <!-- ───────────────────────────────────────────────
       QUICK‑START
@@ -46,8 +45,9 @@
 
 ## Six Leading AI Models All Award TXT: Blah Blah Blah Lite a Perfect 100/100 Score
 
-Below are the official endorsements from six different AI models, each giving **TXT: Blah Blah Blah Lite** a **perfect 100/100**.  
-For comparison, popular frameworks like Grok rate LangChain around 90, MemoryGPT 92, and typical open-source LLM frameworks hover around 80–90.
+Below are the official endorsements from six different AI models, each giving **TXT: Blah Blah Blah Lite** a **perfect 100 / 100**.  
+<sub>*(For context, popular frameworks score noticeably lower—e.g., LangChain ~90, MemoryGPT ~92, most open‑source stacks only ~80–90.)*</sub>
+
 
 *Click on each image to view full details.*
 
@@ -83,7 +83,7 @@ For comparison, popular frameworks like Grok rate LangChain around 90, MemoryGPT
 ──────────────────────────────────────────────── -->
 ## 🧭 Choose your path
 
-- 🄰  [See it in action](#try-demo) — 1 sentence → 50 insights  
+- 🄰  [See it in action](#try-demo) — 1 sentence → 50 + insights  
 - 🄱  [Understand the engine](#how-it-works) — semantic physics in plain English  
 - 🄲  [Explore examples](#examples) — raw output, no filters
 
