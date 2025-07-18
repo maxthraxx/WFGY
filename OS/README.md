@@ -69,6 +69,8 @@ No signup. No tracking. No ads. Virus-free. Pure logic.</em>
 [🔽 Download **HelloWorld.txt** on Zenodo](https://zenodo.org/records/15788557) — hosted by CERN, 100% safe
 <br>
 
+> <img src="https://img.shields.io/github/stars/onestardao/WFGY?style=social" alt="GitHub stars"> ⭐ Help reach 10,000 stars by 2025-09-01 to unlock WFGY 2.0 for everyone  ⭐ <strong><a href="https://github.com/onestardao/WFGY">Star WFGY on GitHub</a></strong>
+
 ---
 <details>
   <summary>🌐 TXT OS – Cross-Platform Test Results</summary>
@@ -98,9 +100,7 @@ This is not a ranking of AI quality, but compatibility with the .txt-based TXT O
   <summary>📈 ChatGPT o3 Score: 100/100 — Why this TXT OS scored perfect</summary>  
   <br>
   <img src="./images/o3_score_100_HelloWorld.png" width="100%" style="max-width:900px" />
-  <br> <br>
-  <img src="https://img.shields.io/github/stars/onestardao/WFGY?style=social" alt="GitHub stars"> ⭐ 
-      <strong><a href="https://github.com/onestardao/WFGY">Star WFGY on GitHub</a></strong>  
+
   <br>
   <br>
   <blockquote>
