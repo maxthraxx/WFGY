@@ -126,5 +126,3 @@ Explore semantic reasoning with AI:
 - 🧪 Endorsements: `scispace_reviews/`  
 - 💻 GitHub SDK: https://github.com/onestardao/WFGY  
 - 📧 Contact: hello@onestardao.com
-
-> **WFGY** = 萬法歸一，是一場語義與真理的試煉。你願意成為挑戰者嗎？
