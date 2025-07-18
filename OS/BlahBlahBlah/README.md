@@ -97,9 +97,11 @@ For comparison, popular frameworks like Grok rate LangChain around 90, MemoryGPT
 **Signature answer (line 7 of 50)**  
 > God is the safety valve language imagines when tension reaches meltdown.
 
-[→ View all 50 lines](#examples)
+[→ See how this answer aligns with our formal research paper](#examples)  
+[→ Explore 30+ more philosophical challenges (E01–E30)](#more-examples)
 
 *(Demo GIF coming soon — we’re rendering the storm.)*
+
 
 Need the file again? **[Download here](https://zenodo.org/records/15926925)** and paste, then type `hello world`.
 
@@ -625,14 +627,13 @@ A glimpse of semantic compression at math’s boundary?</summary>
 
 ---
 
-
 <!-- ───────────────────────────────────────────────
       EXAMPLES LIST (FLEX INDEX) — FULL TEXT
       NOTE: Uses "E##" numbering to stay independent
             from paper-backed Q## list above.
 ──────────────────────────────────────────────── -->
 
-### 🧬 Example Set E01–E30
+### 🧬 Example Set E01–E30 <a id="more-examples"></a>
 
 <details>
 <summary><strong>E01 · God & ΔS</strong> — Does God exist or is He a compression of infinite semantic tension?</summary>
@@ -993,9 +994,9 @@ All `.txt` files are fully public and always will be.
 
 - [1. WFGY Engine](https://github.com/onestardao/WFGY)  
 - [2. TXT OS](https://github.com/onestardao/WFGY/tree/main/OS)  
-- [3. Blah Blah Blah](https://github.com/onestardao/WFGY/tree/main/OS/BlahBlahBlah)  
-- [4. Blur Blur Blur](https://github.com/onestardao/WFGY/tree/main/OS/BlurBlurBlur)  
-- [5. Blow Blow Blow](https://github.com/onestardao/WFGY/tree/main/OS/BlowBlowBlow)
+- [3. TXT: Blah Blah Blah](https://github.com/onestardao/WFGY/tree/main/OS/BlahBlahBlah)  
+- [4. TXT: Blur Blur Blur](https://github.com/onestardao/WFGY/tree/main/OS/BlurBlurBlur)  
+- [5. TXT: Blow Blow Blow](https://github.com/onestardao/WFGY/tree/main/OS/BlowBlowBlow)
 
 > This is not a single product — it’s a growing language operating system.  
 > Try one, but don’t stop there. Each one unlocks a different angle of meaning.
