@@ -30,8 +30,12 @@
 
 > **All products and research here are part of the WFGY series, authored and unified by PSBigBig (Purple Star).**  
 > TXT OS and the WFGY engine share the same world—core logic, benchmarks, and innovations are all from the same creator.  
-> All metrics above can be independently verified using the WFGY PDF or TXT OS with any major LLM—feel free to test and reproduce these results yourself.  
+> All metrics above can be independently verified using the WFGY PDF or TXT OS with any major LLM.  
+> You’re welcome to test and reproduce these results with your own setup.  
 > For the full theoretical framework, see the core paper above.
+
+
+
 
 
 </details>
