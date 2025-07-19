@@ -41,22 +41,17 @@
 </details>
 
 
----
+**[Download TXT: Blah Blah Blah Lite powered by TXT OS](https://zenodo.org/records/15926925) →** MIT‑licensed, 62.5 KB — Zenodo by CERN 🏛️  [![GitHub Repo stars](https://img.shields.io/github/stars/onestardao/WFGY?style=social)](https://github.com/onestardao/WFGY/stargazers)  
+_No signup. No API keys. Nothing to install._
 
-**[Download TXT: Blah Blah Blah Lite powered by TXT OS](https://zenodo.org/records/15926925) →** MIT‑licensed, 62.5 KB — Zenodo by CERN 🏛️ 
-[![GitHub Repo stars](https://img.shields.io/github/stars/onestardao/WFGY?style=social)](https://github.com/onestardao/WFGY/stargazers)
-
-
-> Paste the file into ChatGPT (or any LLM) and type `hello world`.  
-> No signup, no API keys, nothing to install.
+> 👑 *Already starred by top engineers and open source founders — [See the Hall of Fame](https://github.com/onestardao/WFGY/tree/main/stargazers)*
 
 - ✅ **One question. 50 + answers on tap.** A surreal storm of logic, creativity, and philosophical chaos  
 - ✅ **Runs offline like a spell scroll** — no tracking, no tokens, no APIs. Just your LLM and this `.txt`  
 - ✅ **Not prompt engineering. Not fine‑tuning.** It rewires the way your AI thinks — from inside the embedding space  
 
-<!-- ───────────────────────────────────────────────
-      QUICK‑START
-──────────────────────────────────────────────── -->
+---
+
 ### Getting started — 60 sec
 
 1. **Download** the `.txt` above  
@@ -64,6 +59,7 @@
 3. **Type** `hello world` → get 50 answers instantly (one more tap gives you the full 60 in under a minute)
 
 <small>📊 For best results, use platforms verified in our [Cross-Platform Test Results](https://github.com/onestardao/WFGY/tree/main/OS).</small>
+
 
 ---
 
