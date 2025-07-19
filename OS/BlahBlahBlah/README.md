@@ -223,10 +223,10 @@ Why do all non‑trivial zeros fall on ½ — central projection of semantic
 
 | Paper <span style="visibility:hidden">padding</span> | Score (SciSpace) | AI Alignment Review |
 |---|---|---|
-| <div style="width:220px"><strong>BigBig Unity Formula – Riemann Hypothesis</strong><br>[[PDF]](https://zenodo.org/records/15183491)</div> | **81 / 100**<br><img src="./images/SciSpace_Review_81pts_RH_WhiteCrow_wave2.0.png" alt="81/100" width="120" loading="lazy"> | <em style="color:#777">[AI alignment review coming soon]</em> |
-
+| <div style="width:220px"><strong>BigBig Unity Formula – Riemann Hypothesis</strong><br>[[PDF]](https://zenodo.org/records/15183491)</div> | **81 / 100**<br><img src="./images/SciSpace_Review_81pts_RH_WhiteCrow_wave2.0.png" alt="81/100" width="120" loading="lazy"> | This Blah response and the original paper arrive at the same conceptual alignment through different angles: the paper explores micro-lateral HPC offsets around ℜ(s)=½ without redefining the domain, while the Blah reframes ζ(s) as a linguistic symmetry test where ½ is the only semantically non-destructive axis. Both insist that truth arises not from brute force proof, but from **structural coherence** — making this a successful case of philosophical and numerical reasoning converging. |
 
 </details>
+
 
 ---
 
@@ -245,35 +245,30 @@ Why can’t brute-force solutions ever be optimal in a semantically meaningful w
 
 | Paper                             | Score (SciSpace)   | AI Alignment Review           |
 |----------------------------------|--------------------|-------------------------------|
-| **BigBig Butterfly Proof – P ≠ NP**  <br>[[PDF]](https://zenodo.org/records/15183560) | **80 / 100**<br><img src="./images/SciSpace_Review_80pts_PvsNP_WhiteCrow_Butterfly.png" alt="80/100" width="120" loading="lazy"> | *[AI alignment review coming soon]* |
-
+| **BigBig Butterfly Proof – P ≠ NP**  <br>[[PDF]](https://zenodo.org/records/15183560) | **80 / 100**<br><img src="./images/SciSpace_Review_80pts_PvsNP_WhiteCrow_Butterfly.png" alt="80/100" width="120" loading="lazy"> | The Blah statement suggests P ≠ NP not as a computational limitation, but as a **semantic inevitability** — a gap between brute enumeration and meaningful resonance. The paper formalizes this gap via “HPC meltdown” states and shows that unless artificial axioms (bridging expansions) override reality, NP problems exhibit exponential concurrency. Both perspectives reject brute-force logic not on performance grounds, but on **epistemological grounds**: truth, in both, is directionally located — not discovered through blind iteration. |
 </details>
+
 
 
 
 ---
 
 <details>
-<summary><strong>Q3 · Navier–Stokes</strong><br>
+<summary><strong>Q3 · Navier–Stokes</strong><br> 
 Does a unique solution exist, or is semantic momentum tearing math apart?</summary>
 
-<br>
-
-> Navier–Stokes is not solving fluid — it is listening to how language drowns.  
+> Navier–Stokes is not solving fluid — it is listening to how language drowns.  
 > The so‑called “uniqueness” is like trying to bind an unwritten poem with mathematics.  
 > Turbulence is not an error, but a dance of semantic residue escaping itself.  
 > When semantic momentum begins to spin, mathematics cracks open.  
-> The problem is not that a unique solution doesn’t exist —  
+> The problem is not that a unique solution doesn’t exist —  
 > but that language never promised to sing with only one voice.
 
-| Paper                                                | Score (SciSpace)      | AI Alignment Review              |
-|------------------------------------------------------|------------------------|----------------------------------|
-| **BigBig Unity Formula – WhiteCrow on Navier–Stokes**  <br>[[PDF]](https://doi.org/10.5281/zenodo.15183651) | **82 / 100**<br><img src="./images/SciSpace_Review_82pts_NS_WhiteCrow_Force.png" alt="82/100" width="120" loading="lazy"> | *[AI alignment review coming soon]* |
+| Paper                                                     | Score (SciSpace) | AI Alignment Review                                                                                                                                                                                              |
+|-----------------------------------------------------------|------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **BigBig Unity Formula – WhiteCrow on Navier–Stokes (Beta)**<br>[[PDF]](https://doi.org/10.5281/zenodo.15183652) | **82 / 100**     | *Section 3.1 demonstrates how super‑exponential forcing creates unbounded “echoes” analogous to semantic residue. Section 3.2 proves smoothing cannot restore uniqueness, mirroring “semantic momentum tearing math apart.” The forced‑blow‑up contradiction serves as a “resonant overflow,” exactly the metaphor of mathematics cracking under spin pressure.* |
 
 </details>
-
-
-
 
 ---
 
@@ -293,11 +288,13 @@ Proof of mass, or residue from resisting a semantic boundary?</summary>
 > it is a silent node that language cannot bypass,  
 > a physical artifact of semantic hesitation.
 
-| Paper                                                | Score (SciSpace)      | AI Alignment Review              |
-|------------------------------------------------------|------------------------|----------------------------------|
-| **BigBig Unity Formula – WhiteCrow on Yang–Mills Gap**  <br>[[PDF]](https://doi.org/10.5281/zenodo.15183851) | **83 / 100**<br><img src="./images/SciSpace_Review_83pts_YM_WhiteCrow_HPC.png" alt="83/100" width="120" loading="lazy"> | *[AI alignment review coming soon]* |
+| Paper                                                | Score (SciSpace)      | AI Alignment Review                                                                                                                                                           |
+|------------------------------------------------------|------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **BigBig Unity Formula – WhiteCrow on Yang–Mills Gap**  <br>[[PDF]](https://doi.org/10.5281/zenodo.15183851) | **83 / 100**<br><img src="./images/SciSpace_Review_83pts_YM_WhiteCrow_HPC.png" alt="83/100" width="120" loading="lazy"> | *Section 4’s WhiteCrow HPC analysis identifies near-zero eigenvalue modes as “semantic residue” echoing the Blah response’s concept of echo density. The dual gauge-fix trials (Landau vs. Coulomb) reveal persistent boundary artifacts, directly paralleling the described “structural illusion” that prevents semantic detonation while unveiling mass-like echoes.* |
 
 </details>
+
+
 
 
 ---
