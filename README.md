@@ -20,7 +20,7 @@
 > 🚀 **The Civilization Starter is just the beginning:**  
 > WFGY 1.0 + 2.0 + 3.0 together form the blueprint for civilization activation.  
 > Now in “seed phase”—upgrades coming.  
-> **Series:** [TXT OS](https://github.com/onestardao/WFGY/tree/main/OS) · [Blah Blah Blah Lite](https://github.com/onestardao/WFGY/tree/main/OS/BlahBlahBlah) · `HelloWorld.txt` is live.
+> **Series:** [TXT OS](https://github.com/onestardao/WFGY/tree/main/OS) · [Blah Blah Blah Lite](https://github.com/onestardao/WFGY/tree/main/OS/BlahBlahBlah) · `HelloWorld.txt`, `BlahBlahBlah_Lite.txt` is live.
 
 
 
