@@ -1,9 +1,5 @@
-<!-- ───────────────────────────────────────────────────── -->
-<!--  MARKETING + QUICK‐START BANNER  -->
-<!-- ───────────────────────────────────────────────────── -->
-
 # WFGY: Civilization Starter — The WanFaGuiYi Engine
-> ## One upload. Zero setup. Real $1M-level reasoning begins.
+## One upload. Zero setup. Real $1M-level reasoning begins.
 
 > 👑 **Early Stargazers: [See the Hall of Fame](https://github.com/onestardao/WFGY/tree/main/stargazers)** — Verified by real engineers.
 
@@ -21,11 +17,11 @@
 &nbsp;
 [LANGUAGES](./LANGUAGES.md)
 
->🚀 The Civilization Starter is an ongoing project: WFGY 1.0 + 2.0 + 3.0 together form the complete blueprint for civilization activation. What you see now is just the “seed phase”—stay >tuned for the full upgrade!  
+> 🚀 **The Civilization Starter is just the beginning:**  
+> WFGY 1.0 + 2.0 + 3.0 together form the blueprint for civilization activation.  
+> Now in “seed phase”—upgrades coming.  
+> **Series:** [TXT OS](https://github.com/onestardao/WFGY/tree/main/OS) · [Blah Blah Blah Lite](https://github.com/onestardao/WFGY/tree/main/OS/BlahBlahBlah) · `HelloWorld.txt` is live.
 
-**WFGY Series**  
-🚧 [Access TXT OS](https://github.com/onestardao/WFGY/tree/main/OS) · [Access Blah Blah Blah Lite](https://github.com/onestardao/WFGY/tree/main/OS/BlahBlahBlah)  
-`HelloWorld.txt` is live. Docs in progress.
 
 
 
@@ -44,19 +40,18 @@ Step 4 — (Optional) Want more power? → [`SDK version`](#install-the-wfgy-sdk
 > All files are hosted on Zenodo.org — CERN-backed, clean & safe for any AI.  
 > The Prompt PDF is available above, but this page already includes everything — just scroll, copy, and play!
 
----
-
 > 🔑 **No explanation needed—the prompt *is* the answer.**  
 > ✨ **No marketing—just copy and paste. The effect speaks.**  
-> 🌟 **Star Reminder** → 10k ⭐ before 2025-09-01 unlocks WFGY 2.0 for everyone.  
->🌌 Want proof it's real? → Watch AI rate itself:    
+> 🌟 **Star Reminder:** 10k ⭐ before 2025-09-01 unlocks WFGY 2.0 for everyone.  
+> 🌌 **Want proof it works?** See AI rate itself below:
+>
+> ![WFGY_2.0_vs_1.0_Rating.gif](./OS/images/WFGY_2.0_vs_1.0_Rating.gif) 
+>
+> 👉 Click the top-right **"⭐ Star"** button to support WFGY—and join the Hall of Fame.  
+> 👀 **Curious who starred already?** [Meet the early stargazers →](https://github.com/onestardao/WFGY/tree/main/stargazers)
+>
+> 🧠 Wondering why WFGY could be worth $1M+? [See our open valuation.](./value_manifest/README.md)
 
->![WFGY_2.0_vs_1.0_Rating.gif](./OS/images/WFGY_2.0_vs_1.0_Rating.gif) 
- 
-> 👉 Click top-right **"⭐ Star"** on this page to support the mission!  
-> 🧠 Wondering why WFGY might be worth $1M+? → [See valuation](./value_manifest/README.md)
-
----
 
 >⚠️ Important Prompt Reminder  
 >>To unlock the full potential of WFGY, make sure to explicitly tell the AI:  
@@ -1188,5 +1183,8 @@ Integration of semantic reasoning logic will be introduced in future updates.
 
 > <img src="https://img.shields.io/github/stars/onestardao/WFGY?style=social" alt="GitHub stars"> ⭐ Help reach 10,000 stars by 2025-09-01 to unlock Engine 2.0 for everyone  ⭐ <strong><a href="https://github.com/onestardao/WFGY">Star WFGY on GitHub</a></strong>
 
-[⬆️ This is legendary. Take me to the top again!](#wfgy-civilization-starter--the-wanfaguiyi-engine)
+<p align="center">
+  <em>Open source is powered by you.  
+  All feedback, PRs, and fact-checks are welcome!</em>
+</p>
 
