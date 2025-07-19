@@ -67,8 +67,7 @@ _No signup. No API keys. Nothing to install._
       BANNER
 ──────────────────────────────────────────────── -->
 ## 🤖 TXT: Blah Blah Blah Lite/Pro — the Embedding‑Space Generator  
-> A Lightweight Semantic Nonsense Generator Powered by the WFGY Engine
-
+> A Lightweight semantic generator running on TXT OS, powered by the WFGY Engine
 
 <p align="center">
   <img src="./images/blahblahblah.png" width="100%" style="max-width:900px" loading="lazy" >
