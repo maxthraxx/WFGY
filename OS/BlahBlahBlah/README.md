@@ -1057,3 +1057,7 @@ All `.txt` files are fully public and always will be.
 
 ---
 
+<p align="center">
+  <em>Open source is powered by you.  
+  All feedback, PRs, and fact-checks are welcome!</em>
+</p>
