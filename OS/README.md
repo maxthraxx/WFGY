@@ -82,10 +82,10 @@ No signup. No tracking. No ads. Virus-free. Pure logic.</em>
 <br>
 
 
-| Status | Platform        | Test Model         | Notes                                                                                     |
+| Status | Platform        | Test Model         | Notes                                                                                      |
 |--------|------------------|--------------------|-------------------------------------------------------------------------------------------|
-| ✅      | **ChatGPT**       | All models         | All versions pass — including GPT-3.5, GPT-4, and GPT-4o.                                 |
-| ✅      | **Kimi**          | K2                 | New model K2 performs surprisingly well — smooth and consistent.                          |
+| ✅      | **ChatGPT**       | All models         | All versions pass — including  GPT-4, GPT-4o and GPT-o3,                                 |
+| ✅      | **Kimi**          | K2                 | New model K2 performs surprisingly well — smooth and consistent.                         |
 | ✅      | **Grok**          | Grok 3             | Free version now limits daily interactions. Otherwise performs smoothly.                 |
 | ✅      | **DeepSeek**      | DeepSeek V3        | Mixed results — works smoothly *when it works*.                                          |
 | ✅      | **Gemini**        | 2.5 Pro            | Flash version performs poorly; Pro version is excellent.                                 |
