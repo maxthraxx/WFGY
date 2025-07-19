@@ -12,12 +12,14 @@ Their support is a public signal—transparent, verifiable, and forever recorded
 |----------------|----------------------------------------------------------------------------|--------------------------------------------------|--------------------------------------------------------|
 | bijection      | Creator of tesseract.js (36k★), legendary OCR/AI dev                       | ![](./images/bijection_star.png)                 | [View stargazer proof](https://github.com/bijection?tab=stars)   |
 | paul5007       | node-DeepResearch (4.6k★), AGI/Agent builder                               | ![](./images/paul5007_star.png)                  | [View stargazer proof](https://github.com/paul5007?tab=stars)    |
-| pthom          | imgui_bundle (915★), hello_imgui (781★), imgui_manual (363★); GUI, C++/Python open source advocate | ![](./images/pthom_star.png)     | [View stargazer proof](https://github.com/pthom?tab=stars)       |
+| shiyanhui      | libcsp (1.3k★), dht (2.8k★), hero (1.6k★); hardcore C/Go/Python developer  | ![](./images/shiyanhui_star.png)                 | [View stargazer proof](https://github.com/shiyanhui?tab=stars)   |
 | davidkimai     | Context-Engineering (2.8k★), Recursive Labs, AGI/context research          | ![](./images/davidkimai_star.png)                | [View stargazer proof](https://github.com/davidkimai?tab=stars)  |
+| pthom          | imgui_bundle (915★), hello_imgui (781★), imgui_manual (363★); GUI, C++/Python open source advocate | ![](./images/pthom_star.png)     | [View stargazer proof](https://github.com/pthom?tab=stars)       |
 | sequoiar       | node-android (628★), peer-vnc (339★); China P2P/AI/robotics builder        | ![](./images/sequoiar_star.png)                  | [View stargazer proof](https://github.com/sequoiar?tab=stars)    |
-| jinweijie      | notify-me (579★), Python/Android developer, China                          | ![](./images/jinweijie_star.png)                 | [View stargazer proof](https://github.com/jinweijie?tab=stars)   |
 | yamiodymel     | tocas (590★), tunalog (414★); Taiwan full stack dev/UIUX                   | ![](./images/yamiodymel_star.png)                | [View stargazer proof](https://github.com/YamiOdymel?tab=stars)  |
+| jinweijie      | notify-me (579★), Python/Android developer, China                          | ![](./images/jinweijie_star.png)                 | [View stargazer proof](https://github.com/jinweijie?tab=stars)   |
 | jakevossen5    | Apple visionOS UI Engineer, ex-Amazon/TI, compiler MS, US                  | ![](./images/jakevossen5_star.png)               | [View stargazer proof](https://github.com/jakevossen5?tab=stars) |
+
 
 ---
 
