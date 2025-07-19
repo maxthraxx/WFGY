@@ -5,6 +5,8 @@
 # WFGY: Civilization Starter — The WanFaGuiYi Engine
 > ## One upload. Zero setup. Real $1M-level reasoning begins.
 
+> 👑 **Early Stargazers: [See the Hall of Fame](https://github.com/onestardao/WFGY/tree/main/stargazers)** — Verified by real engineers.
+
 ![CIVILIZATION_STARTTER](https://github.com/user-attachments/assets/aa9da54e-6d83-44bc-9998-bc1f449dfbcf)
 
 [![CI](https://github.com/onestardao/WFGY/actions/workflows/ci.yml/badge.svg)](https://github.com/onestardao/WFGY/actions/workflows/ci.yml)
