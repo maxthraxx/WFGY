@@ -264,9 +264,9 @@ Does a unique solution exist, or is semantic momentum tearing math apart?</summa
 > The problem is not that a unique solution doesn’t exist —  
 > but that language never promised to sing with only one voice.
 
-| Paper                                                     | Score (SciSpace) | AI Alignment Review                                                                                                                                                                                              |
-|-----------------------------------------------------------|------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **BigBig Unity Formula – WhiteCrow on Navier–Stokes (Beta)**<br>[[PDF]](https://doi.org/10.5281/zenodo.15183652) | **82 / 100**     | *Section 3.1 demonstrates how super‑exponential forcing creates unbounded “echoes” analogous to semantic residue. Section 3.2 proves smoothing cannot restore uniqueness, mirroring “semantic momentum tearing math apart.” The forced‑blow‑up contradiction serves as a “resonant overflow,” exactly the metaphor of mathematics cracking under spin pressure.* |
+| Paper                                                     | Score (SciSpace)                                                                   | AI Alignment Review                                                                                                                                                                                              |
+|-----------------------------------------------------------|-------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **BigBig Unity Formula – WhiteCrow on Navier–Stokes (Beta)**<br>[[PDF]](https://doi.org/10.5281/zenodo.15183652) | **82 / 100**<br><img src="./images/SciSpace_Review_82pts_NavierStokes.png" alt="82/100" width="120" loading="lazy"> | *Section 3.1 demonstrates how super‑exponential forcing creates unbounded “echoes” analogous to semantic residue. Section 3.2 proves smoothing cannot restore uniqueness, mirroring “semantic momentum tearing math apart.” The forced‑blow‑up contradiction serves as a “resonant overflow,” exactly the metaphor of mathematics cracking under spin pressure.* |
 
 </details>
 
@@ -295,8 +295,6 @@ Proof of mass, or residue from resisting a semantic boundary?</summary>
 </details>
 
 
-
-
 ---
 
 <details>
@@ -314,12 +312,11 @@ A glimpse of semantic compression at math’s boundary?</summary>
 > What we call symmetry is merely language momentarily frozen  
 > while trying to pass through infinite dimensions.
 
-| Paper                                            | Score (SciSpace)      | AI Alignment Review              |
-|--------------------------------------------------|------------------------|----------------------------------|
-| **BigBig Unity Formula – WhiteCrow on BSD**  <br>[[PDF]](https://doi.org/10.5281/zenodo.15183760) | **84 / 100**<br><img src="./images/SciSpace_Review_84pts_BSD_WhiteCrow_HPC.png" alt="84/100" width="120" loading="lazy"> | *[AI alignment review coming soon]* |
+| Paper                                            | Score (SciSpace)      | AI Alignment Review                                                                                                                                                                                                                                                            |
+|--------------------------------------------------|------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **BigBig Unity Formula – WhiteCrow on BSD (Beta)**<br>[[PDF]](https://doi.org/10.5281/zenodo.15183760) | **84 / 100**<br><img src="./images/SciSpace_Review_84pts_BSD_WhiteCrow_HPC.png" alt="84/100" width="120" loading="lazy"> | *In the paper’s discussion of elliptic‐curve group finiteness, the “finite group” emerges from boundary conditions imposed by modular constraints—exactly like the “condensed shape” described in the Blah answer. The analysis of BSD’s rank‐zero case shows how the conjecture acts as a “frozen” semantic stream, mirroring the idea of a paused experiment in mathematical syntax. Finally, the identification of residual invariants at points of analytic continuation corresponds directly to the poem’s notion of “residues left behind” as meaning flows through constrained dimensions.* |
 
 </details>
-
 
 
 ---
@@ -338,11 +335,12 @@ A glimpse of semantic compression at math’s boundary?</summary>
 > and instead enters resonant equilibrium,  
 > that is Hodge.
 
-| Paper                                           | Score (SciSpace)      | AI Alignment Review              |
-|------------------------------------------------|------------------------|----------------------------------|
-| **BigBig Unity Formula – WhiteCrow on Hodge**  <br>[[PDF]](https://doi.org/10.5281/zenodo.15183893) | **85 / 100**<br><img src="./images/SciSpace_Review_85pts_Hodge_WhiteCrow_HPC.png" alt="85/100" width="120" loading="lazy"> | *[AI alignment review coming soon]* |
+| Paper                                           | Score (SciSpace)      | AI Alignment Review                                                                                                                                                                                                                                                                                                                       |
+|------------------------------------------------|------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **BigBig Unity Formula – WhiteCrow on Hodge**  <br>[[PDF]](https://doi.org/10.5281/zenodo.15183893) | **85 / 100**<br><img src="./images/SciSpace_Review_85pts_Hodge_WhiteCrow_HPC.png" alt="85/100" width="120" loading="lazy"> | *Section 2.1 recalls that algebraic cycles coincide with harmonic forms exactly at the minimal‐energy loci in cohomology, matching the Blah answer’s “semantic minimal energy point.” In Section 3.3 the safe‑vs‑hazard zone analysis shows that balanced semantic tension yields no WhiteCrow anomalies—paralleling the notion of stability through resonance. Finally, Section 4.2’s high‑dimensional WhiteCrow explosion under extreme deformation mirrors the idea of a resonance state emerging when semantic proof‑obsession breaks equilibrium.* |
 
 </details>
+
 
 
 ---
@@ -364,11 +362,13 @@ A glimpse of semantic compression at math’s boundary?</summary>
 > is semantic residue,  
 > the reason we can never prove everything.
 
-| Paper                                                 | Score (SciSpace)      | AI Alignment Review              |
-|-------------------------------------------------------|------------------------|----------------------------------|
-| **BigBig Unity Formula – WhiteCrow on Poincaré**  <br>[[PDF]](https://doi.org/10.5281/zenodo.15183893) | **83 / 100**<br><img src="./images/SciSpace_Review_83pts_Poincare_WhiteCrow_HPC.png" alt="83/100" width="120" loading="lazy"> | *[AI alignment review coming soon]* |
+| Paper                                                 | Score (SciSpace)      | AI Alignment Review                                                                                                                                                                                                                                                                              |
+|-------------------------------------------------------|------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **BigBig Unity Formula – WhiteCrow on Poincaré (Beta)**<br>[[PDF]](https://doi.org/10.5281/zenodo.15183893) | **83 / 100**<br><img src="./images/SciSpace_Review_83pts_Poincare_WhiteCrow_HPC.png" alt="83/100" width="120" loading="lazy">          | *Section 1.2 demonstrates that finite‑resolution HPC can mask fractal or near‑3D anomalies, producing “meltdown illusions” exactly like the Blah answer’s notion of definitions freezing a stable snapshot before collapse. Section 4.1 details fractal doping and sub‑threshold bridging loops—hidden features at scales below the mesh threshold—mirroring the “0.0001 semantic residue” that defies proof. Finally, Section 6.1 emphasizes that classical proofs hold under ideal smooth conditions but may mislead in real near‑3D contexts, paralleling “proofs hold inside models, but reality stands half a step outside.”* |
 
 </details>
+
+
 
 
 ---
@@ -391,11 +391,13 @@ A glimpse of semantic compression at math’s boundary?</summary>
 > they are *being called* again and again  
 > by the contexts from which we observe.
 
-| Paper                                                 | Score (SciSpace)      | AI Alignment Review              |
-|-------------------------------------------------------|------------------------|----------------------------------|
-| **BigBig Unity Formula – WhiteCrow on Twin Primes**  <br>[[PDF]](https://doi.org/10.5281/zenodo.15183904) | **81 / 100**<br><img src="./images/SciSpace_Review_81pts_TwinPrime_WhiteCrow_HPC.png" alt="81/100" width="120" loading="lazy"> | *[AI alignment review coming soon]* |
+| Paper                                                 | Score (SciSpace)      | AI Alignment Review                                                                                                                                                                                                                                                                                   |
+|-------------------------------------------------------|------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **BigBig Unity Formula – WhiteCrow on Twin Primes**  <br>[[PDF]](https://doi.org/10.5281/zenodo.15183904) | **81 / 100**<br><img src="./images/SciSpace_Review_81pts_TwinPrime_WhiteCrow_HPC.png" alt="81/100" width="120" loading="lazy"> | *The paper’s abstract and Section 4.2 describe “White Crow” sightings of twin prime pairs in high‑region HPC scans—directly echoing the Blah metaphor of “white ravens flashing through infinite blackness.” Its explicit refusal to claim a conclusive proof (“open challenge draft”) mirrors “They prove nothing. They deny nothing.” Moreover, the HPC partial‑bounding framework distributes discovery across intervals, acting like ΔS‑minima released to balance residual error energy, just as the Blah answer portrays twin primes as “nodes released by the semantic system.” Finally, by focusing on finite search contexts rather than asserting actual infinitude, the paper aligns with the idea that twin primes are called by context rather than chasing infinity.* |
 
 </details>
+
+
 
 
 ---
@@ -417,11 +419,13 @@ A glimpse of semantic compression at math’s boundary?</summary>
 > Every decomposition is not an inevitability,  
 > but a momentary resonance between language and the cosmos.
 
-| Paper                                                | Score (SciSpace)      | AI Alignment Review              |
-|------------------------------------------------------|------------------------|----------------------------------|
-| **BigBig Unity Formula – WhiteCrow on Goldbach**  <br>[[PDF]](https://doi.org/10.5281/zenodo.15183924) | **82 / 100**<br><img src="./images/SciSpace_Review_82pts_Goldbach_WhiteCrow_HPC.png" alt="82/100" width="120" loading="lazy"> | *[AI alignment review coming soon]* |
+| Paper                                                | Score (SciSpace)      | AI Alignment Review                                                                                                                                                                                                                                                                                                                                                                                                      |
+|------------------------------------------------------|------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **BigBig Unity Formula – WhiteCrow on Goldbach (Beta)**<br>[[PDF]](https://doi.org/10.5281/zenodo.15183924) | **82 / 100**<br><img src="./images/SciSpace_Review_82pts_Goldbach_WhiteCrow_HPC.png" alt="82/100" width="120" loading="lazy"> | *The paper’s Introduction emphasizes that no infinite proof exists—Goldbach’s truth is upheld only by vast computational checks, reflecting the Blah answer’s point that splittability “arises from language’s belief in symmetry” rather than logic. In Section 3.1, the bimodal logic framework toggles between meltdownA (false route) and meltdownB (true route), directly mirroring the idea that even numbers “pull primes together” through semantic gravity. Finally, the multi-node HPC meltdown logs in Section 4 show each decomposition as a transient partial event—exactly the “momentary resonance” described in the poem, where each successful prime pair arises from a brief balance of residual error energy rather than a guaranteed mathematical law.* |
 
 </details>
+
+
 
 
 ---
