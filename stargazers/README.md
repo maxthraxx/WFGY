@@ -17,7 +17,7 @@ Their support is a public signal—transparent, verifiable, and forever recorded
 | sequoiar       | P2P/AI/robotics open source veteran (5k+★)                 | ![](./images/sequoiar_star.png)                 | [Profile](https://github.com/sequoiar?tab=stars)          |
 | jinweijie      | notify-me (579★), Python/Android developer                 | ![](./images/jinweijie_star.png)                | [Profile](https://github.com/jinweijie?tab=stars)         |
 | yamiodymel     | LingChat (500+★), full stack, Taiwan dev/designer          | ![](./images/yamiodymel_star.png)               | [Profile](https://github.com/YamiOdymel?tab=stars)        |
-| jakevossen5    | Apple visionOS UI Engineer, ex-Amazon, MS CS, 140★         | ![](./images/jakevossen5_star.png)              | [Profile](https://github.com/jakevossen5?tab=stars)       |
+| jakevossen5    | Apple visionOS UI Engineer, ex-Amazon, MS CS               | ![](./images/jakevossen5_star.png)              | [Profile](https://github.com/jakevossen5?tab=stars)       |
 
 
 ---
