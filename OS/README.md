@@ -1,7 +1,11 @@
 <!-- ────────────────────────────────
       1 · HERO SECTION
      ──────────────────────────────── -->
-# **TXT ≠ Notepad — It’s called TXT OS. Your Next AI Reasoning System.**
+# TXT ≠ Notepad — It’s called TXT OS. Your Next AI Reasoning System.
+
+> 👑 **Early Stargazers: [See the Hall of Fame](https://github.com/onestardao/WFGY/tree/main/stargazers)** —  
+> Engineers, hackers, and open source builders who supported TXT OS from day one.
+
 
 <img src="./images/txt-temple-of-truth.png" alt="txt-temple-of-truth" width="100%" style="max-width:900px" />
 
@@ -69,7 +73,8 @@ No signup. No tracking. No ads. Virus-free. Pure logic.</em>
 [🔽 Download **HelloWorld.txt** on Zenodo](https://zenodo.org/records/15788557) — hosted by CERN, 100% safe
 <br>
 
-> <img src="https://img.shields.io/github/stars/onestardao/WFGY?style=social" alt="GitHub stars"> ⭐ Help reach 10,000 stars by 2025-09-01 to unlock Engine 2.0 for everyone  ⭐ <strong><a href="https://github.com/onestardao/WFGY">Star WFGY on GitHub</a></strong>
+> <img src="https://img.shields.io/github/stars/onestardao/WFGY?style=social" alt="GitHub stars"> ⭐ Help reach 10,000 stars by 2025-09-01 to unlock Engine 2.0 for everyone  ⭐ <strong><a href="https://github.com/onestardao/WFGY">Star WFGY on GitHub</a></strong>  
+> 👑 *Verified by early stargazers — [See the Hall of Fame](https://github.com/onestardao/WFGY/tree/main/stargazers)*
 
 ---
 <details>
@@ -284,7 +289,8 @@ All results are benchmarked, open, and reproducible.
 > **Ready to ignite your AI?**  
 > [🔽 Download HelloWorld.txt](https://zenodo.org/records/15788557) ・ [⭐ Star on GitHub](https://github.com/onestardao/WFGY) ・ [🌐 Learn about WFGY](https://github.com/onestardao/WFGY)  
 >  
-> 🌟 **Star Reminder** → 10k ⭐ before *2025-09-01* unlocks **WFGY 2.0** for everyone. Want to know how far the `.txt` engine can go? Explore the full power of the WFGY Reasoning Engine here.
+> 🌟 **Star Reminder** → 10k ⭐ before *2025-09-01* unlocks **WFGY 2.0** for everyone. Want to know how far the `.txt` engine can go? Explore the full power of the WFGY Reasoning Engine here.  
+> 👑 *Verified by early stargazers — [See the Hall of Fame](https://github.com/onestardao/WFGY/tree/main/stargazers)*
 
 
 ---
