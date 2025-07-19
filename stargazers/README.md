@@ -8,16 +8,17 @@ Their support is a public signal—transparent, verifiable, and forever recorded
 
 ## 🚀 Early Stargazer Board
 
-| GitHub ID      | Featured Project(s) / Bio                                  | Proof Screenshot                                | Star Proof                                                |
-|----------------|------------------------------------------------------------|-------------------------------------------------|-----------------------------------------------------------|
-| bijection      | Creator of tesseract.js (36k★), legendary OCR/AI dev       | ![](./images/bijection_star.png)                | [Profile](https://github.com/bijection?tab=stars)         |
-| paul5007       | node-DeepResearch (4.6k★), AGI/Agent builder               | ![](./images/paul5007_star.png)                 | [Profile](https://github.com/paul5007?tab=stars)          |
-| pthom          | imgui_bundle (900+★), GUI/C++ open source advocate         | ![](./images/pthom_star.png)                    | [Profile](https://github.com/pthom?tab=stars)             |
-| davidkimai     | Context-Engineering (2.8k★), Recursive Labs founder, AGI researcher | ![](./images/davidkimai_star.png)      | [Profile](https://github.com/davidkimai?tab=stars)        |
-| sequoiar       | P2P/AI/robotics open source veteran (5k+★)                 | ![](./images/sequoiar_star.png)                 | [Profile](https://github.com/sequoiar?tab=stars)          |
-| jinweijie      | notify-me (579★), Python/Android developer                 | ![](./images/jinweijie_star.png)                | [Profile](https://github.com/jinweijie?tab=stars)         |
-| yamiodymel     | LingChat (500+★), full stack, Taiwan dev/designer          | ![](./images/yamiodymel_star.png)               | [Profile](https://github.com/YamiOdymel?tab=stars)        |
-| jakevossen5    | Apple visionOS UI Engineer, ex-Amazon, MS CS               | ![](./images/jakevossen5_star.png)              | [Profile](https://github.com/jakevossen5?tab=stars)       |
+| GitHub ID      | Featured Project(s) / Bio                                          | Proof Screenshot                                 | Star Proof                                             |
+|----------------|---------------------------------------------------------------------|--------------------------------------------------|--------------------------------------------------------|
+| bijection      | Creator of tesseract.js (36k★), legendary OCR/AI dev               | ![](./images/bijection_star.png)                 | [Star Proof](https://github.com/bijection?tab=stars)   |
+| paul5007       | node-DeepResearch (4.6k★), AGI/Agent builder                       | ![](./images/paul5007_star.png)                  | [Star Proof](https://github.com/paul5007?tab=stars)    |
+| pthom          | imgui_bundle (900+★), C++/Python GUI, open source advocate         | ![](./images/pthom_star.png)                     | [Star Proof](https://github.com/pthom?tab=stars)       |
+| davidkimai     | Context-Engineering (2.8k★), Recursive Labs, AGI/context research  | ![](./images/davidkimai_star.png)                | [Star Proof](https://github.com/davidkimai?tab=stars)  |
+| sequoiar       | node-android (628★), peer-vnc (339★), China P2P/AI/robotics builder| ![](./images/sequoiar_star.png)                  | [Star Proof](https://github.com/sequoiar?tab=stars)    |
+| jinweijie      | notify-me (579★), Python/Android developer, China                  | ![](./images/jinweijie_star.png)                 | [Star Proof](https://github.com/jinweijie?tab=stars)   |
+| yamiodymel     | tocas (590★), tunalog (414★), Taiwan full stack dev/UIUX           | ![](./images/yamiodymel_star.png)                | [Star Proof](https://github.com/YamiOdymel?tab=stars)  |
+| jakevossen5    | Apple visionOS UI Engineer, ex-Amazon/TI, compiler MS, US          | ![](./images/jakevossen5_star.png)               | [Star Proof](https://github.com/jakevossen5?tab=stars) |
+
 
 
 ---
