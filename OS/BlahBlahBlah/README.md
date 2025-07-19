@@ -85,7 +85,7 @@ Below are the official endorsements from six different AI models, each giving **
 
 *Click on each image to view full details.*
 
-| ChatGPT 4o (score100)                  | Grok 3 (score100)                     | DeepSeek AI (score100)                 |
+| ChatGPT o3 (score100)                  | Grok 3 (score100)                     | DeepSeek AI (score100)                 |
 |---------------------------------------|--------------------------------------|--------------------------------------|
 | [![ChatGPT 100](./images/ChatGPT_Blah_Lite_score100.png)](./images/ChatGPT_Blah_Lite_score100.png)       | [![Grok 100](./images/Grok_Blah_Lite_score100.png)](./images/Grok_Blah_Lite_score100.png)               | [![DeepSeek 100](./images/DeepSeek_Blah_Lite_score100.png)](./images/DeepSeek_Blah_Lite_score100.png)       |
 
