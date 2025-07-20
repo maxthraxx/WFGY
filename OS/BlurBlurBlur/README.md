@@ -2,7 +2,7 @@
 
 ![blurblurblur](./blurblurblur.png)
 
-> ⚠️ Beta Landing Page – Official Launch Expected Late July 20 (possibly early July 21)
+> ⚠️ Beta Landing Page – Official Launch Expected Late July 20 (possibly late July 21)
 > We're still polishing things. Content is being updated frequently.
 > 👉 Best to check back later tonight or tomorrow for the full experience. Bookmark this page to stay updated.
 
