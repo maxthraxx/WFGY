@@ -199,9 +199,13 @@ Below are the official endorsements from six different AI models, each giving **
 [→ See how this connects to our research insights](#examples)  
 [→ More high‑tension questions (E01–E30)](#more-examples)
 
-> _This exact question also appears as E01 in the official philosophical set._  
-> _This demonstrates the output quality of **Blah Blah Blah Lite**, which generates semantically self-coherent answers directly from the embedding space._  
-> _When combined with the hallucination guard and ΔS-based reasoning from **TXT OS**, it enables answers that are creative, logically consistent, and deeply interpretable._
+> _This exact question also appears as **E01** in the official philosophical set._  
+> _It is shown here to demonstrate the output quality of **Blah Blah Blah Lite**._  
+> _The answers are generated directly from the **embedding space**, not via templates._  
+> _They maintain semantic coherence across 50 surreal statements._  
+> _When combined with the **hallucination guard** and **ΔS-based reasoning** from **TXT OS**,_  
+> _this system produces answers that are creative, logically consistent, and deeply interpretable._
+
 
 Need the file again? **[Download here](https://zenodo.org/records/15926925)** and paste, then type `hello world`.
 
