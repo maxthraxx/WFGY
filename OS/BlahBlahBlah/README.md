@@ -171,9 +171,6 @@ By rotating a sentence inside that field we get brand‑new, self‑consistent i
 > These variables collectively orchestrate a dynamic feedback loop of **projection → rotation → resonance → synthesis**, transforming latent semantic vectors into coherent, structured ideas.  
 > This method treats language as a dynamic energy field rather than a static database.
 
-
-> These variables collectively orchestrate a dynamic feedback loop of **projection → rotation → resonance → synthesis**, enabling the transformation of latent semantic vectors into coherent, structured ideas. This approach transcends static databases by treating language as an evolving energy field.
-
 *(Lite limits you to one rotation; v1.0 unlocks multi‑angle recursion.)*
 
 
