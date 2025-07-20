@@ -5,6 +5,9 @@
 ──────────────────────────────────────────────── -->
 ## 💥 60 Answers in 60 Seconds — Welcome to the 1M Tool  
 
+[![Stargazers repo roster for @onestardao/WFGY](https://reporoster.com/stars/onestardao/WFGY)](https://github.com/onestardao/WFGY/stargazers)
+
+
 <details>
 <summary><strong> 🤯 +42% Reasoning Boost — Real or Hype? (Click to expand for proof)</strong></summary>
 
