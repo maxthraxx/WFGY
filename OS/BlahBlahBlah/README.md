@@ -107,7 +107,7 @@ Below are the official endorsements from six different AI models, each giving **
 
 ---
 
-**WFGY (WanFaGuiYi) Series:** [1. WFGY Engine](https://github.com/onestardao/WFGY) · [2. TXT OS](https://github.com/onestardao/WFGY/tree/main/OS) · [3. Blah Blah Blah](https://github.com/onestardao/WFGY/tree/main/OS/BlahBlahBlah) · [4. Blur Blur Blur](https://github.com/onestardao/WFGY/tree/main/OS/BlurBlurBlur) · [5. Blow Blow Blow](https://github.com/onestardao/WFGY/tree/main/OS/BlowBlowBlow)
+**WFGY (WanFaGuiYi) Family:** [1. WFGY Engine](https://github.com/onestardao/WFGY) · [2. TXT OS](https://github.com/onestardao/WFGY/tree/main/OS) · [3. Blah Blah Blah](https://github.com/onestardao/WFGY/tree/main/OS/BlahBlahBlah) · [4. Blur Blur Blur](https://github.com/onestardao/WFGY/tree/main/OS/BlurBlurBlur) · [5. Blow Blow Blow](https://github.com/onestardao/WFGY/tree/main/OS/BlowBlowBlow)
 
 > **WFGY is the core reasoning engine; TXT OS is the platform that powers everything.**  
 > Blah (semantic text breakthrough), Blur (AI image breakthrough), and Blow (AIGC games) are all built as TXT OS apps—  
@@ -1104,7 +1104,7 @@ All `.txt` files are fully public and always will be.
 
 ---
 
-### 🌐 Explore the Full WFGY Series
+### 🌐 Explore the Full WFGY Family
 
 - [1. WFGY Engine](https://github.com/onestardao/WFGY)  
 - [2. TXT OS](https://github.com/onestardao/WFGY/tree/main/OS)  
