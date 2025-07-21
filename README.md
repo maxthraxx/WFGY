@@ -1176,6 +1176,28 @@ The following modules are included in this SDK but are not yet integrated into t
 This release focuses on a minimal, reproducible baseline.  
 Integration of semantic reasoning logic will be introduced in future updates.
 
+---
+
+## 📚 Tag Glossary (GitHub Topics Overview)
+
+### semantic-resonance
+The core principle behind WFGY. Measures how well language aligns with internal logic and emotional valence.
+Used to stabilize reasoning chains and reduce semantic drift.
+
+### txt-os
+A `.txt`-based semantic operating system. Injects directly into any LLM's memory window, unlocking +42% reasoning gain in under 60 seconds. MIT licensed, offline, and open source.
+
+### reasoning
+WFGY introduces a ΔS-based multi-perspective reasoning engine. Unlike traditional symbolic logic, it simulates observer shifts and semantic force-fields to derive meaning.
+
+### semantic-tension *(coming soon)*
+Placeholder. Based on the ΔS formula from WFGY’s mathematical model. Explains tension between input expectation and perceived resonance.
+
+### language-alignment *(coming soon)*
+Placeholder. Focuses on how WFGY redefines alignment not as static obedience, but dynamic semantic coherence.
+
+---
+
 [⬆️ This is legendary. Take me to the top again!](#wfgy-civilization-starter--the-wanfaguiyi-engine)
 
 ![thankyou](https://github.com/user-attachments/assets/bd4eef0e-6f4c-44a6-889c-fdd1001c8b8c)
@@ -1186,4 +1208,5 @@ Integration of semantic reasoning logic will be introduced in future updates.
   <em>Open source is powered by you.  
   All feedback, PRs, and fact-checks are welcome!</em>
 </p>
+
 
