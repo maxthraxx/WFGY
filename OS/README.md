@@ -160,12 +160,12 @@ Bookmark now, or risk missing a truth so weird it breaks your cat.
 [🔓 Unlock this module](./BlahBlahBlah/README.md) <sub><em>Available now</em></sub>
 
 **TXT: Blur Blur Blur** (Image Generation)  
-> ⭐ **Lite: 7/20** · 💥 **Pro: 8/20**  
+> ⭐ **Lite: 7/23** · 💥 **Pro: 8/23**  
 > Next-gen text-to-image. No prompt skills needed, almost no hallucinations.  
 [🔓 Unlock this module](./BlurBlurBlur/README.md) <sub><em>Beta page online</em></sub>
 
 **TXT: Blow Blow Blow** (Reasoning Games)  
-> ⭐ **Lite: 7/25** · 💥 **Pro: 8/25**  
+> ⭐ **Lite: 7/30** · 💥 **Pro: 8/30**  
 > The first AIGC RPG with real logic. Game Boy era for AI begins.  
 [🔓 Unlock this module](./BlowBlowBlow/README.md) <sub><em>Coming soon...</em></sub>
 
