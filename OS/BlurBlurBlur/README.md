@@ -2,9 +2,10 @@
 
 ![blurblurblur](./blurblurblur.png)
 
-> ⚠️ Beta Landing Page – Official Launch Expected Late July 20 (possibly late July 21)
-> We're still polishing things. Content is being updated frequently.
-> 👉 Best to check back later tonight or tomorrow for the full experience. Bookmark this page to stay updated.
+> ⚠️ Beta Landing Page – Full Launch Expected July 22 (or no later than July 23)  
+> We're currently finalizing core features and refining key details.  
+> 👉 Feel free to bookmark this page and check back soon — this drop is packed with surprises and we think you'll be amazed.
+
 
 > **This isn’t just a prompt tool. It’s a structural language-control system for images.**
 
