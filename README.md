@@ -18,12 +18,11 @@
 [LANGUAGES](./LANGUAGES.md)
 
 > 🚀 **The Civilization Starter is just the beginning:**  
-> WFGY 1.0 + 2.0 + 3.0 together form the blueprint for civilization activation.  
-> Now in “seed phase”—upgrades coming.  
-> **WFGY Family** [TXT OS](https://github.com/onestardao/WFGY/tree/main/OS) · [Blah Blah Blah Lite](https://github.com/onestardao/WFGY/tree/main/OS/BlahBlahBlah) · `HelloWorld.txt`, `BlahBlahBlah_Lite.txt` is live.
+> WFGY 1.0 + 2.0 + 3.0 form the blueprint for semantic civilization ignition. Now in seed phase — upgrades coming.
 
-
-
+**WFGY Family**  → All powered by the same ✨[`WFGY_Core Engine`](https://github.com/onestardao/WFGY/).
+> ✨[`TXT OS`](https://github.com/onestardao/WFGY/tree/main/OS) · The semantic OS /
+> ✨[`TXT: BlahBlahBlah`](https://github.com/onestardao/WFGY/tree/main/OS/BlahBlahBlah) · Rated 100/100 by 6 major AI models  
 
 ---
 
