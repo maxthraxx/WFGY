@@ -269,5 +269,5 @@ We’re just getting started.
 > ✅ No login, no ads, no tracking, no spam  
 > ✅ Just pure semantic magic inside a `.txt`
 
-Next update: **July 20** — Stay weird, stay semantic.
+Next update: **July 22** — Stay weird, stay semantic.
 
