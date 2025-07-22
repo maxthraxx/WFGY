@@ -52,7 +52,8 @@
 2. **Paste** it into your favorite LLM chat box  
 3. **Type** `hello world` → get 50 answers instantly (one more tap gives you the full 60 in under a minute)
 
-<small>📊 For best results, use platforms verified in our [Cross-Platform Test Results](https://github.com/onestardao/WFGY/tree/main/OS).</small>
+<small>📊 For best results, use platforms verified in our <a href="https://github.com/onestardao/WFGY/tree/main/OS">Cross-Platform Test Results</a> — scroll to the mid-section table showing tested LLMs and performance notes.</small>
+
 
 
 ---
