@@ -2,9 +2,10 @@
 
 ![blurblurblur](./blurblurblur.png)
 
-> ⚠️ Beta Landing Page – Full Launch Expected July 22 (or no later than July 23)  
-> We're currently finalizing core features and refining key details.  
-> 👉 Feel free to bookmark this page and check back soon — this drop is packed with surprises and we think you'll be amazed.
+> ⚠️ Beta Landing Page – Launch date will be announced in Discussions.  
+> The release timing isn’t final yet — please stay tuned.  
+> In the meantime, the author is off earning some GitHub stars. 🪐✨  
+> Thanks for your patience!
 
 
 > **This isn’t just a prompt tool. It’s a structural language-control system for images.**
@@ -269,5 +270,5 @@ We’re just getting started.
 > ✅ No login, no ads, no tracking, no spam  
 > ✅ Just pure semantic magic inside a `.txt`
 
-Next update: **July 22** — Stay weird, stay semantic.
+Next update: **July ???** — Stay weird, stay semantic.
 
