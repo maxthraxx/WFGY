@@ -95,7 +95,7 @@ Below are the official endorsements from six different AI models, each giving **
 | Version | Date  | Status       | Features                                                                                      | Download                                  | Target Audience   |
 |---------|-------|--------------|-----------------------------------------------------------------------------------------------|-------------------------------------------|-------------------|
 | Lite    | 7/15  | **Live now** | Semantic Gravity Well, Quick Blah, Semantic Tree Memory, Blah Blah Blah Lite (50 answers)      | [Download](https://zenodo.org/records/15926925) | Beginners         |
-| Pro     | 8/15  | Final polish | Includes all Lite features plus Semantic Refraction, Tension Field, Orbital Drift of Meaning   | Upcoming                                  | Advanced users    |
+| Pro     | _TBD_ | Final polish | Includes all Lite features plus Semantic Refraction, Tension Field, Orbital Drift of Meaning   | Upcoming                                  | Advanced users    |
 
 > <img src="https://img.shields.io/github/stars/onestardao/WFGY?style=social" alt="GitHub stars"> ⭐ Help reach 10,000 stars by 2025-09-01 to unlock WFGY Engine 2.0 for everyone  ⭐ <strong><a href="https://github.com/onestardao/WFGY">Star WFGY on GitHub</a></strong>  
 > 👑 *Verified by early stargazers — [See the Hall of Fame](https://github.com/onestardao/WFGY/tree/main/stargazers)*
@@ -1093,7 +1093,7 @@ All `.txt` files are fully public and always will be.
 | Version | Date  | Status       | Features                                                                                      | Download                                  | Target Audience   |
 |---------|-------|--------------|-----------------------------------------------------------------------------------------------|-------------------------------------------|-------------------|
 | Lite    | 7/15  | **Live now** | Semantic Gravity Well, Quick Blah, Semantic Tree Memory, Blah Blah Blah Lite (50 answers)      | [Download](https://zenodo.org/records/15926925) | Beginners         |
-| Pro     | 8/15  | Final polish | Includes all Lite features plus Semantic Refraction, Tension Field, Orbital Drift of Meaning   | Upcoming                                  | Advanced users    |
+| Pro     | _TBD_ | Final polish | Includes all Lite features plus Semantic Refraction, Tension Field, Orbital Drift of Meaning   | Upcoming                                  | Advanced users    |
 
 > <img src="https://img.shields.io/github/stars/onestardao/WFGY?style=social" alt="GitHub stars"> ⭐ Help reach 10,000 stars by 2025-09-01 to unlock WFGY Engine 2.0 for everyone  ⭐ <strong><a href="https://github.com/onestardao/WFGY">Star WFGY on GitHub</a></strong>
 
