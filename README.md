@@ -1190,11 +1190,21 @@ A `.txt`-based semantic operating system. Injects directly into any LLM's memory
 ### reasoning
 WFGY introduces a ΔS-based multi-perspective reasoning engine. Unlike traditional symbolic logic, it simulates observer shifts and semantic force-fields to derive meaning.
 
-### semantic-tension *(coming soon)*
-Placeholder. Based on the ΔS formula from WFGY’s mathematical model. Explains tension between input expectation and perceived resonance.
+### semantic-tension  
+A core variable in the WFGY engine, ΔS (semantic tension) quantifies the "pull" between a user’s prompt and the model’s internal semantic field.  
+High ΔS implies misalignment or conceptual stretch; low ΔS means semantic stability.  
+This allows models to detect vague, contradictory, or overly compressed queries — and respond accordingly with disambiguation or reflection.
 
-### language-alignment *(coming soon)*
-Placeholder. Focuses on how WFGY redefines alignment not as static obedience, but dynamic semantic coherence.
+Used across all WFGY Family tools to guide hallucination control, multiview logic, and prompt reformulation.
+
+---
+
+### language-alignment  
+Traditional alignment asks: *“Did the model follow instructions?”*  
+WFGY reframes this as: *“Did the output resonate semantically with the prompt’s intent, tone, and logic?”*  
+This dynamic alignment checks internal coherence (ΔS), observer compatibility (λ_observe), and resonance energy (E_resonance).  
+
+It treats alignment as a living semantic contract — not just accuracy, but meaning integrity.
 
 ---
 
