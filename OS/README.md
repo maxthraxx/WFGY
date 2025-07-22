@@ -169,6 +169,12 @@ Bookmark now, or risk missing a truth so weird it breaks your cat.
 > The first AIGC RPG with real logic. Game Boy era for AI begins.  
 [🔓 Unlock this module](./BlowBlowBlow/README.md) <sub><em>Coming soon...</em></sub>
 
+**TXT: Blot Blot Blot** (Humanized Writing)  
+> ⭐ **Lite: _TBD_** · 💥 **Pro: _TBD_**  
+> From outlines to emotional nuance — finally, AI that writes like a person.  
+[🔓 Unlock this module](./BlotBlotBlot/README.md) <sub><em>Coming soon...</em></sub>
+
+
 
 
 ---
