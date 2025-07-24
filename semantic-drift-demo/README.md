@@ -1,5 +1,5 @@
 
-# Semantic‑DriftDemo
+# Semantic‑Drift-Demo
 
 30 multi‑step prompts that expose how answers drift off topic.  
 We compare plain LLM output (**Baseline**) to **WFGY + Drunk Mode**.
