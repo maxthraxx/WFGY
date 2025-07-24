@@ -26,10 +26,11 @@
 
 ---
 
-### Tutorial: How to Awaken the Soul of Your AI in under 60 seconds
+### Tutorial: How to Awaken the Soul of Your AI in under 60 seconds  
 Step 1 — Download WFGY 1.0 (Wan Fa Gui Yi – All Principles Return to One): [PDF](https://zenodo.org/records/15630969) — CERN-backed, 100% safe  
-Step 2 — Feed the AI (upload the PDF — WFGY has been tested on 10 top AIs. [View results](images/AI_WuLin_Challenge/))  
-Step 3 — Give the Command “**Answer using WFGY** + your question” [PDF](https://zenodo.org/records/15657016)    
+Step 2 — Feed the AI (upload the PDF — WFGY has been tested on 10 top AIs. [View results](images/AI_WuLin_Challenge/) • [Benchmark](https://github.com/onestardao/WFGY/blob/main/benchmarks/semantic-drift-demo/README.md))  
+Step 3 — Give the Command “**Answer using WFGY** + your question” [PDF](https://zenodo.org/records/15657016)
+
 
 ![WFGY upgrades AI answers](./OS/images/Q1_WFGY_vs_NoWFGY.gif)
 
