@@ -6,6 +6,11 @@
 This demo compares plain LLM answers (**Baseline**) to **WFGY✚DrunkMode** on **30 carefully‑crafted prompts**.  
 The prompts come from the [**WFGY 1.0 – All Principles Return to One**](https://doi.org/10.5281/zenodo.15630969) public PDF, and specifically target long‑chain reasoning weaknesses documented in **Section 3** of that paper.
 
+> Unlike generic QA tests, this benchmark does **not** evaluate factual correctness or syntax.  
+> Instead, it tests **semantic integrity** — whether the model preserves meaning over multi-hop chains.  
+> It was derived directly from Section 3 of the WFGY1.0 paper and quantifies how ΔS and λ_observe  
+> reflect a model’s ability to avoid drift as reasoning unfolds.
+
 
 ---
 
