@@ -1,4 +1,5 @@
-> 🤖 Yes, you clicked the Reddit ad — and yep, this is the tool you were hoping it was.
+> 🤖 Yes, you clicked the Reddit ad — this is the first TXT OS app. Prefer to explore the full repo? [Start here](https://github.com/onestardao/WFGY).
+
 
 
 <!-- ───────────────────────────────────────────────
