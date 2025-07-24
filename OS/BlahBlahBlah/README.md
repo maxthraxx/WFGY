@@ -1,4 +1,4 @@
-> 🤖 Yes, you clicked the Reddit ad — this is the first TXT OS app. Prefer to explore the full repo? [Start here](https://github.com/onestardao/WFGY).
+> 🤖 Yes, you clicked the Reddit ad — this page is the first TXT OS app. Want to explore the full [WFGY reasoning engine](https://github.com/onestardao/WFGY)?
 
 
 
