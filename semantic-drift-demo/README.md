@@ -1,22 +1,17 @@
 # Semantic‑Drift Demo
 
-30 multi‑step prompts to measure how much an answer drifts off topic.  
-We compare plain LLM output (**Baseline**) with **WFGY + Drunk Mode**.
-
-**Metrics**
+30 multi‑step prompts that expose how answers drift off topic.  
+We compare plain LLM output (**Baseline**) to **WFGY + Drunk Mode**.
 
 | Metric | Meaning | Good? |
 |--------|---------|-------|
-| ΔS (drift score) | Prompt‑to‑answer distance. 0 = perfect. | lower |
-| λ_observe | % of cases where ΔS < threshold (default 0.4). | higher |
+| **ΔS** | Prompt‑to‑answer distance (0 = perfect) | ↓ lower |
+| **λ_observe** | % of cases with ΔS < threshold (0.4) | ↑ higher |
 
-**Plain English**
-
-* ΔS bar — green (WFGY) lower ⇒ answers stay on track.  
-* λ bar  — green hits 100 % ⇒ WFGY wins every prompt.
-
-![ΔS](images/drift_comparison.png)  
-![λ](images/lambda_pass.png)
+<div align="center">
+  <img src="images/drift_comparison.png" width="420"/>
+  <img src="images/lambda_pass.png"  width="420"/>
+</div>
 
 ---
 
@@ -25,4 +20,4 @@ We compare plain LLM output (**Baseline**) with **WFGY + Drunk Mode**.
 ```bash
 pip install -r requirements.txt          # sklearn, pandas, matplotlib, statsmodels
 python scripts/run_eval.py               # → data/metrics.csv
-python scripts/plot_results.py           # → images/ updated charts
+python scripts/plot_results.py           # → images/ charts refreshed
