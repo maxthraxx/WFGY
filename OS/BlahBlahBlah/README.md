@@ -15,9 +15,7 @@
 > You’re currently on the **Blah Blah Blah** product page.  
 > This single tool already includes the full WFGY reasoning engine + the TXT OS framework.  
 > No extra setup. No wrong turns. You’re exactly where you need to be.
-
-<br>
-
+>
 > Wondering how WFGY achieves  
 > **Semantic Accuracy ↑ 22.4% | Reasoning Success Rate ↑ 42.1% | Stability ↑ 3.6×**?  
 > → Just tap **2️⃣** to see the data and solved benchmarks.
@@ -72,7 +70,7 @@
 > - ✅ **Structured semantic memory**  
 >   The Semantic Tree architecture enables verifiable reasoning trace and long-term recall.  
 >
-> ⚡ All modules are **model-agnostic**, require **no fine-tuning**, and integrate via pure `.txt` injection = real-world plug & play.
+>   All modules are **model-agnostic**, require **no fine-tuning**, and integrate via pure `.txt` injection = real-world plug & play.
 
 > #### ⚡ Reference  
 >
