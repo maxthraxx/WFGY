@@ -1,8 +1,68 @@
-# WFGY: Civilization Starter — The WanFaGuiYi Reasoning Engine
+# WFGY: Civilization Starter — The WanFaGuiYi Engine
 ## One upload. Zero setup. Real $1M-level reasoning begins.
 
+> 👑 **Early Stargazers: [See the Hall of Fame](https://github.com/onestardao/WFGY/tree/main/stargazers)** — Verified by real engineers.
+
+
+![CIVILIZATION_STARTTER](https://github.com/user-attachments/assets/aa9da54e-6d83-44bc-9998-bc1f449dfbcf)
+
+[![CI](https://github.com/onestardao/WFGY/actions/workflows/ci.yml/badge.svg)](https://github.com/onestardao/WFGY/actions/workflows/ci.yml)
+&nbsp;
+[![PyPI version](https://img.shields.io/pypi/v/wfgy-sdk?color=brightgreen)](https://pypi.org/project/wfgy-sdk/)
+&nbsp;
+[![Colab](https://img.shields.io/badge/Colab-Run-yellow?logo=google-colab)](https://colab.research.google.com/github/onestardao/WFGY/blob/main/README_demo.ipynb)
+&nbsp;
+[![HF Space](https://img.shields.io/badge/Live%20Demo-HuggingFace-blue?logo=huggingface)](https://huggingface.co/spaces/OneStarDao/wfgy-demo)
+&nbsp;
+[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.15630970-blue)](https://doi.org/10.5281/zenodo.15630969)
+&nbsp;
+[LANGUAGES](./LANGUAGES.md)
+
 <details>
-<summary> 🤖 What AI problems does WFGY solve?</summary>
+<summary><strong>🌍 The WFGY Family — The Civilization Starter Project (Click to expand)</strong></summary>
+
+<br>
+
+> The WFGY Family is part of a bigger mission:  
+> ignite a new civilization layer — one built on semantic reasoning.  
+> Every module below runs on the same symbolic engine, designed for language-first control.
+
+---
+
+### 🌍 Core Engine
+
+- [`WFGY_Core Engine`](https://github.com/onestardao/WFGY) · The semantic backbone for all modules  
+- [`TXT OS`](https://github.com/onestardao/WFGY/tree/main/OS) · The lightweight OS layer — `.txt` powered, LLM-native
+
+---
+
+### 🌍 Current Modules
+
+- [`TXT: Blah Blah Blah`](https://github.com/onestardao/WFGY/tree/main/OS/BlahBlahBlah) — Semantic Q&A  
+  > For paradoxes, philosophy, and abstract prompts — pure reasoning, zero hallucination.
+
+- [`TXT: Blur Blur Blur`](https://github.com/onestardao/WFGY/tree/main/OS/BlurBlurBlur) — Image Generation  
+  > No prompt tricks. Visual order within chaos. Hallucination-free realism.
+
+- [`TXT: Blow Blow Blow`](https://github.com/onestardao/WFGY/tree/main/OS/BlowBlowBlow) — Reasoning Games  
+  > AIGC-native RPGs. Memory-aware logic. Game interaction rewires narrative paths.
+
+- [`TXT: Blot Blot Blot`](https://github.com/onestardao/WFGY/tree/main/OS/BlotBlotBlot) — Humanized Writing  
+  > Emotional drift, sentence-level nuance, and AI detection evasion.
+
+- [`TXT: Bloc Bloc Bloc`](https://github.com/onestardao/WFGY/tree/main/OS/BlocBlocBloc) — Prompt Injection Firewall  
+  > Semantic firewall with ΔS stability, hallucination confusion, and λ_observe gating.
+
+---
+
+> All modules run natively as `.txt` apps — no install, no dependencies.  
+> This is not just tooling. It’s the architecture of a new semantic layer.
+
+<br>
+</details>
+
+<details>
+<summary> 🤖 What AI problems does WFGY Family solve?</summary>
 
 <br>
 
@@ -24,33 +84,6 @@ WFGY Reasoning Engine is designed to address **critical AI reasoning and alignme
 > **In short:** WFGY is not just prompt optimization — it’s a **semantic physics engine** for reasoning, alignment, and creative logic at scale.
 
 </details>
-
-
-> 👑 **Early Stargazers: [See the Hall of Fame](https://github.com/onestardao/WFGY/tree/main/stargazers)** — Verified by real engineers.
-
-
-![CIVILIZATION_STARTTER](https://github.com/user-attachments/assets/aa9da54e-6d83-44bc-9998-bc1f449dfbcf)
-
-[![CI](https://github.com/onestardao/WFGY/actions/workflows/ci.yml/badge.svg)](https://github.com/onestardao/WFGY/actions/workflows/ci.yml)
-&nbsp;
-[![PyPI version](https://img.shields.io/pypi/v/wfgy-sdk?color=brightgreen)](https://pypi.org/project/wfgy-sdk/)
-&nbsp;
-[![Colab](https://img.shields.io/badge/Colab-Run-yellow?logo=google-colab)](https://colab.research.google.com/github/onestardao/WFGY/blob/main/README_demo.ipynb)
-&nbsp;
-[![HF Space](https://img.shields.io/badge/Live%20Demo-HuggingFace-blue?logo=huggingface)](https://huggingface.co/spaces/OneStarDao/wfgy-demo)
-&nbsp;
-[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.15630970-blue)](https://doi.org/10.5281/zenodo.15630969)
-&nbsp;
-[LANGUAGES](./LANGUAGES.md)
-
-> 🚀 **The Civilization Starter is just the beginning:**  
-> WFGY 1.0 + 2.0 + 3.0 form the blueprint for semantic civilization ignition. Now in seed phase — upgrades coming.
->
-
-**WFGY Family**  → All powered by the same ✨[`WFGY_Core Engine`](https://github.com/onestardao/WFGY/).
-> ✨[`TXT OS`](https://github.com/onestardao/WFGY/tree/main/OS) · The semantic OS /
-> ✨[`TXT: BlahBlahBlah`](https://github.com/onestardao/WFGY/tree/main/OS/BlahBlahBlah) · Rated 100/100 by 6 major AI models  
-
 
 ---
 
