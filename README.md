@@ -1,7 +1,28 @@
 # WFGY: Civilization Starter — The WanFaGuiYi Engine
 ## One upload. Zero setup. Real $1M-level reasoning begins.
 
+
+
+<details>
+
+<summary>🤖 What AI problems does WFGY solve?</summary>
+
+<br>
+
+WFGY is designed to tackle the deepest pain points across modern LLM pipelines:
+
+- ✅ RAG hallucination and context drift  
+- ✅ Long-term reasoning across unstructured documents  
+- ✅ Semantic alignment under chaotic input or agent loops  
+- ✅ Stabilization of multi-agent memory and inference  
+- ✅ Symbolic task solving without pre-defined templates  
+- ✅ Zero-shot understanding of abstract or philosophical prompts  
+
+
+</details>
+
 > 👑 **Early Stargazers: [See the Hall of Fame](https://github.com/onestardao/WFGY/tree/main/stargazers)** — Verified by real engineers.
+
 
 ![CIVILIZATION_STARTTER](https://github.com/user-attachments/assets/aa9da54e-6d83-44bc-9998-bc1f449dfbcf)
 
@@ -19,10 +40,12 @@
 
 > 🚀 **The Civilization Starter is just the beginning:**  
 > WFGY 1.0 + 2.0 + 3.0 form the blueprint for semantic civilization ignition. Now in seed phase — upgrades coming.
+>
 
 **WFGY Family**  → All powered by the same ✨[`WFGY_Core Engine`](https://github.com/onestardao/WFGY/).
 > ✨[`TXT OS`](https://github.com/onestardao/WFGY/tree/main/OS) · The semantic OS /
 > ✨[`TXT: BlahBlahBlah`](https://github.com/onestardao/WFGY/tree/main/OS/BlahBlahBlah) · Rated 100/100 by 6 major AI models  
+
 
 ---
 
