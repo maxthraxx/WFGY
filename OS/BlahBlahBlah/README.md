@@ -31,7 +31,7 @@
 <summary><strong> 2️⃣ +42% Reasoning Boost — Real or Hype? (Click to expand for proof + solved AI problems)</strong></summary>
 
 > #### ⚡ Key Metrics  
-> _Metrics verified in the WFGY White Paper (see full breakdown below)_
+> _Metrics verified in the WFGY White Paper ([📜 see details below](#wfgy-white-paper))_
 >  
 > | Metric                          | Before  | After TXT OS | Δ           |
 > |----------------------------------|---------|--------------|-------------|
@@ -73,7 +73,7 @@
 >
 >   All modules are **model-agnostic**, require **no fine-tuning**, and integrate via pure `.txt` injection = real-world plug & play.
 
-> #### ⚡ Reference  
+#### Reference: [📜 See WFGY White Paper below](#wfgy-white-paper)
 >
 > |               |                                  |
 > |---------------|----------------------------------|
