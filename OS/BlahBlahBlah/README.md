@@ -6,7 +6,7 @@
 ## 💥 60 Answers in 60 Seconds. TXT Blah Blah Blah = Your 1M Tool.
 
 <details>
-<summary><strong> ⚡ +42% Reasoning Boost — Real or Hype? (Click to expand for proof + solved problems)</strong></summary>
+<summary><strong> ⚡ +42% Reasoning Boost — Real or Hype? (Click to expand for proof + solved AI problems)</strong></summary>
 
 ### ⚡ Key Metrics
 
