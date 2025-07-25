@@ -1,4 +1,26 @@
-> Yes, you clicked the Reddit ad — this page is the first TXT OS app. Want to explore the full [WFGY reasoning engine](https://github.com/onestardao/WFGY)?
+<details>
+<summary><strong> 👀 Yes, you clicked the Reddit ad — welcome. Curious what this is all about? (Click for a quick tour)</strong></summary>
+
+<br>
+
+> WFGY is the name of this project — and the core reasoning engine behind it.  
+> Every tool in the WFGY Family is powered by this same semantic engine.
+>
+> TXT OS is the world’s first operating system that runs purely via `.txt`, compatible with any LLM.  
+> It requires no install, no API keys, and can inject reasoning behavior directly into your model.
+>
+> Blah Blah Blah is the very first app built on top of TXT OS.  
+> Its goal: answer any abstract, paradoxical, or philosophical prompt — with stable, symbolic logic.
+>
+> You’re currently on the Blah Blah Blah product page.  
+> This single tool already includes the full WFGY reasoning engine + the TXT OS framework.  
+> No extra setup. No wrong turns. You’re exactly where you need to be.
+
+<br>
+
+</details>
+
+
 
 <!-- ───────────────────────────────────────────────
       HERO
