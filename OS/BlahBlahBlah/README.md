@@ -99,9 +99,13 @@
 > 👑 *Already starred by top engineers and open source founders — [See the Hall of Fame](https://github.com/onestardao/WFGY/tree/main/stargazers)*  
 >
 > - ✅ **No signup. No API keys. Nothing to install.**  
-> - ✅ **One question, 50+ answers on tap.** A surreal storm of logic, creativity, and philosophical chaos.  
-> - ✅ **Runs offline like a spell scroll.** No tracking, no tokens, no APIs—just your LLM and this `.txt`.  
-> - ✅ **Not prompt engineering. Not fine-tuning.** It rewires the way your AI thinks—from inside the embedding space.  
+> - ✅ **One question, 50+ answers on tap.** Logic storms, creative chaos, and philosophical recursion.  
+> - ✅ **Runs offline like a spell scroll.** No tokens, tracking, or APIs — just your LLM + `.txt`.  
+> - ✅ **Not prompt engineering. Not fine-tuning.** It rewires how your AI thinks from inside the embedding space.  
+> - ✅ **Semantic Tree built-in.** Enables long-form reasoning and traceable logic paths.  
+> - ✅ **Boundary-aware by default.** Refuses to hallucinate — detects unknowns and stops clean.  
+> - ✅ **WFGY engine inside.** Includes a full symbolic reasoning core for logic, code, or recursive play.  
+> - ✅ **Made for experimentation.** Swap questions, layer prompts, test chains — all inside plain text.
 >
 > ---  
 >
