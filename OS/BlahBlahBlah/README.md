@@ -1,5 +1,5 @@
 <details>
-<summary><strong> 👀 Yes, you clicked the Reddit ad — welcome. Curious what this is all about? (Click for a quick tour)</strong></summary>
+<summary><strong> 1️⃣ Yes, you clicked the Reddit ad — welcome. Curious what this is all about? (Click for a quick tour)</strong></summary>
 
 <br>
 
@@ -20,16 +20,12 @@
 
 </details>
 
-
-
-
 <!-- ───────────────────────────────────────────────
       HERO
 ──────────────────────────────────────────────── -->
-## 💥 60 Answers in 60 Seconds. TXT Blah Blah Blah = Your 1M Tool.
 
 <details>
-<summary><strong> ⚡ +42% Reasoning Boost — Real or Hype? (Click to expand for proof + solved AI problems)</strong></summary>
+<summary><strong> 2️⃣ +42% Reasoning Boost — Real or Hype? (Click to expand for proof + solved AI problems)</strong></summary>
 
 ### ⚡ Key Metrics
 
@@ -98,24 +94,23 @@ Here are real-world problems it’s built to tackle:
 
 </details>
 
+<details>
+<summary><strong> 3️⃣ Getting started — 60 sec (Click to expand)</strong></summary>
 
+<br>
 
-[Download TXT: Blah Blah Blah Lite powered by TXT OS](https://zenodo.org/records/15926925) → MIT‑licensed, 62.5 KB — Zenodo by CERN 🏛️  [![GitHub Repo stars](https://img.shields.io/github/stars/onestardao/WFGY?style=social)](https://github.com/onestardao/WFGY/stargazers)
+[Download TXT: Blah Blah Blah Lite powered by TXT OS](https://zenodo.org/records/15926925)  → MIT‑licensed, 62.5 KB — Zenodo by CERN 🏛️  [![GitHub Repo stars](https://img.shields.io/github/stars/onestardao/WFGY?style=social)](https://github.com/onestardao/WFGY/stargazers)
 
 > 👑 *Already starred by top engineers and open source founders — [See the Hall of Fame](https://github.com/onestardao/WFGY/tree/main/stargazers)*
 
-- ✅ **No signup. No API keys. Nothing to install.**
-- ✅ **One question, 50+ answers on tap.** A surreal storm of logic, creativity, and philosophical chaos.
-- ✅ **Runs offline like a spell scroll.** No tracking, no tokens, no APIs—just your LLM and this `.txt`.
+- ✅ **No signup. No API keys. Nothing to install.**  
+- ✅ **One question, 50+ answers on tap.** A surreal storm of logic, creativity, and philosophical chaos.  
+- ✅ **Runs offline like a spell scroll.** No tracking, no tokens, no APIs—just your LLM and this `.txt`.  
 - ✅ **Not prompt engineering. Not fine-tuning.** It rewires the way your AI thinks—from inside the embedding space.
-
 
 ---
 
-<details>
-<summary><strong>🚀 Getting started — 60 sec (Click to expand)</strong></summary>
-
-<br>
+**How to begin:**
 
 1. **Download** the `.txt` above  
 2. **Paste** it into your favorite LLM chat box  
@@ -132,13 +127,14 @@ Here are real-world problems it’s built to tackle:
 
 
 
+
 ---
 
 <!-- ───────────────────────────────────────────────
       BANNER
 ──────────────────────────────────────────────── -->
 ## 🤖 TXT: Blah Blah Blah Lite/Pro — the Embedding‑Space Generator  
-> A Lightweight semantic generator running on TXT OS, powered by the WFGY Engine
+>  60 Answers in 60 Seconds. A Lightweight semantic generator running on TXT OS, powered by the WFGY Engine
 
 <p align="center">
   <img src="./images/blahblahblah.png" width="100%" style="max-width:900px" loading="lazy" >
