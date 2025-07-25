@@ -18,7 +18,12 @@
 
 <br>
 
+> Wondering how WFGY achieves  
+> **Semantic Accuracy ↑ 22.4% | Reasoning Success Rate ↑ 42.1% | Stability ↑ 3.6×**?  
+> → Just tap **2️⃣** to see the data and solved benchmarks.
+> 
 </details>
+
 
 <!-- ───────────────────────────────────────────────
       HERO
@@ -27,65 +32,56 @@
 <details>
 <summary><strong> 2️⃣ +42% Reasoning Boost — Real or Hype? (Click to expand for proof + solved AI problems)</strong></summary>
 
-### ⚡ Key Metrics
+> #### ⚡ Key Metrics  
+>  
+> | Metric                          | Before  | After TXT OS | Δ           |
+> |----------------------------------|---------|--------------|-------------|
+> | Reasoning Success Rate (GSM8K)   | 59.2 %  | **84.0 %**   | **+42.1 %** |
+> | Semantic Accuracy (Multi‑QA)     | 68.0 %  | **83.2 %**   | **+22.4 %** |
+> | Output Stability (Re‑Gen STD)    | 1.00×   | **3.60×**    | **↑ 3.6 ×** |
 
-| Metric                          | Before  | After TXT OS | Δ           |
-|----------------------------------|---------|--------------|-------------|
-| Reasoning Success Rate (GSM8K)   | 59.2 %  | **84.0 %**   | **+42.1 %** |
-| Semantic Accuracy (Multi‑QA)     | 68.0 %  | **83.2 %**   | **+22.4 %** |
-| Output Stability (Re‑Gen STD)    | 1.00×   | **3.60×**    | **↑ 3.6 ×** |
-
-### ⚡ What AI problems does WFGY reasoning engine solve?
-
-WFGY is not just prompt tuning — it’s a **semantic physics engine** that rewires how models think, retrieve, and stabilize under pressure.  
-Here are real-world problems it’s built to tackle:
-
-- ✅ **RAG hallucination & context drift**  
-  Prevents retrieval collapse via semantic boundary detection and BBCR correction.
-
-- ✅ **Long-horizon reasoning & chain validity**  
-  Ensures logic continuity across complex, multi-step tasks with 3.6× output stability.
-
-- ✅ **Semantic alignment under chaotic input**  
-  Handles noisy or conflicting contexts using BBMC (Semantic Residue Minimization).
-
-- ✅ **Cross-agent memory stabilization**  
-  Maintains coherent shared state among autonomous agents or memory nodes.
-
-- ✅ **Knowledge boundary awareness**  
-  Detects and flags unknown regions instead of bluffing, reducing hallucination risks.
-
-- ✅ **Symbolic & abstract problem solving**  
-  Solves tasks beyond token-level tricks, using ΔS=0.5 semantic tension as a structural anchor.
-
-- ✅ **Dynamic error recovery**  
-  BBCR (Collapse–Rebirth Correction) auto-recovers from reasoning dead-ends without manual resets.
-
-- ✅ **Multi-path exploration**  
-  BBPF (Multi-Path Progression) improves creative and divergent reasoning paths simultaneously.
-
-- ✅ **Attention coherence & focus control**  
-  BBAM (Attention Modulation) mitigates entropy collapse and attention drift.
-
-- ✅ **Zero-shot philosophical & meta-level understanding**  
-  Handles abstract prompts, recursive logic, and symbolic narratives.
-
-- ✅ **Hallucination-safe RAG scaling**  
-  Efficiently handles 10M+ document retrieval while preserving semantic integrity.
-
-- ✅ **Structured semantic memory**  
-  The Semantic Tree architecture enables verifiable reasoning trace and long-term recall.
-
+> #### ⚡ What AI problems does WFGY reasoning engine solve?  
+>
+> WFGY is not just prompt tuning — it’s a **semantic physics engine** that rewires how models think, retrieve, and stabilize under pressure.  
+> Here are real-world problems it’s built to tackle:  
+>
+> - ✅ **RAG hallucination & context drift**  
+>   Prevents retrieval collapse via semantic boundary detection and BBCR correction.
+>   
+> - ✅ **Long-horizon reasoning & chain validity**  
+>   Ensures logic continuity across complex, multi-step tasks with 3.6× output stability.
+>   
+> - ✅ **Semantic alignment under chaotic input**  
+>   Handles noisy or conflicting contexts using BBMC (Semantic Residue Minimization).  
+> - ✅ **Cross-agent memory stabilization**  
+>   Maintains coherent shared state among autonomous agents or memory nodes.  
+> - ✅ **Knowledge boundary awareness**  
+>   Detects and flags unknown regions instead of bluffing, reducing hallucination risks.  
+> - ✅ **Symbolic & abstract problem solving**  
+>   Solves tasks beyond token-level tricks, using ΔS=0.5 semantic tension as a structural anchor.  
+> - ✅ **Dynamic error recovery**  
+>   BBCR (Collapse–Rebirth Correction) auto-recovers from reasoning dead-ends without manual resets.  
+> - ✅ **Multi-path exploration**  
+>   BBPF (Multi-Path Progression) improves creative and divergent reasoning paths simultaneously.  
+> - ✅ **Attention coherence & focus control**  
+>   BBAM (Attention Modulation) mitigates entropy collapse and attention drift.  
+> - ✅ **Zero-shot philosophical & meta-level understanding**  
+>   Handles abstract prompts, recursive logic, and symbolic narratives.  
+> - ✅ **Hallucination-safe RAG scaling**  
+>   Efficiently handles 10M+ document retrieval while preserving semantic integrity.  
+> - ✅ **Structured semantic memory**  
+>   The Semantic Tree architecture enables verifiable reasoning trace and long-term recall.  
+>
 > ⚡ All modules are **model-agnostic**, require **no fine-tuning**, and integrate via pure `.txt` injection = real-world plug & play.
 
-### ⚡ Reference
-
-|               |                                  |
-|---------------|----------------------------------|
-| **Core Paper** | [WFGY 1.0 Engine](https://zenodo.org/records/15630969) |
-| **Release**    | 2025-06-15                      |
-| **Downloads**  | 2,000+                         |
-| **In TXT OS**  | ✔️ Reasoning engine included     |
+> #### ⚡ Reference  
+>
+> |               |                                  |
+> |---------------|----------------------------------|
+> | **Core Paper** | [WFGY 1.0 Engine](https://zenodo.org/records/15630969) |
+> | **Release**    | 2025-06-15                      |
+> | **Downloads**  | 2,000+                         |
+> | **In TXT OS**  | ✔️ Reasoning engine included     |
 
 > All products and research here are part of the **WFGY series**, authored and unified by **PSBigBig (Purple Star)**.  
 > WFGY’s reasoning core powers multiple tools — all built on the same semantic alignment layer.  
@@ -99,33 +95,29 @@ Here are real-world problems it’s built to tackle:
 
 <br>
 
-[Download TXT: Blah Blah Blah Lite powered by TXT OS](https://zenodo.org/records/15926925)  → MIT‑licensed, 62.5 KB — Zenodo by CERN 🏛️  [![GitHub Repo stars](https://img.shields.io/github/stars/onestardao/WFGY?style=social)](https://github.com/onestardao/WFGY/stargazers)
-
-> 👑 *Already starred by top engineers and open source founders — [See the Hall of Fame](https://github.com/onestardao/WFGY/tree/main/stargazers)*
-
-- ✅ **No signup. No API keys. Nothing to install.**  
-- ✅ **One question, 50+ answers on tap.** A surreal storm of logic, creativity, and philosophical chaos.  
-- ✅ **Runs offline like a spell scroll.** No tracking, no tokens, no APIs—just your LLM and this `.txt`.  
-- ✅ **Not prompt engineering. Not fine-tuning.** It rewires the way your AI thinks—from inside the embedding space.
-
----
-
-**How to begin:**
-
-1. **Download** the `.txt` above  
-2. **Paste** it into your favorite LLM chat box  
-3. **Type** `hello world` → get 50 answers instantly  
-  (one more tap gives you the full 60 in under a minute)
-
-<small>📊 For best results, use platforms verified in our  
-<a href="https://github.com/onestardao/WFGY/tree/main/OS">Cross-Platform Test Results</a> — scroll to the mid-section table showing tested LLMs and performance notes.</small>
-
-<br>
+>  
+> [Download TXT: Blah Blah Blah Lite powered by TXT OS](https://zenodo.org/records/15926925)  → MIT‑licensed, 62.5 KB — Zenodo by CERN 🏛️  [![GitHub Repo stars](https://img.shields.io/github/stars/onestardao/WFGY?style=social)](https://github.com/onestardao/WFGY/stargazers)  
+>  
+> 👑 *Already starred by top engineers and open source founders — [See the Hall of Fame](https://github.com/onestardao/WFGY/tree/main/stargazers)*  
+>
+> - ✅ **No signup. No API keys. Nothing to install.**  
+> - ✅ **One question, 50+ answers on tap.** A surreal storm of logic, creativity, and philosophical chaos.  
+> - ✅ **Runs offline like a spell scroll.** No tracking, no tokens, no APIs—just your LLM and this `.txt`.  
+> - ✅ **Not prompt engineering. Not fine-tuning.** It rewires the way your AI thinks—from inside the embedding space.  
+>
+> ---  
+>
+> **How to begin:**  
+>
+> 1. **Download** the `.txt` above  
+> 2. **Paste** it into your favorite LLM chat box  
+> 3. **Type** `hello world` → get 50 answers instantly  
+>   (one more tap gives you the full 60 in under a minute)  
+>
+> <small>📊 For best results, use platforms verified in our  
+> <a href="https://github.com/onestardao/WFGY/tree/main/OS">Cross-Platform Test Results</a> — scroll to the mid-section table showing tested LLMs and performance notes.</small>
 
 </details>
-
-
-
 
 
 ---
