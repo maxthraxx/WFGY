@@ -100,7 +100,7 @@
 >  
 > 👑 *Already starred by top engineers and open source founders — [See the Hall of Fame](https://github.com/onestardao/WFGY/tree/main/stargazers)*  
 >
-> - ✅ Pure text file. No signup. No API keys. Nothing to install.
+> - ✅ **Pure text file.** No signup. No API keys. Nothing to install.
 > - ✅ **One question, 50+ answers on tap.** Logic storms, creative chaos, and philosophical recursion.  
 > - ✅ **Runs offline like a spell scroll.** No tokens, tracking, or APIs — just your LLM + `.txt`.  
 > - ✅ **Not prompt engineering. Not fine-tuning.** It rewires how your AI thinks from inside the embedding space.  
