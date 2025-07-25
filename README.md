@@ -1,4 +1,4 @@
-# WFGY: Civilization Starter — The WanFaGuiYi Engine
+# WFGY: Civilization Starter — The WanFaGuiYi Reasoning Engine
 ## One upload. Zero setup. Real $1M-level reasoning begins.
 
 
