@@ -31,6 +31,7 @@
 <summary><strong> 2️⃣ +42% Reasoning Boost — Real or Hype? (Click to expand for proof + solved AI problems)</strong></summary>
 
 > #### ⚡ Key Metrics  
+> _Metrics verified in the WFGY White Paper (see full breakdown below)_
 >  
 > | Metric                          | Before  | After TXT OS | Δ           |
 > |----------------------------------|---------|--------------|-------------|
