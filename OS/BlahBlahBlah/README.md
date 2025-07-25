@@ -111,15 +111,18 @@
 >
 > ---  
 >
-> **How to begin:**  
->
-> 1. **Download** the `.txt` above  
-> 2. **Paste** it into your favorite LLM chat box  
-> 3. **Type** `hello world` → get 50 answers instantly  
->   (one more tap gives you the full 60 in under a minute)  
->
+**How to begin:**  
+
+1. **Download** the `.txt` above  
+2. **Paste** it into your favorite LLM chat box  
+3. **Type** `hello world` → get 50 answers instantly  (one more tap gives you the full 60 in under a minute)  
+
 > _Note: You can also just type `Blah` to jump directly into Blah mode (default language is English).  
 > For first-time users, we recommend starting with `hello world` to observe the full semantic range._
+>
+> _Or — take your own path. Ask your LLM directly:  
+> “What is this .txt file trying to do?” or “Can you reason through this using the WFGY engine?”  
+> There’s no fixed route — the system is open to reinterpretation, repurposing, and even reverse-engineering._
 >
 > <small>📊 For best results, use platforms verified in our  
 > <a href="https://github.com/onestardao/WFGY/tree/main/OS">Cross-Platform Test Results</a> — scroll to the mid-section table showing tested LLMs and performance notes.</small>
