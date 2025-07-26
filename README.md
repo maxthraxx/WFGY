@@ -3,8 +3,7 @@
 
 > 👑 **Early Stargazers: [See the Hall of Fame](https://github.com/onestardao/WFGY/tree/main/stargazers)** — Verified by real engineers.
 
-
-![CIVILIZATION_STARTTER](https://github.com/user-attachments/assets/aa9da54e-6d83-44bc-9998-bc1f449dfbcf)
+![CIVILIZATION_STARTTER](https://github.com/user-attachments/assets/89d25fee-f6e5-46e8-8911-a73fe4753ccd)
 
 [![CI](https://github.com/onestardao/WFGY/actions/workflows/ci.yml/badge.svg)](https://github.com/onestardao/WFGY/actions/workflows/ci.yml)
 &nbsp;
