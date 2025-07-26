@@ -1,6 +1,6 @@
 ## 🧠 Blur Blur Blur — A Language-Controlled Visual Generation System (Beta)
 
-![blurblurblur](./blurblurblur.png)
+![blurblurblur](./images/Blur_Hero.png)
 
 > ⚠️ Beta Landing Page – Launch date will be announced in Discussions.  
 > The release timing isn’t final yet — please stay tuned.  
