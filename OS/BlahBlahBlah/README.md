@@ -139,7 +139,7 @@
 >  60 Answers in 60 Seconds. A Lightweight semantic generator running on TXT OS, powered by the WFGY Engine
 
 <p align="center">
-  <img src="./images/blahblahblah.png" width="100%" style="max-width:900px" loading="lazy" >
+  <img src="./images/Blah_Hero.png" width="100%" style="max-width:900px" loading="lazy" >
 </p>
 
 <p align="center">
