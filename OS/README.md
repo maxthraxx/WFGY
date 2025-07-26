@@ -7,7 +7,7 @@
 > Engineers, hackers, and open source builders who supported TXT OS from day one.
 
 
-<img src="./images/txt-temple-of-truth.png" alt="txt-temple-of-truth" width="100%" style="max-width:900px" />
+<img src="./images/TXTOS_Hero.png" alt="txt-temple-of-truth" width="100%" style="max-width:900px" />
 
 > **TXT OS is powered by the WFGY Reasoning Engine — part of a larger open-source series.**  
 > Released on **July 12**, you’re among the **first wave** to ever try this.  
