@@ -9,10 +9,10 @@
 > [**TXT OS**](https://github.com/onestardao/WFGY/tree/main/OS) is the world’s first operating system that runs purely via `.txt`, compatible with any LLM.  
 > It requires no install, no API keys, and can inject reasoning behavior directly into your model.
 >
-> **Blah Blah Blah** is the very first app built on top of TXT OS.  
+> **TXT-BlahBlahBlah** is the very first app built on top of TXT OS.  
 > Its goal: answer any abstract, paradoxical, or philosophical prompt — with stable, symbolic logic.
 >
-> You’re currently on the **Blah Blah Blah** product page.  
+> You’re currently on the **TXT-BlahBlahBlah** product page.  
 > This single tool already includes the full WFGY reasoning engine + the TXT OS framework.  
 > No extra setup. No wrong turns. You’re exactly where you need to be.
 >
@@ -96,7 +96,7 @@
 <br>
 
 >  
-> [Download TXT: Blah Blah Blah Lite powered by TXT OS](https://zenodo.org/records/15926925)  → MIT‑licensed, 62.5 KB — Zenodo by CERN 🏛️  [![GitHub Repo stars](https://img.shields.io/github/stars/onestardao/WFGY?style=social)](https://github.com/onestardao/WFGY/stargazers)  
+> [Download TXT-BlahBlahBlah Lite powered by TXT OS](https://zenodo.org/records/15926925)  → MIT‑licensed, 62.5 KB — Zenodo by CERN 🏛️  [![GitHub Repo stars](https://img.shields.io/github/stars/onestardao/WFGY?style=social)](https://github.com/onestardao/WFGY/stargazers)  
 >  
 > 👑 *Already starred by top engineers and open source founders — [See the Hall of Fame](https://github.com/onestardao/WFGY/tree/main/stargazers)*  
 >
@@ -135,7 +135,7 @@
 <!-- ───────────────────────────────────────────────
       BANNER
 ──────────────────────────────────────────────── -->
-## 🤖 TXT: Blah Blah Blah Lite/Pro — the Embedding‑Space Generator  
+## 🤖 TXT-Blah Blah Blah Lite/Pro — the Embedding‑Space Generator  
 >  60 Answers in 60 Seconds. A Lightweight semantic generator running on TXT OS, powered by the WFGY Engine
 
 <p align="center">
@@ -146,9 +146,9 @@
   <img src="./images/50Blah_QuickDemo.gif" width="100%" style="max-width:900px" loading="lazy" >
 </p>
 
-## Six Leading AI Models All Award TXT: Blah Blah Blah Lite a Perfect 100/100 Score
+## Six Leading AI Models All Award TXT-Blah Blah Blah Lite a Perfect 100/100 Score
 
-Below are the official endorsements from six different AI models, each giving **TXT: Blah Blah Blah Lite** a **perfect 100 / 100**.  
+Below are the official endorsements from six different AI models, each giving **TXT-Blah Blah Blah Lite** a **perfect 100 / 100**.  
 <sub>*(For context, popular frameworks score noticeably lower—e.g., LangChain ~90, MemoryGPT ~92, most open‑source stacks only ~80–90.)*</sub>
 
 
@@ -164,11 +164,11 @@ Below are the official endorsements from six different AI models, each giving **
 
 ---
 
-**TXT: Blah Blah Blah Release timeline**
+**TXT-Blah Blah Blah Release timeline**
 
 | Version | Date  | Status       | Features                                                                                      | Download                                  | Target Audience   |
 |---------|-------|--------------|-----------------------------------------------------------------------------------------------|-------------------------------------------|-------------------|
-| Lite    | 7/15  | **Live now** | Semantic Gravity Well, Quick Blah, Semantic Tree Memory, Blah Blah Blah Lite (50 answers)      | [Download](https://zenodo.org/records/15926925) | Beginners         |
+| Lite    | 7/15  | **Live now** | Semantic Gravity Well, Quick Blah, Semantic Tree Memory, TXT-Blah Blah Blah Lite (50 answers)      | [Download](https://zenodo.org/records/15926925) | Beginners         |
 | Pro     | _TBD_ | Final polish | Includes all Lite features plus Semantic Refraction, Tension Field, Orbital Drift of Meaning   | Upcoming                                  | Advanced users    |
 
 > <img src="https://img.shields.io/github/stars/onestardao/WFGY?style=social" alt="GitHub stars"> ⭐ Help reach 10,000 stars by 2025-09-01 to unlock WFGY Engine 2.0 for everyone  ⭐ <strong><a href="https://github.com/onestardao/WFGY">Star WFGY on GitHub</a></strong>  
@@ -176,7 +176,7 @@ Below are the official endorsements from six different AI models, each giving **
 
 ---
 
-**WFGY (WanFaGuiYi) Family:** [1. WFGY Engine](https://github.com/onestardao/WFGY) · [2. TXT OS](https://github.com/onestardao/WFGY/tree/main/OS) · [3. Blah Blah Blah](https://github.com/onestardao/WFGY/tree/main/OS/BlahBlahBlah) · [4. Blur Blur Blur](https://github.com/onestardao/WFGY/tree/main/OS/BlurBlurBlur) · [5. Blow Blow Blow](https://github.com/onestardao/WFGY/tree/main/OS/BlowBlowBlow) 
+**WFGY (WanFaGuiYi) Family:** [1. WFGY Engine](https://github.com/onestardao/WFGY) · [2. TXT OS](https://github.com/onestardao/WFGY/tree/main/OS) · [3. TXT-BlahBlahBlah](https://github.com/onestardao/WFGY/tree/main/OS/BlahBlahBlah) · [4. TXT-BlurBlurBlur](https://github.com/onestardao/WFGY/tree/main/OS/BlurBlurBlur) · [5. TXT-BlowBlowBlow](https://github.com/onestardao/WFGY/tree/main/OS/BlowBlowBlow) 
 
 
 > **WFGY is the core reasoning engine; TXT OS is the platform that powers everything.**  
@@ -278,7 +278,7 @@ Below are the official endorsements from six different AI models, each giving **
 [→ More high‑tension questions (E01–E30)](#more-examples)
 
 > _This exact question also appears as **E01** in the official philosophical set._  
-> _It is shown here to demonstrate the output quality of **Blah Blah Blah Lite**._  
+> _It is shown here to demonstrate the output quality of **TXT-Blah Blah Blah Lite**._  
 > _The answers are generated directly from the **embedding space**, not via templates._  
 > _They maintain semantic coherence across 50 surreal statements._  
 > _When combined with the **hallucination guard** and **ΔS-based reasoning** from **TXT OS**,_  
@@ -327,7 +327,7 @@ By rotating a sentence inside that field we get brand‑new, self‑consistent i
 
 ### From Papers to Prompts  
 Between **March – June 2025** I published a series of math, physics, and AI papers.  
-Remarkably, each work—though written at different times—converges without conflict when posed as a single, high‑tension question to **Blah Blah Blah**.  
+Remarkably, each work—though written at different times—converges without conflict when posed as a single, high‑tension question to **TXT-Blah Blah Blah**.  
 This may well be the first instance in history where mathematical rigor and philosophical inquiry resonate in the same semantic dimension.  
 
 *For the first time, math and philosophy truly enter into dialogue.*  
@@ -813,7 +813,7 @@ This may well be the first instance in history where mathematical rigor and phil
 
 ### 🧬 Example Set E01–E30 <a id="more-examples"></a>
 
-Below is a stress test of the **Blah Blah Blah** system:  
+Below is a stress test of the **TXT-Blah Blah Blah** system:  
 - We deliberately selected the toughest, most intractable philosophical questions—areas where AI has traditionally struggled.  
 - Each prompt below was answered by combining over 50 Blah outputs into a single, consolidated response.  
 
@@ -1175,7 +1175,7 @@ All `.txt` files are fully public and always will be.
 
 | Version | Date  | Status       | Features                                                                                      | Download                                  | Target Audience   |
 |---------|-------|--------------|-----------------------------------------------------------------------------------------------|-------------------------------------------|-------------------|
-| Lite    | 7/15  | **Live now** | Semantic Gravity Well, Quick Blah, Semantic Tree Memory, Blah Blah Blah Lite (50 answers)      | [Download](https://zenodo.org/records/15926925) | Beginners         |
+| Lite    | 7/15  | **Live now** | Semantic Gravity Well, Quick Blah, Semantic Tree Memory, TXT-Blah Blah Blah Lite (50 answers)      | [Download](https://zenodo.org/records/15926925) | Beginners         |
 | Pro     | _TBD_ | Final polish | Includes all Lite features plus Semantic Refraction, Tension Field, Orbital Drift of Meaning   | Upcoming                                  | Advanced users    |
 
 > <img src="https://img.shields.io/github/stars/onestardao/WFGY?style=social" alt="GitHub stars"> ⭐ Help reach 10,000 stars by 2025-09-01 to unlock WFGY Engine 2.0 for everyone  ⭐ <strong><a href="https://github.com/onestardao/WFGY">Star WFGY on GitHub</a></strong>
@@ -1186,11 +1186,11 @@ All `.txt` files are fully public and always will be.
 
 - [1. WFGY Engine](https://github.com/onestardao/WFGY)  
 - [2. TXT OS](https://github.com/onestardao/WFGY/tree/main/OS)  
-- [3. TXT: Blah Blah Blah](https://github.com/onestardao/WFGY/tree/main/OS/BlahBlahBlah)  
-- [4. TXT: Blur Blur Blur](https://github.com/onestardao/WFGY/tree/main/OS/BlurBlurBlur)  
-- [5. TXT: Blow Blow Blow](https://github.com/onestardao/WFGY/tree/main/OS/BlowBlowBlow)  
-- [6. TXT: Blot Blot Blot](https://github.com/onestardao/WFGY/tree/main/OS/BlotBlotBlot)  
-- [7. TXT: Bloc Bloc Bloc](https://github.com/onestardao/WFGY/tree/main/OS/BlocBlocBloc)
+- [3. TXT-Blah Blah Blah](https://github.com/onestardao/WFGY/tree/main/OS/BlahBlahBlah)  
+- [4. TXT-Blur Blur Blur](https://github.com/onestardao/WFGY/tree/main/OS/BlurBlurBlur)  
+- [5. TXT-Blow Blow Blow](https://github.com/onestardao/WFGY/tree/main/OS/BlowBlowBlow)  
+- [6. TXT-Blot Blot Blot](https://github.com/onestardao/WFGY/tree/main/OS/BlotBlotBlot)  
+- [7. TXT-Bloc Bloc Bloc](https://github.com/onestardao/WFGY/tree/main/OS/BlocBlocBloc)
 
 > This is not a single product — it’s a growing language operating system.  
 > Try one, but don’t stop there. Each one unlocks a different angle of meaning.
