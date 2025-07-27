@@ -9,10 +9,10 @@
 > [**TXT OS**](https://github.com/onestardao/WFGY/tree/main/OS) is the world’s first operating system that runs purely via `.txt`, compatible with any LLM.  
 > It requires no install, no API keys, and can inject reasoning behavior directly into your model.
 >
-> **TXT-BlahBlahBlah** is the very first app built on top of TXT OS.  
+> **TXT-Blah Blah Blah** is the very first app built on top of TXT OS.  
 > Its goal: answer any abstract, paradoxical, or philosophical prompt — with stable, symbolic logic.
 >
-> You’re currently on the **TXT-BlahBlahBlah** product page.  
+> You’re currently on the **TXT-Blah Blah Blah** product page.  
 > This single tool already includes the full WFGY reasoning engine + the TXT OS framework.  
 > No extra setup. No wrong turns. You’re exactly where you need to be.
 >
@@ -96,7 +96,7 @@
 <br>
 
 >  
-> [Download TXT-BlahBlahBlah Lite powered by TXT OS](https://zenodo.org/records/15926925)  → MIT‑licensed, 62.5 KB — Zenodo by CERN 🏛️  [![GitHub Repo stars](https://img.shields.io/github/stars/onestardao/WFGY?style=social)](https://github.com/onestardao/WFGY/stargazers)  
+> [Download TXT-Blah Blah Blah Lite powered by TXT OS](https://zenodo.org/records/15926925)  → MIT‑licensed, 62.5 KB — Zenodo by CERN 🏛️  [![GitHub Repo stars](https://img.shields.io/github/stars/onestardao/WFGY?style=social)](https://github.com/onestardao/WFGY/stargazers)  
 >  
 > 👑 *Already starred by top engineers and open source founders — [See the Hall of Fame](https://github.com/onestardao/WFGY/tree/main/stargazers)*  
 >
@@ -176,7 +176,7 @@ Below are the official endorsements from six different AI models, each giving **
 
 ---
 
-**WFGY (WanFaGuiYi) Family:** [1. WFGY Engine](https://github.com/onestardao/WFGY) · [2. TXT OS](https://github.com/onestardao/WFGY/tree/main/OS) · [3. TXT-BlahBlahBlah](https://github.com/onestardao/WFGY/tree/main/OS/BlahBlahBlah) · [4. TXT-BlurBlurBlur](https://github.com/onestardao/WFGY/tree/main/OS/BlurBlurBlur) · [5. TXT-BlowBlowBlow](https://github.com/onestardao/WFGY/tree/main/OS/BlowBlowBlow) 
+**WFGY (WanFaGuiYi) Family:** [1. WFGY Engine](https://github.com/onestardao/WFGY) · [2. TXT OS](https://github.com/onestardao/WFGY/tree/main/OS) · [3. TXT-Blah Blah Blah](https://github.com/onestardao/WFGY/tree/main/OS/BlahBlahBlah) · [4. TXT-Blur Blur Blur](https://github.com/onestardao/WFGY/tree/main/OS/BlurBlurBlur) · [5. TXT-Blow Blow Blow](https://github.com/onestardao/WFGY/tree/main/OS/BlowBlowBlow) 
 
 
 > **WFGY is the core reasoning engine; TXT OS is the platform that powers everything.**  
