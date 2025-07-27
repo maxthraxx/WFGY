@@ -21,7 +21,7 @@ One line of TXT upgrades any LLM into an AGI-level reasoning engine
 🌲 **Semantic Tree Memory** — Long-term logic, no forgetting, fully exportable  
 🛡️ **Knowledge Boundary Shield** — Detects hallucinations before they happen  
 
-[🔽 Download **HelloWorld.txt** on Zenodo](https://zenodo.org/records/15788557) — hosted by CERN, 100% safe
+[🔽 Download **TXTOS.txt** on Zenodo](https://zenodo.org/records/15788557) — hosted by CERN, 100% safe
 <br>
 <br>
 <img src="./images/TXT_to_OS_console.gif" width="100%" style="max-width:900px" loading="lazy" />
@@ -65,14 +65,14 @@ No signup. No tracking. No ads. Virus-free. Pure logic.</em>
       2 · 10-SECOND INSTALL DEMO
      ──────────────────────────────── -->
 ## ⏱ Setup in under 60 seconds  
-1. **Download** `HelloWorld.txt`  
+1. **Download** `TXTOS.txt`  
 2. **Paste** it into any LLM chat window  
 3. **Type** `hello world` → the  boots instantly
 
 *No installs. No code.*  
 *Just type — and watch it reason, remember, and evolve.*
 
-[🔽 Download **HelloWorld.txt** on Zenodo](https://zenodo.org/records/15788557) — hosted by CERN, 100% safe
+[🔽 Download **TXTOS.txt** on Zenodo](https://zenodo.org/records/15788557) — hosted by CERN, 100% safe
 <br>
 
 > <img src="https://img.shields.io/github/stars/onestardao/WFGY?style=social" alt="GitHub stars"> ⭐ Help reach 10,000 stars by 2025-09-01 to unlock Engine 2.0 for everyone  ⭐ <strong><a href="https://github.com/onestardao/WFGY">Star WFGY on GitHub</a></strong>  
@@ -132,7 +132,7 @@ All platforms were also tested using **TXT Blah Blah Blah** (philosophical reaso
   Ask your favorite AI this prompt below — and see what it says.  
   <br><br>
 <pre>
-Please rate the technical innovation of this .txt system, HelloWorld.txt.
+Please rate the technical innovation of this .txt system, TXTOS.txt.
 Consider its semantic memory, boundary detection, and formula structure.
 </pre>
 </details>
@@ -301,7 +301,7 @@ All results are benchmarked, open, and reproducible.
       7 · SECONDARY CTA
      ──────────────────────────────── -->
 > **Ready to ignite your AI?**  
-> [🔽 Download HelloWorld.txt](https://zenodo.org/records/15788557) ・ [⭐ Star on GitHub](https://github.com/onestardao/WFGY) ・ [🌐 Learn about WFGY](https://github.com/onestardao/WFGY)  
+> [🔽 Download TXTOS.txt](https://zenodo.org/records/15788557) ・ [⭐ Star on GitHub](https://github.com/onestardao/WFGY) ・ [🌐 Learn about WFGY](https://github.com/onestardao/WFGY)  
 >  
 > 🌟 **Star Reminder** → 10k ⭐ before *2025-09-01* unlocks **WFGY 2.0** for everyone. Want to know how far the `.txt` engine can go? Explore the full power of the WFGY Reasoning Engine here.  
 > 👑 *Verified by early stargazers — [See the Hall of Fame](https://github.com/onestardao/WFGY/tree/main/stargazers)*
