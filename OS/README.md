@@ -180,7 +180,7 @@ Bookmark now, or risk missing a truth so weird it breaks your cat.
 > ⭐ **Lite: _TBD_** · 💥 **Pro: _TBD_**  
 > Text-based semantic firewall with ΔS gating, λ_observe control, and drunk-mode confusion.  
 > Stops attacks even when the attacker knows the rules.  
-[🔓 Unlock this module](./BlocBlocBloc/README.md) <sub><em>Alpha page online</em></sub>
+[🔓 Unlock this module](./BlocBlocBloc/README.md) <sub><em>Coming soon...</em></sub>
 
 
 
