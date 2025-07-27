@@ -1,6 +1,8 @@
 # 🧱 TXT: Bloc Bloc Bloc  
 Prompt Injection Firewall
 
+![Bloc Hero](https://github.com/onestardao/WFGY/raw/main/OS/BlocBlocBloc/images/Bloc_Hero.png)
+
 Bloc Bloc Bloc is a semantic firewall module for TXT OS — a defensive layer designed to neutralize prompt injection attacks *before* they reach the model’s decision logic. It doesn't hide prompts — it defuses intent.
 
 Rather than simply blocking strings, Bloc Bloc Bloc analyzes **semantic vectors** to detect intent-level privilege escalations. The result is a text-native firewall you can understand, audit, and evolve.
