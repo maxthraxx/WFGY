@@ -1188,10 +1188,13 @@ All `.txt` files are fully public and always will be.
 - [2. TXT OS](https://github.com/onestardao/WFGY/tree/main/OS)  
 - [3. TXT: Blah Blah Blah](https://github.com/onestardao/WFGY/tree/main/OS/BlahBlahBlah)  
 - [4. TXT: Blur Blur Blur](https://github.com/onestardao/WFGY/tree/main/OS/BlurBlurBlur)  
-- [5. TXT: Blow Blow Blow](https://github.com/onestardao/WFGY/tree/main/OS/BlowBlowBlow)
+- [5. TXT: Blow Blow Blow](https://github.com/onestardao/WFGY/tree/main/OS/BlowBlowBlow)  
+- [6. TXT: Blot Blot Blot](https://github.com/onestardao/WFGY/tree/main/OS/BlotBlotBlot)  
+- [7. TXT: Bloc Bloc Bloc](https://github.com/onestardao/WFGY/tree/main/OS/BlocBlocBloc)
 
 > This is not a single product — it’s a growing language operating system.  
 > Try one, but don’t stop there. Each one unlocks a different angle of meaning.
+
 
 ---
 
