@@ -193,14 +193,13 @@ These aren’t just files — they’re semantic apps. And they’re just the be
 - ✅ Every tool-type app can be ported to `.txt` — lightweight, fast, and ad-free  
 - 🛠️ Build your own in 5 minutes:  
   Ask your AI:  
-  > “Use TXT Core to build a Creative Prompt Generator — one idea per day, no repeats, adapts to my tone.”
+  > “Use TXTOS.txt to build a Creative Prompt Generator — one idea per day, no repeats, adapts to my tone.”
 
   **What makes it different from just asking an AI?**  
   - Semantic Tree: remembers your style and avoids repetition  
   - Resonance Logic: understands your tone and domain  
   - Self-correcting reasoning: generates ideas with internal coherence
  
-- 🧩 TXT Core will be released by the end of August.
 
 ---
 
@@ -285,7 +284,7 @@ All results are benchmarked, open, and reproducible.
 
 | Milestone | Description |
 | --------- | ----------- |
-| **TXT Core · Bla Bla Bla · Blur Blur Blur · Blow Blow Blow** | Full suite of `.txt` modules launching by end of July |
+| **TXT Core · Bla Bla Bla · Blur Blur Blur · Blow Blow Blow** | Full suite of `.txt` modules launching soon |
 | **TXT Marketplace** | Upload, share, and monetize your own TXT apps |
 | **Paper Meteor Shower** | AGI-level papers challenging Einstein and modern physics. 📂 [View Papers](https://github.com/onestardao/WFGY/tree/main/I_am_not_lizardman/) |
 | **Hidden Platform Demos** | A separate system, casually revealed. Not open source, not explained — but real. 🎥 [Demo 1](https://youtu.be/cJGT30kaa3A) · [Demo 2](https://youtu.be/GDhJ1UXog7g) · [Demo 3](https://youtu.be/8myI0ZJJLxc) |
