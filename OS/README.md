@@ -200,7 +200,7 @@ These aren’t just files — they’re semantic apps. And they’re just the be
   - Resonance Logic: understands your tone and domain  
   - Self-correcting reasoning: generates ideas with internal coherence
  
-- 🧩 TXT Core will be released by the end of July.
+- 🧩 TXT Core will be released by the end of August.
 
 ---
 
