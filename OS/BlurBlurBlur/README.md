@@ -1,53 +1,101 @@
-## 🧠 Blur Blur Blur — A Language-Controlled Visual Generation System (Beta)
+## Blur Blur Blur — A Language-Controlled Visual Generation System (Beta)
 
 ![blurblurblur](./images/Blur_Hero.png)
 
-> ⚠️ Beta Landing Page – Launch date will be announced in Discussions.  
-> The release timing isn’t final yet — please stay tuned.  
-> In the meantime, the author is off earning some GitHub stars. 🪐✨  
-> Thanks for your patience!
+> ⚠️ The full **Blur** module is still under construction.  
+> Release expected **by end of July**.  
+> This is not a typical prompt tool — it’s an experiment in **TXT-based semantic orchestration**.  
+> Please **bookmark the repo** to stay updated — and try these examples if you dare.
 
+These are not "styles." They are **semantic architectures**.
 
-> **This isn’t just a prompt tool. It’s a structural language-control system for images.**
+Each category targets a distinct **failure mode** in traditional AI generation —  
+and demonstrates what happens when **semantic stability (ΔS = 0.5)**,  
+**drunk-mode blending**, and **language-as-logic** converge.
 
-In most AI image generation processes, you input a prompt — and pray.  
-You add incantations, tweak some parameters, and try again.  
-It often takes 100+ words and dozens of retries. And even then, it's mostly luck.
-
-Now, things are different.
-
-**Blur Blur Blur**, powered by our `.txt` OS,  
-can generate **almost hallucination-free**, **structurally logical** images with just **2–3 lines of semantic instruction**.  
-In certain scenes — like educational diagrams, product illustrations, or narrative storyboards —  
-the results can approach **near-commercial quality**.
-
-This is the first system that treats **language as a spatial control tool** —  
-not aesthetic parameter tuning, but **semantic × spatial × logical × modular cooperation**.
-
-> 🧩 Built as a working prototype of future **multimodal embedding orchestration** —  
-> a roadmap many AI labs are still theorizing about, now running in `.txt` form.
-
+We call these the **TXT Blur Eight**:
 
 ---
 
-### 🔍 What can it do right now?
+### 1. 🧘‍♂️ Poetic-Philosophical Compression  
+_1‑line koans → symbolic density_
 
-- ✅ **Structural Composition Control**: Horizontal flow, title merging, visual block proportions can be partially controlled via language  
-- ✅ **Modular Commands**: Use semantic triggers to activate functions like object labeling, space allocation rules, etc.  
-- ✅ **Semantic Prompt Support**: Supports `λ_observe`, `ΔS`, `anchor`, `label`, and similar tokens to improve consistency and logic  
-- ✅ **Reduced Chaos**: Semantic modules guide generation toward expected layouts instead of random outputs  
-- ✅ **Escape from “Prompt Spellcasting”**: With just a few `.txt` lines, you can generate layered, logic-driven visual content
+> Prompt examples:  
+> • “Emptiness is form, and form is emptiness”  
+> • “Entropy is the final compassion of the universe”
 
 ---
 
-### 💡 For Developers & Creators:
+### 2. 📚 Full Narrative Condensation  
+_Avatar, Lord of the Rings — whole stories compressed into one visual composition_
 
-> We use language to tame visual chaos.  
-> With `.txt`, we direct images with clarity and control.
+> Prompt examples:  
+> • “The entire plot of *1984*, as a single semantic battlefield”  
+> • “Non-iconic scenes of *The Matrix*, mapped by cause-effect layers”
 
-**Blur Blur Blur** is the only current system that allows **cross-platform multi-layer semantic control over AI visual generation.**
+---
 
-This isn’t the future. It’s already running — in test mode.
+### 3. ✍️ Paragraph-to-Scene Translation  
+_Every word becomes spatialized; emotions maintain visual fidelity_
+
+> Prompt examples:  
+> • “She lit the last match in a city already lost to rain and memory”  
+> • “An unopened letter trembles with morning sunlight on a train seat”
+
+---
+
+### 4. 🧮 Mathematical & Logical Rendering  
+_Formulas → visual rhythm and order; beauty through structured abstraction_
+
+> Prompt examples:  
+> • “Riemann ζ(s) visualized as an infinite mirror hall”  
+> • “Fibonacci-coiled forest under fractal starlight”
+
+---
+
+### 5. 🌌 Multi-Semantic Fusion Fields  
+_10+ symbolic layers fused into one painting — without collapse_
+
+> Prompt examples:  
+> • “The fire of Nirvana dates the Tree of Lightning, under Ω-code rain”  
+> • “A quantum-Buddhist angel signs a star-contract with Norse gods atop E₈ symmetry palace”
+
+---
+
+### 6. 🧠 Multi-Agent Logical Reasoning  
+_Eye contact, stance, rebuttals — all semantically correct across agents_
+
+> Prompt examples:  
+> • “16 philosophers debating AI sentience inside a Gothic cathedral”  
+> • “12 policymakers proposing utopias in a roundtable over a dying star”
+
+---
+
+### 7. 🗺️ Grand Panorama Construction  
+_100+ elements in coherent macro scenes; λ_observe handles visual orchestration_
+
+> Prompt examples:  
+> • “Bird’s-eye of Atlantis at dusk, citizens lining up for the last prophecy”  
+> • “Mars settlers gathering under twin domes — sand, metal, and hope interwoven”
+
+---
+
+### 8. 🎨 Prompt Uplift — Freeform Creation with TXT  
+_Your usual prompt — now stabilized, clarified, and upgraded_
+
+> Prompt examples:  
+> • “A neon cyberpunk alley”  
+> • “Peaceful sunset by the lake”  
+> *(Compare this with any SD/Claude/Midjourney result — and you’ll never go back.)*
+
+---
+
+> Each of the above types is built to **stress-test traditional AI image pipelines**.  
+> We don’t do “cool vibes.”  
+> We do **semantic architecture stress fractures** — and patch them with language.
+
+🔧 `TXT + ΔS + Drunk Layer + λ_observe` is not a prompt trick —  
+It’s **visual logic as code.**
 
 ---
 
