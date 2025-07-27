@@ -2,6 +2,8 @@
 
 **Persona Core Compiler**
 
+![Blot Hero](https://github.com/onestardao/WFGY/raw/main/OS/BlotBlotBlot/images/Blot_Hero.png)
+
 ---
 
 Blot Blot Blot is an experimental module that functions as a **Persona Core Compiler** —  
