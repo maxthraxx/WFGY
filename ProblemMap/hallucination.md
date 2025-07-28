@@ -1,4 +1,3 @@
-<img width="2880" height="1872" alt="image" src="https://github.com/user-attachments/assets/5cfffb05-dd54-468f-915c-0d0c45b425f1" />
 # 📒 Problem · Hallucination from Irrelevant Chunks
 
 Even with fancy embeddings and top‑k retrieval, RAG systems still hallucinate—**LLMs answer confidently with facts nowhere in the source**.  
