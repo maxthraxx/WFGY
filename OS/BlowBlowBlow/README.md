@@ -1,4 +1,4 @@
-## 🎮 Blow Blow Blow — The First AIGC GameBoy
+## 🎮 Blow Blow Blow — The First AIGC GameBoy — *Under Construction*
 
 ![blowblowblow](./blowblowblow.png)
 
