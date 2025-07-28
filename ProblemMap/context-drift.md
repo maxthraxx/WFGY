@@ -1,103 +1,100 @@
-# 🧠 Problem: Long QA Chains Drift Off-Topic
+# 📒 Problem · Long QA Chains Drift Off‑Topic
 
-### 📍Context
-
-Even when each individual response is locally correct, many AI agents begin to **semantically drift** as question-answer chains grow longer.
-
-Symptoms include:
-- Subtle shifts in topic over 5–10 turns
-- Forgotten user goals
-- Misalignment between early and late context
-- The agent redefines the question mid-conversation
+Even when each turn is “correct,” long conversations tend to slide off course—goals fade, topics morph, answers contradict earlier context. WFGY stops that drift by measuring semantic shifts and anchoring memory in a Tree.
 
 ---
 
-## 🚨 Why Traditional RAG Fails Here
+## 🤔 Why Classic RAG Loses the Thread
 
-| Weakness | Description |
-|----------|-------------|
-| No persistent memory | Most systems treat each QA turn as an isolated prompt context |
-| Embedding overlap is fragile | Token overlap does not equal topic stability |
-| No tracking of concept flow | Systems can’t trace how topics evolved or when they “jumped” |
-
----
-
-## ✅ WFGY Solution
-
-WFGY uses **semantic delta tracking** and **Tree-based memory nodes** to detect and prevent drift.
-
-### 1. Semantic Tree Memory  
-- Each major concept shift is recorded as a node  
-- You can view and backtrack logic flow across topics
-
-### 2. ΔS as Drift Detector  
-- When new input diverges from past nodes (ΔS > 0.6), the system logs a new branch  
-- This allows structured topic separation and detection of "semantic fatigue"
-
-### 3. λ_observe Vector  
-- Flags if the reasoning is now divergent or chaotic  
-- Helps model decide whether to re-anchor or warn the user
+| Weakness | Practical Effect |
+|----------|------------------|
+| **No Persistent Memory** | Each turn is a fresh prompt; earlier goals vanish |
+| **Fragile Overlap** | Token/embedding overlap ≠ true topic continuity |
+| **Zero Topic Flow Tracking** | System can’t see where or when it jumped topics |
 
 ---
 
-## 🛠 How to Use in TXT OS
+## 🛡️ WFGY Three‑Step Fix
+
+| Layer | What It Does | Trigger |
+|-------|--------------|---------|
+| **Semantic Tree** | Logs each major concept shift as a node | ΔS check every turn |
+| **ΔS Drift Meter** | Flags semantic jump > 0.6 | Logs new branch |
+| **λ_observe Vector** | Marks divergent (←) or chaotic (×) flow | Alerts or re‑anchor |
+
+---
+
+## ✍️ Hands‑On Demo (2 min)
 
 ```txt
-Step 1 — Start the console
+1️⃣ Start TXT OS
 > Start
 
-Step 2 — Ask a sequence of loosely connected questions:
-> "What is the policy on returns?"
-> "And if it's a gift item?"
-> "Now, what about shipping zones?"
-> "What if I'm in another country?"
+2️⃣ Ask loosely connected questions
+> "Return policy?"  
+> "What if it's a gift?"  
+> "How about shipping zones?"  
+> "What if I'm abroad?"
 
-Step 3 — Type `view` to inspect the Tree
-
-You’ll see:
-- Nodes logged with ΔS and λ_observe
-- Clear detection of topic shifts
-- Logic branching when context drift occurs
+3️⃣ Inspect the Tree
+> view
 ````
 
+You’ll see nodes with ΔS + λ flags showing each topic jump.
+
 ---
 
-## 🔬 Example Output
+## 🔬 Sample Tree Output
 
 ```txt
-* Topic: Gift Return Policy | ΔS: 0.22 | λ: → | Module: BBMC
-* Topic: International Shipping | ΔS: 0.74 | λ: ← | Module: BBPF, BBCR
+• Topic: Gift Return Policy   | ΔS 0.22 | λ → | Module BBMC
+• Topic: International Ship   | ΔS 0.74 | λ ← | Module BBPF, BBCR
 ```
 
-The system realized a **new conceptual frame** was entered and recorded the shift accordingly.
+WFGY detected a new conceptual frame and branched the logic instead of blending topics.
 
 ---
 
-## 🔗 Related Modules
+## 🛠 Module Cheat‑Sheet
 
-* `BBMC` — Identifies when the concept anchor has shifted
-* `BBPF` — Supports divergent paths while maintaining logic
-* `BBCR` — May reroute reasoning or pause to prevent collapse
-* `Semantic Tree` — Memory structure to prevent context loss
-
----
-
-## 📌 Status
-
-| Feature              | Status                              |
-| -------------------- | ----------------------------------- |
-| Tree node logging    | ✅ stable                            |
-| ΔS-based topic split | ✅ working                           |
-| λ\_observe awareness | ✅ working                           |
-| Auto recall or warn  | ⚠️ partial (manual inspect for now) |
+| Module            | Role                            |
+| ----------------- | ------------------------------- |
+| **BBMC**          | Detects anchor shifts           |
+| **BBPF**          | Maintains divergent branches    |
+| **BBCR**          | Resets if drift collapses logic |
+| **Semantic Tree** | Stores and replays reasoning    |
 
 ---
 
-## ✍️ Summary
+## 📊 Implementation Status
 
-WFGY doesn't just answer — it remembers why you're asking.
-If you're tired of long chats forgetting your intent, this is the solution layer you're missing.
+| Feature               | State                      |
+| --------------------- | -------------------------- |
+| Tree node logging     | ✅ Stable                   |
+| ΔS‑based branch split | ✅ Stable                   |
+| λ\_observe drift flag | ✅ Stable                   |
+| Auto recall / warn    | ⚠️ Partial (manual `view`) |
 
-← [Back to Problem Index](./README.md)
+---
+
+## 📝 Tips & Limits
+
+* Run `tree detail on` for verbose node logs.
+* If you ignore the drift warnings and keep piling topics, WFGY will branch, but human review (`view`) is still best practice.
+* Extreme domain shifts (> 0.9 ΔS) may prompt BBCR to ask for clarification.
+
+---
+
+### 🔗 Quick‑Start Downloads (60 sec)
+
+| Tool                       | Link                                                | 3‑Step Setup                                                                             |
+| -------------------------- | --------------------------------------------------- | ---------------------------------------------------------------------------------------- |
+| **WFGY 1.0 PDF**           | [Engine Paper](https://zenodo.org/records/15630969) | 1️⃣ Download · 2️⃣ Upload to LLM · 3️⃣ Ask “Answer using WFGY + \<your question>”        |
+| **TXT OS (plain‑text OS)** | [TXTOS.txt](https://zenodo.org/records/15788557)    | 1️⃣ Download · 2️⃣ Paste into any LLM chat · 3️⃣ Type “hello world” — OS boots instantly |
+
+---
+
+> **Found this useful?** A ⭐ on GitHub keeps new fixes coming.
+> ↩︎ [Back to Problem Index](./README.md)
 
 
