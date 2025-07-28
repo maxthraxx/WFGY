@@ -101,4 +101,7 @@ The chunk may not fully address that. Would you like to break it down?
 RAG systems often **retrieve but don't reason**.
 WFGY fills that gap: when logic fails, it doesn’t bluff — it recovers.
 
+← [Back to Problem Index](./README.md)
+
+
 
