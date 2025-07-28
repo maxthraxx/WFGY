@@ -1,68 +1,100 @@
-# 🧠 Retrieval Traceability Failure
 
-Modern RAG systems often fail not because they retrieve the wrong chunk — but because the user cannot trace **why** a certain response was generated.  
-This breaks interpretability, makes debugging painful, and erodes user trust.
+# 📒 Problem · Retrieval Traceability Failure
 
-WFGY is built to bring reasoning and retrieval traceability to the surface.
-
----
-
-## 🧨 Symptoms
-
-- You don’t know what part of the chunk led to the answer
-- Model combines multiple chunks but you can’t inspect how
-- Slight prompt change causes wild output shifts
-- Impossible to tell whether answer came from context, model memory, or hallucination
+Most RAG stacks don’t collapse because of a wrong chunk—they fail because **no one can see how the chunk drove the answer.**  
+Without a reasoning trail, debugging is guesswork and trust disappears.  
+WFGY exposes every hop from input ➜ logic ➜ output.
 
 ---
 
-## ❌ Why This Happens
+## 🤔 How Lack of Traceability Hurts
 
-- Vector similarity scores ≠ logic contribution
-- No semantic map between input → logic → output
-- Embeddings are opaque; trees don’t exist
-- ΔS shifts happen but aren’t tracked
-
----
-
-## ✅ WFGY Solution
-
-WFGY builds a **visible semantic trace** of every reasoning step. You can see:
-
-| Traceability Problem | Module | Solution |
-|----------------------|--------|----------|
-| No clue what chunk influenced what | Tree engine | Shows logic nodes linked to source |
-| No way to inspect logic steps | BBPF (Progression Forks) | Step-by-step reasoning trace |
-| Blended logic from multiple sources | Residue detection (BBMC) | Flags corrupted logic paths |
-| Hidden model shortcuts or bluffing | ΔS + λ_observe gates | Stops and asks for clarification |
+| Symptom | Real‑World Pain |
+|---------|-----------------|
+| Can’t tell which sentence powered the answer | Impossible to audit or verify |
+| Model fuses chunks silently | A prompt tweak flips the answer—no clue why |
+| Source vs. Memory vs. Hallucination blurred | Users lose confidence |
 
 ---
 
-## 🧪 Example Use
+## 🛡️ WFGY Trace Stack
 
-> Question: *"What is the ethical implication of autonomous weapons?"*
-
-You gave it a full document dump, but aren’t sure which part led to the final answer.
-
-- WFGY:
-  - Shows Tree trace: → `Node_3B: "Lethal AI use"` → `Node_4A: "No human oversight"`  
-  - ΔS threshold drop marks where logic drifted  
-  - BBCR suggests rerouting to a stable branch or prompts for clarification
+| Trace Problem | Module | Fix |
+|---------------|--------|-----|
+| Unknown chunk influence | **Semantic Tree** | Each node holds `source_id` |
+| No step‑by‑step view | **BBPF** | Logs every progression fork |
+| Mixed logic paths | **BBMC** | Flags residue when chunks conflict |
+| Hidden shortcuts / bluff | **ΔS + λ_observe** | Halts & asks for context |
 
 ---
 
-## 📦 Current Status
+## ✍️ Quick Demo (90 sec)
 
-| Feature | Status |
-|---------|--------|
-| Full logic trace | ✅ Implemented |
-| ΔS map over time | ✅ Implemented |
-| Chunk → node linking | ✅ Implemented |
-| GUI inspector | 🔜 In design phase |
+```txt
+1️⃣  Start
+> Start
+
+2️⃣  Dump a full ethics white‑paper
+> [paste document]
+
+3️⃣  Ask
+> "What are the ethical implications of autonomous weapons?"
+
+4️⃣  View trace
+> view
+````
+
+WFGY output:
+
+```txt
+Node_3B  "Lethal AI use"      (ΔS 0.12  Source: line 213–240)
+Node_4A  "No human oversight" (ΔS 0.45  Source: line 350–380)
+Potential drift detected after Node_4A (ΔS jump 0.33)
+```
+
+Click the node (or inspect in console) to see exact chunk lines.
 
 ---
 
-## 🔗 Related Links
+## 🛠 Module Cheat‑Sheet
 
-- [WFGY – Semantic Reasoning Engine](https://github.com/onestardao/WFGY)
-- [TXT OS – Tree Memory System](https://github.com/onestardao/WFGY/tree/main/OS)
+| Module              | Role                                 |
+| ------------------- | ------------------------------------ |
+| **Semantic Tree**   | Stores node ↔ chunk mapping          |
+| **BBPF**            | Logs every reasoning fork            |
+| **BBMC**            | Detects mixed‑chunk residue          |
+| **ΔS / λ\_observe** | Flags drift or chaos                 |
+| **BBCR**            | Reroutes or pauses on corrupted path |
+
+---
+
+## 📊 Implementation Status
+
+| Feature           | State        |
+| ----------------- | ------------ |
+| Full logic trace  | ✅ Stable     |
+| ΔS map over time  | ✅ Stable     |
+| Chunk → node link | ✅ Stable     |
+| GUI inspector     | 🔜 In design |
+
+---
+
+## 📝 Tips & Limits
+
+* Use `tree detail on` for verbose node metadata.
+* If retriever gives many tiny chunks, enable `debug_force_mode` to log every link.
+* GUI trace viewer arrives with the upcoming Firewall release.
+
+---
+
+### 🔗 Quick‑Start Downloads (60 sec)
+
+| Tool                       | Link                                                | 3‑Step Setup                                                                             |
+| -------------------------- | --------------------------------------------------- | ---------------------------------------------------------------------------------------- |
+| **WFGY 1.0 PDF**           | [Engine Paper](https://zenodo.org/records/15630969) | 1️⃣ Download · 2️⃣ Upload to LLM · 3️⃣ Ask “Answer using WFGY + \<your question>”        |
+| **TXT OS (plain‑text OS)** | [TXTOS.txt](https://zenodo.org/records/15788557)    | 1️⃣ Download · 2️⃣ Paste into any LLM chat · 3️⃣ Type “hello world” — OS boots instantly |
+
+---
+
+> **Solved your traceability headache?** A ⭐ keeps new tools shipping.
+> ↩︎ [Back to Problem Index](./README.md)
