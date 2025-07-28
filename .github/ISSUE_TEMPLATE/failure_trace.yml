@@ -1,0 +1,33 @@
+name: "💥 Failure Trace"
+description: "Report a real prompt / response trace that breaks WFGY so we can reproduce."
+labels: [bug, needs-trace]
+body:
+  - type: textarea
+    attributes:
+      label: Prompt & Response Trace
+      description: "Paste 5‑20 lines showing the failure."
+      placeholder: |
+        > Prompt
+        ...
+        < Response
+    validations:
+      required: true
+  - type: dropdown
+    attributes:
+      label: Problem Category
+      options:
+        - RAG / Retrieval
+        - Multi‑Agent
+        - Symbolic / Logic
+        - Long‑Context
+        - Multimodal
+        - Safety Boundary
+      description: "Pick the closest category."
+  - type: input
+    attributes:
+      label: Framework / Model
+      placeholder: "o3 via OpenAI API, LangChain 0.2, etc."
+  - type: textarea
+    attributes:
+      label: Expected vs. Actual
+      placeholder: "What did you expect? What happened instead?"
