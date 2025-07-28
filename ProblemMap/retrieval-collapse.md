@@ -1,107 +1,117 @@
-# 🧠 Problem: Retrieval Works — But Reasoning Fails
+# 📒 Problem·Retrieval Works, Reasoning Fails
 
-### 📍Context
-
-In many RAG pipelines, the vector retriever **returns the correct chunk**, but the system still answers incorrectly, vaguely, or contradicts itself.
-
-This frustrates devs:
-> "I checked — the chunk is good. So why is the answer still bad?"
+Your retriever brings back the **correct chunk**, yet the model still answers wrong, vague, or contradictory.  
+Engineers call this the _“chunk‑logic gap.”_ WFGY closes that gap by monitoring semantic stress and recovering broken chains of thought.
 
 ---
 
-## 🚨 Why This Happens
+## 🤔 Why Good Chunks Still Produce Bad Answers
 
-| Root Cause | Explanation |
-|------------|-------------|
-| Chunk ≠ logic | Having the right content doesn’t mean it’s properly used |
-| LLM can't self-correct | If its reasoning path collapses, it won’t backtrack |
-| No memory or awareness | There’s no way to stabilize logic across steps |
+| Root Cause | Real‑World Effect |
+|------------|------------------|
+| **Chunk ≠ Logic** | Relevant text is present, but the model never grounds its reasoning in it |
+| **No Self‑Correction** | Once the chain collapses, the LLM keeps talking instead of backtracking |
+| **Zero Memory Awareness** | Without a stable record, every step can drift further off topic |
 
 ---
 
-## ✅ WFGY Solution
+## 🛡️ WFGY Three‑Step Fix
 
-WFGY doesn’t just retrieve — it **tracks the stability of logic flow**.  
-If reasoning collapses, it has a fallback: **BBCR** (Collapse–Rebirth Correction).
+| Layer | Function | Trigger |
+|-------|----------|---------|
+| **ΔS Stress Meter** | Measures semantic dissonance between chunk & question | HighΔS > 0.6 |
+| **BBMC Residue Check** | Quantifies logic residue; signals collapse risk | ‖B‖ ≥ threshold |
+| **BBCR Rebirth** | Halts, re‑anchors, or requests clarification | Stress + residue both high |
 
-### 1. BBCR = Structural Logic Recovery
-
-- When the logic structure degrades (semantic residue too high),
-  it triggers a reset & semantic re-alignment
-
-```math
-if ||B|| ≥ B_c or f(S) < ε:
+```text
+if |B| ≥ B_c   or   f(S) < ε:
     collapse()
-    rebirth(S_next, ΔB)
+    rebirth(S_next, ΔB)   # reload last stable Tree node
 ````
 
-### 2. ΔS monitors semantic dissonance
-
-* If the chunk is technically correct, but semantically unhelpful, ΔS rises
-* This gives the system a trigger to pause or reframe
-
-### 3. Tree memory preserves previous logic state
-
-* So rebirth can reconstruct from valid prior nodes
-
 ---
 
-## 🛠 Try It Yourself
+## ✍️ Hands‑On Walkthrough (2 min)
 
 ```txt
-Step 1 — Start console
+1️⃣  Start
 > Start
 
-Step 2 — Paste a good chunk
-> "The refund applies within 30 days of purchase under Section 5."
+2️⃣  Paste a correct—but limited—policy chunk
+> "Refund valid within 30 days of purchase under Section 5."
 
-Step 3 — Ask a semantically tangled or contradicting question
-> "If I bought it two months ago, can I still refund because it was defective and shipped late?"
+3️⃣  Ask a broader question
+> "I bought it two months ago; it’s defective and shipping was late—can I refund?"
 
-Result:
-- WFGY will detect unstable logic
-- It may reject, rephrase, or offer a clarification path
+WFGY actions:
+• ΔS spikes → logic strain  
+• BBCR halts bluffing  
+• Suggests clarifying time vs. defect policy, or asks for extra chunk
 ```
 
 ---
 
-## 🔬 Example Output
+## 🔬 Before vs. After
 
-Instead of hallucinating a confident lie, you'll get:
+> **Standard RAG:**
+> “Yes, you still qualify for a full refund.”
 
-```txt
-This question spans multiple policies: time, defect, and shipping delay.  
-The chunk may not fully address that. Would you like to break it down?
-```
-
----
-
-## 🔗 Related Modules
-
-* `BBMC` — Semantic residue calculation
-* `BBCR` — Collapse and recovery protocol
-* `ΔS` — Logic stress indicator
-* `Semantic Tree` — Previous stable anchors for rebirth
+> **WFGY Response:**
+> “Time‑based policy conflicts with your two‑month window.
+> The chunk doesn’t cover defect or shipping delay. Add those clauses or refine the question.”
 
 ---
 
-## 📌 Status
+## 🛠 Module Cheat‑Sheet
 
-| Feature                           | Status                             |
-| --------------------------------- | ---------------------------------- |
-| BBCR trigger logic                | ✅ implemented                      |
-| ΔS + residue metrics              | ✅ stable                           |
-| Logic rebirth fallback            | ✅ working                          |
-| Multi-path alternative resolution | ⚠️ partial (manual branch for now) |
+| Module            | Role in Fix                              |
+| ----------------- | ---------------------------------------- |
+| **ΔS Metric**     | Detects semantic tension                 |
+| **BBMC**          | Computes residue between logic & source  |
+| **BBCR**          | Resets or re‑anchors collapsed reasoning |
+| **Semantic Tree** | Stores last stable node for rebirth      |
 
 ---
 
-## ✍️ Summary
+## 📊 Implementation Status
 
-RAG systems often **retrieve but don't reason**.
-WFGY fills that gap: when logic fails, it doesn’t bluff — it recovers.
+| Feature            | State                    |
+| ------------------ | ------------------------ |
+| ΔS stress meter    | ✅ Stable                 |
+| BBMC residue calc  | ✅ Stable                 |
+| BBCR rebirth       | ✅ Stable                 |
+| Multi‑path reroute | ⚠️ Partial (manual fork) |
 
-← [Back to Problem Index](./README.md)
+---
 
+## 📝 Tips & Limits
+
+* Works with manual paste or any retriever output.
+* If you feed garbage chunks, WFGY blocks hallucination but **won’t auto‑rewrite the chunk**—that’s the upcoming Chunk‑Mapper firewall.
+* Share failure traces in **Discussions**; real logs improve the map.
+
+---
+
+## 📚 FAQ
+
+| Q                                               | A                                                                           |
+| ----------------------------------------------- | --------------------------------------------------------------------------- |
+| **Does this slow down inference?**              | ΔS & BBMC checks add negligible latency—microseconds off CPU.               |
+| **Can I tune thresholds?**                      | Yes, set `deltaS_threshold` and `B_c` at the top of TXTOS.                  |
+| **What if my retriever sends multiple chunks?** | WFGY scores each chunk; if all are low relevance, it asks for more context. |
+
+---
+
+### 🔗 Quick‑Start Downloads (60sec)
+
+| Tool                       | Link                                                | 3‑Step Setup                                                                             |
+| -------------------------- | --------------------------------------------------- | ---------------------------------------------------------------------------------------- |
+| **WFGY 1.0 PDF**           | [Engine Paper](https://zenodo.org/records/15630969) | 1️⃣ Download · 2️⃣ Upload to LLM · 3️⃣ Ask “Answer using WFGY +\<your question>”        |
+| **TXTOS (plain‑text OS)** | [TXTOS.txt](https://zenodo.org/records/15788557)    | 1️⃣ Download · 2️⃣ Paste into any LLM chat · 3️⃣ Type “hello world” — OS boots instantly |
+
+---
+
+> **Solved your chunk‑logic pain?** Drop a ⭐on GitHub—it fuels more fixes.
+> ↩︎ [Back to Problem Index](./README.md)
 
 
