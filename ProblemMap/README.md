@@ -1,4 +1,5 @@
 # 📋 WFGY Problem Map – Bookmark This. You’ll Need It.
+## Every failure has a name. Every name has a countermeasure.
 
 <img width="1536" height="1024" alt="ProblemMap_Hero" src="https://github.com/user-attachments/assets/b2a5add8-6647-4424-8eff-9e449bf7382b" />
 <div align="center">
