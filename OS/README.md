@@ -12,22 +12,19 @@
 
 <div align="center">
 
-Explore the WFGY Family — Modular Reasoning Tools for the Next‑Gen AI Stack
-
-[![WFGY Main](https://img.shields.io/badge/WFGY-Main-black?style=flat-square)](https://github.com/onestardao/WFGY)
+[![WFGY Main](https://img.shields.io/badge/WFGY-Main-red?style=flat-square)](https://github.com/onestardao/WFGY)
 &nbsp;
-[![TXT OS](https://img.shields.io/badge/TXT%20OS-Reasoning%20OS-blue?style=flat-square)](https://github.com/onestardao/WFGY/tree/main/OS)
+[![TXT OS](https://img.shields.io/badge/TXT%20OS-Reasoning%20OS-orange?style=flat-square)](https://github.com/onestardao/WFGY/tree/main/OS)
 &nbsp;
-[![Blah](https://img.shields.io/badge/Blah-Semantic%20Embed-orange?style=flat-square)](https://github.com/onestardao/WFGY/tree/main/OS/BlahBlahBlah)
+[![Blah](https://img.shields.io/badge/Blah-Semantic%20Embed-yellow?style=flat-square)](https://github.com/onestardao/WFGY/tree/main/OS/BlahBlahBlah)
 &nbsp;
-[![Blur](https://img.shields.io/badge/Blur-Text2Image%20Engine-lightblue?style=flat-square)](https://github.com/onestardao/WFGY/tree/main/OS/BlurBlurBlur)
+[![Blot](https://img.shields.io/badge/Blot-Persona%20Core-green?style=flat-square)](https://github.com/onestardao/WFGY/tree/main/OS/BlotBlotBlot)
+&nbsp;
+[![Bloc](https://img.shields.io/badge/Bloc-Reasoning%20Compiler-blue?style=flat-square)](https://github.com/onestardao/WFGY/tree/main/OS/BlocBlocBloc)
+&nbsp;
+[![Blur](https://img.shields.io/badge/Blur-Text2Image%20Engine-navy?style=flat-square)](https://github.com/onestardao/WFGY/tree/main/OS/BlurBlurBlur)
 &nbsp;
 [![Blow](https://img.shields.io/badge/Blow-Game%20Logic-purple?style=flat-square)](https://github.com/onestardao/WFGY/tree/main/OS/BlowBlowBlow)
-&nbsp;
-[![Blot](https://img.shields.io/badge/Blot-Persona%20Core-darkgreen?style=flat-square)](https://github.com/onestardao/WFGY/tree/main/OS/BlotBlotBlot)
-&nbsp;
-[![Bloc](https://img.shields.io/badge/Bloc-Reasoning%20Compiler-teal?style=flat-square)](https://github.com/onestardao/WFGY/tree/main/OS/BlocBlocBloc)
-&nbsp;
 
 </div>
 
