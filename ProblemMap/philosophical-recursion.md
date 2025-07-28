@@ -1,5 +1,5 @@
 
-# 📒 Problem · Philosophical Recursion Collapse
+# 📒 Problem #12 · Philosophical Recursion Collapse
 
 Abstract, paradoxical, or self‑referential prompts push most LLMs into loops or filler.  
 WFGY keeps recursive reasoning coherent by anchoring each layer at ΔS ≈ 0.5 and logging every reference in a Tree.
