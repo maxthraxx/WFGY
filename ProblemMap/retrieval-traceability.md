@@ -1,5 +1,5 @@
 
-# 📒 Problem · Retrieval Traceability Failure
+# 📒 Problem #8 · Retrieval Traceability Failure
 
 Most RAG stacks don’t collapse because of a wrong chunk—they fail because **no one can see how the chunk drove the answer.**  
 Without a reasoning trail, debugging is guesswork and trust disappears.  
