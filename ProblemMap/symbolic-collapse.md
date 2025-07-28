@@ -1,5 +1,5 @@
 
-# 📒 Problem · Symbolic Collapse & Abstract Reasoning Failures
+# 📒 Problem #6 · Symbolic Collapse & Abstract Reasoning Failures
 
 Recursive logic, layered metaphors, and symbolic prompts overload most LLMs: replies drift, contradict, or dissolve into poetic nonsense.  
 WFGY keeps abstract chains stable by measuring semantic tension and anchoring each layer in a Tree.
