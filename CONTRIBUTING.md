@@ -1,96 +1,115 @@
+# Contributing to **WFGY**
 
+Thank you for helping push semantic reasoning forward!  
+This guide merges the original workflow with our new Failure‑Trace and Problem‑Page pipelines.
 
-# Contributing to WFGY
+---
 
-Thank you for your interest in contributing to **WFGY**! To make contributions smooth and effective, please follow this guide.
+## 1 · Reporting Issues
 
-## 1. Reporting Issues
-- Before opening a new issue, search existing issues to see if the topic has already been raised.
-- To create a new issue, choose the appropriate issue template (bug report or feature request) and provide:
-  - A clear description of the problem or feature.
-  - Steps to reproduce (for bugs), including code snippets or minimal reproduction example.
-  - Environment details: Python version, OS, WFGY SDK version, etc.
-- If you discover a security vulnerability, do **not** disclose details publicly. Instead, follow the procedure in `SECURITY.md`.
+| Step | Detail |
+|------|--------|
+| 1️⃣ Search first | Avoid duplicates—check Issues & Discussions. |
+| 2️⃣ Pick a template | **Bug / Feature** or **💥 Failure Trace**. |
+| 3️⃣ Provide essentials | • Clear description • Steps to reproduce • Environment (Python ≥ 3.10, OS, model, WFGY version). |
+| 4️⃣ Security | Found a vulnerability? Follow `SECURITY.md`; do **not** post details publicly. |
 
-## 2. Fork & Clone
+---
+
+## 2 · Failure Trace Workflow (New!)
+
+> **Goal:** capture real prompts / responses that still break WFGY and add them to regression tests.
+
+1. Select **💥 Failure Trace** template when opening an Issue.  
+2. Paste **5‑20 lines** of prompt‑response log.  
+3. Pick the closest **Problem Category** (RAG, Multi‑Agent, Symbolic, …).  
+4. Optional: add framework info (LangChain, AutoGen, etc.).  
+5. We’ll tag the trace, reproduce it, and add tests / docs.
+
+---
+
+## 3 · Fork & Local Setup
+
 ```bash
 git clone https://github.com/onestardao/WFGY.git
 cd WFGY
-# Use Python >= 3.10 in a virtual environment
-python -m venv venv
-# Linux/macOS:
-source venv/bin/activate
-# Windows PowerShell:
-# .\venv\Scripts\Activate.ps1
+
+python -m venv venv             # Python ≥ 3.10
+source venv/bin/activate        # macOS / Linux
+# .\venv\Scripts\Activate.ps1   # Windows
+
 pip install -r requirements.txt
+git checkout -b feature/<slug>
 ````
 
-* Create a new branch for your work:
+---
 
-```bash
-git checkout -b feature/short-description-of-feature
-```
+## 4 · Adding / Updating Code
 
-## 3. Development & Testing
+| Task        | Command                                   |
+| ----------- | ----------------------------------------- |
+| Format code | `black .`  & `isort .`                    |
+| Run tests   | `pytest tests/`                           |
+| Pre‑commit  | `pre-commit run --all-files` (if enabled) |
+| Add dep     | Update `requirements.txt` + note in PR    |
 
-* **Code Style**:
+---
 
-  * Use `black`: `black .`
-  * Use `isort`: `isort .`
-  * Use `pre-commit` if set up: `pre-commit run --all-files`
-* **Running Tests**:
+## 5 · Adding a **Problem Page** (Map entry)
 
-  * Run `pytest tests/` (or the specific command used by this project). Ensure all tests pass locally.
-  * If you add new functionality or fix a bug, include appropriate tests.
-* **Dependencies**:
+1. Copy `/ProblemMap/_template.md` (or any existing page).
+2. Fill the **eight‑section** structure: Intro → Root Cause → WFGY Fix → Demo → Cheat‑Sheet → Status → Tips → Quick‑Start.
+3. Place under the correct folder, e.g.
 
-  * If you introduce new dependencies, add them to `requirements.txt` or the appropriate config file.
+   * `ProblemMap/multi-agent-chaos/new-issue.md`
+4. Add at least **one regression trace** under `/tests/failure-traces/<slug>.txt`.
+5. Update the relevant Specialized Map table (`Multi-Agent_Problems.md`) with the new row.
 
-## 4. Submitting a Pull Request
+---
 
-* **Title Format**:
+## 6 · Submitting a Pull Request
 
-  * Example: `Add: Brief description of feature` or `Fix: Brief description of bug fix`.
-* **Description**: In the PR description, include:
+| Item              | Detail                                                                |
+| ----------------- | --------------------------------------------------------------------- |
+| **Title**         | `Add: <feature>` or `Fix: <bug>`                                      |
+| **Description**   | Motivation · summary · test steps · `Closes #<issue>`                 |
+| **Target branch** | `main`                                                                |
+| **Checklist**     | Tests pass · docs updated · minimal commits (squash/rebase as needed) |
 
-  * Motivation and summary of changes.
-  * Testing steps and results.
-  * Related issue number, using “Closes #<issue-number>” if applicable.
-* **Target Branch**:
+A **PR template** auto‑loads—fill the checkboxes before requesting review.
 
-  * Set target branch to `main` (or another branch if the project follows a different workflow).
-* **Review Process**:
+---
 
-  * Maintainers will review your PR, may request changes; please be patient and address feedback.
-* **Clean Commits**:
+## 7 · Documentation & Release Notes
 
-  * Squash or rebase commits if needed to keep history clear, according to project preference.
+* Update any affected docs (`README`, examples, API) **in the same PR**.
+* Maintainers handle version tags; open an Issue titled `[Release Candidate]` if you think a new release is ready.
 
-## 5. Documentation
+---
 
-* If your changes require updates to documentation (README, examples, API reference), please include those updates in the same PR.
-* If applicable, update version/changelog files as per release workflow.
+## 8 · Communication Channels
 
-## 6. Release Process (for Maintainers)
+| Channel                | Use                                                                     |
+| ---------------------- | ----------------------------------------------------------------------- |
+| **GitHub Discussions** | Q\&A, Failure‑Trace sharing, design RFCs                                |
+| **Telegram**           | Quick chat with @PSBigBig                                               |
+| **Email**              | [hello@onestardao.com](mailto:hello@onestardao.com) for private matters |
 
-* Typically maintainers handle tagging and releasing new versions.
-* If you wish to propose a release candidate, open an issue with title `[Release Candidate]` and summary of changes.
-* Follow semantic versioning (if used) and update changelog accordingly.
+Follow the **Code of Conduct**—be respectful.
 
-## 7. Communication Channels
+---
 
-* **Telegram**: Telegram user @PSBigBig (for quick chats).
-* **GitHub Discussions**: [https://github.com/onestardao/WFGY/discussions](https://github.com/onestardao/WFGY/discussions) (if enabled).
-* **Email**: [hello@onestardao.com](mailto:hello@onestardao.com) (for longer-form discussion or private matters).
-* Please be respectful and follow the Code of Conduct when interacting.
+## 9 · Large or Breaking Changes
 
-## 8. Large Changes
+* Open an **RFC Issue** before coding large refactors.
+* Mark the PR as **Draft / WIP** until consensus is met.
+* Label accordingly (`architecture`, `breaking‑change`).
 
-* For major or breaking changes (e.g., architecture refactor, breaking API), please open an issue first to discuss design and implications.
-* Label your draft PR appropriately (e.g., “WIP”, “RFC”).
+---
 
-## 9. Acknowledgements
+## 10 · Acknowledgements
 
-* Contributions of any kind—code, documentation, examples, bug reports, suggestions—are welcome!
-* Thank you for helping improve WFGY.
+Every PR—docs, code, examples, bug reports—moves WFGY closer to bullet‑proof reasoning.
+Drop a ⭐ if this repo helps you; it fuels the next feature.
 
+**Thank you for contributing!**
