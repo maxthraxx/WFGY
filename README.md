@@ -22,7 +22,6 @@
 &nbsp;
 [![Blow](https://img.shields.io/badge/Blow-Game%20Logic-purple?style=flat-square)](https://github.com/onestardao/WFGY/tree/main/OS/BlowBlowBlow)
 &nbsp;
-<br>
 [![CI](https://github.com/onestardao/WFGY/actions/workflows/ci.yml/badge.svg)](https://github.com/onestardao/WFGY/actions/workflows/ci.yml)
 &nbsp;
 [![PyPI version](https://img.shields.io/pypi/v/wfgy-sdk?color=white)](https://pypi.org/project/wfgy-sdk/)
