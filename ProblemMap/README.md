@@ -1,10 +1,10 @@
 # 📋 WFGY Problem Map – Bookmark This. You’ll Need It.
 ## Every failure has a name. Every name has a countermeasure.
 
+
 <img width="1536" height="1024" alt="ProblemMap_Hero" src="https://github.com/user-attachments/assets/b2a5add8-6647-4424-8eff-9e449bf7382b" />
 <div align="center">
 
-<img src="https://your-cdn-link/wfgy_banner.gif" width="100%" alt="WFGY Semantic Firewall Animation"/>
 
 <!-- WFGY Core Badges -->
 <br>
@@ -27,6 +27,7 @@
 
 </div>
 
+<img src="https://github.com/onestardao/WFGY/raw/main/OS/images/tree-semantic-memory.gif" width="100%" style="max-width:900px" loading="lazy" alt="WFGY Semantic Tree Memory in Action" />
 
 
 
