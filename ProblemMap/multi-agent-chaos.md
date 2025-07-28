@@ -1,4 +1,4 @@
-# 📒 Problem · Multi‑Agent Semantic Chaos
+# 📒 Problem #13 · Multi‑Agent Semantic Chaos
 
 When multiple agents share a workspace, logic collides: roles blur, memories overwrite, tasks loop.  
 WFGY anchors each agent’s reasoning in a tagged Semantic Tree, keeping distributed plans coherent.
