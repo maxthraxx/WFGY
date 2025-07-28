@@ -117,10 +117,10 @@ Missing issue? Open an Issue or PR—real failure traces especially welcome.
 
 - [🧠 RAG Problem Table (#1, #2, #3, #5, #8)](./RAG_Problems.md) – retrieval‑augmented generation failures  
 - [🤖 Multi‑Agent Chaos Map (#13)](./Multi-Agent_Problems.md) – coordination, memory, role drift  
-- [🔍 Symbolic & Logic Trap Map (#6, #11, #12)](./Symbolic_Logic_Problems.md) – paradox, recursion, formal proofs  
+- [🔎 Symbolic & Recursive Map (#11, #12)](./Symbolic_Logic_Problems.md) – paradox, abstraction, logical traps  
+- [🧩 Logic Recovery Map (#6)](./logic-collapse.md) – dead-end logic and auto-reset reasoning  
 - [📜 Long‑Context Stress Map (#3, #7, #10)](./LongContext_Problems.md) – 100k‑token stability, noisy PDFs  
-- [🎨 Multimodal Reasoning Map (#1, #9)](./Multimodal_Problems.md) – text + image + code alignment  
-- [🛡️ Safety Boundary Map (#4, #8)](./Safety_Boundary_Problems.md) – knowledge gaps, jailbreaks, policy limits
+- [🧪 Safety Boundary Map (#4, #8)](./Safety_Boundary_Problems.md) – knowledge gaps, bluffing, jailbreak resistance
 
 
 
