@@ -7,16 +7,23 @@
 
 <!-- WFGY Core Badges -->
 <br>
-<img src="https://img.shields.io/badge/solved%20failures-17+-green?style=flat-square" alt="Solved Failures"/>
-<img src="https://img.shields.io/badge/modalities-text%2C%20image%2C%20code%2C%20audio-blue?style=flat-square" alt="Multimodal Modalities"/>
-<img src="https://img.shields.io/badge/powered%20by-WFGY-red?style=flat-square" alt="Powered by WFGY"/>
 
-<a href="https://zenodo.org/records/15630969">
-  <img src="https://img.shields.io/badge/WFGY%201.0%20PDF-open%20→-9cf?style=flat-square" alt="WFGY 1.0 PDF"/>
-</a>
-<a href="https://zenodo.org/records/15788557">
-  <img src="https://img.shields.io/badge/TXT%20OS%20PDF-open%20→-blue?style=flat-square" alt="TXT OS PDF"/>
-</a>
+<div align="center">
+
+![Solved](https://img.shields.io/badge/Problems%20Solved-19%2F19-success?style=for-the-badge)
+
+[![WFGY Main](https://img.shields.io/badge/WFGY‑Engine‑Core‑logic‑black?style=for-the-badge)](https://github.com/onestardao/WFGY)
+[![TXT OS](https://img.shields.io/badge/TXT%20OS‑Text%20Reasoning%20OS‑orange?style=for-the-badge)](https://github.com/onestardao/WFGY/tree/main/OS)
+[![Blah](https://img.shields.io/badge/BlahBlahBlah‑Fragmented%20Speech‑blue?style=for-the-badge)](https://github.com/onestardao/WFGY/tree/main/OS/BlahBlahBlah)
+[![Blur](https://img.shields.io/badge/BlurBlurBlur‑Poetic%20Vision‑purple?style=for-the-badge)](https://github.com/onestardao/WFGY/tree/main/OS/BlurBlurBlur)
+[![Blow](https://img.shields.io/badge/BlowBlowBlow‑AIGC%20Game%20Engine‑green?style=for-the-badge)](https://github.com/onestardao/WFGY/tree/main/OS/BlowBlowBlow)
+[![Bloc](https://img.shields.io/badge/BlocBlocBloc‑Persona%20Compiler‑pink?style=for-the-badge)](https://github.com/onestardao/WFGY/tree/main/OS/BlocBlocBloc)
+[![Blot](https://img.shields.io/badge/BlotBlotBlot‑Logic%20Trace%20Tool‑gray?style=for-the-badge)](https://github.com/onestardao/WFGY/tree/main/OS/BlotBlotBlot)
+
+![Powered by WFGY](https://img.shields.io/badge/Powered%20by‑WFGY‑red?style=for-the-badge)
+
+</div>
+
 
 
 
