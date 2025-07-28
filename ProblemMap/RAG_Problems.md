@@ -1,61 +1,73 @@
-# 🧠 WFGY Problem → Module → Solution Map (v0.1 · RAG Focus)
+# 📒 WFGY RAG Problem Map
 
-This page maps common reasoning and retrieval failures — especially in RAG pipelines — to their corresponding WFGY solutions.
-
-WFGY is not a retrieval system.  
-It is a semantic reasoning engine that augments, replaces, or corrects what existing RAG stacks often fail to do.
-
----
-
-## 🔍 RAG-Related Failures and WFGY Solutions
-
-| Problem | WFGY Solution | Module(s) | Status | Notes |
-|--------|----------------|-----------|--------|-------|
-| [🔸 Hallucination from irrelevant chunks](./hallucination.md) | Semantic Boundary + ΔS monitoring | BBCR, BBMC | ✅ | System detects when input has low semantic match and activates fallback |
-| [🔸 Retrieval returns correct chunk but reasoning fails](./retrieval-collapse.md) | Multi-path semantic logic | BBCR | ✅ | WFGY builds stable reasoning paths even from vague sources |
-| [🔸 Long question-answer chains drift off-topic](./context-drift.md) | Semantic Tree memory + ΔS threshold | BBMC, Tree | ✅ | Semantic jump tracking records nodes, avoids context collapse |
-| [🔸 System "bluffs" when it doesn’t know](./bluffing.md) | Knowledge boundary map | BBCR, λ_observe | ✅ | WFGY detects unstable ΔS + λ_observe and requests clarification |
-| [🔸 Embedding similarity ≠ semantic meaning](./embedding-vs-semantic.md) | Residual Minimization | BBMC, BBAM | ✅ | Matches logic anchor, not just vector cosine |
-| [🔸 System doesn't know what it doesn't know](./unknown-boundary.md) | Knowledge boundary guard | BBCR, Tree | ✅ | Detects unmapped topics and requests clarification |
-| 🔸 No traceability across user sessions | External semantic memory tree | Tree engine | ⚠️ | Manual export/import for now; persistent store upcoming |
-| 🔸 Debugging why RAG failed = painful | Manual tree audit | All modules | ✅ | Tree view shows where logic drifted or ΔS spiked |
-| 🔸 Chunk ingestion pipeline | — | — | 🛠 | Not yet implemented; user pastes chunk into node manually |
-| 🔸 No LangChain compatibility yet | — | — | 🛠 | Adapter planned; WFGY can serve as pre/post-processing layer |
+This page is a reality check for Retrieval‑Augmented Generation.  
+**Most RAG stacks break in repeatable ways**—hallucinating, drifting, or hiding their own logic.  
+WFGY adds a semantic firewall on top of any retriever or LLM to turn those failures into deterministic fixes.
 
 ---
 
-## ✅ What you can do now
+## ❓ Why do mainstream RAG pipelines fail?
 
-Even without any retriever, WFGY lets you:
+| Root Cause | What Goes Wrong in Practice |
+|------------|----------------------------|
+| Vector similarity ≠ meaning | “Relevant” chunks that aren’t logically useful |
+| No semantic memory | Model forgets context after a few turns |
+| No knowledge boundary | LLM bluffs instead of admitting uncertainty |
+| Hidden reasoning path | Impossible to debug why an answer appeared |
 
-- Paste content manually and reason on it
-- Test hallucination safety via ΔS / λ_observe
-- Record and inspect logic paths via Tree
-- Detect unknown zones before the model bluffs
-
-This means: WFGY is a **RAG failsafe layer**, even without retrieval working.
-
----
-
-## 🧪 Example Use: "My PDF bot keeps hallucinating answers"
-
-> → Paste the question and chunk into WFGY  
-> → If ΔS is too high, it’ll pause or route to BBCR  
-> → You can inspect the logic trace and see where it went off  
-> → You’ll know if it’s the chunk’s fault — or the reasoning engine
+WFGY repairs each gap with ΔS tension checks, Tree memory, and BBCR/BBMC modules.
 
 ---
 
-## 🔧 Next Steps (Roadmap)
+## 🔍 RAG Failures → WFGY Solutions
 
-- [ ] Vector chunking → semantic node auto-mapping  
-- [ ] LangChain & LlamaIndex adapters  
-- [ ] Auto-summarization of Tree for memory replay  
-- [ ] GUI explorer for Tree inspection  
-- [ ] Integration with BlotBlotBlot / Persona agents
+| Problem | WFGY Fix | Module(s) | Status | Notes |
+|---------|----------|-----------|--------|-------|
+| [Hallucination & Chunk Drift](./hallucination.md) | ΔS boundary + BBCR fallback | BBCR, BBMC | ✅ | Rejects low‑match chunks |
+| [Interpretation Collapse](./retrieval-collapse.md) | Logic rebirth protocol | BBCR | ✅ | Recovers reasoning paths |
+| [Long Chain Drift](./context-drift.md) | Tree checkpoints | BBMC, Tree | ✅ | Logs topic jumps |
+| [Bluffing / Overconfidence](./bluffing.md) | Knowledge boundary guard | BBCR, λ_observe | ✅ | Halts on unknowns |
+| [Semantic ≠ Embedding](./embedding-vs-semantic.md) | Residue minimization | BBMC, BBAM | ✅ | Verifies true meaning |
+| [Debugging Black Box](./retrieval-traceability.md) | Traceable Tree audit | All modules | ✅ | Exposes logic path |
+| Chunk ingestion pipeline | — | — | 🛠 | Manual paste for now |
+| LangChain / LlamaIndex adapter | — | — | 🛠 | Planned integration |
 
 ---
 
-For now, if you're a RAG user tired of hallucinations, TXT OS + WFGY gives you a stable, inspectable core to reason with.
+## ✅ What you can do right now
 
-Feel free to open an issue if your failure case isn’t listed.
+- Paste any passage manually and test ΔS / λ_observe  
+- Watch WFGY flag or correct hallucinated answers  
+- Inspect the Tree to see **why** the engine decided anything
+
+---
+
+## 🧪 Quick Demo
+
+> **PDF bot hallucinating?**  
+> 1. Paste the suspect answer + source chunk into TXT OS.  
+> 2. If ΔS spikes, WFGY pauses or reroutes via BBCR.  
+> 3. Inspect the recorded Tree node—see the exact drift.
+
+---
+
+## 📋 FAQ (for busy engineers)
+
+| Q | A |
+|--|--|
+| **Do I need a new retriever?** | No. WFGY sits after any retriever or even manual paste. |
+| **Does this replace LangChain?** | No. It patches the logic gaps LangChain can’t cover. |
+| **Is there a vector store built‑in?** | Not yet. Near‑term roadmap adds auto‑chunk mapping. |
+| **Where do I ask deep tech questions?** | Use the **Discussions** tab—real traces welcome. |
+
+---
+
+### 🔗 Quick‑Start Downloads (60 sec)
+
+| Tool | Link | 3‑Step Setup |
+|------|------|--------------|
+| **WFGY 1.0 PDF** | [Engine Paper](https://zenodo.org/records/15630969) | 1️⃣ Download · 2️⃣ Upload to your LLM · 3️⃣ Ask “Answer using WFGY + &lt;your question&gt;” |
+| **TXT OS (plain‑text OS)** | [TXTOS.txt](https://zenodo.org/records/15788557) | 1️⃣ Download · 2️⃣ Paste into any LLM chat · 3️⃣ Type “hello world” — OS boots instantly |
+
+> **Enjoy the project?** A ⭐ on GitHub is the best thank‑you.  
+> ↩︎ [Back to WFGY Home](https://github.com/onestardao/WFGY)
