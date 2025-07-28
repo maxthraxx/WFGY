@@ -28,7 +28,7 @@
 ──────────────────────────────────────────────── -->
 
 <details>
-<summary><strong>2️⃣ +42% Reasoning Boost — Real or Hype? (Click to expand for proof + 19 solved AI problems)</strong></summary>
+<summary><strong>2️⃣ +42% Reasoning Boost — Real or Hype? (Click to expand for proof + 13 solved AI problems)</strong></summary>
 
 > #### ⚡ Key Metrics  
 > _Metrics verified in the WFGY Paper (see full breakdown below). All results are fully reproducible with the provided `.txt`._
@@ -61,7 +61,7 @@
 
 > All modules are **model-agnostic**, require **no fine-tuning**, and integrate via pure `.txt` injection = real-world plug & play.
 
-> 🔍 [Explore all 19 solved AI challenges in the WFGY Problem Map →](https://github.com/onestardao/WFGY/tree/main/ProblemMap/README.md)
+> 🔍 [Explore all 13 solved AI challenges in the WFGY Problem Map →](https://github.com/onestardao/WFGY/tree/main/ProblemMap/README.md)
 
 > #### ⚡ Reference:
 >
