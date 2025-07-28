@@ -30,7 +30,7 @@
 
 ### 🌍 Core Engine
 
-- [`WFGY_Core Engine`](https://github.com/onestardao/WFGY) · The semantic backbone for all modules  
+- [`WFGY_Reasoning Engine`](https://github.com/onestardao/WFGY) · The semantic backbone for all modules  
 - [`TXT OS`](https://github.com/onestardao/WFGY/tree/main/OS) · The lightweight OS layer — `.txt` powered, LLM-native
 
 ---
