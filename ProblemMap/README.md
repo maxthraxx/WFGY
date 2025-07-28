@@ -36,7 +36,7 @@
 
 ---
 
-🧠 **WFGY = Semantic Firewall for AI Reasoning.**  
+**WFGY = Semantic Firewall for AI Reasoning.**  
 It fixes logic collapse, memory loss, hallucination, and abstract breakdowns — in live generation and retrieval pipelines.
 
 
@@ -56,7 +56,7 @@ See [TXT OS](../OS/) for real-time demos, or [start here with RAG failures →](
 
 ---
 
-## 📌 Navigation – Solved (or Tracked) AI Failure Modes
+## 🔗 Navigation – Solved (or Tracked) AI Failure Modes
 
 | #  | Problem Domain                  | Description                                 | Doc                                                           |
 |----|---------------------------------|---------------------------------------------|---------------------------------------------------------------|
@@ -77,7 +77,7 @@ See [TXT OS](../OS/) for real-time demos, or [start here with RAG failures →](
 
 ---
 
-## 🎯 Status & Difficulty Matrix
+## 🔗 Status & Difficulty Matrix
 
 | #  | Problem                         | Difficulty* | Implementation |
 |----|----------------------------------|-------------|----------------|
@@ -100,7 +100,7 @@ See [TXT OS](../OS/) for real-time demos, or [start here with RAG failures →](
 
 ---
 
-### 🛠 How to Use These Docs
+### 🔗 How to Use These Docs
 
 Each problem page covers:
 
@@ -113,7 +113,7 @@ Missing issue? Open an Issue or PR—real failure traces especially welcome.
 
 ---
 
-### 🧭 Specialized Maps
+### 🔗 Specialized Maps
 
 - [🧠 RAG Problem Table (#1, #2, #3, #5, #8)](./RAG_Problems.md) – retrieval‑augmented generation failures  
 - [🤖 Multi‑Agent Chaos Map (#13)](./Multi-Agent_Problems.md) – coordination, memory, role drift  
@@ -132,6 +132,27 @@ Missing issue? Open an Issue or PR—real failure traces especially welcome.
 |------|------|--------------|
 | **WFGY 1.0 PDF** | [Engine Paper](https://zenodo.org/records/15630969) | 1️⃣ Download · 2️⃣ Upload to your LLM · 3️⃣ Ask “Answer using WFGY + &lt;your question&gt;” |
 | **TXT OS (plain‑text OS)** | [TXTOS.txt](https://zenodo.org/records/15788557) | 1️⃣ Download · 2️⃣ Paste into any LLM chat · 3️⃣ Type “hello world” — OS boots instantly |
+
+---
+
+
+
+## 🔗 Not Sure What’s Going Wrong?
+
+You’re not alone — many AI devs face mysterious failures like:
+
+- “Why is it hallucinating when the chunk is correct?”
+- “Why can’t it reason despite having all the data?”
+- “Why does context break halfway through?”
+
+🎯 Diagnose by symptom — find your problem, see exact WFGY fix:
+
+| Symptom | Problem ID | Fix |
+|---------|------------|-----|
+| 🤯 Wrong chunks, wrong answer | #1 Hallucination & Chunk Drift | [Fix it →](./hallucination.md) |
+| 🧵 Model forgets context in long docs | #7 Memory Breaks in 100k Tokens | [Fix it →](./memory-coherence.md) |
+| 🌀 Good data, still bad logic | #2 Interpretation Collapse | [Fix it →](./retrieval-collapse.md) |
+| 🔍 Full diagnosis table (13+ issues) |  | [See full table →](./README.md#problem-catalog) |
 
 ---
 
