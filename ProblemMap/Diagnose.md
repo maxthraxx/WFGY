@@ -33,6 +33,9 @@ Values > 0.6 usually map to problems #1–#4.
 
 ---
 
+↩︎ [Back to Problem Index](./README.md)
+
+<br>
 
 > <img src="https://img.shields.io/github/stars/onestardao/WFGY?style=social" alt="GitHub stars"> ⭐ Help reach 10,000 stars by 2025-09-01 to unlock Engine 2.0 for everyone  ⭐ <strong><a href="https://github.com/onestardao/WFGY">Star WFGY on GitHub</a></strong>
 
