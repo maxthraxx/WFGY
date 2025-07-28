@@ -1,4 +1,4 @@
-# 📒 Problem · Long QA Chains Drift Off‑Topic
+# 📒 Problem #3 · Long QA Chains Drift Off‑Topic
 
 Even when each turn is “correct,” long conversations tend to slide off course—goals fade, topics morph, answers contradict earlier context. WFGY stops that drift by measuring semantic shifts and anchoring memory in a Tree.
 
