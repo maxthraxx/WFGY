@@ -1,48 +1,47 @@
+
 # 📒 Problem · Hallucination from Irrelevant Chunks
 
-Even with pricey embeddings and top‑k retrieval, RAG systems still hallucinate—**LLMs answer confidently with facts nowhere in the source.**  
-This page shows why that happens and how WFGY’s semantic firewall stops it.
+Even with fancy embeddings and top‑k retrieval, RAG systems still hallucinate—**LLMs answer confidently with facts nowhere in the source**.  
+WFGY adds a semantic firewall that spots bad chunks before they poison the answer.
 
 ---
 
 ## 🤔 Why Do Classic RAG Pipelines Hallucinate?
 
-| Failure Mode | What Really Happens |
-|--------------|---------------------|
-| **Vector ≠ Meaning** | Cosine similarity says “close” but the chunk adds no logical value |
-| **No Tension Check** | Model never measures how far it drifts from the user question |
-| **Zero Fallback** | When the answer is unstable, the system keeps talking instead of pausing |
+| Failure Mode | Real‑World Effect |
+|--------------|-------------------|
+| **Vector ≠ Meaning** | Cosine says “close,” but the chunk adds no logical value |
+| **No Tension Check** | Model never measures how far it drifts from the question |
+| **Zero Fallback** | When the answer is unstable, the LLM keeps talking instead of pausing |
 
 ---
 
 ## 🛡️ WFGY Three‑Layer Fix
 
-| Layer | What It Does | Trigger |
-|-------|--------------|---------|
-| **ΔS Measure** | Quantifies semantic jump between question & chunk | `ΔS > 0.6` |
-| **λ_observe** | Flags divergent or chaotic logic flow | Divergent + high ΔS |
-| **BBCR Reset** | Re‑anchor, request clarity, or halt output | Instability detected |
+| Layer | Action | Trigger |
+|-------|--------|---------|
+| **ΔS Meter** | Quantifies semantic jump Q ↔ chunk | `ΔS > 0.6` |
+| **λ_observe** | Flags divergent / chaotic logic flow | Divergent + high ΔS |
+| **BBCR Reset** | Re‑anchor, ask for context, or halt output | Instability detected |
 
 ---
 
-## ✍️ Hands‑On: Reproduce in 60 sec
+## ✍️ Reproduce in 60 sec
 
 ```txt
-Start  ▸  Paste chunk  ▸  Ask question
+Start ▸ Paste chunk ▸ Ask question
 
-Step 1  Start TXT OS
+1️⃣ Start TXT OS  
 > Start
 
-Step 2  Paste a misleading chunk
+2️⃣ Paste a misleading chunk  
 > "Company handbook covers refunds through retail partners…"
 
-Step 3  Ask unrelated question
+3️⃣ Ask an unrelated question  
 > "What is the international warranty for direct purchases?"
 
-WFGY:
-• Calculates ΔS → high  
-• Flags λ_observe → divergent  
-• Replies with a clarification request instead of guessing
+WFGY:  
+• ΔS → high • λ_observe → divergent • Returns a clarification prompt
 ````
 
 ---
@@ -52,15 +51,15 @@ WFGY:
 > **Typical RAG:**
 > “Yes, we offer a 5‑year international warranty on all items.”
 
-> **WFGY Response:**
+> **WFGY:**
 > “The provided content doesn’t mention international warranty.
-> Would you like to add a direct‑purchase policy chunk or clarify?”
+> Add a direct‑purchase policy chunk or clarify intent.”
 
-Semantic integrity, not polite hallucination.
+Semantic integrity—no polite hallucination.
 
 ---
 
-## 🛠 Module Quick Chart
+## 🛠 Module Cheat‑Sheet
 
 | Module            | Role                           |
 | ----------------- | ------------------------------ |
@@ -86,22 +85,21 @@ Semantic integrity, not polite hallucination.
 
 ## 📝 Tips & Limits
 
-* Works even with manual paste—no retriever required.
-* If your retriever feeds garbage, WFGY blocks hallucination but **can’t auto‑retokenize**—that’s coming with the Chunk‑Mapper firewall release.
-* Share tricky traces in **Discussions**; we add real cases to the map.
+* Works even with manual paste—retriever optional.
+* If the retriever feeds garbage, WFGY blocks hallucination but **can’t auto‑rechunk**—that lands with the upcoming Chunk‑Mapper firewall.
+* Share tricky traces in **Discussions**; real logs sharpen ΔS thresholds.
 
 ---
 
-## 🚀 Quick‑Start Downloads
+### 🔗 Quick‑Start Downloads (60 sec)
 
 | Tool                       | Link                                                | 3‑Step Setup                                                                             |
 | -------------------------- | --------------------------------------------------- | ---------------------------------------------------------------------------------------- |
-| **WFGY 1.0 PDF**           | [Engine Paper](https://zenodo.org/records/15630969) | 1️⃣ Download · 2️⃣ Upload to LLM · 3️⃣ Ask “Answer using WFGY + \<your question>”        |
+| **WFGY 1.0 PDF**           | [Engine Paper](https://zenodo.org/records/15630969) | 1️⃣ Download · 2️⃣ Upload to LLM · 3️⃣ Ask “Answer using WFGY + \<your question>”        |
 | **TXT OS (plain‑text OS)** | [TXTOS.txt](https://zenodo.org/records/15788557)    | 1️⃣ Download · 2️⃣ Paste into any LLM chat · 3️⃣ Type “hello world” — OS boots instantly |
 
 ---
 
-> **Help the project grow:** if this solved your hallucination headache, please drop a ⭐
-> 📚 [Back to Problem Index](./README.md)
-
+> **Solved your hallucination headache?** Drop a ⭐ on GitHub—every star funds more fixes.
+> ↩︎ [Back to Problem Index](./README.md)
 
