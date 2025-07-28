@@ -97,8 +97,7 @@ This is **semantic integrity**, not just better prompting.
 
 ---
 
-Let us know if you want to try hallucination stress-testing — we have sample prompts.
-
+← [Back to Problem Index](./README.md)
 
 
 
