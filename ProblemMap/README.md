@@ -67,7 +67,13 @@ Missing issue? Open an Issue or PR—real failure traces especially welcome.
 
 ### 🧭 Specialized Maps
 
-- [RAG Problem Table](./RAG_Problems.md) – focused list for retrieval‑augmented generation workflows
+- [RAG Problem Table](./RAG_Problems.md) – retrieval‑augmented generation failures  
+- [Multi‑Agent Chaos Map](./Multi-Agent_Problems.md) – coordination, memory, role drift  
+- [Symbolic & Logic Trap Map](./Symbolic_Logic_Problems.md) – paradox, recursion, formal proofs  
+- [Long‑Context Stress Map](./LongContext_Problems.md) – 100k‑token stability, noisy PDFs  
+- [Multimodal Reasoning Map](./Multimodal_Problems.md) – text + image + code alignment  
+- [Safety Boundary Map](./Safety_Boundary_Problems.md) – knowledge gaps, jailbreaks, policy limits
+
 
 ---
 
