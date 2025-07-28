@@ -79,9 +79,11 @@ WFGY is built to fix key failures in modern LLM pipelines and agent systems — 
 - ✅ **Scalable, hallucination-safe RAG** — Supports 10M+ docs without breakdown.  
 - ✅ **Verifiable semantic memory** — Tree architecture shows exactly how it thinks.
 
-> **TL;DR:** WFGY isn’t prompt engineering — it’s a **semantic reasoning engine** built for logic, safety, and scale.
+> **TL;DR:** WFGY isn’t prompt engineering — it’s a **semantic reasoning engine** built for logic, safety, and scale.  
+> 📍 [See full breakdown in the WFGY Problem Map →](./ProblemMap)
 
 </details>
+
 
 
 ---
