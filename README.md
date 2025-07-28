@@ -15,7 +15,8 @@
 &nbsp;
 [![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.15630970-blue)](https://doi.org/10.5281/zenodo.15630969)
 &nbsp;
-[LANGUAGES](./LANGUAGES.md)
+![solved](https://img.shields.io/badge/Problems%20Solved-19%2F19-blueviolet)
+&nbsp;
 
 <details>
 <summary><strong>🌍 The WFGY Family — The Civilization Starter Project (Click to expand)</strong></summary>
