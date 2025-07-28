@@ -1,4 +1,4 @@
-# 📒 Problem · High Vector Similarity, Wrong Meaning
+# 📒 Problem #5 · High Vector Similarity, Wrong Meaning
 
 Classic RAG scores chunks by cosine similarity—close vectors ≠ correct logic.  
 Result: “looks relevant” chunks that derail answers. WFGY replaces surface matching with semantic residue checks.
