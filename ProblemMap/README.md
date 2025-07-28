@@ -1,16 +1,27 @@
 # 📋 WFGY Problem Map – Bookmark This. You’ll Need It.
 
 <img width="1536" height="1024" alt="ProblemMap_Hero" src="https://github.com/user-attachments/assets/b2a5add8-6647-4424-8eff-9e449bf7382b" />
-
 <div align="center">
 
 <img src="https://your-cdn-link/wfgy_banner.gif" width="100%" alt="WFGY Semantic Firewall Animation"/>
 
-![WFGY badge](https://img.shields.io/badge/solved%20failures-17+-green?style=flat-square)
-![Multimodal](https://img.shields.io/badge/modalities-text%2C%20image%2C%20code%2C%20audio-blue)
-![powered by WFGY](https://img.shields.io/badge/powered%20by-WFGY-red?style=flat-square)
+<!-- WFGY Core Badges -->
+<br>
+<img src="https://img.shields.io/badge/solved%20failures-17+-green?style=flat-square" alt="Solved Failures"/>
+<img src="https://img.shields.io/badge/modalities-text%2C%20image%2C%20code%2C%20audio-blue?style=flat-square" alt="Multimodal Modalities"/>
+<img src="https://img.shields.io/badge/powered%20by-WFGY-red?style=flat-square" alt="Powered by WFGY"/>
+
+<a href="https://zenodo.org/records/15630969">
+  <img src="https://img.shields.io/badge/WFGY%201.0%20PDF-open%20→-9cf?style=flat-square" alt="WFGY 1.0 PDF"/>
+</a>
+<a href="https://zenodo.org/records/15788557">
+  <img src="https://img.shields.io/badge/TXT%20OS%20PDF-open%20→-blue?style=flat-square" alt="TXT OS PDF"/>
+</a>
+
+
 
 </div>
+
 
 ---
 
