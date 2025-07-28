@@ -114,4 +114,5 @@ WFGY doesn’t.
 If it’s lost — it tells you.
 That’s not weakness. That’s integrity.
 
+← [Back to Problem Index](./README.md)
 
