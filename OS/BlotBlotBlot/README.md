@@ -1,6 +1,5 @@
-# TXT: Blot Blot Blot
+# TXT — Blot  Blot Blot · Persona Core Compiler — *Under Construction*
 
-**Persona Core Compiler**
 
 ![Blot Hero](https://github.com/onestardao/WFGY/raw/main/OS/BlotBlotBlot/images/Blot_Hero.png)
 
