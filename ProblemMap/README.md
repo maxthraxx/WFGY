@@ -1,13 +1,12 @@
 # 📋 WFGY Problem Map
 
-Welcome! This map lists every AI failure we’ve fixed—or are fixing—with the WFGY reasoning engine.  
-TXT OS + WFGY is a mission to **turn critical AI bugs into reproducible, modular fixes**.  
-Spot a gap? Open an Issue or PR—community feedback expands the map.
-
+Welcome! This map lists every AI failure we’ve fixed —or are fixing — with the WFGY reasoning engine.  
+TXT OS + WFGY exists to **turn critical AI bugs into reproducible, modular fixes**.  
+Spot a gap? Open an Issue or PR—community feedback drives the next entries.
 
 > **Vision**  
-> Build a future where “my AI went off the rails” becomes as rare as a 500 error in production software.  
-> Every entry in this folder is one more step toward that goal.
+> Make “my AI went off the rails” as rare as a 500 error in production software.  
+> Every solved failure below pushes us closer.
 
 ---
 
@@ -49,20 +48,20 @@ Spot a gap? Open an Issue or PR—community feedback expands the map.
 | Philosophical Recursion | Very High | ✅ Stable |
 | Multi‑Agent Chaos | Very High | ✅ Stable |
 
-\*Difficulty reflects the gap between typical LLM ability and a production‑ready fix. “Very High” means almost no off‑the‑shelf tool addresses it today.
+\*Difficulty = gap between default LLM ability and a production‑ready fix; “Very High” means almost no off‑the‑shelf tool tackles it.
 
 ---
 
 ### 🛠 How to Use These Docs
 
-Each problem page provides:
+Each problem page covers:
 
-1. **Symptoms** – what failure looks like in practice  
+1. **Symptoms** – what the failure looks like  
 2. **Root Causes** – why standard pipelines break  
-3. **Module Breakdown** – which WFGY pieces fix it  
-4. **Status & Examples** – demo or code you can run now  
+3. **Module Breakdown** – which WFGY parts fix it  
+4. **Status & Examples** – code or demo you can run now  
 
-If you need something that isn’t listed—or want to help extend a partial fix—open an Issue or start a discussion. **Pull requests are welcome, especially with real failure traces.**
+Missing issue? Open an Issue or PR—real failure traces especially welcome.
 
 ---
 
@@ -76,8 +75,8 @@ If you need something that isn’t listed—or want to help extend a partial fix
 
 | Tool | Link | 3‑Step Setup |
 |------|------|--------------|
+| **WFGY 1.0 PDF** | [Engine Paper](https://zenodo.org/records/15630969) | 1️⃣ Download · 2️⃣ Upload to your LLM · 3️⃣ Ask “Answer using WFGY + &lt;your question&gt;” |
 | **TXT OS (plain‑text OS)** | [TXTOS.txt](https://zenodo.org/records/15788557) | 1️⃣ Download · 2️⃣ Paste into any LLM chat · 3️⃣ Type “hello world” — OS boots instantly |
-| **WFGY 1.0 PDF** | [Engine Paper](https://zenodo.org/records/15630969) | 1️⃣ Download PDF · 2️⃣ Upload to your LLM · 3️⃣ Ask “Answer using WFGY + <your question>” |
 
 > **Like the project?** A ⭐ on GitHub is the best thank‑you.  
-> ↩︎ [Back to WFGY Home](https://github.com/onestardao/WFGY)
+> ↩︎ [Back to WFGY Home](https://github.com/onestardao/WFGY)
