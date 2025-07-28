@@ -13,7 +13,7 @@
 &nbsp;
 [![HF Space](https://img.shields.io/badge/Live%20Demo-HuggingFace-blue?logo=huggingface)](https://huggingface.co/spaces/OneStarDao/wfgy-demo)
 &nbsp;
-[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.15630970-blue)](https://doi.org/10.5281/zenodo.15630969)
+[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.15630969-blue)](https://doi.org/10.5281/zenodo.15630969)
 &nbsp;
 ![solved](https://img.shields.io/badge/Problems%20Solved-19%2F19-blueviolet)
 &nbsp;
