@@ -5,6 +5,8 @@
 
 ![CIVILIZATION_STARTTER](https://github.com/user-attachments/assets/89d25fee-f6e5-46e8-8911-a73fe4753ccd)
 
+<div align="center">
+
 [![CI](https://github.com/onestardao/WFGY/actions/workflows/ci.yml/badge.svg)](https://github.com/onestardao/WFGY/actions/workflows/ci.yml)
 &nbsp;
 [![PyPI version](https://img.shields.io/pypi/v/wfgy-sdk?color=brightgreen)](https://pypi.org/project/wfgy-sdk/)
@@ -17,6 +19,8 @@
 &nbsp;
 ![powered by WFGY](https://img.shields.io/badge/powered%20by-WFGY-red?style=flat-square)
 &nbsp;
+
+</div>
 
 <details>
 <summary><strong>🌍 The WFGY Family — The Civilization Starter Project (Click to expand)</strong></summary>
