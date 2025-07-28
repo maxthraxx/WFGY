@@ -9,22 +9,28 @@
 
 <img src="./images/TXTOS_Hero.png" alt="txt-temple-of-truth" width="100%" style="max-width:900px" />
 
+
 <div align="center">
 
-[![CI](https://github.com/onestardao/WFGY/actions/workflows/ci.yml/badge.svg)](https://github.com/onestardao/WFGY/actions/workflows/ci.yml)
+Explore the WFGY Family — Modular Reasoning Tools for the Next‑Gen AI Stack
+
+[![WFGY Main](https://img.shields.io/badge/WFGY-Main-black?style=flat-square)](https://github.com/onestardao/WFGY)
 &nbsp;
-[![PyPI version](https://img.shields.io/pypi/v/wfgy-sdk?color=brightgreen)](https://pypi.org/project/wfgy-sdk/)
+[![TXT OS](https://img.shields.io/badge/TXT%20OS-Reasoning%20OS-blue?style=flat-square)](https://github.com/onestardao/WFGY/tree/main/OS)
 &nbsp;
-[![Colab](https://img.shields.io/badge/Colab-Run-yellow?logo=google-colab)](https://colab.research.google.com/github/onestardao/WFGY/blob/main/README_demo.ipynb)
+[![Blah](https://img.shields.io/badge/Blah-Semantic%20Embed-orange?style=flat-square)](https://github.com/onestardao/WFGY/tree/main/OS/BlahBlahBlah)
 &nbsp;
-[![HF Space](https://img.shields.io/badge/Live%20Demo-HuggingFace-blue?logo=huggingface)](https://huggingface.co/spaces/OneStarDao/wfgy-demo)
+[![Blur](https://img.shields.io/badge/Blur-Text2Image%20Engine-lightblue?style=flat-square)](https://github.com/onestardao/WFGY/tree/main/OS/BlurBlurBlur)
 &nbsp;
-[![solved](https://img.shields.io/badge/Problems%20Solved-19%2F19-blueviolet)](https://github.com/onestardao/WFGY/blob/main/ProblemMap)
+[![Blow](https://img.shields.io/badge/Blow-Game%20Logic-purple?style=flat-square)](https://github.com/onestardao/WFGY/tree/main/OS/BlowBlowBlow)
 &nbsp;
-![powered by WFGY](https://img.shields.io/badge/powered%20by-WFGY-red?style=flat-square)
+[![Blot](https://img.shields.io/badge/Blot-Persona%20Core-darkgreen?style=flat-square)](https://github.com/onestardao/WFGY/tree/main/OS/BlotBlotBlot)
+&nbsp;
+[![Bloc](https://img.shields.io/badge/Bloc-Reasoning%20Compiler-teal?style=flat-square)](https://github.com/onestardao/WFGY/tree/main/OS/BlocBlocBloc)
 &nbsp;
 
 </div>
+
 
 ---
 
