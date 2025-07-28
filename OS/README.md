@@ -9,6 +9,8 @@
 
 <img src="./images/TXTOS_Hero.png" alt="txt-temple-of-truth" width="100%" style="max-width:900px" />
 
+<div align="center">
+
 [![CI](https://github.com/onestardao/WFGY/actions/workflows/ci.yml/badge.svg)](https://github.com/onestardao/WFGY/actions/workflows/ci.yml)
 &nbsp;
 [![PyPI version](https://img.shields.io/pypi/v/wfgy-sdk?color=brightgreen)](https://pypi.org/project/wfgy-sdk/)
@@ -22,6 +24,7 @@
 ![powered by WFGY](https://img.shields.io/badge/powered%20by-WFGY-red?style=flat-square)
 &nbsp;
 
+</div>
 
 ---
 
