@@ -8,21 +8,18 @@
 <!-- WFGY Core Badges -->
 <br>
 
-<div align="center">
-
-![Solved](https://img.shields.io/badge/Problems%20Solved-19%2F19-success?style=for-the-badge)
-
-[![WFGY Main](https://img.shields.io/badge/WFGY‑Engine‑Core‑logic‑black?style=for-the-badge)](https://github.com/onestardao/WFGY)
-[![TXT OS](https://img.shields.io/badge/TXT%20OS‑Text%20Reasoning%20OS‑orange?style=for-the-badge)](https://github.com/onestardao/WFGY/tree/main/OS)
-[![Blah](https://img.shields.io/badge/BlahBlahBlah‑Fragmented%20Speech‑blue?style=for-the-badge)](https://github.com/onestardao/WFGY/tree/main/OS/BlahBlahBlah)
-[![Blur](https://img.shields.io/badge/BlurBlurBlur‑Poetic%20Vision‑purple?style=for-the-badge)](https://github.com/onestardao/WFGY/tree/main/OS/BlurBlurBlur)
-[![Blow](https://img.shields.io/badge/BlowBlowBlow‑AIGC%20Game%20Engine‑green?style=for-the-badge)](https://github.com/onestardao/WFGY/tree/main/OS/BlowBlowBlow)
-[![Bloc](https://img.shields.io/badge/BlocBlocBloc‑Persona%20Compiler‑pink?style=for-the-badge)](https://github.com/onestardao/WFGY/tree/main/OS/BlocBlocBloc)
-[![Blot](https://img.shields.io/badge/BlotBlotBlot‑Logic%20Trace%20Tool‑gray?style=for-the-badge)](https://github.com/onestardao/WFGY/tree/main/OS/BlotBlotBlot)
-
-![Powered by WFGY](https://img.shields.io/badge/Powered%20by‑WFGY‑red?style=for-the-badge)
-
-</div>
+[![CI](https://github.com/onestardao/WFGY/actions/workflows/ci.yml/badge.svg)](https://github.com/onestardao/WFGY/actions/workflows/ci.yml)
+&nbsp;
+[![PyPI version](https://img.shields.io/pypi/v/wfgy-sdk?color=brightgreen)](https://pypi.org/project/wfgy-sdk/)
+&nbsp;
+[![Colab](https://img.shields.io/badge/Colab-Run-yellow?logo=google-colab)](https://colab.research.google.com/github/onestardao/WFGY/blob/main/README_demo.ipynb)
+&nbsp;
+[![HF Space](https://img.shields.io/badge/Live%20Demo-HuggingFace-blue?logo=huggingface)](https://huggingface.co/spaces/OneStarDao/wfgy-demo)
+&nbsp;
+[![solved](https://img.shields.io/badge/Problems%20Solved-19%2F19-blueviolet)](https://github.com/onestardao/WFGY/blob/main/ProblemMap)
+&nbsp;
+![powered by WFGY](https://img.shields.io/badge/powered%20by-WFGY-red?style=flat-square)
+&nbsp;
 
 
 
