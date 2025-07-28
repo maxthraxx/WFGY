@@ -1,128 +1,114 @@
-# 🧠 Problem: High Vector Similarity — But Totally Wrong Meaning
+# 📒 Problem · High Vector Similarity, Wrong Meaning
 
-### 📍Context
-
-Traditional RAG systems rely on **vector similarity** (cosine distance) between the user query and document chunks.
-
-But this often causes:
-
-- Retrieval of semantically irrelevant chunks that "sound similar"
-- Answers built on false premises
-- Subtle hallucination due to embedding misalignment
+Classic RAG scores chunks by cosine similarity—close vectors ≠ correct logic.  
+Result: “looks relevant” chunks that derail answers. WFGY replaces surface matching with semantic residue checks.
 
 ---
 
-## 🚨 Why It Happens
+## 🤔 Why Cosine Match Misleads
 
-| Weakness | Explanation |
-|----------|-------------|
-| Embedding ≠ understanding | Cosine proximity captures surface-level overlap, not logical meaning |
-| Shared keywords ≠ shared intent | Language ambiguity causes mismatches |
-| No semantic correction layer | System doesn’t validate if chunk really fits the question frame |
-
----
-
-## 📉 Example
-
-A user asks:
-> "How do I cancel my subscription after the free trial?"
-
-RAG retrieves:
-> "Subscriptions can be renewed monthly or yearly, depending on your plan."
-
-→ High embedding match — but not semantically helpful.  
-The answer will mislead.
+| Weakness | Practical Failure |
+|----------|------------------|
+| **Embedding ≠ Understanding** | Cosine overlap captures phrasing, not intent |
+| **Keywords ≠ Intent** | Ambiguous terms bring unrelated chunks |
+| **No Semantic Guard** | System never validates logical fit |
 
 ---
 
-## ✅ WFGY Solution: Semantic Residue Minimization
+## ⚠️ Example Mis‑Retrieval
 
-WFGY uses **BBMC**, a module that minimizes the mismatch between **true semantic intent** and the **input chunk**, based on vector tension:
+**User:** “How do I cancel my subscription after the free trial?”  
+**Retrieved chunk:** “Subscriptions renew monthly or yearly, depending on plan.”  
+→ High cosine, zero help → hallucinated answer.
+
+---
+
+## 🛡️ WFGY Fix · BBMC Residue Minimization
 
 ```math
-B = I - G + m * c²
+B = I - G + m·c²      # minimize ‖B‖
 ````
 
-Where:
+| Symbol | Meaning                      |
+| ------ | ---------------------------- |
+| **I**  | Input semantic vector        |
+| **G**  | Ground‑truth anchor (intent) |
+| **B**  | Semantic residue (error)     |
 
-* `I` = input semantic vector
-* `G` = ground-truth logic anchor
-* `B` = semantic residue (error)
-* Minimize ‖B‖ to ensure semantic integrity
-
----
-
-## 🔍 Key Features
-
-### 1. BBMC Residue Computation
-
-* Even if two chunks are close in vector space, if B is large → they’re semantically divergent
-
-### 2. ΔS Thresholding
-
-* WFGY can reject chunks where the semantic tension (ΔS) is too high
-
-### 3. Attention Modulation (BBAM)
-
-* Suppresses misleading high-attention tokens if they amplify surface similarity without logical contribution
+* Large ‖B‖ → chunk is semantically off → WFGY rejects or asks for context.
 
 ---
 
-## 🛠 Try It Yourself
+## 🔍 Key Defenses
+
+| Layer            | Action                                        |
+| ---------------- | --------------------------------------------- |
+| **BBMC**         | Computes residue; filters divergent chunks    |
+| **ΔS Threshold** | Rejects high semantic tension (ΔS > 0.6)      |
+| **BBAM**         | Down‑weights misleading high‑attention tokens |
+| **Tree Anchor**  | Confirms chunk aligns with prior logic path   |
+
+---
+
+## ✍️ Quick Repro (1 min)
 
 ```txt
-Step 1 — Start
+1️⃣  Start
 > Start
 
-Step 2 — Paste a chunk with high keyword overlap but wrong context
-> "Our plans include yearly options with auto-renewal."
+2️⃣  Paste misleading chunk
+> "Plans include yearly renewal."
 
-Step 3 — Ask:
+3️⃣  Ask
 > "How do I cancel a free trial?"
 
-Expected:
-- WFGY detects high ΔS
-- Rejects the chunk or requests clarification
+WFGY:
+• ΔS high → chunk rejected  
+• Prompts for trial‑specific info instead of hallucinating
 ```
 
 ---
 
-## 🔬 Example Output
+## 🔬 Sample Output
 
 ```txt
-This chunk shares surface similarity, but may not address the trial cancellation intent.  
-Would you like to reframe the query or explore adjacent policies?
+Surface overlap detected, but content lacks trial‑cancellation detail.  
+Add a policy chunk on trial termination or rephrase the query.
 ```
 
 ---
 
-## 🔗 Related Modules
+## 🛠 Module Cheat‑Sheet
 
-* `BBMC` — Semantic residue computation
-* `ΔS` — Semantic distance (not cosine)
-* `BBAM` — Suppression of misleading token focus
-* `Tree anchor logic` — Validates meaning alignment with prior paths
-
----
-
-## 📌 Status
-
-| Feature                          | Status                     |
-| -------------------------------- | -------------------------- |
-| BBMC implementation              | ✅ working                  |
-| ΔS filtering                     | ✅ working                  |
-| Token-level attention modulation | ⚠️ basic (advanced coming) |
-| Rejection of misleading chunks   | ✅ supported                |
+| Module            | Role                       |
+| ----------------- | -------------------------- |
+| **BBMC**          | Residue minimization       |
+| **ΔS Metric**     | Measures semantic tension  |
+| **BBAM**          | Suppresses noisy tokens    |
+| **Semantic Tree** | Validates anchor alignment |
 
 ---
 
-## ✍️ Summary
+## 📊 Implementation Status
 
-Cosine distance can fool you.
-WFGY trusts **semantic integrity**, not keyword proximity.
+| Feature                    | State    |
+| -------------------------- | -------- |
+| BBMC residue calc          | ✅ Stable |
+| ΔS filter                  | ✅ Stable |
+| Token attention modulation | ⚠️ Basic |
+| Misleading chunk rejection | ✅ Active |
 
-It doesn't just retrieve "close" chunks — it verifies meaning match.
+---
 
-← [Back to Problem Index](./README.md)
+### 🔗 Quick‑Start Downloads (60 sec)
 
+| Tool                       | Link                                                | 3‑Step Setup                                                                             |
+| -------------------------- | --------------------------------------------------- | ---------------------------------------------------------------------------------------- |
+| **WFGY 1.0 PDF**           | [Engine Paper](https://zenodo.org/records/15630969) | 1️⃣ Download · 2️⃣ Upload to LLM · 3️⃣ Ask “Answer using WFGY + \<your question>”        |
+| **TXT OS (plain‑text OS)** | [TXTOS.txt](https://zenodo.org/records/15788557)    | 1️⃣ Download · 2️⃣ Paste into any LLM chat · 3️⃣ Type “hello world” — OS boots instantly |
+
+---
+
+> **Saved you from “keyword hallucinations”?** Drop a ⭐ to keep the fixes coming.
+> ↩︎ [Back to Problem Index](./README.md)
 
