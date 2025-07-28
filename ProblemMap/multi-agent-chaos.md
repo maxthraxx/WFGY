@@ -1,68 +1,110 @@
-# 🧠 Multi-Agent Semantic Chaos
+# 📒 Problem · Multi‑Agent Semantic Chaos
 
-Multi-agent systems often collapse under semantic chaos: agents forget roles, misalign memory, or overwrite each other’s logic paths.
-
-WFGY enables distributed logic systems to stay coherent even under complex delegation and parallel planning.
-
----
-
-## 💥 Symptoms
-
-- Agents contradict each other or repeat tasks
-- Shared memory becomes inconsistent
-- No way to trace logic provenance across agents
-- Agents begin speaking “incoherent collectives” — no semantic boundary
-- State drift or memory overwrite over time
+When multiple agents share a workspace, logic collides: roles blur, memories overwrite, tasks loop.  
+WFGY anchors each agent’s reasoning in a tagged Semantic Tree, keeping distributed plans coherent.
 
 ---
 
-## ❌ Why It Happens
+## 💥 Symptoms of Agent Chaos
 
-- No centralized semantic state model
-- Memory is token-based, not logic-based
-- No agent-to-agent ΔS tracking
-- All agents operate independently with no shared reasoning grammar
-
----
-
-## ✅ WFGY Solution
-
-WFGY provides cross-agent coherence and traceability via semantic Tree anchoring and role-aware BBMC.
-
-| Problem | WFGY Module | Fix |
-|---------|-------------|-----|
-| Memory inconsistency | Semantic Tree + ID stamps | Nodes carry agent tags and version history |
-| Role confusion | Role-indexed BBPF | Distinct reasoning paths per agent, tracked |
-| Task overlap or conflict | ΔS divergence monitor | Detects logic collision early |
-| State overwrite | Memory checkpointing | Agents fork from stable node snapshots |
+| Sign | What You See |
+|------|--------------|
+| Contradicting orders | Agent A says “Abort,” Agent B says “Proceed” |
+| Inconsistent memory | Knowledge diverges between agents |
+| Lost provenance | No one can tell which agent made a decision |
+| Incoherent collective speech | Replies read like a scrambled chorus |
+| State drift | Later actions overwrite earlier plans |
 
 ---
 
-## 🧪 Example Use
+## 🧩 Root Causes
 
-> Scenario: *Three autonomous agents plan a rescue mission in simulation, each with overlapping skillsets.*
+| Weakness | Result |
+|----------|--------|
+| No central semantic state | Agents store context only in local tokens |
+| No ΔS peer tracking | Systems can’t detect inter‑agent divergence |
+| Flat memory | No role tagging or version history |
+| Independent grammars | Each agent invents its own logic path |
 
-- Typical framework: Agents loop, contradict orders, overwrite strategy.
-- WFGY:
-  - Tags each logic branch by agent (`Agent_X/Node_4C`)
-  - Tree shows overlap zone and warns of role conflict
-  - BBMC filters semantic collisions
-  - Final Tree resolves divergent paths into one stable plan
+---
+
+## 🛡️ WFGY Cross‑Agent Fix
+
+| Problem | Module | Remedy |
+|---------|--------|--------|
+| Memory inconsistency | **Semantic Tree + ID stamps** | Each node tagged by `agent_id` + version |
+| Role confusion | Role‑indexed **BBPF** | Distinct reasoning forks per agent |
+| Task overlap | ΔS divergence monitor | Flags early collision |
+| State overwrite | Memory checkpoints | Agents fork from last stable node |
+
+---
+
+## ✍️ Demo — Rescue Mission with 3 Agents
+
+```txt
+1️⃣  Start
+> Start
+
+2️⃣  Assign roles
+> Agent_A: Scout
+> Agent_B: Medic
+> Agent_C: Engineer
+
+3️⃣  Plan mission (parallel prompts)
+
+4️⃣  Inspect overlap
+> view
+
+Tree shows:
+• Agent_A/Node_4C  (scout path)  
+• Agent_B/Node_2B  (medic path)  
+ΔS collision detected between Node_4C & Node_2B → BBCR suggests merge
+````
+
+Result: one coherent rescue plan, no role mix‑ups.
+
+---
+
+## 🛠 Module Cheat‑Sheet
+
+| Module            | Role                              |
+| ----------------- | --------------------------------- |
+| **Semantic Tree** | Tags nodes by agent & version     |
+| **BBPF**          | Forks role‑specific logic paths   |
+| **BBMC**          | Filters semantic collisions       |
+| **ΔS Metric**     | Detects divergence between agents |
+| **BBCR**          | Resolves or rolls back conflicts  |
 
 ---
 
 ## 📊 Implementation Status
 
-| Feature | Status |
-|---------|--------|
-| Cross-agent Tree integration | ✅ Stable |
-| ΔS tracking per agent | ✅ Implemented |
-| Conflict detection logic | ✅ Active |
-| Memory locking and sync | 🔜 In progress |
+| Feature               | State          |
+| --------------------- | -------------- |
+| Cross‑agent Tree      | ✅ Stable       |
+| Per‑agent ΔS tracking | ✅ Active       |
+| Conflict detection    | ✅ Active       |
+| Memory lock / sync    | 🔜 In progress |
 
 ---
 
-## 🔗 Related Links
+## 📝 Tips & Limits
 
-- [WFGY – Semantic Reasoning Engine](https://github.com/onestardao/WFGY)
-- [TXT OS – Tree Memory System](https://github.com/onestardao/WFGY/tree/main/OS)
+* Use `agent_id` prefix in prompts to auto‑tag nodes.
+* Enable `conflict_alert = true` to get real‑time divergence warnings.
+* Complex multi‑agent logs? Post them in **Discussions**—they refine collision rules.
+
+---
+
+### 🔗 Quick‑Start Downloads (60 sec)
+
+| Tool                       | Link                                                | 3‑Step Setup                                                                             |
+| -------------------------- | --------------------------------------------------- | ---------------------------------------------------------------------------------------- |
+| **WFGY 1.0 PDF**           | [Engine Paper](https://zenodo.org/records/15630969) | 1️⃣ Download · 2️⃣ Upload to LLM · 3️⃣ Ask “Answer using WFGY + \<your question>”        |
+| **TXT OS (plain‑text OS)** | [TXTOS.txt](https://zenodo.org/records/15788557)    | 1️⃣ Download · 2️⃣ Paste into any LLM chat · 3️⃣ Type “hello world” — OS boots instantly |
+
+---
+
+> Prevented agent chaos? Show some ❤️ with a ⭐.
+> ↩︎ [Back to Problem Index](./README.md)
+
