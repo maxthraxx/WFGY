@@ -1,4 +1,4 @@
-# 📒 Problem · Creative Freeze & Imagination Failure
+# 📒 Problem #10 · Creative Freeze & Imagination Failure
 
 Powerful models trend toward “average”: safe phrasing, literal scenes, flat metaphors.  
 WFGY injects semantic tension and multi‑path logic to push output past the comfort zone—without spiraling into incoherence.
