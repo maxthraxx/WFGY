@@ -1,4 +1,4 @@
-# 📒 Problem·Retrieval Works, Reasoning Fails
+# 📒 Problem #2 · Retrieval Works, Reasoning Fails
 
 Your retriever brings back the **correct chunk**, yet the model still answers wrong, vague, or contradictory.  
 Engineers call this the _“chunk‑logic gap.”_ WFGY closes that gap by monitoring semantic stress and recovering broken chains of thought.
