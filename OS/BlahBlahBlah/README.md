@@ -28,7 +28,7 @@
 ──────────────────────────────────────────────── -->
 
 <details>
-<summary><strong>2️⃣ +42% Reasoning Boost — Real or Hype? (Click to expand for proof + solved AI 19 problems)</strong></summary>
+<summary><strong>2️⃣ +42% Reasoning Boost — Real or Hype? (Click to expand for proof + 19 solved AI problems)</strong></summary>
 
 > #### ⚡ Key Metrics  
 > _Metrics verified in the WFGY Paper (see full breakdown below). All results are fully reproducible with the provided `.txt`._
