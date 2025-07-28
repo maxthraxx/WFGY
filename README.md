@@ -61,23 +61,26 @@
 </details>
 
 <details>
-<summary>🤖 What AI problems does WFGY Family solve?</summary>
-
+<summary>📋 What AI problems does WFGY Family solve?</summary>
+  
 <br>
+  
+> WFGY fixes core reasoning failures where RAG, prompts, or embeddings break down.  
 
-WFGY is built to fix key failures in modern LLM pipelines and agent systems — especially where traditional RAG, prompts, or embeddings collapse:
 
-- ✅ **Hallucination & context drift** — Stops retrieval failure via semantic boundaries and BBCR fallback.  
-- ✅ **Long-horizon logic** — Maintains reasoning continuity across complex tasks.  
-- ✅ **Chaotic or conflicting input** — Uses BBMC to minimize semantic residue.  
-- ✅ **Multi-agent memory coherence** — Keeps shared logic stable between agents.  
-- ✅ **Knows what it doesn’t know** — Detects unknown zones and avoids bluffing.  
-- ✅ **Handles symbolic/abstract prompts** — Anchored by ΔS=0.5 semantic structure.  
-- ✅ **Auto-recovery from reasoning failure** — BBCR resets logic without restarts.  
-- ✅ **Multi-path logic** — BBPF enables divergent and creative flow.  
-- ✅ **Stable attention control** — BBAM stops drift and entropy collapse.  
-- ✅ **Scalable, hallucination-safe RAG** — Supports 10M+ docs without breakdown.  
-- ✅ **Verifiable semantic memory** — Tree architecture shows exactly how it thinks.
+| Problem | Description |
+|--------|-------------|
+| **Hallucination & Context Drift** | Stops retrieval failure via semantic boundaries and BBCR fallback |
+| **Long-Horizon Logic** | Maintains reasoning continuity across complex tasks |
+| **Chaotic or Conflicting Input** | Uses BBMC to minimize semantic residue |
+| **Multi-Agent Memory Coherence** | Keeps shared logic stable between agents |
+| **Knows What It Doesn’t Know** | Detects unknown zones and avoids bluffing |
+| **Symbolic / Abstract Prompts** | Anchored by ΔS=0.5 semantic structure |
+| **Auto-Recovery from Logic Failure** | BBCR resets logic without restarts |
+| **Multi-Path Logic** | BBPF enables divergent and creative reasoning |
+| **Stable Attention Control** | BBAM stops drift and entropy collapse |
+| **Hallucination-Safe RAG Scaling** | Supports 10M+ docs without semantic breakdown |
+| **Verifiable Semantic Memory** | Tree architecture shows exactly how it thinks |
 
 > **TL;DR:** WFGY isn’t prompt engineering — it’s a **semantic reasoning engine** built for logic, safety, and scale.  
 > 📍 [See full breakdown in the WFGY Problem Map →](./ProblemMap)
