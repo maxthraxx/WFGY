@@ -1,4 +1,4 @@
-# 📒 Problem · Entropy Collapse (Attention & Semantic Drift)
+# 📒 Problem #9· Entropy Collapse (Attention & Semantic Drift)
 
 When an LLM’s attention diffuses, it rambles, repeats, or spews context‑free filler.  
 This “entropy collapse” kills coherence in long prompts or multi‑topic requests.  
