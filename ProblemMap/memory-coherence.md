@@ -1,4 +1,4 @@
-# 📒 Problem · Memory Collapse & Semantic Coherence Failures
+# 📒 Problem #7 · Memory Collapse & Semantic Coherence Failures
 
 Ask an LLM to manage long‑running context or multiple agents and coherence unravels—facts flip, personas merge, earlier decisions vanish.  
 This “memory collapse” kills reliability. WFGY prevents it with a structured Tree and drift gates.
