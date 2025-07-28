@@ -1,4 +1,4 @@
-# 📒 Problem · Hallucination from Irrelevant Chunks
+# 📒 Problem #1 · Hallucination from Irrelevant Chunks
 
 Even with fancy embeddings and top‑k retrieval, RAG systems still hallucinate—**LLMs answer confidently with facts nowhere in the source**.  
 WFGY adds a semantic firewall that spots bad chunks before they poison the answer.
