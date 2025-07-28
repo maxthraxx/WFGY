@@ -152,7 +152,7 @@ You’re not alone — many AI devs face mysterious failures like:
 | 🤯 Wrong chunks, wrong answer | #1 Hallucination & Chunk Drift | [Fix it →](./hallucination.md) |
 | 🧵 Model forgets context in long docs | #7 Memory Breaks in 100k Tokens | [Fix it →](./memory-coherence.md) |
 | 🌀 Good data, still bad logic | #2 Interpretation Collapse | [Fix it →](./retrieval-collapse.md) |
-| 🔍 Full diagnosis table (13+ issues) |  | [See full table →](./README.md#problem-catalog) |
+🔍 Full diagnosis table (13+ issues) |  | [See full table →](./Diagnose.md) |
 
 ---
 
