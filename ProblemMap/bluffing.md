@@ -1,4 +1,4 @@
-# 📒 Problem · Bluffing — The Model Pretends to Know
+# 📒 Problem #4 · Bluffing — The Model Pretends to Know
 
 Large language models often answer **even when no supporting knowledge exists**.  
 This “confident nonsense” is lethal in support bots, policy tools, or any high‑stakes domain.  
