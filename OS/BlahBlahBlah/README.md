@@ -90,6 +90,7 @@
 
 </details>
 
+
 <details>
 <summary><strong> 3️⃣ Getting started — 60 sec (Click to expand)</strong></summary>
 
@@ -124,9 +125,10 @@
 > “What is this .txt file trying to do?” or “Can you reason through this using the WFGY engine?”  
 > There’s no fixed route — the system is open to reinterpretation, repurposing, and even reverse-engineering._
 >
-> <small>📊 For best results, use platforms verified in our  
+> <small> For best results, use platforms verified in our  
 > <a href="https://github.com/onestardao/WFGY/tree/main/OS">Cross-Platform Test Results</a> — scroll to the mid-section table showing tested LLMs and performance notes.</small>
 
+<p><strong>If this helps you, consider giving it a star — that’s the biggest support you can offer:</strong> <a href="https://github.com/onestardao/WFGY">⭐ Star WFGY on GitHub</a></p>
 </details>
 
 
