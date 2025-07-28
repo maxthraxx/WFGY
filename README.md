@@ -25,7 +25,7 @@
 <br>
 [![CI](https://github.com/onestardao/WFGY/actions/workflows/ci.yml/badge.svg)](https://github.com/onestardao/WFGY/actions/workflows/ci.yml)
 &nbsp;
-[![PyPI version](https://img.shields.io/pypi/v/wfgy-sdk?color=brightgreen)](https://pypi.org/project/wfgy-sdk/)
+[![PyPI version](https://img.shields.io/pypi/v/wfgy-sdk?color=white)](https://pypi.org/project/wfgy-sdk/)
 &nbsp;
 [![Colab](https://img.shields.io/badge/Colab-Run-yellow?logo=google-colab)](https://colab.research.google.com/github/onestardao/WFGY/blob/main/README_demo.ipynb)
 &nbsp;
