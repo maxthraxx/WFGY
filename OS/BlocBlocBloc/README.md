@@ -1,5 +1,5 @@
-# 🧱 TXT: Bloc Bloc Bloc  
-Prompt Injection Firewall
+# TXT — Bloc  Bloc  Bloc · Prompt Injection Firewall — *Under Construction*
+
 
 ![Bloc Hero](https://github.com/onestardao/WFGY/raw/main/OS/BlocBlocBloc/images/Bloc_Hero.png)
 
