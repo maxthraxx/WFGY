@@ -58,43 +58,45 @@ See [TXT OS](../OS/) for real-time demos, or [start here with RAG failures →](
 
 ## 📌 Navigation – Solved (or Tracked) AI Failure Modes
 
-| Problem Domain | Description | Doc |
-|----------------|-------------|-----|
-| Hallucination & Chunk Drift | Retrieval brings wrong / irrelevant content | [hallucination.md](./hallucination.md) |
-| Interpretation Collapse | Chunk is correct but logic fails | [retrieval-collapse.md](./retrieval-collapse.md) |
-| Long Reasoning Chains | Model drifts across multi‑step tasks | [context-drift.md](./context-drift.md) |
-| Bluffing / Overconfidence | Model pretends to know what it doesn’t | [bluffing.md](./bluffing.md) |
-| Semantic ≠ Embedding | Cosine match ≠ true meaning | [embedding-vs-semantic.md](./embedding-vs-semantic.md) |
-| Logic Collapse & Recovery | Dead‑end paths, auto‑reset logic | [symbolic-collapse.md](./symbolic-collapse.md) |
-| Memory Breaks Across Sessions | Lost threads, no continuity | [memory-coherence.md](./memory-coherence.md) |
-| Debugging is a Black Box | No visibility into failure path | [retrieval-traceability.md](./retrieval-traceability.md) |
-| Entropy Collapse | Attention melts, incoherent output | [entropy-collapse.md](./entropy-collapse.md) |
-| Creative Freeze | Outputs become flat, literal | [creative-freeze.md](./creative-freeze.md) |
-| Symbolic Collapse | Abstract / logical prompts break model | [symbolic-collapse.md](./symbolic-collapse.md) |
-| Philosophical Recursion | Self‑reference or paradoxes crash reasoning | [philosophical-recursion.md](./philosophical-recursion.md) |
-| Multi‑Agent Chaos | Agents overwrite / misalign logic | [multi-agent-chaos.md](./multi-agent-chaos.md) |
+| #  | Problem Domain                  | Description                                 | Doc                                                  |
+|----|---------------------------------|---------------------------------------------|------------------------------------------------------|
+| 1  | Hallucination & Chunk Drift     | Retrieval brings wrong / irrelevant content | [hallucination.md](./hallucination.md)              |
+| 2  | Interpretation Collapse         | Chunk is correct but logic fails            | [retrieval-collapse.md](./retrieval-collapse.md)     |
+| 3  | Long Reasoning Chains           | Model drifts across multi‑step tasks        | [context-drift.md](./context-drift.md)              |
+| 4  | Bluffing / Overconfidence       | Model pretends to know what it doesn’t      | [bluffing.md](./bluffing.md)                        |
+| 5  | Semantic ≠ Embedding            | Cosine match ≠ true meaning                 | [embedding-vs-semantic.md](./embedding-vs-semantic.md) |
+| 6  | Logic Collapse & Recovery       | Dead‑end paths, auto‑reset logic            | [symbolic-collapse.md](./symbolic-collapse.md)      |
+| 7  | Memory Breaks Across Sessions   | Lost threads, no continuity                 | [memory-coherence.md](./memory-coherence.md)        |
+| 8  | Debugging is a Black Box        | No visibility into failure path             | [retrieval-traceability.md](./retrieval-traceability.md) |
+| 9  | Entropy Collapse                | Attention melts, incoherent output          | [entropy-collapse.md](./entropy-collapse.md)        |
+| 10 | Creative Freeze                 | Outputs become flat, literal                | [creative-freeze.md](./creative-freeze.md)          |
+| 11 | Symbolic Collapse               | Abstract / logical prompts break model      | [symbolic-collapse.md](./symbolic-collapse.md)      |
+| 12 | Philosophical Recursion         | Self‑reference or paradoxes crash reasoning | [philosophical-recursion.md](./philosophical-recursion.md) |
+| 13 | Multi‑Agent Chaos               | Agents overwrite / misalign logic           | [multi-agent-chaos.md](./multi-agent-chaos.md)      |
+
 
 ---
 
-## 🎯 Status & Difficulty Matrix
+## 🎯 Status & Difficulty Matrix
 
-| Problem | Difficulty* | Implementation |
-|---------|-------------|----------------|
-| Hallucination & Chunk Drift | Medium | ✅ Stable |
-| Interpretation Collapse | High | ✅ Stable |
-| Long Reasoning Chains | High | ✅ Stable |
-| Bluffing / Overconfidence | High | ✅ Stable |
-| Semantic ≠ Embedding | Medium | ✅ Stable |
-| Logic Collapse & Recovery | Very High | ✅ Stable |
-| Memory Breaks Across Sessions | High | ✅ Stable |
-| Debugging Black Box | Medium | ✅ Stable |
-| Entropy Collapse | High | ✅ Stable |
-| Creative Freeze | Medium | ✅ Stable |
-| Symbolic Collapse | Very High | ✅ Stable |
-| Philosophical Recursion | Very High | ✅ Stable |
-| Multi‑Agent Chaos | Very High | ✅ Stable |
+| #  | Problem                         | Difficulty* | Implementation |
+|----|----------------------------------|-------------|----------------|
+| 1  | Hallucination & Chunk Drift     | Medium      | ✅ Stable       |
+| 2  | Interpretation Collapse         | High        | ✅ Stable       |
+| 3  | Long Reasoning Chains           | High        | ✅ Stable       |
+| 4  | Bluffing / Overconfidence       | High        | ✅ Stable       |
+| 5  | Semantic ≠ Embedding            | Medium      | ✅ Stable       |
+| 6  | Logic Collapse & Recovery       | Very High   | ✅ Stable       |
+| 7  | Memory Breaks Across Sessions   | High        | ✅ Stable       |
+| 8  | Debugging Black Box             | Medium      | ✅ Stable       |
+| 9  | Entropy Collapse                | High        | ✅ Stable       |
+| 10 | Creative Freeze                 | Medium      | ✅ Stable       |
+| 11 | Symbolic Collapse               | Very High   | ✅ Stable       |
+| 12 | Philosophical Recursion         | Very High   | ✅ Stable       |
+| 13 | Multi‑Agent Chaos               | Very High   | ✅ Stable       |
 
-\*Difficulty = gap between default LLM ability and a production‑ready fix; “Very High” means almost no off‑the‑shelf tool tackles it.
+\*Difficulty = gap between default LLM ability and a production‑ready fix; “Very High” means almost no off‑the‑shelf tool tackles it.
+
 
 ---
 
@@ -111,14 +113,15 @@ Missing issue? Open an Issue or PR—real failure traces especially welcome.
 
 ---
 
-### 🧭 Specialized Maps
+### 🧭 Specialized Maps
 
-- [RAG Problem Table](./RAG_Problems.md) – retrieval‑augmented generation failures  
-- [Multi‑Agent Chaos Map](./Multi-Agent_Problems.md) – coordination, memory, role drift  
-- [Symbolic & Logic Trap Map](./Symbolic_Logic_Problems.md) – paradox, recursion, formal proofs  
-- [Long‑Context Stress Map](./LongContext_Problems.md) – 100k‑token stability, noisy PDFs  
-- [Multimodal Reasoning Map](./Multimodal_Problems.md) – text + image + code alignment  
-- [Safety Boundary Map](./Safety_Boundary_Problems.md) – knowledge gaps, jailbreaks, policy limits
+- [🧠 RAG Problem Table (#1, #2, #3, #5, #8)](./RAG_Problems.md) – retrieval‑augmented generation failures  
+- [🤖 Multi‑Agent Chaos Map (#13)](./Multi-Agent_Problems.md) – coordination, memory, role drift  
+- [🔍 Symbolic & Logic Trap Map (#6, #11, #12)](./Symbolic_Logic_Problems.md) – paradox, recursion, formal proofs  
+- [📜 Long‑Context Stress Map (#3, #7, #10)](./LongContext_Problems.md) – 100k‑token stability, noisy PDFs  
+- [🎨 Multimodal Reasoning Map (#1, #9)](./Multimodal_Problems.md) – text + image + code alignment  
+- [🛡️ Safety Boundary Map (#4, #8)](./Safety_Boundary_Problems.md) – knowledge gaps, jailbreaks, policy limits
+
 
 
 ---
