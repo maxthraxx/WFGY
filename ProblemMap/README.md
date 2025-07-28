@@ -56,23 +56,23 @@ See [TXT OS](../OS/) for real-time demos, or [start here with RAG failures →](
 
 ---
 
-## 📌 Navigation – Solved (or Tracked) AI Failure Modes
+## 📌 Navigation – Solved (or Tracked) AI Failure Modes
 
-| #  | Problem Domain                  | Description                                 | Doc                                                  |
-|----|---------------------------------|---------------------------------------------|------------------------------------------------------|
-| 1  | Hallucination & Chunk Drift     | Retrieval brings wrong / irrelevant content | [hallucination.md](./hallucination.md)              |
-| 2  | Interpretation Collapse         | Chunk is correct but logic fails            | [retrieval-collapse.md](./retrieval-collapse.md)     |
-| 3  | Long Reasoning Chains           | Model drifts across multi‑step tasks        | [context-drift.md](./context-drift.md)              |
-| 4  | Bluffing / Overconfidence       | Model pretends to know what it doesn’t      | [bluffing.md](./bluffing.md)                        |
-| 5  | Semantic ≠ Embedding            | Cosine match ≠ true meaning                 | [embedding-vs-semantic.md](./embedding-vs-semantic.md) |
-| 6  | Logic Collapse & Recovery       | Dead‑end paths, auto‑reset logic            | [symbolic-collapse.md](./symbolic-collapse.md)      |
-| 7  | Memory Breaks Across Sessions   | Lost threads, no continuity                 | [memory-coherence.md](./memory-coherence.md)        |
-| 8  | Debugging is a Black Box        | No visibility into failure path             | [retrieval-traceability.md](./retrieval-traceability.md) |
-| 9  | Entropy Collapse                | Attention melts, incoherent output          | [entropy-collapse.md](./entropy-collapse.md)        |
-| 10 | Creative Freeze                 | Outputs become flat, literal                | [creative-freeze.md](./creative-freeze.md)          |
-| 11 | Symbolic Collapse               | Abstract / logical prompts break model      | [symbolic-collapse.md](./symbolic-collapse.md)      |
-| 12 | Philosophical Recursion         | Self‑reference or paradoxes crash reasoning | [philosophical-recursion.md](./philosophical-recursion.md) |
-| 13 | Multi‑Agent Chaos               | Agents overwrite / misalign logic           | [multi-agent-chaos.md](./multi-agent-chaos.md)      |
+| #  | Problem Domain                  | Description                                 | Doc                                                           |
+|----|---------------------------------|---------------------------------------------|---------------------------------------------------------------|
+| 1  | Hallucination & Chunk Drift     | Retrieval brings wrong / irrelevant content | [hallucination.md](./hallucination.md)                       |
+| 2  | Interpretation Collapse         | Chunk is correct but logic fails            | [retrieval-collapse.md](./retrieval-collapse.md)              |
+| 3  | Long Reasoning Chains           | Model drifts across multi‑step tasks        | [context-drift.md](./context-drift.md)                        |
+| 4  | Bluffing / Overconfidence       | Model pretends to know what it doesn’t      | [bluffing.md](./bluffing.md)                                  |
+| 5  | Semantic ≠ Embedding            | Cosine match ≠ true meaning                 | [embedding-vs-semantic.md](./embedding-vs-semantic.md)        |
+| 6  | Logic Collapse & Recovery       | Dead‑end paths, auto‑reset logic            | [logic-collapse.md](./logic-collapse.md)                      |
+| 7  | Memory Breaks Across Sessions   | Lost threads, no continuity                 | [memory-coherence.md](./memory-coherence.md)                  |
+| 8  | Debugging is a Black Box        | No visibility into failure path             | [retrieval-traceability.md](./retrieval-traceability.md)      |
+| 9  | Entropy Collapse                | Attention melts, incoherent output          | [entropy-collapse.md](./entropy-collapse.md)                  |
+| 10 | Creative Freeze                 | Outputs become flat, literal                | [creative-freeze.md](./creative-freeze.md)                    |
+| 11 | Symbolic Collapse               | Abstract / logical prompts break model      | [symbolic-collapse.md](./symbolic-collapse.md)                |
+| 12 | Philosophical Recursion         | Self‑reference or paradoxes crash reasoning | [philosophical-recursion.md](./philosophical-recursion.md)    |
+| 13 | Multi‑Agent Chaos               | Agents overwrite / misalign logic           | [multi-agent-chaos.md](./multi-agent-chaos.md)                |
 
 
 ---
