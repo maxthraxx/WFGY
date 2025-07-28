@@ -1,4 +1,4 @@
-# TXT — Blot  Blot Blot · Persona Core Compiler — *Under Construction*
+# ⏳ TXT — Blot  Blot Blot · Persona Core Compiler — *Under Construction*
 
 
 ![Blot Hero](https://github.com/onestardao/WFGY/raw/main/OS/BlotBlotBlot/images/Blot_Hero.png)
