@@ -28,7 +28,7 @@
 ──────────────────────────────────────────────── -->
 
 <details>
-<summary><strong> 2️⃣ +42% Reasoning Boost — Real or Hype? (Click to expand for proof + solved AI problems)</strong></summary>
+<summary><strong>2️⃣ +42% Reasoning Boost — Real or Hype? (Click to expand for proof + solved AI problems)</strong></summary>
 
 > #### ⚡ Key Metrics  
 > _Metrics verified in the WFGY Paper (see full breakdown below). All results are fully reproducible with the provided `.txt`._
@@ -44,37 +44,26 @@
 > WFGY is not just prompt tuning — it’s a **semantic physics engine** that rewires how models think, retrieve, and stabilize under pressure.  
 > Here are real-world problems it’s built to tackle:  
 >
-> - ✅ **RAG hallucination & context drift**  
->   Prevents retrieval collapse via semantic boundary detection and BBCR correction.
->   
-> - ✅ **Long-horizon reasoning & chain validity**  
->   Ensures logic continuity across complex, multi-step tasks with 3.6× output stability.
->   
-> - ✅ **Semantic alignment under chaotic input**  
->   Handles noisy or conflicting contexts using BBMC (Semantic Residue Minimization).  
-> - ✅ **Cross-agent memory stabilization**  
->   Maintains coherent shared state among autonomous agents or memory nodes.  
-> - ✅ **Knowledge boundary awareness**  
->   Detects and flags unknown regions instead of bluffing, reducing hallucination risks.  
-> - ✅ **Symbolic & abstract problem solving**  
->   Solves tasks beyond token-level tricks, using ΔS=0.5 semantic tension as a structural anchor.  
-> - ✅ **Dynamic error recovery**  
->   BBCR (Collapse–Rebirth Correction) auto-recovers from reasoning dead-ends without manual resets.  
-> - ✅ **Multi-path exploration**  
->   BBPF (Multi-Path Progression) improves creative and divergent reasoning paths simultaneously.  
-> - ✅ **Attention coherence & focus control**  
->   BBAM (Attention Modulation) mitigates entropy collapse and attention drift.  
-> - ✅ **Zero-shot philosophical & meta-level understanding**  
->   Handles abstract prompts, recursive logic, and symbolic narratives.  
-> - ✅ **Hallucination-safe RAG scaling**  
->   Efficiently handles 10M+ document retrieval while preserving semantic integrity.  
-> - ✅ **Structured semantic memory**  
->   The Semantic Tree architecture enables verifiable reasoning trace and long-term recall.  
->
->   All modules are **model-agnostic**, require **no fine-tuning**, and integrate via pure `.txt` injection = real-world plug & play.
->
+> | Problem | Description |
+> |--------|-------------|
+> | **Hallucination & Chunk Drift** | Prevents retrieval collapse via semantic boundary detection and BBCR correction |
+> | **Long-horizon Reasoning** | Ensures continuity across multi-step logic with 3.6× output stability |
+> | **Chaotic Input Alignment** | Handles noisy/conflicting input using BBMC (Semantic Residue Minimization) |
+> | **Multi-Agent Memory** | Stabilizes shared logic across autonomous agents |
+> | **Knowledge Boundary Detection** | Flags unknowns to reduce bluffing risks |
+> | **Symbolic & Abstract Tasks** | Uses ΔS=0.5 to anchor symbolic and structural prompts |
+> | **Dynamic Error Recovery** | BBCR auto-resets from dead-end logic paths |
+> | **Multi-Path Logic** | BBPF allows divergent and creative semantic routes |
+> | **Attention Focus** | BBAM mitigates entropy collapse and attention drift |
+> | **Philosophical / Recursive Prompts** | Handles self-reference, meta-logic, symbolic recursion |
+> | **Hallucination-safe RAG Scaling** | Supports 10M+ doc retrieval with semantic stability |
+> | **Structured Semantic Memory** | Tree architecture provides traceable reasoning and recall |
 
-> #### ⚡Reference:
+> All modules are **model-agnostic**, require **no fine-tuning**, and integrate via pure `.txt` injection = real-world plug & play.
+
+> 🔍 [See full solutions in the WFGY Problem Map →](https://github.com/onestardao/WFGY/tree/main/ProblemMap)
+
+> #### ⚡ Reference:
 >
 > |               |                                  |
 > |---------------|----------------------------------|
@@ -85,10 +74,10 @@
 
 > All products and research here are part of the **WFGY series**, authored and unified by **PSBigBig (Purple Star)**.  
 > WFGY’s reasoning core powers multiple tools — all built on the same semantic alignment layer.  
-> Benchmarks are independently verifiable using any major LLM, local or hosted.  
-> For a deeper dive into how WFGY solves these problems, see the core paper above.
+> Benchmarks are independently verifiable using any major LLM, local or hosted.
 
 </details>
+
 
 
 <details>
