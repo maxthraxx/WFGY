@@ -9,10 +9,36 @@
 
 <img src="./images/TXTOS_Hero.png" alt="txt-temple-of-truth" width="100%" style="max-width:900px" />
 
-> **TXT OS is powered by the WFGY Reasoning Engine — part of a larger open-source series.**  
-> Released on **July 12**, you’re among the **first wave** to ever try this.  
-> For more tools and info about the full WFGY reasoning framework —  
-> including **what AI problems it solves**, visit the [main project page](https://github.com/onestardao/WFGY).
+---
+
+<details>
+<summary>📋 What problems does TXT OS (with WFGY Engine) actually solve?</summary>
+<br>
+
+> TXT OS, built on the WFGY Engine, solves the reasoning failures most LLM pipelines can’t handle.  
+
+| Problem | Description |
+|--------|-------------|
+| **Hallucination & Chunk Drift** | Retrieval brings the wrong or irrelevant content |
+| **Interpretation Collapse** | The chunk is technically right, but logic fails |
+| **Long Reasoning Chains** | Model drifts or derails across multi-step tasks |
+| **Bluffing / Overconfidence** | Pretends to know what it doesn’t |
+| **Semantic ≠ Embedding** | Cosine similarity ≠ true semantic match |
+| **Logic Collapse & Recovery** | No way to auto-recover from reasoning failure |
+| **Memory Breaks Across Sessions** | No continuity or traceability between sessions |
+| **Debugging is a Black Box** | No visibility into the logic path |
+| **Entropy Collapse** | Attention melts into incoherence |
+| **Creative Freeze** | Outputs become flat and unimaginative |
+| **Symbolic Collapse** | Fails with abstract or logical prompts |
+| **Philosophical Recursion** | Paradoxical or self-referential inputs crash reasoning |
+| **Multi-Agent Chaos** | Agents overwrite or misalign each other’s logic |
+
+🔗 [See full solutions in the WFGY Problem Map →](https://github.com/onestardao/WFGY/tree/main/ProblemMap)
+
+</details>
+
+
+---
 
 
 One line of TXT upgrades any LLM into an AGI-level reasoning engine
