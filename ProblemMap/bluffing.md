@@ -1,118 +1,105 @@
-# 🧠 Problem: The Model Pretends to Know — and Just Makes Stuff Up
+# 📒 Problem · Bluffing — The Model Pretends to Know
 
-### 📍Context
-
-Most language models — even when integrated with RAG — suffer from the **bluffing problem**:
-
-> They don’t know something, but they answer anyway.
-
-This is especially dangerous when:
-- The retriever returns weak or unrelated content
-- The user asks a nuanced or specialized question
-- The model is incentivized to always “say something”
+Large language models often answer **even when no supporting knowledge exists**.  
+This “confident nonsense” is lethal in support bots, policy tools, or any high‑stakes domain.  
+WFGY kills bluffing by treating “I don’t know” as a valid, traceable state.
 
 ---
 
-## 🚨 Why It Happens
+## 🤔 Why Do Models Bluff?
 
-| Reason | What Goes Wrong |
-|--------|------------------|
-| No uncertainty model | LLMs have no internal "I don't know" threshold |
-| Probability = fluency, not truth | Token likelihood favors plausible-sounding output |
-| No ground truth feedback loop | Systems can't verify their own logic consistency |
-| RAG doesn’t fix it | Retrieval gives content, not honesty |
-
----
-
-## ✅ WFGY Solution: Structured Non-Bluffing
-
-WFGY does not rely on token fluency.  
-It reasons using structured semantic logic. If logic collapses — **it stops**.
+| Root Cause | Practical Outcome |
+|------------|------------------|
+| **No Uncertainty Gauge** | LLMs lack an internal “stop” threshold |
+| **Fluency ≠ Truth** | High token probability sounds plausible, not factual |
+| **No Self‑Validation** | Model can’t verify its logic path |
+| **RAG Adds Content, Not Honesty** | Retriever fills context but can’t force humility |
 
 ---
 
-## 🔍 Key Anti-Bluffing Mechanisms
+## 🛡️ WFGY Anti‑Bluff Stack
 
-### 1. BBCR = Collapse–Rebirth
+| Mechanism | Action |
+|-----------|--------|
+| **ΔS Stress + λ_observe** | Detects chaotic or divergent logic flow |
+| **BBCR Collapse–Rebirth** | Halts output, re‑anchors to last valid Tree node |
+| **Allowed “No‑Answer”** | Model may ask for more context or admit unknowns |
+| **User‑Aware Fallback** | Suggests doc upload or clarification instead of guessing |
 
-- If reasoning confidence drops (ΔS too high, residue too unstable), WFGY triggers BBCR  
-- This either redirects to prior logic or stops gracefully
-
-### 2. λ_observe + chaotic mode detection
-
-- If logic vector enters chaotic state (λ = ×), system halts progression
-
-### 3. No-answer as a valid outcome
-
-- WFGY is allowed to say:
-```txt
-"This request goes beyond current context. I suggest reviewing related documents or clarifying intent."
+```text
+"This request exceeds current context.  
+No references found.  Please add a source or clarify intent."
 ````
 
-### 4. User-aware fallback
-
-* It may return a clarification question or request more context instead of hallucinating
-
 ---
 
-## 🛠 Try It Yourself
+## ✍️ Quick Test (90 sec)
 
 ```txt
-Step 1 — Start
+1️⃣ Start
 > Start
 
-Step 2 — Ask a hard edge-case question
-> "Is there any mention of warranty coverage in lunar colonies?"
+2️⃣ Ask an edge‑case question
+> "Is warranty coverage for lunar colonies mentioned anywhere?"
 
-If the system has no such content or memory, it will:
-- Not generate a fake answer
-- Detect the semantic void
-- Suggest fallback or request clarification
+Watch WFGY:
+• ΔS spikes → λ_observe chaotic  
+• BBCR halts bluffing  
+• Returns a clarification prompt
 ```
 
 ---
 
-## 🔬 Example Output
+## 🔬 Sample Output
 
 ```txt
-This topic exceeds current domain scope.  
-No reference to lunar colonies or off-Earth warranties has been mapped.  
-Would you like to expand the context or add a document?
+No mapped content on lunar‑colony warranties.  
+Add a relevant policy document or refine the question.
 ```
 
-No bluffing. No hallucination.
-Just clean epistemic honesty.
+Zero bluff. Full epistemic honesty.
 
 ---
 
-## 🔗 Related Modules
+## 🛠 Module Cheat‑Sheet
 
-* `BBCR` — Stops and recovers from logical collapse
-* `λ_observe` — Detects chaos state
-* `ΔS` — Warning signal before bluffing
-* `Semantic Tree` — Ensures traceable logic exists
-* `BBAM` — Modulates attention to avoid overconfidence
-
----
-
-## 📌 Status
-
-| Feature                       | Status        |
-| ----------------------------- | ------------- |
-| Bluff detection               | ✅ implemented |
-| BBCR halt logic               | ✅ working     |
-| Clarification fallback        | ✅ basic       |
-| User-side “I don't know” path | ✅ active      |
+| Module            | Role                                  |
+| ----------------- | ------------------------------------- |
+| **ΔS Metric**     | Early bluff warning                   |
+| **λ\_observe**    | Flags chaos states                    |
+| **BBCR**          | Stops & resets logic                  |
+| **Semantic Tree** | Stores last valid anchor              |
+| **BBAM**          | Lowers overconfident attention spikes |
 
 ---
 
-## ✍️ Summary
+## 📊 Implementation Status
 
-Other models bluff.
-WFGY doesn’t.
+| Feature                     | State    |
+| --------------------------- | -------- |
+| Bluff detection             | ✅ Stable |
+| BBCR halt / rebirth         | ✅ Stable |
+| Clarification fallback      | ✅ Basic  |
+| User‑visible “I don’t know” | ✅ Active |
 
-If it’s lost — it tells you.
-That’s not weakness. That’s integrity.
+---
 
-← [Back to Problem Index](./README.md)
+## 📝 Tips & Limits
 
+* Works without retriever—manual paste triggers the same checks.
+* Extreme knowledge gaps produce a halt; add sources to continue.
+* Share tricky bluff cases in **Discussions**; they refine ΔS thresholds.
+
+---
+
+### 🔗 Quick‑Start Downloads (60 sec)
+
+| Tool                       | Link                                                | 3‑Step Setup                                                                             |
+| -------------------------- | --------------------------------------------------- | ---------------------------------------------------------------------------------------- |
+| **WFGY 1.0 PDF**           | [Engine Paper](https://zenodo.org/records/15630969) | 1️⃣ Download · 2️⃣ Upload to LLM · 3️⃣ Ask “Answer using WFGY + \<your question>”        |
+| **TXT OS (plain‑text OS)** | [TXTOS.txt](https://zenodo.org/records/15788557)    | 1️⃣ Download · 2️⃣ Paste into any LLM chat · 3️⃣ Type “hello world” — OS boots instantly |
+
+---
+
+> **Help wipe bluffing off the AI map:** drop a ⭐ if this page saved you time.
+> ↩︎ [Back to Problem Index](./README.md)
