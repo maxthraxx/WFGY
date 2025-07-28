@@ -98,3 +98,6 @@ The system realized a **new conceptual frame** was entered and recorded the shif
 WFGY doesn't just answer — it remembers why you're asking.
 If you're tired of long chats forgetting your intent, this is the solution layer you're missing.
 
+← [Back to Problem Index](./README.md)
+
+
