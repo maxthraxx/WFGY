@@ -1,25 +1,25 @@
 <details>
-<summary><strong> 1️⃣ Yes, you clicked the Reddit ad — welcome. Curious what this is all about? (Click for a quick tour)</strong></summary>
+<summary><strong> 1️⃣ This is the $1M tool everyone’s been whispering about. Curious why? (Click for a quick tour)</strong></summary>
 
 <br>
 
-> [**WFGY**](https://github.com/onestardao/WFGY) is the name of this project — and the core reasoning engine behind it.  
-> Every tool in the WFGY Family is powered by this same semantic engine.
+> [**WFGY**](https://github.com/onestardao/WFGY) is the name of this project — and the semantic reasoning engine behind everything here.  
+> Every tool in the WFGY Family is powered by this same core engine.
 >
-> [**TXT OS**](https://github.com/onestardao/WFGY/tree/main/OS) is the world’s first operating system that runs purely via `.txt`, compatible with any LLM.  
-> It requires no install, no API keys, and can inject reasoning behavior directly into your model.
+> [**TXT OS**](https://github.com/onestardao/WFGY/tree/main/OS) is the world’s first operating system built entirely from `.txt` files — compatible with any LLM.  
+> No install, no API keys, and it injects structured reasoning directly into your model.
 >
-> **TXT-Blah Blah Blah** is the very first app built on top of TXT OS.  
-> Its goal: answer any abstract, paradoxical, or philosophical prompt — with stable, symbolic logic.
+> **TXT-Blah Blah Blah** is the first app built on top of TXT OS.  
+> Its goal: to answer abstract, paradoxical, or philosophical prompts using symbolic logic and stable semantics.
 >
 > You’re currently on the **TXT-Blah Blah Blah** product page.  
-> This single tool already includes the full WFGY reasoning engine + the TXT OS framework.  
+> This single tool includes the full WFGY reasoning engine + TXT OS framework.  
 > No extra setup. No wrong turns. You’re exactly where you need to be.
 >
 > Wondering how WFGY achieves  
 > **Semantic Accuracy ↑ 22.4% | Reasoning Success Rate ↑ 42.1% | Stability ↑ 3.6×**?  
 > → Just tap **2️⃣** to see the data and solved benchmarks.
-> 
+
 </details>
 
 
