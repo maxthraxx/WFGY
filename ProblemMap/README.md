@@ -1,8 +1,30 @@
 # 📋 WFGY Problem Map
 
+<div align="center">
+
+<img src="https://your-cdn-link/wfgy_banner.gif" width="100%" alt="WFGY Semantic Firewall Animation"/>
+
+![WFGY badge](https://img.shields.io/badge/solved%20failures-17+-green?style=flat-square)
+![Multimodal](https://img.shields.io/badge/modalities-text%2C%20image%2C%20code%2C%20audio-blue)
+![powered by WFGY](https://img.shields.io/badge/powered%20by-WFGY-red?style=flat-square)
+
+</div>
+
+---
+
+🧠 **WFGY = Semantic Firewall for AI Reasoning.**  
+It fixes logic collapse, memory loss, hallucination, and abstract breakdowns — in live generation and retrieval pipelines.
+
+
+---
+
+
 Welcome! This map lists every AI failure we’ve fixed —or are fixing — with the WFGY reasoning engine.  
 TXT OS + WFGY exists to **turn critical AI bugs into reproducible, modular fixes**.  
-Spot a gap? Open an Issue or PR—community feedback drives the next entries.
+> Spot a gap? Open an Issue or PR — community feedback drives the next entries.
+
+👀 Want to test WFGY yourself?  
+See [TXT OS](../OS/) for real-time demos, or [start here with RAG failures →](./RAG_Problems.md)
 
 > **Vision**  
 > Make “my AI went off the rails” as rare as a 500 error in production software.  
