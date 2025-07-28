@@ -107,3 +107,6 @@ Would you like to upload a document or clarify the scope?
 WFGY knows when it doesn’t know.
 This awareness is the difference between safe logic and hallucination risk.
 
+← [Back to Problem Index](./README.md)
+
+
