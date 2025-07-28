@@ -3,6 +3,24 @@ Prompt Injection Firewall
 
 ![Bloc Hero](https://github.com/onestardao/WFGY/raw/main/OS/BlocBlocBloc/images/Bloc_Hero.png)
 
+<div align="center">
+
+[![WFGY Main](https://img.shields.io/badge/WFGY-Main-red?style=flat-square)](https://github.com/onestardao/WFGY)
+&nbsp;
+[![TXT OS](https://img.shields.io/badge/TXT%20OS-Reasoning%20OS-orange?style=flat-square)](https://github.com/onestardao/WFGY/tree/main/OS)
+&nbsp;
+[![Blah](https://img.shields.io/badge/Blah-Semantic%20Embed-yellow?style=flat-square)](https://github.com/onestardao/WFGY/tree/main/OS/BlahBlahBlah)
+&nbsp;
+[![Blot](https://img.shields.io/badge/Blot-Persona%20Core-green?style=flat-square)](https://github.com/onestardao/WFGY/tree/main/OS/BlotBlotBlot)
+&nbsp;
+[![Bloc](https://img.shields.io/badge/Bloc-Reasoning%20Compiler-blue?style=flat-square)](https://github.com/onestardao/WFGY/tree/main/OS/BlocBlocBloc)
+&nbsp;
+[![Blur](https://img.shields.io/badge/Blur-Text2Image%20Engine-navy?style=flat-square)](https://github.com/onestardao/WFGY/tree/main/OS/BlurBlurBlur)
+&nbsp;
+[![Blow](https://img.shields.io/badge/Blow-Game%20Logic-purple?style=flat-square)](https://github.com/onestardao/WFGY/tree/main/OS/BlowBlowBlow)
+
+</div>
+
 Bloc Bloc Bloc is a semantic firewall module for TXT OS — a defensive layer designed to neutralize prompt injection attacks *before* they reach the model’s decision logic. It doesn't hide prompts — it defuses intent.
 
 Rather than simply blocking strings, Bloc Bloc Bloc analyzes **semantic vectors** to detect intent-level privilege escalations. The result is a text-native firewall you can understand, audit, and evolve.
