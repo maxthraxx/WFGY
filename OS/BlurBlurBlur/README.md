@@ -2,6 +2,23 @@
 
 ![blurblurblur](./images/Blur_Hero.png)
 
+<div align="center">
+
+[![CI](https://github.com/onestardao/WFGY/actions/workflows/ci.yml/badge.svg)](https://github.com/onestardao/WFGY/actions/workflows/ci.yml)
+&nbsp;
+[![PyPI version](https://img.shields.io/pypi/v/wfgy-sdk?color=brightgreen)](https://pypi.org/project/wfgy-sdk/)
+&nbsp;
+[![Colab](https://img.shields.io/badge/Colab-Run-yellow?logo=google-colab)](https://colab.research.google.com/github/onestardao/WFGY/blob/main/README_demo.ipynb)
+&nbsp;
+[![HF Space](https://img.shields.io/badge/Live%20Demo-HuggingFace-blue?logo=huggingface)](https://huggingface.co/spaces/OneStarDao/wfgy-demo)
+&nbsp;
+[![solved](https://img.shields.io/badge/Problems%20Solved-19%2F19-blueviolet)](https://github.com/onestardao/WFGY/blob/main/ProblemMap)
+&nbsp;
+![powered by WFGY](https://img.shields.io/badge/powered%20by-WFGY-red?style=flat-square)
+&nbsp;
+
+</div>
+
 > ⚠️ The full **Blur** module is still under construction.  
 > Release expected **by end of July**.  
 > This is not a typical prompt tool — it’s an experiment in **TXT-based semantic orchestration**.  
