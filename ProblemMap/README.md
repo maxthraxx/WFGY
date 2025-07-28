@@ -36,7 +36,7 @@
 
 ---
 
-**WFGY = Semantic Firewall for AI Reasoning.**  
+**WFGY (Wan Fa Gui Yi) = Semantic Firewall for AI Reasoning.**  
 It fixes logic collapse, memory loss, hallucination, and abstract breakdowns — in live generation and retrieval pipelines.
 
 
