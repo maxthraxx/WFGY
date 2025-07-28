@@ -61,7 +61,7 @@
 
 > All modules are **model-agnostic**, require **no fine-tuning**, and integrate via pure `.txt` injection = real-world plug & play.
 
-> 🔍 [See full solutions in the WFGY Problem Map →](https://github.com/onestardao/WFGY/tree/main/ProblemMap/README.md)
+> 🔍 [Explore all 19 solved AI challenges in the WFGY Problem Map →](https://github.com/onestardao/WFGY/tree/main/ProblemMap/README.md)
 
 > #### ⚡ Reference:
 >
