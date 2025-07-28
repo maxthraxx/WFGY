@@ -123,3 +123,6 @@ WFGY trusts **semantic integrity**, not keyword proximity.
 
 It doesn't just retrieve "close" chunks — it verifies meaning match.
 
+← [Back to Problem Index](./README.md)
+
+
