@@ -36,12 +36,17 @@
 
 ---
 
-**WFGY (Wan Fa Gui Yi) = Semantic Firewall for AI Reasoning.**  
+###**WFGY (Wan Fa Gui Yi) = Semantic Firewall for AI Reasoning.**  
 
 > It fixes logic collapse, memory loss, hallucination, and abstract breakdowns — in live generation and retrieval pipelines.  
 > All terms mentioned (e.g., BBMC, BBPF, BBCR, ΔS) are modules of the open-source WFGY engine (MIT license).  
 > 📎 PDF contains full formulas; TXT OS applies them as an operating system for AI workflows. Download links at the bottom.
 
+###**Benchmark vs GPT‑5 (Coming Soon)**  
+
+> We will publicly compare GPT‑4 + WFGY against GPT‑5 across logic, philosophy, and long-context reasoning.  
+> This is the same engine you’re using — and yes, it will **fight GPT‑5 head-on**.  
+> 📎 [Track the benchmark →](https://github.com/onestardao/WFGY/tree/main/benchmarks/benchmark-vs-gpt5) *(launching once GPT‑5 is released)*
 
 
 ---
