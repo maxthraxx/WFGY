@@ -109,6 +109,15 @@
 > **TL;DR:** WFGY isn’t prompt engineering — it’s a **semantic reasoning engine** built for logic, safety, and scale.  
 > 📍 [See full breakdown in the WFGY Problem Map →](./ProblemMap)
 
+---
+
+> We’re not just solving problems. We’re publishing open benchmarks against GPT‑5.  
+> This engine — the one you’re using — will go head-to-head with the world’s most hyped model.  
+> 📎 [Follow the GPT‑5 showdown here →](https://github.com/onestardao/WFGY/tree/main/benchmarks/benchmark-vs-gpt5)
+
+</details>
+
+
 </details>
 
 
