@@ -1,4 +1,4 @@
-# 📒 Function #2 · Vector Logic Partitioning
+# 📒 Vector Logic Partitioning
 
 > A semantic embedding refinement system that partitions concept clusters, resolves ambiguity, and restores logic alignment inside vector spaces.
 
