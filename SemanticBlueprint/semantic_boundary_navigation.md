@@ -1,4 +1,4 @@
-# 📒 Function #1 · Semantic Boundary Navigation
+# 📒 Semantic Boundary Navigation
 
 > A core reasoning OS function that enforces logic coherence across long chains of interaction using ΔS-based stability metrics.
 
