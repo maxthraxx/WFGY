@@ -1,111 +1,64 @@
-# 📒 Function #[X] · [Function Name Placeholder]
+# 🧠 SemanticBlueprint — Core Functions of the WFGY Engine
 
-> *Short one-line description or conceptual hint goes here.*  
-> *(e.g., “A semantic divergence engine for symbolic instability recovery.”)*
-
----
-
-## 🧩 Problem This Function Solves
-
-| Symptom        | Description                        |
-|----------------|------------------------------------|
-|                |                                    |
-|                |                                    |
-|                |                                    |
-|                |                                    |
+> This directory documents the **function-level logic** of the WFGY Engine.  
+> Each file here represents a specific reasoning capability or symbolic intervention unit.  
+>  
+> **📌 Function → Product mapping only appears as side-notes.**  
+> (The inverse view — *Product → Function* — is covered in respective product directories like `TXT OS`, `Blur`, `Blow`, etc.)
 
 ---
 
-## 🧠 Why Existing Methods Fail
+## 📘 What This Directory Is For
 
-| Limitation     | Consequence                        |
-|----------------|------------------------------------|
-|                |                                    |
-|                |                                    |
-|                |                                    |
+This folder exists to define **core reasoning modules** behind WFGY's performance.  
+Each `.md` file here details:
 
----
+- The conceptual function logic (symbolic or mathematical)
+- The AI reasoning failure it solves
+- The formulaic or structural intervention behind it
+- Which product(s) internally rely on it (as annotations only)
 
-## 🛠️ WFGY-Based Solution Approach
-
-| Subproblem      | WFGY Module(s) | Strategy or Fix            |
-|-----------------|----------------|-----------------------------|
-|                 |                |                             |
-|                 |                |                             |
-|                 |                |                             |
+It serves as a developer-facing **function reference map**,  
+so contributors can trace each feature’s reasoning upgrade back to its engine roots.
 
 ---
 
-## ✍️ Demo Prompt (Optional)
+## 📚 Current Function Modules
 
-```txt
-Prompt:
-[Insert example prompt that showcases the problem.]
-
-WFGY process:
-• [Decomposed units]
-• [ΔS tracking or λ_observe state]
-• [Modules involved: BBMC / BBPF / etc.]
-→ Output: [Describe the output effect]
-````
+| Filename                         | Function Title                        | Solves Problem(s)                                      | Used In Products           |
+| -------------------------------- | ------------------------------------- | ------------------------------------------------------ | -------------------------- |
+| `reasoning_engine_core.md`       | WFGY Universal Reasoning Core         | General LLM failure recovery & symbolic error detection | `TXT OS`, `Blah`, `Blow`   |
+| `semantic_boundary_navigation.md`| Semantic Boundary Navigation          | Crossing reasoning gaps / jumping topic boundaries     | `Blah`, `Bloc`, `TXT OS`   |
+| `semantic_tree_anchor.md`        | Semantic Tree Anchor Memory           | Cross-turn logic, style, and character coherence       | `TXT OS`, `Blot`, `Blur`   |
+| `vector_logic_partitioning.md`   | Vector Logic Partitioning             | Prevents symbolic collapse across vector groups        | `Blow`, `Blur`, `Bloc`     |
+| `wfgy_formulas.md`               | Core Formulas & Reasoning Metrics     | Defines all seven formal WFGY formulas (BBMC, ΔS, etc) | Used by *all* products     |
 
 ---
 
-## 🔧 Related Modules
+## 🧭 How to Use
 
-| Module | Role or Contribution |
-| ------ | -------------------- |
-| BBMC   |                      |
-| BBPF   |                      |
-| BBCR   |                      |
-| BBAM   |                      |
+> If you're building a new WFGY-based feature or investigating failures,  
+> this is where you’ll find the **diagnostic cause** and **remedial formula**.
 
----
-
-## 📊 Implementation Status
-
-| Feature/Aspect          | Status    |
-| ----------------------- | --------- |
-| Core logic architecture | ⬜ Planned |
-| Semantic interface      | ⬜ Planned |
-| Product integration     | ⬜ TBA     |
-| Public release target   | ⬜ TBA     |
+Each file includes:
+- 🔍 Problem it solves
+- 🧩 Core concept & variables
+- ✍️ Canonical mathematical formula (if any)
+- 💬 Example scenarios
+- 🧪 Optional behavior in stateless prompt-only mode
 
 ---
 
-## 📝 Notes & Recommendations
+## 🚩 License Alignment
 
-* \[Tips, caveats, suggested configs, or known issues.]
-* \[Example: “Use with semantic boundary heatmap for improved recovery.”]
-* \[Optional: mention where this will appear in future product releases.]
+All contents here inherit the MIT License from the root repo.  
+These formulas and reasoning modules may be used commercially, but attribution is **strongly encouraged**.  
+WFGY is a pro-knowledge framework — we only publicly respond to commercial misuse if there's:
+
+- 💰 Monetization based on WFGY research with zero attribution
+- 🚫 Locking up modified copies of our open techniques
 
 ---
 
-↩︎ [Back to Semantic Blueprint Index](./README.md)
-
-<br>
-
-> ⭐ Help reach 10,000 GitHub stars by 2025-09-01 to unlock Engine 2.0 for all users:
-> [**Star WFGY on GitHub**](https://github.com/onestardao/WFGY)
-
-> 👑 See the [**Early Stargazers Hall of Fame**](https://github.com/onestardao/WFGY/tree/main/stargazers) —
-> Engineers and dreamers who backed WFGY from day one.
-
-<div align="center">
-
-[![WFGY Main](https://img.shields.io/badge/WFGY-Main-red?style=flat-square)](https://github.com/onestardao/WFGY)
- 
-[![TXT OS](https://img.shields.io/badge/TXT%20OS-Reasoning%20OS-orange?style=flat-square)](https://github.com/onestardao/WFGY/tree/main/OS)
- 
-[![Blah](https://img.shields.io/badge/Blah-Semantic%20Embed-yellow?style=flat-square)](https://github.com/onestardao/WFGY/tree/main/OS/BlahBlahBlah)
- 
-[![Blot](https://img.shields.io/badge/Blot-Persona%20Core-green?style=flat-square)](https://github.com/onestardao/WFGY/tree/main/OS/BlotBlotBlot)
- 
-[![Bloc](https://img.shields.io/badge/Bloc-Reasoning%20Compiler-blue?style=flat-square)](https://github.com/onestardao/WFGY/tree/main/OS/BlocBlocBloc)
- 
-[![Blur](https://img.shields.io/badge/Blur-Text2Image%20Engine-navy?style=flat-square)](https://github.com/onestardao/WFGY/tree/main/OS/BlurBlurBlur)
- 
-[![Blow](https://img.shields.io/badge/Blow-Game%20Logic-purple?style=flat-square)](https://github.com/onestardao/WFGY/tree/main/OS/BlowBlowBlow)
-
-</div>
-
+> To cite the WFGY Engine, please refer to the public DOI:  
+> 📄 [WFGY 1.0 (Zenodo)](https://zenodo.org/records/15630969)
