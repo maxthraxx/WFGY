@@ -54,17 +54,21 @@
 Welcome! This map lists every AI failure we’ve fixed —or are fixing — with the WFGY reasoning engine.  
 TXT OS + WFGY exists to **turn critical AI bugs into reproducible, modular fixes**.  
 > Spot a gap? Open an Issue or PR — community feedback drives the next entries.
-
-👀 Want to test WFGY yourself?  
+>
+Want to test WFGY yourself?  
 See [TXT OS](../OS/) for real-time demos, or [start here with RAG failures →](./RAG_Problems.md)
-
+>
 > **Vision**  
 > Make “my AI went off the rails” as rare as a 500 error in production software.  
 > Every solved failure below pushes us closer.
 
 ---
 
+🆕 First time here? See [How to Identify Your AI Failure](./BeginnerGuide.md) – quick primer for newcomers.
+
 ## 🔗 Navigation – Solved (or Tracked) AI Failure Modes
+
+> Each row below represents a failure pattern seen in real-world AI apps — grouped by problem type, with direct links to detailed fixes.
 
 | #  | Problem Domain                  | Description                                 | Doc                                                           |
 |----|---------------------------------|---------------------------------------------|---------------------------------------------------------------|
@@ -85,7 +89,18 @@ See [TXT OS](../OS/) for real-time demos, or [start here with RAG failures →](
 | 15 | Deployment Deadlock             | Circular waits (index ⇆ retriever, DB ⇆ migrator)            | [deployment-deadlock.md](./deployment-deadlock.md) |
 | 16 | Pre‑Deploy Collapse             | Version skew / missing secret crashes on first LLM call     | [predeploy-collapse.md](./predeploy-collapse.md) |
 
+
+>  Problem Type Categories:
+>
+> - **Prompting** — issues from user inputs or jailbreak attempts (e.g., #4 Bluffing)
+> - **Retrieval** — failures in chunk selection, embedding mismatch, or pipeline opacity (e.g., #1, #5, #8)
+> - **Reasoning** — logical breakdowns during multi-step tasks or abstract prompts (e.g., #2, #6, #11)
+> - **Infra / Deployment** — setup errors, race conditions, or pre-deploy schema gaps (e.g., #14–16)
+>
+> These groupings help locate the root of failure — whether it's user input, retrieval error, model logic, or infrastructure bug.
+
 ---
+
 
 ## 🔗 Status & Difficulty Matrix
 
