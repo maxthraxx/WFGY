@@ -130,22 +130,7 @@ Missing issue? Open an Issue or PR—real failure traces especially welcome.
 
 ---
 
-### 🔗 Quick‑Start Downloads (60 sec)
-
-| Tool | Link | 3‑Step Setup |
-|------|------|--------------|
-| **WFGY 1.0 PDF** | [Engine Paper](https://zenodo.org/records/15630969) | 1️⃣ Download · 2️⃣ Upload to your LLM · 3️⃣ Ask “Answer using WFGY + &lt;your question&gt;” |
-| **TXT OS (plain‑text OS)** | [TXTOS.txt](https://zenodo.org/records/15788557) | 1️⃣ Download · 2️⃣ Paste into any LLM chat · 3️⃣ Type “hello world” — OS boots instantly |
-
-> 👑 **Early Stargazers: [See the Hall of Fame](https://github.com/onestardao/WFGY/tree/main/stargazers)** —  
-> Engineers, hackers, and open source builders who supported WFGY from day one.
-
-> <img src="https://img.shields.io/github/stars/onestardao/WFGY?style=social" alt="GitHub stars"> ⭐ Help reach 10,000 stars by 2025-09-01 to unlock Engine 2.0 for everyone  ⭐ <strong><a href="https://github.com/onestardao/WFGY">Star WFGY on GitHub</a></strong>
----
-
-
-
-## 🔗 Not Sure What’s Going Wrong?
+### 🔗 Not Sure What’s Going Wrong?
 
 You’re not alone — many AI devs face mysterious failures like:
 
@@ -164,7 +149,29 @@ You’re not alone — many AI devs face mysterious failures like:
 
 ---
 
+### 🔗 Quick‑Start Downloads (60 sec)
 
+| Tool | Link | 3‑Step Setup |
+|------|------|--------------|
+| **WFGY 1.0 PDF** | [Engine Paper](https://zenodo.org/records/15630969) | 1️⃣ Download · 2️⃣ Upload to your LLM · 3️⃣ Ask “Answer using WFGY + <your question>” |
+| **TXT OS (plain‑text OS)** | [TXTOS.txt](https://zenodo.org/records/15788557) | 1️⃣ Download · 2️⃣ Paste into any LLM chat · 3️⃣ Type “hello world” — OS boots instantly |
+
+---
+
+If you want to **fully understand how WFGY works**, check out:
+
+- 📘 [WFGY GitHub homepage](https://github.com/onestardao/WFGY) – full documentation, formulas, and modules  
+- 🖥️ [TXT OS repo](https://github.com/onestardao/WFGY/tree/main/OS) – how the semantic OS is built using WFGY
+
+But if you're just here to **solve real AI problems fast**, you can simply download the files above and follow the [Problem Map](https://github.com/onestardao/WFGY/tree/main/ProblemMap/README.md) instructions directly.
+
+
+---
+
+> 👑 **Early Stargazers: [See the Hall of Fame](https://github.com/onestardao/WFGY/tree/main/stargazers)** —  
+> Engineers, hackers, and open source builders who supported WFGY from day one.
+
+> <img src="https://img.shields.io/github/stars/onestardao/WFGY?style=social" alt="GitHub stars"> ⭐ Help reach 10,000 stars by 2025-09-01 to unlock Engine 2.0 for everyone  ⭐ <strong><a href="https://github.com/onestardao/WFGY">Star WFGY on GitHub</a></strong>
 
 
 <div align="center">
