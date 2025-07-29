@@ -55,7 +55,14 @@
 
 🔗 [See full solutions in the WFGY Problem Map →](https://github.com/onestardao/WFGY/tree/main/ProblemMap)
 
+---
+
+> You're not just exploring a tool — you're holding the system we're about to pit against **GPT‑5**.  
+> A full benchmark showdown is in the works. This is where open-source meets destiny.  
+> 📎 [Track the GPT‑5 comparison here →](https://github.com/onestardao/WFGY/tree/main/benchmarks/benchmark-vs-gpt5)
+
 </details>
+
 
 
 ---
