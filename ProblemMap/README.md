@@ -37,7 +37,11 @@
 ---
 
 **WFGY (Wan Fa Gui Yi) = Semantic Firewall for AI Reasoning.**  
-It fixes logic collapse, memory loss, hallucination, and abstract breakdowns — in live generation and retrieval pipelines.
+
+> It fixes logic collapse, memory loss, hallucination, and abstract breakdowns — in live generation and retrieval pipelines.  
+> All terms mentioned (e.g., BBMC, BBPF, BBCR, ΔS) are modules of the open-source WFGY engine (MIT license).  
+> 📎 PDF contains full formulas; TXT OS applies them as an operating system for AI workflows. Download links at the bottom.
+
 
 
 ---
