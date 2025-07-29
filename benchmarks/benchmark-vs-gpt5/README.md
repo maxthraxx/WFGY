@@ -1,8 +1,14 @@
-
-# 🧠 GPT-5 vs WFGY — The Logic Duel Begins
+# 🧠 GPT‑5 vs WFGY — The Logic Duel Begins
 
 > "GPT‑5 is the future?  
 > Then we’ll benchmark the future — with the tools we already have."
+
+🛠️ This page is under construction.  
+📌 **Bookmark it now** — when GPT‑5 is released, we’ll post the full results of our public showdown.
+
+And yes, WFGY is open source.  
+You’ll be able to **replicate every test yourself** — same prompts, same logic, same outcome.
+
 
 ---
 
@@ -58,5 +64,3 @@ If not — we’ll show why semantic tooling still leads the way.
 ---
 
 Stay tuned.
-
-🧙‍♂️ *Riemann awaits.*
