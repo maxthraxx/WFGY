@@ -1,7 +1,6 @@
 # 📋 WFGY Problem Map – Bookmark This. You’ll Need It.
 ## Every failure has a name. Every name has a countermeasure.
 
-
 <img width="1536" height="1024" alt="ProblemMap_Hero" src="https://github.com/user-attachments/assets/b2a5add8-6647-4424-8eff-9e449bf7382b" />
 <div align="center">
 
@@ -82,7 +81,9 @@ See [TXT OS](../OS/) for real-time demos, or [start here with RAG failures →](
 | 11 | Symbolic Collapse               | Abstract / logical prompts break model      | [symbolic-collapse.md](./symbolic-collapse.md)                |
 | 12 | Philosophical Recursion         | Self‑reference or paradoxes crash reasoning | [philosophical-recursion.md](./philosophical-recursion.md)    |
 | 13 | Multi‑Agent Chaos               | Agents overwrite / misalign logic           | [multi-agent-chaos.md](./multi-agent-chaos.md)                |
-
+| 14 | Bootstrap Ordering              | Services fire before deps ready (empty index, schema race)   | [bootstrap-ordering.md](./bootstrap-ordering.md) |
+| 15 | Deployment Deadlock             | Circular waits (index ⇆ retriever, DB ⇆ migrator)            | [deployment-deadlock.md](./deployment-deadlock.md) |
+| 16 | Pre‑Deploy Collapse             | Version skew / missing secret crashes on first LLM call     | [predeploy-collapse.md](./predeploy-collapse.md) |
 
 ---
 
@@ -103,6 +104,9 @@ See [TXT OS](../OS/) for real-time demos, or [start here with RAG failures →](
 | 11 | Symbolic Collapse               | Very High   | ✅ Stable       |
 | 12 | Philosophical Recursion         | Very High   | ✅ Stable       |
 | 13 | Multi‑Agent Chaos               | Very High   | ✅ Stable       |
+| 14 | Bootstrap Ordering              | Medium      | ✅ Stable       |
+| 15 | Deployment Deadlock             | High        | ⚠️ Beta         |
+| 16 | Pre‑Deploy Collapse             | Medium‑High | ✅ Stable       |
 
 \*Difficulty = gap between default LLM ability and a production‑ready fix; “Very High” means almost no off‑the‑shelf tool tackles it.
 
@@ -129,9 +133,8 @@ Missing issue? Open an Issue or PR—real failure traces especially welcome.
 - [🔎 Symbolic & Recursive Map (#11, #12)](./Symbolic_Logic_Problems.md) – paradox, abstraction, logical traps  
 - [🧩 Logic Recovery Map (#6)](./logic-collapse.md) – dead-end logic and auto-reset reasoning  
 - [📜 Long‑Context Stress Map (#3, #7, #10)](./LongContext_Problems.md) – 100k‑token stability, noisy PDFs  
-- [🧪 Safety Boundary Map (#4, #8)](./Safety_Boundary_Problems.md) – knowledge gaps, bluffing, jailbreak resistance
-
-
+- [🧪 Safety Boundary Map (#4, #8)](./Safety_Boundary_Problems.md) – knowledge gaps, bluffing, jailbreak resistance  
+- [🛠️ Infra Boot Map (#14, #15, #16)](./Infra_Boot_Problems.md) – deployment ordering, circular waits, version skew  
 
 ---
 
