@@ -31,9 +31,6 @@
 [![HF Space](https://img.shields.io/badge/Live%20Demo-HuggingFace-blue?logo=huggingface)](https://huggingface.co/spaces/OneStarDao/wfgy-demo)
 &nbsp;
 [![solved](https://img.shields.io/badge/Problems%20Solved-19%2F19-blueviolet)](https://github.com/onestardao/WFGY/blob/main/ProblemMap)
-&nbsp;
-![powered by WFGY](https://img.shields.io/badge/powered%20by-WFGY-black?style=flat-square)
-&nbsp;
 
 
 </div>
