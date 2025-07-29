@@ -18,7 +18,12 @@
 >
 > Wondering how WFGY achieves  
 > **Semantic Accuracy ↑ 22.4% | Reasoning Success Rate ↑ 42.1% | Stability ↑ 3.6×**?  
-> → Just tap **2️⃣** to see the data and solved benchmarks.
+> → Just tap **2️⃣** to see the data and solved benchmarks.  
+>
+> We’re preparing to benchmark WFGY directly against **GPT‑5**.  
+> The logic duel will be public, provable, and ruthless.  
+> You’re already using the tool that’s going to face it — [preview the showdown here](https://github.com/onestardao/WFGY/tree/main/benchmarks/benchmark-vs-gpt5).
+
 
 </details>
 
