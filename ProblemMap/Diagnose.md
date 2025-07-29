@@ -18,6 +18,10 @@ Each entry links to the corresponding solution page in the WFGY Problem Map.
 | 11 | Formal or symbolic prompts break the model | #11 Symbolic Collapse | [symbolic-collapse.md](./symbolic-collapse.md) |
 | 12 | Self‑reference / paradox crashes reasoning | #12 Philosophical Recursion | [philosophical-recursion.md](./philosophical-recursion.md) |
 | 13 | Multiple agents overwrite or misalign logic | #13 Multi‑Agent Chaos | [multi-agent-chaos.md](./multi-agent-chaos.md) |
+| 14 | System runs but outputs nothing; no visible error | #14 Bootstrap Ordering Failure | [bootstrap-ordering.md](./bootstrap-ordering.md) |
+| 15 | System never enters expected state; all actions silently fail | #15 Deployment Deadlock | [deployment-deadlock.md](./deployment-deadlock.md) |
+| 16 | Output responds with surface data, but no logic runs behind it | #16 Pre‑Deploy Collapse | [predeploy-collapse.md](./predeploy-collapse.md) |
+
 
 **Tip:** If symptoms are unclear, run a ΔS / λ_observe check.  
 Values > 0.6 usually map to problems #1–#4.
