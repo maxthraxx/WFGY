@@ -137,6 +137,10 @@ Missing issue? Open an Issue or PR—real failure traces especially welcome.
 | **WFGY 1.0 PDF** | [Engine Paper](https://zenodo.org/records/15630969) | 1️⃣ Download · 2️⃣ Upload to your LLM · 3️⃣ Ask “Answer using WFGY + &lt;your question&gt;” |
 | **TXT OS (plain‑text OS)** | [TXTOS.txt](https://zenodo.org/records/15788557) | 1️⃣ Download · 2️⃣ Paste into any LLM chat · 3️⃣ Type “hello world” — OS boots instantly |
 
+> 👑 **Early Stargazers: [See the Hall of Fame](https://github.com/onestardao/WFGY/tree/main/stargazers)** —  
+> Engineers, hackers, and open source builders who supported WFGY from day one.
+
+> <img src="https://img.shields.io/github/stars/onestardao/WFGY?style=social" alt="GitHub stars"> ⭐ Help reach 10,000 stars by 2025-09-01 to unlock Engine 2.0 for everyone  ⭐ <strong><a href="https://github.com/onestardao/WFGY">Star WFGY on GitHub</a></strong>
 ---
 
 
@@ -161,10 +165,7 @@ You’re not alone — many AI devs face mysterious failures like:
 ---
 
 
-> <img src="https://img.shields.io/github/stars/onestardao/WFGY?style=social" alt="GitHub stars"> ⭐ Help reach 10,000 stars by 2025-09-01 to unlock Engine 2.0 for everyone  ⭐ <strong><a href="https://github.com/onestardao/WFGY">Star WFGY on GitHub</a></strong>
 
-> 👑 **Early Stargazers: [See the Hall of Fame](https://github.com/onestardao/WFGY/tree/main/stargazers)** —  
-> Engineers, hackers, and open source builders who supported WFGY from day one.
 
 <div align="center">
 
