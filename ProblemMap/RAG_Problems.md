@@ -1,4 +1,4 @@
-# 📒 WFGY RAG Problem Map
+# 📒 Map-A · WFGY RAG Problem Map
 
 This page is a reality check for Retrieval‑Augmented Generation.  
 **Most RAG stacks break in repeatable ways**—hallucinating, drifting, or hiding their own logic.  
