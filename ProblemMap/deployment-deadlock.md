@@ -1,4 +1,4 @@
-# 📒 Deployment‑Deadlock Problem Map
+# 📒 Problem #15 ·Deployment‑Deadlock Problem Map
 
 Some AI stacks *freeze in place* when two or more services depend on each
 other’s side‑effects to finish booting:
