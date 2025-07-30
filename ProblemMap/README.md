@@ -188,6 +188,14 @@ If you want to **fully understand how WFGY works**, check out:
 
 But if you're just here to **solve real AI problems fast**, you can simply download the files above and follow the [Problem Map](https://github.com/onestardao/WFGY/tree/main/ProblemMap/README.md) instructions directly.
 
+---
+
+### 🧭 Explore More
+
+| Module                | Description                                              | Link     |
+|-----------------------|----------------------------------------------------------|----------|
+| Semantic Blueprint    | Layer-based symbolic reasoning & semantic modulations   | [View →](https://github.com/onestardao/WFGY/tree/main/SemanticBlueprint) |
+| Benchmark vs GPT‑5    | Stress test GPT‑5 with full WFGY reasoning suite         | [View →](https://github.com/onestardao/WFGY/tree/main/benchmarks/benchmark-vs-gpt5) |
 
 ---
 
