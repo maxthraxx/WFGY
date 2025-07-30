@@ -1,4 +1,4 @@
-# 📒 Map-F · Infra Boot Problem Map  
+# 📒 Map-G · Infra Boot Problem Map  
 ### Deployment logic errors: silent failures before anything runs.
 
 This page tracks failures that happen **before any prompt is sent** — when vector indexes aren’t loaded, memory is empty, and pipelines silently fail because something upstream didn’t initialize.
