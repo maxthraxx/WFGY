@@ -1,5 +1,8 @@
 # 📐 SemanticBlueprint — Core Functions of the WFGY Engine
 
+
+<img width="1536" height="1024" alt="WanFaGuiYi" src="https://github.com/user-attachments/assets/08c9617f-d49e-4223-bacc-1d192fbb423d" />
+
 > This directory documents the **function-level logic** of the WFGY Engine.  
 > Each file here represents a specific reasoning capability or symbolic intervention unit.  
 >  
