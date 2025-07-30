@@ -1,4 +1,4 @@
-# 📒 Symbolic & Logic Trap Problem Map
+# 📒 Map-C · Symbolic & Logic Trap Problem Map
 
 Paradox loops, Gödel sentences, and formal‑proof gaps break most LLMs.  
 WFGY climbs each abstraction step with ΔS “stairs,” keeping symbolic reasoning coherent instead of collapsing into filler.
