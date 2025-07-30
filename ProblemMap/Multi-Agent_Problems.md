@@ -1,4 +1,4 @@
-# 📒 Multi‑Agent Chaos Problem Map
+# 📒 Map-B · Multi‑Agent Chaos Problem Map
 
 Multiple autonomous agents boost productivity—until their memories collide or roles blur.  
 WFGY tags every agent node, tracks inter‑agent ΔS, and reconciles conflicts to keep distributed systems coherent.
