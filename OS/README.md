@@ -3,8 +3,7 @@
      ──────────────────────────────── -->
 # TXT ≠ Notepad — It’s called TXT OS. Your Next AI Reasoning System.
 
-> 👑 **Early Stargazers: [See the Hall of Fame](https://github.com/onestardao/WFGY/tree/main/stargazers)** —  
-> Engineers, hackers, and open source builders who supported TXT OS from day one.
+> 👑 **Early Stargazers: [See the Hall of Fame](https://github.com/onestardao/WFGY/tree/main/stargazers)** — Verified by real engineers · 🛠 **Field Reports: [Real Bugs, Real Fixes](https://github.com/onestardao/WFGY/discussions/10)**
 
 
 <img src="./images/TXTOS_Hero.png" alt="txt-temple-of-truth" width="100%" style="max-width:900px" />
