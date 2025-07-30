@@ -143,13 +143,21 @@ Missing issue? Open an Issue or PR—real failure traces especially welcome.
 
 ### 🔗 Specialized Maps
 
-- [🧠 RAG Problem Table (#1, #2, #3, #5, #8)](./RAG_Problems.md) – retrieval‑augmented generation failures  
-- [🤖 Multi‑Agent Chaos Map (#13)](./Multi-Agent_Problems.md) – coordination, memory, role drift  
-- [🔎 Symbolic & Recursive Map (#11, #12)](./Symbolic_Logic_Problems.md) – paradox, abstraction, logical traps  
-- [🧩 Logic Recovery Map (#6)](./logic-collapse.md) – dead-end logic and auto-reset reasoning  
-- [📜 Long‑Context Stress Map (#3, #7, #10)](./LongContext_Problems.md) – 100k‑token stability, noisy PDFs  
-- [🧪 Safety Boundary Map (#4, #8)](./Safety_Boundary_Problems.md) – knowledge gaps, bluffing, jailbreak resistance  
-- [🛠️ Infra Boot Map (#14, #15, #16)](./Infra_Boot_Problems.md) – deployment ordering, circular waits, version skew  
+## 🗺️ Problem Maps Index
+
+> Each map tackles a specific family of AI reasoning failures.  
+> Use `Map-A` ~ `Map-G` as shortcut tags to refer across documentation, repos, or support threads.
+
+| Map ID   | Map Name                        | Linked Issues              | Problem Focus                                            | Link                        |
+|----------|----------------------------------|----------------------------|----------------------------------------------------------|-----------------------------|
+| `Map-A`  | RAG Problem Table                | #1, #2, #3, #5, #8         | Retrieval‑augmented generation failures                  | [View it](./RAG_Problems.md) |
+| `Map-B`  | Multi‑Agent Chaos Map            | #13                        | Coordination failures, memory conflicts, role drift      | [View it](./Multi-Agent_Problems.md) |
+| `Map-C`  | Symbolic & Recursive Map         | #11, #12                   | Symbolic logic traps, abstraction, paradox               | [View it](./Symbolic_Logic_Problems.md) |
+| `Map-D`  | Logic Recovery Map               | #6                         | Dead-end logic, reset loops, reasoning collapse          | [View it](./logic-collapse.md) |
+| `Map-E`  | Long‑Context Stress Map          | #3, #7, #10                | 100k‑token memory, noisy PDFs, drift in extended tasks   | [View it](./LongContext_Problems.md) |
+| `Map-F`  | Safety Boundary Map              | #4, #8                     | Jailbreak resistance, overconfidence, bluffing           | [View it](./Safety_Boundary_Problems.md) |
+| `Map-G`  | Infra Boot Map                   | #14, #15, #16              | Deployment ordering, boot loops, version skew            | [View it](./Infra_Boot_Problems.md) |
+
 
 ---
 
