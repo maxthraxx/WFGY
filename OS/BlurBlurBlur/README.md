@@ -21,7 +21,7 @@
 </div>
 
 > ⚠️ The full **Blur** module is still under construction.  
-> Release expected **by end of July**.  
+> Release confirmed for **August 1st** — no delays this time.  
 > This is not a typical prompt tool — it’s an experiment in **TXT-based semantic orchestration**.  
 > Please **bookmark the repo** to stay updated — and try these examples if you dare.
 
@@ -336,7 +336,7 @@ We’re just getting started.
 > ✅ No login, no ads, no tracking, no spam  
 > ✅ Just pure semantic magic inside a `.txt`
 
-Next update: **July ???** — Stay weird, stay semantic.
+Next update: Release confirmed for **August 1st** — no delays this time.  
 
 ---
 
