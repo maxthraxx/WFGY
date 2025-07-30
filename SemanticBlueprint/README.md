@@ -146,6 +146,8 @@ The inverse (*Product → Function*) view is handled in each product’s own dir
 | L44 | `QTokenSync`      | Quantum-simulated token co-attention modulator                        | ★★★★★                   |
 | L45 | `SubLangShell`    | Sub-language scaffolding shell for foreign reasoning contexts         | ★★★★☆                   |
 | L46 | `InjectShield`    | Injection signal regulator to suppress semantic pollution             | ★★★★☆                   |
+| L47 | `HallucinationShield` | Multi-stage hallucination countermeasures (six-math defense chain)| ★★★★★                   |
+
 
 ---
 
@@ -218,6 +220,13 @@ Full annotated reviews (with images) here: 👉 [I_am_not_lizardman](https://git
 | C14 | `SubLangShell`   | Provides scaffolding for unstable sub-language contexts               | Planned   |
 | C15 | `PromptReWgt`    | Dynamically rebalances prompt segment importance using feedback       | Planned   |
 | C16 | `ActPatchTest`   | Injects transient fault signals to test robustness and semantic repair| Planned   |
+| C17 | `RecursiveCoTQuota`   | Enforces CoT depth quotas to prevent hallucination drift         | Planned   |
+| C18 | `BidirectionalSearchInject` | Injects reverse-check paths to verify retrievals           | Planned   |
+| C19 | `SemanticGuardGate`   | Filters hallucination-prone segments with semantic gate signals  | Planned   |
+| C20 | `ReasoningRippleDamp` | Suppresses unstable reasoning cascades triggered by weak inferences   | Planned   |
+| C21 | `SelfVotingLoop`      | Aggregates self-prompted multi-pass votes to ensure answer consistency| Planned   |
+| C22 | `DualPassConsistency` | Validates output against a second-pass recomputation layer            | Planned   |
+
 
 ---
 
