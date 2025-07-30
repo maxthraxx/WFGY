@@ -104,7 +104,7 @@
 </details>
 
 <details>
-<summary>3️⃣ What AI problems does WFGY Family solve?</summary>
+<summary> <strong> 3️⃣ What AI problems does WFGY Family solve? </strong> </summary>
   
 <br>
   
