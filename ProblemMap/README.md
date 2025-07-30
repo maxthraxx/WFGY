@@ -35,21 +35,29 @@
 
 ---
 
-### **WFGY (Wan Fa Gui Yi) = Semantic Firewall for AI Reasoning.**  
+### **WFGY = A Semantic Firewall for Reasoning.**
 
-> It fixes logic collapse, memory loss, hallucination, and abstract breakdowns — in live generation and retrieval pipelines.  
-> All terms mentioned (e.g., BBMC, BBPF, BBCR, ΔS) are modules of the open-source WFGY engine (MIT license).  
-> 📎 PDF contains full formulas; TXT OS applies them as an operating system for AI workflows. Download links at the bottom.
-
-### **Benchmark vs GPT‑5 (Coming Soon)**  
-
-> We will publicly compare GPT‑4 + WFGY against GPT‑5 across logic, philosophy, and long-context reasoning.  
-> This is the same engine you’re using — and yes, it will **fight GPT‑5 head-on**.  
-> 📎 [Track the benchmark →](https://github.com/onestardao/WFGY/tree/main/benchmarks/benchmark-vs-gpt5) *(launching once GPT‑5 is released)*
-
+> Fixes what GPTs break: logic collapse, hallucination, memory loss, abstraction errors — across both generation and retrieval.  
+> Modules like BBMC, ΔS, and BBPF are part of the open-source WFGY engine (MIT).  
+> 📎 PDF with core formulas, and TXT OS runs them in real-world pipelines.
 
 ---
 
+### **Open Semantic Blueprint**
+
+> WFGY isn’t just a fix — it’s a new logic stack.  
+> Our blueprint lays out every layer, module, and semantic formula behind the engine.  
+> 📎 [Explore the core design →](https://github.com/onestardao/WFGY/tree/main/SemanticBlueprint)
+
+---
+
+### **GPT‑5 Benchmark (Coming Soon)**
+
+> We’re not speculating — we’re benchmarking.  
+> WFGY will go head-to-head with GPT‑5 across long-context, philosophy, and symbolic tasks.  
+> 📎 [Track the showdown →](https://github.com/onestardao/WFGY/tree/main/benchmarks/benchmark-vs-gpt5)
+
+---
 
 Welcome! This map lists every AI failure we’ve fixed —or are fixing — with the WFGY reasoning engine.  
 TXT OS + WFGY exists to **turn critical AI bugs into reproducible, modular fixes**.  
