@@ -1,4 +1,4 @@
-# 📒 Long‑Context Stress Problem Map
+# 📒 Map-E · Long‑Context Stress Problem Map
 
 Mega‑prompts—>100 k tokens, entire book dumps, OCR‑noisy PDFs—overwhelm ordinary LLM pipelines.  
 WFGY keeps reasoning stable with adaptive ΔS, chunk‑mapping, and sliding Tree windows.
