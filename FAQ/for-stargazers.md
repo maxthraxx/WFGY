@@ -6,6 +6,21 @@ This page is your guide to **what WFGY is**, **what TXT OS does**, and **where t
 
 ---
 
+> ## 📣 Project Updates (Jul–Aug 2025)
+>
+> - 📄 **WFGY Whitepaper PDF**: 2,000+ downloads in 45 days  
+> - ⭐ **WFGY Project**: 200 stars milestone reached  
+> - 🧠 **TXT OS**: Fully launched — powered by `.txt` logic  
+> - 🗣️ **Blah Blah Blah**: Available now (Semantic Q&A module)  
+> - 🖼️ **Blur Blur Blur**: Launching **August 1** — final build confirmed  
+> - 🪖 **Hero Log**: Updated daily with real debugging saves  
+> - 🧍 **PSBigBig**: Patrolling forums & helping devs across the web  
+>
+> ⏳ Bookmark this repo to follow updates in real time.
+
+
+---
+
 ## 🧠 What is WFGY?
 
 **WFGY** (萬法歸一) is a modular semantic reasoning engine designed to solve the kinds of logic, memory, and abstraction problems that traditional LLMs often fail at.
