@@ -1,4 +1,4 @@
-# 📐 SemanticBlueprint — Core Functions of the WFGY Engine
+# 📐 Semantic Blueprint — Core Functions of the WFGY Engine
 ### Designing the Logic That Holds the Universe Together."
 
 
