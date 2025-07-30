@@ -1,5 +1,5 @@
 
-# 📒 Problem #6 · Logic Collapse & Recovery — Dead‑End Paths, Frozen Threads
+# 📒 Map-D ·Problem #6 · Logic Collapse & Recovery — Dead‑End Paths, Frozen Threads
 
 Long chains of reasoning can **hit a wall**: the model reaches a step where no rule fires, context drifts, or the answer space “locks‑up.”  
 Instead of recovering, most LLM stacks keep emitting filler or restart from scratch — losing the entire logic trail.  
