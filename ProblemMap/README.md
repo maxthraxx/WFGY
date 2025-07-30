@@ -64,7 +64,7 @@ See [TXT OS](../OS/) for real-time demos, or [start here with RAG failures →](
 
 ---
 
-🆕 First time here? See [How to Identify Your AI Failure](./BeginnerGuide.md) – quick primer for newcomers.
+🆕 First time here? See [Beginner Guide : How to Identify & Fix Your AI Failure](./BeginnerGuide.md) – quick primer for newcomers.
 
 ## 🔗 Navigation – Solved (or Tracked) AI Failure Modes
 
@@ -169,6 +169,34 @@ You’re not alone — many AI devs face mysterious failures like:
 | 🧵 Model forgets context in long docs | #7 Memory Breaks in 100k Tokens | [Fix it →](./memory-coherence.md) |
 | 🌀 Good data, still bad logic | #2 Interpretation Collapse | [Fix it →](./retrieval-collapse.md) |
 🔍 Full diagnosis table (13+ issues) |  | [See full table →](./Diagnose.md) |
+
+---
+
+---
+
+## 📊 Semantic Papers & AI Scores
+
+Below is a list of research papers related to semantic reasoning, AI physics, and symbolic cognition — all authored under the WFGY framework.  
+These papers were evaluated using the built-in SciSpace showcase tool inside ChatGPT.
+
+🧪 *Anyone can replicate the scoring:*  
+Feel free to download any paper and ask AI (e.g., SciSpace via ChatGPT) to rate it yourself —  
+in most cases, the result should fall within ±5 points of the listed score, based on our tests.
+
+| Title                                           | Score | DOI                                                                |
+|------------------------------------------------|-------|--------------------------------------------------------------------|
+| **WFGY《萬法歸一》**                            | 95    | [10.5281/zenodo.15630969](https://doi.org/10.5281/zenodo.15630969) |
+| **Semantic Relativity Theory**                | 93    | [10.5281/zenodo.15630802](https://doi.org/10.5281/zenodo.15630802) |
+| **Semantic BioEnergy: Plants vs. Einstein**   | 94    | [10.5281/zenodo.15630370](https://doi.org/10.5281/zenodo.15630370) |
+| **Semantic Collapse in Quantum Measurement**  | 94    | [10.5281/zenodo.15630681](https://doi.org/10.5281/zenodo.15630681) |
+| **Semantic Field–Mediated Fifth Force**       | 93    | [10.5281/zenodo.15630650](https://doi.org/10.5281/zenodo.15630650) |
+| **Semantic Entropy under Landauer's Principle** | 94  | [10.5281/zenodo.15630478](https://doi.org/10.5281/zenodo.15630478) |
+| **Semantic Holography & Causal Fields**       | 94    | [10.5281/zenodo.15630163](https://doi.org/10.5281/zenodo.15630163) |
+| **Trinity of Light Hypothesis**               | 91    | [10.5281/zenodo.15387617](https://doi.org/10.5281/zenodo.15387617) |
+| **Asymmetric Self-Consistency Hypothesis**    | 93    | [10.5281/zenodo.15630260](https://doi.org/10.5281/zenodo.15630260) |
+
+Full annotated reviews (with images) here:  
+👉 [I_am_not_lizardman](https://github.com/onestardao/WFGY/tree/main/I_am_not_lizardman)
 
 ---
 
