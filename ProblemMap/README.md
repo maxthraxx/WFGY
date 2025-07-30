@@ -43,19 +43,8 @@
 
 ---
 
-### **Open Semantic Blueprint**
-
-> WFGY isn’t just a fix — it’s a new logic stack.  
-> Our blueprint lays out every layer, module, and semantic formula behind the engine.  
-> 📎 [Explore the core design →](https://github.com/onestardao/WFGY/tree/main/SemanticBlueprint)
-
----
-
-### **GPT‑5 Benchmark (Coming Soon)**
-
-> We’re not speculating — we’re benchmarking.  
-> WFGY will go head-to-head with GPT‑5 across long-context, philosophy, and symbolic tasks.  
-> 📎 [Track the showdown →](https://github.com/onestardao/WFGY/tree/main/benchmarks/benchmark-vs-gpt5)
+> **🔎 Looking deeper?**  
+> Jump to: [Semantic Blueprint](#-explore-more) · [GPT‑5 Benchmark](#-explore-more)
 
 ---
 
