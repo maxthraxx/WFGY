@@ -147,6 +147,14 @@ The inverse (*Product → Function*) view is handled in each product’s own dir
 | L45 | `SubLangShell`    | Sub-language scaffolding shell for foreign reasoning contexts         | ★★★★☆                   |
 | L46 | `InjectShield`    | Injection signal regulator to suppress semantic pollution             | ★★★★☆                   |
 | L47 | `HallucinationShield` | Multi-stage hallucination countermeasures (six-math defense chain)| ★★★★★                   |
+| L48 | `ContextTypeLatch` | Switches semantic bias vectors based on input domain (e.g., legal, poetic) | ★★★★☆ |
+| L49 | `ErrorWeightDamp`  | Dampens learning rate in unstable zones to preserve legacy reasoning        | ★★★★☆ |
+| L50 | `LocalStyleGate`   | Infuses contextual style patterns (regional, user, brand); fallback-enabled | ★★★★☆ |
+| L51 | `PromptReweighter` | Dynamically reassigns token weights using reward feedback signals           | ★★★★☆ |
+| L52 | `ActivePatchTest`  | Injects adversarial semantic patches during runtime to test resilience      | ★★★★★ |
+| L53 | `SparseRetrieval`  | Enables fallback retrieval via TF-IDF or lexical hashing (low-resource mode)| ★★★★☆ |
+| L54 | `PrivacyAlign`     | Combines differential privacy + alignment loss for protected data training  | ★★★★☆ |
+
 
 
 ---
