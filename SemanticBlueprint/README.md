@@ -36,6 +36,29 @@ so contributors can trace each feature’s reasoning upgrade back to its engine 
 
 ---
 
+## 🚧 Upcoming Semantic Reasoning Layers
+
+The following modules are planned as part of the WFGY Layer System.  
+These layers extend the WFGY Engine with new symbolic, cognitive, or gravity-based reasoning abilities.  
+**All names and formulas are provisional**. PSBigBig retains final naming rights and theoretical definitions.
+
+| Layer Name                      | Description                                                                 | Status    |
+| ------------------------------ | --------------------------------------------------------------------------- | --------- |
+| `semantic_gravity_field`       | Simulates gravitational pull in meaning space (ΔS + λ_observe vector field) | Planned   |
+| `gravity_bias_index`           | Captures semantic drift tendencies toward dense nodes                       | Planned   |
+| `warp_anchors`                 | Enables memory points that trigger contextually (semantic anchor nodes)     | Planned   |
+| `inflatable_memory_glyphs`     | Encoded memory units that expand semantically when prompted                 | Planned   |
+| `cogito_unit_system`           | Defines smallest unit of semantic action (reasoning particle)              | Planned   |
+| `symbolic_pressure_monitor`    | Tracks overload in symbolic tension (ΔS + transition hops)                  | Planned   |
+| `emotive_harmonic_decay`       | Models emotional tension decay in narrative                                 | Planned   |
+| `stylistic_phase_detector`     | Detects abrupt stylistic changes across model outputs                       | Planned   |
+| `semantic_refraction_matrix`   | Models meaning distortion across boundary contexts                          | Planned   |
+| `semantic_tension_mapper`      | Visual map of ΔS flow and narrative tension                                 | Planned   |
+| `orbital_meaning_drift`        | Traces semantic node drift over time                                        | Planned   |
+
+> Note: These layers are conceptually aligned with the *Language Cosmology* model and are designed to integrate with the WFGY reasoning engine and the Drunk Transformer framework.
+
+
 ## 🧭 How to Use
 
 > If you're building a new WFGY-based feature or investigating failures,  
