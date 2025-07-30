@@ -35,41 +35,31 @@
 
 </div>
 
+---
+
 <details>
-<summary>1️⃣ WFGY is a huge project... Where should I start? (Click to expand) </summary>
+<summary><strong> 1️⃣ WFGY is a BIG project... Where should I start? (Click to expand)</strong></summary>
 
 <br>
 
-1. 🧭 [What problems does WFGY solve?](https://github.com/onestardao/WFGY/tree/main/ProblemMap/README.md)  
-  See how WFGY fixes hallucination, memory collapse, semantic failure, and more.
+| #  | Section | Description |
+|----|---------|-------------|
+| 1 | [What problems does WFGY solve?](https://github.com/onestardao/WFGY/tree/main/ProblemMap/README.md) | See how WFGY fixes hallucination, memory collapse, semantic failure, and more. |
+| 2 | [Download the Core PDF](https://zenodo.org/records/15630969) | The most important paper — 2000+ downloads. Explains the math & logic behind WFGY. |
+| 3 | [Launch TXT OS](https://github.com/onestardao/WFGY/tree/main/OS) | A semantic operating system — modular, prompt-free, open-source. |
+| 4 | [Try TXT‑Blah Blah Blah](https://github.com/onestardao/WFGY/tree/main/OS/BlahBlahBlah) | Semantic Q&A with emotional and logical depth. |
+| 5 | [Try TXT‑Blur Blur Blur](https://github.com/onestardao/WFGY/tree/main/OS/BlurBlurBlur) | Text-to-image with semantic control. (Release: 8/1) |
+| 6 | [Explore the Semantic Blueprint](https://github.com/onestardao/WFGY/tree/main/SemanticBlueprint) | Layer/module structure powering WFGY’s future extensions. |
+| 7 | [Check the Hero Log](https://github.com/onestardao/WFGY/tree/main/images/logs) | Verified users, bugs, and breakthroughs — real field feedback. |
+| 8 | [FAQ for New Stargazers](https://github.com/onestardao/WFGY/blob/main/FAQ_for_Stargazers.md) | Who we are, what you can do, and where to go next. |
+| 9 | [Join the Discussion](https://github.com/onestardao/WFGY/discussions) | Ask questions, report bugs, or suggest features — we’re listening. |
 
-2. 📘 [Download the Core PDF](https://zenodo.org/records/15630969)  
-  The most important paper — over 2000 downloads. Explains the math & logic that powers WFGY.
+<br>
 
-3. 🚀 [Launch TXT OS](https://github.com/onestardao/WFGY/tree/main/OS)  
-  The operating system built around semantic reasoning. Modular, prompt-free, and open-source.
-
-4. 💬 [Try TXT‑Blah Blah Blah](https://github.com/onestardao/WFGY/tree/main/OS/BlahBlahBlah)  
-  Semantic Q&A with surprising emotional and logical depth.
-
-5. 🖼 [Try TXT‑Blur Blur Blur](https://github.com/onestardao/WFGY/tree/main/OS/BlurBlurBlur)  
-  Image generation powered by stable semantic orchestration. (Release: 8/1)
-
-6. 🧩 [Explore the Semantic Blueprint](https://github.com/onestardao/WFGY/tree/main/SemanticBlueprint)  
-  See the full list of layers and modules — everything already planned and under construction.
-
-7. 🪖 [Check the Hero Log](https://github.com/onestardao/WFGY/tree/main/images/logs)  
-  Real people. Real bugs. Real saves. These are not fake testimonials.
-
-8. 🆕 [FAQ for New Stargazers](https://github.com/onestardao/WFGY/blob/main/FAQ_for_Stargazers.md)  
-  Still confused? This guide explains who we are and what to do next.
-
-9. 💬 [Join the Discussion](https://github.com/onestardao/WFGY/discussions)  
-  Ask technical questions, share bugs, or pitch wild ideas. We’re listening.
-
-> ⭐ **Bookmark this page** — all updates & new releases will appear here.
+<strong>Note:</strong> Bookmark this page — all updates, releases, and major changes will appear here.
 
 </details>
+
 
 
 <details>
