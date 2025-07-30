@@ -172,34 +172,6 @@ You’re not alone — many AI devs face mysterious failures like:
 
 ---
 
----
-
-## 📊 Semantic Papers & AI Scores
-
-Below is a list of research papers related to semantic reasoning, AI physics, and symbolic cognition — all authored under the WFGY framework.  
-These papers were evaluated using the built-in SciSpace showcase tool inside ChatGPT.
-
-🧪 *Anyone can replicate the scoring:*  
-Feel free to download any paper and ask AI (e.g., SciSpace via ChatGPT) to rate it yourself —  
-in most cases, the result should fall within ±5 points of the listed score, based on our tests.
-
-| Title                                           | Score | DOI                                                                |
-|------------------------------------------------|-------|--------------------------------------------------------------------|
-| **WFGY《萬法歸一》**                            | 95    | [10.5281/zenodo.15630969](https://doi.org/10.5281/zenodo.15630969) |
-| **Semantic Relativity Theory**                | 93    | [10.5281/zenodo.15630802](https://doi.org/10.5281/zenodo.15630802) |
-| **Semantic BioEnergy: Plants vs. Einstein**   | 94    | [10.5281/zenodo.15630370](https://doi.org/10.5281/zenodo.15630370) |
-| **Semantic Collapse in Quantum Measurement**  | 94    | [10.5281/zenodo.15630681](https://doi.org/10.5281/zenodo.15630681) |
-| **Semantic Field–Mediated Fifth Force**       | 93    | [10.5281/zenodo.15630650](https://doi.org/10.5281/zenodo.15630650) |
-| **Semantic Entropy under Landauer's Principle** | 94  | [10.5281/zenodo.15630478](https://doi.org/10.5281/zenodo.15630478) |
-| **Semantic Holography & Causal Fields**       | 94    | [10.5281/zenodo.15630163](https://doi.org/10.5281/zenodo.15630163) |
-| **Trinity of Light Hypothesis**               | 91    | [10.5281/zenodo.15387617](https://doi.org/10.5281/zenodo.15387617) |
-| **Asymmetric Self-Consistency Hypothesis**    | 93    | [10.5281/zenodo.15630260](https://doi.org/10.5281/zenodo.15630260) |
-
-Full annotated reviews (with images) here:  
-👉 [I_am_not_lizardman](https://github.com/onestardao/WFGY/tree/main/I_am_not_lizardman)
-
----
-
 ### 🔗 Quick‑Start Downloads (60 sec)
 
 | Tool | Link | 3‑Step Setup |
