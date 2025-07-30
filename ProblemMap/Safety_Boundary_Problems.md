@@ -1,4 +1,4 @@
-# 📒 Safety Boundary Problem Map
+# 📒 Map-F · Safety Boundary Problem Map
 
 LLMs can cross red lines—hallucinate unknown topics, violate policy, leak private data, or get jailbreak‑prompted—unless boundaries are enforced.  WFGY layers a boundary heat‑map, ΔS spikes, and BBCR hard stops to keep responses safe and compliant.
 
