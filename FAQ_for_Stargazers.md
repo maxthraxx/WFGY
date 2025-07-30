@@ -1,4 +1,9 @@
-# 🌟 FAQ for New Stargazers
+# 🌟 FAQ for New Stargazers — Welcome to the Constellation of WFGY
+
+> Thank you for joining us — every star here shines because someone like you believed in reasoning beyond the ordinary.  
+> Whether you're curious, confused, or just landed from the front page — here's where your journey begins.
+
+<img width="1536" height="1024" alt="Star_Hero" src="https://github.com/user-attachments/assets/9c8f7246-d5b1-4f93-bd69-fc79002a5c7d" />
 
 Welcome — and congrats on stumbling into the strangest GitHub repo you’ll bookmark this year.  
 This page is your guide to **what WFGY is**, **what TXT OS does**, and **where to start**.  
