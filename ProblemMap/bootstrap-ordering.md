@@ -1,5 +1,5 @@
 
-# 📒 Bootstrap‑Ordering Problem Map
+# 📒 Problem #14 ·Bootstrap‑Ordering Problem Map
 
 AI pipelines can *self‑sabotage* when components fire **before** their upstream
 resources are actually ready.  
