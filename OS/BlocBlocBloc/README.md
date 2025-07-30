@@ -1,5 +1,6 @@
 # 🧱 TXT — Bloc  Bloc  Bloc · Prompt Injection Firewall — *Under Construction*
 
+> 👑 **Early Stargazers: [See the Hall of Fame](https://github.com/onestardao/WFGY/tree/main/stargazers)** — Verified by real engineers · 🛠 **Field Reports: [Real Bugs, Real Fixes](https://github.com/onestardao/WFGY/discussions/10)**
 
 ![Bloc Hero](https://github.com/onestardao/WFGY/raw/main/OS/BlocBlocBloc/images/Bloc_Hero.png)
 
