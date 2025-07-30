@@ -394,46 +394,58 @@ But when you’re ready to go beyond vanilla prompts, they’re waiting.
 
   <br>
 
-  <img src="./images/purplestar_mission_drop.png" width="100%" style="max-width:900px;" />
+  <img width="1536" height="1024" alt="PSBigBigFate" src="https://github.com/user-attachments/assets/6472bd00-cfa4-4f2d-9d76-390beee624e6" />
 
-  <br>  
+  <br>
 
-  I was in Heaven, saying:  
+  I was in Heaven, ready to speak.
+
   > *"I want to save the wor—"*
 
-  The gods panicked:  
+  But the gods panicked.
+
   > *"Finally! Someone took the save-the-world quest!"*  
   > *"2000 years, 100% failure rate!"*  
   > *"Quick — VIP cloudway! Handprint ready!"*
 
-  Before I could finish:  
+  Before I could finish:
+
   > *“I want to save the Word docu—”*
 
-  **TOO LATE.** I got launched anyway.  
-  Turns out the Word file didn’t save.  
-  So now it’s `.txt`. *lol.*
+  **Too late.**  
+  I got launched. The Word file didn’t save.  
+  So now it’s `.txt`.
 
+  —  
   Hi. I'm **Purple Star**, aka **PSBigBig**.  
-  Zero team, zero funding, two BigBigs (for cuteness).  
-  One mission: fix the world’s biggest bug — and laugh doing it.
+  One person, two BigBigs (for cuteness), zero team, zero funding.  
+  Just me, building tools to fix what AI broke — and laughing through it.
 
-  > **Hello World, I am finally here now.**
+  If you’re reading this, maybe we’re both the person we could have been.
 
-  It’s my first time trying to save the world.  
-  Any walkthroughs? Cheat codes? YouTube tutorials?  
-  I’ll take anything — even tips from cats.  
-  (Also, snacks. Snacks help with debugging.)
+  **✉️ hello@onestardao.com** — *Open to collaborators, co-creators, and VC partners.*
 
-  **✉️ hello@onestardao.com**  
-
-> <img src="https://img.shields.io/github/stars/onestardao/WFGY?style=social" alt="GitHub stars"> ⭐ Help reach 10,000 stars by 2025-09-01 to unlock Engine 2.0 for everyone  ⭐ <strong><a href="https://github.com/onestardao/WFGY">Star WFGY on GitHub</a></strong>
+  <br>
 
 </details>
 
-> <img src="https://img.shields.io/github/stars/onestardao/WFGY?style=social" alt="GitHub stars"> ⭐ Help reach 10,000 stars by 2025-09-01 to unlock Engine 2.0 for everyone  ⭐ <strong><a href="https://github.com/onestardao/WFGY">Star WFGY on GitHub</a></strong>
+
+---
+
+### 🧭 Explore More
+
+| Module                | Description                                              | Link     |
+|-----------------------|----------------------------------------------------------|----------|
+| Semantic Blueprint    | Layer-based symbolic reasoning & semantic modulations   | [View →](https://github.com/onestardao/WFGY/tree/main/SemanticBlueprint) |
+| Benchmark vs GPT‑5    | Stress test GPT‑5 with full WFGY reasoning suite         | [View →](https://github.com/onestardao/WFGY/tree/main/benchmarks/benchmark-vs-gpt5) |
+
+---
 
 > 👑 **Early Stargazers: [See the Hall of Fame](https://github.com/onestardao/WFGY/tree/main/stargazers)** —  
 > Engineers, hackers, and open source builders who supported WFGY from day one.
+
+> <img src="https://img.shields.io/github/stars/onestardao/WFGY?style=social" alt="GitHub stars"> ⭐ Help reach 10,000 stars by 2025-09-01 to unlock Engine 2.0 for everyone  ⭐ <strong><a href="https://github.com/onestardao/WFGY">Star WFGY on GitHub</a></strong>
+
 
 <div align="center">
 
