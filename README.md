@@ -70,13 +70,8 @@
 - [`TXT: Bloc Bloc Bloc`](https://github.com/onestardao/WFGY/tree/main/OS/BlocBlocBloc) — Prompt Injection Firewall  
   > Semantic firewall with ΔS stability, hallucination confusion, and λ_observe gating.
 
----
-
 > All modules run natively as `.txt` apps — no install, no dependencies.  
 > This is not just tooling. It’s the architecture of a new semantic layer.
-
-
-
 
 <br>
 </details>
@@ -103,14 +98,23 @@
 | **Hallucination-Safe RAG Scaling** | Supports 10M+ docs without semantic breakdown |
 | **Verifiable Semantic Memory** | Tree architecture shows exactly how it thinks |
 
-> **TL;DR:** WFGY isn’t prompt engineering — it’s a **semantic reasoning engine** built for logic, safety, and scale.  
-> 📍 [See full breakdown in the WFGY Problem Map →](./ProblemMap)
+> **TL;DR:** WFGY is not prompt engineering — it's a full-stack **semantic reasoning engine** built to fix what GPTs can’t:  
+> logic collapse, symbolic failure, retrieval drift, and semantic ambiguity.
 
 ---
 
-> We’re not just solving problems. We’re publishing open benchmarks against GPT‑5.  
-> This engine — the one you’re using — will go head-to-head with the world’s most hyped model.  
-> 📎 [Follow the GPT‑5 showdown here →](https://github.com/onestardao/WFGY/tree/main/benchmarks/benchmark-vs-gpt5)
+> **Solving Problems**  
+> We built WFGY to crush the root causes of reasoning failure — not patch the symptoms.  
+> 📎 [See the full Problem Map →](./ProblemMap/README.md)
+
+> **Benchmarking GPT‑5**  
+> This engine isn’t theory. It’s entering open combat — benchmarked head-to-head against GPT‑5.  
+> 📎 [See the showdown benchmarks →](https://github.com/onestardao/WFGY/tree/main/benchmarks/benchmark-vs-gpt5/README.md)
+
+> **Build from First Principles**  
+> Our logic stack is open, symbolic, and composable. Want to see the engine’s core blueprint?  
+> 📎 [Explore the Semantic Blueprint →](https://github.com/onestardao/WFGY/tree/main/SemanticBlueprint/README.md)
+
 
 </details>
 
