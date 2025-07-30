@@ -18,6 +18,10 @@ You’ll find:
 
 This is a **developer-facing reference map** for understanding how each reasoning upgrade ties back to WFGY's engine internals.
 
+> Important: Every module listed here reflects a real, working conceptual solution —
+> each one was written in direct response to failures we’ve seen in existing AI systems.
+> These are not speculative names or sci-fi ideas — but actual answers to actual problems.
+
 **📌 Note:**  
 Mappings from *Function → Product* are included as side notes.  
 The inverse (*Product → Function*) view is handled in each product’s own directory.
@@ -67,7 +71,6 @@ The inverse (*Product → Function*) view is handled in each product’s own dir
 > And if WFGY ever helped you: a ⭐ or comment means more than you think.
 
 </details>
-
 
 
 ---
