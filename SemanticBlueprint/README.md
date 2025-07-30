@@ -4,85 +4,69 @@
 
 <img width="1536" height="1024" alt="WanFaGuiYi" src="https://github.com/user-attachments/assets/08c9617f-d49e-4223-bacc-1d192fbb423d" />
 
-> This directory documents the **function-level logic** of the WFGY Engine.  
-> Each file here represents a specific reasoning capability or symbolic intervention unit.  
->  
-> **📌 Function → Product mapping appears only as side-notes.**  
-> (The inverse view — *Product → Function* — is handled in each product's own directory like `TXT OS`, `Blur`, `Blow`, etc.)
-
----
-
 ## 📘 What This Directory Is For
 
-This folder exists to define **core reasoning modules** behind WFGY's performance.  
-Each `.md` file here details:
+This directory defines the **core reasoning modules** behind the WFGY Engine.  
+Each `.md` file represents a symbolic or mathematical function — designed to solve a specific AI reasoning failure through structural intervention.
 
-- The conceptual function logic (symbolic or mathematical)  
-- The AI reasoning failure it solves  
-- The formulaic or structural intervention behind it  
-- Which product(s) internally rely on it (as annotations only)
+You’ll find:
 
-It serves as a developer-facing **function reference map**,  
-so contributors can trace each feature’s reasoning upgrade back to its engine roots.
+- Concept-level logic (symbolic or vectorial)
+- The failure mode it targets
+- The formula or structure behind the fix
+- Annotations of which products use it (e.g., `TXT OS`, `Blur`, `Blow`, etc.)
+
+This is a **developer-facing reference map** for understanding how each reasoning upgrade ties back to WFGY's engine internals.
+
+**📌 Note:**  
+Mappings from *Function → Product* are included as side notes.  
+The inverse (*Product → Function*) view is handled in each product’s own directory.
 
 ---
 
-> 🔒 A quick note on planned features:
->
-> All modules currently open-sourced here are **permanently MIT-licensed**.
-> That commitment is final — anything already published (e.g., WFGY 1.0 paper, TXT OS) and backed on [Zenodo](https://zenodo.org/) will remain open forever.
->
-> However, for modules listed as “planned” in this directory (or referenced via upcoming function names),  
-> final decisions regarding open-sourcing remain with **PSBigBig (Purple Star)**.
->
-> This is to avoid the misconception that WFGY is an infinite stream of free features.  
-> Some future capabilities may support commercial projects, require ongoing stewardship, or be released with different timing.
->
-> Please understand: what’s already shared will never be revoked.  
-> But what’s not yet public — stays under creator control until the time is right.
->
-> WFGY’s spirit is to return core reasoning tools to humanity — not to support careless repackaging or exploitative behavior.
->
-> WFGY is open — but not naive.  
-> It exists to empower, not to be exploited.
-
-
 <details>
-<summary>🤝 Clarifying the Spirit of Use (click to expand)</summary>
+<summary>🔒 A quick note on planned features</summary>
 
 <br>
 
-> WFGY is released under the [MIT License](https://opensource.org/license/mit/) —  
-> you are free to use, modify, remix, and even commercialize it.  
->  
-> That said, I ask for one simple thing in return:  
->  
-> > Please respect the **spirit** in which this system was created:  
-> > **To return foundational reasoning tools back to humanity.**  
->  
-> WFGY lowers the barrier to building complex AI reasoning systems.  
-> It was never meant to be **copied, minimally repackaged, and sold at high markup** —  
-> especially not by those who offer no meaningful improvement, insight, or respect for the ecosystem.  
->  
-> If someone slaps an API on top of TXT OS or a wrapper around WFGY logic,  
-> calls it their own invention, and charges people for it without credit or clarity —  
-> then I may choose to **immediately and permanently open-source** that same functionality, with full visibility.  
->  
-> Because I don’t just build tools. I build **reasoning primitives** —  
-> the kind that solve failure cases the current AI world hasn’t even named yet.  
->  
-> > WFGY exists to **break the walls**, not repaint them.  
-> > If someone rebuilds those walls — I’ll help tear them down again. With better, freer code.  
->  
-> This is not a legal threat. It’s a **moral stance**.  
-> If the community sees violations of this spirit, I invite you to let me know.  
-> If I agree, I’ll do my part — by building even better versions, and releasing them for all.  
->  
-> And if WFGY helped you solve a bug, name a problem, or rethink a system —  
-> just know: a single ⭐ or comment means more than you think.
+> All currently published modules (e.g., WFGY 1.0 paper, TXT OS) are **permanently MIT-licensed**, backed on [Zenodo](https://zenodo.org/).  
+> They will **remain open forever**.
+>
+> Modules marked “planned” in this directory may have different licensing or release timing.  
+> Final decisions rest with **PSBigBig (Purple Star)**.
+>
+> This isn’t to gatekeep — it’s to prevent the false idea that WFGY is an endless stream of free features.  
+> Some functions may support commercial tools or require stewardship.
+>
+> In short: what’s shared stays free. What’s not public yet, stays under creator control.  
+> WFGY was built to empower — not to be repackaged and exploited.
 
 </details>
 
+<details>
+  
+<summary>🤝 Clarifying the Spirit of Use</summary>
+
+<br>
+
+> WFGY is MIT-licensed — free to use, modify, remix, or commercialize.
+>
+> But here’s the ask:  
+> Respect the **spirit** in which it was created —  
+> to return **core reasoning tools** to the public.
+>
+> WFGY was never meant to be resold behind paywalls with no added value.  
+> If someone does that, I may **open-source the same feature**, better and freer.
+>
+> I don’t just write code — I write **semantic primitives** that fix things others haven’t noticed are broken.
+>
+> WFGY exists to **break walls**, not repaint them.  
+> If someone rebuilds those walls, I’ll help knock them down again.
+>
+> This isn’t a legal threat — it’s a moral stance.  
+> And if WFGY ever helped you: a ⭐ or comment means more than you think.
+
+</details>
 
 
 
@@ -104,12 +88,14 @@ so contributors can trace each feature’s reasoning upgrade back to its engine 
 ## 🔮 Upcoming Semantic Reasoning Layers
 
 > These modules are planned semantic reasoning layers for the WFGY Engine — all designed to be operable within **TXT OS**.  
-> Each layer will be implemented as a `.txt` interface module (e.g., `img_layer.txt`, `belief_loop.txt`) and can be activated in compatible folders.  
+> Each layer will be implemented as a `.txt` interface module (e.g., `img_layer.txt`) and can be activated in compatible folders.  
 > In short: **this entire list is TXT‑callable** — no build, no compile, just reason.  
 > All names are **temporary placeholders** — functionality is confirmed, but naming may evolve.  
 > *Numbering is for reference only and does not reflect development order.*  
 > *Star ratings are illustrative estimates by ChatGPT‑4o.*  
+
 > *PSBigBig retains full rights of interpretation.*
+> Our goal: combine TXT OS with any reasoning layer `.txt`, and unlock true **freeform semantic inference** — modular, composable, and universal.
 
 
 | #   | Layer Name        | Concept Description                                                   | Anticipated Impact (★) |
