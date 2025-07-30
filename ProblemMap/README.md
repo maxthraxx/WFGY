@@ -1,9 +1,10 @@
 # 📋 WFGY Problem Map – Bookmark This. You’ll Need It.
 ## Every failure has a name. Every name has a countermeasure.
 
+> 👑 **Early Stargazers: [See the Hall of Fame](https://github.com/onestardao/WFGY/tree/main/stargazers)** — Verified by real engineers · 🛠 **Field Reports: [Real Bugs, Real Fixes](https://github.com/onestardao/WFGY/discussions/10)**
+
 <img width="1536" height="1024" alt="ProblemMap_Hero" src="https://github.com/user-attachments/assets/b2a5add8-6647-4424-8eff-9e449bf7382b" />
 <div align="center">
-
 
 <!-- WFGY Core Badges -->
 <br>
