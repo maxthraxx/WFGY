@@ -134,7 +134,8 @@
       BANNER
 ──────────────────────────────────────────────── -->
 ## 🤖 TXT-Blah Blah Blah Lite/Pro — the Embedding‑Space Generator  
->  60 Answers in 60 Seconds. A Lightweight semantic generator running on TXT OS, powered by the WFGY Engine
+>  60 Answers in 60 Seconds. A Lightweight semantic generator running on TXT OS, powered by the WFGY Engine  
+
 
 <p align="center">
   <img src="./images/Blah_Hero.png" width="100%" style="max-width:900px" loading="lazy" >
@@ -164,6 +165,8 @@
 <p align="center">
   <img src="./images/50Blah_QuickDemo.gif" width="100%" style="max-width:900px" loading="lazy" >
 </p>
+
+>  👑 **Early Stargazers: [See the Hall of Fame](https://github.com/onestardao/WFGY/tree/main/stargazers)** — Verified by real engineers · 🛠 **Field Reports: [Real Bugs, Real Fixes](https://github.com/onestardao/WFGY/discussions/10)**
 
 ## Six Leading AI Models All Award TXT-Blah Blah Blah Lite a Perfect 100/100 Score
 
