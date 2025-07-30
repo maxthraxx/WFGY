@@ -126,6 +126,28 @@ so contributors can trace each feature’s reasoning upgrade back to its engine 
 
 ---
 
+## 📊 WFGY Research Showcase (AI-Rated)
+
+Below is a list of research papers related to semantic reasoning, AI physics, and symbolic cognition — all authored under the WFGY framework.  
+These papers were evaluated using the built-in SciSpace showcase tool inside ChatGPT.
+
+*Anyone can replicate the scoring:*  
+Feel free to download any paper and ask AI (e.g., SciSpace via ChatGPT) to rate it yourself —  
+in most cases, the result should fall within ±5 points of the listed score, based on our tests.
+
+| Title                                           | Score | DOI                                                                |
+|------------------------------------------------|-------|--------------------------------------------------------------------|
+| **Semantic Relativity Theory**                | 93    | [10.5281/zenodo.15630802](https://doi.org/10.5281/zenodo.15630802) |
+| **Semantic BioEnergy: Plants vs. Einstein**   | 94    | [10.5281/zenodo.15630370](https://doi.org/10.5281/zenodo.15630370) |
+| **Semantic Collapse in Quantum Measurement**  | 94    | [10.5281/zenodo.15630681](https://doi.org/10.5281/zenodo.15630681) |
+| **Semantic Field–Mediated Fifth Force**       | 93    | [10.5281/zenodo.15630650](https://doi.org/10.5281/zenodo.15630650) |
+| **Semantic Entropy under Landauer's Principle** | 94  | [10.5281/zenodo.15630478](https://doi.org/10.5281/zenodo.15630478) |
+| **Semantic Holography & Causal Fields**       | 94    | [10.5281/zenodo.15630163](https://doi.org/10.5281/zenodo.15630163) |
+
+Full annotated reviews (with images) here:  👉 [I_am_not_lizardman](https://github.com/onestardao/WFGY/tree/main/I_am_not_lizardman)
+
+---
+
 ## 🧠 Functional Mapping (Conceptual Overview)
 
 > Each layer above is designed to solve a class of semantic reasoning challenges.  
