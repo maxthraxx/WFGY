@@ -110,14 +110,15 @@ The numbers come from the paper’s GSM8K / Truthful‑QA runs; LLM‑chat repli
 
 ## 📎 How These Formulas Map to Products
 
-| Variable / Module |       TXT OS      |        Blah        | Blot |        Bloc       |            Blur           |         Blow        |
-| ----------------- | :---------------: | :----------------: | :--: | :---------------: | :-----------------------: | :-----------------: |
-| **BBMC, ΔS**      |   ✅ node logging  |     ✅ heat‑map     |   ⬜  |         ⬜         |             ⬜             |          ⬜          |
-| **BBPF**          | ✅ prompt splitter |          ⬜         |   ⬜  | ✅ future compiler |             ⬜             |          ⬜          |
-| **BBCR**          |  ✅ boundary guard |          ⬜         |   ⬜  |         ⬜         |             ⬜             | ✅ game AI fail‑safe |
-| **BBAM**          | ✅ entropy damping | ✅ creative entropy |   ⬜  |         ⬜         | ✅ image prompt stabiliser |          ⬜          |
+| Variable / Module |   TXT OS   |   Blah   | Blot |   Bloc   |         Blur         |   Blow   |
+|-------------------|:----------:|:--------:|:----:|:--------:|:--------------------:|:--------:|
+| **BBMC, ΔS**      |     ✅     |    ✅     |  ⬜  |    ⬜     |         ⬜            |    ⬜     |
+| **BBPF**          |     ✅     |    ⬜     |  ⬜  |    ✅     |         ⬜            |    ⬜     |
+| **BBCR**          |     ✅     |    ⬜     |  ⬜  |    ⬜     |         ⬜            |    ✅     |
+| **BBAM**          |     ✅     |    ✅     |  ⬜  |    ⬜     |         ✅            |    ⬜     |
 
-*⬜ = placeholder; feature spec will land as each product matures.*
+✅ = Feature implemented; see product pages for future public release.
+⬜ = Placeholder; feature spec will land as each product matures.
 
 ---
 
