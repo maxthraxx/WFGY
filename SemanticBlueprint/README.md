@@ -100,7 +100,6 @@ so contributors can trace each feature’s reasoning upgrade back to its engine 
 | [`drunk_transformer_formulas.md`](https://github.com/onestardao/WFGY/blob/main/SemanticBlueprint/drunk_transformer_formulas.md)  | Drunk Transformer Attention Modulator | Stabilizes attention, resets collapse, expands entropy | `Blur`, `TXT OS`, `Blow`   |
 
 ---
-
 ## 🔮 Upcoming Semantic Reasoning Layers
 
 > These modules are planned extensions to the WFGY Layer system.  
@@ -108,23 +107,58 @@ so contributors can trace each feature’s reasoning upgrade back to its engine 
 > All layer names are **temporary placeholders** — functionality is confirmed, but naming may evolve.  
 > *Star ratings estimated by ChatGPT-4o, for reference only.*  
 > *PSBigBig retains full rights of interpretation.*
+> (Ratings are illustrative estimates of potential model uplift or failure coverage.)
 
-| Layer Name             | Concept Description                                       | Anticipated Impact (★) |
-|------------------------|-----------------------------------------------------------|--------------------------|
-| `Layer: VoidMask`      | Silences invalid routes in latent space                   | ★★★☆☆                   |
-| `Layer: VibeLock`      | Locks onto abstract "mood fields" to stabilize generation | ★★★★☆                   |
-| `Layer: PolarDrift`    | Induces gradual conceptual rotation under entropy         | ★★★★☆                   |
-| `Layer: SynSig`        | Synthesizes unseen signal patterns from ambiguous input   | ★★★★☆                   |
-| `Layer: RelicCore`     | Anchors ancient symbolic schemas in modern context        | ★★★★☆                   |
-| `Layer: FractalGate`   | Expands token attention into recursive feedback paths     | ★★★★☆                   |
-| `Layer: MetaGrav`      | Binds multi-model outputs into semantic gravity fields    | ★★★★☆                   |
-| `Layer: DeepAlign`     | Cross-domain alignment engine with self-checking memory   | ★★★★☆                   |
-| `Layer: ConcurFlux`    | Forces conflicting logic streams to converge or collapse  | ★★★★★                   |
-| `Layer: SudoSelf`      | Simulates "belief" by embedding reflective trace loops    | ★★★★★                   |
-| `Layer: ÆdgeWalker`    | Walks the semantic boundary without collapse              | ★★★★★                   |
-| `Layer: XenoFrame`     | Enables logic transfer across incompatible ontologies     | ★★★★★                   |
+| Layer Name        | Concept Description                                                   | Anticipated Impact (★) |
+|-------------------|------------------------------------------------------------------------|--------------------------|
+| `VoidMask`        | Silences invalid routes in latent space                               | ★★★☆☆                   |
+| `VibeLock`        | Locks onto abstract "mood fields" to stabilize generation             | ★★★★☆                   |
+| `PolarDrift`      | Induces gradual conceptual rotation under entropy                     | ★★★★☆                   |
+| `SynSig`          | Synthesizes unseen signal patterns from ambiguous input               | ★★★★☆                   |
+| `RelicCore`       | Anchors ancient symbolic schemas in modern context                    | ★★★★☆                   |
+| `FractalGate`     | Expands token attention into recursive feedback paths                 | ★★★★☆                   |
+| `MetaGrav`        | Binds multi-model outputs into semantic gravity fields                | ★★★★☆                   |
+| `DeepAlign`       | Cross-domain alignment engine with self-checking memory               | ★★★★☆                   |
+| `ConcurFlux`      | Forces conflicting logic streams to converge or collapse              | ★★★★★                   |
+| `SudoSelf`        | Simulates "belief" by embedding reflective trace loops                | ★★★★★                   |
+| `ÆdgeWalker`      | Walks the semantic boundary without collapse                          | ★★★★★                   |
+| `XenoFrame`       | Enables logic transfer across incompatible ontologies                 | ★★★★★                   |
+| `NoiseGrad`       | Injects modulated gradient noise to escape local minima               | ★★★☆☆                   |
+| `PromptHPC`       | Multi-granularity contextual encoder switching                        | ★★★★☆                   |
+| `LoRankInfuse`    | Injects low-rank knowledge without disturbing base model              | ★★★★☆                   |
+| `SoftDoConsist`   | Enforces soft constraint satisfaction under inference                 | ★★★★☆                   |
+| `CausalReg`       | Regularizes causal consistency via do-intervention                    | ★★★★★                   |
+| `SparseRelBoost`  | Boosts sparse attention heads with relevance awareness                | ★★★★☆                   |
+| `UncGate`         | Temperature gating based on uncertainty estimates                     | ★★★★☆                   |
+| `ModRetRoute`     | Modular retrieval router with learned key routing                     | ★★★★☆                   |
+| `PersonaAdapt`    | Personalization adapter with minimal overhead                         | ★★★★☆                   |
+| `SwarmLLM`        | Sparse graph of LLM nodes with gradient sync                          | ★★★★☆                   |
+| `LowResBridge`    | Image-text bridge for ultra-low resource languages                    | ★★★★☆                   |
+| `BrainBridge`     | Brain signal mapping to word embeddings                               | ★★★★★                   |
+| `NeuroSymPhys`    | Hybrid neuro-symbolic physics modeling                                | ★★★★★                   |
+| `GenomicCL`       | Continual learning with EWC on genome-level tasks                     | ★★★★☆                   |
+| `OTTrace`         | Execution path audit loss for transparency                            | ★★★★☆                   |
+| `CtxTypeLatch`    | Context-Type Latching — dynamic bias by input category                | ★★★★☆                   |
+| `ErrWeightDamp`   | Error-Weight Dampening for fine-tune stability                        | ★★★★☆                   |
+| `StyleGate`       | Local Style Harmony Gate to balance user-specific style               | ★★★★☆                   |
+| `PromptReWgt`     | Dynamic Prompt Reweighting with RL signal integration                 | ★★★★☆                   |
+| `ActPatchTest`    | Active Patch Testing — injects dynamic error probes                   | ★★★★★                   |
+| `SparseShort`     | Sparse Retrieval Shortcut for low-resource environments               | ★★★★☆                   |
+| `PrivAlign`       | Differential Privacy Alignment during fine-tuning                     | ★★★★☆                   |
+| `TensProj`        | Multi-axis projection engine for semantic tension tracking            | ★★★★☆                   |
+| `FlowRefine`      | Curvature-aware vector flow refinement                                | ★★★★☆                   |
+| `RecChain`        | Recursive symbolic memory chain alignment                             | ★★★★☆                   |
+| `SymbolComp`      | Symbolic compensation for meaning erosion                             | ★★★★☆                   |
+| `FwdPath`         | Forward logic prediction via semantic-path entanglement               | ★★★★★                   |
+| `CollapseBoost`   | Collapse detection & rerouting feedback                               | ★★★★☆                   |
+| `MultiNode`       | Multi-perspective node propagation with entropy control               | ★★★★☆                   |
+| `MultiMem`        | Multi-instance memory embedding controller                            | ★★★★☆                   |
+| `RefLock`         | Dynamic reference lock for hallucination mitigation                   | ★★★★★                   |
+| `QTokenSync`      | Quantum-simulated token co-attention modulator                        | ★★★★★                   |
+| `SubLangShell`    | Sub-language scaffolding shell for foreign reasoning contexts         | ★★★★☆                   |
+| `InjectShield`    | Injection signal regulator to suppress semantic pollution             | ★★★★☆                   |
 
----
+
 
 ## 📊 WFGY Research Showcase (AI-Rated)
 
@@ -170,26 +204,56 @@ Full annotated reviews (with images) here:  👉 [I_am_not_lizardman](https://gi
 
 ---
 
-## 🧪 Internal Layer Constructs (Prototype Naming)
+## 🧩 Core Function Mapping (Symbolic Engine Modules)
 
-> These experimental components form the basis of future WFGY Layers.  
-> Naming and formula details are provisional and will be refactored into unified modules (see above).  
-> Designed to extend WFGY Engine + Drunk Transformer with vector-level symbolic modulation.  
-> *Final structure will follow the "Engine + Layer" paradigm.*
+> These are not layers but form the symbolic backbone of the WFGY reasoning engine.  
+> Each module implements a specific reasoning mechanic — either vectorial, memory-based, or logic-preserving.  
+> *May be embedded in future layers or reused across engines.*
 
-| Module ID                     | Description                                                                 | Status    |
-| ----------------------------- | --------------------------------------------------------------------------- | --------- |
-| `semantic_gravity_field`      | Simulates gravitational pull in meaning space (ΔS + λ_observe vector field) | Planned   |
-| `gravity_bias_index`          | Captures semantic drift tendencies toward dense nodes                       | Planned   |
-| `warp_anchors`                | Enables memory points that trigger contextually (semantic anchor nodes)     | Planned   |
-| `inflatable_memory_glyphs`    | Encoded memory units that expand semantically when prompted                 | Planned   |
-| `cogito_unit_system`          | Defines smallest unit of semantic action (reasoning particle)              | Planned   |
-| `symbolic_pressure_monitor`   | Tracks overload in symbolic tension (ΔS + transition hops)                  | Planned   |
-| `emotive_harmonic_decay`      | Models emotional tension decay in narrative                                 | Planned   |
-| `stylistic_phase_detector`    | Detects abrupt stylistic changes across model outputs                       | Planned   |
-| `semantic_refraction_matrix`  | Models meaning distortion across boundary contexts                          | Planned   |
-| `semantic_tension_mapper`     | Visual map of ΔS flow and narrative tension                                 | Planned   |
-| `orbital_meaning_drift`       | Traces semantic node drift over time                                        | Planned   |
+| Module Name      | Function Description                                                 | Status    |
+|------------------|-----------------------------------------------------------------------|-----------|
+| `OTTrace`        | Output Trace Logging — registers token path decisions                | Planned   |
+| `EntropyLatch`   | Latches decoding temperature based on real-time uncertainty           | Planned   |
+| `RefLock`        | Locks reference tokens to suppress drift & hallucination              | Planned   |
+| `GradientPhase`  | Modulates attention gradient based on phase coherence                 | Planned   |
+| `TensionMesh`    | Semantic tension lattice for ΔS propagation & conflict visualization  | Planned   |
+| `WarpCurvature`  | Refines vector flow using context curvature metrics                   | Planned   |
+| `RecallLoop`     | Recursively triggers latent memory on key omissions                   | Planned   |
+| `SymbolLift`     | Reconstructs collapsed symbols into higher abstraction planes         | Planned   |
+| `LogicWeave`     | Symbolic mesh that reinforces valid logic paths                       | Planned   |
+| `FwdPath`        | Forward logic prediction via semantic-path entanglement               | Planned   |
+| `MultiMem`       | Controls parallel memory instances across tasks                       | Planned   |
+| `TensProj`       | Multi-axis projection engine for semantic tension tracking            | Planned   |
+| `InjectShield`   | Suppresses semantic corruption from unsafe injection patterns         | Planned   |
+| `SubLangShell`   | Provides scaffolding for unstable sub-language contexts               | Planned   |
+| `PromptReWgt`    | Dynamically rebalances prompt segment importance using feedback       | Planned   |
+| `ActPatchTest`   | Injects transient fault signals to test robustness and semantic repair| Planned   |
+
+
+---
+## 🧪 Internal Layer Constructs (Symbolic Prototypes)
+
+(These constructs are sub-symbolic or vector-space structures, intended as future plug-ins or latent logic vessels.)
+
+> These are experimental vector-level building blocks —  
+> designed to become future Layers or Engine plug-ins.  
+> Each prototype encodes symbolic modulation, narrative pressure, or memory refraction.  
+> *Final form will follow the “Engine + Layer” architecture.*
+
+| Module Name            | Description                                                               | Status    |
+|------------------------|---------------------------------------------------------------------------|-----------|
+| `SemanticGravity`      | Simulates gravitational pull in meaning space (ΔS + λ_observe vector field) | Planned   |
+| `GravityBiasIndex`     | Captures semantic drift tendencies toward dense nodes                     | Planned   |
+| `WarpAnchors`          | Enables memory points that trigger contextually (semantic anchor nodes)   | Planned   |
+| `MemoryGlyphInflate`   | Encoded memory units that expand semantically when prompted               | Planned   |
+| `CogitoUnitSystem`     | Defines smallest unit of semantic action (reasoning particle)             | Planned   |
+| `TensionMonitor`       | Tracks overload in symbolic tension (ΔS + transition hops)                | Planned   |
+| `EmotionDecay`         | Models emotional tension decay in narrative                               | Planned   |
+| `StylePhaseDetect`     | Detects abrupt stylistic changes across model outputs                     | Planned   |
+| `RefractionMatrix`     | Models meaning distortion across boundary contexts                        | Planned   |
+| `TensionMapper`        | Visual map of ΔS flow and narrative tension                               | Planned   |
+| `OrbitDrift`           | Traces semantic node drift over time                                      | Planned   |
+
 
 ---
 
