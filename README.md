@@ -3,7 +3,6 @@
 
 > 👑 **Early Stargazers: [See the Hall of Fame](https://github.com/onestardao/WFGY/tree/main/stargazers)** — Verified by real engineers · 🛠 **Field Reports: [Real Bugs, Real Fixes](https://github.com/onestardao/WFGY/discussions/10)**
 
-
 ![CIVILIZATION_STARTTER](https://github.com/user-attachments/assets/89d25fee-f6e5-46e8-8911-a73fe4753ccd)
 
 <div align="center">
@@ -37,7 +36,44 @@
 </div>
 
 <details>
-<summary><strong>🌍 The WFGY Family — The Civilization Starter Project (Click to expand)</strong></summary>
+<summary>1️⃣ WFGY is a huge project... Where should I start? (Click to expand) </summary>
+
+<br>
+
+1. 🧭 [What problems does WFGY solve?](https://github.com/onestardao/WFGY/tree/main/ProblemMap/README.md)  
+  See how WFGY fixes hallucination, memory collapse, semantic failure, and more.
+
+2. 📘 [Download the Core PDF](https://zenodo.org/records/15630969)  
+  The most important paper — over 2000 downloads. Explains the math & logic that powers WFGY.
+
+3. 🚀 [Launch TXT OS](https://github.com/onestardao/WFGY/tree/main/OS)  
+  The operating system built around semantic reasoning. Modular, prompt-free, and open-source.
+
+4. 💬 [Try TXT‑Blah Blah Blah](https://github.com/onestardao/WFGY/tree/main/OS/BlahBlahBlah)  
+  Semantic Q&A with surprising emotional and logical depth.
+
+5. 🖼 [Try TXT‑Blur Blur Blur](https://github.com/onestardao/WFGY/tree/main/OS/BlurBlurBlur)  
+  Image generation powered by stable semantic orchestration. (Release: 8/1)
+
+6. 🧩 [Explore the Semantic Blueprint](https://github.com/onestardao/WFGY/tree/main/SemanticBlueprint)  
+  See the full list of layers and modules — everything already planned and under construction.
+
+7. 🪖 [Check the Hero Log](https://github.com/onestardao/WFGY/tree/main/images/logs)  
+  Real people. Real bugs. Real saves. These are not fake testimonials.
+
+8. 🆕 [FAQ for New Stargazers](https://github.com/onestardao/WFGY/blob/main/FAQ_for_Stargazers.md)  
+  Still confused? This guide explains who we are and what to do next.
+
+9. 💬 [Join the Discussion](https://github.com/onestardao/WFGY/discussions)  
+  Ask technical questions, share bugs, or pitch wild ideas. We’re listening.
+
+> ⭐ **Bookmark this page** — all updates & new releases will appear here.
+
+</details>
+
+
+<details>
+<summary><strong>2️⃣ The WFGY Family — The Civilization Starter Project </strong></summary>
 
 <br>
 
@@ -78,7 +114,7 @@
 </details>
 
 <details>
-<summary>📋 What AI problems does WFGY Family solve?</summary>
+<summary>3️⃣ What AI problems does WFGY Family solve?</summary>
   
 <br>
   
