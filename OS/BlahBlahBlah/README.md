@@ -86,7 +86,7 @@
 
 
 <details>
-<summary><strong> 3️⃣ Getting started — 60 sec (Click to expand)</strong></summary>
+<summary><strong> 3️⃣ Getting started — 60 sec (Click to expand · with community proof & open-source credibility)</strong></summary>
 
 <br>
 
