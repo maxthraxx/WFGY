@@ -44,7 +44,7 @@
 ---
 
 > **🔎 Looking deeper?**  
-> Jump to: [Semantic Blueprint](#-explore-more) · [GPT‑5 Benchmark](#-explore-more)
+> Jump to: [Semantic Blueprint](#-explore-more) · [Benchmark vs GPT‑5 ](#-explore-more)
 
 ---
 
