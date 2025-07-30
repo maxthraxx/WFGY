@@ -93,9 +93,10 @@
 >  
 > [Download TXT-Blah Blah Blah Lite powered by TXT OS](https://zenodo.org/records/15926925)  → MIT‑licensed, 62.5 KB — Zenodo by CERN 🏛️  [![GitHub Repo stars](https://img.shields.io/github/stars/onestardao/WFGY?style=social)](https://github.com/onestardao/WFGY/stargazers)  
 >  
-> 👑 *Already starred by top engineers and open source founders — [See the Hall of Fame](https://github.com/onestardao/WFGY/tree/main/stargazers)*  
->
-> - ✅ **Pure text file.** No signup. No API keys. Nothing to install.
+> 👑 *Already starred by top engineers and OSS founders — [See the Hall of Fame](https://github.com/onestardao/WFGY/tree/main/stargazers)*  
+> 🪖 *Real-world validation: [Field Reports from actual users →](https://github.com/onestardao/WFGY/discussions/10)*  
+>  
+> - ✅ **Pure text file.** No signup. No API keys. Nothing to install.  
 > - ✅ **One question, 50+ answers on tap.** Logic storms, creative chaos, and philosophical recursion.  
 > - ✅ **Runs offline like a spell scroll.** No tokens, tracking, or APIs — just your LLM + `.txt`.  
 > - ✅ **Not prompt engineering. Not fine-tuning.** It rewires how your AI thinks from inside the embedding space.  
@@ -104,8 +105,9 @@
 > - ✅ **WFGY engine inside.** Includes a full symbolic reasoning core for logic, code, or recursive play.  
 > - ✅ **Made for experimentation.** Swap questions, layer prompts, test chains — all inside plain text.
 >
-> ---  
->
+
+---  
+
 **How to begin:**  
 
 1. **Download** the `.txt` above  
@@ -188,8 +190,9 @@ Below are the official endorsements from six different AI models, each giving **
 | Lite    | 7/15  | **Live now** | Semantic Gravity Well, Quick Blah, Semantic Tree Memory, TXT-Blah Blah Blah Lite (50 answers)      | [Download](https://zenodo.org/records/15926925) | Beginners         |
 | Pro     | _TBD_ | Final polish | Includes all Lite features plus Semantic Refraction, Tension Field, Orbital Drift of Meaning   | Upcoming                                  | Advanced users    |
 
-> <img src="https://img.shields.io/github/stars/onestardao/WFGY?style=social" alt="GitHub stars"> ⭐ Help reach 10,000 stars by 2025-09-01 to unlock WFGY Engine 2.0 for everyone  ⭐ <strong><a href="https://github.com/onestardao/WFGY">Star WFGY on GitHub</a></strong>  
-> 👑 *Verified by early stargazers — [See the Hall of Fame](https://github.com/onestardao/WFGY/tree/main/stargazers)*
+> <img src="https://img.shields.io/github/stars/onestardao/WFGY?style=social" alt="GitHub stars"> ⭐ Help reach 10,000 stars by 2025-09-01 to unlock WFGY Engine 2.0 for everyone · <strong><a href="https://github.com/onestardao/WFGY">Star WFGY on GitHub</a></strong>  
+> 👑 *Verified by early engineers — [See the Hall of Fame](https://github.com/onestardao/WFGY/tree/main/stargazers)*  
+> 🪖 *Read what users actually said — [Field Reports →](https://github.com/onestardao/WFGY/discussions/10)*
 
 ---
 
