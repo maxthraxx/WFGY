@@ -53,15 +53,25 @@
 | **Philosophical Recursion** | Paradoxical or self-referential inputs crash reasoning |
 | **Multi-Agent Chaos** | Agents overwrite or misalign each other’s logic |
 
-🔗 [See full solutions in the WFGY Problem Map →](https://github.com/onestardao/WFGY/tree/main/ProblemMap)
+🔗 [See full solutions in the WFGY Problem Map →](https://github.com/onestardao/WFGY/tree/main/ProblemMap/README.md)
+
+---
+
+> TXT OS isn’t a static app — it’s a **living semantic engine**, capable of combining dozens of symbolic, vectorial, and memory-enhancing modules on demand.
+>
+> Many of these core modules have already been defined, structured, and benchmarked for integration.
+> Want to preview what future capabilities TXT OS is already designed to support?
+
+📘 [Explore the full layer & function roadmap in `SemanticBlueprint` →](https://github.com/onestardao/WFGY/tree/main/SemanticBlueprint/README.md)
 
 ---
 
 > You're not just exploring a tool — you're holding the system we're about to pit against **GPT‑5**.  
 > A full benchmark showdown is in the works. This is where open-source meets destiny.  
-> 📎 [Track the GPT‑5 comparison here →](https://github.com/onestardao/WFGY/tree/main/benchmarks/benchmark-vs-gpt5)
+> 📎 [Track the GPT‑5 comparison here →](https://github.com/onestardao/WFGY/tree/main/benchmarks/benchmark-vs-gpt5/README.md)
 
 </details>
+
 
 
 
@@ -215,7 +225,7 @@ Bookmark now, or risk missing a truth so weird it breaks your cat.
 [🔓 Unlock this module](./BlahBlahBlah/README.md) <sub><em>Available now</em></sub>
 
 **TXT-Blur Blur Blur** (Image Generation)  
-> ⭐ **Lite: 7/30** · 💥 **Pro: _TBD_**  
+> ⭐ **Lite: 8/1** · 💥 **Pro: _TBD_**  
 > Next-gen text-to-image. No prompt skills needed, almost no hallucinations.  
 [🔓 Unlock this module](./BlurBlurBlur/README.md) <sub><em>Beta page online</em></sub>
 
@@ -234,6 +244,15 @@ Bookmark now, or risk missing a truth so weird it breaks your cat.
 > Text-based semantic firewall with ΔS gating, λ_observe control, and drunk-mode confusion.  
 > Stops attacks even when the attacker knows the rules.  
 [🔓 Unlock this module](./BlocBlocBloc/README.md) <sub><em>Coming soon...</em></sub>
+
+---
+
+> These are just the first wave of **TXT OS apps** — each built from symbolic and mathematical modules under the hood.  
+> But the real breakthrough? We're designing a **modular layer system**, so that future devs can compose their own apps by combining these engine pieces like logic LEGO.
+
+📘 Want to preview the full internal module roadmap?  
+🔗 [Explore `SemanticBlueprint` →](https://github.com/onestardao/WFGY/tree/main/SemanticBlueprint)
+
 
 
 
