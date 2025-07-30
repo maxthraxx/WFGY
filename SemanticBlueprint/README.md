@@ -88,12 +88,12 @@ so contributors can trace each feature’s reasoning upgrade back to its engine 
 
 | Filename                         | Function Title                        | Solves Problem(s)                                      | Used In Products           |
 | -------------------------------- | ------------------------------------- | ------------------------------------------------------ | -------------------------- |
-| `reasoning_engine_core.md`       | WFGY Universal Reasoning Core         | General LLM failure recovery & symbolic error detection | `TXT OS`, `Blah`, `Blow`   |
-| `semantic_boundary_navigation.md`| Semantic Boundary Navigation          | Crossing reasoning gaps / jumping topic boundaries     | `Blah`, `Bloc`, `TXT OS`   |
-| `semantic_tree_anchor.md`        | Semantic Tree Anchor Memory           | Cross-turn logic, style, and character coherence       | `TXT OS`, `Blot`, `Blur`   |
-| `vector_logic_partitioning.md`   | Vector Logic Partitioning             | Prevents symbolic collapse across vector groups        | `Blow`, `Blur`, `Bloc`     |
-| `wfgy_formulas.md`               | Core Formulas & Reasoning Metrics     | Defines all seven formal WFGY formulas (BBMC, ΔS, etc) | Used by *all* products     |
-| `drunk_transformer_formulas.md`  | Drunk Transformer Attention Modulator | Stabilizes attention, resets collapse, expands entropy | `Blur`, `TXT OS`, `Blow`   |
+| [`reasoning_engine_core.md`](https://github.com/onestardao/WFGY/blob/main/SemanticBlueprint/reasoning_engine_core.md)       | WFGY Universal Reasoning Core         | General LLM failure recovery & symbolic error detection | `TXT OS`, `Blah`, `Blow`   |
+| [`semantic_boundary_navigation.md`](https://github.com/onestardao/WFGY/blob/main/SemanticBlueprint/semantic_boundary_navigation.md) | Semantic Boundary Navigation          | Crossing reasoning gaps / jumping topic boundaries     | `Blah`, `Bloc`, `TXT OS`   |
+| [`semantic_tree_anchor.md`](https://github.com/onestardao/WFGY/blob/main/SemanticBlueprint/semantic_tree_anchor.md)        | Semantic Tree Anchor Memory           | Cross-turn logic, style, and character coherence       | `TXT OS`, `Blot`, `Blur`   |
+| [`vector_logic_partitioning.md`](https://github.com/onestardao/WFGY/blob/main/SemanticBlueprint/vector_logic_partitioning.md)   | Vector Logic Partitioning             | Prevents symbolic collapse across vector groups        | `Blow`, `Blur`, `Bloc`     |
+| [`wfgy_formulas.md`](https://github.com/onestardao/WFGY/blob/main/SemanticBlueprint/wfgy_formulas.md)               | Core Formulas & Reasoning Metrics     | Defines all seven formal WFGY formulas (BBMC, ΔS, etc) | Used by *all* products     |
+| [`drunk_transformer_formulas.md`](https://github.com/onestardao/WFGY/blob/main/SemanticBlueprint/drunk_transformer_formulas.md)  | Drunk Transformer Attention Modulator | Stabilizes attention, resets collapse, expands entropy | `Blur`, `TXT OS`, `Blow`   |
 
 ---
 
