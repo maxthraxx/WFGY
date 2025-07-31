@@ -3,10 +3,9 @@
 > 👑 **Early Stargazers: [See the Hall of Fame](https://github.com/onestardao/WFGY/tree/main/stargazers)** — Verified by real engineers · 🛠 **Field Reports: [Real Bugs, Real Fixes](https://github.com/onestardao/WFGY/discussions/10)**
 
 <img width="1536" height="1024" alt="WanFaGuiYi" src="https://github.com/user-attachments/assets/08c9617f-d49e-4223-bacc-1d192fbb423d" />
+Official WFGY benchmark snapshot on Zenodo: [![DOI](https://zenodo.org/badge/996124831.svg)](https://doi.org/10.5281/zenodo.16635020) 
 
 ## 📘 What This Directory Is For
-
-Official WFGY benchmark snapshot on Zenodo: [![DOI](https://zenodo.org/badge/996124831.svg)](https://doi.org/10.5281/zenodo.16635020) 
 
 This directory defines the **core reasoning modules** behind the WFGY Engine.  
 Each `.md` file represents a symbolic or mathematical function — designed to solve a specific AI reasoning failure through structural intervention.
