@@ -36,7 +36,7 @@
 
 ---
 
-### **WFGY = A Semantic Firewall for Reasoning.**
+### **WFGY (Wan Fa Gui Yi) = A Semantic Firewall for Reasoning.**
 
 > Fixes what GPTs break: logic collapse, hallucination, memory loss, abstraction errors — across both generation and retrieval.  
 > Modules like BBMC, ΔS, and BBPF are part of the open-source WFGY engine (MIT).  
