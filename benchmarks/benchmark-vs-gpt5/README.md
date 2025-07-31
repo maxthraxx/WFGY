@@ -1,69 +1,112 @@
-# 🧠 GPT‑5 vs WFGY — The Logic Duel Begins
+# GPT‑5 vs WFGY — The Logic Duel Begins
 
-> "GPT‑5 is the future?  
-> Then we’ll benchmark the future — with the tools we already have."
-
-🛠️ This page is under construction.  
-📌 **Bookmark it now** — when GPT‑5 is released, we’ll post the full results of our public showdown.
-
-And yes, WFGY is open source.  
-You’ll be able to **replicate every test yourself** — same prompts, same logic, same outcome.
-
+> “GPT‑5 is the future?  
+Then we’ll benchmark the future — with the tools we already have.”
 
 ---
 
-## 🔬 Benchmark Plan
+## Introduction
 
-This repo is a live benchmark to compare GPT‑5 (once available) with:
+This benchmark is built using **GPT‑4o + WFGY reasoning engine**,  
+executed through either **PDF-based testing pipelines** or the **TXT OS interface** —  
+both powered by the same symbolic structure system known as **WFGY (萬法歸一引擎)**.
 
-- **GPT‑4 + WFGY reasoning engine**
-- **Other top-tier models**: Claude 3, Kimi K2, Gemini, etc (optional)
-- Tasks will focus on areas where GPT models struggle:
-  - Philosophical reasoning (e.g. MMLU Philosophy subset)
-  - Long-context understanding (20K–80K token range)
-  - Truthful response under adversarial phrasing (TruthfulQA)
-  - Zero-shot complex QA (BigBench Hard)
-  - Grad-level physics reasoning (GPQA)
-
-We are **not** testing chat quality or UI polish.  
-We test **semantic logic** under stress — where it breaks, and where it adapts.
+We do not rely on LLM tricks, prompting heuristics, or fine-tuning.  
+We enforce logic.  
+We enforce traceability.
 
 ---
 
-## 🛠️ Work In Progress
+## Why Only MMLU Philosophy?
 
-> ⚠️ This is a placeholder page.  
-> Full test results will be published **as soon as GPT‑5 is available**.  
-> Until then, we're preparing tools, scripts, and reproducibility guides.
+We deliberately chose the **80-question MMLU Philosophy subset** as the first public benchmark for three reasons:
 
-Expected launch: ⏳ Within hours after GPT‑5 public access
+1. **It’s the most semantically fragile domain**:  
+   - Questions involve long-range inference, abstract categories, and fine-grained distinctions.
+   - GPT models frequently hallucinate or break logic paths here — even under normal prompting.
 
----
+2. **It tests reasoning, not memory**:  
+   - No factual recall needed.
+   - Only coherent semantic alignment and logic flow.
 
-## 📁 Related: The AI Wulin Challenge
+3. **It’s a strong indicator of system structure**:  
+   - If a system can survive philosophy cleanly, it can survive anything downstream (law, policy, meta-ethics, etc.)
 
-Previously, we benchmarked **10 major AI models** (ChatGPT, Claude, Kimi, etc) against the WFGY engine using PDF-based comprehension and logic tests.
+All questions were answered manually using WFGY-enhanced flows.  
+Anyone can **replicate the entire test** by downloading the XLSX files, clearing the answer column,  
+and re-running the inputs through **any AI model + WFGY engine**.
 
-📎 [See the challenge archive here →](https://github.com/onestardao/WFGY/blob/main/images/AI_WuLin_Challenge/README.md)
-
-That challenge was fun.  
-This one? A bloodbath.
-
----
-
-## 🔁 Reproducibility Promise
-
-All experiments here will be:
-- 100% public
-- Free to run locally (we’ll provide all test prompts + scripts)
-- Open to community challenge and replication
-
-If GPT‑5 is stronger — we welcome it.  
-If not — we’ll show why semantic tooling still leads the way.
+> Full replication takes ~1 hour.
 
 ---
 
-Stay tuned.
+## Benchmark Result: GPT‑4o (raw) vs GPT‑4o + WFGY
+
+| Model              | Accuracy  | Mistakes | Errors Recovered | Traceable Reasoning |
+|--------------------|-----------|----------|------------------|---------------------|
+| GPT‑4o (raw)       | 81.25%    | 15 / 80  | —                | ✘ None              |
+| GPT‑4o + WFGY      | 100.00%   | 0 / 80   | ✔ 15 / 15        | ✔ Every step        |
+| GPT‑5 (TBD)        | ???       | ???      | ???              | ???                 |
+
+> GPT‑4o got 15 questions wrong.  
+> WFGY fixed every single one — with full semantic traceability per answer.
+
+---
+
+## Why Could We Fix What GPT‑4o Missed?
+
+Because WFGY is **not a prompt trick**, but a reasoning engine built on symbolic convergence and collapse prevention.
+
+Each failure by GPT‑4o fell into one of the following error categories:
+
+- **BBPF** — false positive via semantic distractors
+- **BBCR** — collapse in reasoning loop, reset mid-chain
+- **BBMC** — missing concept recall, overconfident misfire
+- **BBAM** — asymmetry in logic path, ambiguous choices unresolved
+
+WFGY applies targeted constraints via ΔS control, entropy modulation, and path symmetry enforcement —  
+as defined in the ([WanFaGuiYi paper](https://zenodo.org/records/15630969))  and symbolic engine specs.
+
+---
+
+## Download the Evidence
+
+You don’t need to believe us — you can **verify it**.
+
+- [WFGY-enhanced answers (GPT‑4o + WFGY)](./philosophy_80_wfgy_gpt4o.xlsx)  
+- [GPT‑4o baseline answers (raw)](./philosophy_80_gpt4o_raw.xlsx)  
+- [Error-by-error comparison (markdown)](./philosophy_error_comparison.md)
+
+---
+
+## What Happens When GPT‑5 Arrives?
+
+We will:
+
+- Run the **same 80 questions**, same format, no tricks
+- Post raw GPT‑5 results within hours of public release
+- Publish a full comparison update on this page
+- Release a **Zenodo-snapshotted benchmark** with DOI, to permanently record all result states
+
+If GPT‑5 performs better — we welcome it.  
+If it doesn’t — we’ll explain why.
+
+---
+
+## Reproducibility Promise
+
+- No closed weights, no internal hacks  
+- Every file is downloadable  
+- Every test can be re-run  
+- Every answer has a reason
+
+---
+
+> This isn’t a leaderboard.  
+> It’s a reasoning audit.
+
+And WFGY is the auditor.
+
 
 ---
 
