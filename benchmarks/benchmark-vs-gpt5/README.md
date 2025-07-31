@@ -1,5 +1,7 @@
 # GPT‑5 vs WFGY — The Logic Duel Begins
 
+📦 Official WFGY benchmark snapshot on Zenodo: [![DOI](https://zenodo.org/badge/996124831.svg)](https://doi.org/10.5281/zenodo.16635020)  
+
 > “GPT‑5 is the future?  
 Then we’ll benchmark the future — with the tools we already have.”
 
