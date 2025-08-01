@@ -81,7 +81,7 @@ The inverse (*Product → Function*) view is handled in each product’s own dir
 
 | Filename                         | Function Title                        | Solves Problem(s)                                      | Used In Products           |
 | -------------------------------- | ------------------------------------- | ------------------------------------------------------ | -------------------------- |
-| [`reasoning_engine_core.md`](https://github.com/onestardao/WFGY/blob/main/SemanticBlueprint/reasoning_engine_core.md)       | WFGY Universal Reasoning Core         | General LLM failure recovery & symbolic error detection | `TXT OS`, `Blah`, `Blow`   |
+| [`reasoning_engine_core.md`](https://github.com/onestardao/WFGY/blob/main/SemanticBlueprint/reasoning_engine_core.md)       | WFGY Universal Reasoning Core         | General LLM failure recovery & symbolic error detection | `TXT OS`, `Blah`, `Blur`   |
 | [`semantic_boundary_navigation.md`](https://github.com/onestardao/WFGY/blob/main/SemanticBlueprint/semantic_boundary_navigation.md) | Semantic Boundary Navigation          | Crossing reasoning gaps / jumping topic boundaries     | `Blah`, `Bloc`, `TXT OS`   |
 | [`semantic_tree_anchor.md`](https://github.com/onestardao/WFGY/blob/main/SemanticBlueprint/semantic_tree_anchor.md)        | Semantic Tree Anchor Memory           | Cross-turn logic, style, and character coherence       | `TXT OS`, `Blot`, `Blur`   |
 | [`vector_logic_partitioning.md`](https://github.com/onestardao/WFGY/blob/main/SemanticBlueprint/vector_logic_partitioning.md)   | Vector Logic Partitioning             | Prevents symbolic collapse across vector groups        | `Blow`, `Blur`, `Bloc`     |
