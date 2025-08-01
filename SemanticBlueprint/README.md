@@ -188,13 +188,13 @@ All papers have been independently rated using ChatGPT's built-in [SciSpace](htt
 
 ### Quick Notes for First-Time Readers:
 
-- **P1** lays the foundation of "Semantic Relativity" — a new paradigm for meaning in space-time.
-- **P4** introduces the core hypothesis: that semantic fields may induce **non-electromagnetic physical effects** (the so-called Fifth Force).
-- **P5** integrates this view into Landauer’s principle — exploring how meaning alters entropy and information cost.
-
-All of these point toward one shared conclusion:
-
-> **Semantics isn't just about interpretation — it's a latent structural force of the universe.**
+> **P1** lays the foundation of "Semantic Relativity" — a new paradigm for meaning in space-time.  
+> **P4** introduces the core hypothesis: that semantic fields may induce **non-electromagnetic physical effects** (the so-called Fifth Force).  
+> **P5** integrates this view into Landauer’s principle — exploring how meaning alters entropy and information cost.  
+>
+> All of these point toward one shared conclusion:  
+> 
+> **Semantics isn't just about interpretation — it's a latent structural force of the universe.**  
 
 ---
 
