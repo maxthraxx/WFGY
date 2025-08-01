@@ -3,7 +3,7 @@
 
 <br>
 
-> [**WFGY**](https://github.com/onestardao/WFGY) is the name of this project — and the semantic reasoning engine behind everything here.  
+> [**WFGY**](https://github.com/onestardao/WFGY) (Wan Fa Gui Yi) is the name of this project — and the semantic reasoning engine behind everything here.  
 > Every tool in the WFGY Family is powered by this same core engine.
 >
 > [**TXT OS**](https://github.com/onestardao/WFGY/tree/main/OS) is the world’s first operating system built entirely from `.txt` files — compatible with any LLM.  
