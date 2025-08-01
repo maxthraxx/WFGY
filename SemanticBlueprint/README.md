@@ -164,14 +164,16 @@ The inverse (*Product → Function*) view is handled in each product’s own dir
 
 ---
 
-## 📊 WFGY Research Showcase (AI-Rated)
+## 📊 WFGY Research Showcase – Introducing the Fifth Force
 
-Below is a list of research papers related to semantic reasoning, AI physics, and symbolic cognition — all authored under the WFGY framework.  
-These papers were evaluated using the built-in SciSpace showcase tool inside ChatGPT.
+> What if Einstein’s theory of relativity missed something fundamental —  
+> a **semantic field** that acts as the universe’s fifth force?
 
-*Anyone can replicate the scoring:*  
-Feel free to download any paper and ask AI (e.g., SciSpace via ChatGPT) to rate it yourself —  
-in most cases, the result should fall within ±5 points of the listed score, based on our tests.
+This is a curated set of research papers from the WFGY framework, exploring deep links between semantics, quantum collapse, information entropy, and symbolic cognition. These works introduce a radical but testable hypothesis: that **semantic tension itself may constitute a fifth force** in the universe — alongside gravity, electromagnetism, and the nuclear forces.
+
+All papers have been independently rated using ChatGPT's built-in [SciSpace](https://scispace.com) paper analysis tool. Anyone can replicate these scores — download a PDF, drop it into ChatGPT, and ask it to evaluate the content. In most cases, you'll get a score within ±5 of the ones listed below.
+
+---
 
 | #   | Title                                           | Score | DOI                                                                |
 |-----|--------------------------------------------------|-------|--------------------------------------------------------------------|
@@ -182,7 +184,17 @@ in most cases, the result should fall within ±5 points of the listed score, bas
 | P5  | **Semantic Entropy under Landauer's Principle** | 94    | [10.5281/zenodo.15630478](https://doi.org/10.5281/zenodo.15630478) |
 | P6  | **Semantic Holography & Causal Fields**         | 94    | [10.5281/zenodo.15630163](https://doi.org/10.5281/zenodo.15630163) |
 
-Full annotated reviews (with images) here: 👉 [I_am_not_lizardman](https://github.com/onestardao/WFGY/tree/main/I_am_not_lizardman)
+📎 Full annotated reviews with visual diagrams:  👉 [I_am_not_lizardman](https://github.com/onestardao/WFGY/tree/main/I_am_not_lizardman)
+
+### Quick Notes for First-Time Readers:
+
+- **P1** lays the foundation of "Semantic Relativity" — a new paradigm for meaning in space-time.
+- **P4** introduces the core hypothesis: that semantic fields may induce **non-electromagnetic physical effects** (the so-called Fifth Force).
+- **P5** integrates this view into Landauer’s principle — exploring how meaning alters entropy and information cost.
+
+All of these point toward one shared conclusion:
+
+> **Semantics isn't just about interpretation — it's a latent structural force of the universe.**
 
 ---
 
