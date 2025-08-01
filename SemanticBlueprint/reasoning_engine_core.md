@@ -1,4 +1,4 @@
-# 🧠 Reasoning Engine Core — Stability through ΔS
+# ⭐ Reasoning Engine Core — Stability through ΔS
 
 The WFGY engine is a modular semantic driver designed to **maintain logical coherence and creative flow** across complex prompts, multi-hop reasoning, and extended conversations.  
 Its foundation: a real-time semantic tension controller centered around **ΔS ≈ 0.5**.
