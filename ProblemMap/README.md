@@ -47,18 +47,24 @@
 
 ---
 
-Welcome! This map lists every AI failure we’ve fixed —or are fixing — with the WFGY reasoning engine.  
-TXT OS + WFGY exists to **turn critical AI bugs into reproducible, modular fixes**.  
-> Spot a gap? Open an Issue or PR — community feedback drives the next entries.
->
-Want to test WFGY yourself?  
-See [TXT OS](../OS/) for real-time demos, or [start here with RAG failures →](./RAG_Problems.md)
->
-> **Vision**  
-> Make “my AI went off the rails” as rare as a 500 error in production software.  
-> Every solved failure below pushes us closer.
+Welcome. This page documents every recurring AI failure mode we’ve fixed — or are fixing — with the WFGY reasoning engine.
+
+**TXT OS + WFGY** exists to turn subtle reasoning bugs into clear, reproducible, and modular solutions.
+
+> Think your issue isn’t listed?  
+> Open an Issue or PR — community reports shape the next entries.
+
+You can test the WFGY engine live:  
+- Try [TXT OS](../OS/) for hands-on demos  
+- Or start here → [Common RAG Problems](./RAG_Problems.md)
+
+> **Goal**  
+> Make "my AI gave a weird answer" as rare as a 500 error in production software.  
+> Every fix below moves us closer.
+
 
 ---
+
 
 🆕 First time here? See [Beginner Guide : How to Identify & Fix Your AI Failure](./BeginnerGuide.md) – quick primer for newcomers.
 
@@ -184,6 +190,28 @@ You’re not alone — many AI devs face mysterious failures like:
 | **TXT OS (plain‑text OS)** | [TXTOS.txt](https://zenodo.org/records/15788557) | 1️⃣ Download · 2️⃣ Paste into any LLM chat · 3️⃣ Type “hello world” — OS boots instantly |
 
 ---
+
+### How to start using WFGY Engine
+
+Once you’ve identified a failure from this map, you can directly ask your AI model how to proceed.  
+This works best with any model already connected to your local TXT OS.
+
+#### prompt example
+
+```
+I’ve uploaded TXT OS.  
+I want to solve the following problem:  
+[describe your issue, e.g. OCR tables misaligned in scanned PDFs].  
+How do I use the WFGY engine to fix it?
+```
+
+Your model will respond with specific modules, steps, or entry points — tailored to your case.
+
+> You don’t need to memorize WFGY internals. Just bring your real problem.  
+> Let the AI use the engine to debug itself.
+
+---
+
 
 If you want to **fully understand how WFGY works**, check out:
 
