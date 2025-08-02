@@ -41,9 +41,6 @@
 > Fixes what GPTs break: logic collapse, hallucination, memory loss, abstraction errors — across both generation and retrieval.  
 > Modules like BBMC, ΔS, and BBPF are part of the open-source WFGY engine (MIT).  
 > PDF with core formulas, and TXT OS runs them in real-world pipelines.
->
-> **Looking deeper?**  
-> Jump to: [Semantic Blueprint](#-explore-more) · [Benchmark vs GPT‑5 ](#-explore-more)
 
 ---
 
