@@ -50,7 +50,7 @@
 | 2 | [Download the Core PDF](https://zenodo.org/records/15630969) | The most important paper — 2000+ downloads. Explains the math & logic behind WFGY. |
 | 3 | [Launch TXT OS](https://github.com/onestardao/WFGY/tree/main/OS) | A semantic operating system — modular, prompt-free, open-source. |
 | 4 | [Try TXT‑Blah Blah Blah](https://github.com/onestardao/WFGY/tree/main/OS/BlahBlahBlah) | Semantic Q&A with emotional and logical depth. |
-| 5 | [Try TXT‑Blur Blur Blur](https://github.com/onestardao/WFGY/tree/main/OS/BlurBlurBlur) | Text-to-image with semantic control. (Release: 8/1) |
+| 5 | [Try TXT‑Blur Blur Blur](https://github.com/onestardao/WFGY/tree/main/OS/BlurBlurBlur) | Text-to-image with semantic control. (Release: Before 8/10) |
 | 6 | [Explore the Semantic Blueprint](https://github.com/onestardao/WFGY/tree/main/SemanticBlueprint) | Layer/module structure powering WFGY’s future extensions. |
 | 7 | [Check the Hero Log](https://github.com/onestardao/WFGY/tree/main/images/logs) | Verified users, bugs, and breakthroughs — real field feedback. |
 | 8 | [FAQ for New Stargazers](https://github.com/onestardao/WFGY/blob/main/FAQ_for_Stargazers.md) | Who we are, what you can do, and where to go next. |
@@ -1375,4 +1375,5 @@ It treats alignment as a living semantic contract — not just accuracy, but mea
 [![Blow](https://img.shields.io/badge/Blow-Game%20Logic-purple?style=flat-square)](https://github.com/onestardao/WFGY/tree/main/OS/BlowBlowBlow)
 
 </div>
+
 
