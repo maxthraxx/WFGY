@@ -18,6 +18,8 @@ Their support is a public signal—transparent, verifiable, and forever recorded
 | sequoiar       | node-android (628★), peer-vnc (339★); China P2P/AI/robotics builder        | ![](./images/sequoiar_star.png)                  | [View stargazer proof](https://github.com/sequoiar?tab=stars)    |
 | yamiodymel     | tocas (590★), tunalog (414★); Taiwan full stack dev/UIUX                   | ![](./images/yamiodymel_star.png)                | [View stargazer proof](https://github.com/YamiOdymel?tab=stars)  |
 | jinweijie      | notify-me (579★), Python/Android developer, China                          | ![](./images/jinweijie_star.png)                 | [View stargazer proof](https://github.com/jinweijie?tab=stars)   |
+| dclambert      | Python-ELM (546★), pyensemble (150★); ensemble learning & sensor fusion    | ![](./images/dclambert_star.png)                 | [View stargazer proof](https://github.com/dclambert?tab=stars)   |
+| mattcurf       | ollama-intel-gpu (253★); AI infra/devops, model deployment via Dockerfile  | ![](./images/Mattcurf_star.png)                  | [View stargazer proof](https://github.com/mattcurf?tab=stars)    |
 | jakevossen5    | Apple visionOS UI Engineer, ex-Amazon/TI, compiler MS, US                  | ![](./images/jakevossen5_star.png)               | [View stargazer proof](https://github.com/jakevossen5?tab=stars) |
 
 
