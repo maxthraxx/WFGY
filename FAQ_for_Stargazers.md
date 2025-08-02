@@ -7,21 +7,6 @@
 
 Welcome — and congrats on stumbling into the strangest GitHub repo you’ll bookmark this year.  
 This page is your guide to **what WFGY is**, **what TXT OS does**, and **where to start**.  
-📌 **Bookmark now** — this page _is_ the official changelog, roadmap, and documentation hub.
-
----
-
-> ## 📣 Project Updates (Jul–Aug 2025)
->
-> - 📄 **WFGY Whitepaper PDF**: 2,000+ downloads in 45 days  
-> - ⭐ **WFGY Project**: 200 stars milestone reached  
-> - 🧠 **TXT OS**: Fully launched — powered by `.txt` logic  
-> - 🗣️ **Blah Blah Blah**: Available now (Semantic Q&A module)  
-> - 🖼️ **Blur Blur Blur**: Launching **August 1** — final build confirmed  
-> - 🪖 **Hero Log**: Updated daily with real debugging saves  
-> - 🧍 **PSBigBig**: Patrolling forums & helping devs across the web  
->
-> ⏳ Bookmark this repo to follow updates in real time.
 
 
 ---
