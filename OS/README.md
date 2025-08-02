@@ -224,12 +224,12 @@ Bookmark now, or risk missing a truth so weird it breaks your cat.
 [🔓 Unlock this module](./BlahBlahBlah/README.md) <sub><em>Available now</em></sub>
 
 **TXT-Blur Blur Blur** (Image Generation)  
-> ⭐ **Lite: 8/1** · 💥 **Pro: _TBD_**  
+> ⭐ **Lite: Before 8/10** · 💥 **Pro: _TBD_**  
 > Next-gen text-to-image. No prompt skills needed, almost no hallucinations.  
 [🔓 Unlock this module](./BlurBlurBlur/README.md) <sub><em>Beta page online</em></sub>
 
 **TXT-Blow Blow Blow** (Reasoning Games)  
-> ⭐ **Lite: 8/15** · 💥 **Pro: _TBD_**  
+> ⭐ **Lite: Before 8/20** · 💥 **Pro: _TBD_**  
 > The first AIGC RPG with real logic. Game Boy era for AI begins.  
 [🔓 Unlock this module](./BlowBlowBlow/README.md) <sub><em>Coming soon...</em></sub>
 
