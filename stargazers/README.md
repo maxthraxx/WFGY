@@ -20,6 +20,7 @@ Their support is a public signal—transparent, verifiable, and forever recorded
 | jinweijie      | notify-me (579★), Python/Android developer, China                          | ![](./images/jinweijie_star.png)                 | [View stargazer proof](https://github.com/jinweijie?tab=stars)   |
 | dclambert      | Python-ELM (546★), pyensemble (150★); ensemble learning & sensor fusion    | ![](./images/dclambert_star.png)                 | [View stargazer proof](https://github.com/dclambert?tab=stars)   |
 | mattcurf       | ollama-intel-gpu (253★); AI infra/devops, model deployment via Dockerfile  | ![](./images/Mattcurf_star.png)                  | [View stargazer proof](https://github.com/mattcurf?tab=stars)    |
+| neoneye        | PlanExe (226★), ARC-interactive (28★); symbolic/logic AI researcher focused on ARC tasks | ![](./images/Neoneye_star.png)                | [View stargazer proof](https://github.com/neoneye?tab=stars)     |
 | jakevossen5    | Apple visionOS UI Engineer, ex-Amazon/TI, compiler MS, US                  | ![](./images/jakevossen5_star.png)               | [View stargazer proof](https://github.com/jakevossen5?tab=stars) |
 
 
