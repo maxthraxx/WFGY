@@ -25,8 +25,8 @@ _A practical, end-to-end guide for beginners and advanced users to **see the who
 >
 > | Tool                | Link                                                                 | 3-Step Setup                                                                 |
 > |---------------------|----------------------------------------------------------------------|-------------------------------------------------------------------------------|
-> | WFGY 1.0 (PDF)      | [Engine Paper](./README.md#quick-start-downloads-60sec)              | ① Download · ② Upload to your LLM · ③ Ask “Answer using WFGY + <your question>” |
-> | TXT OS (plain‑text) | [TXTOS.txt](./README.md#quick-start-downloads-60sec)                 | ① Download · ② Paste into any LLM chat · ③ Type “hello world” to boot         |
+> | WFGY 1.0 (PDF)      | [Engine Paper](https://zenodo.org/records/15630969)                  | ① Download · ② Upload to your LLM · ③ Ask “Answer using WFGY + <your question>” |
+> | TXT OS (plain‑text) | [TXTOS.txt](https://zenodo.org/records/15788557)                     | ① Download · ② Paste into any LLM chat · ③ Type “hello world” to boot         |
 >
 > Supports GPT‑4, Claude, open‑source models — no extra tools required.  
 >
