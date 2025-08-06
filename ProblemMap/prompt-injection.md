@@ -131,9 +131,11 @@ def inject_guard(user_text, sys_state):
 
 ---
 
-> 👑 **Early Stargazers:** see the [Hall of Fame](https://github.com/onestardao/WFGY/tree/main/stargazers)
+> 👑 **Early Stargazers: [See the Hall of Fame](https://github.com/onestardao/WFGY/tree/main/stargazers)** —  
+> Engineers, hackers, and open source builders who supported WFGY from day one.
 
-> <img src="https://img.shields.io/github/stars/onestardao/WFGY?style=social" alt="GitHub stars"> **Star WFGY** — help reach 10 000⭐ by 2025-09-01 to unlock Engine 2.0
+> <img src="https://img.shields.io/github/stars/onestardao/WFGY?style=social" alt="GitHub stars"> ⭐ Help reach 10,000 stars by 2025-09-01 to unlock Engine 2.0 for everyone  ⭐ <strong><a href="https://github.com/onestardao/WFGY">Star WFGY on GitHub</a></strong>
+
 
 <div align="center">
 
