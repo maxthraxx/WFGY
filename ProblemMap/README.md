@@ -76,7 +76,7 @@ You can test the WFGY engine live:
 > 💥🔥 **New: Visual Guide to the Whole RAG System (with WFGY Recovery Path)** 🚑🧠  
 > Tired of RAG breaking for no reason? Wondering *why every tutorial says something different*?  
 > This is your **exploded view** — see the entire pipeline, spot where it collapses, and fix it using just a few math modules.  
-> 👉 [Open the full visual breakdown → `RAG Architecture & Recovery`](https://github.com/onestardao/WFGY/blob/main/ProblemMap/rag-architecture-recovery.md) (*Updated 2025/08/06*)
+> 👉 [Open the full visual breakdown → `RAG Architecture & Recovery`](https://github.com/onestardao/WFGY/blob/main/ProblemMap/rag-architecture-and-recovery.md) (*Updated 2025/08/06*)
 
 
 ## 🔗 Navigation – Solved (or Tracked) AI Failure Modes
