@@ -53,16 +53,15 @@
 | 5 | [Try TXT‑Blur Blur Blur](https://github.com/onestardao/WFGY/tree/main/OS/BlurBlurBlur) | Text-to-image with semantic control. (Release: Before 8/10) |
 | 6 | [Explore the Semantic Blueprint](https://github.com/onestardao/WFGY/tree/main/SemanticBlueprint) | Layer/module structure powering WFGY’s future extensions. |
 | 7 | [Check the Hero Log](https://github.com/onestardao/WFGY/tree/main/images/logs) | Verified users, bugs, and breakthroughs — real field feedback. |
-| 8 | [FAQ for New Stargazers](https://github.com/onestardao/WFGY/blob/main/FAQ_for_Stargazers.md) | Who we are, what you can do, and where to go next. |
-| 9 | [Join the Discussion](https://github.com/onestardao/WFGY/discussions) | Ask questions, report bugs, or suggest features — we’re listening. |
+| 8 | [Read the Semantic Clinic Index](https://github.com/onestardao/WFGY/blob/main/ProblemMap/SemanticClinicIndex.md) | Triage symptoms → families → exact fixes. A structured recovery map. |
+| 9 | [FAQ for New Stargazers](https://github.com/onestardao/WFGY/blob/main/FAQ_for_Stargazers.md) | Who we are, what you can do, and where to go next. |
+| 10 | [See the RAG Architecture Map](https://github.com/onestardao/WFGY/blob/main/ProblemMap/rag-architecture-and-recovery.md) | Full pipeline view — chunking, embeddings, vector store, prompt, logic fix.
 
 <br>
 
 <strong>Note:</strong> Bookmark this page — all updates, releases, and major changes will appear here.
 
 </details>
-
-
 
 <details>
 <summary><strong>2️⃣ The WFGY Family — The Civilization Starter Project </strong></summary>
@@ -134,7 +133,8 @@
 
 > **Solving Problems**  
 > We built WFGY to crush the root causes of reasoning failure — not patch the symptoms.  
-> 📎 [See the full Problem Map →](./ProblemMap/README.md)
+> 📎 [See the full Problem Map →](https://github.com/onestardao/WFGY/tree/main/ProblemMap/README.md)  
+> 📎 [Semantic Clinic: AI Failure Triage →](https://github.com/onestardao/WFGY/blob/main/ProblemMap/SemanticClinicIndex.md)
 
 > **Benchmarking GPT‑5**  
 > This engine isn’t theory. It’s entering open combat — benchmarked head-to-head against GPT‑5.  
@@ -148,10 +148,6 @@
 > Still seeing hallucinations, black box errors, or logic collapse? You’re not alone.  
 > This new visual guide maps the **entire RAG pipeline**, shows **where it fails**, and how to **fix it with WFGY’s math tools**.  
 > 📎 [See the RAG Architecture & Recovery Guide →](https://github.com/onestardao/WFGY/blob/main/ProblemMap/rag-architecture-and-recovery.md)
-
-
-</details>
-
 
 </details>
 
@@ -1380,6 +1376,7 @@ It treats alignment as a living semantic contract — not just accuracy, but mea
 [![Blow](https://img.shields.io/badge/Blow-Game%20Logic-purple?style=flat-square)](https://github.com/onestardao/WFGY/tree/main/OS/BlowBlowBlow)
 &nbsp;
 </div>
+
 
 
 
