@@ -39,7 +39,8 @@ _What if you could see the whole RAG pipeline from above — and fix every failu
 > ### ⭐ Found this helpful?
 >
 > Help others discover it — [Give us a GitHub Star](https://github.com/onestardao/WFGY)  
-> We’re building the only open-source semantic debugger for AI reasoning.
+> We’re building the only open-source semantic debugger for AI reasoning.  
+> ⭐ 300+ stars in just 50 days — built to solve real problems, not just look cool.  
 
 </details>
 
