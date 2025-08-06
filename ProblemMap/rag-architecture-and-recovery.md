@@ -86,22 +86,23 @@ Copy/paste this checklist into your runbook. Execute top-down.
 
 | symptom you see | likely family | open this |
 |---|---|---|
-| plausible but wrong answer; citations miss | **#1 hallucination & chunk drift** | `hallucination.md` |
-| correct chunks, wrong logic | **#2 interpretation collapse** | `retrieval-collapse.md` |
-| answers degrade over long chains | **#3 context drift** | `context-drift.md` |
-| confident nonsense | **#4 bluffing/overconfidence** | `bluffing.md` |
-| high vector similarity, wrong meaning | **#5 semantic ≠ embedding** | `embedding-vs-semantic.md` |
-| dead-end chains, retry loops | **#6 logic collapse & recovery** | `logic-collapse.md` |
-| failure after restart/session swap | **#7 memory breaks across sessions** | `memory-coherence.md` |
-| can’t trace why it failed | **#8 debugging is a black box** | `retrieval-traceability.md` |
-| attention melts, topic smears | **#9 entropy collapse** | `entropy-collapse.md` |
-| output becomes flat/literal | **#10 creative freeze** | `creative-freeze.md` |
-| abstract/symbolic prompts break | **#11 symbolic collapse** | `symbolic-collapse.md` |
-| paradox/self-reference crashes | **#12 philosophical recursion** | `philosophical-recursion.md` |
-| multi-agent overwrites logic | **#13 multi-agent chaos** | `multi-agent-chaos.md` |
-| tools fire before data is ready | **#14 bootstrap ordering** | `bootstrap-ordering.md` |
-| ci passes; prod deadlocks index | **#15 deployment deadlock** | `deployment-deadlock.md` |
-| first call crashes after deploy | **#16 pre-deploy collapse** | `predeploy-collapse.md` |
+| plausible but wrong answer; citations miss | **#1 hallucination & chunk drift** | [`hallucination.md`](https://github.com/onestardao/WFGY/blob/main/ProblemMap/hallucination.md) |
+| correct chunks, wrong logic | **#2 interpretation collapse** | [`retrieval-collapse.md`](https://github.com/onestardao/WFGY/blob/main/ProblemMap/retrieval-collapse.md) |
+| answers degrade over long chains | **#3 context drift** | [`context-drift.md`](https://github.com/onestardao/WFGY/blob/main/ProblemMap/context-drift.md) |
+| confident nonsense | **#4 bluffing/overconfidence** | [`bluffing.md`](https://github.com/onestardao/WFGY/blob/main/ProblemMap/bluffing.md) |
+| high vector similarity, wrong meaning | **#5 semantic ≠ embedding** | [`embedding-vs-semantic.md`](https://github.com/onestardao/WFGY/blob/main/ProblemMap/embedding-vs-semantic.md) |
+| dead-end chains, retry loops | **#6 logic collapse & recovery** | [`logic-collapse.md`](https://github.com/onestardao/WFGY/blob/main/ProblemMap/logic-collapse.md) |
+| failure after restart/session swap | **#7 memory breaks across sessions** | [`memory-coherence.md`](https://github.com/onestardao/WFGY/blob/main/ProblemMap/memory-coherence.md) |
+| can’t trace why it failed | **#8 debugging is a black box** | [`retrieval-traceability.md`](https://github.com/onestardao/WFGY/blob/main/ProblemMap/retrieval-traceability.md) |
+| attention melts, topic smears | **#9 entropy collapse** | [`entropy-collapse.md`](https://github.com/onestardao/WFGY/blob/main/ProblemMap/entropy-collapse.md) |
+| output becomes flat/literal | **#10 creative freeze** | [`creative-freeze.md`](https://github.com/onestardao/WFGY/blob/main/ProblemMap/creative-freeze.md) |
+| abstract/symbolic prompts break | **#11 symbolic collapse** | [`symbolic-collapse.md`](https://github.com/onestardao/WFGY/blob/main/ProblemMap/symbolic-collapse.md) |
+| paradox/self-reference crashes | **#12 philosophical recursion** | [`philosophical-recursion.md`](https://github.com/onestardao/WFGY/blob/main/ProblemMap/philosophical-recursion.md) |
+| multi-agent overwrites logic | **#13 multi-agent chaos** | [`multi-agent-chaos.md`](https://github.com/onestardao/WFGY/blob/main/ProblemMap/multi-agent-chaos.md) |
+| tools fire before data is ready | **#14 bootstrap ordering** | [`bootstrap-ordering.md`](https://github.com/onestardao/WFGY/blob/main/ProblemMap/bootstrap-ordering.md) |
+| ci passes; prod deadlocks index | **#15 deployment deadlock** | [`deployment-deadlock.md`](https://github.com/onestardao/WFGY/blob/main/ProblemMap/deployment-deadlock.md) |
+| first call crashes after deploy | **#16 pre-deploy collapse** | [`predeploy-collapse.md`](https://github.com/onestardao/WFGY/blob/main/ProblemMap/predeploy-collapse.md) |
+
 
 ---
 
