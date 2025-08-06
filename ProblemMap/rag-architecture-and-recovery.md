@@ -147,6 +147,27 @@ Copy/paste this checklist into your runbook. Execute top-down.
 | ci passes; prod deadlocks index | **#15 deployment deadlock** | [`deployment-deadlock.md`](https://github.com/onestardao/WFGY/blob/main/ProblemMap/deployment-deadlock.md) |
 | first call crashes after deploy | **#16 pre-deploy collapse** | [`predeploy-collapse.md`](https://github.com/onestardao/WFGY/blob/main/ProblemMap/predeploy-collapse.md) |
 
+### 🧨 Most Common Failure Zones (Real-World Reports)
+
+> Based on 50+ field cases from Reddit / GitHub / Discord.  
+> These are the zones where most RAG pipelines silently collapse — **check if you're already there.**
+
+> These are the problems most frequently reported by real-world developers (Reddit / GitHub / Discord).  
+> Use this to locate your failure zone, and jump directly to the matching fix.
+
+| Problem # | Failure Pattern                         | Field Frequency | Repair Module(s) |
+|-----------|------------------------------------------|-----------------|------------------|
+| No.1      | Hallucination & Chunk Drift              | ⭐⭐⭐⭐            | BBMC, BBAM       |
+| No.2      | Interpretation Collapse                  | ⭐⭐⭐             | BBCR             |
+| No.3      | Long Reasoning Chains                    | ⭐⭐⭐             | BBPF             |
+| No.5      | Semantic ≠ Embedding                     | ⭐⭐              | BBMC, BBAM       |
+| No.6      | Logic Collapse & Recovery                | ⭐⭐⭐⭐⭐⭐          | BBCR, BBPF       |
+| No.8      | Debugging is a Black Box                 | ⭐⭐⭐⭐            | λ_observe        |
+| No.9      | Entropy Collapse (drift in long context) | ⭐⭐⭐             | BBAM             |
+| No.14–16  | Infra Failures (bootstrap / deploy)      | ⭐               | BBCR + index fix |
+
+> Note: This is **not a survey** — it’s based on 50+ real failure reports across open source RAG users.
+
 
 ---
 
