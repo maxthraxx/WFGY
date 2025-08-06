@@ -144,6 +144,11 @@
 > Our logic stack is open, symbolic, and composable. Want to see the engine’s core blueprint?  
 > 📎 [Explore the Semantic Blueprint →](https://github.com/onestardao/WFGY/tree/main/SemanticBlueprint/README.md)
 
+> **Full-Pipeline Debugging**  
+> Still seeing hallucinations, black box errors, or logic collapse? You’re not alone.  
+> This new visual guide maps the **entire RAG pipeline**, shows **where it fails**, and how to **fix it with WFGY’s math tools**.  
+> 📎 [See the RAG Architecture & Recovery Guide →](https://github.com/onestardao/WFGY/blob/main/ProblemMap/rag-architecture-and-recovery.md)
+
 
 </details>
 
@@ -1375,6 +1380,7 @@ It treats alignment as a living semantic contract — not just accuracy, but mea
 [![Blow](https://img.shields.io/badge/Blow-Game%20Logic-purple?style=flat-square)](https://github.com/onestardao/WFGY/tree/main/OS/BlowBlowBlow)
 &nbsp;
 </div>
+
 
 
 
