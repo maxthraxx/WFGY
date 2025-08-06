@@ -1,4 +1,4 @@
-# WFGY Problem Map
+# WFGY (WanFaGuiYi) Problem Map
 **16 reproducible failure modes in AI systems — with fixes (MIT).**  
 This page catalogs production failures in reasoning & retrieval, with minimal repros and patches.
 
