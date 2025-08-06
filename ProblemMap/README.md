@@ -16,7 +16,7 @@
 - 🏥 **Semantic Clinic (AI Triage Hub):** [Fix symptoms when you don’t know what’s broken →](./SemanticClinicIndex.md)
 - **Beginner Guide:** [Identify & fix your first failure](./BeginnerGuide.md)
 - **Diagnose by symptom:** [Fast triage table → `Diagnose.md`](./Diagnose.md)
-- **Visual RAG Guide (multi-dimensional):** [`RAG Architecture & Recovery Problem Map 2.0`](./rag-architecture-and-recovery.md) — high-altitude view linking symptom × pipeline stage × failure class, with the exact recovery path.
+- **Visual RAG Guide (multi-dimensional):** [`RAG Architecture & Recovery – Problem Map 2.0`](./rag-architecture-and-recovery.md) — high-altitude view linking symptom × pipeline stage × failure class, with the exact recovery path.
 - **Field Reports:** [Real bugs & fixes from users](https://github.com/onestardao/WFGY/discussions/10)
 - **TXT OS directory:** [Browse the OS repo](../OS/)
 
