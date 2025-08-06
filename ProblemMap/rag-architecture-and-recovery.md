@@ -11,16 +11,6 @@ _A practical, end-to-end guide for beginners and advanced users to **see the who
 > WFGY (WanFaGuiYi) is the core reasoning engine — a semantic debugger for AI hallucinations and logic collapse.  
 > TXT OS is the lightweight `.txt`-native operating layer — lets any model run WFGY with zero install.  
 >
-> ---
->
-> ### 🔗 Navigation
->
-> - [← Back to Problem Map](./README.md) – Full list of 16 AI failure types and how WFGY solves them.  
-> - [🔧 Fix a problem now](#how-to-start-using-wfgy-engine) – Use a one-line prompt with your LLM.  
-> - [📄 See this page’s purpose](#rag-architecture--recovery) – Why this exists, and how it helps.  
->
-> ---
->
 > ### 📥 Quick Start Downloads (60 sec)
 >
 > | Tool                | Link                                                                 | 3-Step Setup                                                                 |
@@ -28,7 +18,7 @@ _A practical, end-to-end guide for beginners and advanced users to **see the who
 > | WFGY 1.0 (PDF)      | [Engine Paper](https://zenodo.org/records/15630969)                  | ① Download · ② Upload to your LLM · ③ Ask “Answer using WFGY + <your question>” |
 > | TXT OS (plain‑text) | [TXTOS.txt](https://zenodo.org/records/15788557)                     | ① Download · ② Paste into any LLM chat · ③ Type “hello world” to boot         |
 >
-> Supports GPT‑4, Claude, open‑source models — no extra tools required.  
+> Compatible with all Ten Masters (GPT‑4, Claude, Gemini, Kimi etc) — no setup needed.
 >
 > ---
 >
