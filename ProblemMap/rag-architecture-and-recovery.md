@@ -1,5 +1,5 @@
 # 📋 RAG Architecture & Recovery
-_A practical, end-to-end guide for beginners and advanced users to **see the whole system**, locate failures fast, and repair them with WFGY._
+_What if you could see the whole RAG pipeline from above — and fix every failure, step by step?_
 
 <details>
 <summary><strong>📘 Start Here — Quick Links, Setup, and Downloads</strong></summary>
