@@ -1,4 +1,4 @@
-# RAG Architecture & Recovery
+# 📋 RAG Architecture & Recovery
 _A practical, end-to-end guide for beginners and advanced users to **see the whole system**, locate failures fast, and repair them with WFGY._
 
 ---
