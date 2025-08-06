@@ -1,56 +1,55 @@
 # 📋 RAG Architecture & Recovery
 _A practical, end-to-end guide for beginners and advanced users to **see the whole system**, locate failures fast, and repair them with WFGY._
 
----
-
 <details>
 <summary><strong>📘 Start Here — Quick Links, Setup, and Downloads</strong></summary>
 
-If you’re new to this page or WFGY in general, here’s how to get started fast.
-
----
-
-### 🔗 Navigation
-
-- [← Back to Problem Map](./README.md) – Full list of 16 AI failure types and how WFGY solves them.
-- [🔧 Fix a problem now](#how-to-start-using-wfgy-engine) – Use a one-line prompt with your LLM.
-- [📄 See this page’s purpose](#rag-architecture--recovery) – Why this exists, and how it helps.
-
----
-
-### 📥 Quick Start Downloads (60 sec)
-
-| Tool                  | Link             | 3-Step Setup                                                                 |
-|-----------------------|------------------|-------------------------------------------------------------------------------|
-| WFGY 1.0 (PDF)        | [Engine Paper](./README.md#quick-start-downloads-60sec) | ① Download · ② Upload to your LLM · ③ Ask “Answer using WFGY + <your question>” |
-| TXT OS (plain‑text)   | [TXTOS.txt](./README.md#quick-start-downloads-60sec)    | ① Download · ② Paste into any LLM chat · ③ Type “hello world” to boot         |
-
-Supports GPT‑4, Claude, open‑source models — no extra tools required.
-
----
-
-### 🧑‍💻 Prompt Template (to fix a bug fast)
-
-```txt
-I’ve uploaded TXT OS.  
-I want to solve the following problem:  
-[e.g. OCR citations missing or distorted].  
-How do I use the WFGY engine to fix it?
-````
-
-WFGY will respond with the right modules, steps, or formulas. You don’t need to memorize internals — just bring your real problem.
-
----
-
-### ⭐ Found this helpful?
-
-Help others discover it — [Give us a GitHub Star](https://github.com/onestardao/WFGY)
-We’re building the only open-source semantic debugger for AI reasoning.
+> If you’re new to this page or [WFGY](https://github.com/onestardao/WFGY) in general, here’s how to get started fast.  
+>  
+> WFGY (WanFaGuiYi) is the core reasoning engine — a semantic debugger for AI hallucinations and logic collapse.  
+> TXT OS is the lightweight `.txt`-native operating layer — lets any model run WFGY with zero install.  
+>
+> ---
+>
+> ### 🔗 Navigation
+>
+> - [← Back to Problem Map](./README.md) – Full list of 16 AI failure types and how WFGY solves them.  
+> - [🔧 Fix a problem now](#how-to-start-using-wfgy-engine) – Use a one-line prompt with your LLM.  
+> - [📄 See this page’s purpose](#rag-architecture--recovery) – Why this exists, and how it helps.  
+>
+> ---
+>
+> ### 📥 Quick Start Downloads (60 sec)
+>
+> | Tool                | Link                                                                 | 3-Step Setup                                                                 |
+> |---------------------|----------------------------------------------------------------------|-------------------------------------------------------------------------------|
+> | WFGY 1.0 (PDF)      | [Engine Paper](./README.md#quick-start-downloads-60sec)              | ① Download · ② Upload to your LLM · ③ Ask “Answer using WFGY + <your question>” |
+> | TXT OS (plain‑text) | [TXTOS.txt](./README.md#quick-start-downloads-60sec)                 | ① Download · ② Paste into any LLM chat · ③ Type “hello world” to boot         |
+>
+> Supports GPT‑4, Claude, open‑source models — no extra tools required.  
+>
+> ---
+>
+> ### 🧑‍💻 Prompt Template (to fix a bug fast)
+>
+> ```
+> I’ve uploaded TXT OS.  
+> I want to solve the following problem:  
+> [e.g. OCR citations missing or distorted].  
+> How do I use the WFGY engine to fix it?
+> ```
+>
+> WFGY will respond with the right modules, steps, or formulas.  
+> You don’t need to memorize internals — just bring your real problem.  
+>
+> ---
+>
+> ### ⭐ Found this helpful?
+>
+> Help others discover it — [Give us a GitHub Star](https://github.com/onestardao/WFGY)  
+> We’re building the only open-source semantic debugger for AI reasoning.
 
 </details>
-
-
-
 
 ---
 
