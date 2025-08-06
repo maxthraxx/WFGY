@@ -1,4 +1,4 @@
-# WFGY (WanFaGuiYi) Problem Map
+# WFGY (Wan Fa Gui Yi) Problem Map
 **16 reproducible failure modes in AI systems — with fixes (MIT).**  
 *If this page saves you time, a ⭐ helps others find it.*
 
