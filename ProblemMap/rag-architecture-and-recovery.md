@@ -4,6 +4,8 @@ _A practical, end-to-end guide for beginners and advanced users to **see the who
 <details>
 <summary><strong>📘 Start Here — Quick Links, Setup, and Downloads</strong></summary>
 
+<br>
+
 > If you’re new to this page or [WFGY](https://github.com/onestardao/WFGY) in general, here’s how to get started fast.  
 >  
 > WFGY (WanFaGuiYi) is the core reasoning engine — a semantic debugger for AI hallucinations and logic collapse.  
