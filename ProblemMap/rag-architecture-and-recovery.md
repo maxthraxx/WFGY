@@ -166,7 +166,10 @@ Copy/paste this checklist into your runbook. Execute top-down.
 | No.9      | Entropy Collapse (drift in long context) | ⭐⭐⭐             | BBAM             |
 | No.14–16  | Infra Failures (bootstrap / deploy)      | ⭐               | BBCR + index fix |
 
-> Note: This is **not a survey** — it’s based on 50+ real failure reports across open source RAG users.
+📐 Curious what BBMC / BBAM / BBPF / BBCR actually mean?  
+See the full derivations in [WFGY 1.0 — Core Formulas](https://github.com/onestardao/WFGY/blob/main/SemanticBlueprint/wfgy_formulas.md).  
+This is not a heuristic summary — the math comes from 50+ real RAG failures across open source systems.
+
 
 
 ---
