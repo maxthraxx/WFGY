@@ -1,8 +1,9 @@
 # WFGY (WanFaGuiYi) Problem Map
 **16 reproducible failure modes in AI systems — with fixes (MIT).**  
-This page catalogs production failures in reasoning & retrieval, with minimal repros and patches.
+*If this page saves you time, a ⭐ helps others find it.*
 
 <div align="center">
+  <!-- keep one visual; remove if you prefer text-only -->
   <img src="https://github.com/onestardao/WFGY/raw/main/OS/images/tree-semantic-memory.gif"
        alt="Semantic memory & reasoning fix in action"
        width="100%" style="max-width:900px" loading="lazy">
@@ -12,7 +13,10 @@ This page catalogs production failures in reasoning & retrieval, with minimal re
 
 ## Quick access
 - **Beginner Guide:** [Identify & fix your first failure](./BeginnerGuide.md)
-- **Visual RAG Guide (multi-dimensional):** [`RAG Architecture & Recovery`](./rag-architecture-and-recovery.md) — a high-altitude view that maps symptoms × pipeline stage × failure class, then shows the exact recovery path.
+- **Visual RAG Guide (multi-dimensional):** [`RAG Architecture & Recovery`](./rag-architecture-and-recovery.md) — high-altitude view linking symptom × pipeline stage × failure class, with the exact recovery path.
+- **Diagnose by symptom:** [Fast triage table → `Diagnose.md`](./Diagnose.md)
+- **Field Reports:** [Real bugs & fixes from users](https://github.com/onestardao/WFGY/discussions/10)
+- **TXT OS directory:** [Browse the OS repo](../OS/)
 
 ---
 
@@ -50,7 +54,7 @@ This page catalogs production failures in reasoning & retrieval, with minimal re
 ---
 
 ## Why these 16 errors were solvable
-WFGY does not just react; it gives **semantic altitude**. Core tools `ΔS`, `λ_observe`, and `e_resonance` detect, decode, and defuse collapse patterns from **outside** the maze.
+WFGY does not just react; it gives **semantic altitude**. Core tools `ΔS`, `λ_observe`, and `e_resonance` help detect, decode, and defuse collapse patterns from **outside** the maze.
 
 **See the pipeline and recovery end-to-end:**  
 → [`RAG Architecture & Recovery`](./rag-architecture-and-recovery.md)
@@ -58,7 +62,7 @@ WFGY does not just react; it gives **semantic altitude**. Core tools `ΔS`, `λ_
 ---
 
 ## Problem Maps Index (Map-A … Map-G)
-These IDs let you route quickly in issues/PRs/support threads.
+These short IDs let you route quickly in issues/PRs/support threads.
 
 | Map ID | Map Name                     | Linked Issues        | Focus                                          | Link |
 |-------:|------------------------------|----------------------|------------------------------------------------|------|
@@ -105,8 +109,8 @@ Which WFGY modules should I apply and in what order?
 | 12 | Philosophical Recursion         | Very High   | ✅ Stable |
 | 13 | Multi-Agent Chaos               | Very High   | ✅ Stable |
 | 14 | Bootstrap Ordering              | Medium      | ✅ Stable |
-| 15 | Deployment Deadlock             | High        | ⚠️ Beta |
-| 16 | Pre-Deploy Collapse             | Medium-High | ✅ Stable |
+| 15  | Deployment Deadlock            | High        | ⚠️ Beta |
+| 16  | Pre-Deploy Collapse            | Medium-High | ✅ Stable |
 
 \*Distance from default LLM behavior to a production-ready fix.
 </details>
@@ -116,6 +120,7 @@ Which WFGY modules should I apply and in what order?
 ## Contributing / support
 - Open an **Issue** with a minimal repro (inputs → calls → wrong output).  
 - PRs for clearer docs, repros, or patches are welcome.  
+- Project home: https://github.com/onestardao/WFGY • TXT OS: https://github.com/onestardao/WFGY/tree/main/OS  
 - If this map helped you, a ⭐ helps more devs find it.
 
 ---
