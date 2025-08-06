@@ -1,4 +1,4 @@
-# 📋 RAG Problem Map 2.0 Architecture & Recovery
+# 📋 RAG Architecture & Recovery ( Problem Map 2.0 )
 _What if you could see the whole RAG pipeline from above — and fix every failure, step by step?_
 
 <details>
