@@ -46,6 +46,8 @@
 
 Welcome. This page documents every recurring AI failure mode we’ve fixed — or are fixing — with the WFGY reasoning engine.
 
+🆕 First time here? See [Beginner Guide : How to Identify & Fix Your AI Failure](./BeginnerGuide.md) – quick primer for newcomers.
+
 **TXT OS + WFGY** exists to turn subtle reasoning bugs into clear, reproducible, and modular solutions.
 
 > Think your issue isn’t listed?  
@@ -59,10 +61,6 @@ You can test the WFGY engine live:
 > Make "my AI gave a weird answer" as rare as a 500 error in production software.  
 > Every fix below moves us closer.
 
-
----
-
-🆕 First time here? See [Beginner Guide : How to Identify & Fix Your AI Failure](./BeginnerGuide.md) – quick primer for newcomers.
 
 ---
 
