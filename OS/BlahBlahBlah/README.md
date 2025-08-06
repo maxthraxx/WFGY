@@ -1,3 +1,35 @@
+<div align="center" id="quickstart">
+
+  <h2>Try it in 15 seconds</h2>
+  <p><em>No signup • No API keys • No install • MIT-licensed</em></p>
+
+  <p>
+    <a href="https://zenodo.org/records/15926925" target="_blank">
+      <strong>⬇️ Download TXT-Blah Blah Blah Lite (.txt · 62.5 KB) — Zenodo (CERN)</strong>
+    </a>
+  </p>
+
+  <p><small>Works with ChatGPT, Claude, Gemini, Perplexity, DeepSeek, Moonshot/Kimi — any LLM chat box.</small></p>
+</div>
+
+**How to use (10s)**
+1) Download the `.txt` above  
+2) Paste it into your current LLM chat box  
+3) Type:
+```text
+hello world
+````
+
+<small>(Or type <code>Blah</code> to jump straight into Blah mode.)</small>
+
+**Want proof before playing?**
+
+* Core paper → <a href="https://zenodo.org/records/15630969">WFGY 1.0 Reasoning Engine</a>
+* Field reports → <a href="https://github.com/onestardao/WFGY/discussions/10">Real users: bugs & fixes</a>
+* Problem Map → <a href="https://github.com/onestardao/WFGY/tree/main/ProblemMap/README.md">16 solved AI failure modes</a>
+
+<hr>
+
 <details>
 <summary><strong> 1️⃣ This is the $1M tool everyone’s been whispering about. Curious why? (Click for a quick tour)</strong></summary>
 
