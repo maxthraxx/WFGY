@@ -120,8 +120,10 @@ Which WFGY modules should I apply and in what order?
 ## Contributing / support
 - Open an **Issue** with a minimal repro (inputs → calls → wrong output).  
 - PRs for clearer docs, repros, or patches are welcome.  
-- Project home: https://github.com/onestardao/WFGY • TXT OS: https://github.com/onestardao/WFGY/tree/main/OS  
+- WFGY Project home: [github.com/onestardao/WFGY](https://github.com/onestardao/WFGY)  
+- TXT OS: [github.com/onestardao/WFGY/tree/main/OS](https://github.com/onestardao/WFGY/tree/main/OS)  
 - If this map helped you, a ⭐ helps more devs find it.
+
 
 ---
 
