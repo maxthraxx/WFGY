@@ -37,18 +37,22 @@
 
 ---
 
-## 🔹 One-click sandbox · try it now
-Run a minimal WFGY diagnostic in Colab — zero install, zero API key.
+## One-click sandbox — try it now
 
-**How to use**
+Run a minimal WFGY diagnostic in Colab — zero install, zero API key.  
 
+<br>
+
+[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/onestardao/WFGY/blob/main/tools/wfgy_diagnose_colab.ipynb)
+
+### How to use
 1. Click the badge and choose **Runtime ▸ Run all**  
-2. In the **Edit & run** cell, replace the sample *prompt* and *answer*  
-3. Press ▶️ — you’ll instantly see ΔS, the failure type, and the suggested WFGY fix
+2. In the **Edit & run** cell, replace the sample `prompt` and `answer`  
+3. Press ▶ — you’ll instantly see **ΔS**, the **failure type**, and the **suggested WFGY fix**
 
-📌 [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/onestardao/WFGY/blob/main/tools/wfgy_diagnose_colab.ipynb)
-
-
+> ΔS = 1 − cosθ(I, G)  
+> I = Prompt intent, G = Generated output  
+> Higher ΔS means greater semantic drift between the input and the answer.
 
 ---
 
