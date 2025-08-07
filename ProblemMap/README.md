@@ -41,6 +41,12 @@
 
 Run lightweight diagnostics with **zero install**, **zero API key**. Powered by Colab.
 
+> These 4 CLI tools demonstrate WFGY's diagnostic power — each maps directly to one of the 16 failure modes. 
+> Other problems (like deployment bugs or reasoning collapse) are already handled inside WFGY,  
+> but are not exposed as CLI yet — either because they require full context, or operate at system level.  
+> More tools coming soon.
+
+
 <details>
 <summary><strong>⭐ ΔS Diagnostic (MVP)</strong> — Measure semantic drift</summary>
 
