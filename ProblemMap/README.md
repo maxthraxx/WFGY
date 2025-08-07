@@ -117,6 +117,33 @@ Checks how strongly a prompt + answer resonate with a chosen semantic field
 
 ---
 
+<details>
+<summary><strong>🚧 More modules coming soon — Drunk Transformer preview</strong></summary>
+
+<br>
+
+> **WDT** – *Where Did You Take me?*  
+> → Asymmetric cross-path suppression. Stops illegal logic jumps between reasoning tracks.  
+>
+> **WTF** – *What the F*** happened?*  
+> → Collapse detection and semantic recovery. When everything breaks, it hits the reset button (gently).  
+>
+> 🥂 **Drunk Transformer math layer (coming soon)**  
+>
+> • **WRI** – *Where am I?* → Locks positional structure  
+> • **WAI** – *Who am I?* → Enforces head diversity  
+> • **WAY** – *Who are you?* → Boosts entropy in attention heads  
+> • **WDT** – *Where did you take me?* → See above  
+> • **WTF** – *What the f*** happened?* → See above  
+>
+> These aren’t just names. Each is backed by a real math formula.  
+> You’ll get to try them soon. 
+
+</details>
+
+
+---
+
 ## Failure catalog (with fixes)
 
 | #  | Problem Domain                  | What breaks                                   | Doc |
