@@ -81,6 +81,22 @@ Run lightweight diagnostics with **zero install**, **zero API key**. Powered by 
 
 <!-- Add more sandboxes below -->
 
+<details>
+<summary><strong>🌐 e_resonance</strong> — Domain-level semantic harmony</summary>
+
+<br>
+
+[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/onestardao/WFGY/blob/main/tools/wfgy_e_resonance_colab.ipynb)
+
+Checks how strongly a prompt + answer resonate with a chosen semantic field  
+(Buddhism anchors provided; swap in any domain you like).
+
+**How to use**
+1. Run all → edit `prompt` / `answer`  
+2. Optionally edit the `anchors` list  
+3. Higher **e_resonance** = deeper conceptual harmony
+
+</details>
 
 
 
