@@ -320,7 +320,7 @@ When all tutorials contradict each other, this page is your single source of ope
 
 ---
 
-↩︎ [Back to Problem Index](../README.md)
+↩︎ [Back to Problem Index](README.md)
 
 ---
 
