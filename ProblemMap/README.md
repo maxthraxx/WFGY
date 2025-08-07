@@ -38,7 +38,8 @@
 ---
 
 ## One-click sandbox  (testing now, come back later)
-Run a minimal WFGY diagnostic in your browser — no install, no API key.  [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/onestardao/WFGY/blob/main/tools/wfgy_diagnose_colab.ipynb)
+Run a minimal WFGY diagnostic in your browser — no install, no API key.    
+[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/onestardao/WFGY/blob/main/tools/wfgy_diagnose_colab.ipynb)
 
 
 
