@@ -37,11 +37,16 @@
 
 ---
 
-## One-click sandbox  (testing now, come back later)
-Run a minimal WFGY diagnostic in your browser — no install, no API key.    
-[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/onestardao/WFGY/blob/main/tools/wfgy_diagnose_colab.ipynb)
+## 🔹 One-click sandbox · try it now
+Run a minimal WFGY diagnostic in Colab — zero install, zero API key.
 
+**How to use**
 
+1. Click the badge and choose **Runtime ▸ Run all**  
+2. In the **Edit & run** cell, replace the sample *prompt* and *answer*  
+3. Press ▶️ — you’ll instantly see ΔS, the failure type, and the suggested WFGY fix
+
+📌 [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/onestardao/WFGY/blob/main/tools/wfgy_diagnose_colab.ipynb)
 
 
 
