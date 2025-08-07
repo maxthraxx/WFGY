@@ -22,6 +22,8 @@ Their support is a public signal—transparent, verifiable, and forever recorded
 | mattcurf       | ollama-intel-gpu (253★); AI infra/devops, model deployment via Dockerfile  | ![](./images/Mattcurf_star.png)                  | [View stargazer proof](https://github.com/mattcurf?tab=stars)    |
 | neoneye        | PlanExe (226★), ARC-interactive (28★); symbolic/logic AI researcher focused on ARC tasks | ![](./images/Neoneye_star.png)                | [View stargazer proof](https://github.com/neoneye?tab=stars)     |
 | jakevossen5    | Apple visionOS UI Engineer, ex-Amazon/TI, compiler MS, US                  | ![](./images/jakevossen5_star.png)               | [View stargazer proof](https://github.com/jakevossen5?tab=stars) |
+| sogrey         | Developer of Android-Kotlin-Drak-UE tools; versatile engineer with personal site and high GitHub activity | ![](./images/Sogrey_star.png)                    | [View stargazer proof](https://github.com/Sogrey?tab=stars)     |
+
 
 
 ---
