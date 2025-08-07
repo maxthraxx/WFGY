@@ -79,8 +79,6 @@ Run lightweight diagnostics with **zero install**, **zero API key**. Powered by 
 
 </details>
 
-<!-- Add more sandboxes below -->
-
 <details>
 <summary><strong>⭐ e_resonance</strong> — Domain-level semantic harmony</summary>
 
@@ -98,7 +96,24 @@ Checks how strongly a prompt + answer resonate with a chosen semantic field
 
 </details>
 
+<details>
+<summary><strong>⭐ λ_diverse</strong> — Answer-set diversity check</summary>
 
+<br>
+
+[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/onestardao/WFGY/blob/main/tools/wfgy_lambda_diverse_colab.ipynb)
+
+**How to use**
+1. Run all → edit `prompt` and the `answers` list (≥ 3 lines)  
+2. Press ▶️ — see a single **λ_diverse** score
+
+📉 Low (≤ 0.40) — near duplicates  
+⚠️ Medium (0.40–0.70) — partial variety  
+✅ High (≥ 0.70) — truly diverse phrasing
+
+</details>
+
+<!-- Add more sandboxes below -->
 
 ---
 
