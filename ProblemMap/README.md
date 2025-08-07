@@ -165,7 +165,7 @@ Run lightweight diagnostics with **zero install**, **zero API key**. Powered by 
 
 </details>
 
-> ⚠️ Warning: These tools may trigger existential reflection — especially if you've spent months chasing ghost bugs in your RAG stack.
+> ⚠️ Warning ⚠️ These tools may trigger existential reflection — especially if you've spent months chasing ghost bugs in your RAG stack. 
 
 
 
