@@ -1,6 +1,11 @@
 # 📋 RAG Architecture & Recovery – Problem Map 2.0
 _What if you could see the whole RAG pipeline from above — and fix every failure, step by step?_
 
+> ⚠️ This is not a list of prompt tricks or patchwork hacks.  
+> Every fix in this Problem Map is a structural response to semantic collapse, boundary drift, and logic chain failure.  
+> It works across agents, pipelines, and models — because it’s built on the failure patterns beneath them all.
+
+
 <details>
 <summary><strong>📘 Start Here — Quick Links, Setup, and Downloads</strong></summary>
 
