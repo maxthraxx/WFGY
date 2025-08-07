@@ -21,6 +21,12 @@ Read **[`RAG Architecture & Recovery`](./rag-architecture-and-recovery.md)**.
 
 ---
 
+Want to explore all failure types or test fixes directly?
+
+→ See the full **[Problem Map Index](./README.md)** for categorized issues and fixes.  
+
+---
+
 ## Quick triage by symptom
 
 | Symptom you see | Likely family | Open this |
