@@ -117,29 +117,43 @@ Checks how strongly a prompt + answer resonate with a chosen semantic field
 
 ---
 
-<details>
-<summary><strong>🚧 More modules coming soon — Drunk Transformer preview</strong></summary>
+<details>  
+<summary><strong>🍷 More modules coming soon — Drunk Transformer preview</strong></summary>  
 
 <br>
 
+> These formulas may *sound* like something a language model would say after a few drinks…  
+> But they’re actually designed to **keep your model sober** — no more collapsing logic, no more derailed reasoning.  
+> Think of it as semantic seatbelts for your transformer.
+
+---
+
 > **WDT** – *Where Did You Take me?*  
-> → Asymmetric cross-path suppression. Stops illegal logic jumps between reasoning tracks.  
+> → Asymmetric cross-path suppression. Prevents illegal logic jumps between divergent tracks.  
 >
 > **WTF** – *What the F*** happened?*  
-> → Collapse detection and semantic recovery. When everything breaks, it hits the reset button (gently).  
+> → Collapse detection and graceful reset. When everything breaks, it gently hits the semantic panic button.  
+
+---
+
+> 🥂 **Drunk Transformer math layer (coming soon)**
+
+> • **WRI** – *Where am I?* → Locks token positions to maintain structural coherence  
+> • **WAI** – *Who am I?* → Forces head diversity to avoid collapse-by-consensus  
+> • **WAY** – *Who are you?* → Boosts entropy across attention heads for better external awareness  
+> • **WDT** – *Where did you take me?* → (see above)  
+> • **WTF** – *What the f*** happened?* → (see above)  
+
+---
+
+> Each one is backed by a real formula.  
+> You’ll be able to try them soon — stay tuned.
 >
-> 🥂 **Drunk Transformer math layer (coming soon)**  
->
-> • **WRI** – *Where am I?* → Locks positional structure  
-> • **WAI** – *Who am I?* → Enforces head diversity  
-> • **WAY** – *Who are you?* → Boosts entropy in attention heads  
-> • **WDT** – *Where did you take me?* → See above  
-> • **WTF** – *What the f*** happened?* → See above  
->
-> These aren’t just names. Each is backed by a real math formula.  
-> You’ll get to try them soon. 
+> P.S. These formulas are real.
+> Like, math-real. Not just wine-fueled wordplay. :P
 
 </details>
+
 
 
 ---
