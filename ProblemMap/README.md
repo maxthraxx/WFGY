@@ -54,6 +54,11 @@ Run a minimal WFGY diagnostic in Colab — zero install, zero API key.
 > I = Prompt intent, G = Generated output  
 > Higher ΔS means greater semantic drift between the input and the answer.
 
+📉 **Low ΔS** → Stable  
+🔺 **Medium ΔS** → Interpretation Collapse  
+🚨 **High ΔS** → Hallucination or Chunk Drift
+
+
 ---
 
 ## Failure catalog (with fixes)
