@@ -37,49 +37,50 @@
 
 ---
 
-## 🧪 One-click sandboxes — try WFGY now
+## 🧪 One-click sandboxes — run WFGY instantly (under construction)
 
-Run lightweight diagnostics with **zero install**, **zero API key** — works in Colab, fork-friendly.
+Run lightweight diagnostics with **zero install**, **zero API key**. Powered by Colab.
 
-<table>
-  <tr>
-    <td width="50%">
+<details>
+<summary><strong>🔍 ΔS Diagnostic (MVP)</strong> — Measure semantic drift</summary>
 
-### 🔍 ΔS Diagnostic (MVP)
-Quickly measure **semantic drift** and get suggested fixes.
+<br>
 
 [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/onestardao/WFGY/blob/main/tools/wfgy_diagnose_colab.ipynb)
 
 **How to use**
-1. Click the badge ▸ **Runtime ▸ Run all**  
+1. Click the badge ▸ Runtime ▸ Run all  
 2. Replace `prompt` / `answer`  
-3. See **ΔS**, failure type, suggested fix
+3. See ΔS, failure type, suggested fix
 
 > ΔS = 1 − cosθ(I, G)  
-> I = Prompt intent, G = Generated output
+> I = Prompt intent, G = Generated output  
 
 📉 **Low ΔS** → Stable  
 🔺 **Medium ΔS** → Interpretation Collapse  
 🚨 **High ΔS** → Hallucination / Chunk Drift
 
-</td><td width="50%">
+</details>
 
-### ⛓️ λ_observe Checkpoint
-Test how inserting an observation step reduces drift.
+<details>
+<summary><strong>⛓️ λ_observe Checkpoint</strong> — Mid-step re-grounding</summary>
+
+<br>
 
 [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/onestardao/WFGY/blob/main/tools/wfgy_lambda_observe_colab.ipynb)
 
 **How to use**
-1. Click the badge ▸ **Runtime ▸ Run all**  
+1. Click the badge ▸ Runtime ▸ Run all  
 2. Edit `prompt`, `step1`, `step2`  
-3. Compare **ΔS_before** vs **ΔS_after**
+3. Compare ΔS before vs after
 
-✅ If ΔS goes down → checkpoint successful  
-⚠️ If not → try **BBCR fallback**
+✅ If ΔS goes down → checkpoint worked  
+⚠️ If not → try BBCR fallback
 
-</td>
-  </tr>
-</table>
+</details>
+
+<!-- Add more sandboxes below -->
+
 
 
 
