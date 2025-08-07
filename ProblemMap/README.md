@@ -48,17 +48,17 @@ Run lightweight diagnostics with **zero install**, **zero API key**. Powered by 
 
 [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/onestardao/WFGY/blob/main/tools/wfgy_diagnose_colab.ipynb)
 
-**How to use**
-1. Click the badge ▸ Runtime ▸ Run all  
-2. Replace `prompt` / `answer`  
-3. See ΔS, failure type, suggested fix
-
+> **How to use**  
+> 1. Click the badge ▸ Runtime ▸ Run all  
+> 2. Replace `prompt` / `answer`  
+> 3. See ΔS, failure type, suggested fix  
+>
 > ΔS = 1 − cosθ(I, G)  
 > I = Prompt intent, G = Generated output  
-
-📉 **Low ΔS** → Stable  
-🔺 **Medium ΔS** → Interpretation Collapse  
-🚨 **High ΔS** → Hallucination / Chunk Drift
+>
+> Low ΔS → Stable  
+> Medium ΔS → Interpretation Collapse  
+> High ΔS → Hallucination / Chunk Drift
 
 </details>
 
@@ -69,13 +69,13 @@ Run lightweight diagnostics with **zero install**, **zero API key**. Powered by 
 
 [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/onestardao/WFGY/blob/main/tools/wfgy_lambda_observe_colab.ipynb)
 
-**How to use**
-1. Click the badge ▸ Runtime ▸ Run all  
-2. Edit `prompt`, `step1`, `step2`  
-3. Compare ΔS before vs after
-
-✅ If ΔS goes down → checkpoint worked  
-⚠️ If not → try BBCR fallback
+> **How to use**  
+> 1. Click the badge ▸ Runtime ▸ Run all  
+> 2. Edit `prompt`, `step1`, `step2`  
+> 3. Compare ΔS before vs after  
+>
+> If ΔS goes down → checkpoint worked  
+> If not → try BBCR fallback
 
 </details>
 
@@ -86,13 +86,13 @@ Run lightweight diagnostics with **zero install**, **zero API key**. Powered by 
 
 [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/onestardao/WFGY/blob/main/tools/wfgy_e_resonance_colab.ipynb)
 
-Checks how strongly a prompt + answer resonate with a chosen semantic field  
-(Buddhism anchors provided; swap in any domain you like).
-
-**How to use**
-1. Run all → edit `prompt` / `answer`  
-2. Optionally edit the `anchors` list  
-3. Higher **e_resonance** = deeper conceptual harmony
+> Checks how strongly a prompt + answer resonate with a chosen semantic field  
+> (Buddhism anchors provided; swap in any domain you like).  
+>
+> **How to use**  
+> 1. Run all → edit `prompt` / `answer`  
+> 2. Optionally edit the `anchors` list  
+> 3. Higher e_resonance = deeper conceptual harmony
 
 </details>
 
@@ -103,54 +103,54 @@ Checks how strongly a prompt + answer resonate with a chosen semantic field
 
 [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/onestardao/WFGY/blob/main/tools/wfgy_lambda_diverse_colab.ipynb)
 
-**How to use**
-1. Run all → edit `prompt` and the `answers` list (≥ 3 lines)  
-2. Press ▶️ — see a single **λ_diverse** score
-
-📉 Low (≤ 0.40) — near duplicates  
-⚠️ Medium (0.40–0.70) — partial variety  
-✅ High (≥ 0.70) — truly diverse phrasing
+> **How to use**  
+> 1. Run all → edit `prompt` and the `answers` list (≥ 3 lines)  
+> 2. Press ▶️ — see a single λ_diverse score  
+>
+> Low (≤ 0.40) — near duplicates  
+> Medium (0.40–0.70) — partial variety  
+> High (≥ 0.70) — truly diverse phrasing
 
 </details>
-
-<!-- Add more sandboxes below -->
 
 <details>  
 <summary><strong>🍷 More modules coming soon — Drunk Transformer preview</strong></summary>  
 
 <br>
 
-> These formulas may *sound* like something a language model would say after a few drinks…  
-> But they’re actually designed to **keep your model sober** — no more collapsing logic, no more derailed reasoning.  
-> Think of it as semantic seatbelts for your transformer.
-
----
-
-> **WDT** – *Where Did You Take me?*  
+> These formulas may sound like something a language model would say after a few drinks…  
+> But they’re actually designed to keep your model sober — no more collapsing logic, no more derailed reasoning.  
+> Think of it as semantic seatbelts for your transformer.  
+>
+> ---
+>
+> **WDT** – Where Did You Take me?  
 > → Asymmetric cross-path suppression. Prevents illegal logic jumps between divergent tracks.  
 >
-> **WTF** – *What the F*** happened?*  
+> **WTF** – What the F*** happened?  
 > → Collapse detection and graceful reset. When everything breaks, it gently hits the semantic panic button.  
-
----
-
-> 🥂 **Drunk Transformer math layer (coming soon)**
-
-> • **WRI** – *Where am I?* → Locks token positions to maintain structural coherence  
-> • **WAI** – *Who am I?* → Forces head diversity to avoid collapse-by-consensus  
-> • **WAY** – *Who are you?* → Boosts entropy across attention heads for better external awareness  
-> • **WDT** – *Where did you take me?* → (see above)  
-> • **WTF** – *What the f*** happened?* → (see above)  
-
----
-
-> Each one is backed by a real formula.  
-> You’ll be able to try them soon — stay tuned.
 >
-> P.S. These formulas are real.
+> ---
+>
+> Drunk Transformer math layer (coming soon)  
+>
+> • **WRI** – Where am I? → Locks token positions to maintain structural coherence  
+> • **WAI** – Who am I? → Forces head diversity to avoid collapse-by-consensus  
+> • **WAY** – Who are you? → Boosts entropy across attention heads for better external awareness  
+> • **WDT** – Where did you take me? → (see above)  
+> • **WTF** – What the f*** happened? → (see above)  
+>
+> ---
+>
+> Each one is backed by a real formula.  
+> You’ll be able to try them soon — stay tuned.  
+>
+> P.S. These formulas are real.  
 > Like, math-real. Not just wine-fueled wordplay. :P
 
 </details>
+
+
 
 
 
