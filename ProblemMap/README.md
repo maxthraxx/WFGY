@@ -42,7 +42,7 @@
 Run lightweight diagnostics with **zero install**, **zero API key**. Powered by Colab.
 
 <details>
-<summary><strong>🔍 ΔS Diagnostic (MVP)</strong> — Measure semantic drift</summary>
+<summary><strong>⭐ ΔS Diagnostic (MVP)</strong> — Measure semantic drift</summary>
 
 <br>
 
@@ -63,7 +63,7 @@ Run lightweight diagnostics with **zero install**, **zero API key**. Powered by 
 </details>
 
 <details>
-<summary><strong>⛓️ λ_observe Checkpoint</strong> — Mid-step re-grounding</summary>
+<summary><strong>⭐ λ_observe Checkpoint</strong> — Mid-step re-grounding</summary>
 
 <br>
 
@@ -82,7 +82,7 @@ Run lightweight diagnostics with **zero install**, **zero API key**. Powered by 
 <!-- Add more sandboxes below -->
 
 <details>
-<summary><strong>🌐 e_resonance</strong> — Domain-level semantic harmony</summary>
+<summary><strong>⭐ e_resonance</strong> — Domain-level semantic harmony</summary>
 
 <br>
 
