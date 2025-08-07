@@ -37,7 +37,7 @@
 
 ---
 
-## 🧪 One-click sandboxes — run WFGY instantly (under construction)
+## 🧪 One-click sandboxes — run WFGY instantly
 
 Run lightweight diagnostics with **zero install**, **zero API key**. Powered by Colab.
 
@@ -50,15 +50,12 @@ Run lightweight diagnostics with **zero install**, **zero API key**. Powered by 
 
 > **How to use**  
 > 1. Click the badge ▸ Runtime ▸ Run all  
-> 2. Replace `prompt` / `answer`  
-> 3. See ΔS, failure type, suggested fix  
+> 2. Replace `prompt` and `answer`  
+> 3. See ΔS score and suggested fix  
 >
-> ΔS = 1 − cosθ(I, G)  
-> I = Prompt intent, G = Generated output  
->
-> Low ΔS → Stable  
-> Medium ΔS → Interpretation Collapse  
-> High ΔS → Hallucination / Chunk Drift
+> **What it detects:**  
+> No.2 – [Interpretation Collapse](https://github.com/onestardao/WFGY/blob/main/ProblemMap/retrieval-collapse.md)  
+> (Prompt and output look fine, but meaning is mismatched)
 
 </details>
 
@@ -70,29 +67,36 @@ Run lightweight diagnostics with **zero install**, **zero API key**. Powered by 
 [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/onestardao/WFGY/blob/main/tools/wfgy_lambda_observe_colab.ipynb)
 
 > **How to use**  
-> 1. Click the badge ▸ Runtime ▸ Run all  
+> 1. Run all cells  
 > 2. Edit `prompt`, `step1`, `step2`  
 > 3. Compare ΔS before vs after  
 >
-> If ΔS goes down → checkpoint worked  
-> If not → try BBCR fallback
+> If ΔS drops → checkpoint worked  
+> If not → try BBCR fallback  
+>
+> **What it fixes:**  
+> No.6 – [Logic Collapse & Recovery](https://github.com/onestardao/WFGY/blob/main/ProblemMap/logic-collapse.md)  
+> (Multi-step reasoning veers off and needs semantic midpoints)
 
 </details>
 
 <details>
-<summary><strong>⭐ e_resonance</strong> — Domain-level semantic harmony</summary>
+<summary><strong>⭐ ε_resonance</strong> — Domain-level semantic harmony</summary>
 
 <br>
 
 [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/onestardao/WFGY/blob/main/tools/wfgy_e_resonance_colab.ipynb)
 
-> Checks how strongly a prompt + answer resonate with a chosen semantic field  
-> (Buddhism anchors provided; swap in any domain you like).  
->
 > **How to use**  
-> 1. Run all → edit `prompt` / `answer`  
-> 2. Optionally edit the `anchors` list  
-> 3. Higher e_resonance = deeper conceptual harmony
+> 1. Run all cells  
+> 2. Edit `prompt` and `answer`  
+> 3. Optionally update the `anchors` list  
+>
+> Higher ε → deeper resonance with domain anchors  
+>
+> **What it explains:**  
+> No.12 – [Philosophical Recursion](https://github.com/onestardao/WFGY/blob/main/ProblemMap/philosophical-recursion.md)  
+> (Looping abstraction caused by mismatched domains)
 
 </details>
 
@@ -104,12 +108,17 @@ Run lightweight diagnostics with **zero install**, **zero API key**. Powered by 
 [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/onestardao/WFGY/blob/main/tools/wfgy_lambda_diverse_colab.ipynb)
 
 > **How to use**  
-> 1. Run all → edit `prompt` and the `answers` list (≥ 3 lines)  
-> 2. Press ▶️ — see a single λ_diverse score  
+> 1. Run all cells  
+> 2. Fill in `prompt` and `answers` (≥ 3 examples)  
+> 3. See λ_diverse score  
 >
 > Low (≤ 0.40) — near duplicates  
 > Medium (0.40–0.70) — partial variety  
-> High (≥ 0.70) — truly diverse phrasing
+> High (≥ 0.70) — rich semantic variation  
+>
+> **What it detects:**  
+> No.3 – [Long Reasoning Chains](https://github.com/onestardao/WFGY/blob/main/ProblemMap/context-drift.md)  
+> (Early steps diverge silently across variants)
 
 </details>
 
