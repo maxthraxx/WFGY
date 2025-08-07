@@ -22,6 +22,11 @@
 - **TXT OS directory:** [Browse the OS repo](../OS/)
 
 
+> 📌 This map isn’t just a list of bugs. It’s a diagnostic framework — a semantic X-ray for AI failure.
+> Each entry represents a *systemic breakdown* across input, retrieval, or reasoning.
+> WFGY doesn’t patch symptoms. It restructures the entire reasoning chain.
+
+
 ---
 
 ## Quick-Start Downloads (60 sec)
