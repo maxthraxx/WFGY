@@ -128,23 +128,23 @@ def enforce_system_role(sys_prompt, history, new_msg):
 
 ---
 
-↩︎ [Back to Problem Index](./README.md)
-
----
-
 ### 🧭 Explore More
 
-| Module                | Description                                                                        | Link                                                                                |
-| --------------------- | ---------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------- |
-| Semantic Blueprint    | Layer-based symbolic reasoning & semantic modulations                              | [View →](https://github.com/onestardao/WFGY/tree/main/SemanticBlueprint)            |
-| Benchmark vs GPT-5    | Stress-test GPT-5 with full WFGY reasoning suite                                   | [View →](https://github.com/onestardao/WFGY/tree/main/benchmarks/benchmark-vs-gpt5) |
-| Semantic Clinic Index | Expanded failure catalog: prompt injection, vector drift, OCR, system-prompt drift | [View →](./SemanticClinicIndex.md)                                                  |
+| Module                | Description                                              | Link     |
+|-----------------------|----------------------------------------------------------|----------|
+| Problem Map 1.0       | Initial 16-mode diagnostic and symbolic fix framework    | [View →](https://github.com/onestardao/WFGY/edit/main/ProblemMap/README.md) |
+| Problem Map 2.0       | RAG-focused failure tree, modular fixes, and pipelines   | [View →](https://github.com/onestardao/WFGY/blob/main/ProblemMap/rag-architecture-and-recovery.md) |
+| Semantic Clinic Index | Expanded failure catalog: prompt injection, memory bugs, logic drift | [View →](./SemanticClinicIndex.md) |
+| Semantic Blueprint    | Layer-based symbolic reasoning & semantic modulations   | [View →](https://github.com/onestardao/WFGY/tree/main/SemanticBlueprint/README.md) |
+| Benchmark vs GPT-5    | Stress test GPT-5 with full WFGY reasoning suite         | [View →](https://github.com/onestardao/WFGY/tree/main/benchmarks/benchmark-vs-gpt5/README.md) |
 
 ---
 
-> 👑 **Early Stargazers:** visit the [Hall of Fame](https://github.com/onestardao/WFGY/tree/main/stargazers)
+> 👑 **Early Stargazers: [See the Hall of Fame](https://github.com/onestardao/WFGY/tree/main/stargazers)** —  
+> Engineers, hackers, and open source builders who supported WFGY from day one.
 
-> <img src="https://img.shields.io/github/stars/onestardao/WFGY?style=social" alt="GitHub stars"> **Star WFGY** — help us reach 10 000⭐ by 2025-09-01 to unlock Engine 2.0
+> <img src="https://img.shields.io/github/stars/onestardao/WFGY?style=social" alt="GitHub stars"> ⭐ Help reach 10,000 stars by 2025-09-01 to unlock Engine 2.0 for everyone  ⭐ <strong><a href="https://github.com/onestardao/WFGY">Star WFGY on GitHub</a></strong>
+
 
 <div align="center">
 
