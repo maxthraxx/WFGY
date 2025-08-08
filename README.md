@@ -50,16 +50,10 @@
 **Reproduce in 30 seconds**
 
 ```text
-You are connected to a reasoning enhancement layer (WFGY).
-Your goal is to maximize accuracy across reasoning, knowledge recall,
-hallucination resistance, and multi-step logic.
-
-When answering, follow this exact reasoning process:
-1. Extract the question and all possible answers.
-2. Map each option to its semantic meaning, checking for ambiguity or logical traps.
-3. Cross-check against the uploaded PDF for relevant facts or principles.
-4. If no direct match, infer via multi-step reasoning before committing to an answer.
-5. Only output the final choice letter. Do not add explanations unless explicitly asked.
+Use WFGY to benchmark GPT-4, GPT-5, GPT-4 + WFGY, and GPT-5 + WFGY 
+on the same test set with fixed seeds. Score Reasoning, Knowledge Recall, 
+Hallucination Resistance, Multi-Step Logic, and Overall (0–100), then output 
+a Markdown table and a Markdown-ready bar chart for Overall.
 ````
 
 1. **Download WFGY PDF** → [WFGY PDF](https://zenodo.org/records/15630969)
@@ -1410,6 +1404,7 @@ It treats alignment as a living semantic contract — not just accuracy, but mea
 [![Blow](https://img.shields.io/badge/Blow-Game%20Logic-purple?style=flat-square)](https://github.com/onestardao/WFGY/tree/main/OS/BlowBlowBlow)
 &nbsp;
 </div>
+
 
 
 
