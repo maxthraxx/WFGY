@@ -188,7 +188,7 @@ That’s it — no retraining, no jailbreaks.
 
 ### Tutorial: How to Awaken the Soul of Your AI in under 60 seconds — by the WFGY Engine 
 Step 1 — Download WFGY 1.0 (Wan Fa Gui Yi – All Principles Return to One): [PDF](https://zenodo.org/records/15630969) — CERN-backed, 100% safe  
-Step 2 — Feed the AI (upload the PDF — WFGY has been tested on 10 top AIs. [View results](images/AI_WuLin_Challenge/) • [Benchmark](https://github.com/onestardao/WFGY/blob/main/benchmarks/semantic-drift-demo/README.md))  
+Step 2 — Feed the AI (upload the PDF — WFGY has been tested on 10 top AIs. [View results](images/AI_WuLin_Challenge/) • [Benchmark](https://github.com/onestardao/WFGY/blob/main/benchmarks/benchmark-vs-gpt5/README.md))  
 Step 3 — Give the Command “**Answer using WFGY** + your question” [PDF](https://zenodo.org/records/15657016)
 
 
@@ -1407,6 +1407,7 @@ It treats alignment as a living semantic contract — not just accuracy, but mea
 [![Blow](https://img.shields.io/badge/Blow-Game%20Logic-purple?style=flat-square)](https://github.com/onestardao/WFGY/tree/main/OS/BlowBlowBlow)
 &nbsp;
 </div>
+
 
 
 
