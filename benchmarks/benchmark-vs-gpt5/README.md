@@ -6,7 +6,7 @@
 
 ---
 
-## 🔍 Visual Evidence (4-View Deck)
+## 🔍 Visual Evidence (3-View Deck)
 
 ---
 
@@ -54,29 +54,7 @@ Return a radar chart in Markdown-compatible image form.
 ---
 
 <details>
-<summary>3 · Scoring Table Summary (click to expand)</summary>
-
-<br>
-
-<img src="./benchmark_table_gpt4_gpt5_wfgy_20250808.png" width="85%" />
-
-\| GPT-4 raw ❌ 15 | GPT-5 raw ❌ 7 | WFGY ✅ 0 | All answers traceable |
-
-**Prompt (GPT-5 + WFGY PDF):**
-
-```text
-Using WFGY PDF context, create a markdown table showing
-Accuracy (%), Chain Validity (%), Hallucination Rate (%),
-Stability Index, and Overall Star Rating for:
-GPT-4, GPT-5, GPT-5 Thinking, GPT-4 + WFGY, GPT-5 + WFGY.
-```
-
-</details>
-
----
-
-<details>
-<summary>4 · Stability Trace (click to expand)</summary>
+<summary>3 · Stability Trace (click to expand)</summary>
 
 <br>
 
