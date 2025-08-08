@@ -46,6 +46,8 @@
 
 <img width="2299" height="1219" alt="gpt5_vs_wfgy_benchmark_20250808" src="https://github.com/user-attachments/assets/19f59128-14a5-42de-aa2b-d25c8114db10" />
 
+> This is a simulated benchmark using GPT-5 + the WFGY PDF.  
+> It doesn’t answer actual questions, but the scores closely mirror real-world tests.
 
 **Reproduce in 30 seconds**
 
@@ -54,16 +56,16 @@ Use GPT-5 to benchmark GPT-4, GPT-5, GPT-4 + WFGY, and GPT-5 + WFGY
 on the same test set with fixed seeds.  
 Score: Reasoning, Knowledge Recall, Hallucination Resistance, Multi-Step Logic, Overall (0–100).  
 Output a Markdown table and a Markdown-ready bar chart for Overall.
+```
 
-````
+1. **Download WFGY PDF** → [WFGY PDF](https://zenodo.org/records/15630969)  
+2. Upload the PDF to your LLM chat  
+3. Paste the prompt above and run any benchmark (e.g. GSM8K, Truthful-QA, etc.)
 
-1. **Download WFGY PDF** → [WFGY PDF](https://zenodo.org/records/15630969)
-2. Upload the PDF to your LLM chat.
-3. Paste the prompt above and run any benchmark (GSM8K, Truthful-QA, etc.).
-
-That’s it—no retraining, no jailbreaks.
+That’s it — no retraining, no jailbreaks.
 
 </details>
+
 
 
 ---
@@ -1405,6 +1407,7 @@ It treats alignment as a living semantic contract — not just accuracy, but mea
 [![Blow](https://img.shields.io/badge/Blow-Game%20Logic-purple?style=flat-square)](https://github.com/onestardao/WFGY/tree/main/OS/BlowBlowBlow)
 &nbsp;
 </div>
+
 
 
 
