@@ -49,13 +49,14 @@ and re-running the inputs through **any AI model + WFGY engine**.
 
 ---
 
-## Benchmark Result: GPT‑4o (raw) vs GPT‑4o + WFGY
+## Benchmark Result: GPT-4o (raw) vs GPT-4o + WFGY vs GPT-5 (raw)
 
 | Model              | Accuracy  | Mistakes | Errors Recovered | Traceable Reasoning |
 |--------------------|-----------|----------|------------------|---------------------|
 | GPT‑4o (raw)       | 81.25%    | 15 / 80  | —                | ✘ None              |
 | GPT‑4o + WFGY      | 100.00%   | 0 / 80   | ✔ 15 / 15        | ✔ Every step        |
-| GPT‑5 (TBD)        | ???       | ???      | ???              | ???                 |
+| GPT-5 (raw)        | 91.25%    | 7 / 80   | —                | ✘ None              |
+
 
 > GPT‑4o got 15 questions wrong.  
 > WFGY fixed every single one — with full semantic traceability per answer.
@@ -88,17 +89,15 @@ You don’t need to believe us — you can **verify it**.
 
 ---
 
-## What Happens When GPT‑5 Arrives?
+## What Happens When GPT-5 Arrives?
 
-We will:
+We have already run the same 80 questions on GPT-5 (raw).  
+Next steps:
 
-- Run the **same 80 questions**, same format, no tricks
-- Post raw GPT‑5 results within hours of public release
-- Publish a full comparison update on this page
-- Release a **Zenodo-snapshotted benchmark** with DOI, to permanently record all result states
+- Run **GPT-5 + WFGY** with identical settings
+- Publish the comparison update (ETA < 24 h)
+- Snapshot the new results to Zenodo with DOI
 
-If GPT‑5 performs better — we welcome it.  
-If it doesn’t — we’ll explain why.
 
 ---
 
