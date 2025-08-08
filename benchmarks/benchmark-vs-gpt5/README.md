@@ -70,7 +70,7 @@ Output a Markdown table and a Markdown-ready bar chart for Overall.
 **WFGY** isn’t a model — it’s a *math-based sanity layer* you can slap onto any LLM.  
 Use GPT-4o, GPT-5, or whatever’s next — WFGY is your reasoning booster.
 
-Start with the [PDF](https://zenodo.org/records/16635020) or [GitHub](https://github.com/onestardao/WFGY) and replicate.
+Start with the [WFGY PDF](https://doi.org/10.5281/zenodo.15630969) or [GitHub](https://github.com/onestardao/WFGY) and replicate.
 
 ---
 
