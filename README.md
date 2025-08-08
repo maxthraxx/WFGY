@@ -40,6 +40,40 @@
 ---
 
 <details>
+  <summary><strong>🆕 GPT-5 vs GPT-5 + WFGY Benchmark (see &nbsp;how to rerun it yourself)</strong></summary>
+
+<br>
+
+<img width="2299" height="1219" alt="WFGY_Win" src="https://github.com/user-attachments/assets/5ad97191-e023-4bc3-94a1-c3c9ae434eae" />
+
+
+**Reproduce in 30 seconds**
+
+```text
+You are connected to a reasoning enhancement layer (WFGY).
+Your goal is to maximize accuracy across reasoning, knowledge recall,
+hallucination resistance, and multi-step logic.
+
+When answering, follow this exact reasoning process:
+1. Extract the question and all possible answers.
+2. Map each option to its semantic meaning, checking for ambiguity or logical traps.
+3. Cross-check against the uploaded PDF for relevant facts or principles.
+4. If no direct match, infer via multi-step reasoning before committing to an answer.
+5. Only output the final choice letter. Do not add explanations unless explicitly asked.
+````
+
+1. **Download WFGY PDF** → [WFGY PDF](https://zenodo.org/records/15630969)
+2. Upload the PDF to your LLM chat.
+3. Paste the prompt above and run any benchmark (GSM8K, Truthful-QA, etc.).
+
+That’s it—no retraining, no jailbreaks.
+
+</details>
+
+
+---
+
+<details>
 <summary><strong> 1️⃣ WFGY is a BIG project... Where should I start? (Click to expand)</strong></summary>
 
 <br>
@@ -1376,6 +1410,7 @@ It treats alignment as a living semantic contract — not just accuracy, but mea
 [![Blow](https://img.shields.io/badge/Blow-Game%20Logic-purple?style=flat-square)](https://github.com/onestardao/WFGY/tree/main/OS/BlowBlowBlow)
 &nbsp;
 </div>
+
 
 
 
