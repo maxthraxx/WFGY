@@ -1,4 +1,4 @@
-# WFGY vs GPT-5 — The Logic Duel Begins
+# 📌 WFGY vs GPT-5 — The Logic Duel Begins
 
 📦 Official WFGY benchmark snapshot on Zenodo: [![DOI](https://zenodo.org/badge/996124831.svg)](https://doi.org/10.5281/zenodo.16635020)
 
@@ -11,7 +11,7 @@
 
 ---
 
-## Introduction
+## 📌 Introduction
 
 **WFGY** is a *symbiotic reasoning layer*: the stronger the host model, the larger the lift.  
 Here we attach it to **GPT-4o** and **GPT-5** using either a **PDF pipeline** or the **TXT OS interface**.  
@@ -19,7 +19,7 @@ No fine-tuning, no prompt voodoo — only symbolic constraints and traceable log
 
 ---
 
-## Why Only MMLU Philosophy?
+## 📌 Why Only MMLU Philosophy?
 
 1. **Most fragile domain** – long-range abstraction, easy hallucinations.  
 2. **Tests reasoning, not memory** – pure inference, zero trivia.  
@@ -29,7 +29,7 @@ Replicating the run (clearing answer column + re-run) takes ≈ 1 hour on any mo
 
 ---
 
-## Benchmark Result
+## 📌 Benchmark Result
 
 | Model                | Accuracy | Mistakes | Errors Recovered | Traceable Reasoning |
 |----------------------|---------:|---------:|-----------------:|:--------------------|
@@ -42,7 +42,7 @@ Replicating the run (clearing answer column + re-run) takes ≈ 1 hour on any mo
 
 ---
 
-## How WFGY Patches Reasoning Gaps
+## 📌 How WFGY Patches Reasoning Gaps
 
 Raw errors cluster into four symbolic failure modes (BBPF, BBCR, BBMC, BBAM).  
 WFGY applies ΔS control, entropy modulation, and path-symmetry enforcement to neutralise each mode.  
@@ -50,7 +50,7 @@ Full taxonomy in the [paper](https://zenodo.org/records/15630969).
 
 ---
 
-## Download the Evidence
+## 📌 Download the Evidence
 
 Verify every claim yourself:
 
@@ -61,27 +61,29 @@ Verify every claim yourself:
 
 ---
 
-## How to Re-run the Audit (DIY)
+## 📌 How to Re-run the Audit (DIY)
 
 > 🔬 **Goal** – prove (or debunk) our numbers with nothing more than a browser and a local shell.  
 > ⏱️ **Time** – ≈ 60 min for one model; ±5 min to swap hosts.
 
 ---
 
-### 1  Grab the official questions
+### 1️⃣ Grab the official questions
 
 ```bash
 # Clone the raw data repo (Hendrycks et al.)
 git clone https://github.com/hendrycks/benchmark-mmlu.git
 cd benchmark-mmlu/data/philosophy
-````
+```
 
 *Or* download our ready-made XLSX subset:
 
-* `./philosophy_80_template.xlsx` ← questions only, empty “Your Answer” column
+* `./philosophy_80_template.xlsx` ← questions only, empty “Your Answer” column  
 * `./answer_key.txt` ← ground-truth letters A/B/C/D
 
-### 2  Choose a host model
+---
+
+### 2️⃣ Choose a host model
 
 | Option         | Quick start                                                                                                            |
 | -------------- | ---------------------------------------------------------------------------------------------------------------------- |
@@ -91,7 +93,9 @@ cd benchmark-mmlu/data/philosophy
 
 > **TIP:** speed ≈ 3 s/Q on GPT-4o, 1 s/Q on GPT-5.
 
-### 3  Attach WFGY
+---
+
+### 3️⃣ Attach WFGY
 
 ```bash
 pip install wfgy
@@ -107,7 +111,9 @@ wfgy txtos
 # Drag–drop the same XLSX, press “Run All”
 ```
 
-### 4  Score the run
+---
+
+### 4️⃣ Score the run
 
 ```bash
 wfgy score --answers philosophy_80_with_wfgy.xlsx \
@@ -122,29 +128,30 @@ Model-X + WFGY | Correct 80/80 | 100.00 % | Trace OK
 
 Swap `--no-wfgy` to see the raw model score for instant A/B diff.
 
-### 5  Diff vs our sheet (optional)
+---
+
+### 5️⃣ Diff vs our sheet (optional)
 
 ```bash
 wfgy diff philosophy_80_with_wfgy.xlsx \
          philosophy_80_wfgy_gpt4o.xlsx
 ```
 
-Green means match; any red cell means we’re wrong—please open an issue.
+Green means match; any red cell means we’re wrong — please open an issue.
 
 ---
 
-### Why this matters
+## 📌 Why This Matters
 
-* **Transparent** – all files are plain XLSX + markdown.
-* **Model-agnostic** – WFGY is a parasite layer; bigger hosts → bigger lift.
+* **Transparent** – all files are plain XLSX + markdown.  
+* **Model-agnostic** – WFGY is a parasite layer; bigger hosts → bigger lift.  
 * **Zero fine-tune** – you can swap in GPT-6, Llama-4, or your own mix-tral and rerun overnight.
 
-> If your favourite model beats WFGY, let us know—next patch is on us.
-
+> If your favourite model beats WFGY, let us know — next patch is on us.
 
 ---
 
-## Next → GPT-5 + WFGY
+## 📌 Next → GPT-5 + WFGY
 
 - Run same 80 Qs with GPT-5 + WFGY (ETA < 24 h)  
 - Publish side-by-side diff & Zenodo snapshot  
@@ -152,19 +159,17 @@ Green means match; any red cell means we’re wrong—please open an issue.
 
 ---
 
-## Reproducibility Promise
+## 📌 Reproducibility Promise
 
 Open XLSX, open code, open math.  
 No closed weights, no hidden prompts — only audit-ready logic.
-
----
 
 > This isn’t a leaderboard.  
 > It’s a **reasoning audit** — and WFGY is the auditor.
 
 ---
 
-### 🧭 Explore More
+## 🧭 Explore More
 
 | Module                | Description                                              | Link     |
 |-----------------------|----------------------------------------------------------|----------|
@@ -180,7 +185,6 @@ No closed weights, no hidden prompts — only audit-ready logic.
 > Engineers, hackers, and open source builders who supported WFGY from day one.
 
 > <img src="https://img.shields.io/github/stars/onestardao/WFGY?style=social" alt="GitHub stars"> ⭐ Help reach 10,000 stars by 2025-09-01 to unlock Engine 2.0 for everyone  ⭐ <strong><a href="https://github.com/onestardao/WFGY">Star WFGY on GitHub</a></strong>
-
 
 <div align="center">
 
@@ -199,4 +203,3 @@ No closed weights, no hidden prompts — only audit-ready logic.
 [![Blow](https://img.shields.io/badge/Blow-Game%20Logic-purple?style=flat-square)](https://github.com/onestardao/WFGY/tree/main/OS/BlowBlowBlow)
 
 </div>
-
