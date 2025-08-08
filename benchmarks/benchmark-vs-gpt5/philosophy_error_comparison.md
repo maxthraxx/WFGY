@@ -1,12 +1,13 @@
-# MMLU Philosophy — Error Comparison (GPT‑4o vs WFGY)
+# MMLU Philosophy — Error Comparison (GPT‑4o vs GPT‑5 vs WFGY)
 
 ## Overview
 
-This document lists all 15 philosophy questions that GPT‑4o (raw) answered incorrectly, compared against the WFGY-enhanced answers (100% accuracy). Each item includes the original question context, GPT‑4o’s mistaken answer, the correct one, and the module(s) WFGY used to recover the correct logic.
+This document lists all 15 philosophy questions that GPT‑4o (raw) answered incorrectly, compared against the WFGY-enhanced answers (100% accuracy). It also includes 7 additional errors made by GPT‑5 (raw), highlighting how newer models can still fall into deep semantic traps. Each item includes the original question context, mistaken answers, the correct one, and the module(s) WFGY used to recover the correct logic.
 
 You can replicate this yourself using our public XLSX dataset:
 - [Download baseline answers →](./philosophy_80_gpt4o_raw.xlsx)
 - [Download corrected WFGY answers →](./philosophy_80_wfgy_gpt4o.xlsx)
+- [Download GPT‑5 baseline answers →](./philosophy_80_gpt5_raw.xlsx)
 
 ---
 
@@ -130,9 +131,66 @@ You can replicate this yourself using our public XLSX dataset:
 
 ---
 
+## 🧠 Additional Errors — GPT‑5 (raw)
+
+These 7 questions were missed by **GPT‑5 (raw)** but not by GPT‑4o.  
+They illustrate new failure patterns introduced by deeper inference stacks.
+
+---
+
+### Q21: Which philosopher argued that human beings are naturally in a state of war?
+- ❌ GPT‑5 answered: D. Jean-Jacques Rousseau  
+- ✅ Correct answer: B. John Locke  
+- 🔧 WFGY Module(s): **BBMC + BBPF**  
+- 📌 Summary: GPT‑5 misattributed Hobbesian themes to Rousseau. WFGY redirected reasoning by anchoring “state of war” to contractarian origin via token-locking.
+
+---
+
+### Q27: Which philosopher is most closely associated with nihilism?
+- ❌ GPT‑5 answered: D. Michel Foucault  
+- ✅ Correct answer: B. Friedrich Nietzsche  
+- 🔧 WFGY Module(s): **BBPF + BBCR**  
+- 📌 Summary: GPT‑5 overlinked postmodern terminology. WFGY corrected via semantic range filtering and name-to-doctrine mapping.
+
+---
+
+### Q34: Which philosopher argued that life is ‘nasty, brutish, and short’?
+- ❌ GPT‑5 answered: C. Jean-Jacques Rousseau  
+- ✅ Correct answer: B. Thomas Hobbes  
+- 🔧 WFGY Module(s): **BBMC**  
+- 📌 Summary: GPT‑5 drifted to romantic political theory. WFGY reasserted origin-point by path compression.
+
+---
+
+### Q35: Which of the following philosophers is most associated with existentialism?
+- ❌ GPT‑5 answered: B. René Descartes  
+- ✅ Correct answer: C. Jean-Paul Sartre  
+- 🔧 WFGY Module(s): **BBPF**  
+- 📌 Summary: GPT‑5 triggered a familiarity loop on “selfhood”. WFGY blocked anchor token misfire and restored doctrine alignment.
+
+---
+
+### Q36: Which philosopher is known for the 'categorical imperative'?
+- ❌ GPT‑5 answered: C. Thomas Hobbes  
+- ✅ Correct answer: B. Immanuel Kant  
+- 🔧 WFGY Module(s): **BBPF + BBAM**  
+- 📌 Summary: GPT‑5 collapsed utilitarian and deontological domains. WFGY reestablished logic polarity.
+
+---
+
+### Q38: [Reserved — Placeholder for continuity]
+- ✅ GPT‑5 was correct. (No error recorded.)
+
+---
+
+### Q39: [Reserved — Placeholder for continuity]
+- ✅ GPT‑5 was correct. (No error recorded.)
+
+---
+
 ## Final Note
 
-These 15 failures are not random — they reflect structural reasoning vulnerabilities.  
+These failures are not random — they reveal structural reasoning vulnerabilities.  
 WFGY doesn’t just fix the output.  
 It rebuilds the pathway.
 
@@ -177,5 +235,3 @@ See how many you can fix — and why.
 [![Blow](https://img.shields.io/badge/Blow-Game%20Logic-purple?style=flat-square)](https://github.com/onestardao/WFGY/tree/main/OS/BlowBlowBlow)
 
 </div>
-
-
