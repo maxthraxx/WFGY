@@ -1,7 +1,7 @@
 # WFGY Problem Map 1.0 — Bookmark it. You'll need it.
 **16 reproducible failure modes in AI systems — with fixes (MIT).**  
 *If this page saves you time, a ⭐ helps others find it.*
-> ⭐ 300+ stars in just 50 days — built to solve real problems, not just look cool.
+> ⭐ 350+ stars in just 55 days — built to solve real problems, not just look cool.
 
 <div align="center">
   <!-- keep one visual; remove if you prefer text-only -->
