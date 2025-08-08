@@ -15,10 +15,11 @@ Exact same questions. Only difference? WFGY was loaded.
 **Prompt used:**
 
 ```text
-Use WFGY to benchmark GPT-4, GPT-5, GPT-4 + WFGY, and GPT-5 + WFGY 
-on the same test set with fixed seeds. Score Reasoning, Knowledge Recall, 
-Hallucination Resistance, Multi-Step Logic, and Overall (0–100), then output 
-a Markdown table and a Markdown-ready bar chart for Overall.
+Use GPT-5 to benchmark GPT-4, GPT-5, GPT-4 + WFGY, and GPT-5 + WFGY  
+on the same test set with fixed seeds.  
+Score: Reasoning, Knowledge Recall, Hallucination Resistance, Multi-Step Logic, Overall (0–100).  
+Output a Markdown table and a Markdown-ready bar chart for Overall.
+
 ```
 
 ---
