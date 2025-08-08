@@ -9,6 +9,11 @@ Then we’ll benchmark the future — with the tools we already have.”
 
 ---
 
+<img src="./gpt5_vs_wfgy_benchmark_20250808.png" alt="WFGY benchmark outperforms GPT-5" style="max-width:100%; border-radius:12px; margin-top:20px; margin-bottom:20px;">
+
+---
+
+
 ## Introduction
 
 This benchmark is built using **GPT‑4o + WFGY reasoning engine**,  
