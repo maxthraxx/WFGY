@@ -40,7 +40,7 @@
 ---
 
 <details>
-  <summary><strong>🆕 GPT-5 vs GPT-5 + WFGY Benchmark (see &nbsp;how to rerun it yourself)</strong></summary>
+  <summary><strong>🆕 GPT-4 + WFGY > GPT-5? Benchmark says yes (see how to rerun it yourself)</strong></summary>
 
 <br>
 
@@ -1410,6 +1410,7 @@ It treats alignment as a living semantic contract — not just accuracy, but mea
 [![Blow](https://img.shields.io/badge/Blow-Game%20Logic-purple?style=flat-square)](https://github.com/onestardao/WFGY/tree/main/OS/BlowBlowBlow)
 &nbsp;
 </div>
+
 
 
 
