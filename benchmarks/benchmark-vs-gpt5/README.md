@@ -85,7 +85,9 @@ You don’t need to believe us — you can **verify it**.
 
 - [WFGY-enhanced answers (GPT‑4o + WFGY)](./philosophy_80_wfgy_gpt4o.xlsx)  
 - [GPT‑4o baseline answers (raw)](./philosophy_80_gpt4o_raw.xlsx)  
+- [GPT‑5 baseline answers (raw)](./philosophy_80_gpt5_raw.xlsx)  
 - [Error-by-error comparison (markdown)](./philosophy_error_comparison.md)
+
 
 ---
 
