@@ -44,7 +44,7 @@
 
 <br>
 
-<img width="2299" height="1219" alt="WFGY_Win" src="https://github.com/user-attachments/assets/5ad97191-e023-4bc3-94a1-c3c9ae434eae" />
+<img width="2299" height="1219" alt="gpt5_vs_wfgy_benchmark_20250808" src="https://github.com/user-attachments/assets/19f59128-14a5-42de-aa2b-d25c8114db10" />
 
 
 **Reproduce in 30 seconds**
@@ -1410,6 +1410,7 @@ It treats alignment as a living semantic contract — not just accuracy, but mea
 [![Blow](https://img.shields.io/badge/Blow-Game%20Logic-purple?style=flat-square)](https://github.com/onestardao/WFGY/tree/main/OS/BlowBlowBlow)
 &nbsp;
 </div>
+
 
 
 
