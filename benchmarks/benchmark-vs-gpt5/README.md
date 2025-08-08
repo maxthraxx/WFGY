@@ -5,14 +5,16 @@
 
 ---
 
-## 🔍 Accuracy Benchmark — 80 Philosophy Questions
+## 🔍 Simulated Benchmark — Reasoning Scores by Setup
 
 <img src="./gpt5_vs_wfgy_benchmark_20250808.png" width="85%" />
 
-GPT-5 reaches 91%, but **WFGY locks both GPT-4 and GPT-5 at 100%** on the same MMLU Philosophy set.  
-Exact same questions. Only difference? WFGY was loaded.
+Quick simulation using GPT-5 + WFGY PDF.  
+This benchmark **does not use the actual 80 MMLU questions**,  
+but follows the same scoring axes: Reasoning, Recall, Hallucination Resistance, Logic.
 
-**Prompt used:**
+> Results are consistent with full-task evaluations and ideal for stress-testing WFGY’s impact.  
+> For real scores on MMLU-Philosophy, see section below.
 
 ```text
 Use GPT-5 to benchmark GPT-4, GPT-5, GPT-4 + WFGY, and GPT-5 + WFGY  
