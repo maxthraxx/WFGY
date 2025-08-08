@@ -50,10 +50,11 @@
 **Reproduce in 30 seconds**
 
 ```text
-Use WFGY to benchmark GPT-4, GPT-5, GPT-4 + WFGY, and GPT-5 + WFGY 
-on the same test set with fixed seeds. Score Reasoning, Knowledge Recall, 
-Hallucination Resistance, Multi-Step Logic, and Overall (0–100), then output 
-a Markdown table and a Markdown-ready bar chart for Overall.
+Use GPT-5 to benchmark GPT-4, GPT-5, GPT-4 + WFGY, and GPT-5 + WFGY  
+on the same test set with fixed seeds.  
+Score: Reasoning, Knowledge Recall, Hallucination Resistance, Multi-Step Logic, Overall (0–100).  
+Output a Markdown table and a Markdown-ready bar chart for Overall.
+
 ````
 
 1. **Download WFGY PDF** → [WFGY PDF](https://zenodo.org/records/15630969)
@@ -1404,6 +1405,7 @@ It treats alignment as a living semantic contract — not just accuracy, but mea
 [![Blow](https://img.shields.io/badge/Blow-Game%20Logic-purple?style=flat-square)](https://github.com/onestardao/WFGY/tree/main/OS/BlowBlowBlow)
 &nbsp;
 </div>
+
 
 
 
