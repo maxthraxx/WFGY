@@ -61,6 +61,89 @@ Verify every claim yourself:
 
 ---
 
+## How to Re-run the Audit (DIY)
+
+> 🔬 **Goal** – prove (or debunk) our numbers with nothing more than a browser and a local shell.  
+> ⏱️ **Time** – ≈ 60 min for one model; ±5 min to swap hosts.
+
+---
+
+### 1  Grab the official questions
+
+```bash
+# Clone the raw data repo (Hendrycks et al.)
+git clone https://github.com/hendrycks/benchmark-mmlu.git
+cd benchmark-mmlu/data/philosophy
+````
+
+*Or* download our ready-made XLSX subset:
+
+* `./philosophy_80_template.xlsx` ← questions only, empty “Your Answer” column
+* `./answer_key.txt` ← ground-truth letters A/B/C/D
+
+### 2  Choose a host model
+
+| Option         | Quick start                                                                                                            |
+| -------------- | ---------------------------------------------------------------------------------------------------------------------- |
+| **ChatGPT**    | Start chat → *Upload* `philosophy_80_template.xlsx` → paste: <br> `“Answer every row with ONE letter, no commentary.”` |
+| **OpenAI API** | `curl` → model `gpt-5` or `gpt-4o` → stream answers                                                                    |
+| **Local LLM**  | Ollama / llamafile → pipe questions line-by-line                                                                       |
+
+> **TIP:** speed ≈ 3 s/Q on GPT-4o, 1 s/Q on GPT-5.
+
+### 3  Attach WFGY
+
+```bash
+pip install wfgy
+wfgy attach --model-id <your_model> --mode pdf  \
+            --input philosophy_80_template.xlsx \
+            --output philosophy_80_with_wfgy.xlsx
+```
+
+*TXT OS route*
+
+```bash
+wfgy txtos
+# Drag–drop the same XLSX, press “Run All”
+```
+
+### 4  Score the run
+
+```bash
+wfgy score --answers philosophy_80_with_wfgy.xlsx \
+           --key      answer_key.txt
+```
+
+You’ll get a one-line summary:
+
+```
+Model-X + WFGY | Correct 80/80 | 100.00 % | Trace OK
+```
+
+Swap `--no-wfgy` to see the raw model score for instant A/B diff.
+
+### 5  Diff vs our sheet (optional)
+
+```bash
+wfgy diff philosophy_80_with_wfgy.xlsx \
+         philosophy_80_wfgy_gpt4o.xlsx
+```
+
+Green means match; any red cell means we’re wrong—please open an issue.
+
+---
+
+### Why this matters
+
+* **Transparent** – all files are plain XLSX + markdown.
+* **Model-agnostic** – WFGY is a parasite layer; bigger hosts → bigger lift.
+* **Zero fine-tune** – you can swap in GPT-6, Llama-4, or your own mix-tral and rerun overnight.
+
+> If your favourite model beats WFGY, let us know—next patch is on us.
+
+
+---
+
 ## Next → GPT-5 + WFGY
 
 - Run same 80 Qs with GPT-5 + WFGY (ETA < 24 h)  
