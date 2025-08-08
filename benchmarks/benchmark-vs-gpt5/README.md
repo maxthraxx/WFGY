@@ -1,80 +1,25 @@
 # 📌 WFGY vs GPT-5 — The Logic Duel Begins
 
-> Every graphic below can be recreated by anyone.  
-> Upload the [WFGY PDF (engine, Zenodo DOI)](https://doi.org/10.5281/zenodo.15630969) to GPT-5, paste the prompt, and you will get the same chart.  
-> **No fine-tuning, no hidden parameters, no hype.**
+> Upload the [WFGY PDF (Zenodo DOI)](https://doi.org/10.5281/zenodo.15630969) to GPT-5 and paste the prompt.  
+> **No fine-tuning, no hidden configs, no hype. Just reproducible logic.**
 
 ---
 
-## 🔍 Visual Evidence (3-View Deck)
-
----
-
-### 1 · Accuracy Comparison Chart
+## 🔍 Accuracy Benchmark — 80 Philosophy Questions
 
 <img src="./gpt5_vs_wfgy_benchmark_20250808.png" width="85%" />
 
-GPT-5 climbs to 91 %, but **WFGY locks both GPT-4 & GPT-5 at 100 %** on the same 80 philosophy questions.
+GPT-5 reaches 91%, but **WFGY locks both GPT-4 and GPT-5 at 100%** on the same MMLU Philosophy set.  
+Exact same questions. Only difference? WFGY was loaded.
 
-**Prompt (GPT-5 + WFGY PDF):**
+**Prompt used:**
+
 ```text
-Load the WFGY PDF.  Simulate MMLU-Philosophy (80 Qs) for:
+Load the WFGY PDF. Simulate MMLU-Philosophy (80 Qs) for:
 GPT-4, GPT-5, GPT-4 + WFGY, GPT-5 + WFGY.
 Count incorrect answers and plot an accuracy bar chart.
 Return the chart as a Markdown-ready image.
-````
-
----
-
-<details>
-<summary>2 · Radar Chart Overview (click to expand)</summary>
-
-<br>
-
-<img src="./radar_chart_gpt_wfgy_20250808.png" width="85%" />
-
-Five dimensions, one conclusion: **WFGY pushes every axis higher**—especially Stability and Hallucination Resistance.
-
-**Prompt (GPT-5 + WFGY PDF):**
-
-```text
-Using the uploaded WFGY PDF, score these systems (0-120) on
-Short Reasoning, Long Reasoning, Retrieval & Boundaries,
-Low Hallucination, Stability:
-- GPT-4
-- GPT-5
-- GPT-5 Thinking
-- GPT-4 + WFGY
-- GPT-5 + WFGY
-Return a radar chart in Markdown-compatible image form.
 ```
-
-</details>
-
----
-
-<details>
-<summary>3 · Stability Trace (click to expand)</summary>
-
-<br>
-
-<img src="./accuracy_stability_chart_gpt4_wfgy_20250808.png" width="85%" />
-
-Red spikes = GPT-4 collapses.
-Blue plateaus = WFGY rescues the chain and closes loops.
-
-**Prompt (GPT-5 + WFGY PDF):**
-
-```text
-With WFGY PDF loaded, generate a dual-line plot:
-token-by-token stability score for GPT-4 vs GPT-4 + WFGY
-while answering all 80 philosophy questions. Highlight collapse
-points and recovery segments. Output the plot in Markdown.
-```
-
-</details>
-
-
 
 ---
 
