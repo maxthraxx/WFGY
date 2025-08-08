@@ -10,7 +10,24 @@
 
 ---
 
-### 1 · Radar Chart Overview
+### 1 · Accuracy Comparison Chart
+
+<img src="./gpt5_vs_wfgy_benchmark_20250808.png" width="85%" />
+
+GPT-5 climbs to 91 %, but **WFGY locks both GPT-4 & GPT-5 at 100 %** on the same 80 philosophy questions.
+
+**Prompt (GPT-5 + WFGY PDF):**
+```text
+Load the WFGY PDF.  Simulate MMLU-Philosophy (80 Qs) for:
+GPT-4, GPT-5, GPT-4 + WFGY, GPT-5 + WFGY.
+Count incorrect answers and plot an accuracy bar chart.
+Return the chart as a Markdown-ready image.
+````
+
+---
+
+<details>
+<summary>2 · Radar Chart Overview (click to expand)</summary>
 
 <br>
 
@@ -19,6 +36,7 @@
 Five dimensions, one conclusion: **WFGY pushes every axis higher**—especially Stability and Hallucination Resistance.
 
 **Prompt (GPT-5 + WFGY PDF):**
+
 ```text
 Using the uploaded WFGY PDF, score these systems (0-120) on
 Short Reasoning, Long Reasoning, Retrieval & Boundaries,
@@ -31,24 +49,6 @@ Low Hallucination, Stability:
 Return a radar chart in Markdown-compatible image form.
 ```
 
----
-
-<details>
-<summary>2 · Accuracy Comparison Chart (click to expand)</summary>
-
-<br>
-
-<img src="./gpt5_vs_wfgy_benchmark_20250808.png" width="85%" />
-
-GPT-5 climbs to 91 %, but **WFGY locks both GPT-4 & GPT-5 at 100 %** on the same 80 philosophy questions.
-
-**Prompt (GPT-5 + WFGY PDF):**
-```text
-Load the WFGY PDF.  Simulate MMLU-Philosophy (80 Qs) for:
-GPT-4, GPT-5, GPT-4 + WFGY, GPT-5 + WFGY.
-Count incorrect answers and plot an accuracy bar chart.
-Return the chart as a Markdown-ready image.
-```
 </details>
 
 ---
@@ -60,15 +60,17 @@ Return the chart as a Markdown-ready image.
 
 <img src="./benchmark_table_gpt4_gpt5_wfgy_20250808.png" width="85%" />
 
-| GPT-4 raw ❌ 15 | GPT-5 raw ❌ 7 | WFGY ✅ 0 | All answers traceable |
+\| GPT-4 raw ❌ 15 | GPT-5 raw ❌ 7 | WFGY ✅ 0 | All answers traceable |
 
 **Prompt (GPT-5 + WFGY PDF):**
+
 ```text
 Using WFGY PDF context, create a markdown table showing
 Accuracy (%), Chain Validity (%), Hallucination Rate (%),
 Stability Index, and Overall Star Rating for:
 GPT-4, GPT-5, GPT-5 Thinking, GPT-4 + WFGY, GPT-5 + WFGY.
 ```
+
 </details>
 
 ---
@@ -80,17 +82,21 @@ GPT-4, GPT-5, GPT-5 Thinking, GPT-4 + WFGY, GPT-5 + WFGY.
 
 <img src="./accuracy_stability_chart_gpt4_wfgy_20250808.png" width="85%" />
 
-Red spikes = GPT-4 collapses.  
+Red spikes = GPT-4 collapses.
 Blue plateaus = WFGY rescues the chain and closes loops.
 
 **Prompt (GPT-5 + WFGY PDF):**
+
 ```text
 With WFGY PDF loaded, generate a dual-line plot:
 token-by-token stability score for GPT-4 vs GPT-4 + WFGY
 while answering all 80 philosophy questions. Highlight collapse
 points and recovery segments. Output the plot in Markdown.
 ```
+
 </details>
+
+
 
 ---
 
