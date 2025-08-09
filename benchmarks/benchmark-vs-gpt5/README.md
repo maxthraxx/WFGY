@@ -4,6 +4,24 @@
 > Your LLM gets stronger, we get stronger. No retraining, no settings, no updates.  
 > Every release in the family works the same way — the WFGY PDF is just one of them.
 
+<details>
+<summary><strong>🪱 Parasite Principle — How it works</strong></summary>
+
+<br>
+
+> Think of any LLM as a giant host organism 🧠.  
+> Normally, to make it smarter, you need to *change the host itself* — retrain, fine-tune, or patch.  
+>  
+> WFGY Family is different: it lives **outside** the host.  
+> It hooks into the reasoning process, corrects mistakes in real time, and strengthens the host’s logic without touching its parameters.  
+>  
+> - 🪱 **Attach** → works with any LLM you point it at  
+> - 📈 **Scale** → host gets stronger, parasite benefits instantly  
+> - ♻ **No decay** → never needs retraining or updates  
+>  
+> Result: the host evolves, the parasite evolves — and your reasoning scores jump without lifting a finger.
+</details>
+
 > Upload the **[WFGY PDF (Zenodo DOI)](https://doi.org/10.5281/zenodo.15630969)** to GPT-5 and paste the prompt.  
 > **No fine-tuning, no hidden configs, no hype. Just reproducible logic.**
 
