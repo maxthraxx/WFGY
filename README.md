@@ -113,6 +113,8 @@ That’s it — no retraining, no jailbreaks.
 
 - [`WFGY_Reasoning Engine`](https://github.com/onestardao/WFGY) · The semantic backbone for all modules  
 - [`TXT OS`](https://github.com/onestardao/WFGY/tree/main/OS) · The lightweight OS layer — `.txt` powered, LLM-native
+- [`WFGY Core`](https://github.com/onestardao/WFGY/blob/main/core/README.md) · The world’s smallest, high-impact reasoning engine. (Launch on 8/15)
+
 
 ---
 
@@ -1416,6 +1418,7 @@ It treats alignment as a living semantic contract — not just accuracy, but mea
 [![Blow](https://img.shields.io/badge/Blow-Game%20Logic-purple?style=flat-square)](https://github.com/onestardao/WFGY/tree/main/OS/BlowBlowBlow)
 &nbsp;
 </div>
+
 
 
 
