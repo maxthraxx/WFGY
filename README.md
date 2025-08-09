@@ -30,7 +30,7 @@
 &nbsp;
 [![HF Space](https://img.shields.io/badge/Live%20Demo-HuggingFace-blue?logo=huggingface)](https://huggingface.co/spaces/OneStarDao/wfgy-demo)
 &nbsp;
-[![solved](https://img.shields.io/badge/Problems%20Solved-16%2F16-blueviolet)](https://github.com/onestardao/WFGY/blob/main/ProblemMap)
+[![solved](https://img.shields.io/badge/Problems%20Solved-16%2F16-blueviolet)](https://github.com/onestardao/WFGY/blob/main/ProblemMap/README.md)
 &nbsp;
 [![DOI](https://zenodo.org/badge/996124831.svg)](https://doi.org/10.5281/zenodo.16635020)
 &nbsp;
@@ -1412,6 +1412,7 @@ It treats alignment as a living semantic contract — not just accuracy, but mea
 [![Blow](https://img.shields.io/badge/Blow-Game%20Logic-purple?style=flat-square)](https://github.com/onestardao/WFGY/tree/main/OS/BlowBlowBlow)
 &nbsp;
 </div>
+
 
 
 
