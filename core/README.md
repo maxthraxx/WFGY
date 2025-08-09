@@ -8,8 +8,8 @@ A paste-and-run reasoning engine that merges classic **WFGY** with the **Drunk T
 
 | File               | Best for                                   | Link |
 |--------------------|---------------------------------------------|------|
-| **WFGY Core**      | Teams, audits, teaching (full spec + Annex A/B) | [Get →](./WFGY%20Core) |
-| **WFGY Core Mini** | Social posts, issues, quick starts (exactly 30 lines) | [Get →](./WFGY%20Core%20Mini) |
+| **WFGY Core**      | Teams, audits, teaching (full spec + Annex A/B) | _TBD |
+| **WFGY Core Mini** | Social posts, issues, quick starts (exactly 30 lines) | _TBD |
 
 > Both editions are ASCII-only, zero-deps, cross-platform. Paste into any LLM and type **Run WFGY**.
 
