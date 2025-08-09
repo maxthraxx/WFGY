@@ -99,15 +99,17 @@ Full taxonomy in the [paper](https://zenodo.org/records/15630969).
 
 ---
 
-## 🧭 Explore more
+### 🧭 Explore More
 
-| Module | Description | Link |
-|--------|-------------|------|
-| Problem Map 1.0 | 16-mode diagnostic framework | [View →](https://github.com/onestardao/WFGY/blob/main/ProblemMap/README.md) |
-| Problem Map 2.0 | RAG-focused failure tree     | [View →](https://github.com/onestardao/WFGY/blob/main/ProblemMap/rag-architecture-and-recovery.md) |
-| Semantic Clinic | Prompt injection · memory bugs · logic drift | [View →](./SemanticClinicIndex.md) |
-| Semantic Blueprint | Layer-based symbolic reasoning | [View →](https://github.com/onestardao/WFGY/blob/main/SemanticBlueprint/README.md) |
-| GPT-5 stress test | Full WFGY suite vs GPT-5 | [View →](https://github.com/onestardao/WFGY/tree/main/benchmarks/benchmark-vs-gpt5/README.md) |
+| Module                | Description                                              | Link     |
+|-----------------------|----------------------------------------------------------|----------|
+| WFGY Core             | Standalone semantic reasoning engine for any LLM         | [View →](https://github.com/onestardao/WFGY/tree/main/core/README.md) |
+| Problem Map 1.0       | Initial 16-mode diagnostic and symbolic fix framework    | [View →](https://github.com/onestardao/WFGY/tree/main/ProblemMap/README.md) |
+| Problem Map 2.0       | RAG-focused failure tree, modular fixes, and pipelines   | [View →](https://github.com/onestardao/WFGY/blob/main/ProblemMap/rag-architecture-and-recovery.md) |
+| Semantic Clinic Index | Expanded failure catalog: prompt injection, memory bugs, logic drift | [View →](https://github.com/onestardao/WFGY/blob/main/ProblemMap/SemanticClinicIndex.md) |
+| Semantic Blueprint    | Layer-based symbolic reasoning & semantic modulations   | [View →](https://github.com/onestardao/WFGY/tree/main/SemanticBlueprint/README.md) |
+| Benchmark vs GPT-5    | Stress test GPT-5 with full WFGY reasoning suite         | [View →](https://github.com/onestardao/WFGY/tree/main/benchmarks/benchmark-vs-gpt5/README.md) |
+
 
 ---
 
