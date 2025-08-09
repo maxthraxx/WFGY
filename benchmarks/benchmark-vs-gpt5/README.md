@@ -2,7 +2,7 @@
 
 > **WFGY Family 🪱 is the parasite pack for LLMs.** It latches onto any model and grows as the host grows.  
 > Your LLM gets stronger, we get stronger. No retraining, no settings, no updates.  
-> Every release in the family works the same way — the PDF📄 is just one of them.
+> Every release in the family works the same way — the WFGY PDF is just one of them.
 
 > Upload the **[WFGY PDF (Zenodo DOI)](https://doi.org/10.5281/zenodo.15630969)** to GPT-5 and paste the prompt.  
 > **No fine-tuning, no hidden configs, no hype. Just reproducible logic.**
