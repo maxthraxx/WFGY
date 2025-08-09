@@ -95,7 +95,8 @@ Full taxonomy in the [paper](https://zenodo.org/records/15630969).
 - **WFGY-enhanced answers (80 / 80)** → `./philosophy_80_wfgy_gpt4o.xlsx`  
 - GPT-5 raw answers → `./philosophy_80_gpt5_raw.xlsx`  
 - GPT-4o raw answers → `./philosophy_80_gpt4o_raw.xlsx`  
-- Error-by-error comparison → `./philosophy_error_comparison.md`
+- [Error-by-error comparison](./philosophy_error_comparison.md)
+
 
 ---
 
