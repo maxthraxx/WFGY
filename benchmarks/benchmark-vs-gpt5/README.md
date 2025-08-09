@@ -14,7 +14,7 @@
 
 ---
 
-## A. 🔍 Quick Simulation — reasoning scores by setup
+## A. 🔍 Quick Simulation — reasoning scores by setup (≈ 60 s)
 
 <img src="./gpt5_vs_wfgy_benchmark_20250808.png" width="85%" />
 
@@ -33,7 +33,7 @@ Output a Markdown table and a Markdown-ready bar chart for Overall.
 
 ---
 
-## B. 🧪 Full 80 Q MMLU-Philosophy Benchmark
+## B. 🧪 Full 80 Q MMLU-Philosophy Benchmark (≈ 60 min) 
 
 ### 1. Replicate it yourself
 
