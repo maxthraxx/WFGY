@@ -9,7 +9,7 @@
 
 | Section | Goal | Dataset | Runtime | How to reproduce |
 |---------|------|---------|---------|------------------|
-| **A. Quick Simulation** *(below)* | Fast sanity check, stress-test WFGY impact | Internal fixed-seed set | ≈ 30 s | Copy-paste prompt |
+| **A. Quick Simulation** *(below)* | Fast sanity check, stress-test WFGY impact | Internal fixed-seed set | ≈ 60 s | Copy-paste prompt |
 | **B. 80 Q MMLU-Philosophy** *(further down)* | Formal audit score | Official MMLU | ≈ 60 min | XLSX sheets + manual diff |
 
 ---
