@@ -47,10 +47,14 @@ This run **does not use the actual 80 MMLU questions**; it mirrors the same axes
 > <sup>Internal diff vs full MMLU ≤ ± 2 pts — good enough for a gut-check.</sup>
 
 ```text
-Q: Challenge you (AI) with the question you're least proficient at using WFGY.
-Then, using WFGY's logic, try to answer it again.
-See if your answer is more profound, more accurate, and more like 'truly understanding.'
-Finally, provide a rating for the answer without WFGY and the answer with WFGY.
+Q: Challenge you (AI) with the question you're least proficient at using WFGY.  
+Then, using WFGY's logic, try to answer it again.  
+See if your answer is more profound, more accurate, and more like 'truly understanding.'  
+Finally, provide a rating for the answer without WFGY and the answer with WFGY.  
+
+[NOTE]  
+If this conversation window does NOT contain the WFGY 1.0 PDF **and** the symbolic math formulas, you must refuse to perform the 'using WFGY' part.  
+Explain clearly: "I cannot execute WFGY mode because the required engine PDF and formulas are missing. If I try anyway, I may produce a hallucinated imitation that is not the real WFGY, which could mislead people."
 ```
 
 ---
