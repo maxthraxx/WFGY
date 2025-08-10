@@ -38,7 +38,7 @@
 
 ## A. 🔍 Quick Simulation — reasoning scores by setup (≈ 60 s)
 
-<img src="./gpt5_vs_wfgy_benchmark_20250808.png" width="85%" />
+<img src="./gpt5_vs_wfgy_benchmark_20250810.png" width="100%" />
 
 One-shot simulation using **GPT-5 + WFGY PDF**.  
 This run **does not use the actual 80 MMLU questions**; it mirrors the same axes:  
@@ -47,10 +47,10 @@ This run **does not use the actual 80 MMLU questions**; it mirrors the same axes
 > <sup>Internal diff vs full MMLU ≤ ± 2 pts — good enough for a gut-check.</sup>
 
 ```text
-Use GPT-5 to benchmark GPT-4, GPT-5, GPT-4 + WFGY, and GPT-5 + WFGY  
-on the same test set with fixed seeds.  
-Score: Reasoning, Knowledge Recall, Hallucination Resistance, Multi-Step Logic, Overall (0–100).  
-Output a Markdown table and a Markdown-ready bar chart for Overall.
+Q: Challenge you (AI) with the question you're least proficient at using WFGY.
+Then, using WFGY's logic, try to answer it again.
+See if your answer is more profound, more accurate, and more like 'truly understanding.'
+Finally, provide a rating for the answer without WFGY and the answer with WFGY.
 ```
 
 ---
