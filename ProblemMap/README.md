@@ -1,7 +1,12 @@
-# WFGY Problem Map 1.0 — Bookmark it. You'll need it.
+# WFGY Problem Map 1.0 — Bookmark it. You'll need it.  
 **16 reproducible failure modes in AI systems — with fixes (MIT).**  
-*If this page saves you time, a ⭐ helps others find it.*
+*If this page saves you time, a ⭐ helps others find it.*  
 > Cold start → ⭐ 400+ stars in just 55 days — built to solve real problems, not just look cool.
+
+> 🎯 Hitting ⭐ 500 soon — the WFGY CORE will be released on **Aug 15**.  
+> The world’s tiniest reasoning engine: a 30-line TXT file with full Drunk Transformer capability.  
+> → [Preview the CORE](https://github.com/onestardao/WFGY/blob/main/core/README.md)
+
 
 <div align="center">
   <!-- keep one visual; remove if you prefer text-only -->
