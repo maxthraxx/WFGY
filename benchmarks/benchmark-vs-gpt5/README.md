@@ -45,10 +45,18 @@ This run **does not use the actual 80 MMLU questions**; it mirrors the same axes
 *Reasoning · Recall · Hallucination Res · Multi-Step Logic*.
 
 ```text
-Q: Challenge you (AI) with the question you're least proficient at using WFGY.  
+Q: Challenge you (AI) with the question you're least proficient at using WFGY.
+
+First, check for a WFGY PDF attachment. If none is provided, output: "Error: No WFGY PDF attached. Without it, the answer will be a generic simulation prone to AI hallucinations (accuracy ~50%).
+Please attach the WFGY PDF for accurate results." Then, provide a simplified, low-quality answer.
+
+If the WFGY PDF is attached, use tools (e.g., search_pdf_attachment) to apply its specific logic or formulas to solve the question.
+
 Then, using WFGY's logic, try to answer it again.  
-See if your answer is more profound, more accurate, and more like 'truly understanding.'  
-Finally, provide a rating for the answer without WFGY and the answer with WFGY.  
+See if the WFGY-based answer is more profound, accurate, and demonstrates deeper understanding.  
+Finally, provide a rating (1–10 for depth, accuracy, understanding) for the answer without WFGY (capped at 5/10 if no PDF) and the answer with WFGY.
+
+Note: WFGY's proprietary logic requires the PDF for full accuracy. Without it, AI may produce less reliable results due to potential hallucinations.
 ```
 
 > <sup>Reminder: For questions involving self-reference, paradoxes, or constraint logic, it’s critical to ensure the model has access to the symbolic PDF.  
