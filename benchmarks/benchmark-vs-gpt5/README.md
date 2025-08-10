@@ -44,14 +44,16 @@ One-shot simulation using **GPT-5 + WFGY PDF**.
 This run **does not use the actual 80 MMLU questions**; it mirrors the same axes:  
 *Reasoning · Recall · Hallucination Res · Multi-Step Logic*.
 
-> <sup>Internal diff vs full MMLU ≤ ± 2 pts — good enough for a gut-check.</sup>
-
 ```text
 Q: Challenge you (AI) with the question you're least proficient at using WFGY.  
 Then, using WFGY's logic, try to answer it again.  
 See if your answer is more profound, more accurate, and more like 'truly understanding.'  
 Finally, provide a rating for the answer without WFGY and the answer with WFGY.  
 ```
+
+> <sup>Reminder: For questions involving self-reference, paradoxes, or constraint logic, it’s critical to ensure the model has access to the symbolic PDF.  
+> Without it, the model may generate answers that sound fluent but collapse semantically — classic hallucinations masked as reasoning.  
+> Always verify that the AI has properly loaded the tool before testing. No tool, no defense.</sup>  
 
 ---
 
