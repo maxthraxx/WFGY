@@ -7,17 +7,20 @@ _What if you could see the whole RAG pipeline from above — and fix every failu
 
 ---
 
-> 🛡️ **WFGY acts like a semantic firewall** — it runs entirely at the language level.  
-> You don’t need to modify your retriever, database, vector index, or LLM backend.  
-> Just drop in a small fix layer before inference, and your pipeline starts behaving.  
+> 🛡️ **WFGY is a symbolic reasoning engine** — built to stabilize LLM pipelines through a semantic firewall layer.  
+> It runs entirely at the language level: no code injection, no infra patching.  
+> You don’t need to modify your retriever, vector DB, index format, or LLM backend.  
+>
+> Just download the **TXT OS** package (MIT-licensed), which contains the full WFGY formulas and usage prompts.  
+> Drop in a small fix layer before inference — and your pipeline starts behaving.  
 >
 > Many developers are surprised how easy it is to apply —  
-> because there's no config migration, no infra patching, and no fragile runtime hooks.  
+> because there's no config migration, no system rebuild, and no fragile runtime hooks.  
 > You just ask your AI:  
-> _“Use the WFGY formulas to fix the retrieval failure in this prompt.”_  
+> _“Use the WFGY formulas from my TXTOS to fix the retrieval failure in this prompt.”_  
 > and it works — often on the first try.
 >
-> If you’ve been debugging hallucinations, misaligned chunks, or broken fallback logic,  
+> If you’ve been debugging hallucinations, misaligned chunks, silent resets, or broken fallback logic,  
 > this map will show you where it’s breaking — and how to fix it structurally.
 
 
