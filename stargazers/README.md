@@ -16,6 +16,7 @@ Their support is a public signal—transparent, verifiable, and forever recorded
 | davidkimai     | Context-Engineering (2.8k★), Recursive Labs, AGI/context research          | ![](./images/davidkimai_star.png)                | [View stargazer proof](https://github.com/davidkimai?tab=stars)  |
 | 4350pChris     | slack-vuevisualizer (99★), vike-vue contributor; full stack dev from Germany, UI semantics & OSS advocate | ![](./images/4350pChris_star.png)                | [View stargazer proof](https://github.com/4350pChris?tab=stars) |
 | pthom          | imgui_bundle (915★), hello_imgui (781★), imgui_manual (363★); GUI, C++/Python open source advocate | ![](./images/pthom_star.png)     | [View stargazer proof](https://github.com/pthom?tab=stars)       |
+| mpontus        | react-modal-hook (255★), webpack-react (56★), 388★ total; high-activity TypeScript/JavaScript OSS dev | ![](./images/mpontus_star.png)                   | [View stargazer proof](https://github.com/mpontus?tab=stars)     |
 | sequoiar       | node-android (628★), peer-vnc (339★); China P2P/AI/robotics builder        | ![](./images/sequoiar_star.png)                  | [View stargazer proof](https://github.com/sequoiar?tab=stars)    |
 | yamiodymel     | tocas (590★), tunalog (414★); Taiwan full stack dev/UIUX                   | ![](./images/yamiodymel_star.png)                | [View stargazer proof](https://github.com/YamiOdymel?tab=stars)  |
 | jinweijie      | notify-me (579★), Python/Android developer, China                          | ![](./images/jinweijie_star.png)                 | [View stargazer proof](https://github.com/jinweijie?tab=stars)   |
@@ -25,6 +26,7 @@ Their support is a public signal—transparent, verifiable, and forever recorded
 | sogrey         | Developer of Android-Kotlin-Drak-UE tools; versatile engineer with personal site and high GitHub activity | ![](./images/sogrey_star.png)                    | [View stargazer proof](https://github.com/Sogrey?tab=stars)     |
 | schnoog        | Joystick_ESP32S2 (77★); Scientist in chemistry, Arduino/C++ hobbyist dev   | ![](./images/schnoog_star.png)                   | [View stargazer proof](https://github.com/schnoog?tab=stars)     |
 | jakevossen5    | Apple visionOS UI Engineer, ex-Amazon/TI, compiler MS, US                  | ![](./images/jakevossen5_star.png)               | [View stargazer proof](https://github.com/jakevossen5?tab=stars) |
+
 
 
 
