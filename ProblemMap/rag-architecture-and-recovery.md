@@ -10,6 +10,8 @@ _What if you could see the whole RAG pipeline from above — and fix every failu
 <details>
 <summary>💬 A quick message from PSBigBig (creator of WFGY) — please read this before diving in!</summary>
 
+<br>
+
 > 💡 Over the past few months, I’ve helped dozens of RAG developers escape endless hallucinations,  
 > broken fallbacks, index mismatches, and that nightmare bug where “everything looks fine but nothing works.”  
 > If you’ve felt that pain — this message is for you. 👇
