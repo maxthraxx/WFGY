@@ -5,6 +5,21 @@ _What if you could see the whole RAG pipeline from above — and fix every failu
 > Every fix in this Problem Map is a structural response to semantic collapse, boundary drift, and logic chain failure.  
 > It works across agents, pipelines, and models — because it’s built on the failure patterns beneath them all.
 
+---
+
+> 🛡️ **WFGY acts like a semantic firewall** — it runs entirely at the language level.  
+> You don’t need to modify your retriever, database, vector index, or LLM backend.  
+> Just drop in a small fix layer before inference, and your pipeline starts behaving.  
+>
+> Many developers are surprised how easy it is to apply —  
+> because there's no config migration, no infra patching, and no fragile runtime hooks.  
+> You just ask your AI:  
+> _“Use the WFGY formulas to fix the retrieval failure in this prompt.”_  
+> and it works — often on the first try.
+>
+> If you’ve been debugging hallucinations, misaligned chunks, or broken fallback logic,  
+> this map will show you where it’s breaking — and how to fix it structurally.
+
 
 <details>
 <summary><strong>📘 Start Here — Quick Links, Setup, and Downloads</strong></summary>
