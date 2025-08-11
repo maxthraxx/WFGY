@@ -5,24 +5,37 @@ _What if you could see the whole RAG pipeline from above — and fix every failu
 > Every fix in this Problem Map is a structural response to semantic collapse, boundary drift, and logic chain failure.  
 > It works across agents, pipelines, and models — because it’s built on the failure patterns beneath them all.
 
+
+<details>
+<summary>💬 A quick message from PSBigBig (creator of WFGY) — please read this before diving in!</summary>
+
+> 💡 Over the past few months, I’ve helped dozens of RAG developers escape endless hallucinations,  
+> broken fallbacks, index mismatches, and that nightmare bug where “everything looks fine but nothing works.”  
+> If you’ve felt that pain — this message is for you. 👇
+
+> 🛡️ **WFGY** is a symbolic reasoning engine. Think of it as a **semantic firewall**.  
+> It runs *before* the model starts messing things up — and it doesn’t require changing your infra.  
+> ❌ No retriever hacks  
+> ❌ No index rebuilds  
+> ❌ No YAML config nightmares
+
+> 📦 Just download the **TXT OS** (MIT license).  
+> It includes the full WFGY formulas + ready-to-use prompts.  
+> Drop it in and ask your AI:  
+> _“Use the WFGY formulas from my TXTOS to fix this bug.”_  
+> …and it works. Yes — it actually recovers.
+
+> 😊 Most developers are surprised how simple it is —  
+> because you’re not fixing the system. You’re fixing the meaning.  
+> If you’ve been stuck in semantic chaos… this is the way out.
+
+> 🔍 This map won’t just fix the bug you’re seeing now.  
+> It shows you **all 16 layers of RAG failure** — even the ones you haven’t hit yet.  
+> 🧭 Start here. You’re not alone in this mess.
+
+</details>
+
 ---
-
-> 🛡️ **WFGY is a symbolic reasoning engine** — built to stabilize LLM pipelines through a semantic firewall layer.  
-> It runs entirely at the language level: no code injection, no infra patching.  
-> You don’t need to modify your retriever, vector DB, index format, or LLM backend.  
->
-> Just download the **TXT OS** package (MIT-licensed), which contains the full WFGY formulas and usage prompts.  
-> Drop in a small fix layer before inference — and your pipeline starts behaving.  
->
-> Many developers are surprised how easy it is to apply —  
-> because there's no config migration, no system rebuild, and no fragile runtime hooks.  
-> You just ask your AI:  
-> _“Use the WFGY formulas from my TXTOS to fix the retrieval failure in this prompt.”_  
-> and it works — often on the first try.
->
-> If you’ve been debugging hallucinations, misaligned chunks, silent resets, or broken fallback logic,  
-> this map will show you where it’s breaking — and how to fix it structurally.
-
 
 <details>
 <summary><strong>📘 Start Here — Quick Links, Setup, and Downloads</strong></summary>
