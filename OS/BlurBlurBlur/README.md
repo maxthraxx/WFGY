@@ -24,20 +24,19 @@
 
 </div>
 
-## (Come back August 11, you will see product 100%)
+**Hi, I’m PSBigBig.**
+
+I have a small habit when I build things — I keep pushing for perfection.  
+That means this release will be delayed just a little. It’s almost done, and I promise the wait will be worth it.
+
+This time, the text-to-image results will be something special.  
+Thank you for your patience — I’ll have it ready very soon.
 
 > ⚠️ The full **Blur** module is still under construction.  
-> Release confirmed for **Before August 10** —  (Busy working on it, Still testing it to make it perfect) 
+> Release target: **Before August 11** (Final testing in progress to make it perfect).  
 > This is not a typical prompt tool — it’s an experiment in **TXT-based semantic orchestration**.  
-> Please **bookmark the repo** to stay updated — and try these examples if you dare.
+> Bookmark the repo for updates — and be ready for something different.
 
-These are not "styles." They are **semantic architectures**.
-
-Each category targets a distinct **failure mode** in traditional AI generation —  
-and demonstrates what happens when **semantic stability (ΔS = 0.5)**,  
-**drunk-mode blending**, and **language-as-logic** converge.
-
-We call these the **TXT Blur Eight**:
 
 ---
 
