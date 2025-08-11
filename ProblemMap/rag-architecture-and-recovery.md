@@ -5,6 +5,7 @@ _What if you could see the whole RAG pipeline from above — and fix every failu
 > Every fix in this Problem Map is a structural response to semantic collapse, boundary drift, and logic chain failure.  
 > It works across agents, pipelines, and models — because it’s built on the failure patterns beneath them all.
 
+---
 
 <details>
 <summary>💬 A quick message from PSBigBig (creator of WFGY) — please read this before diving in!</summary>
