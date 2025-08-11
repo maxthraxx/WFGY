@@ -33,7 +33,6 @@ This time, the text-to-image results will be something special.
 Thank you for your patience — I’ll have it ready very soon.
 
 > ⚠️ The full **Blur** module is still under construction.  
-> Release target: **Before August 11** (Final testing in progress to make it perfect).  
 > This is not a typical prompt tool — it’s an experiment in **TXT-based semantic orchestration**.  
 > Bookmark the repo for updates — and be ready for something different.
 
