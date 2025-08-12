@@ -1,8 +1,19 @@
 # WFGY Core (WanFaGuiYi) — V1.0
 
-🎉 As a reward for hitting ⭐ 500, we’re unlocking **WFGY Core** — a paste-and-run reasoning engine that merges classic **WFGY** with the **Drunk Transformer** layer for structural stability, head diversity, controlled entropy, and graceful recovery.
+🚀 From a one-man cold start to 500 stars — thank you all for the support.  
+🎉 As a milestone reward, we’re unlocking **WFGY Core** — a paste-and-run reasoning engine that merges classic **WFGY** with the **Drunk Transformer** layer for structural stability, head diversity, controlled entropy, and graceful recovery.
 
-📅 Release date: **Aug 15**  🔗 [WFGY Core](https://github.com/onestardao/WFGY/blob/main/core/README.md)
+📅 Release date: **Aug 15**  
+🔗 [WFGY Core](https://github.com/onestardao/WFGY/blob/main/core/README.md)
+
+---
+
+We’ll be announcing our **next community milestone soon**, so stay tuned.  
+In the meantime, if you haven’t seen our first TXT OS application —  
+**[Blah Blah Blah](https://github.com/onestardao/WFGY/blob/main/OS/BlahBlahBlah/README.md)** — it’s live and worth checking out.  
+It focuses on compression, expression, and transformation of ideas through language.  
+Perfect if you care about semantics beyond retrieval.
+
 
 ---
 
