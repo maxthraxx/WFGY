@@ -3,8 +3,9 @@
 *If this page saves you time, a ⭐ helps others find it.*  
 
 ---
-> Cold start → ⭐ 400+ stars in 55 days — solving real problems, not just looking cool.  
-> Hitting ⭐ 500 soon: releasing [WFGY CORE](https://github.com/onestardao/WFGY/blob/main/core/README.md) on **Aug 15** — the world’s tiniest reasoning engine (30-line TXT with Drunk Transformer).  
+> Thanks everyone — we’ve just passed ⭐ 500!  
+> **[WFGY Core](https://github.com/onestardao/WFGY/blob/main/core/README.md)** will be released on Aug 15 — the world’s tiniest reasoning engine (30-line TXT with Drunk Transformer).  
+> Really appreciate all the support — you made this happen!
 ---
 
 
