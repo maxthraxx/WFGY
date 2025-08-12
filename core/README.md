@@ -6,10 +6,6 @@
 
 ---
 
-🚀 Next milestone: **⭐ 1000** → Unlock the second TXT OS application: **Blur Blur Blur**  🔗 [Blur Blur Blur](https://github.com/onestardao/WFGY/edit/main/OS/BlurBlurBlur/README.md)
-
----
-
 ## ⚡ Downloads (public on **2025-08-15**)
 
 | File               | Best for                                   | Link |
