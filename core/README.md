@@ -1,6 +1,12 @@
 # WFGY Core (WanFaGuiYi) — V1.0
 
-A paste-and-run reasoning engine that merges classic **WFGY** with the **Drunk Transformer** layer for structural stability, head diversity, controlled entropy, and graceful recovery.
+🎉 As a reward for hitting ⭐ 500, we’re unlocking **WFGY Core** — a paste-and-run reasoning engine that merges classic **WFGY** with the **Drunk Transformer** layer for structural stability, head diversity, controlled entropy, and graceful recovery.
+
+📅 Release date: **Aug 15**  🔗 [WFGY Core](https://github.com/onestardao/WFGY/blob/main/core/README.md)
+
+---
+
+🚀 Next milestone: **⭐ 1000** → Unlock the second TXT OS application: **Blur Blur Blur**  🔗 [Blur Blur Blur](https://github.com/onestardao/WFGY/edit/main/OS/BlurBlurBlur/README.md)
 
 ---
 
