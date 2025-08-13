@@ -6,6 +6,11 @@ A model’s **own output** sneaks back into the evidence pipeline and later appe
 **Why it matters**  
 Once re-entry happens, your guardrails degrade: “evidence” now contains model text, not corpus facts. This creates **runaway plausibility** and corrupts evals.
 
+> Quick nav: [Patterns Index](./README.md) · Examples: 
+> [Example 01](../examples/example_01_basic_fix.md) · 
+> [Example 03](../examples/example_03_pipeline_patch.md) · 
+> [Eval: Precision & CHR](../eval/eval_rag_precision_recall.md)
+
 ---
 
 ## 1) Signals & fast triage
