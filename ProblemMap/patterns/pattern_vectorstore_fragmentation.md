@@ -6,6 +6,11 @@ Your index “works,” but retrieval is unstable across runs and environments. 
 **Why it matters**  
 Fragmentation silently degrades recall and skews reranking. You’ll chase “model hallucinations” that are actually **index incompatibilities**.
 
+> Quick nav: [Patterns Index](./README.md) · Examples: 
+> [Example 01](../examples/example_01_basic_fix.md) · 
+> [Example 03](../examples/example_03_pipeline_patch.md) · 
+> [Eval: Precision & CHR](../eval/eval_rag_precision_recall.md)
+
 ---
 
 ## 1) Signals & fast triage
