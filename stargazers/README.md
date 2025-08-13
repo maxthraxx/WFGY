@@ -12,8 +12,6 @@ Their support is a public signal —  transparent, verifiable, and forever recor
 > it’s a vote of confidence in a **radically different way to reason**.
 
 
----
-
 ## 🚀 Early Stargazer Board
 
 | GitHub ID      | Featured Project(s) / Bio                                                  | Proof Screenshot                                 | View stargazer proof                                   |
@@ -25,6 +23,7 @@ Their support is a public signal —  transparent, verifiable, and forever recor
 | mikumifa       | biliTickerBuy (2.8k★), cppTickerBuy (574★); full-stack ACG/hacker archetype, Nanjing Univ. | ![](./images/mikumifa_star.png)              | [View stargazer proof](https://github.com/mikumifa?tab=stars)    |
 | beriberikix    | CEO of Golioth (IoT infra company), open thread contributor, 548 followers | ![](./images/beriberikix_star.png)               | [View stargazer proof](https://github.com/beriberikix?tab=stars) |
 | alshell7       | vokaturi-android (87★), security/tools dev, starred WFGY in focused ML/DL list | ![](./images/alshell7_star.png)             | [View stargazer proof](https://github.com/alshell7?tab=stars)    |
+| aaronsb        | MCP server ecosystem contributor (Google Workspace MCP 87★, Obsidian MCP 43★, Confluence MCP 15★, Salesforce MCP, etc.), MIT OSS advocate | ![](./images/aaronsb_star.png)                  | [View stargazer proof](https://github.com/aaronsb?tab=stars)     |
 | 4350pChris     | slack-vuevisualizer (99★), vike-vue contributor; full stack dev from Germany, UI semantics & OSS advocate | ![](./images/4350pChris_star.png)                | [View stargazer proof](https://github.com/4350pChris?tab=stars) |
 | pthom          | imgui_bundle (915★), hello_imgui (781★), imgui_manual (363★); GUI, C++/Python open source advocate | ![](./images/pthom_star.png)     | [View stargazer proof](https://github.com/pthom?tab=stars)       |
 | mpontus        | react-modal-hook (255★), webpack-react (56★), 388★ total; high-activity TypeScript/JavaScript OSS dev | ![](./images/mpontus_star.png)                   | [View stargazer proof](https://github.com/mpontus?tab=stars)     |
@@ -37,8 +36,6 @@ Their support is a public signal —  transparent, verifiable, and forever recor
 | sogrey         | Developer of Android-Kotlin-Drak-UE tools; versatile engineer with personal site and high GitHub activity | ![](./images/sogrey_star.png)                    | [View stargazer proof](https://github.com/Sogrey?tab=stars)     |
 | schnoog        | Joystick_ESP32S2 (77★); Scientist in chemistry, Arduino/C++ hobbyist dev   | ![](./images/schnoog_star.png)                   | [View stargazer proof](https://github.com/schnoog?tab=stars)     |
 | jakevossen5    | Apple visionOS UI Engineer, ex-Amazon/TI, compiler MS, US                  | ![](./images/jakevossen5_star.png)               | [View stargazer proof](https://github.com/jakevossen5?tab=stars) |
-
-
 
 
 
