@@ -6,6 +6,11 @@ Answers **sound plausible** but are **not grounded** in retrieved evidence, or t
 **Why it matters**  
 Semantic drift is the primary source of silent hallucinations. It evades naive keyword checks and only shows up when you enforce grounding, citations, and refusal behavior.
 
+> Quick nav: [Patterns Index](./README.md) · Examples: 
+> [Example 01](../examples/example_01_basic_fix.md) · 
+> [Example 03](../examples/example_03_pipeline_patch.md) · 
+> [Eval: Precision & CHR](../eval/eval_rag_precision_recall.md)
+
 ---
 
 ## 1) Signals & fast triage
