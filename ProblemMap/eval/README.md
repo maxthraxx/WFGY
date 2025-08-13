@@ -7,10 +7,10 @@ All evals are **SDK-free** (stdlib-only) and **deterministic**: given the same i
 
 ## Quick Links (run these first)
 
-- **RAG Precision / Refusals / CHR / Recall@k →** `eval_rag_precision_recall.md`
-- **Latency vs Accuracy (SLO & Pareto) →** `eval_latency_vs_accuracy.md`
-- **Cross-Agent Consistency (Scholar ↔ Auditor, κ) →** `eval_cross_agent_consistency.md`
-- **Semantic Stability (Seeds & Prompt Jitter) →** `eval_semantic_stability.md`
+- **RAG Precision / Refusals / CHR / Recall@k →** [eval_rag_precision_recall.md](./eval_rag_precision_recall.md)
+- **Latency vs Accuracy (SLO & Pareto) →** [eval_latency_vs_accuracy.md](./eval_latency_vs_accuracy.md)
+- **Cross-Agent Consistency (Scholar ↔ Auditor, κ) →** [eval_cross_agent_consistency.md](./eval_cross_agent_consistency.md)
+- **Semantic Stability (Seeds & Prompt Jitter) →** [eval_semantic_stability.md](./eval_semantic_stability.md)
 
 > Start with precision/CHR, then latency SLO, then agent agreement, then stability. Fail fast on each gate.
 
@@ -98,20 +98,17 @@ Emitted by your guarded pipeline:
 
 ## 3) File layout
 
-```
-ProblemMap/eval/
-├─ README.md                       # this file (entrypoint)
-├─ eval_rag_precision_recall.md    # answer/retrieval metrics + sample JSONL + scorer
-├─ eval_latency_vs_accuracy.md     # SLO curves; sweep harness; Pareto selection
-├─ eval_cross_agent_consistency.md # Scholar vs Auditor, κ, arbitration policy
-├─ eval_semantic_stability.md      # seeds/jitters invariance, ACR/CGHC/CSS/NED
-│
-├─ score_eval.py                   # reference scorer for precision/CHR/refusals/recall@k
-├─ latency_sweep.py                # sweep harness → runs/latency.csv + summary
-├─ cross_agent_consistency.py      # PA/κ + disagreements TSV + arbitration
-├─ semantic_stability.py           # runner+scorer for seeds/jitters
-└─ gold.jsonl                      # canonical gold set (freeze per release)
-```
+- [README.md](./README.md) — this file (entrypoint)
+- [eval_rag_precision_recall.md](./eval_rag_precision_recall.md) — answer/retrieval metrics + sample JSONL + scorer
+- [eval_latency_vs_accuracy.md](./eval_latency_vs_accuracy.md) — SLO curves; sweep harness; Pareto selection
+- [eval_cross_agent_consistency.md](./eval_cross_agent_consistency.md) — Scholar vs Auditor, κ, arbitration policy
+- [eval_semantic_stability.md](./eval_semantic_stability.md) — seeds/jitters invariance, ACR/CGHC/CSS/NED
+- [score_eval.py](./score_eval.py) — reference scorer for precision/CHR/refusals/recall@k
+- [latency_sweep.py](./latency_sweep.py) — sweep harness → runs/latency.csv + summary
+- [cross_agent_consistency.py](./cross_agent_consistency.py) — PA/κ + disagreements TSV + arbitration
+- [semantic_stability.py](./semantic_stability.py) — runner+scorer for seeds/jitters
+- [gold.jsonl](./gold.jsonl) — canonical gold set (freeze per release)
+
 
 ---
 
