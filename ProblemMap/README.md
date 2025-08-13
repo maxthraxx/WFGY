@@ -3,13 +3,12 @@
 *If this page saves you time, a ⭐ helps others find it.*  
 
 ---
-> Thanks everyone — we’ve just passed ⭐ 500 in 60 Days (we started at Jun 15)  
+> Thanks everyone — we’ve just passed ⭐ 550 in 60 Days (we started at Jun 15)  
 > Most people who find this page end up starring it — because WFGY solves real bugs.  
 > **[WFGY Core](https://github.com/onestardao/WFGY/blob/main/core/README.md)** will be released on Aug 15 — the world’s tiniest reasoning engine (30-line TXT with Drunk Transformer).  
 > Truly appreciate all the support — you made this happen!
 
 ---
-
 
 <div align="center">
   <!-- keep one visual; remove if you prefer text-only -->
@@ -27,14 +26,13 @@
 - **Beginner Guide:** [Identify & fix your first failure](./BeginnerGuide.md)
 - **Diagnose by symptom:** [Fast triage table → `Diagnose.md`](./Diagnose.md)
 - **Visual RAG Guide (multi-dimensional):** [`RAG Architecture & Recovery – Problem Map 2.0`](./rag-architecture-and-recovery.md) — high-altitude view linking symptom × pipeline stage × failure class, with the exact recovery path.
+- **Multi-Agent Chaos (Map-B):** [Role Drift & Memory Overwrite →](./Multi-Agent_Problems.md)
 - **Field Reports:** [Real bugs & fixes from users](https://github.com/onestardao/WFGY/discussions/10)
-- **TXT OS directory:** [Browse the OS repo](../OS/)
+- **TXT OS directory:** [Browse the OS repo](../OS/README.md)
 
-
-> 📌 This map isn’t just a list of bugs. It’s a diagnostic framework — a semantic X-ray for AI failure.
-> Each entry represents a *systemic breakdown* across input, retrieval, or reasoning.
+> 📌 This map isn’t just a list of bugs. It’s a diagnostic framework — a semantic X-ray for AI failure.  
+> Each entry represents a *systemic breakdown* across input, retrieval, or reasoning.  
 > WFGY doesn’t patch symptoms. It restructures the entire reasoning chain.
-
 
 ---
 
@@ -55,7 +53,6 @@ Run lightweight diagnostics with **zero install**, **zero API key**. Powered by 
 > but are not exposed as CLI yet — either because they require full context, or operate at system level.  
 > More tools coming soon.
 
-
 <details>
 <summary><strong>⭐ ΔS Diagnostic (MVP)</strong> — Measure semantic drift</summary>
 
@@ -69,7 +66,7 @@ Run lightweight diagnostics with **zero install**, **zero API key**. Powered by 
 > 3. See ΔS score and suggested fix  
 >
 > **What it detects:**  
-> No.2 – [Interpretation Collapse](https://github.com/onestardao/WFGY/blob/main/ProblemMap/retrieval-collapse.md)  
+> No.2 – [Interpretation Collapse](./retrieval-collapse.md)  
 > (Prompt and output look fine, but meaning is mismatched)
 
 </details>
@@ -90,7 +87,7 @@ Run lightweight diagnostics with **zero install**, **zero API key**. Powered by 
 > If not → try BBCR fallback  
 >
 > **What it fixes:**  
-> No.6 – [Logic Collapse & Recovery](https://github.com/onestardao/WFGY/blob/main/ProblemMap/logic-collapse.md)  
+> No.6 – [Logic Collapse & Recovery](./logic-collapse.md)  
 > (Multi-step reasoning veers off and needs semantic midpoints)
 
 </details>
@@ -110,7 +107,7 @@ Run lightweight diagnostics with **zero install**, **zero API key**. Powered by 
 > Higher ε → deeper resonance with domain anchors  
 >
 > **What it explains:**  
-> No.12 – [Philosophical Recursion](https://github.com/onestardao/WFGY/blob/main/ProblemMap/philosophical-recursion.md)  
+> No.12 – [Philosophical Recursion](./philosophical-recursion.md)  
 > (Looping abstraction caused by mismatched domains)
 
 </details>
@@ -132,51 +129,12 @@ Run lightweight diagnostics with **zero install**, **zero API key**. Powered by 
 > High (≥ 0.70) — rich semantic variation  
 >
 > **What it detects:**  
-> No.3 – [Long Reasoning Chains](https://github.com/onestardao/WFGY/blob/main/ProblemMap/context-drift.md)  
+> No.3 – [Long Reasoning Chains](./context-drift.md)  
 > (Early steps diverge silently across variants)
 
 </details>
 
-<details>  
-<summary><strong>🍷 More modules coming soon — Drunk Transformer preview</strong></summary>  
-
-<br>
-
-> These formulas may sound like something a language model would say after a few drinks…  
-> But they’re actually designed to keep your model sober — no more collapsing logic, no more derailed reasoning.  
-> Think of it as semantic seatbelts for your transformer.  
->
-> ---
->
-> **WDT** – Where Did You Take me?  
-> → Asymmetric cross-path suppression. Prevents illegal logic jumps between divergent tracks.  
->
-> **WTF** – What the F*** happened?  
-> → Collapse detection and graceful reset. When everything breaks, it gently hits the semantic panic button.  
->
-> ---
->
-> Drunk Transformer math layer (coming soon)  
->
-> • **WRI** – Where am I? → Locks token positions to maintain structural coherence  
-> • **WAI** – Who am I? → Forces head diversity to avoid collapse-by-consensus  
-> • **WAY** – Who are you? → Boosts entropy across attention heads for better external awareness  
-> • **WDT** – Where did you take me? → (see above)  
-> • **WTF** – What the f*** happened? → (see above)  
->
-> ---
->
-> Each one is backed by a real formula.  
-> You’ll be able to try them soon — stay tuned.  
->
-> P.S. These formulas are real.  
-> Like, math-real. Not just wine-fueled wordplay. :P
-
-</details>
-
 > ⚠️ Warning ⚠️ These tools may trigger existential reflection — especially if you've spent months chasing ghost bugs in your RAG stack. 
-
-
 
 ---
 
@@ -196,12 +154,14 @@ Run lightweight diagnostics with **zero install**, **zero API key**. Powered by 
 | 10 | Creative Freeze                 | Flat, literal outputs                         | [creative-freeze.md](./creative-freeze.md) |
 | 11 | Symbolic Collapse               | Abstract/logical prompts break                | [symbolic-collapse.md](./symbolic-collapse.md) |
 | 12 | Philosophical Recursion         | Self-reference/paradoxes crash reasoning      | [philosophical-recursion.md](./philosophical-recursion.md) |
-| 13 | Multi-Agent Chaos               | Agents overwrite/misalign logic               | [multi-agent-chaos.md](./multi-agent-chaos.md) |
+| 13 | **Multi-Agent Chaos**           | Agents overwrite/misalign logic               | **[Multi-Agent Problems](./Multi-Agent_Problems.md)** |
 | 14 | Bootstrap Ordering              | Services fire before deps ready               | [bootstrap-ordering.md](./bootstrap-ordering.md) |
 | 15 | Deployment Deadlock             | Circular waits (index⇆retriever, DB⇆migrator) | [deployment-deadlock.md](./deployment-deadlock.md) |
 | 16 | Pre-Deploy Collapse             | Version skew / missing secret on first call   | [predeploy-collapse.md](./predeploy-collapse.md) |
 
-> Problem families: **Prompting · Retrieval · Reasoning · Infra/Deploy** — locate the root cause first, then apply the specific patch.
+> For #13 (Multi-Agent), see deep dives:  
+> • **Role Drift** → [`multi-agent-chaos/role-drift.md`](./multi-agent-chaos/role-drift.md)  
+> • **Cross-Agent Memory Overwrite** → [`multi-agent-chaos/memory-overwrite.md`](./multi-agent-chaos/memory-overwrite.md)
 
 ---
 
@@ -219,7 +179,7 @@ These short IDs let you route quickly in issues/PRs/support threads.
 | Map ID | Map Name                     | Linked Issues        | Focus                                          | Link |
 |-------:|------------------------------|----------------------|------------------------------------------------|------|
 | Map-A  | RAG Problem Table            | #1, #2, #3, #5, #8   | Retrieval-augmented generation failures        | [View](./RAG_Problems.md) |
-| Map-B  | Multi-Agent Chaos Map        | #13                  | Coordination failures, memory conflicts        | [View](./Multi-Agent_Problems.md) |
+| Map-B  | **Multi-Agent Chaos Map**    | #13                  | Coordination failures, role drift, memory overwrite | [View](./Multi-Agent_Problems.md) |
 | Map-C  | Symbolic & Recursive Map     | #11, #12             | Symbolic logic traps, abstraction, paradox     | [View](./Symbolic_Logic_Problems.md) |
 | Map-D  | Logic Recovery Map           | #6                   | Dead-end logic, reset loops, controlled recovery | [View](./logic-collapse.md) |
 | Map-E  | Long-Context Stress Map      | #3, #7, #10          | 100k-token memory, noisy PDFs, long-task drift | [View](./LongContext_Problems.md) |
@@ -261,8 +221,8 @@ Which WFGY modules should I apply and in what order?
 | 12 | Philosophical Recursion         | Very High   | ✅ Stable |
 | 13 | Multi-Agent Chaos               | Very High   | ✅ Stable |
 | 14 | Bootstrap Ordering              | Medium      | ✅ Stable |
-| 15  | Deployment Deadlock            | High        | ⚠️ Beta |
-| 16  | Pre-Deploy Collapse            | Medium-High | ✅ Stable |
+| 15 | Deployment Deadlock             | High        | ⚠️ Beta |
+| 16 | Pre-Deploy Collapse             | Medium-High | ✅ Stable |
 
 \*Distance from default LLM behavior to a production-ready fix.
 </details>
@@ -275,7 +235,6 @@ Which WFGY modules should I apply and in what order?
 - WFGY Project home: [github.com/onestardao/WFGY](https://github.com/onestardao/WFGY)  
 - TXT OS: [github.com/onestardao/WFGY/tree/main/OS](https://github.com/onestardao/WFGY/tree/main/OS)  
 - If this map helped you, a ⭐ helps more devs find it.
-
 
 ---
 
@@ -290,14 +249,12 @@ Which WFGY modules should I apply and in what order?
 | Semantic Blueprint    | Layer-based symbolic reasoning & semantic modulations   | [View →](https://github.com/onestardao/WFGY/tree/main/SemanticBlueprint/README.md) |
 | Benchmark vs GPT-5    | Stress test GPT-5 with full WFGY reasoning suite         | [View →](https://github.com/onestardao/WFGY/tree/main/benchmarks/benchmark-vs-gpt5/README.md) |
 
-
 ---
 
 > 👑 **Early Stargazers: [See the Hall of Fame](https://github.com/onestardao/WFGY/tree/main/stargazers)** —  
 > Engineers, hackers, and open source builders who supported WFGY from day one.
 
 > <img src="https://img.shields.io/github/stars/onestardao/WFGY?style=social" alt="GitHub stars"> ⭐ Help reach 10,000 stars by 2025-09-01 to unlock Engine 2.0 for everyone  ⭐ <strong><a href="https://github.com/onestardao/WFGY">Star WFGY on GitHub</a></strong>
-
 
 <div align="center">
 
@@ -316,4 +273,6 @@ Which WFGY modules should I apply and in what order?
 [![Blow](https://img.shields.io/badge/Blow-Game%20Logic-purple?style=flat-square)](https://github.com/onestardao/WFGY/tree/main/OS/BlowBlowBlow)
 
 </div>
+
+
 
