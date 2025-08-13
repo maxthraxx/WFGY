@@ -15,13 +15,14 @@ Each pattern is **actionable**: fast signals, root causes, a minimal repro, a de
 
 | Pattern | Problem Map No. | Symptoms you’ll see | Fix entrypoint |
 |---|---:|---|---|
-| **RAG Semantic Drift** (`pattern_rag_semantic_drift.md`) | **No.1** | Plausible but ungrounded answers; citations don’t contain the claim | Example 01 (guarded template), Example 03 (intersection + rerank) |
-| **Memory Desync** (`pattern_memory_desync.md`) | — (State/Context) | Old names/IDs reappear; agents disagree across turns | Snapshot `mem_rev/hash` at ingress + echo + gate (Ex.04) |
-| **Vector Store Fragmentation** (`pattern_vectorstore_fragmentation.md`) | **No.3** | Recall flips across envs; score scales change; rank inversions | Manifest validation + normalize both sides + score correlation (Ex.05) |
-| **Hallucination Re-Entry** (`pattern_hallucination_reentry.md`) | — (Provenance) | Model’s prior text shows up as “evidence”; non-corpus sources cited | Provenance filter + split indices + auditor rule (Ex.06) |
-| **Bootstrap Deadlock** (`pattern_bootstrap_deadlock.md`) | **No.14** | `/readyz` stuck/flapping; circular waits at startup | DAG toposort + single warmup owner + sentinel-based readiness (Ex.07) |
-| **Query Parsing Split** (`pattern_query_parsing_split.md`) | — (Parsing) | Multi-intent prompts answered partially or mixed | Deterministic split + per-role contracts + handoff gate (Ex.03/04) |
-| **Symbolic Constraint Unlock (SCU)** (`pattern_symbolic_constraint_unlock.md`) | **No.11** (Symbolic collapse) | “Must/Only/Never” rules vanish mid-pipeline; impossible states | Lock + echo constraints at every stage; contradiction gate (Ex.03/04/08) |
+| **RAG Semantic Drift** ([pattern_rag_semantic_drift.md](./pattern_rag_semantic_drift.md)) | **No.1** | Plausible but ungrounded answers; citations don’t contain the claim | [Example 01](../examples/example_01_basic_fix.md), [Example 03](../examples/example_03_pipeline_patch.md) |
+| **Memory Desync** ([pattern_memory_desync.md](./pattern_memory_desync.md)) | — (State/Context) | Old names/IDs reappear; agents disagree across turns | [Example 04](../examples/example_04_multi_agent_coordination.md) |
+| **Vector Store Fragmentation** ([pattern_vectorstore_fragmentation.md](./pattern_vectorstore_fragmentation.md)) | **No.3** | Recall flips across envs; score scales change; rank inversions | [Example 05](../examples/example_05_vectorstore_repair.md) |
+| **Hallucination Re-Entry** ([pattern_hallucination_reentry.md](./pattern_hallucination_reentry.md)) | — (Provenance) | Model’s prior text shows up as “evidence”; non-corpus sources cited | [Example 06](../examples/example_06_prompt_injection_block.md) |
+| **Bootstrap Deadlock** ([pattern_bootstrap_deadlock.md](./pattern_bootstrap_deadlock.md)) | **No.14** | `/readyz` stuck/flapping; circular waits at startup | [Example 07](../examples/example_07_bootstrap_ordering.md) |
+| **Query Parsing Split** ([pattern_query_parsing_split.md](./pattern_query_parsing_split.md)) | — (Parsing) | Multi-intent prompts answered partially or mixed | [Example 03](../examples/example_03_pipeline_patch.md), [Example 04](../examples/example_04_multi_agent_coordination.md) |
+| **Symbolic Constraint Unlock (SCU)** ([pattern_symbolic_constraint_unlock.md](./pattern_symbolic_constraint_unlock.md)) | **No.11** (Symbolic collapse) | “Must/Only/Never” rules vanish mid-pipeline; impossible states | [Example 03](../examples/example_03_pipeline_patch.md), [Example 04](../examples/example_04_multi_agent_coordination.md), [Example 08](../examples/example_08_eval_rag_quality.md) |
+
 
 > **Legend:** Problem Map numbers refer to root categories used across the repo. “—” means cross-cutting (not a single number).
 
@@ -55,15 +56,16 @@ Each pattern is **actionable**: fast signals, root causes, a minimal repro, a de
 
 ## File Layout
 
-- `pattern_rag_semantic_drift.md` — How to stop plausible-but-wrong answers with hard grounding.  
-- `pattern_memory_desync.md` — One snapshot per turn; bind and echo across agents.  
-- `pattern_vectorstore_fragmentation.md` — Keep embeddings/metrics/chunkers aligned.  
-- `pattern_hallucination_reentry.md` — Keep model/session text out of evidence.  
-- `pattern_bootstrap_deadlock.md` — Deterministic startup ordering and readiness.  
-- `pattern_query_parsing_split.md` — Deterministically split multi-intent prompts.  
-- `pattern_symbolic_constraint_unlock.md` — Lock+echo constraints; gate contradictions.
+- [pattern_rag_semantic_drift.md](./pattern_rag_semantic_drift.md) — How to stop plausible-but-wrong answers with hard grounding.  
+- [pattern_memory_desync.md](./pattern_memory_desync.md) — One snapshot per turn; bind and echo across agents.  
+- [pattern_vectorstore_fragmentation.md](./pattern_vectorstore_fragmentation.md) — Keep embeddings/metrics/chunkers aligned.  
+- [pattern_hallucination_reentry.md](./pattern_hallucination_reentry.md) — Keep model/session text out of evidence.  
+- [pattern_bootstrap_deadlock.md](./pattern_bootstrap_deadlock.md) — Deterministic startup ordering and readiness.  
+- [pattern_query_parsing_split.md](./pattern_query_parsing_split.md) — Deterministically split multi-intent prompts.  
+- [pattern_symbolic_constraint_unlock.md](./pattern_symbolic_constraint_unlock.md) — Lock+echo constraints; gate contradictions.
 
-See `../examples/` for runnable, stdlib-only code referenced in each pattern.
+See [../examples/](../examples/README.md) for runnable, stdlib-only code referenced in each pattern.
+
 
 ---
 
