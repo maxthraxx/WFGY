@@ -6,6 +6,11 @@ A single user query actually contains **multiple intents** (lookup + policy + tr
 **Why it matters**  
 Multi-intent queries are common (“compare A vs B and give a summary with citations”). If you don’t split, retrieval pools and prompts blur constraints, you get **false grounding**, and audit trails become meaningless (“which intent did this citation serve?”).
 
+> Quick nav: [Patterns Index](./README.md) · Examples: 
+> [Example 01](../examples/example_01_basic_fix.md) · 
+> [Example 03](../examples/example_03_pipeline_patch.md) · 
+> [Eval: Precision & CHR](../eval/eval_rag_precision_recall.md)
+
 ---
 
 ## 1) Signals & Fast Triage
