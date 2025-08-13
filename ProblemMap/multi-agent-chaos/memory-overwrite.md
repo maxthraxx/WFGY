@@ -248,7 +248,18 @@ labels: { severity: ticket }
 
 > Have a reproducible overwrite trace? Please share; even 5–10 turns help us tune adapters and defaults.
 
-↩︎ [Back to Multi-Agent Map](../Multi-Agent_Problems.md)
+### ↩︎ Back & See also
+
+- **Back to Map-B:** [Multi-Agent Chaos Problem Map](../Multi-Agent_Problems.md)  
+- **Related deep dives:**  
+  - [Cross-Agent Memory Overwrite](./memory-overwrite.md)  
+  - [Agent Role Drift](./role-drift.md)  
+- **Upstream patterns:**  
+  - [Symbolic Constraint Unlock (SCU)](../patterns/pattern_symbolic_constraint_unlock.md)  
+  - [Memory Desync](../patterns/pattern_memory_desync.md)
+
+---
+
 
 ---
 
