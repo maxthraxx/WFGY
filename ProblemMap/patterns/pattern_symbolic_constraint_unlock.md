@@ -6,6 +6,11 @@ A hard rule (constraint) that should govern the reasoning chain gets **dropped, 
 **Why it matters**  
 Constraints (e.g., “reject null keys”, “only *.company.com is allowed”, “A ≠ B”) are the **guardrails** that keep answers correct. If they are not explicitly bound and echoed through the chain, later stages silently “unlock” them, causing wrong merges and confident but invalid claims.
 
+> Quick nav: [Patterns Index](./README.md) · Examples: 
+> [Example 01](../examples/example_01_basic_fix.md) · 
+> [Example 03](../examples/example_03_pipeline_patch.md) · 
+> [Eval: Precision & CHR](../eval/eval_rag_precision_recall.md)
+
 ---
 
 ## 1) Signals & fast triage
