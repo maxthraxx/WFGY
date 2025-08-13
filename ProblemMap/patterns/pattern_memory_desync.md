@@ -6,6 +6,12 @@ Conversation “memory” (user profile, preferences, prior facts) used by retri
 **Why it matters**  
 When state diverges, your pipeline optimizes for the wrong goal. Models appear “random” or “stubborn,” but the real issue is **who read which memory, when**.
 
+> Quick nav: [Patterns Index](./README.md) · Examples: 
+> [Example 01](../examples/example_01_basic_fix.md) · 
+> [Example 03](../examples/example_03_pipeline_patch.md) · 
+> [Eval: Precision & CHR](../eval/eval_rag_precision_recall.md)
+
+
 ---
 
 ## 1) Signals & fast triage
