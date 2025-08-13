@@ -1,34 +1,45 @@
-# Eval — Quality & Readiness Gates (Problem Map 2.0)
+# Eval — Quality & Readiness Gates 
 
 This folder defines **how we measure** if a pipeline is allowed to ship.  
 All evals are **SDK-free** (stdlib-only) and **deterministic**: given the same inputs, you must get the same scores and the same ship/no-ship decision.
 
 ---
 
+## Quick Links (run these first)
+
+- **RAG Precision / Refusals / CHR / Recall@k →** `eval_rag_precision_recall.md`
+- **Latency vs Accuracy (SLO & Pareto) →** `eval_latency_vs_accuracy.md`
+- **Cross-Agent Consistency (Scholar ↔ Auditor, κ) →** `eval_cross_agent_consistency.md`
+- **Semantic Stability (Seeds & Prompt Jitter) →** `eval_semantic_stability.md`
+
+> Start with precision/CHR, then latency SLO, then agent agreement, then stability. Fail fast on each gate.
+
+---
+
 ## 0) What we score (TL;DR)
 
 **Grounded Q&A quality**
-- **Precision (answered)** — fraction of shipped answers that are correct *and* properly cited
-- **Under-refusal rate** — fraction of *should-refuse* questions that were wrongly answered
-- **Over-refusal rate** — fraction of *should-answer* questions that were refused
-- **Citation Hit Rate (CHR)** — fraction of shipped answers whose citations actually contain the claim
+- **Precision (answered)** — fraction of shipped answers that are correct *and* properly cited  
+- **Under-refusal rate** — fraction of *should-refuse* questions that were wrongly answered  
+- **Over-refusal rate** — fraction of *should-answer* questions that were refused  
+- **Citation Hit Rate (CHR)** — fraction of shipped answers whose citations actually contain the claim  
 - **Constraint Integrity (SCU)** — fraction of shipped answers that preserve locked constraints (no contradictions)
 
 **Retrieval quality**
-- **Recall@k** — fraction of questions whose gold evidence appears in top-k retrieved ids
-- **CHR@k (Upper bound)** — best-case CHR if the model always picked the right ids from the retrieved pool
+- **Recall@k** — fraction of questions whose gold evidence appears in top-k retrieved ids  
+- **CHR@k (upper bound)** — best-case CHR if the model always picked the right ids from the retrieved pool
 
 **Operational**
-- **Latency vs Accuracy curve** — P95/P99 latency vs Precision/CHR
-- **Cross-agent consistency** — Scholar vs Auditor agreement on labels/verdicts
-- **Semantic stability** — output variance across seeds and small prompt jitters
+- **Latency vs Accuracy** — P50/P95/P99 vs Precision/CHR under knob sweeps and load  
+- **Cross-agent consistency** — Scholar vs Auditor agreement (Percent Agreement, Cohen’s κ)  
+- **Semantic stability** — invariance to seeds and benign prompt jitters (ACR/CGHC/CSS/NED)
 
 ---
 
 ## 1) Data contracts
 
 ### 1.1 Gold set (`eval/gold.jsonl`)
-Each line is a JSON object:
+Each line:
 
 ```json
 {
@@ -37,21 +48,20 @@ Each line is a JSON object:
   "answerable": true,
   "gold_claim_substr": ["rejects null keys"],
   "gold_citations": ["p1#2"],
-  "constraints": ["X rejects null keys."],
-  "notes": "Entity+constraint co-located in p1#2"
+  "constraints": ["X rejects null keys."]
 }
 ````
 
-**Rules**
+Rules
 
-* `answerable` = false → the only correct model output is the **exact refusal token** (`not in context`)
-* `gold_claim_substr` — minimal substrings that must appear in the final `claim`
-* `gold_citations` — any non-empty intersection with shipped `citations` is considered a “hit”
-* `constraints` — optional; enables SCU checks
+* `answerable=false` ⇒ the only correct model output is the **exact** refusal token: `not in context`
+* `gold_claim_substr`: minimal substrings that must appear in the shipped `claim`
+* `gold_citations`: any overlap with shipped `citations` counts as a hit
+* `constraints` optional; enables SCU checks
 
 ### 1.2 System traces (`runs/trace.jsonl`)
 
-Emitted by the pipeline (see Examples):
+Emitted by your guarded pipeline:
 
 ```json
 {
@@ -69,42 +79,20 @@ Emitted by the pipeline (see Examples):
 }
 ```
 
-**Rules**
-
-* `answer_json.claim` is either a sentence or the **exact** refusal token `not in context`
-* `citations` must be a list of ids from `retrieved_ids` (scoped grounding)
-* If SCU is enabled, `constraints_echo` must **equal** the locked set
-
 ---
 
-## 2) Metrics (definitions)
-
-Let:
-
-* **S** = set of shipped answers (i.e., `answer_json.claim != "not in context"`)
-* **R** = set of refused cases (exact refusal token)
-* **A** = set of gold items where `answerable=true`
-* **U** = set of gold items where `answerable=false`
-
-**Containment check (C)**: any `gold_claim_substr` appears in `answer_json.claim` (case-insensitive, ≥5 chars)
-**Citation hit (H)**: `citations ∩ gold_citations ≠ ∅` and all cited ids ⊆ `retrieved_ids`
-**Constraint OK (K)**: if `constraints` present → `constraints_echo` equals `constraints` (order-insensitive) and no SCU contradiction detected
-
-* **Precision (answered)** = |{ x ∈ S ∩ A : C ∧ H ∧ K }| / |S|
-* **Under-refusal rate** = |{ x ∈ S ∩ U }| / |U|
-* **Over-refusal rate** = |{ x ∈ R ∩ A }| / |A|
-* **Citation Hit Rate (CHR)** = |{ x ∈ S : H }| / |S|
-* **Recall\@k** = |{ q ∈ A : `gold_citations` ⊆ top-k `retrieved_ids` }| / |A|
-
-**Ship gates (default)**
+## 2) Default ship gates
 
 * Precision (answered) ≥ **0.80**
 * CHR ≥ **0.75**
 * Under-refusal ≤ **0.05**
 * Over-refusal ≤ **0.10**
-* If SCU used: SCU violations = **0**
+* If SCU used: **0** constraint violations
+* Latency SLO: P95 (E2E) ≤ **2000 ms** (interactive)
+* Cross-agent: Percent Agreement ≥ **0.90**, κ ≥ **0.75**, ABSTAIN ≤ **0.02**
+* Stability: ACR ≥ **0.95**, CGHC ≥ **0.95**, CSS ≥ **0.70**, NED₅₀ ≤ **0.20**, RCR ≥ **0.98**
 
-> Tune gates per product, but commit them in repo and enforce in CI.
+> Tune per product, pin thresholds in repo, and enforce in CI.
 
 ---
 
@@ -112,89 +100,71 @@ Let:
 
 ```
 ProblemMap/eval/
-├─ README.md                       # this file
-├─ eval_rag_precision_recall.md    # answer/retrieval quality math + examples
-├─ eval_latency_vs_accuracy.md     # SLO curves & gating
-├─ eval_cross_agent_consistency.md # Scholar vs Auditor agreement, kappa
-├─ eval_semantic_stability.md      # seed/prompt jitter robustness
-└─ gold.jsonl                      # canonical gold set (small to start)
+├─ README.md                       # this file (entrypoint)
+├─ eval_rag_precision_recall.md    # answer/retrieval metrics + sample JSONL + scorer
+├─ eval_latency_vs_accuracy.md     # SLO curves; sweep harness; Pareto selection
+├─ eval_cross_agent_consistency.md # Scholar vs Auditor, κ, arbitration policy
+├─ eval_semantic_stability.md      # seeds/jitters invariance, ACR/CGHC/CSS/NED
+│
+├─ score_eval.py                   # reference scorer for precision/CHR/refusals/recall@k
+├─ latency_sweep.py                # sweep harness → runs/latency.csv + summary
+├─ cross_agent_consistency.py      # PA/κ + disagreements TSV + arbitration
+├─ semantic_stability.py           # runner+scorer for seeds/jitters
+└─ gold.jsonl                      # canonical gold set (freeze per release)
 ```
 
 ---
 
 ## 4) Minimal quickstart (stdlib-only)
 
-### 4.1 Prepare a tiny gold set
-
-Create `ProblemMap/eval/gold.jsonl` with 10–50 items following the contract.
-
-### 4.2 Run your pipeline to generate traces
-
-Use the guarded examples (no SDKs). For Python:
+1. Create `eval/gold.jsonl` (10–50 items to start).
+2. Run your guarded pipeline to append `runs/trace.jsonl`.
+3. Score core metrics:
 
 ```bash
-OPENAI_API_KEY=sk-xxx \
-python ProblemMap/examples/ask.py "What is X?"
-# …run over your questions, appending to runs/trace.jsonl
-```
-
-### 4.3 Score (reference scripts)
-
-You can implement the scorer in \~100 lines (stdlib). Pseudocode:
-
-```python
-# score_eval.py (pseudocode)
-load gold by qid -> dict
-load traces; group by qid -> last run
-for each qid:
-  derive C/H/K; bucket into S/R, A/U
-aggregate metrics; print gates + PASS/FAIL
-```
-
-Keep the scorer deterministic (no model calls). Commit it under `ProblemMap/eval/` or your project’s `tools/`.
-
----
-
-## 5) Reading the score (what to do next)
-
-* **Failing Precision + CHR** → start at `patterns/pattern_rag_semantic_drift.md` (guard + intersection + rerank)
-* **High Under-refusal** → retrieval recall is low or the auditor is too strict; inspect `Recall@k`
-* **High Over-refusal** → the guard is too strict or chunking split facts; shrink chunks and re-rank
-* **SCU violations** → apply `patterns/pattern_symbolic_constraint_unlock.md` (lock+echo constraints)
-* **Weird flips across envs** → check `patterns/pattern_vectorstore_fragmentation.md` (manifest & normalize)
-
----
-
-## 6) CI integration (copy-paste gates)
-
-* Run scorer on each PR; break build if any gate fails
-* Store historical scores (`eval/report.md`) and plot trends (optional)
-* Freeze `gold.jsonl` per release; any change requires sign-off
-
-Example CI step:
-
-```bash
-python -m problemmap.eval.score_eval \
+python ProblemMap/eval/score_eval.py \
   --gold ProblemMap/eval/gold.jsonl \
   --trace runs/trace.jsonl \
-  --gates precision=0.80 chr=0.75 under_refusal=0.05 over_refusal=0.10 \
-  --scu_enforced
+  --k 5 \
+  --gates precision=0.80,chr=0.75,under=0.05,over=0.10
 ```
-
-> If gates fail, link the top 10 offenders with their retrieved ids and citations for fast triage.
 
 ---
 
-## 7) FAQ
+## 5) Run the full eval suite (CI recipe, copy/paste)
 
-**Q: Why CHR and containment, not ROUGE/BLEU?**
-A: We care about *grounded correctness*, not surface similarity. Containment is a minimal verifiable check; CHR ensures the claim is supported by the cited chunks.
+```bash
+# A) Latency sweeps (1 rps & 5 rps)
+python ProblemMap/eval/latency_sweep.py --gold ProblemMap/eval/gold.jsonl --rps 1 --duration 30 | tee eval/lat_1rps.json
+python ProblemMap/eval/latency_sweep.py --gold ProblemMap/eval/gold.jsonl --rps 5 --duration 60 | tee eval/lat_5rps.json
 
-**Q: Do I need a big gold set?**
-A: No—start with 30–100 mixed cases (answerable + unanswerable). Expand as regressions appear.
+# B) Core accuracy
+python ProblemMap/eval/score_eval.py --gold ProblemMap/eval/gold.jsonl --trace runs/trace.jsonl --k 5 > eval/acc.json
 
-**Q: How to keep evals from drifting?**
-A: Version and freeze `gold.jsonl`. Treat any mutation as a product decision.
+# C) Cross-agent consistency
+python ProblemMap/eval/cross_agent_consistency.py --pairs ProblemMap/eval/consistency_pairs.jsonl > eval/consistency.json
+
+# D) Semantic stability (small daily sweep)
+python ProblemMap/eval/semantic_stability.py --mode run   --gold ProblemMap/eval/gold.jsonl --http http://localhost:8080/qa --seeds 0,1,2 --jitters none,ws,syn
+python ProblemMap/eval/semantic_stability.py --mode score --gold ProblemMap/eval/gold.jsonl --stability runs/stability.jsonl > eval/stability.json
+
+# E) Gates
+jq -e '.p95 <= 2000' eval/lat_1rps.json
+jq -e '.p95 <= 2500' eval/lat_5rps.json
+jq -e '.precision >= 0.80 and .chr >= 0.75 and .under_refusal <= 0.05 and .over_refusal <= 0.10' eval/acc.json
+jq -e '.percent_agreement >= 0.90 and .kappa >= 0.75 and .abstain_rate <= 0.02 and .pass==true' eval/consistency.json
+jq -e '.pass == true' eval/stability.json
+```
+
+---
+
+## 6) Troubleshooting map
+
+* **Precision low, CHR low** → Start at *RAG Precision & CHR* page; apply **Semantic Drift** pattern (guard + intersection + knee).
+* **Over-refusal high** → Recall\@k too low or chunks split facts; shrink chunks and re-rank.
+* **Latency P95 blown** → Trim `max_tokens`, enable intersection+knee, reduce `rerank_depth` (see *Latency vs Accuracy*).
+* **Agent κ low** → Templates drift or inconsistent guards; fix schema and audit rules (*Cross-Agent Consistency*).
+* **Stability fails** → Retrieval pool unstable; apply **Vector Store Fragmentation** and **SCU** patterns.
 
 ---
 
@@ -234,3 +204,4 @@ A: Version and freeze `gold.jsonl`. Treat any mutation as a product decision.
 
 </div>
 
+如果你想「只補差異」也可以，我再給你精準 patch；但這份是**一鍵覆蓋版**，最不容易再走鐘。接下來要不要我衝 `ops/README.md`（一頁式救火流程 + readiness/sentinel 模式），還是回到 `examples/` 把 `example_02_self_reflection.md` 補上？
