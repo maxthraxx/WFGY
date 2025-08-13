@@ -1,10 +1,17 @@
 # Pattern — Bootstrap Deadlock (No.14 Startup Ordering)
 
+
 **Scope**  
 Service boots, logs look “healthy,” but readiness never flips. Components wait on each other in a cycle (model ⇄ retriever ⇄ policy ⇄ index), or a probe marks “ready” before dependencies are actually warm, causing stuck loops or flapping.
 
 **Why it matters**  
 Deadlocks at startup burn deploy time, mask real regressions, and create ghost 500s. Fixing them requires **explicit dependency graphs**, **single-owner warmup**, and **deterministic gates**.
+
+> Quick nav: [Patterns Index](./README.md) · Examples: 
+> [Example 01](../examples/example_01_basic_fix.md) · 
+> [Example 03](../examples/example_03_pipeline_patch.md) · 
+> [Eval: Precision & CHR](../eval/eval_rag_precision_recall.md)
+
 
 ---
 
