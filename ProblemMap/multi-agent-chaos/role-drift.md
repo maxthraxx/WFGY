@@ -230,7 +230,18 @@ def validate_output(role_hdr, output):
 
 > Have traces where roles flip or tools are misused? Please share anonymized logs — they directly improve adapters & thresholds.
 
-↩︎ [Back to Multi-Agent Map](../Multi-Agent_Problems.md)
+### ↩︎ Back & See also
+
+- **Back to Map-B:** [Multi-Agent Chaos Problem Map](../Multi-Agent_Problems.md)  
+- **Related deep dives:**  
+  - [Cross-Agent Memory Overwrite](./memory-overwrite.md)  
+  - [Agent Role Drift](./role-drift.md)  
+- **Upstream patterns:**  
+  - [Symbolic Constraint Unlock (SCU)](../patterns/pattern_symbolic_constraint_unlock.md)  
+  - [Memory Desync](../patterns/pattern_memory_desync.md)
+
+---
+
 
 ---
 
