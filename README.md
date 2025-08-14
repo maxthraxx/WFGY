@@ -41,6 +41,17 @@
 
 ---
 
+<!-- ✅ Minimal, high-value quick links -->
+
+**Quick Links:**
+[WFGY Core (Engine 2.0 — Now Live)](https://github.com/onestardao/WFGY/blob/main/core/README.md) ·
+[Starter Village (Newcomer Walkthrough)](https://github.com/onestardao/WFGY/blob/main/StarterVillage/README.md) ·
+[Problem Map (All Fixes)](https://github.com/onestardao/WFGY/tree/main/ProblemMap) ·
+[Semantic Clinic (Triage)](https://github.com/onestardao/WFGY/blob/main/ProblemMap/SemanticClinicIndex.md)
+
+---
+
+
 
 <details>
   <summary><strong>🆕 GPT-4 + WFGY > GPT-5? Benchmark says yes (see how to rerun it yourself)</strong></summary>
@@ -70,17 +81,6 @@ That’s it — no retraining, no jailbreaks.
 
 </details>
 
----
-
-<!-- ✅ Minimal, high-value quick links -->
-
-**Quick Links:**
-[WFGY Core (Engine 2.0 — Now Live)](https://github.com/onestardao/WFGY/blob/main/core/README.md) ·
-[Starter Village (Newcomer Walkthrough)](https://github.com/onestardao/WFGY/blob/main/StarterVillage/README.md) ·
-[Problem Map (All Fixes)](https://github.com/onestardao/WFGY/tree/main/ProblemMap) ·
-[Semantic Clinic (Triage)](https://github.com/onestardao/WFGY/blob/main/ProblemMap/SemanticClinicIndex.md)
-
----
 
 <details>
 <summary><strong> 1️⃣ WFGY is a BIG project... Where should I start? (Click to expand)</strong></summary>
@@ -1431,6 +1431,7 @@ It treats alignment as a living semantic contract — not just accuracy, but mea
 [![Blow](https://img.shields.io/badge/Blow-Game%20Logic-purple?style=flat-square)](https://github.com/onestardao/WFGY/tree/main/OS/BlowBlowBlow)
 &nbsp;
 </div>
+
 
 
 
