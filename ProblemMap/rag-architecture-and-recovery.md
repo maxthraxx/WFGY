@@ -6,7 +6,7 @@ A hands-on guide to implementing WFGY in real RAG workflows.**
 > Every fix in this Problem Map is a structural response to semantic collapse, boundary drift, and logic chain failure.  
 > It works across agents, pipelines, and models — because it’s built on the failure patterns beneath them all.
 
- 
+
 ---
 
 <details>
@@ -148,6 +148,21 @@ This is the “double hallucination” trap. The first illusion hides the second
 
 > 90% of cases end after steps 1–3. You only go deeper when a fix requires a structural change (schema, retriever, index).
 
+### Layer-specific Fix Index (one-click)
+
+| Pipeline layer | What to open first | Deep dive |
+|---|---|---|
+| OCR / Parsing | [`ocr-parsing-checklist.md`](./ocr-parsing-checklist.md) | [`retrieval-traceability.md`](./retrieval-traceability.md) |
+| Chunking | [`chunking-checklist.md`](./chunking-checklist.md) | [`hallucination.md`](./hallucination.md) |
+| Embeddings / Index | [`embedding-vs-semantic.md`](./embedding-vs-semantic.md) | [`patterns/pattern_vectorstore_fragmentation.md`](./patterns/pattern_vectorstore_fragmentation.md) |
+| Retrieval | [`retrieval-playbook.md`](./retrieval-playbook.md) | [`retrieval-collapse.md`](./retrieval-collapse.md) |
+| Prompt Assembly | [`retrieval-traceability.md`](./retrieval-traceability.md) | [`patterns/pattern_symbolic_constraint_unlock.md`](./patterns/pattern_symbolic_constraint_unlock.md) |
+| Reasoning | [`logic-collapse.md`](./logic-collapse.md) | [`creative-freeze.md`](./creative-freeze.md) |
+| Multi-Agent | [`multi-agent-chaos.md`](./multi-agent-chaos.md) | [`multi-agent-chaos/role-drift.md`](./multi-agent-chaos/role-drift.md), [`multi-agent-chaos/memory-overwrite.md`](./multi-agent-chaos/memory-overwrite.md) |
+| Ops / Deploy | [`ops/README.md`](./ops/README.md) | [`ops/deployment_checklist.md`](./ops/deployment_checklist.md), [`ops/live_monitoring_rag.md`](./ops/live_monitoring_rag.md), [`ops/debug_playbook.md`](./ops/debug_playbook.md), [`ops/failover_and_recovery.md`](./ops/failover_and_recovery.md) |
+
+
+
 ---
 
 ## 3) Quick triage (beginner path) — from symptom to fix
@@ -199,6 +214,13 @@ Copy/paste this checklist into your runbook. Execute top-down.
 | tools fire before data is ready | **#14 bootstrap ordering** | [`bootstrap-ordering.md`](https://github.com/onestardao/WFGY/blob/main/ProblemMap/bootstrap-ordering.md) |
 | ci passes; prod deadlocks index | **#15 deployment deadlock** | [`deployment-deadlock.md`](https://github.com/onestardao/WFGY/blob/main/ProblemMap/deployment-deadlock.md) |
 | first call crashes after deploy | **#16 pre-deploy collapse** | [`predeploy-collapse.md`](https://github.com/onestardao/WFGY/blob/main/ProblemMap/predeploy-collapse.md) |
+| query works alone, breaks with HyDE/BM25 mix | **query parsing split** | [`patterns/pattern_query_parsing_split.md`](./patterns/pattern_query_parsing_split.md) |
+| corrections don’t stick; model re-injects old claim | **hallucination re-entry** | [`patterns/pattern_hallucination_reentry.md`](./patterns/pattern_hallucination_reentry.md) |
+| “who said what” merges across two sources | **symbolic constraint unlock (SCU)** | [`patterns/pattern_symbolic_constraint_unlock.md`](./patterns/pattern_symbolic_constraint_unlock.md) |
+| answers flip between sessions / tabs | **memory desync** | [`patterns/pattern_memory_desync.md`](./patterns/pattern_memory_desync.md) |
+| some facts can’t be retrieved though indexed | **vectorstore fragmentation** | [`patterns/pattern_vectorstore_fragmentation.md`](./patterns/pattern_vectorstore_fragmentation.md) |
+| tools fire before data is ready (RAG boot) | **bootstrap deadlock** | [`patterns/pattern_bootstrap_deadlock.md`](./patterns/pattern_bootstrap_deadlock.md) |
+
 
 ### 🧨 Most Common Failure Zones (Real-World Reports)
 
