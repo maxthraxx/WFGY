@@ -363,7 +363,7 @@ For formula-only assistance:
 
 from TXT OS, extract the formulas and thresholds for ΔS, λ\_observe, and E\_resonance. show me how to compute ΔS(question, context) using cosine distance, what thresholds to use, and which WFGY module to apply if ΔS ≥ 0.60 with divergent λ at the reasoning layer.
 
-````
+```
 
 > Need a concrete run-through? Start with **Examples**:  
 > [`example_01_basic_fix.md`](./examples/example_01_basic_fix.md) ·
@@ -406,7 +406,7 @@ BBMC:  B = I − G + m·c²           # minimize ‖B‖
 BBPF:  x_next = x + ΣV_i + ΣW_j·P_j
 BBCR:  if ‖B‖ ≥ B_c → collapse(), bridge(), rebirth()
 BBAM:  â_i = a_i · exp(−γ · std(a))
-````
+```
 
 Thresholds: stable `<0.40`, transitional `0.40–0.60`, risk `≥0.60`.
 Record nodes automatically when `ΔS > 0.60`, or `0.40–0.60` with `λ_observe ∈ {←, <>}`.
