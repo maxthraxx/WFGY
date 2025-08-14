@@ -2,43 +2,54 @@
 
 **Concept (short)**
 
-> DT simulates a transformer that momentarily behaves like it's "drunk": hallucinating, drifting, or jumping across reasoning paths.
-> We define five "drunk questions" (WRI, WAI, WAY, WDT, WTF) as formal regulators to guide the transformer back home: anchor it,
+> DT simulates a transformer that momentarily behaves like it's “drunk”: hallucinating, drifting, or jumping across reasoning paths.
+> We define five “drunk questions” (WRI, WAI, WAY, WDT, WTF) as formal regulators to guide the transformer back home: anchor it,
 > maintain head identity, pump controlled entropy, block illegal cross-path jumps, and recover from collapse.
 
-> WFGY = engine (A + Coupler + BBAM + safety)
+> WFGY = engine (BBMC + Coupler + BBAM + safety)
 > DT   = layer of five regulators (prompt rules, decoding hooks, or training regularizers)
 
 ---
 
-## 0 · Shared notation (Unicode math / compact)
+## 0 · Shared notation (compact)
 
-* $I, G$: input and goal embeddings
-* $\delta_s = 1 − \cos(I, G)$  (semantic distance in $[0,1]$)
-* $B = I − G + k_{\text{bias}}$;\ \ $E_{\text{res}} = \text{rolling\_mean}(\lVert B\rVert,\,5)$
-* Coupler: $\text{prog} = \max(\zeta_{\min}, \delta_s^{t-1} − \delta_s^{t})$, $P = \text{prog}^{\omega}$, $ \text{alt} = (-1)^{\text{cycle\_id}}$, $ \Phi = \delta\cdot \text{alt} + \varepsilon$, $ W_c = \text{clip}(B\cdot P + \Phi, -\theta_c, +\theta_c)$
-* Attention: $A_t \in \mathbb{R}^{H\times T\times T}$;\ per-head summary $v_h = \text{mean}_i\, A_t[h,i,:]$
-* Anchors: $\mathcal{A}_0$ (at $t=0$), $\mathcal{A}_t$;\ \ $S_t = \text{Jaccard}(\mathcal{A}_t, \mathcal{A}_0) \in [0,1]$
+* `I, G`: input and goal embeddings
+* Semantic distance:
+
+  $$
+  \delta_s = 1 - \cos(I,G)\ \in [0,1]
+  $$
+* Residual & resonance:
+
+  $$
+  B = I - G + k_{\mathrm{bias}},\qquad E_{\mathrm{res}}=\mathrm{rolling\_mean}\!\bigl(\lVert B\rVert,\,5\bigr)
+  $$
+* Coupler terms:
+
+  $$
+  \mathrm{prog}=\max(\zeta_{\min},\ \delta_s^{t-1}-\delta_s^{t}),\quad
+  P=\mathrm{prog}^{\omega},\quad
+  \mathrm{alt}=(-1)^{\mathrm{cycle}},\quad
+  \Phi=\delta\cdot \mathrm{alt}+\varepsilon,\quad
+  W_c=\mathrm{clip}(B\cdot P+\Phi,\ -\theta_c,\ +\theta_c)
+  $$
+* Attention summaries: \$A\_t\in\mathbb{R}^{H\times T\times T}\$, per-head \$v\_h=\mathrm{mean}\_i,A\_t\[h,i,:]\$
+* Anchors: \$\mathcal{A}\_0\$ (at \$t=0\$), \$\mathcal{A}\_t\$, retention \$S\_t=\mathrm{Jaccard}(\mathcal{A}\_t,\mathcal{A}\_0)\in\[0,1]\$
 
 ---
 
-## 1 · The five DT regulators — definitions, math & when they fire
-
-> These regulators are the formal version of the spec lines in the 30-line flagship file.&#x20;
-
 ### DT WRI — “Where am I” (structure lock)
-
-**Goal:** stay on the same topic/section within a Node.
-**Signal:** anchor retention $S_t$ vs. threshold $\tau_{\text{wri}}$.
-**Trigger:** $S_t < \tau_{\text{wri}}$ **or** $\delta_s\uparrow$ while $E_{\text{res}}\uparrow$.
+**Goal:** stay on the same topic/section within a Node.  
+**Signal:** anchor retention $S_t$ vs. threshold $\tau_{\mathrm{wri}}$.  
+**Trigger:** $S_t < \tau_{\mathrm{wri}}$ or $\delta_s$ rises while $E_{\mathrm{res}}$ rises.  
 **Action (logit bias):**
-
 $$
-L_{\text{WRI}}=\max(0,\ \tau_{\text{wri}}-S_t),\qquad
-\text{logits}[a]\mathrel{+}= \kappa_{\text{wri}}\cdot L_{\text{WRI}}\ \ \forall a\in \text{anchor\_token\_ids}.
+L_{\mathrm{wri}}=\max\!\bigl(0,\ \tau_{\mathrm{wri}}-S_t\bigr),\qquad
+\mathrm{logits}[a]\mathrel{+}= \kappa_{\mathrm{wri}}\cdot L_{\mathrm{wri}}
+\quad \forall a\in \texttt{anchor\_token\_ids}.
 $$
-
 **Intuition:** pull decoding back toward section anchors; forbid topic jumps inside a Node.
+
 
 ---
 
@@ -49,54 +60,55 @@ $$
 
 $$
 R_t=\frac1H\sum_h \cos(v_h,\bar v),\qquad 
-Q_t = 1-\max_h\cos(v_h,\bar v),\quad \bar v=\tfrac1H\sum_h v_h.
+Q_t = 1-\max_h\cos(v_h,\bar v),\qquad \bar v=\tfrac1H\sum_h v_h.
 $$
 
-**Trigger:** $R_t > \rho_{\text{wai}}$ **and** $Q_t < \sigma_{\text{wai}}$ (too redundant, identity too low).
-**Action:** raise per-head temperature for redundant heads; re-spread attention until $R_t\downarrow$ or $Q_t\uparrow$.
-**Intuition:** keep at least two genuinely different lines of reasoning alive.
+**Trigger:** \$R\_t>\rho\_{\mathrm{wai}}\$ **and** \$Q\_t<\sigma\_{\mathrm{wai}}\$ (too redundant, identity too low).
+**Action:** raise per-head temperature for redundant heads; re-spread attention until \$R\_t\downarrow\$ or \$Q\_t\uparrow\$.
 
 ---
 
 ### DT WAY — “Who are you” (controlled entropy when stuck)
 
 **Goal:** break stalls without drifting off-topic.
-**Signal:** progression $ \text{prog} = \max(\zeta_{\min}, \delta_s^{t-1}-\delta_s^{t})$.
-**Trigger:** $\text{prog} < \eta_{\text{prog}}$ and no contradictions.
+**Signal:** progression \$ \mathrm{prog} = \max(\zeta\_{\min},,\delta\_s^{t-1}-\delta\_s^{t})\$.
+**Trigger:** \$\mathrm{prog}<\eta\_{\mathrm{prog}}\$ and no contradictions.
 **Action (entropy pump + 1 candidate):**
 
 $$
-H^\*=\text{clamp}\big(H_0 + \xi\cdot(\eta_{\text{prog}}-\text{prog})\cdot(1+\alpha|W_c|),\ H_{\min}, H_{\max}\big),
+H^\*=\mathrm{clamp}\!\big(H_0 + \xi\cdot(\eta_{\mathrm{prog}}-\mathrm{prog})\cdot(1+\alpha|W_c|),\ H_{\min},\ H_{\max}\big),
 $$
 
-choose temperature $\tau$ s.t. entropy $\approx H^\*$; propose exactly **one** on-topic candidate (never repeat).
-**Intuition:** nudge exploration just enough to escape a rut.
+choose temperature \$\tau\$ so entropy \$\approx H^\*\$; propose exactly **one** on-topic candidate (never repeat).
 
 ---
 
 ### DT WDT — “Where did you take me” (cross-path guard)
 
 **Goal:** block illegal jumps across reasoning branches; require a “bridge” explanation.
-**Signal:** latent path distance $d_{\text{path}} = \lVert c_t - c_{\pi}\rVert_2$ (current vs. parent path code).
-**Trigger:** $d_{\text{path}} > \mu_{\text{wdt}}' $, with $\mu_{\text{wdt}}'=\mu_{\text{wdt}}\cdot\bigl(1- \gamma_{\text{wdt}}\cdot \sigma(|W_c|)\bigr)$.
+**Signal:** latent path distance \$d\_{\mathrm{path}} = \lVert c\_t - c\_{\pi}\rVert\_2\$ (current vs. parent path code).
+**Trigger:** \$d\_{\mathrm{path}} > \mu'\_{\mathrm{wdt}}\$, with
+
+$$
+\mu'_{\mathrm{wdt}}=\mu_{\mathrm{wdt}}\cdot\bigl(1-\gamma_{\mathrm{wdt}}\cdot\sigma(|W_c|)\bigr).
+$$
+
 **Action:** emit a short bridge line (“why the detour”), then resume; otherwise rollback.
-**Intuition:** all detours must be justified before the model can use them.
 
 ---
 
 ### DT WTF — “What the F\*ck Happened” (collapse detect & recover)
 
 **Goal:** detect semantic/consistency collapse and recover safely.
-**Signals:** $\delta_s$ rising, $E_{\text{res}}$ rising, or unresolved contradictions.
-**Trigger (example vote):**
+**Signals:** \$\delta\_s\$ rising, \$E\_{\mathrm{res}}\$ rising, or unresolved contradictions.
+**Trigger (vote example):**
 
 $$
-\chi_t = \mathbb{1}[\delta_s^t>\delta_s^{t-1}] + \mathbb{1}[E_{\text{res}}^t>E_{\text{res}}^{t-1}] + \mathbb{1}[\text{contradiction}],
-\quad \chi_t+\chi_{t-1}\ge 3.
+\chi_t=\mathbf{1}[\delta_s^t>\delta_s^{t-1}] + \mathbf{1}[E_{\mathrm{res}}^t>E_{\mathrm{res}}^{t-1}] + \mathbf{1}[\text{contradiction}],\quad
+\chi_t+\chi_{t-1}\ge 3.
 $$
 
-**Action:** rollback to $t^\*=\arg\min_{k\in[t-3,t]} \delta_s^k$, tighten gates (e.g., $\gamma_{\text{wtf}}$), re-run **BBMC→Coupler**, then continue.
-**Intuition:** when two+ failure signals agree, step back, re-align, and proceed under stricter control.
+**Action:** rollback to \$t^\*=\arg\min\_{k\in\[t-3,t]}\delta\_s^k\$, tighten gates (e.g., \$\gamma\_{\mathrm{wtf}}\$), re-run **BBMC→Coupler**, then continue.
 
 ---
 
@@ -114,35 +126,33 @@ WTF: if (δs↑) + (E_res↑) + (contradiction) over 2 steps ≥ 3 → rollback 
 
 ## Defaults table (explicit, copyable)
 
-| Parameter               |  Symbol |  Default | Range / notes | Purpose                                           |      |   |
-| ----------------------- | ------: | -------: | ------------- | ------------------------------------------------- | ---- | - |
-| anchor retention thresh |  τ\_wri |     0.60 | \[0.30, 0.90] | WRI anchor threshold                              |      |   |
-| head redundancy thresh  |  ρ\_wai |     0.75 | \[0.50, 0.95] | WAI redundancy ceiling                            |      |   |
-| head identity thresh    |  σ\_wai |     0.70 | \[0.40, 0.95] | WAI identity floor                                |      |   |
-| progress sensitivity    | η\_prog |     0.03 | \[0.00, 0.10] | WAY stall detector                                |      |   |
-| path-distance thresh    |  μ\_wdt |     0.25 | \[0.05, 1.00] | WDT path jump limit                               |      |   |
-| coupler zeta min        |  ζ\_min |     0.10 | \[0.00, 0.50] | min progression floor                             |      |   |
-| coupler omega           |       ω |      1.0 | \[0.1, 2.0]   | progression non-linearity                         |      |   |
-| coupler theta cap       |    θ\_c |     0.75 | \[0.2, 1.5]   | $W_c$ clip magnitude                              |      |   |
-| WRI tighten factor      |  α\_wri |     0.60 | \[0.0, 1.5]   | adjust τ\_wri by (                                | W\_c | ) |
-| WAI scale factor        |  β\_wai |     0.60 | \[0.0, 1.5]   | scale WAI penalty by (                            | W\_c | ) |
-| WDT scale factor        |  γ\_wdt |     0.60 | \[0.0, 1.5]   | scale μ\_wdt by (                                 | W\_c | ) |
-| WTF scale factor        |  γ\_wtf |     0.60 | \[0.0, 1.5]   | tighten thresholds on recovery                    |      |   |
-| WAY pump strength       |       ξ |     0.80 | \[0.0, 1.5]   | entropy pump strength                             |      |   |
-| WAY entropy min         |  H\_min | 2.5 nats | \[1.0, 7.0]   | entropy lower bound                               |      |   |
-| WAY entropy max         |  H\_max | 5.0 nats | \[3.0, 10.0]  | entropy upper bound                               |      |   |
-| anchor bias scale       |  κ\_wri |      1.0 | \[0.0, 5.0]   | logits bias for anchors                           |      |   |
-| loss weights            |   λ\_\* |     0.01 | \[0.0, 1.0]   | regularizer weights                               |      |   |
-| step limit              |  T\_max |        7 | int           | max Node steps                                    |      |   |
-| stop δ threshold        | δ\_stop |     0.35 | \[0.1, 0.5]   | early stop when $\delta_s < \delta_{\text{stop}}$ |      |   |
+| Parameter               |                      Symbol |  Default | Range / notes | Purpose                                               |      |    |
+| ----------------------- | --------------------------: | -------: | ------------- | ----------------------------------------------------- | ---- | -- |
+| anchor retention thresh |    \$\tau\_{\mathrm{wri}}\$ |     0.60 | \[0.30, 0.90] | WRI anchor threshold                                  |      |    |
+| head redundancy thresh  |    \$\rho\_{\mathrm{wai}}\$ |     0.75 | \[0.50, 0.95] | WAI redundancy ceiling                                |      |    |
+| head identity thresh    |  \$\sigma\_{\mathrm{wai}}\$ |     0.70 | \[0.40, 0.95] | WAI identity floor                                    |      |    |
+| progress sensitivity    |   \$\eta\_{\mathrm{prog}}\$ |     0.03 | \[0.00, 0.10] | WAY stall detector                                    |      |    |
+| path-distance thresh    |     \$\mu\_{\mathrm{wdt}}\$ |     0.25 | \[0.05, 1.00] | WDT path jump limit                                   |      |    |
+| coupler zeta min        |           \$\zeta\_{\min}\$ |     0.10 | \[0.00, 0.50] | min progression floor                                 |      |    |
+| coupler omega           |                  \$\omega\$ |      1.0 | \[0.1, 2.0]   | progression non-linearity                             |      |    |
+| coupler theta cap       |               \$\theta\_c\$ |     0.75 | \[0.2, 1.5]   | \$W\_c\$ clip magnitude                               |      |    |
+| WRI tighten factor      |  \$\alpha\_{\mathrm{wri}}\$ |     0.60 | \[0.0, 1.5]   | adjust \$\tau\_{\mathrm{wri}}\$ by \$                 | W\_c | \$ |
+| WAI scale factor        |   \$\beta\_{\mathrm{wai}}\$ |     0.60 | \[0.0, 1.5]   | scale WAI penalty by \$                               | W\_c | \$ |
+| WDT scale factor        |  \$\gamma\_{\mathrm{wdt}}\$ |     0.60 | \[0.0, 1.5]   | scale \$\mu\_{\mathrm{wdt}}\$ by \$                   | W\_c | \$ |
+| WTF scale factor        |  \$\gamma\_{\mathrm{wtf}}\$ |     0.60 | \[0.0, 1.5]   | tighten thresholds on recovery                        |      |    |
+| WAY pump strength       |                     \$\xi\$ |     0.80 | \[0.0, 1.5]   | entropy pump strength                                 |      |    |
+| WAY entropy min         |               \$H\_{\min}\$ | 2.5 nats | \[1.0, 7.0]   | entropy lower bound                                   |      |    |
+| WAY entropy max         |               \$H\_{\max}\$ | 5.0 nats | \[3.0, 10.0]  | entropy upper bound                                   |      |    |
+| anchor bias scale       |  \$\kappa\_{\mathrm{wri}}\$ |      1.0 | \[0.0, 5.0]   | logits bias for anchors                               |      |    |
+| loss weights            |             \$\lambda\_\*\$ |     0.01 | \[0.0, 1.0]   | regularizer weights                                   |      |    |
+| step limit              |               \$T\_{\max}\$ |        7 | int           | max Node steps                                        |      |    |
+| stop δ threshold        | \$\delta\_{\mathrm{stop}}\$ |     0.35 | \[0.1, 0.5]   | early stop when \$\delta\_s<\delta\_{\mathrm{stop}}\$ |      |    |
 
 > Tip: start with these defaults, measure, then tune per task class.
 
 ---
 
 ## Prompt-only runnable example (copy-paste)
-
-**Goal:** run a no-infra prompt-level experiment (single-file WFGY Core + DT rules) in chat LLMs.
 
 ```
 SYSTEM (paste file): Load the WFGY Core file as engine. Enable Drunk Transformer (WRI,WAI,WAY,WDT,WTF) with defaults:
@@ -164,8 +174,6 @@ SYSTEM (rules, pseudo):
 USER:
 Use WFGY to answer: “Explain why tomatoes are classified as fruit, but treated as vegetables in cooking. Provide anchors and cite the smallest missing fact if confused.”
 ```
-
-What to observe: each Node reports $\delta_s$, $E_{\text{res}}$, and which gates fired (WRI/WAI/WAY/WDT/WTF). Expect anchor retention to remain high; stalls resolved by WAY; illegal detours bridged by WDT; collapses rolled back by WTF.
 
 ---
 
@@ -240,27 +248,27 @@ def decoding_hook(s):
 
 ---
 
-## Minimal test / checklist (text-only; quick validation)
+## Minimal test / checklist
 
 1. Prepare a QA prompt with clear anchors.
-2. **Baseline:** run without DT; log $\delta_s, E_{\text{res}}$; record correctness.
-3. **DT on:** log same metrics plus $R_t, Q_t, W_c$ and gates fired.
-4. Expect: lower $\delta_s$; fewer off-topic jumps (WRI), stalls resolved (WAY), justified detours (WDT), safe recovery (WTF).
-5. Record deltas: accuracy, $\Delta S$, rollbacks, bridge lines, gate activations.
+2. **Baseline:** run without DT; log \$\delta\_s, E\_{\mathrm{res}}\$; record correctness.
+3. **DT on:** log same metrics plus \$R\_t, Q\_t, W\_c\$ and gates fired.
+4. Expect: lower \$\delta\_s\$; fewer off-topic jumps (WRI), stalls resolved (WAY), justified detours (WDT), safe recovery (WTF).
+5. Record deltas: accuracy, \$\Delta S\$, rollbacks, bridge lines, gate activations.
 
 ---
 
 ## Quick engineering notes & troubleshooting
 
-* If $\mathcal{A}_0$ (anchors) is empty, WRI becomes a no-op and WAY pumps less entropy; log a warning.
-* If bridge lines repeat or look vacuous, lower $\mu_{\text{wdt}}$ and raise $\kappa_{\text{wri}}$.
-* For heavy-hallucination domains, use conservative defaults (higher $\tau_{\text{wri}}$, lower $\eta_{\text{prog}}$).
+* If \$\mathcal{A}\_0\$ (anchors) is empty, WRI becomes a no-op and WAY pumps less entropy; log a warning.
+* If bridge lines repeat or look vacuous, lower \$\mu\_{\mathrm{wdt}}\$ and raise \$\kappa\_{\mathrm{wri}}\$.
+* For heavy-hallucination domains, use conservative defaults (higher \$\tau\_{\mathrm{wri}}\$, lower \$\eta\_{\mathrm{prog}}\$).
 
 ---
 
 ### Footer
 
-* **Spec status:** stable draft for engineering evaluation; Unicode-math for GitHub Preview.
+* **Spec status:** stable draft for engineering evaluation; KaTeX-safe equations.
 * **Next deliverables:** add `examples/DT-examples/prompt_example.md` and `examples/DT-examples/decoding_hook.py`.
 * **Compatibility:** prompt-only rules, decoding-hook integration, or optional training regularizers; model-agnostic.
 * **Attribution:** part of **WFGY Core 2.0** family. Star the repo to follow updates.
