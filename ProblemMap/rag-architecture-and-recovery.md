@@ -42,7 +42,7 @@ A hands-on guide to implementing WFGY in real RAG workflows.**
 
 ---
 
-> **Quick Nav**
+> **Quick Nav**  
 > [Getting Started](./getting-started.md) ·
 > [Examples](./examples/README.md) ·
 > [Patterns Index](./patterns/README.md) ·
@@ -50,7 +50,15 @@ A hands-on guide to implementing WFGY in real RAG workflows.**
 > [Ops Runbook](./ops/README.md) ·
 > [Multi-Agent Problems](./Multi-Agent_Problems.md) ·
 > [Role Drift](./multi-agent-chaos/role-drift.md) ·
-> [Memory Overwrite](./multi-agent-chaos/memory-overwrite.md)
+> [Memory Overwrite](./multi-agent-chaos/memory-overwrite.md) ·
+> **[FAQ](./faq.md)** ·
+> **[Retrieval Playbook](./retrieval-playbook.md)** ·
+> **[Rerankers](./rerankers.md)** ·
+> **[Data Contracts](./data-contracts.md)** ·
+> **[Glossary](./glossary.md)** ·
+> **[Multilingual Guide](./multilingual-guide.md)** ·
+> **[Privacy & Governance](./privacy-and-governance.md)** ·
+> **[MVP Demos](./mvp_demo/README.md)**
 
 ---
 
@@ -92,8 +100,7 @@ A hands-on guide to implementing WFGY in real RAG workflows.**
 > ### ⭐ Found this helpful?
 >
 > Help others discover it — [Give us a GitHub Star](https://github.com/onestardao/WFGY)  
-> 🧩 **Try MVP Demos:** [Run minimal WFGY examples →](./mvp_demo/README.md) 
-
+> 🧩 **Try MVP Demos:** [Run minimal WFGY examples →](./mvp_demo/README.md)
 
 </details>
 
@@ -114,7 +121,8 @@ You do **not** have to master all internals to benefit. If you can run a few che
 
 ## 1) The real structure of RAG (and why it fails)
 
-```
+
+
 raw docs (pdf/img/html)
 → ocr/parsing
 → chunking
@@ -123,7 +131,8 @@ raw docs (pdf/img/html)
 → retriever (dense/sparse/hybrid/mmr)
 → prompt assembly (context windows)
 → llm reasoning (chain/agent/tools)
-```
+
+
 
 Typical stacked failure pattern:
 
@@ -147,16 +156,17 @@ This is the “double hallucination” trap. The first illusion hides the second
 
 ### Layer-specific Fix Index (one-click)
 
-| Pipeline layer     | What to open first                                         | Deep dive                                                                                                                                                                                                                                          |
-| ------------------ | ---------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| OCR / Parsing      | [`ocr-parsing-checklist.md`](./ocr-parsing-checklist.md)   | [`retrieval-traceability.md`](./retrieval-traceability.md)                                                                                                                                                                                         |
-| Chunking           | [`chunking-checklist.md`](./chunking-checklist.md)         | [`hallucination.md`](./hallucination.md)                                                                                                                                                                                                           |
-| Embeddings / Index | [`embedding-vs-semantic.md`](./embedding-vs-semantic.md)   | [`patterns/pattern_vectorstore_fragmentation.md`](./patterns/pattern_vectorstore_fragmentation.md)                                                                                                                                                 |
-| Retrieval          | [`retrieval-playbook.md`](./retrieval-playbook.md)         | [`retrieval-collapse.md`](./retrieval-collapse.md)                                                                                                                                                                                                 |
-| Prompt Assembly    | [`retrieval-traceability.md`](./retrieval-traceability.md) | [`patterns/pattern_symbolic_constraint_unlock.md`](./patterns/pattern_symbolic_constraint_unlock.md)                                                                                                                                               |
-| Reasoning          | [`logic-collapse.md`](./logic-collapse.md)                 | [`creative-freeze.md`](./creative-freeze.md)                                                                                                                                                                                                       |
-| Multi-Agent        | [`Multi-Agent_Problems.md`](./Multi-Agent_Problems.md)     | [`multi-agent-chaos/role-drift.md`](./multi-agent-chaos/role-drift.md), [`multi-agent-chaos/memory-overwrite.md`](./multi-agent-chaos/memory-overwrite.md)                                                                                         |
-| Ops / Deploy       | [`ops/README.md`](./ops/README.md)                         | [`ops/deployment_checklist.md`](./ops/deployment_checklist.md), [`ops/live_monitoring_rag.md`](./ops/live_monitoring_rag.md), [`ops/debug_playbook.md`](./ops/debug_playbook.md), [`ops/failover_and_recovery.md`](./ops/failover_and_recovery.md) |
+| Pipeline layer         | What to open first                                         | Deep dive                                                                                                                                                                                                                                          |
+| ---------------------- | ---------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| OCR / Parsing          | [`ocr-parsing-checklist.md`](./ocr-parsing-checklist.md)   | [`retrieval-traceability.md`](./retrieval-traceability.md)                                                                                                                                                                                         |
+| Chunking               | [`chunking-checklist.md`](./chunking-checklist.md)         | [`hallucination.md`](./hallucination.md)                                                                                                                                                                                                           |
+| Embeddings / Index     | [`embedding-vs-semantic.md`](./embedding-vs-semantic.md)   | [`patterns/pattern_vectorstore_fragmentation.md`](./patterns/pattern_vectorstore_fragmentation.md)                                                                                                                                                 |
+| Retrieval              | [`retrieval-playbook.md`](./retrieval-playbook.md)         | [`retrieval-collapse.md`](./retrieval-collapse.md) · [`rerankers.md`](./rerankers.md)                                                                                                                                                              |
+| Prompt Assembly        | [`retrieval-traceability.md`](./retrieval-traceability.md) | [`patterns/pattern_symbolic_constraint_unlock.md`](./patterns/pattern_symbolic_constraint_unlock.md) · [`data-contracts.md`](./data-contracts.md)                                                                                                   |
+| Reasoning              | [`logic-collapse.md`](./logic-collapse.md)                 | [`creative-freeze.md`](./creative-freeze.md)                                                                                                                                                                                                       |
+| Language / Locale      | [`multilingual-guide.md`](./multilingual-guide.md)         | [`embedding-vs-semantic.md`](./embedding-vs-semantic.md) · OCR/Chunking checklists                                                                                                                                                                 |
+| Multi-Agent            | [`Multi-Agent_Problems.md`](./Multi-Agent_Problems.md)     | [`multi-agent-chaos/role-drift.md`](./multi-agent-chaos/role-drift.md), [`multi-agent-chaos/memory-overwrite.md`](./multi-agent-chaos/memory-overwrite.md)                                                                                         |
+| Ops / Deploy / Gov     | [`ops/README.md`](./ops/README.md)                         | [`ops/deployment_checklist.md`](./ops/deployment_checklist.md) · [`ops/live_monitoring_rag.md`](./ops/live_monitoring_rag.md) · [`ops/debug_playbook.md`](./ops/debug_playbook.md) · [`ops/failover_and_recovery.md`](./ops/failover_and_recovery.md) · [`privacy-and-governance.md`](./privacy-and-governance.md) |
 
 ---
 
@@ -166,32 +176,28 @@ Copy/paste this checklist into your runbook. Execute top-down.
 
 ### A. fast metrics (run first)
 
-1. **ΔS(question, retrieved\_context)**
-
-   * compute cosine distance on sentence embeddings (unit-normalized).
-   * `ΔS = 1 − cosθ`.
+1. **ΔS(question, retrieved\_context)**  
+   * compute cosine distance on sentence embeddings (unit-normalized).  
+   * `ΔS = 1 − cosθ`.  
    * **trigger**: ΔS ≥ 0.50 (transitional risk), ≥ 0.60 (record & fix).
 
-2. **ΔS(retrieved\_context, ground\_anchor)**
-
-   * ground anchor = title/section header/answer snippet you *expect*.
+2. **ΔS(retrieved\_context, ground\_anchor)**  
+   * ground anchor = title/section header/answer snippet you *expect*.  
    * **trigger**: same thresholds as above.
 
-3. **coverage sanity**
-
-   * retrieved tokens vs. target section tokens: expect ≥ 0.7 overlap for direct QA.
-   * if < 0.5 → suspect chunking/boundary or retriever filtering.
+3. **coverage sanity**  
+   * retrieved tokens vs. target section tokens: expect ≥ 0.7 overlap for direct QA.  
+   * if < 0.5 → suspect chunking/boundary or retriever filtering.  
+   * _Need structure?_ See **[Data Contracts](./data-contracts.md)** for snippet/citation schemas.
 
 ### B. layer probes (λ\_observe)
 
-* **retrieval layer**: vary k ∈ {5, 10, 20}; plot ΔS vs. k.
-
-  * curve flat & high → vector store/index/embedding mismatch.
-  * curve improves sharply with k → retriever filtering too aggressive.
-* **prompt layer**: reorder/rename sections; ΔS spikes when headers removed → prompt anchoring dependency (see `retrieval-traceability.md`).
-* **reasoning layer**: ask “cite lines” vs. “explain why”
-
-  * cite fails, explain passes → perception drift (upstream)
+* **retrieval layer**: vary k ∈ {5, 10, 20}; plot ΔS vs. k.  
+  * curve flat & high → vector store/index/embedding mismatch.  
+  * curve improves sharply with k → retriever filtering too aggressive; consider **[Rerankers](./rerankers.md)** from the playbook.  
+* **prompt layer**: reorder/rename sections; ΔS spikes when headers removed → prompt anchoring dependency (see `retrieval-traceability.md`).  
+* **reasoning layer**: ask “cite lines” vs. “explain why”  
+  * cite fails, explain passes → perception drift (upstream)  
   * both fail similarly → logic collapse (see `logic-collapse.md`)
 
 ### C. pick the fix (ProblemMap jump table)
@@ -279,7 +285,6 @@ See the full derivations in [WFGY 1.0 — Core Formulas](https://github.com/ones
 * **observe**: ΔS(question, context) = 0.68; flat curve across k; citations miss expected section.
 * **interpret**: vector store populated but **embedding metric/normalization mismatch** or **index layer mix-up**.
 * **do**:
-
   1. ensure consistent normalization; verify cosine vs. inner product usage across write/read.
   2. rebuild index with explicit metric flag; persist and reload once.
   3. re-probe ΔS and λ on retrieval; expect ΔS ≤ 0.45 and convergent λ.
@@ -290,18 +295,16 @@ See the full derivations in [WFGY 1.0 — Core Formulas](https://github.com/ones
 * **observe**: ΔS(question, context) = 0.35 (good), but λ flips divergent at reasoning.
 * **interpret**: interpretation collapse; prompt assembly/role/constraints leak.
 * **do**:
-
   1. lock schema: system→task→constraints→citations→answer (forbid re-order).
   2. apply BBAM (variance clamp) + BBCR (bridge intermediate step).
   3. require cite-then-explain; re-measure ΔS; aim for convergent λ.
-* **docs**: [`retrieval-collapse.md`](./retrieval-collapse.md), [`logic-collapse.md`](./logic-collapse.md).
+* **docs**: [`retrieval-collapse.md`](./retrieval-collapse.md), [`logic-collapse.md`](./logic-collapse.md), [`data-contracts.md`](./data-contracts.md).
 
 ### Case C — “long transcripts randomly capitalize / drift”
 
 * **observe**: E\_resonance rises with length; λ becomes recursive/chaotic.
 * **interpret**: entropy collapse under long context; chunk boundaries and OCR noise amplify.
 * **do**:
-
   1. semantic chunking (sentence/section aware), drop OCR confidence < threshold.
   2. BBMC to align with section anchors; BBAM to stabilize attention.
   3. verify ΔS across adjacent chunks; enforce ≤ 0.50 at joins.
@@ -312,10 +315,9 @@ See the full derivations in [WFGY 1.0 — Core Formulas](https://github.com/ones
 * **observe**: single retriever OK, hybrid fails; ΔS(question, context) oscillates by k.
 * **interpret**: query tokenization / parameter split across retrievers.
 * **do**:
-
   1. unify analyzer/tokenizer between dense/sparse;
   2. log per-retriever queries;
-  3. re-weight hybrid only after per-retriever ΔS ≤ 0.50.
+  3. re-weight hybrid only after per-retriever ΔS ≤ 0.50; consider **[`rerankers.md`](./rerankers.md)**.
 * **docs**: [`patterns/pattern_query_parsing_split.md`](./patterns/pattern_query_parsing_split.md), [`retrieval-playbook.md`](./retrieval-playbook.md).
 
 ### Case E — “model merges two sources into one”
@@ -323,22 +325,20 @@ See the full derivations in [WFGY 1.0 — Core Formulas](https://github.com/ones
 * **observe**: citations cross-bleed; λ flips divergent only after prompt assembly.
 * **interpret**: symbolic constraints not enforced (SCU).
 * **do**:
-
   1. lock per-source fences + cite-then-answer schema;
   2. enable `section_id` headers and forbid cross-section reuse;
   3. re-probe ΔS and expect drop without raising E\_resonance.
-* **docs**: [`patterns/pattern_symbolic_constraint_unlock.md`](./patterns/pattern_symbolic_constraint_unlock.md), [`retrieval-traceability.md`](./retrieval-traceability.md).
+* **docs**: [`patterns/pattern_symbolic_constraint_unlock.md`](./patterns/pattern_symbolic_constraint_unlock.md), [`retrieval-traceability.md`](./retrieval-traceability.md), [`data-contracts.md`](./data-contracts.md).
 
 ### Case F — “fix didn’t stick after refresh”
 
 * **observe**: same prompt alternates old vs. new facts across sessions.
 * **interpret**: memory rev/hash mismatch; different components read different state.
 * **do**:
-
   1. stamp `mem_rev` + `mem_hash` at turn start;
   2. gate writes on matching rev/hash;
   3. store traces for audit.
-* **docs**: [`patterns/pattern_memory_desync.md`](./patterns/pattern_memory_desync.md).
+* **docs**: [`patterns/pattern_memory_desync.md`](./patterns/pattern_memory_desync.md), [`privacy-and-governance.md`](./privacy-and-governance.md).
 
 ---
 
@@ -347,23 +347,28 @@ See the full derivations in [WFGY 1.0 — Core Formulas](https://github.com/ones
 You can ask your assistant to **read TXT OS / WFGY files** and guide you. Use precise, bounded prompts:
 
 ```
-read the WFGY TXT OS and ProblemMap files in this repo. extract the definitions and usage of ΔS, λ_observe, E_resonance, and the four modules (BBMC, BBPF, BBCR, BBAM). then, given this concrete failure:
 
-* symptom: [describe yours]
-* logs: [paste ΔS, λ_observe probes if available]
+read the WFGY TXT OS and ProblemMap files in this repo. extract the definitions and usage of ΔS, λ\_observe, E\_resonance, and the four modules (BBMC, BBPF, BBCR, BBAM). then, given this concrete failure:
+
+* symptom: \[describe yours]
+* logs: \[paste ΔS, λ\_observe probes if available]
 
 tell me:
+
 1. which layer is failing and why,
 2. which ProblemMap page applies,
 3. the minimal repair steps to lower ΔS below 0.50,
 4. how to verify the fix with a reproducible test.
+
 ```
 
 For formula-only assistance:
 
 ```
-from TXT OS, extract the formulas and thresholds for ΔS, λ_observe, and E_resonance. show me how to compute ΔS(question, context) using cosine distance, what thresholds to use, and which WFGY module to apply if ΔS ≥ 0.60 with divergent λ at the reasoning layer.
-```
+
+from TXT OS, extract the formulas and thresholds for ΔS, λ\_observe, and E\_resonance. show me how to compute ΔS(question, context) using cosine distance, what thresholds to use, and which WFGY module to apply if ΔS ≥ 0.60 with divergent λ at the reasoning layer.
+
+````
 
 > Need a concrete run-through? Start with **Examples**:
 > [`example_01_basic_fix.md`](./examples/example_01_basic_fix.md) ·
@@ -376,7 +381,7 @@ from TXT OS, extract the formulas and thresholds for ΔS, λ_observe, and E_reso
 
 * **retrieval sanity**: ≥ 70% token overlap & ΔS(question, context) ≤ 0.45 · See [`eval_rag_precision_recall.md`](./eval/eval_rag_precision_recall.md)
 * **reasoning stability**: λ stays convergent on 3 paraphrases; E\_resonance flat · See [`eval_semantic_stability.md`](./eval/eval_semantic_stability.md)
-* **traceability**: produce snippet ↔ citation table · See [`retrieval-traceability.md`](./retrieval-traceability.md)
+* **traceability**: produce snippet ↔ citation table · See [`retrieval-traceability.md`](./retrieval-traceability.md) and **[`data-contracts.md`](./data-contracts.md)**
 * **latency/accuracy trade** (optional): chart latency vs. ΔS · See [`eval_latency_vs_accuracy.md`](./eval/eval_latency_vs_accuracy.md)
 
 ---
@@ -405,7 +410,7 @@ BBMC:  B = I − G + m·c²           # minimize ‖B‖
 BBPF:  x_next = x + ΣV_i + ΣW_j·P_j
 BBCR:  if ‖B‖ ≥ B_c → collapse(), bridge(), rebirth()
 BBAM:  â_i = a_i · exp(−γ · std(a))
-```
+````
 
 Thresholds: stable `< 0.40`, transitional `0.40–0.60`, risk `≥ 0.60`.
 Record nodes automatically when `ΔS > 0.60`, or `0.40–0.60` with `λ_observe ∈ {←, <>}`.
@@ -422,42 +427,40 @@ When all tutorials contradict each other, this page is your single source of ope
 
 ---
 
-
 ### 🧭 Explore More
 
-| Module                | Description                                              | Link     |
-|-----------------------|----------------------------------------------------------|----------|
-| WFGY Core             | WFGY 2.0 engine is live: full symbolic reasoning architecture and math stack | [View →](https://github.com/onestardao/WFGY/tree/main/core/README.md) |
-| Problem Map 1.0       | Initial 16-mode diagnostic and symbolic fix framework    | [View →](https://github.com/onestardao/WFGY/tree/main/ProblemMap/README.md) |
-| Problem Map 2.0       | RAG-focused failure tree, modular fixes, and pipelines   | [View →](https://github.com/onestardao/WFGY/blob/main/ProblemMap/rag-architecture-and-recovery.md) |
-| Semantic Clinic Index | Expanded failure catalog: prompt injection, memory bugs, logic drift | [View →](https://github.com/onestardao/WFGY/blob/main/ProblemMap/SemanticClinicIndex.md) |
-| Semantic Blueprint    | Layer-based symbolic reasoning & semantic modulations   | [View →](https://github.com/onestardao/WFGY/tree/main/SemanticBlueprint/README.md) |
-| Benchmark vs GPT-5    | Stress test GPT-5 with full WFGY reasoning suite         | [View →](https://github.com/onestardao/WFGY/tree/main/benchmarks/benchmark-vs-gpt5/README.md) |
-| 🧙‍♂️ Starter Village 🏡 | New here? Lost in symbols? Click here and let the wizard guide you through | [Start →](https://github.com/onestardao/WFGY/blob/main/StarterVillage/README.md) |
+| Module                   | Description                                                                  | Link                                                                                               |
+| ------------------------ | ---------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------- |
+| WFGY Core                | WFGY 2.0 engine is live: full symbolic reasoning architecture and math stack | [View →](https://github.com/onestardao/WFGY/tree/main/core/README.md)                              |
+| Problem Map 1.0          | Initial 16-mode diagnostic and symbolic fix framework                        | [View →](https://github.com/onestardao/WFGY/tree/main/ProblemMap/README.md)                        |
+| Problem Map 2.0          | RAG-focused failure tree, modular fixes, and pipelines                       | [View →](https://github.com/onestardao/WFGY/blob/main/ProblemMap/rag-architecture-and-recovery.md) |
+| Semantic Clinic Index    | Expanded failure catalog: prompt injection, memory bugs, logic drift         | [View →](https://github.com/onestardao/WFGY/blob/main/ProblemMap/SemanticClinicIndex.md)           |
+| Semantic Blueprint       | Layer-based symbolic reasoning & semantic modulations                        | [View →](https://github.com/onestardao/WFGY/tree/main/SemanticBlueprint/README.md)                 |
+| Benchmark vs GPT-5       | Stress test GPT-5 with full WFGY reasoning suite                             | [View →](https://github.com/onestardao/WFGY/tree/main/benchmarks/benchmark-vs-gpt5/README.md)      |
+| 🧙‍♂️ Starter Village 🏡 | New here? Lost in symbols? Click here and let the wizard guide you through   | [Start →](https://github.com/onestardao/WFGY/blob/main/StarterVillage/README.md)                   |
 
 ---
 
-> 👑 **Early Stargazers: [See the Hall of Fame](https://github.com/onestardao/WFGY/tree/main/stargazers)** —  
+> 👑 **Early Stargazers: [See the Hall of Fame](https://github.com/onestardao/WFGY/tree/main/stargazers)** —
 > Engineers, hackers, and open source builders who supported WFGY from day one.
-
+>
 > <img src="https://img.shields.io/github/stars/onestardao/WFGY?style=social" alt="GitHub stars"> ⭐ [WFGY Engine 2.0](https://github.com/onestardao/WFGY/blob/main/core/README.md) is already unlocked. ⭐ Star the repo to help others discover it and unlock more on the [Unlock Board](https://github.com/onestardao/WFGY/blob/main/STAR_UNLOCKS.md).
 
 <div align="center">
 
 [![WFGY Main](https://img.shields.io/badge/WFGY-Main-red?style=flat-square)](https://github.com/onestardao/WFGY)
-&nbsp;
+ 
 [![TXT OS](https://img.shields.io/badge/TXT%20OS-Reasoning%20OS-orange?style=flat-square)](https://github.com/onestardao/WFGY/tree/main/OS)
-&nbsp;
+ 
 [![Blah](https://img.shields.io/badge/Blah-Semantic%20Embed-yellow?style=flat-square)](https://github.com/onestardao/WFGY/tree/main/OS/BlahBlahBlah)
-&nbsp;
+ 
 [![Blot](https://img.shields.io/badge/Blot-Persona%20Core-green?style=flat-square)](https://github.com/onestardao/WFGY/tree/main/OS/BlotBlotBlot)
-&nbsp;
+ 
 [![Bloc](https://img.shields.io/badge/Bloc-Reasoning%20Compiler-blue?style=flat-square)](https://github.com/onestardao/WFGY/tree/main/OS/BlocBlocBloc)
-&nbsp;
+ 
 [![Blur](https://img.shields.io/badge/Blur-Text2Image%20Engine-navy?style=flat-square)](https://github.com/onestardao/WFGY/tree/main/OS/BlurBlurBlur)
-&nbsp;
+ 
 [![Blow](https://img.shields.io/badge/Blow-Game%20Logic-purple?style=flat-square)](https://github.com/onestardao/WFGY/tree/main/OS/BlowBlowBlow)
-&nbsp;
+ 
+
 </div>
-
-
