@@ -98,6 +98,12 @@ Run A/B/C now on the five domains with short non-trivial tasks you choose. Then 
 Formal sketch (in files):
 `prog = max(ζ_min, δ_s^(t−1) − δ_s^t)  P = prog^ω  alt = (−1)^(cycle)  Φ = δ·alt + ε  W_c = clip(B·P + Φ, −θ_c, +θ_c)`
 
+**Curious how this actually works? Dive into the math:**
+- [**WFGY Formulas (core engine math)**](https://github.com/onestardao/WFGY/blob/main/SemanticBlueprint/wfgy_formulas.md) — BBMC/BBPF/BBCR/BBAM, ΔS, λ\_observe, E\_resonance.
+- [**Drunk Transformer Regulators**](https://github.com/onestardao/WFGY/blob/main/SemanticBlueprint/drunk_transformer_formulas.md) — Coupler \(W\_c\) and the five-formula control layer.
+
+
+
 ---
 
 ## 🔍 How these numbers are measured
