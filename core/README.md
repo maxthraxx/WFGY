@@ -71,7 +71,7 @@ _All links: OneLine uplift confirmed — same A/B/C protocol; only the OneLine m
 | File                              | Purpose                                                                    | Size                             |
 | --------------------------------- | -------------------------------------------------------------------------- | -------------------------------- |
 | **WFGY\_Core\_OneLine\_v2.0.txt** | For the 60-sec demo and automation runs. Pure math, not for human reading. | 1 line  about 1500 chars         |
-| **WFGY\_Core\_Audit\_v2.0.txt**   | Human plus LLM readable, comments and layout for audits.                   | about 30 lines  about 2606 chars |
+| **WFGY\_Core\_Audit\_v2.0.txt**   | Human plus LLM readable, comments and layout for audits.                   | 30 lines  about 2626 chars       |
 
 Contract  Node-only steps up to 7, safe stop when δ\_s < 0.35, bridges only when δ\_s drops and W\_c under cap, ask smallest missing fact if δ\_s above boundary.
 
