@@ -4,7 +4,7 @@
 **Your plug-and-play semantic firewall — praised by users, no infra changes needed.**  
 
 ---
-> Thanks everyone — we’ve just passed ⭐ 550 in 60 Days (we started at Jun 15)  
+> Thanks everyone — we’ve just passed ⭐ 600 in 60 Days (we started at Jun 15)  
 > Most people who find this page end up starring it — because WFGY solves real bugs.  
 > **[WFGY Core](https://github.com/onestardao/WFGY/blob/main/core/README.md)** will be released on Aug 15 — the world’s tiniest reasoning engine (30-line TXT with Drunk Transformer).  
 > Truly appreciate all the support — you made this happen!  
