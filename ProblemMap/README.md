@@ -8,7 +8,7 @@
 > Most people who find this page end up starring it — because WFGY solves real bugs.  
 > **[WFGY Core](https://github.com/onestardao/WFGY/blob/main/core/README.md)** will be released on Aug 15 — the world’s tiniest reasoning engine (30-line TXT with Drunk Transformer).  
 > Truly appreciate all the support — you made this happen!  
-> Read user feedback: [Discussions #10](https://github.com/onestardao/WFGY/discussions/10)
+> Read user feedback: [Hero Log](https://github.com/onestardao/WFGY/discussions/10)
 
 ---
 
