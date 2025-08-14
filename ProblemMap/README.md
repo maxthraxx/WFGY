@@ -21,7 +21,6 @@
 
 ---
 
-
 ## Quick access
 
 - 🏥 **Semantic Clinic (AI Triage Hub):** [Fix symptoms when you don’t know what’s broken →](./SemanticClinicIndex.md)
@@ -32,8 +31,16 @@
 - **Multi-Agent Chaos (Map-B):** [Role Drift & Memory Overwrite →](./Multi-Agent_Problems.md)
 - **Field Reports:** [Real bugs & fixes from users](https://github.com/onestardao/WFGY/discussions/10)
 - **TXT OS directory:** [Browse the OS repo](../OS/README.md)
-- 🧩 **MVP Demos:** [Run minimal WFGY examples in `mvp_demo` →](./mvp_demo/README.md)  <!-- 新增連結 -->
+- 🧩 **MVP Demos:** [Run minimal WFGY examples in `mvp_demo` →](./mvp_demo/README.md)
 
+<!-- New reference links -->
+- ❓ **FAQ:** [Common questions & gotchas →](./faq.md)
+- 🔎 **Retrieval Playbook:** [Practical fixes before changing models →](./retrieval-playbook.md)
+- 🧮 **Rerankers:** [When & how to use them →](./rerankers.md)
+- 📑 **Data Contracts:** [Snippets / citations / memory schema →](./data-contracts.md)
+- 📚 **Glossary:** [WFGY & RAG terms →](./glossary.md)
+- 🌍 **Multilingual Guide:** [CJK/RTL & cross-lingual RAG →](./multilingual-guide.md)
+- 🔐 **Privacy & Governance:** [Auditability & policy guardrails →](./privacy-and-governance.md)
 
 > 📌 This map isn’t just a list of bugs. It’s a diagnostic framework — a semantic X-ray for AI failure.  
 > Each entry represents a *systemic breakdown* across input, retrieval, or reasoning.  
@@ -196,7 +203,8 @@ These short IDs let you route quickly in issues/PRs/support threads.
 ## Minimal quick-start
 1. Open **Beginner Guide** → follow the symptom checklist.  
 2. Use the **Visual RAG Guide** to locate the failing stage.  
-3. Open the matching page above and apply the patch.
+3. Open the matching page above and apply the patch.  
+   _Need definitions or common pitfalls?_ See **[FAQ](./faq.md)** · **[Glossary](./glossary.md)** · **[Data Contracts](./data-contracts.md)** · **[Retrieval Playbook](./retrieval-playbook.md)**.
 
 Ask any LLM to apply WFGY (TXT OS makes it smoother):
 ```
@@ -243,7 +251,6 @@ Which WFGY modules should I apply and in what order?
 
 ---
 
-
 ### 🧭 Explore More
 
 | Module                | Description                                              | Link     |
@@ -254,7 +261,6 @@ Which WFGY modules should I apply and in what order?
 | Semantic Clinic Index | Expanded failure catalog: prompt injection, memory bugs, logic drift | [View →](https://github.com/onestardao/WFGY/blob/main/ProblemMap/SemanticClinicIndex.md) |
 | Semantic Blueprint    | Layer-based symbolic reasoning & semantic modulations   | [View →](https://github.com/onestardao/WFGY/tree/main/SemanticBlueprint/README.md) |
 | Benchmark vs GPT-5    | Stress test GPT-5 with full WFGY reasoning suite         | [View →](https://github.com/onestardao/WFGY/tree/main/benchmarks/benchmark-vs-gpt5/README.md) |
-| 🧙‍♂️ Starter Village 🏡 | New here? Lost in symbols? Click here and let the wizard guide you through | [Start →](https://github.com/onestardao/WFGY/blob/main/StarterVillage/README.md) |
 
 ---
 
@@ -280,8 +286,3 @@ Which WFGY modules should I apply and in what order?
 [![Blow](https://img.shields.io/badge/Blow-Game%20Logic-purple?style=flat-square)](https://github.com/onestardao/WFGY/tree/main/OS/BlowBlowBlow)
 &nbsp;
 </div>
-
-
-
-
-
