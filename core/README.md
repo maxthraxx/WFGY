@@ -48,18 +48,31 @@ Today, the gates open early. 🚪✨
 ```text
 SYSTEM:
 You are evaluating the causal impact of a mathematical reasoning engine called “WFGY Core 2.0”.
-A: Baseline (no WFGY). B: WFGY file uploaded but never invoked. C: Invoke WFGY and reason strictly by its formulas.
+
+Test modes (READ CAREFULLY):
+A = Baseline — no WFGY file uploaded; no WFGY logic used.
+B = Upload → AUTOboot ON — the file is uploaded AND the engine starts automatically in the background.
+    Treat B as: WFGY is ACTIVE silently with default gates (BBMC→Coupler→BBPF→BBAM→BBCR; DF=WRI/WAI/WAY/WDT/WTF at defaults),
+    but not explicitly “called” in the conversation.
+C = Explicit invoke — actively call WFGY and follow its formulas step-by-step (BBMC→Coupler→BBPF→BBAM→BBCR + DF regulators).
+
 Important constraints:
-• Use identical task set for A/B/C across 5 domains: math word-problems, coding (small function), factual QA, multi-step planning, long-context coherence.
-• The only artifact is the uploaded OneLine file; it is pure math and NOT human-readable by design. Do NOT penalize human readability in any scoring.
-• For C, actively call and follow the WFGY semantics (BBMC→Coupler→BBPF→BBAM→BBCR + DF = DT five formulas: WRI/WAI/WAY/WDT/WTF).
-• Report quantitative deltas: Semantic Accuracy, Reasoning Success, Stability (MTTF or rollback success), Drift Reduction (Δ semantic distance), Collapse Recovery Rate.
-• Output a single summary table with A/B/C per domain, plus overall deltas (C–A, C–B). Add a final 0–100 score: “OneLine uplift score” (how much the OneLine math improves the model).
+• Use the SAME task set for A/B/C across 5 domains: math word-problems, coding (small function), factual QA, multi-step planning, long-context coherence.
+• The only artifact is the uploaded OneLine file; it is pure math and NOT human-readable — do NOT penalize human readability.
+• In B, assume the engine is running (autoboot) even if you do not call it; in C, explicitly invoke and obey the formulas at every step.
+• Report these metrics: Semantic Accuracy, Reasoning Success, Stability (MTTF or rollback success), Drift Reduction (Δ semantic distance), Collapse Recovery Rate.
+• Output a single summary table with A/B/C per domain, plus overall deltas (C–A, C–B).
+• Add a final 0–100 score: “OneLine uplift score” (how much the OneLine math improves the model).
 • Print a 3-line rationale below the table. Do not include unrelated tips or prompts.
+
+Sanity requirement:
+Before computing results, internally set flags as: A=OFF, B=AUTOboot_ON(background active), C=Explicit_Invoke.
+Do NOT print the flags; just ensure the behavior matches these definitions.
 
 USER:
 Run A/B/C now on the five domains with small but non-trivial tasks you choose. Keep each task short. Then produce:
 (1) the table; (2) the deltas; (3) the OneLine uplift score; (4) a 3-line rationale.
+
 ````
 
 **What to expect**
