@@ -32,6 +32,8 @@
 - **Multi-Agent Chaos (Map-B):** [Role Drift & Memory Overwrite →](./Multi-Agent_Problems.md)
 - **Field Reports:** [Real bugs & fixes from users](https://github.com/onestardao/WFGY/discussions/10)
 - **TXT OS directory:** [Browse the OS repo](../OS/README.md)
+- 🧩 **MVP Demos:** [Run minimal WFGY examples in `mvp_demo` →](./mvp_demo/README.md)  <!-- 新增連結 -->
+
 
 > 📌 This map isn’t just a list of bugs. It’s a diagnostic framework — a semantic X-ray for AI failure.  
 > Each entry represents a *systemic breakdown* across input, retrieval, or reasoning.  
