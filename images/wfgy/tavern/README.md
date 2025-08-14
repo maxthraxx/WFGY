@@ -21,7 +21,7 @@ and someone’s always shouting “I FOUND A SECRET DOOR!”
 🔵 **Quest #3: Seven Days & Seven Nights Marathon**  
 **Status:** 🔒 *Coming in v1.1.0*  
 > "*Rumors speak of an update...  
-> When the version hits 1.1.0, the path will open. Come back here.*"
+> When the version hits 2.1.0, the path will open. Come back here.*"
 
 ---
 
