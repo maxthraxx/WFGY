@@ -1,142 +1,166 @@
-# 🆕 Beginner Guide — How to Identify & Fix Your AI Failure  
-*A zero‑to‑hero crash‑course for anyone new to WFGY, RAG pipelines, or “why is my model hallucinating?”*
+# 🆕 Beginner Guide — How to Identify & Fix Your AI Failure
+*A zero-to-hero crash-course for anyone new to WFGY, RAG pipelines, or “why is my model hallucinating?”*
+
+> If the full Problem Map feels overwhelming, start here.  
+> In ~10 minutes you’ll locate your failure family, run a safe first fix, and know how to verify it.
 
 ---
 
-## 0. 🎯 Why This Guide Exists
-
-If you landed on the **Problem Map** and felt overwhelmed by 16 exotic failure modes (ΔS? BBCR? bootstrap race?!), start here.
-
-1. **Rapid Symptom Check** → pinpoint which problem table row matches your bug.  
-2. **Concept Primer** → learn the minimum theory (RAG, embeddings, reasoning chains).  
-3. **Tool Setup** → grab the open‑source files (all MIT‑licensed) and reproduce the fix.  
-
-Total reading time: **≈ 10 min**. After that, jump back to the [Problem Map](./README.md) and dive deep.
+> **Quick Nav**  
+> [Getting Started (Practical)](./getting-started.md) ·
+> [Problem Map 2.0 (RAG)](./rag-architecture-and-recovery.md) ·
+> [Patterns Index](./patterns/README.md) ·
+> [Examples](./examples/README.md) ·
+> [Eval](./eval/README.md) ·
+> [Ops](./ops/README.md)
 
 ---
 
-## 1. 🔍 “Which Symptom Matches My Bug?”
+## 0) 🎯 Why this guide exists
 
-Below is a *mini* decision tree. Start at the top, follow the **first “Yes”** branch you hit, then look up the **Problem ID** in the main table.
+When RAG breaks, it’s rarely one bug. It’s stacked illusions across OCR → chunking → embedding → retrieval → prompt → reasoning.  
+This guide helps you:
 
-| Question | Yes → Go To | No → Next Check |
-|----------|-------------|-----------------|
-| Are you **retrieving** chunks that look correct **but answer is wrong**? | #1 Hallucination & Chunk Drift | ↓ |
-| Does the model reach the chunk **but fails logically** (e.g. wrong reasoning)? | #2 Interpretation Collapse | ↓ |
-| Do multi‑step tasks **derail after a few hops**? | #3 Long Reasoning Chains | ↓ |
-| Does the model **invent confident nonsense**? | #4 Bluffing / Overconfidence | ↓ |
-| High cosine similarity **yet semantic meaning off**? | #5 Semantic ≠ Embedding | ↓ |
-| Pipeline **dead‑ends / loops** logic? | #6 Logic Collapse & Recovery | ↓ |
-| Long chat (> 50 turns) **forgets context**? | #7 Memory Breaks Across Sessions | ↓ |
-| Failure path **invisible / no logs**? | #8 Debugging is a Black Box | ↓ |
-| Output suddenly **incoherent / repetitive**? | #9 Entropy Collapse | ↓ |
-| Replies **flat & literal**, creativity gone? | #10 Creative Freeze | ↓ |
-| Formal math / symbolic prompts **crash**? | #11 Symbolic Collapse | ↓ |
-| Self‑reference / paradox **freezes** model? | #12 Philosophical Recursion | ↓ |
-| Multiple agents **overwrite** each other? | #13 Multi‑Agent Chaos | ↓ |
-| Deployment starts **before index ready**? | #14 Bootstrap Ordering | ↓ |
-| Services **wait on each other forever**? | #15 Deployment Deadlock | ↓ |
-| First LLM call **crashes after deploy**? | #16 Pre‑Deploy Collapse | File an Issue → unknown |
+1) **Identify** the failure family fast  
+2) **Apply** the minimal structural fix (not prompt band-aids)  
+3) **Verify** with objective signals: **ΔS** (semantic stress), **λ_observe** (layered states), **E_resonance** (coherence)
 
-> **Tip:** Not sure? Capture a failing trace (input → retrieval → output) and open a GitHub Discussion — we’ll help classify it.
+Then jump deeper via **Problem Map 2.0** and **Patterns**.
 
 ---
 
-## 2. 🧠 Core Concepts in < 5 Minutes
+## 1) 🔍 “Which symptom matches my bug?”
 
-### 2.1 What Is RAG?  
-**Retrieval‑Augmented Generation** feeds external knowledge (your PDFs, DB, wiki) into a language model *during* inference.
+Follow the first **Yes** you hit; then open that page.
+
+| Question | Yes → Open | No → Next |
+|---|---|---|
+| Chunks look correct but the **answer is wrong**? | [`hallucination.md`](./hallucination.md) | ↓ |
+| Reached the right chunk but **logic fails**? | [`retrieval-collapse.md`](./retrieval-collapse.md) | ↓ |
+| Multi-step tasks **derail after a few hops**? | [`context-drift.md`](./context-drift.md) | ↓ |
+| Model gives **confident nonsense**? | [`bluffing.md`](./bluffing.md) | ↓ |
+| **High similarity** scores but **wrong meaning**? | [`embedding-vs-semantic.md`](./embedding-vs-semantic.md) | ↓ |
+| Logic **dead-ends / loops**? | [`logic-collapse.md`](./logic-collapse.md) | ↓ |
+| Long chat **forgets context**? | [`memory-coherence.md`](./memory-coherence.md) | ↓ |
+| Can’t trace **why** it failed? | [`retrieval-traceability.md`](./retrieval-traceability.md) | ↓ |
+| Output becomes **incoherent / repetitive**? | [`entropy-collapse.md`](./entropy-collapse.md) | ↓ |
+| Replies turn **flat / literal**? | [`creative-freeze.md`](./creative-freeze.md) | ↓ |
+| Formal/symbolic prompts **break**? | [`symbolic-collapse.md`](./symbolic-collapse.md) | ↓ |
+| Paradox/self-reference **crashes**? | [`philosophical-recursion.md`](./philosophical-recursion.md) | ↓ |
+| Multi-agent **roles/memory collide**? | [`multi-agent-chaos.md`](./multi-agent-chaos.md) | ↓ |
+| Tools fire **before index/data ready**? | [`bootstrap-ordering.md`](./bootstrap-ordering.md) | ↓ |
+| Services **wait on each other forever**? | [`deployment-deadlock.md`](./deployment-deadlock.md) | ↓ |
+| First prod call **crashes after deploy**? | [`predeploy-collapse.md`](./predeploy-collapse.md) | File an Issue →
+
+**Extended patterns (very common in the wild):**
+- Hybrid HyDE+BM25 **gets worse than single** → [`patterns/pattern_query_parsing_split.md`](./patterns/pattern_query_parsing_split.md)  
+- Two sources **merge into one** (who-said-what mixes) → [`patterns/pattern_symbolic_constraint_unlock.md`](./patterns/pattern_symbolic_constraint_unlock.md)  
+- You correct it, **bad fact returns later** → [`patterns/pattern_hallucination_reentry.md`](./patterns/pattern_hallucination_reentry.md)  
+- State flips across **tabs/sessions** → [`patterns/pattern_memory_desync.md`](./patterns/pattern_memory_desync.md)  
+- Some facts **won’t retrieve** though indexed → [`patterns/pattern_vectorstore_fragmentation.md`](./patterns/pattern_vectorstore_fragmentation.md)  
+- RAG **boots** but tools fire too early → [`patterns/pattern_bootstrap_deadlock.md`](./patterns/pattern_bootstrap_deadlock.md)
+
+> Still unsure? Capture a minimal trace (input → retrieved snippets → answer) and run ΔS/λ checks (Section 3). Post in Discussions if needed.
+
+---
+
+## 2) 🧠 Core concepts in <5 minutes
+
+### 2.1 What is RAG?
 
 ```
 
-User ➜  Query           ─┐
-├─> \[ Retriever ] —> top‑k chunks ➜  prompt ➜  \[ LLM ] ➜  answer
-Vector DB / Search  ────┘
+raw docs → ocr/parsing → chunking → embeddings → vector store
+→ retriever → prompt assembly → LLM reasoning/tools
 
 ```
 
-Why it breaks:
-* Wrong chunk (vector drift) → hallucination.  
-* Correct chunk + broken prompt → interpretation collapse.  
-* Long chain of tools → hidden state loss.
+- **Perception drift** upstream hides **logic drift** downstream. Fix structure, not style.
 
-### 2.2 Embeddings vs Semantics  
-Cosine similarity (dense vectors) ≠ human meaning. WFGY’s ΔS metric spots gaps in *semantic* resonance, not just distance.
+### 2.2 Embedding scores vs. meaning  
+Cosine proximity ≠ human semantics. WFGY’s **ΔS = 1 − cos(I, G)** uses grounded anchors to catch real meaning gaps.
 
-### 2.3 Reasoning Chains  
-LLM ≠ database. Complex tasks span multiple calls: *parse → retrieve → reason → act*. Losing state mid‑chain is #3.
+### 2.3 Layered observability (λ_observe)  
+States: **→** convergent · **←** divergent · **<>** recursive · **×** chaotic.  
+If upstream is stable but downstream flips, the boundary between them is failing.
 
-### 2.4 WFGY Modules (30‑sec cheat‑sheet)
+### 2.4 WFGY repair operators (cheat-sheet)
 
-| Module | Purpose |
-|--------|---------|
-| **BBMC** | Boundary‑Bounded Memory Chunks — safe semantic units |
-| **BBPF** | Branch‑Bounded Prompt Frames — stable context windows |
-| **BBCR** | Break‑Before Crash Reset — aborts / resets logic loops |
-| **ΔS Metric** | Measures semantic tension (unknown topic, drift) |
-
-You don’t need to rebuild them — TXT OS hands you ready‑to‑paste text files.
+| Operator | What it does (1-liner) |
+|---|---|
+| **BBMC** | Minimize semantic residue to re-align with anchors |
+| **BBPF** | Explore safe alternate paths; avoid dead-end chains |
+| **BBCR** | Detect collapse; insert **bridge** node; rebuild reasoning |
+| **BBAM** | Modulate attention variance; prevent entropy melt |
 
 ---
 
-## 3. 🛠️ Quick Tool Setup
+## 3) 🛠️ Run your first fix (3 minutes)
 
-| Step | What to Do | Time |
-|------|------------|------|
-| 1️⃣  | Download **WFGY 1.0 PDF** and **TXT OS** (links below) | 30 s |
-| 2️⃣  | Paste TXT OS into any LLM chat (Claude, GPT‑4, local llama‑cpp) | 15 s |
-| 3️⃣  | Ask: `“Diagnose my RAG: {describe bug}”` | Go |
+1) **Download** the assets below, or jump to **[Getting Started](./getting-started.md)** for a runnable pipeline.  
+2) Paste **TXT OS** into your model chat.  
+3) Ask:
 
-*The OS auto‑loads Problem Map indexes; you can also open Markdown files locally.*
+```
 
-### Download Links
+I’ve loaded TXT OS. Diagnose my RAG:
 
-| Asset | Link |
-|-------|------|
-| **WFGY 1.0 PDF** | https://zenodo.org/records/15630969 |
-| **TXT OS** | https://zenodo.org/records/15788557 |
+* symptom: \[describe]
+* trace: \[question, retrieved snippet(s), answer]
+  Using WFGY, tell me:
 
-> **Everything is MIT‑licensed** — free for commercial & research use.
+1. failing layer & why (ΔS/λ),
+2. the Problem Map page to open,
+3. minimal steps to push ΔS ≤ 0.45 and keep λ convergent,
+4. how to verify with a reproducible test.
 
----
+```
 
-## 4. 🗂️ Problem Categories (cheat‑label)
-
-| Category | IDs | Typical Stage |
-|----------|-----|---------------|
-| **Prompting** | #4 | Prompt crafting / safety |
-| **Retrieval** | #1 #5 #8 | Vector DB, search, RAG |
-| **Reasoning** | #2 #6 #11 | Mid‑chain logic |
-| **Infra / Deploy** | #14 #15 #16 | DevOps, orchestration |
-
-*(The table also appears under the main Problem Map for quick visual filter.)*
+**Triage thresholds (keep these handy):**
+- **ΔS:** `<0.40` stable · `0.40–0.60` transitional (record if λ ∈ {←, <>}) · `≥0.60` high-risk (act)  
+- **Acceptance:** ΔS(question, context) ≤ **0.45**, λ **convergent**, E_resonance **flat**
 
 ---
 
-## 5. 🏃 Next Steps
+## 4) 🗂️ Problem categories (cheat-labels)
 
-1. **Identify** your bug via the quick decision tree above.  
-2. **Open** the corresponding `.md` file in the Problem Map.  
-3. **Apply** the patch (many include code snippets, BBPF prompt frames, or Docker diff).  
-4. **Share** results! Open a PR if you found a variant or edge‑case — the map keeps growing.
+| Category | Typical stage | Open first |
+|---|---|---|
+| **Retrieval** | Vector DB, search, chunking | [`hallucination.md`](./hallucination.md) · [`embedding-vs-semantic.md`](./embedding-vs-semantic.md) |
+| **Reasoning** | Mid-chain logic | [`retrieval-collapse.md`](./retrieval-collapse.md) · [`logic-collapse.md`](./logic-collapse.md) |
+| **Patterns** | High-frequency edge cases | [`patterns/README.md`](./patterns/README.md) |
+| **Eval** | Measure & guard regressions | [`eval/README.md`](./eval/README.md) |
+| **Ops** | Boot order, runbooks | [`ops/README.md`](./ops/README.md) |
 
 ---
 
-## 6. 🙋 FAQ (Super Short)
+## 5) ✅ Verify the repair (don’t skip)
+
+- **Retrieval sanity:** ≥ 70% token overlap with target section; ΔS(question, context) ≤ 0.45 → see [`eval/eval_rag_precision_recall.md`](./eval/eval_rag_precision_recall.md)  
+- **Reasoning stability:** λ stays convergent on 3 paraphrases; E_resonance flat → see [`eval/eval_semantic_stability.md`](./eval/eval_semantic_stability.md)  
+- **Latency vs accuracy:** chart ΔS vs p95 latency → see [`eval/eval_latency_vs_accuracy.md`](./eval/eval_latency_vs_accuracy.md)
+
+---
+
+## 6) 🙋 FAQ (super short)
 
 | Question | Answer |
-|----------|--------|
-| *Do I need all modules?* | No. Start with the module named in the problem page. |
-| *Does WFGY replace LangChain / LlamaIndex?* | It layers **above** them (reasoning firewall). |
-| *Will it work on GPT‑3.5?* | Yes, but complex fixes (#11, #12) need ≥ GPT‑4 or good local models. |
+|---|---|
+| Do I need all operators? | No. Use the one named on the matching page. |
+| Does WFGY replace LangChain/LlamaIndex? | No. It sits **above** them as a reasoning firewall. |
+| Will this work on small models? | Yes; #11/#12 are easier on GPT-4-class or strong local models. |
+| Where are runnable examples? | Start here: [`examples/README.md`](./examples/README.md) and [`example_01_basic_fix.md`](./examples/example_01_basic_fix.md). |
 
 ---
 
-### ⭐ Help Us Expand the Map
+## 7) 📥 Download links (60 sec)
 
-- 🐛 Got a new failure trace? [Open an Issue](https://github.com/onestardao/WFGY/issues).  
-- 🧩 Have a fix? PRs welcome — credit in the Hall of Fame.  
-- 🚀 Star the repo to unlock Engine 2.0 once we hit **10 k** stars.
+| Asset | Link |
+|---|---|
+| **WFGY 1.0 PDF** | https://zenodo.org/records/15630969 |
+| **TXT OS (plain-text)** | https://zenodo.org/records/15788557 |
+
+MIT-licensed. Copy, ship, and adapt.
 
 ---
 
@@ -151,14 +175,12 @@ You don’t need to rebuild them — TXT OS hands you ready‑to‑paste text 
 | Semantic Blueprint    | Layer-based symbolic reasoning & semantic modulations   | [View →](https://github.com/onestardao/WFGY/tree/main/SemanticBlueprint/README.md) |
 | Benchmark vs GPT-5    | Stress test GPT-5 with full WFGY reasoning suite         | [View →](https://github.com/onestardao/WFGY/tree/main/benchmarks/benchmark-vs-gpt5/README.md) |
 
-
 ---
 
 > 👑 **Early Stargazers: [See the Hall of Fame](https://github.com/onestardao/WFGY/tree/main/stargazers)** —  
-> Engineers, hackers, and open source builders who supported WFGY from day one.
+> Engineers, hackers, and open-source builders who supported WFGY from day one.
 
-> <img src="https://img.shields.io/github/stars/onestardao/WFGY?style=social" alt="GitHub stars"> ⭐ Help reach 10,000 stars by 2025-09-01 to unlock Engine 2.0 for everyone  ⭐ <strong><a href="https://github.com/onestardao/WFGY">Star WFGY on GitHub</a></strong>
-
+> <img src="https://img.shields.io/github/stars/onestardao/WFGY?style=social" alt="GitHub stars"> ⭐ Help reach 10,000 stars by 2025-09-01 to unlock Engine 2.0 for everyone  ⭐ **[Star WFGY on GitHub](https://github.com/onestardao/WFGY)**
 
 <div align="center">
 
