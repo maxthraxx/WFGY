@@ -1,5 +1,5 @@
-# 📋 RAG Architecture & Recovery – Problem Map 2.0
-_What if you could see the whole RAG pipeline from above — and fix every failure, step by step?_
+# 📋 RAG Architecture & Recovery — Fix Your Pipeline, Step by Step  
+**A hands-on guide to stopping hallucinations, boundary drift, and chain failure (MIT).**  
 
 > ⚠️ This is not a list of prompt tricks or patchwork hacks.  
 > Every fix in this Problem Map is a structural response to semantic collapse, boundary drift, and logic chain failure.  
