@@ -91,8 +91,9 @@ A hands-on guide to implementing WFGY in real RAG workflows.**
 >
 > ### ⭐ Found this helpful?
 >
-> Help others discover it — [Give us a GitHub Star](https://github.com/onestardao/WFGY)
-> We’re building the only open-source semantic debugger for AI reasoning.
+> Help others discover it — [Give us a GitHub Star](https://github.com/onestardao/WFGY)  
+> 🧩 **Try MVP Demos:** [Run minimal WFGY examples →](./mvp_demo/README.md) 
+
 
 </details>
 
