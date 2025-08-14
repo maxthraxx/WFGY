@@ -1,3 +1,8 @@
+> 🚧 **Under Construction** — the forge is still hot, and the scoreboard is just a placeholder for now.  
+> Brave adventurer, check back in a few days — the quests might change, the treasures might grow,  
+> and who knows… maybe a new star-powered surprise will appear? ⭐
+
+
 # ⭐ WFGY Star Unlock Board
 
 WFGY Engine 2.0 is already unlocked — and every ⭐ helps unlock more advanced tools, docs, and demos for everyone.
