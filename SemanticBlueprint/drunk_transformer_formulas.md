@@ -39,32 +39,37 @@
 ---
 
 ### DT WRI — “Where am I” (structure lock)
-**Goal:** stay on the same topic/section within a Node.  
-**Signal:** anchor retention $S_t$ vs. threshold $\tau_{\mathrm{wri}}$.  
-**Trigger:** $S_t < \tau_{\mathrm{wri}}$ or $\delta_s$ rises while $E_{\mathrm{res}}$ rises.  
-**Action (logit bias):**
+
+- **Goal:** stay on the same topic/section within a Node.
+- **Signal:** anchor retention $S_t$ vs. threshold $\tau_{\mathrm{wri}}$.
+- **Trigger:** $S_t < \tau_{\mathrm{wri}}$ or $\delta_s$ rises while $E_{\mathrm{res}}$ rises.
+- **Action (logit bias):**
+
 $$
 L_{\mathrm{wri}}=\max\!\bigl(0,\ \tau_{\mathrm{wri}}-S_t\bigr),\qquad
-\mathrm{logits}[a]\mathrel{+}= \kappa_{\mathrm{wri}}\cdot L_{\mathrm{wri}}
-\quad \forall a\in \texttt{anchor\_token\_ids}.
+\mathrm{logits}_a \leftarrow \mathrm{logits}_a + \kappa_{\mathrm{wri}}\cdot L_{\mathrm{wri}}
+\quad \forall a\in \mathcal{A}_{\mathrm{anchor}}.
 $$
-**Intuition:** pull decoding back toward section anchors; forbid topic jumps inside a Node.
+
+- **Intuition:** pull decoding back toward section anchors; forbid topic jumps inside a Node.
+
 
 
 ---
 
 ### DT WAI — “Who am I” (head identity & redundancy)
 
-**Goal:** enforce at least two distinct reasons/heads (no monoculture).
+**Goal:** enforce at least two distinct reasons/heads (no monoculture).  
 **Signals (one workable choice):**
 
 $$
-R_t=\frac1H\sum_h \cos(v_h,\bar v),\qquad 
-Q_t = 1-\max_h\cos(v_h,\bar v),\qquad \bar v=\tfrac1H\sum_h v_h.
+R_t=\frac{1}{H}\sum_h \cos(v_h,\bar v),\qquad 
+Q_t = 1-\max_h\cos(v_h,\bar v),\qquad 
+\bar v=\frac{1}{H}\sum_h v_h.
 $$
 
-**Trigger:** \$R\_t>\rho\_{\mathrm{wai}}\$ **and** \$Q\_t<\sigma\_{\mathrm{wai}}\$ (too redundant, identity too low).
-**Action:** raise per-head temperature for redundant heads; re-spread attention until \$R\_t\downarrow\$ or \$Q\_t\uparrow\$.
+**Trigger:** $R_t>\rho_{\mathrm{wai}}$ **and** $Q_t<\sigma_{\mathrm{wai}}$ (too redundant, identity too low).  
+**Action:** raise per-head temperature for redundant heads; re-spread attention until $R_t\downarrow$ or $Q_t\uparrow$.
 
 ---
 
