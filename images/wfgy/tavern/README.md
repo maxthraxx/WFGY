@@ -19,7 +19,7 @@ and someone’s always shouting “I FOUND A SECRET DOOR!”
 > "*They say there's a boss. Or maybe a misunderstood ally? Either way, she sparkles.*"
 
 🔵 **Quest #3: Seven Days & Seven Nights Marathon**  
-**Status:** 🔒 *Coming in v1.1.0*  
+**Status:** 🔒 *Coming in v2.1.0*  
 > "*Rumors speak of an update...  
 > When the version hits 2.1.0, the path will open. Come back here.*"
 
