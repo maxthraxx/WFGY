@@ -6,6 +6,7 @@ A hands-on guide to implementing WFGY in real RAG workflows.**
 > Every fix in this Problem Map is a structural response to semantic collapse, boundary drift, and logic chain failure.  
 > It works across agents, pipelines, and models — because it’s built on the failure patterns beneath them all.
 
+ 
 ---
 
 <details>
@@ -38,6 +39,17 @@ A hands-on guide to implementing WFGY in real RAG workflows.**
 > 🧭 Start here. You’re not alone in this mess.
 
 </details>
+
+---
+
+> **Quick Nav**
+> [Getting Started](./getting-started.md) ·
+> [Examples](./examples/README.md) ·
+> [Patterns Index](./patterns/README.md) ·
+> [Eval](./eval/README.md) ·
+> [Ops Runbook](./ops/README.md) ·
+> [Role Drift](./multi-agent-chaos/role-drift.md) ·
+> [Memory Overwrite](./multi-agent-chaos/memory-overwrite.md)
 
 ---
 
