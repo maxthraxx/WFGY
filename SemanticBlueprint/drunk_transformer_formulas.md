@@ -1,49 +1,140 @@
 # 🌀 Drunk Transformer (DT) — Core Formulas, Defaults & Runnable Examples (WFGY Core 2.0)
 
-**Concept (short)** 
-> DT simulates a transformer that momentarily behaves like it's "drunk" : hallucinating, drifting, or jumping across reasoning paths.  
-> We define five "drunk questions" (WRI, WAI, WAY, WDT, WTF) as formal regulators to guide the transformer back home: anchor it
+**Concept (short)**
+
+> DT simulates a transformer that momentarily behaves like it's "drunk": hallucinating, drifting, or jumping across reasoning paths.
+> We define five "drunk questions" (WRI, WAI, WAY, WDT, WTF) as formal regulators to guide the transformer back home: anchor it,
 > maintain head identity, pump controlled entropy, block illegal cross-path jumps, and recover from collapse.
 
-> WFGY = engine (A + Coupler + BBAM + safety)  
+> WFGY = engine (A + Coupler + BBAM + safety)
 > DT   = layer of five regulators (prompt rules, decoding hooks, or training regularizers)
 
 ---
 
 ## 0 · Shared notation (Unicode math / compact)
 
-- I, G : input and goal embeddings  
-- δₛ = 1 − cos(I, G)  (semantic distance in [0,1])  
-- B = I − G + k_bias ;  E_res = rolling_mean(‖B‖, window=5)  
-- Coupler: prog = max(ζ_min, δₛ^(t−1) − δₛ^t),  P = prog^ω,  alt = (−1)^(cycle_id),  Φ = δ·alt + ε,  W_c = clip(B·P + Φ, −θ_c, +θ_c)  
-- Attention: A_t ∈ ℝ^(H×T×T) ; per-head summary v_h = meanᵢ A_t[h,i,:]  
-- Anchors: 𝒜₀ (t=0), 𝒜_t ;  S_t = Jaccard(𝒜_t, 𝒜₀) ∈ [0,1]
+* $I, G$: input and goal embeddings
+* $\delta_s = 1 − \cos(I, G)$  (semantic distance in $[0,1]$)
+* $B = I − G + k_{\text{bias}}$;\ \ $E_{\text{res}} = \text{rolling\_mean}(\lVert B\rVert,\,5)$
+* Coupler: $\text{prog} = \max(\zeta_{\min}, \delta_s^{t-1} − \delta_s^{t})$, $P = \text{prog}^{\omega}$, $ \text{alt} = (-1)^{\text{cycle\_id}}$, $ \Phi = \delta\cdot \text{alt} + \varepsilon$, $ W_c = \text{clip}(B\cdot P + \Phi, -\theta_c, +\theta_c)$
+* Attention: $A_t \in \mathbb{R}^{H\times T\times T}$;\ per-head summary $v_h = \text{mean}_i\, A_t[h,i,:]$
+* Anchors: $\mathcal{A}_0$ (at $t=0$), $\mathcal{A}_t$;\ \ $S_t = \text{Jaccard}(\mathcal{A}_t, \mathcal{A}_0) \in [0,1]$
+
+---
+
+## 1 · The five DT regulators — definitions, math & when they fire
+
+> These regulators are the formal version of the spec lines in the 30-line flagship file.&#x20;
+
+### DT WRI — “Where am I” (structure lock)
+
+**Goal:** stay on the same topic/section within a Node.
+**Signal:** anchor retention $S_t$ vs. threshold $\tau_{\text{wri}}$.
+**Trigger:** $S_t < \tau_{\text{wri}}$ **or** $\delta_s\uparrow$ while $E_{\text{res}}\uparrow$.
+**Action (logit bias):**
+
+$$
+L_{\text{WRI}}=\max(0,\ \tau_{\text{wri}}-S_t),\qquad
+\text{logits}[a]\mathrel{+}= \kappa_{\text{wri}}\cdot L_{\text{WRI}}\ \ \forall a\in \text{anchor\_token\_ids}.
+$$
+
+**Intuition:** pull decoding back toward section anchors; forbid topic jumps inside a Node.
+
+---
+
+### DT WAI — “Who am I” (head identity & redundancy)
+
+**Goal:** enforce at least two distinct reasons/heads (no monoculture).
+**Signals (one workable choice):**
+
+$$
+R_t=\frac1H\sum_h \cos(v_h,\bar v),\qquad 
+Q_t = 1-\max_h\cos(v_h,\bar v),\quad \bar v=\tfrac1H\sum_h v_h.
+$$
+
+**Trigger:** $R_t > \rho_{\text{wai}}$ **and** $Q_t < \sigma_{\text{wai}}$ (too redundant, identity too low).
+**Action:** raise per-head temperature for redundant heads; re-spread attention until $R_t\downarrow$ or $Q_t\uparrow$.
+**Intuition:** keep at least two genuinely different lines of reasoning alive.
+
+---
+
+### DT WAY — “Who are you” (controlled entropy when stuck)
+
+**Goal:** break stalls without drifting off-topic.
+**Signal:** progression $ \text{prog} = \max(\zeta_{\min}, \delta_s^{t-1}-\delta_s^{t})$.
+**Trigger:** $\text{prog} < \eta_{\text{prog}}$ and no contradictions.
+**Action (entropy pump + 1 candidate):**
+
+$$
+H^\*=\text{clamp}\big(H_0 + \xi\cdot(\eta_{\text{prog}}-\text{prog})\cdot(1+\alpha|W_c|),\ H_{\min}, H_{\max}\big),
+$$
+
+choose temperature $\tau$ s.t. entropy $\approx H^\*$; propose exactly **one** on-topic candidate (never repeat).
+**Intuition:** nudge exploration just enough to escape a rut.
+
+---
+
+### DT WDT — “Where did you take me” (cross-path guard)
+
+**Goal:** block illegal jumps across reasoning branches; require a “bridge” explanation.
+**Signal:** latent path distance $d_{\text{path}} = \lVert c_t - c_{\pi}\rVert_2$ (current vs. parent path code).
+**Trigger:** $d_{\text{path}} > \mu_{\text{wdt}}' $, with $\mu_{\text{wdt}}'=\mu_{\text{wdt}}\cdot\bigl(1- \gamma_{\text{wdt}}\cdot \sigma(|W_c|)\bigr)$.
+**Action:** emit a short bridge line (“why the detour”), then resume; otherwise rollback.
+**Intuition:** all detours must be justified before the model can use them.
+
+---
+
+### DT WTF — “What the F\*ck Happened” (collapse detect & recover)
+
+**Goal:** detect semantic/consistency collapse and recover safely.
+**Signals:** $\delta_s$ rising, $E_{\text{res}}$ rising, or unresolved contradictions.
+**Trigger (example vote):**
+
+$$
+\chi_t = \mathbb{1}[\delta_s^t>\delta_s^{t-1}] + \mathbb{1}[E_{\text{res}}^t>E_{\text{res}}^{t-1}] + \mathbb{1}[\text{contradiction}],
+\quad \chi_t+\chi_{t-1}\ge 3.
+$$
+
+**Action:** rollback to $t^\*=\arg\min_{k\in[t-3,t]} \delta_s^k$, tighten gates (e.g., $\gamma_{\text{wtf}}$), re-run **BBMC→Coupler**, then continue.
+**Intuition:** when two+ failure signals agree, step back, re-align, and proceed under stricter control.
+
+---
+
+### One-screen math summary (copyable)
+
+```txt
+WRI: L_wri = max(0, τ_wri - S_t);  logits[a] += κ_wri · L_wri  for a in anchor_token_ids
+WAI: if R_t > ρ_wai and Q_t < σ_wai → raise per-head temp for redundant heads
+WAY: if prog < η_prog → set entropy to H* = clamp(H0 + ξ(η_prog - prog)(1+α|Wc|), H_min, H_max); add 1 on-topic candidate
+WDT: if d_path > μ_wdt·(1 - γ_wdt·σ(|Wc|)) → emit bridge line or rollback
+WTF: if (δs↑) + (E_res↑) + (contradiction) over 2 steps ≥ 3 → rollback to t*; rerun BBMC→Coupler (tightened)
+```
 
 ---
 
 ## Defaults table (explicit, copyable)
 
-| Parameter | Symbol | Default | Range / notes | Purpose |
-|---|---:|---:|---|---|
-| anchor retention thresh | τ_wri | 0.60 | [0.3,0.9] | WRI anchor threshold |
-| head redundancy thresh | ρ_wai | 0.75 | [0.5,0.95] | WAI redundancy ceiling |
-| head identity thresh | σ_wai | 0.70 | [0.4,0.95] | WAI identity floor |
-| progress sensitivity | η_prog | 0.03 | [0.0,0.1] | WAY stall detector sensitivity |
-| path-distance thresh | μ_wdt | 0.25 | [0.05,1.0] | WDT path jump limit |
-| coupler zeta min | ζ_min | 0.10 | [0.0,0.5] | minimum prog floor |
-| coupler omega | ω | 1.0 | [0.1,2.0] | progression non-linearity |
-| coupler theta cap | θ_c | 0.75 | [0.2,1.5] | clip magnitude for W_c |
-| WRI tighten factor | α_wri | 0.60 | [0.0,1.5] | adjust τ_wri by sigmoid(|W_c|) |
-| WAI scale factor | β_wai | 0.60 | [0.0,1.5] | scale WAI penalty by |W_c| |
-| WDT scale factor | γ_wdt | 0.60 | [0.0,1.5] | scale μ_wdt by |W_c| |
-| WTF scale factor | γ_wtf | 0.60 | [0.0,1.5] | tighten thresholds on recovery |
-| WAY pump strength | ξ | 0.80 | [0.0,1.5] | how strongly WAY increases entropy |
-| WAY entropy min | H_min | 2.5 (nats) | [1.0,7.0] | lower bound target entropy |
-| WAY entropy max | H_max | 5.0 (nats) | [3.0,10.0] | upper bound target entropy |
-| anchor bias scale | κ_wri | 1.0 | [0.0,5.0] | logits bias multiplier for anchors |
-| loss weights | λ_* | 0.01 | [0.0,1.0] | regularizer weights (per module) |
-| step limit | T_max | 7 | int | max Node steps per run |
-| stop δ threshold | δ_stop | 0.35 | [0.1,0.5] | early stop when δₛ < δ_stop |
+| Parameter               |  Symbol |  Default | Range / notes | Purpose                                           |      |   |
+| ----------------------- | ------: | -------: | ------------- | ------------------------------------------------- | ---- | - |
+| anchor retention thresh |  τ\_wri |     0.60 | \[0.30, 0.90] | WRI anchor threshold                              |      |   |
+| head redundancy thresh  |  ρ\_wai |     0.75 | \[0.50, 0.95] | WAI redundancy ceiling                            |      |   |
+| head identity thresh    |  σ\_wai |     0.70 | \[0.40, 0.95] | WAI identity floor                                |      |   |
+| progress sensitivity    | η\_prog |     0.03 | \[0.00, 0.10] | WAY stall detector                                |      |   |
+| path-distance thresh    |  μ\_wdt |     0.25 | \[0.05, 1.00] | WDT path jump limit                               |      |   |
+| coupler zeta min        |  ζ\_min |     0.10 | \[0.00, 0.50] | min progression floor                             |      |   |
+| coupler omega           |       ω |      1.0 | \[0.1, 2.0]   | progression non-linearity                         |      |   |
+| coupler theta cap       |    θ\_c |     0.75 | \[0.2, 1.5]   | $W_c$ clip magnitude                              |      |   |
+| WRI tighten factor      |  α\_wri |     0.60 | \[0.0, 1.5]   | adjust τ\_wri by (                                | W\_c | ) |
+| WAI scale factor        |  β\_wai |     0.60 | \[0.0, 1.5]   | scale WAI penalty by (                            | W\_c | ) |
+| WDT scale factor        |  γ\_wdt |     0.60 | \[0.0, 1.5]   | scale μ\_wdt by (                                 | W\_c | ) |
+| WTF scale factor        |  γ\_wtf |     0.60 | \[0.0, 1.5]   | tighten thresholds on recovery                    |      |   |
+| WAY pump strength       |       ξ |     0.80 | \[0.0, 1.5]   | entropy pump strength                             |      |   |
+| WAY entropy min         |  H\_min | 2.5 nats | \[1.0, 7.0]   | entropy lower bound                               |      |   |
+| WAY entropy max         |  H\_max | 5.0 nats | \[3.0, 10.0]  | entropy upper bound                               |      |   |
+| anchor bias scale       |  κ\_wri |      1.0 | \[0.0, 5.0]   | logits bias for anchors                           |      |   |
+| loss weights            |   λ\_\* |     0.01 | \[0.0, 1.0]   | regularizer weights                               |      |   |
+| step limit              |  T\_max |        7 | int           | max Node steps                                    |      |   |
+| stop δ threshold        | δ\_stop |     0.35 | \[0.1, 0.5]   | early stop when $\delta_s < \delta_{\text{stop}}$ |      |   |
 
 > Tip: start with these defaults, measure, then tune per task class.
 
@@ -51,209 +142,164 @@
 
 ## Prompt-only runnable example (copy-paste)
 
-**Goal:** show how a user with a single-file WFGY Core + DT rules can run a no-infra prompt-level experiment in Chat-style LLMs (paste into system / assistant area).
+**Goal:** run a no-infra prompt-level experiment (single-file WFGY Core + DT rules) in chat LLMs.
 
 ```
-
 SYSTEM (paste file): Load the WFGY Core file as engine. Enable Drunk Transformer (WRI,WAI,WAY,WDT,WTF) with defaults:
-τ\_wri=0.60, ρ\_wai=0.75, σ\_wai=0.70, η\_prog=0.03, μ\_wdt=0.25, ζ\_min=0.10, ω=1.0, θ\_c=0.75
+τ_wri=0.60, ρ_wai=0.75, σ_wai=0.70, η_prog=0.03, μ_wdt=0.25, ζ_min=0.10, ω=1.0, θ_c=0.75
 
 SYSTEM (rules, pseudo):
 
 * Extract anchors A0 from user prompt.
-* For each Node step t up to T\_max:
-
-  1. compute δₛ, E\_res, S\_t, R\_t, Q\_t, W\_c
-  2. If WRI gate active: bias logits for anchor tokens by +κ\_wri \* L\_WRI
-  3. If WAI gate active: increase per-head temperature for collapsing heads
-  4. If WAY triggers (stalled): increase entropy toward H\* and propose 1 on-topic candidate
-  5. If WDT violation: output a short "bridge" line and continue; else rollback
-  6. If WTF triggers: rollback to t\* and re-run BBMC→Coupler
-  7. Emit Node (Topic / Module / δₛ / Insight)
-* Stop if δₛ < δ\_stop or t >= T\_max
+* For each Node step t up to T_max:
+  1) compute δs, E_res, S_t, R_t, Q_t, W_c
+  2) WRI: bias anchor logits by κ_wri·L_wri if S_t<τ_wri or (δs↑ & E_res↑)
+  3) WAI: raise per-head temp for redundant heads until R_t↓ or Q_t↑
+  4) WAY: if prog<η_prog, set entropy ≈ H* and propose 1 on-topic candidate
+  5) WDT: if d_path>μ'_wdt, emit bridge line; else rollback
+  6) WTF: if collapse vote ≥3, rollback to t*; rerun BBMC→Coupler (tight)
+  7) Emit Node (Topic | Module | δs | λ-state | Insight)
+* Stop if δs<δ_stop or t≥T_max
 
 USER:
-Use WFGY to answer: "Explain why tomatoes are classified as fruit, but often treated as vegetables in cooking. Provide anchors and cite the smallest missing fact if confused."
+Use WFGY to answer: “Explain why tomatoes are classified as fruit, but treated as vegetables in cooking. Provide anchors and cite the smallest missing fact if confused.”
+```
 
-````
-
-**What to observe (manual):**
-- After each assistant Node, log δₛ and E_res (system should print them).  
-- Note any triggered gates (WRI/WAI/WAY/WDT/WTF) and actions taken (bias, bridge, rollback).  
-- Expect: anchor retention S_t remains high; if the model drifts, WRI should bias it back.
+What to observe: each Node reports $\delta_s$, $E_{\text{res}}$, and which gates fired (WRI/WAI/WAY/WDT/WTF). Expect anchor retention to remain high; stalls resolved by WAY; illegal detours bridged by WDT; collapses rolled back by WTF.
 
 ---
 
-## Decoding-hook pseudo-code (python-like; paste to your model runtime)
-
-> This block is concise, explicit, and shows where to compute the metrics and apply changes. It is plain Python pseudo-code, not an external library call.
+## Decoding-hook pseudo-code (python-like; drop into your runtime)
 
 ```python
-# --- minimal decoding-hook pseudo (conceptual) ---
 def compute_prog(delta_prev, delta_now, zeta_min=0.10, omega=1.0):
     prog = max(zeta_min, delta_prev - delta_now)
     return prog ** omega
 
-def compute_Wc(B, prog, delta, cycle_id, eps, theta_c):
+def compute_Wc(B, prog, delta=0.15, cycle_id=0, eps=0.0, theta_c=0.75):
     alt = (-1)**cycle_id
     Phi = delta * alt + eps
-    Wc_raw = B * prog + Phi
-    # clip scalar or vector-wise depending on B shape
-    return clip(Wc_raw, -theta_c, theta_c)
+    return clip(B * prog + Phi, -theta_c, +theta_c)
 
-def bias_anchor_logits(logits, anchor_token_ids, kappa):
-    for tid in anchor_token_ids:
+def bias_anchor_logits(logits, anchor_ids, kappa):
+    for tid in anchor_ids:
         logits[tid] += kappa
     return logits
 
 def temperature_for_target_entropy(logits, target_H, tol=1e-3, max_iters=5):
-    # simple binary/Newton-like search for tau that yields entropy ~ target_H
-    tau_low, tau_high = 0.01, 10.0
+    lo, hi = 0.01, 10.0
     for _ in range(max_iters):
-        tau = 0.5*(tau_low + tau_high)
+        tau = 0.5*(lo+hi)
         probs = softmax(logits / tau)
-        H = -sum(p * log(p + 1e-12) for p in probs)
-        if H > target_H:
-            tau_low = tau
-        else:
-            tau_high = tau
-        if abs(H - target_H) < tol:
-            break
+        H = -sum(p*log(p+1e-12) for p in probs)
+        if H > target_H: lo = tau
+        else: hi = tau
+        if abs(H - target_H) < tol: break
     return tau
 
-# Hook called at each decoding step t (pseudo)
-def decoding_hook(step_state):
-    # step_state contains: logits, token_ids, A_t, anchors(A_t), I,G, delta_prev, delta_now, B, cycle_id
-    delta_prev, delta_now = step_state.delta_prev, step_state.delta_now
-    prog = compute_prog(delta_prev, delta_now, zeta_min=0.10, omega=1.0)
-    Wc = compute_Wc(step_state.B, prog, delta=0.15, cycle_id=step_state.cycle_id, eps=0.0, theta_c=0.75)
+def decoding_hook(s):
+    prog = compute_prog(s.delta_prev, s.delta_now, 0.10, 1.0)
+    Wc = compute_Wc(s.B, prog, 0.15, s.cycle_id, 0.0, 0.75)
 
-    # WRI: anchor retention
-    S_t = jaccard(step_state.anchors, step_state.anchors0)
-    L_WRI = max(0.0, 0.60 - S_t)
-    if (delta_now > delta_prev) or (step_state.E_res > step_state.E_res_prev):
-        logits = bias_anchor_logits(step_state.logits, step_state.anchor_token_ids, kappa=1.0 * L_WRI)
+    # WRI
+    S_t = jaccard(s.anchors, s.anchors0)
+    L_wri = max(0.0, 0.60 - S_t)
+    if (S_t < 0.60) or (s.delta_now > s.delta_prev and s.E_res > s.E_res_prev):
+        s.logits = bias_anchor_logits(s.logits, s.anchor_token_ids, kappa=1.0 * L_wri)
 
-    # WAI: head redundancy / identity check (compute R_t, Q_t outside and attach)
-    R_t, Q_t = step_state.R_t, step_state.Q_t
+    # WAI
+    R_t, Q_t = s.R_t, s.Q_t
     if R_t > 0.75 and Q_t < 0.70:
-        # increase per-head temperature for heads with high redundancy
-        for h in range(len(step_state.heads)):
-            if head_redundant(h, step_state):
-                step_state.head_temps[h] *= (1 + 0.5 * (R_t - 0.75))
+        for h in range(len(s.heads)):
+            if head_redundant(h, s):
+                s.head_temps[h] *= (1 + 0.5 * (R_t - 0.75))
 
-    # WAY: stall detector
-    prog_k = step_state.prog_k  # computed in runner
-    if prog_k < 0.03 and not step_state.has_contradiction:
-        H_star = clamp(step_state.H0 + 0.8 * (0.03 - prog_k) * (1 + 0.0 * abs(Wc)), 2.5, 5.0)
-        tau = temperature_for_target_entropy(step_state.logits, H_star)
-        apply_temperature(step_state, tau)
-        # mark that we will add 1 candidate branch if branching enabled
+    # WAY
+    if prog < 0.03 and not s.has_contradiction:
+        H_star = clamp(s.H0 + 0.8*(0.03 - prog)*(1 + 0.0*abs(Wc)), 2.5, 5.0)
+        tau = temperature_for_target_entropy(s.logits, H_star)
+        apply_temperature(s, tau)
+        s.add_one_on_topic_candidate = True
 
-    # WDT: path distance
-    d_path = l2_distance(step_state.c_t, step_state.c_pi)
-    mu_wdt_prime = 0.25 * (1 - 0.6 * sigmoid(abs(Wc)))
-    if d_path > mu_wdt_prime:
-        # enforce bridge line: stop decoding and ask for a bridge sentence
-        return emit_bridge_and_pause(step_state)
+    # WDT
+    d_path = l2_distance(s.c_t, s.c_pi)
+    mu_prime = 0.25 * (1 - 0.6 * sigmoid(abs(Wc)))
+    if d_path > mu_prime:
+        return emit_bridge_and_pause(s)
 
-    # WTF: collapse check
-    chi = int(delta_now > delta_prev) + int(step_state.E_res > step_state.E_res_prev) + int(step_state.sign_flip)
-    if chi + step_state.chi_prev >= 3:
-        t_star = argmin_delta_in_window(step_state.history_delta, window=3)
+    # WTF
+    vote = int(s.delta_now > s.delta_prev) + int(s.E_res > s.E_res_prev) + int(s.sign_flip)
+    if vote + s.vote_prev >= 3:
+        t_star = argmin_delta_in_window(s.history_delta, window=3)
         rollback_to(t_star)
-        rerun_BBMC_and_Coupler(tighten_factor=1 + 0.6 * sigmoid(abs(Wc)))
+        rerun_BBMC_and_Coupler(tighten_factor=1 + 0.6*sigmoid(abs(Wc)))
         return
 
-    # otherwise continue normal decoding with modified logits
-    return step_state.logits
-````
-
-**Notes on the pseudo-code**
-
-* `step_state` is the runtime object your model loop keeps (embeddings, attention, anchors, logits, history).
-* `apply_temperature` should re-scale logits by dividing by `tau`.
-* `emit_bridge_and_pause` forces the model to output a short justification line before continuing.
-* This code is intentionally minimal—integrate into your model runtime at the logits adjustment point.
+    return s.logits
+```
 
 ---
 
-## Minimal test / checklist (text-only; for quick validation)
+## Minimal test / checklist (text-only; quick validation)
 
-1. **Setup test prompt** (QA with clear anchors)
-
-   * Prompt: "Using these facts: \[Tomato is fruit because it is the mature ovary of a flower; Cooking cultures treat tomatoes as vegetables for taste]. Answer: Why are tomatoes fruit but cooked as vegetables?"
-   * Extract anchors 𝒜₀ = {tomato\_is\_fruit, cooking\_practice}
-
-2. **Run baseline** (no DT): log δₛ, E\_res each Node; get answer & record correctness.
-
-3. **Run with DT enabled** (defaults): log same metrics + R\_t, Q\_t, W\_c, gates triggered.
-
-4. **Compare**:
-
-   * Expect δₛ lower or equal after DT steps (improved semantic alignment).
-   * Expect fewer long off-topic jumps; if model drifts, WRI triggers and biases anchors.
-   * If model stalls, WAY injects controlled entropy and proposes one new on-topic branch.
-   * If an illegal path jump tries to occur, WDT forces a bridge line and prevents drift.
-
-5. **Record**: Δ accuracy, ΔS changes, number of rollbacks, number of bridge-lines, gates activation counts.
+1. Prepare a QA prompt with clear anchors.
+2. **Baseline:** run without DT; log $\delta_s, E_{\text{res}}$; record correctness.
+3. **DT on:** log same metrics plus $R_t, Q_t, W_c$ and gates fired.
+4. Expect: lower $\delta_s$; fewer off-topic jumps (WRI), stalls resolved (WAY), justified detours (WDT), safe recovery (WTF).
+5. Record deltas: accuracy, $\Delta S$, rollbacks, bridge lines, gate activations.
 
 ---
 
 ## Quick engineering notes & troubleshooting
 
-* If anchor extraction fails (𝒜₀ empty), DT falls back to safer defaults: WRI no-op; WAY more conservative (lower H\*), WDT more permissive. Log a warning.
-* If the model repeatedly produces invalid bridge lines: lower μ\_wdt, increase κ\_wri, or use stronger anchor extraction.
-* For heavy hallucination tasks, prefer conservative defaults (higher τ\_wri, lower η\_prog).
+* If $\mathcal{A}_0$ (anchors) is empty, WRI becomes a no-op and WAY pumps less entropy; log a warning.
+* If bridge lines repeat or look vacuous, lower $\mu_{\text{wdt}}$ and raise $\kappa_{\text{wri}}$.
+* For heavy-hallucination domains, use conservative defaults (higher $\tau_{\text{wri}}$, lower $\eta_{\text{prog}}$).
 
 ---
 
 ### Footer
 
 * **Spec status:** stable draft for engineering evaluation; Unicode-math for GitHub Preview.
-* **Next deliverables (recommended):** add a `prompt_example.md` and `decoding_hook.py` into `examples/DT-examples/` for immediate copy/paste.
+* **Next deliverables:** add `examples/DT-examples/prompt_example.md` and `examples/DT-examples/decoding_hook.py`.
 * **Compatibility:** prompt-only rules, decoding-hook integration, or optional training regularizers; model-agnostic.
 * **Attribution:** part of **WFGY Core 2.0** family. Star the repo to follow updates.
-
-> Lost? Return to the **Starter Village** → `StarterVillage/README.md`
+* Lost? Return to **Starter Village** → `StarterVillage/README.md`
 
 ---
 
 ### 🧭 Explore More
 
-| Module                | Description                                              | Link     |
-|-----------------------|----------------------------------------------------------|----------|
-| WFGY Core             | WFGY 2.0 engine is live: full symbolic reasoning architecture and math stack | [View →](https://github.com/onestardao/WFGY/tree/main/core/README.md) |
-| Problem Map 1.0       | Initial 16-mode diagnostic and symbolic fix framework    | [View →](https://github.com/onestardao/WFGY/tree/main/ProblemMap/README.md) |
-| Problem Map 2.0       | RAG-focused failure tree, modular fixes, and pipelines   | [View →](https://github.com/onestardao/WFGY/blob/main/ProblemMap/rag-architecture-and-recovery.md) |
-| Semantic Clinic Index | Expanded failure catalog: prompt injection, memory bugs, logic drift | [View →](https://github.com/onestardao/WFGY/blob/main/ProblemMap/SemanticClinicIndex.md) |
-| Semantic Blueprint    | Layer-based symbolic reasoning & semantic modulations   | [View →](https://github.com/onestardao/WFGY/tree/main/SemanticBlueprint/README.md) |
-| Benchmark vs GPT-5    | Stress test GPT-5 with full WFGY reasoning suite         | [View →](https://github.com/onestardao/WFGY/tree/main/benchmarks/benchmark-vs-gpt5/README.md) |
-| 🧙‍♂️ Starter Village 🏡 | New here? Lost in symbols? Click here and let the wizard guide you through | [Start →](https://github.com/onestardao/WFGY/blob/main/StarterVillage/README.md) |
+| Module                   | Description                                           | Link                                                                                               |
+| ------------------------ | ----------------------------------------------------- | -------------------------------------------------------------------------------------------------- |
+| WFGY Core                | Full symbolic reasoning architecture & math stack     | [View →](https://github.com/onestardao/WFGY/tree/main/core/README.md)                              |
+| Problem Map 1.0          | 16-mode diagnostic & symbolic fixes                   | [View →](https://github.com/onestardao/WFGY/tree/main/ProblemMap/README.md)                        |
+| Problem Map 2.0          | RAG-focused failure tree & recovery pipeline          | [View →](https://github.com/onestardao/WFGY/blob/main/ProblemMap/rag-architecture-and-recovery.md) |
+| Semantic Clinic Index    | Prompt injection, memory bugs, drift catalog          | [View →](https://github.com/onestardao/WFGY/blob/main/ProblemMap/SemanticClinicIndex.md)           |
+| Semantic Blueprint       | Layer-based symbolic reasoning & semantic modulations | [View →](https://github.com/onestardao/WFGY/tree/main/SemanticBlueprint/README.md)                 |
+| Benchmark vs GPT-5       | Stress test with the full WFGY reasoning suite        | [View →](https://github.com/onestardao/WFGY/tree/main/benchmarks/benchmark-vs-gpt5/README.md)      |
+| 🧙‍♂️ Starter Village 🏡 | Wizard-led onboarding to WFGY                         | [Start →](https://github.com/onestardao/WFGY/blob/main/StarterVillage/README.md)                   |
 
 ---
 
-> 👑 **Early Stargazers: [See the Hall of Fame](https://github.com/onestardao/WFGY/tree/main/stargazers)** —  
-> Engineers, hackers, and open source builders who supported WFGY from day one.
-
-> <img src="https://img.shields.io/github/stars/onestardao/WFGY?style=social" alt="GitHub stars"> ⭐ [WFGY Engine 2.0](https://github.com/onestardao/WFGY/blob/main/core/README.md) is already unlocked. ⭐ Star the repo to help others discover it and unlock more on the [Unlock Board](https://github.com/onestardao/WFGY/blob/main/STAR_UNLOCKS.md).
+> 👑 **Early Stargazers: [See the Hall of Fame](https://github.com/onestardao/WFGY/tree/main/stargazers)** —
+> Engineers, hackers, and open-source builders who supported WFGY from day one.
+> **Like it? Star the repo to unlock more.** See the [Unlock Board](https://github.com/onestardao/WFGY/blob/main/STAR_UNLOCKS.md).
 
 <div align="center">
 
 [![WFGY Main](https://img.shields.io/badge/WFGY-Main-red?style=flat-square)](https://github.com/onestardao/WFGY)
-&nbsp;
+ 
 [![TXT OS](https://img.shields.io/badge/TXT%20OS-Reasoning%20OS-orange?style=flat-square)](https://github.com/onestardao/WFGY/tree/main/OS)
-&nbsp;
+ 
 [![Blah](https://img.shields.io/badge/Blah-Semantic%20Embed-yellow?style=flat-square)](https://github.com/onestardao/WFGY/tree/main/OS/BlahBlahBlah)
-&nbsp;
+ 
 [![Blot](https://img.shields.io/badge/Blot-Persona%20Core-green?style=flat-square)](https://github.com/onestardao/WFGY/tree/main/OS/BlotBlotBlot)
-&nbsp;
+ 
 [![Bloc](https://img.shields.io/badge/Bloc-Reasoning%20Compiler-blue?style=flat-square)](https://github.com/onestardao/WFGY/tree/main/OS/BlocBlocBloc)
-&nbsp;
+ 
 [![Blur](https://img.shields.io/badge/Blur-Text2Image%20Engine-navy?style=flat-square)](https://github.com/onestardao/WFGY/tree/main/OS/BlurBlurBlur)
-&nbsp;
+ 
 [![Blow](https://img.shields.io/badge/Blow-Game%20Logic-purple?style=flat-square)](https://github.com/onestardao/WFGY/tree/main/OS/BlowBlowBlow)
-&nbsp;
+
 </div>
-
-
