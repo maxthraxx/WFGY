@@ -1,11 +1,25 @@
-# WFGY Core (WanFaGuiYi) — v2.0  
-**Major Release • 2025-08-15**
+# 🌀 WFGY Core (WanFaGuiYi) — v2.0  
+**🚀 Major Release • 2025-08-15**
 
-**One man, one life, one line.**  
-This is PSBigBig’s life work—now upgraded to **WFGY Core 2.0**: the smallest open reasoning engine you can paste anywhere, now featuring the **Coupler** (W_c) and the **DF layer** (the **Drunk Transformer** five-formula regulator set).
+> **"One man, one life, one line."**  
+> PSBigBig’s lifetime masterpiece — now evolved into **WFGY Core 2.0** 🏆  
+> The smallest open reasoning engine you can paste anywhere —  
+> now supercharged with **⚙️ Coupler (W_c)** + **🍷 DF Layer** (the *Drunk Transformer* five-formula regulator set).
 
-**Zenodo (spec & archived builds):** _TBD_ • **DOI:** _TBD_  
-**Changelog:** _TBD_
+---
+
+🎯 **What’s New in 2.0**
+- ⚙️ **Coupler (W_c)** — precision gate modulator for stable progress & controlled reversal  
+- 🍷 **DF Layer** — WRI / WAI / WAY / WDT / WTF for structure lock, entropy control, & graceful recovery  
+- 🔒 **Even Tighter Core Discipline** — Node-only output, safe stop rules, drift-proof bridges
+
+📜 **Zenodo (spec & archived builds):** _TBD_  
+🔖 **DOI:** _TBD_  
+🗂 **Changelog:** _TBD_
+
+---
+
+💡 *Hero image goes here — show the “One Line” aesthetic, milestone date, and engine power in one frame.*
 
 ---
 
