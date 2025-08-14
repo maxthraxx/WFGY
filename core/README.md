@@ -4,6 +4,8 @@
 > One line of math that rewires eight AIs. Not a pit stop; it is an engine swap.  
 > ✅ Engine 2.0 is live. **Star the repo to unlock more features and experiments.**
 
+<img width="1536" height="1024" alt="core" src="https://github.com/user-attachments/assets/1a033999-c0d2-45b1-a0d6-6205f16c6693" />
+
 **Benchmark highlights**  
 Semantic Accuracy ↑ 36.7% · Reasoning Success Rate ↑ 65.4% · Stability ↑ 5.1× · Self-Recovery = 0.87
 
