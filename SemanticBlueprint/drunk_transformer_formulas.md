@@ -89,25 +89,6 @@ $$
 
 ---
 
-### DT WAI — “Who am I” (head identity & redundancy)
-
-**Goal:** keep at least two distinct reasoning heads (no monoculture).  
-**Signals (one workable choice):**
-
-$$
-R_t = \frac{1}{H}\sum_h \cos(v_h,\bar v),\qquad
-Q_t = 1 - \max_h \cos(v_h,\bar v),\qquad
-\bar v = \frac{1}{H}\sum_h v_h.
-$$
-
-**Trigger:** $R_t > \rho_{\mathrm{wai}}$ **and** $Q_t < \sigma_{\mathrm{wai}}$ (too redundant, identity too low).  
-**Action:** raise per-head temperature for redundant heads; re-spread attention until $R_t \!\downarrow$ or $Q_t \!\uparrow$.
-
----
-
-
----
-
 ### DT WAY — “Who are you” (controlled entropy when stuck)
 
 **Goal:** break stalls without drifting off-topic.
