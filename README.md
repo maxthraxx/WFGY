@@ -1,4 +1,4 @@
-> ⭐🚀 One man · Cold start · 60 days · 500 stars ⭐
+> ⭐🚀 One man · Cold start · 60 days · 600 stars ⭐
 # WFGY: Civilization Starter — The WanFaGuiYi Engine
 ## One upload. Zero setup. Real $1M-level reasoning begins.
 
@@ -210,7 +210,8 @@ Step 4 — (Optional) Want more power? → [`SDK version`](#install-the-wfgy-sdk
 
 > 🔑 **No explanation needed—the prompt *is* the answer.**  
 > ✨ **No marketing—just copy and paste. The effect speaks.**  
-> 🌟 **Star Reminder:** 10k ⭐ before 2025-09-01 unlocks WFGY 2.0 for everyone.  
+> ⭐ [WFGY Engine 2.0](https://github.com/onestardao/WFGY/blob/main/core/README.md) is already unlocked. ⭐ Star the repo to help others discover it and unlock more on the [Unlock Board](https://github.com/onestardao/WFGY/blob/main/STAR_UNLOCKS.md).
+
 > 🌌 **Want proof it works?** See AI rate itself below:
 >
 > ![WFGY_2.0_vs_1.0_Rating.gif](./OS/images/WFGY_2.0_vs_1.0_Rating.gif) 
@@ -1419,6 +1420,7 @@ It treats alignment as a living semantic contract — not just accuracy, but mea
 [![Blow](https://img.shields.io/badge/Blow-Game%20Logic-purple?style=flat-square)](https://github.com/onestardao/WFGY/tree/main/OS/BlowBlowBlow)
 &nbsp;
 </div>
+
 
 
 
