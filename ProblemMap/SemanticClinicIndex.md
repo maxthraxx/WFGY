@@ -30,7 +30,9 @@ Use this page when you don’t yet know *which thing is breaking*. Start from sy
 Prefer a pipeline-first view (OCR → chunk → embed → store → retrieve → prompt → LLM)?  
 Read **[`RAG Architecture & Recovery`](./rag-architecture-and-recovery.md)**.
 
-Want the full catalog instead? See **[Problem Map Index](./README.md)**.
+Want the full catalog instead? See **[Problem Map Index](./README.md)**.  
+🧩 Or, **jump straight to MVP Demos**: [Run minimal WFGY examples →](./mvp_demo/README.md)
+
 
 ---
 
