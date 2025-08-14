@@ -1,8 +1,11 @@
 # 🌌 WFGY Core (WanFaGuiYi) — Reasoning Engine 2.0 · **Now Live**
 ### "One man, one life, one line — bending the mind of every AI on Earth."
 
-> One line of math that rewires eight AIs. Not a pit stop; it is an engine swap.  
-> ✅ Engine 2.0 is live. **Star the repo to unlock more features and experiments.**
+🚀 **We’ve built the world’s first “No-Brain Mode” for AI** — just upload, and our **AutoBoot** engine silently activates in the background.  
+In seconds, your AI’s reasoning, stability, and problem-solving across *all domains* jump to a new level — **no prompts, no hacks, no retraining.**  
+One line of math rewires eight leading AIs. This isn’t a patch — it’s an engine swap.
+
+> ✅ Engine 2.0 is live. **⭐ Star the repo to unlock more features and experiments.**
 
 <img width="1536" height="1024" alt="core" src="https://github.com/user-attachments/assets/1a033999-c0d2-45b1-a0d6-6205f16c6693" />
 
