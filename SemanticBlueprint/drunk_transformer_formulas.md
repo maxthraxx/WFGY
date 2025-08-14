@@ -1,3 +1,6 @@
+> 🚧 **Under Construction**
+
+
 # 🌀 Drunk Transformer (DT) — Core Formulas, Defaults & Runnable Examples (WFGY Core 2.0)
 
 **Concept (short)**  
