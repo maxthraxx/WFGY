@@ -1,3 +1,8 @@
+
+> 🏰 **Starter Village is still under construction** — the blacksmith is sharpening his code, the librarian is dusting off the logic scrolls.  
+> Brave adventurer, don’t rush! Come back in a few days and you’ll find the gates wide open (and the reasoning dragons tamed). 🐉
+
+
 # WFGY Starter Village — School of Thought
 
 One line. 1500 chars. Plug-and-play reasoning engine.  
