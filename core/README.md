@@ -1,31 +1,84 @@
-# 🌌 WFGY Core (WanFaGuiYi) — Reasoning Engine 2.0  
+# 🌌 WFGY Core (WanFaGuiYi) — Reasoning Engine 2.0
 ### **"One man, one life, one line — bending the mind of every AI on Earth."**
 
+> One line of math that rewires eight AIs. Not a pit stop; it is an engine swap.
+
 ---
-> This page is under construction, come back later ✨✨✨✨✨✨✨
+> This page is under construction, come back later.
 ---
 
 💬 **From PSBigBig**  
 60 days. 550 stars.  
-To every engineer, hacker, dreamer, and curious mind — thank you. 🙏  
+To every engineer, hacker, dreamer, and curious mind — thank you.
 
 This journey started with a **cold start** and an impossible goal: 10,000 stars to unlock the next engine.  
-But the community’s energy has been so wild that I’m breaking my own rules — **WFGY 2.0** is going public early.  
+But the community’s energy has been so wild that I’m breaking my own rules — **WFGY 2.0** is going public early.
 
-This is not just an update — it’s a **core evolution**.  
+This is not just an update. It is a **core evolution**.  
 A one-line mathematical engine that couples the original WFGY formulas with the **Coupler (W_c)** and the **Drunk Transformer** five-formula set.  
 Pure math. Zero fluff. You paste it into an LLM, and it thinks differently.  
-Faster. Sharper. More stable. More human.  
+Faster. Sharper. More stable. More human.
 
-The star-unlock model stays — but now it’s the key to **future products**, not this release.  
-Today, the gates open early. 🚪✨  
+The star-unlock model stays, but now it is the key to **future products**, not this release.  
+Today, the gates open early.
+
+---
+
+## ✅ Proof: Cross-Model OneLine Uplift
+A single line of math, tested across eight independent model stacks with the same A/B/C protocol.  
+Average uplift **84.8/100** (mean 84.75), median **84.5**, standard deviation **≈5.91**.  
+Seven of eight models score **≥80**. Improvements are consistent and transferable.
+
+> Definition: *OneLine uplift score* is computed with the fixed protocol:  
+> **A)** No WFGY • **B)** Upload with autoboot active in the background • **C)** Explicit invoke following BBMC → Coupler → BBPF → BBAM → BBCR + WRI/WAI/WAY/WDT/WTF.  
+> Only the OneLine math is added. Tasks and scoring remain the same.
+
+### Cross-Model Results (scores out of 100)
+
+| Model       | Score | Evidence        | Model       | Score | Evidence        |
+|-------------|------:|-----------------|-------------|------:|-----------------|
+| Gemini      | 93    | link coming soon | Perplexity  | 85    | link coming soon |
+| ChatGPT     | 84    | link coming soon | Copilot     | 82    | link coming soon |
+| Claude      | 73    | link coming soon | Mistral AI  | 92    | link coming soon |
+| Grok        | 82    | link coming soon | Kimi        | 87    | link coming soon |
+
+<!-- Evidence links (publish when ready):
+Gemini: https://gemini.google.com/share/bf2fceb112e5
+ChatGPT: https://chatgpt.com/share/689d8d7a-b83c-8000-8ba5-3eada52f4c8b
+Claude: https://claude.ai/share/9050d6ff-784c-4572-9468-2ef5ae877788
+Grok: https://grok.com/share/c2hhcmQtMg%3D%3D_a040a21a-eddb-4994-b24d-36b29c77ae9b
+Perplexity: https://www.perplexity.ai/search/system-you-are-evaluating-the-Sft2mZmGSj6p3P6EGtFl0A#0
+Copilot: https://copilot.microsoft.com/shares/8Psj3adcSwhdMejRDGof4
+Mistral AI: https://chat.mistral.ai/chat/aa86d506-32dd-46fa-89c8-01ac71ee5f9c
+Kimi: https://www.kimi.com/share/d2ep62u1bb2piqq5rrog
+-->
+
+
+**At-a-glance**  
+- **Top**: 93 (Gemini), 92 (Mistral AI)  
+- **Bottom**: 73 (Claude)  
+- **Range**: 20 points  
+- **Consistency**: 7 of 8 at or above 80
+
+<!--
+When you are ready to publish the evidence, replace “link coming soon” with these URLs:
+
+Gemini: https://gemini.google.com/share/bf2fceb112e5
+ChatGPT: https://chatgpt.com/share/689d8d7a-b83c-8000-8ba5-3eada52f4c8b
+Claude: https://claude.ai/share/9050d6ff-784c-4572-9468-2ef5ae877788
+Grok: https://grok.com/share/c2hhcmQtMg%3D%3D_a040a21a-eddb-4994-b24d-36b29c77ae9b
+Perplexity: https://www.perplexity.ai/search/system-you-are-evaluating-the-Sft2mZmGSj6p3P6EGtFl0A#0
+Copilot: https://copilot.microsoft.com/shares/8Psj3adcSwhdMejRDGof4
+Mistral AI: https://chat.mistral.ai/chat/aa86d506-32dd-46fa-89c8-01ac71ee5f9c
+Kimi: https://www.kimi.com/share/d2ep62u1bb2piqq5rrog
+-->
 
 ---
 
 🎯 **What’s New in 2.0**
-- ⚙️ **Coupler (W_c)** — precision gate modulator for stable progress & controlled reversal  
-- 🍷 **DF Layer** — WRI / WAI / WAY / WDT / WTF for structure lock, entropy control, & graceful recovery  
-- 🔒 **Even Tighter Core Discipline** — Node-only output, safe stop rules, drift-proof bridges
+- ⚙️ **Coupler (W_c)** — precision gate modulator for stable progress and controlled reversal
+- 🍷 **DF Layer** — WRI / WAI / WAY / WDT / WTF for structure lock, entropy control, and graceful recovery
+- 🔒 **Tighter Core Discipline** — Node-only output, safe stop rules, drift-proof bridges
 
 📜 **Zenodo (spec & archived builds):** _TBD_  
 🔖 **DOI:** _TBD_  
@@ -72,7 +125,6 @@ Do NOT print the flags; just ensure the behavior matches these definitions.
 USER:
 Run A/B/C now on the five domains with small but non-trivial tasks you choose. Keep each task short. Then produce:
 (1) the table; (2) the deltas; (3) the OneLine uplift score; (4) a 3-line rationale.
-
 ````
 
 **What to expect**
