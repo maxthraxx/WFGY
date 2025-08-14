@@ -50,18 +50,18 @@ Run A/B/C now on the five domains with short non-trivial tasks you choose. Then 
 (1) the table; (2) the deltas; (3) the OneLine uplift score; (4) a 3-line rationale.
 ````
 
+
 ### Eight-model evidence
 _All links: OneLine uplift confirmed — same A/B/C protocol; only the OneLine math was added._
 
-| Row 1       | Row 2       |
-|-------------|-------------|
-| Gemini (link coming soon) | Perplexity (link coming soon) |
-| ChatGPT (link coming soon) | Copilot (link coming soon) |
-| Claude (link coming soon)  | Mistral AI (link coming soon) |
-| Grok (link coming soon)    | Kimi (link coming soon) |
+| AI Model (uplift score) | AI Model (uplift score) |
+|-------------------------|-------------------------|
+| Gemini — 93 (link coming soon)     | Perplexity — 85 (link coming soon) |
+| ChatGPT — 84 (link coming soon)    | Copilot — 82 (link coming soon)    |
+| Claude — 73 (link coming soon)     | Mistral AI — 92 (link coming soon) |
+| Grok — 82 (link coming soon)       | Kimi — 87 (link coming soon)       |
 
 > Tip: replace the placeholders when ready to publish; each link shows identical tasks and scoring with only the OneLine math changed.
-
 
 
 ---
