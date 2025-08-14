@@ -2,6 +2,8 @@
 ### **"One man, one life, one line — bending the mind of every AI on Earth."**
 
 ---
+> This page is under construction, come back later ✨✨✨✨✨✨✨
+---
 
 💬 **From PSBigBig**  
 60 days. 550 stars.  
