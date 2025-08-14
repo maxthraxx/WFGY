@@ -46,6 +46,3 @@ This is one of the most painful — and useful — experiences in building the *
 May you survive better than I did.  
 May your prompts never spawn 6-fingered footless blob-dragons again.
 
-⭐️ Oh, and…  
-**This chest is part of WFGY v2.0 lore.**  
-Every folder brings you closer. Keep going.
