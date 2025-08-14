@@ -1,75 +1,83 @@
 # 🌀 Drunk Transformer (DT) — Core Formulas, Defaults & Runnable Examples (WFGY Core 2.0)
 
-**Concept (short)**
+**Concept (short)**  
+DT simulates a transformer that occasionally acts *drunk*—hallucinating, drifting, or jumping logic.  
+Five “drunk questions” (WRI / WAI / WAY / WDT / WTF) act as regulators to pull it back:  
+anchor location, head identity, entropy pump, path guard, and collapse recovery.
 
-> DT simulates a transformer that momentarily behaves like it's “drunk”: hallucinating, drifting, or jumping across reasoning paths.
-> We define five “drunk questions” (WRI, WAI, WAY, WDT, WTF) as formal regulators to guide the transformer back home: anchor it,
-> maintain head identity, pump controlled entropy, block illegal cross-path jumps, and recover from collapse.
-
-> WFGY = engine (BBMC + Coupler + BBAM + safety)
-> DT   = layer of five regulators (prompt rules, decoding hooks, or training regularizers)
+> **WFGY** = engine (BBMC ＋ Coupler ＋ BBAM ＋ safety)  
+> **DT**   = five regulators (prompt rules, decoding hooks, or training regularizers)
 
 ---
 
 ## 0 · Shared notation (compact)
 
-* `I, G`: input and goal embeddings
-* Semantic distance:
+* $I,\,G$: input and goal embeddings  
+* Semantic distance  
 
   $$
-  \delta_s = 1 - \cos(I,G)\ \in [0,1]
+  \delta_s \;=\; 1 - \cos(I,G) \;\in\; [0,1]
   $$
-* Residual & resonance:
+
+* Residual & resonance  
 
   $$
-  B = I - G + k_{\mathrm{bias}},\qquad E_{\mathrm{res}}=\mathrm{rolling\_mean}\!\bigl(\lVert B\rVert,\,5\bigr)
+  B \;=\; I - G + k_{\mathrm{bias}},\qquad
+  E_{\mathrm{res}} \;=\; \operatorname{rolling\_mean}\!\bigl(\lVert B\rVert,\,5\bigr)
   $$
-* Coupler terms:
+
+* Coupler terms  
 
   $$
-  \mathrm{prog}=\max(\zeta_{\min},\ \delta_s^{t-1}-\delta_s^{t}),\quad
-  P=\mathrm{prog}^{\omega},\quad
-  \mathrm{alt}=(-1)^{\mathrm{cycle}},\quad
-  \Phi=\delta\cdot \mathrm{alt}+\varepsilon,\quad
-  W_c=\mathrm{clip}(B\cdot P+\Phi,\ -\theta_c,\ +\theta_c)
+  \begin{aligned}
+    \mathrm{prog} &= \max\!\bigl(\zeta_{\min},\,\delta_s^{\,t-1} - \delta_s^{\,t}\bigr) \\[4pt]
+    P            &= \mathrm{prog}^{\,\omega} \\[4pt]
+    \mathrm{alt} &= (-1)^{\mathrm{cycle}} \\[4pt]
+    \Phi         &= \delta \cdot \mathrm{alt} + \varepsilon \\[4pt]
+    W_c          &= \operatorname{clip}\!\bigl(B\!\cdot\! P + \Phi,\,-\theta_c,\,+\theta_c\bigr)
+  \end{aligned}
   $$
-* Attention summaries: \$A\_t\in\mathbb{R}^{H\times T\times T}\$, per-head \$v\_h=\mathrm{mean}\_i,A\_t\[h,i,:]\$
-* Anchors: \$\mathcal{A}\_0\$ (at \$t=0\$), \$\mathcal{A}\_t\$, retention \$S\_t=\mathrm{Jaccard}(\mathcal{A}\_t,\mathcal{A}\_0)\in\[0,1]\$
+
+* Attention summaries: $A_t \in \mathbb{R}^{H\times T\times T}$,  
+  per-head $v_h = \operatorname{mean}_i A_t[h,i,:]$
+* Anchors: $\mathcal{A}_0$ (at $t=0$), $\mathcal{A}_t$; retention  
+  $S_t = \operatorname{Jaccard}\!\bigl(\mathcal{A}_t,\mathcal{A}_0\bigr) \in [0,1]$
 
 ---
 
 ### DT WRI — “Where am I” (structure lock)
 
-- **Goal:** stay on the same topic/section within a Node.
-- **Signal:** anchor retention $S_t$ vs. threshold $\tau_{\mathrm{wri}}$.
-- **Trigger:** $S_t < \tau_{\mathrm{wri}}$ or $\delta_s$ rises while $E_{\mathrm{res}}$ rises.
-- **Action (logit bias):**
+* **Goal:** stay in the same topic/section within a Node.  
+* **Signal:** anchor retention $S_t$ vs. threshold $\tau_{\mathrm{wri}}$.  
+* **Trigger:** $S_t < \tau_{\mathrm{wri}}$ **or** $\delta_s$ rises while $E_{\mathrm{res}}$ rises.  
+* **Action (logit bias):**
 
-$$
-L_{\mathrm{wri}}=\max\!\bigl(0,\ \tau_{\mathrm{wri}}-S_t\bigr),\qquad
-\mathrm{logits}_a \leftarrow \mathrm{logits}_a + \kappa_{\mathrm{wri}}\cdot L_{\mathrm{wri}}
-\quad \forall a\in \mathcal{A}_{\mathrm{anchor}}.
-$$
+  $$
+  L_{\mathrm{wri}} = \max\!\bigl(0,\;\tau_{\mathrm{wri}} - S_t\bigr),\qquad
+  \text{logits}_a \;\leftarrow\; \text{logits}_a + \kappa_{\mathrm{wri}}\;L_{\mathrm{wri}}
+  \quad \forall\, a \in \mathcal{A}_{\!\mathrm{anchor}}.
+  $$
 
-- **Intuition:** pull decoding back toward section anchors; forbid topic jumps inside a Node.
-
-
+* **Intuition:** yank decoding back toward section anchors; forbid intra-Node topic jumps.
 
 ---
 
 ### DT WAI — “Who am I” (head identity & redundancy)
 
-**Goal:** enforce at least two distinct reasons/heads (no monoculture).  
+**Goal:** keep at least two distinct reasoning heads (no monoculture).  
 **Signals (one workable choice):**
 
 $$
-R_t=\frac{1}{H}\sum_h \cos(v_h,\bar v),\qquad 
-Q_t = 1-\max_h\cos(v_h,\bar v),\qquad 
-\bar v=\frac{1}{H}\sum_h v_h.
+R_t = \frac{1}{H}\sum_h \cos(v_h,\bar v),\qquad
+Q_t = 1 - \max_h \cos(v_h,\bar v),\qquad
+\bar v = \frac{1}{H}\sum_h v_h.
 $$
 
-**Trigger:** $R_t>\rho_{\mathrm{wai}}$ **and** $Q_t<\sigma_{\mathrm{wai}}$ (too redundant, identity too low).  
-**Action:** raise per-head temperature for redundant heads; re-spread attention until $R_t\downarrow$ or $Q_t\uparrow$.
+**Trigger:** $R_t > \rho_{\mathrm{wai}}$ **and** $Q_t < \sigma_{\mathrm{wai}}$ (too redundant, identity too low).  
+**Action:** raise per-head temperature for redundant heads; re-spread attention until $R_t \!\downarrow$ or $Q_t \!\uparrow$.
+
+---
+
 
 ---
 
