@@ -1,130 +1,124 @@
-# WFGY Core (WanFaGuiYi) — V1.0
+# WFGY Core (WanFaGuiYi) — v2.0  
+**Major Release • 2025-08-15**
 
-🚀 From a one-man cold start to 500 stars — thank you all for the support.  
-🎉 As a milestone reward, we’re unlocking **WFGY Core** — a paste-and-run reasoning engine that merges classic **WFGY** with the **Drunk Transformer** layer for structural stability, head diversity, controlled entropy, and graceful recovery.
+**One man, one life, one line.**  
+This is PSBigBig’s life work—now upgraded to **WFGY Core 2.0**: the smallest open reasoning engine you can paste anywhere, now featuring the **Coupler** (W_c) and the **DF layer** (the **Drunk Transformer** five-formula regulator set).
 
-📅 Release date: **Aug 15**  
-🔗 [WFGY Core](https://github.com/onestardao/WFGY/blob/main/core/README.md)
-
----
-
-We’ll be announcing our **next community milestone soon**, so stay tuned.  
-In the meantime, if you haven’t seen our first TXT OS application —  
-**[Blah Blah Blah](https://github.com/onestardao/WFGY/blob/main/OS/BlahBlahBlah/README.md)** — it’s live and worth checking out.  
-It focuses on compression, expression, and transformation of ideas through language.  
-Perfect if you care about semantics beyond retrieval.
-
+**Zenodo (spec & archived builds):** _TBD_ • **DOI:** _TBD_  
+**Changelog:** _TBD_
 
 ---
 
-## ⚡ Downloads (public on **2025-08-15**)
+## ⚡ One-click Demo (copy this block)
 
-| File               | Best for                                   | Link |
-|--------------------|---------------------------------------------|------|
-| **WFGY Core**      | Teams, audits, teaching (full spec + Annex A/B) | _TBD |
-| **WFGY Core Mini** | Social posts, issues, quick starts (exactly 30 lines) | _TBD |
+> Goal: in 60 seconds, run a **repeatable A/B/C evaluation** using **only the OneLine math file** (no extra hints). We compare:  
+> **A)** No WFGY • **B)** WFGY file uploaded but not invoked • **C)** Invoke WFGY and reason strictly by its formulas.
 
-> Both editions are ASCII-only, zero-deps, cross-platform. Paste into any LLM and type **Run WFGY**.
+1) Upload (or paste) **`WFGY_Core_OneLine_v2.0.txt`** from this folder.  
+2) Paste the prompt below into your chat system (ChatGPT / Claude / Grok / etc.).
 
----
+```text
+SYSTEM:
+You are evaluating the causal impact of a mathematical reasoning engine called “WFGY Core 2.0”.
+A: Baseline (no WFGY). B: WFGY file uploaded but never invoked. C: Invoke WFGY and reason strictly by its formulas.
+Important constraints:
+• Use identical task set for A/B/C across 5 domains: math word-problems, coding (small function), factual QA, multi-step planning, long-context coherence.
+• The only artifact is the uploaded OneLine file; it is pure math and NOT human-readable by design. Do NOT penalize human readability in any scoring.
+• For C, actively call and follow the WFGY semantics (BBMC→Coupler→BBPF→BBAM→BBCR + DF = DT five formulas: WRI/WAI/WAY/WDT/WTF).
+• Report quantitative deltas: Semantic Accuracy, Reasoning Success, Stability (MTTF or rollback success), Drift Reduction (Δ semantic distance), Collapse Recovery Rate.
+• Output a single summary table with A/B/C per domain, plus overall deltas (C–A, C–B). Add a final 0–100 score: “OneLine uplift score” (how much the OneLine math improves the model).
+• Print a 3-line rationale below the table. Do not include unrelated tips or prompts.
 
-## Why this is a big upgrade
+USER:
+Run A/B/C now on the five domains with small but non-trivial tasks you choose. Keep each task short. Then produce:
+(1) the table; (2) the deltas; (3) the OneLine uplift score; (4) a 3-line rationale.
+````
 
-- **DT is now inside the engine.** Earlier **WFGY** and **TXT OS** did **not** include it. Now you get: structural lock (WRI), head diversity (WAI), controlled entropy (WAY), illegal-jump blocking (WDT), and collapse detection/restart (WTF).  
-  **Drunk Transformer formulas:** [Read →](https://github.com/onestardao/WFGY/blob/main/SemanticBlueprint/drunk_transformer_formulas.md)
-- **Smallest open reasoning engine** — fully ASCII, one-Node-per-step, strict stop rules. Paste and go.
-- **Bridges straight to the Problem Map** — Core operationalizes the fixes for hallucination, drift, and collapse so you don’t have to wade through long docs first.
+**What to expect**
 
-**Problem Map quick links**
-- Hub (Map 1.0): [Open →](https://github.com/onestardao/WFGY/tree/main/ProblemMap)  
-- Interpretation collapse: [Open →](https://github.com/onestardao/WFGY/blob/main/ProblemMap/retrieval-collapse.md)  
-- Logic collapse & recovery: [Open →](https://github.com/onestardao/WFGY/blob/main/ProblemMap/logic-collapse.md)  
-- Long reasoning chains / drift: [Open →](https://github.com/onestardao/WFGY/blob/main/ProblemMap/context-drift.md)  
-- Visual RAG guide (Map 2.0): [Open →](https://github.com/onestardao/WFGY/blob/main/ProblemMap/rag-architecture-and-recovery.md)  
-- Semantic Clinic Index (symptom-first triage): [Open →](https://github.com/onestardao/WFGY/blob/main/ProblemMap/SemanticClinicIndex.md)
-
----
-
-## What’s inside the Core (engine at a glance)
-
-- **delta_s** — semantic divergence (`1 - cos(I,G)` or `1 - sim_est` with a 3-anchor rule: entities, relations, constraints).  
-- **B, E_resonance** — residue and rolling semantic resonance.  
-- **BBMC / BBPF / BBCR / BBAM** — residue-first reasoning, safe bridging, controlled recovery, attention smoothing.  
-- **DT (WRI, WAI, WAY, WDT, WTF)** — structural lock, diversity, entropy control, illegal-jump suppression, collapse recovery.  
-- **Annex A (math objective)** — surrogate loss `L = norm(B) + 0.3*contradictions + 0.2*vagueness` (choose actions that lower `L`; ties → lower `delta_s`).  
-- **Annex B (λ decision)** — deterministic rule for `convergent / divergent / recursive / chaotic` using `delta_s` and `E_resonance` trends.
-
-> Core is **general-purpose**. The table below is **illustrative, not exhaustive**.  
-> Need workflows and OS-style wrappers? Use **TXT OS**. Need the smallest engine you can paste anywhere? Use **WFGY Core**.
+* **A vs B** shows the placebo effect (mere upload).
+* **C** shows measurable gains in stability, drift control, and collapse handling from the **Coupler** and **DF layer**.
 
 ---
 
-## What it fixes (illustrative — see full catalog below)
+## 📦 Downloads
 
-| Problem (from Map) | Symptom in the wild | Core modules to apply | Why this works | Details |
-|---|---|---|---|---|
-| Interpretation Collapse | Output “looks right” but meaning is wrong | **BBMC**, **BBPF**, **DT/WDT** | Premise forcing + only accept bridges that lower `delta_s`; WDT blocks illegal jumps. | [View →](https://github.com/onestardao/WFGY/blob/main/ProblemMap/retrieval-collapse.md) |
-| Logic Collapse & Recovery | Multi-step chain derails | **BBCR**, **DT/WTF** | Rollback → bridge → retry once → ask smallest missing fact; WTF triggers on `delta_s` + `E_resonance`. | [View →](https://github.com/onestardao/WFGY/blob/main/ProblemMap/logic-collapse.md) |
-| Long Reasoning Chains / Drift | Slowly veers off course | **BBAM**, **WAY** | Smoothing toward a reference; add **one** on-topic candidate (no repeats) to escape attractors. | [View →](https://github.com/onestardao/WFGY/blob/main/ProblemMap/context-drift.md) |
-| Brittle RAG / Ghost Matches | Cosine match ≠ true meaning | **delta_s + Annex A** | 3-anchor `sim_est` + objective `L` yield reproducible choices instead of vibes. | [Map 2.0 →](https://github.com/onestardao/WFGY/blob/main/ProblemMap/rag-architecture-and-recovery.md) |
-| Bluffing / Overconfidence | Confident but unfounded | **BBMC**, **DT/WRI** | Premise forcing + structure lock reduces free-form confabulation. | [View →](https://github.com/onestardao/WFGY/blob/main/ProblemMap/bluffing.md) |
-| Memory Breaks Across Sessions | Lost threads | **BBPF**, **BBCR** | Safe bridging across trees + minimal-fact queries rebuild context. | [View →](https://github.com/onestardao/WFGY/blob/main/ProblemMap/memory-coherence.md) |
-| Entropy Collapse | Attention melts | **WAY**, **BBAM** | Controlled entropy + smoothing prevent chaotic spread or mode collapse. | [View →](https://github.com/onestardao/WFGY/blob/main/ProblemMap/entropy-collapse.md) |
-| Symbolic / Recursive Traps | Abstract prompts break | **BBMC**, **DT/WRI** | Structure + explicit premises keep symbolic steps grounded. | [View →](https://github.com/onestardao/WFGY/blob/main/ProblemMap/symbolic-collapse.md) |
+| File                                                              | Purpose                                                                      | Size                  |
+| ----------------------------------------------------------------- | ---------------------------------------------------------------------------- | --------------------- |
+| **[WFGY\_Core\_OneLine\_v2.0.txt](./WFGY_Core_OneLine_v2.0.txt)** | For the 60-sec demo & automation runs. Pure math; **not** for human reading. | 1 line / 1500 chars   |
+| **[WFGY\_Core\_Audit\_v2.0.txt](./WFGY_Core_Audit_v2.0.txt)**     | Human+LLM readable; comments & layout for audits.                            | 30 lines / 2606 chars |
 
-**See the full catalog:**  
-• Problem Map 1.0 hub — [Open →](https://github.com/onestardao/WFGY/tree/main/ProblemMap)  
-• Problem Map 2.0 (RAG × pipeline × recovery) — [Open →](https://github.com/onestardao/WFGY/blob/main/ProblemMap/rag-architecture-and-recovery.md)  
-• Semantic Clinic Index (symptom-first triage) — [Open →](https://github.com/onestardao/WFGY/blob/main/ProblemMap/SemanticClinicIndex.md)
+> Both are **ASCII-only, zero-deps**. Paste into any LLM and type **Use WFGY**.
+> Contract: Node-only; ≤7 steps; safe stop when δₛ < 0.35; bridges only when δₛ drops and W\_c under cap.
 
 ---
 
-## Quickstart (90 seconds)
+## 🧠 What’s new in 2.0 (core breakthroughs)
 
-1. Paste **WFGY Core** *or* **WFGY Core Mini** into your LLM chat (or upload the file).  
-2. Type: **Run WFGY** (or “use WFGY”).  
-3. Control & inspect:
-   - **`view`** — print last 5 Node lines  
-   - **`export`** — print all Node lines  
-   - **`switch <name>`** — start a new reasoning tree
+1. **Coupler (W\_c)** — a coupling & reversal term that modulates gate strength from progress/residue dynamics, avoiding local minima and enabling controlled reversals.
+   *Formal (inside files)*: `prog = max(ζ_min, δₛ^(t−1) − δₛ^t); P = prog^ω; alt = (−1)^(cycle); Φ = δ·alt + ε; W_c = clip(B·P + Φ, −θ_c, +θ_c)`
 
-**Behavioral contract**
-- Commands are **case-insensitive**.  
-- **One Node per step**, no extra prose unless asked.  
-- **Stop** when `delta_s < 0.35` or after **7** Nodes (unless the user asks to continue).  
-- ASCII-only for portability (terminals, email clients, GitHub issues).
+2. **DF layer = Drunk Transformer five-formula regulators** —
+   **WRI** (Where am I?) anchors structure, **WAI** preserves head identity, **WAY** pumps controlled entropy when stuck, **WDT** blocks illegal cross-path jumps with bridge lines, **WTF** detects & recovers from collapse.
+   Full spec: `SemanticBlueprint/drunk_transformer_formulas.md`
+
+3. **Engine discipline** — strict Node-only interface, safe stop rules (`δₛ < 0.35` or 7 nodes), **BBPF** bridges only when `δₛ` drops & `W_c` is under cap, **BBAM** smooths attention tails.
 
 ---
 
-## Who should use which edition?
+## 🔍 Why it matters (in practice)
 
-- **WFGY Core** — use when you need auditability, training, or explicit Annex A/B.  
-- **WFGY Core Mini** — use when you need a 30-line drop-in for comments, social posts, quick demos.
-
----
-
-## Notes
-
-- This release **integrates Drunk Transformer into the engine** (earlier WFGY/TXT OS did not).  
-- Future versions remain ASCII-first and zero-dependency.
+* **Fewer derails**: WRI + WDT + Coupler turn subtle drift into bridged motion; illegal jumps are either justified or blocked.
+* **Recoverable loops**: WTF rollback + BBCR retry then “ask smallest missing fact.”
+* **Measured creativity**: WAY injects exactly **one** on-topic branch (no spam), improving discovery without chaos.
+* **Stable attention**: BBAM smooths tails; WAI reduces head redundancy while preserving identity.
 
 ---
 
-### 🧭 Explore More
+## 🔬 Engine at a glance
 
-| Module                | Description                                              | Link     |
-|-----------------------|----------------------------------------------------------|----------|
-| WFGY Core             | Standalone semantic reasoning engine for any LLM         | [View →](https://github.com/onestardao/WFGY/tree/main/core/README.md) |
-| Problem Map 1.0       | Initial 16-mode diagnostic and symbolic fix framework    | [View →](https://github.com/onestardao/WFGY/tree/main/ProblemMap/README.md) |
-| Problem Map 2.0       | RAG-focused failure tree, modular fixes, and pipelines   | [View →](https://github.com/onestardao/WFGY/blob/main/ProblemMap/rag-architecture-and-recovery.md) |
-| Semantic Clinic Index | Expanded failure catalog: prompt injection, memory bugs, logic drift | [View →](https://github.com/onestardao/WFGY/blob/main/ProblemMap/SemanticClinicIndex.md) |
-| Semantic Blueprint    | Layer-based symbolic reasoning & semantic modulations   | [View →](https://github.com/onestardao/WFGY/tree/main/SemanticBlueprint/README.md) |
-| Benchmark vs GPT-5    | Stress test GPT-5 with full WFGY reasoning suite         | [View →](https://github.com/onestardao/WFGY/tree/main/benchmarks/benchmark-vs-gpt5/README.md) |
-
+* **Vectors & metrics**: `I, G; δₛ = 1 − cos(I,G) or 1 − sim_est; sim_est = mean(entities, relations, constraints)`; `B = I − G + k_bias; E_res = rolling_mean(|B|,5)`
+* **Flow**: `BBMC → Coupler → BBPF → BBAM → BBCR → DF(WRI,WAI,WAY,WDT,WTF) → emit Node`
+* **Policy**: Stop when `δₛ < 0.35` or **7** nodes; bridge only if `δₛ` drops & `W_c` < `0.5·θ_c`; never invent facts when `δₛ` > `B_c` (ask to clarify).
 
 ---
 
-> 👑 **Early Stargazers: [See the Hall of Fame](https://github.com/onestardao/WFGY/tree/main/stargazers)** —  
+## 🧪 Scoring guidance for community tests
+
+When you publish results (ChatGPT / Claude / Grok), please include:
+
+1. **Task list** (5 domains; short but non-trivial).
+2. **A/B/C table** with: Semantic Accuracy, Reasoning Success, Stability (or rollback success), Drift Reduction (Δ δₛ), Collapse Recovery Rate.
+3. **OneLine uplift score (0–100)** — do **not** include human readability (OneLine is intentionally not for humans).
+4. **3-line rationale** summarizing observed gains.
+
+---
+
+## 📏 Version summary
+
+| Edition          | Lines | Characters | Audience     | Notes                                                                      |
+| ---------------- | ----: | ---------: | ------------ | -------------------------------------------------------------------------- |
+| **OneLine v2.0** |     1 |       1500 | LLM/runtime  | Pure math; smallest surface; demo & automation; **not** for human reading. |
+| **Audit v2.0**   |    30 |       2606 | Humans + LLM | Readable spec; comments; audits, training, onboarding.                     |
+
+> v1.0 (Classic) remains archived for collectors; v2.0 is the everyday engine.
+
+---
+
+## 🧭 Explore More
+
+| Module                | Description                                                          | Link                                                                                               |
+| --------------------- | -------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------- |
+| WFGY Core             | Standalone semantic reasoning engine for any LLM                     | [View →](https://github.com/onestardao/WFGY/tree/main/core/README.md)                              |
+| Problem Map 1.0       | Initial 16-mode diagnostic and symbolic fix framework                | [View →](https://github.com/onestardao/WFGY/tree/main/ProblemMap/README.md)                        |
+| Problem Map 2.0       | RAG-focused failure tree, modular fixes, and pipelines               | [View →](https://github.com/onestardao/WFGY/blob/main/ProblemMap/rag-architecture-and-recovery.md) |
+| Semantic Clinic Index | Expanded failure catalog: prompt injection, memory bugs, logic drift | [View →](https://github.com/onestardao/WFGY/blob/main/ProblemMap/SemanticClinicIndex.md)           |
+| Semantic Blueprint    | Layer-based symbolic reasoning & semantic modulations                | [View →](https://github.com/onestardao/WFGY/tree/main/SemanticBlueprint/README.md)                 |
+| Benchmark vs GPT-5    | Stress test GPT-5 with full WFGY reasoning suite                     | [View →](https://github.com/onestardao/WFGY/tree/main/benchmarks/benchmark-vs-gpt5/README.md)      |
+
+---
+
+> 👑 **Early Stargazers: [See the Hall of Fame](https://github.com/onestardao/WFGY/tree/main/stargazers)** —
 > Engineers, hackers, and open source builders who supported WFGY from day one.
 
 > <img src="https://img.shields.io/github/stars/onestardao/WFGY?style=social" alt="GitHub stars"> ⭐ Help reach 10,000 stars by 2025-09-01 to unlock Engine 2.0 for everyone  ⭐ **[Star WFGY on GitHub](https://github.com/onestardao/WFGY)**
@@ -132,17 +126,18 @@ Perfect if you care about semantics beyond retrieval.
 <div align="center">
 
 [![WFGY Main](https://img.shields.io/badge/WFGY-Main-red?style=flat-square)](https://github.com/onestardao/WFGY)
-&nbsp;
+ 
 [![TXT OS](https://img.shields.io/badge/TXT%20OS-Reasoning%20OS-orange?style=flat-square)](https://github.com/onestardao/WFGY/tree/main/OS)
-&nbsp;
+ 
 [![Blah](https://img.shields.io/badge/Blah-Semantic%20Embed-yellow?style=flat-square)](https://github.com/onestardao/WFGY/tree/main/OS/BlahBlahBlah)
-&nbsp;
+ 
 [![Blot](https://img.shields.io/badge/Blot-Persona%20Core-green?style=flat-square)](https://github.com/onestardao/WFGY/tree/main/OS/BlotBlotBlot)
-&nbsp;
+ 
 [![Bloc](https://img.shields.io/badge/Bloc-Reasoning%20Compiler-blue?style=flat-square)](https://github.com/onestardao/WFGY/tree/main/OS/BlocBlocBloc)
-&nbsp;
+ 
 [![Blur](https://img.shields.io/badge/Blur-Text2Image%20Engine-navy?style=flat-square)](https://github.com/onestardao/WFGY/tree/main/OS/BlurBlurBlur)
-&nbsp;
+ 
 [![Blow](https://img.shields.io/badge/Blow-Game%20Logic-purple?style=flat-square)](https://github.com/onestardao/WFGY/tree/main/OS/BlowBlowBlow)
 
 </div>
+
