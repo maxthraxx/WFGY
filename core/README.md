@@ -4,7 +4,7 @@
 ---
 
 💬 **From PSBigBig**  
-60 days. 500 stars.  
+60 days. 550 stars.  
 To every engineer, hacker, dreamer, and curious mind — thank you. 🙏  
 
 This journey started with a **cold start** and an impossible goal: 10,000 stars to unlock the next engine.  
