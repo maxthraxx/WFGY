@@ -1,7 +1,9 @@
 # 🌀 Drunk Transformer (DT) — Core Formulas, Defaults & Runnable Examples (WFGY Core 2.0)
 
-**Concept (short).** DT simulates a transformer that momentarily behaves like it's "drunk" — hallucinating, drifting, or jumping across reasoning paths.  
-We define five "drunk questions" (WRI, WAI, WAY, WDT, WTF) as formal regulators to guide the transformer back home: anchor it, maintain head identity, pump controlled entropy, block illegal cross-path jumps, and recover from collapse.
+**Concept (short)** 
+> DT simulates a transformer that momentarily behaves like it's "drunk" : hallucinating, drifting, or jumping across reasoning paths.  
+> We define five "drunk questions" (WRI, WAI, WAY, WDT, WTF) as formal regulators to guide the transformer back home: anchor it
+> maintain head identity, pump controlled entropy, block illegal cross-path jumps, and recover from collapse.
 
 > WFGY = engine (A + Coupler + BBAM + safety)  
 > DT   = layer of five regulators (prompt rules, decoding hooks, or training regularizers)
