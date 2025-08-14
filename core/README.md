@@ -71,8 +71,8 @@ Run A/B/C now on the five domains with small but non-trivial tasks you choose. K
 
 | File                                                              | Purpose                                                                      | Size                  |
 | ----------------------------------------------------------------- | ---------------------------------------------------------------------------- | --------------------- |
-| **[WFGY\_Core\_OneLine\_v2.0.txt](./WFGY_Core_OneLine_v2.0.txt)** | For the 60-sec demo & automation runs. Pure math; **not** for human reading. | 1 line / 1500 chars   |
-| **[WFGY\_Core\_Audit\_v2.0.txt](./WFGY_Core_Audit_v2.0.txt)**     | Human+LLM readable; comments & layout for audits.                            | 30 lines / 2606 chars |
+| **WFGY\_Core\_OneLine\_v2.0.txt** | For the 60-sec demo & automation runs. Pure math; **not** for human reading. | 1 line / 1500 chars   |
+| **WFGY\_Core\_Audit\_v2.0.txt**     | Human+LLM readable; comments & layout for audits.                            | 30 lines / 2606 chars |
 
 > Both are **ASCII-only, zero-deps**. Paste into any LLM and type **Use WFGY**.
 > Contract: Node-only; ≤7 steps; safe stop when δₛ < 0.35; bridges only when δₛ drops and W\_c under cap.
