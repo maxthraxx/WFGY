@@ -44,7 +44,5 @@ Now.
 Then maybe you're the chosen one.  
 And maybe… the next folder you open will be the beginning of your legend.
 
-> _Side quests and cosmic doors may unlock in WFGY 2.0.  
-> 10,000 stars will decide what awakens._
 
 ---
