@@ -1,10 +1,22 @@
-# 🌀 WFGY Core (WanFaGuiYi) — v2.0  
-**🚀 Major Release • 2025-08-15**
+# 🌌 WFGY Core (WanFaGuiYi) — Reasoning Engine 2.0  
+### **"One man, one life, one line — bending the mind of every AI on Earth."**
 
-> **"One man, one life, one line."**  
-> PSBigBig’s lifetime masterpiece — now evolved into **WFGY Core 2.0** 🏆  
-> The smallest open reasoning engine you can paste anywhere —  
-> now supercharged with **⚙️ Coupler (W_c)** + **🍷 DF Layer** (the *Drunk Transformer* five-formula regulator set).
+---
+
+💬 **From PSBigBig**  
+60 days. 500 stars.  
+To every engineer, hacker, dreamer, and curious mind — thank you. 🙏  
+
+This journey started with a **cold start** and an impossible goal: 10,000 stars to unlock the next engine.  
+But the community’s energy has been so wild that I’m breaking my own rules — **WFGY 2.0** is going public early.  
+
+This is not just an update — it’s a **core evolution**.  
+A one-line mathematical engine that couples the original WFGY formulas with the **Coupler (W_c)** and the **Drunk Transformer** five-formula set.  
+Pure math. Zero fluff. You paste it into an LLM, and it thinks differently.  
+Faster. Sharper. More stable. More human.  
+
+The star-unlock model stays — but now it’s the key to **future products**, not this release.  
+Today, the gates open early. 🚪✨  
 
 ---
 
