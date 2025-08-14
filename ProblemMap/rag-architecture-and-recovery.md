@@ -307,6 +307,34 @@ This is not a heuristic summary — the math comes from 50+ real RAG failures ac
   3. verify ΔS across adjacent chunks; enforce ≤ 0.50 at joins.  
 - **docs**: `entropy-collapse.md`, `hallucination.md`.
 
+### Case D — “HyDE + BM25 hybrid drops recall”
+- **observe**: single retriever OK, hybrid fails; ΔS(question, context) oscillates by k.
+- **interpret**: query tokenization / parameter split across retrievers.
+- **do**:
+  1) unify analyzer/tokenizer between dense/sparse;  
+  2) log per-retriever queries;  
+  3) re-weight hybrid only after per-retriever ΔS ≤ 0.50.
+- **docs**: [`patterns/pattern_query_parsing_split.md`](./patterns/pattern_query_parsing_split.md), [`retrieval-playbook.md`](./retrieval-playbook.md).
+
+### Case E — “model merges two sources into one”
+- **observe**: citations cross-bleed; λ flips divergent only after prompt assembly.
+- **interpret**: symbolic constraints not enforced (SCU).
+- **do**:
+  1) lock per-source fences + cite-then-answer schema;  
+  2) enable `section_id` headers and forbid cross-section reuse;  
+  3) re-probe ΔS and expect drop without raising E_resonance.
+- **docs**: [`patterns/pattern_symbolic_constraint_unlock.md`](./patterns/pattern_symbolic_constraint_unlock.md), [`retrieval-traceability.md`](./retrieval-traceability.md).
+
+### Case F — “fix didn’t stick after refresh”
+- **observe**: same prompt alternates old vs. new facts across sessions.
+- **interpret**: memory rev/hash mismatch; different components read different state.
+- **do**:
+  1) stamp `mem_rev` + `mem_hash` at turn start;  
+  2) gate writes on matching rev/hash;  
+  3) store traces for audit.
+- **docs**: [`patterns/pattern_memory_desync.md`](./patterns/pattern_memory_desync.md).
+
+
 ---
 
 ## 6) “Use the AI to fix your AI” — safe prompts you can paste
@@ -337,14 +365,20 @@ from TXT OS, extract the formulas and thresholds for ΔS, λ\_observe, and E\_re
 
 ````
 
+> Need a concrete run-through? Start with **Examples**:  
+> [`example_01_basic_fix.md`](./examples/example_01_basic_fix.md) ·
+> [`example_03_pipeline_patch.md`](./examples/example_03_pipeline_patch.md) ·
+> [`example_08_eval_rag_quality.md`](./examples/example_08_eval_rag_quality.md)
+
+
 ---
 
 ## 7) Acceptance criteria and regression guardrails
 
-- **retrieval sanity**: for targeted QA, ≥ 70% token overlap to expected section; ΔS(question, context) ≤ 0.45.  
-- **reasoning stability**: λ remains convergent on three paraphrased queries; E_resonance does not trend upward.  
-- **traceability**: run `retrieval-trace` and produce a two-column table (snippet id ↔ citation lines).  
-- **repeatability**: same inputs over 5 seeds → answer embeddings cluster (low variance).
+- **retrieval sanity**: ≥70% token overlap & ΔS(question, context) ≤ 0.45 · See [`eval_rag_precision_recall.md`](./eval/eval_rag_precision_recall.md)
+- **reasoning stability**: λ stays convergent on 3 paraphrases; E_resonance flat · See [`eval_semantic_stability.md`](./eval/eval_semantic_stability.md)
+- **traceability**: produce snippet↔citation table · See [`retrieval-traceability.md`](./retrieval-traceability.md)
+- **latency/accuracy trade** (optional): chart latency vs. ΔS · See [`eval_latency_vs_accuracy.md`](./eval/eval_latency_vs_accuracy.md)
 
 ---
 
