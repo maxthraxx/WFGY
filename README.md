@@ -181,21 +181,21 @@ That’s it — no retraining, no jailbreaks.
 
 > **Solving Problems**
 > We built WFGY to crush the root causes of reasoning failure — not patch the symptoms.
-> 📎 [See the full Problem Map →](https://github.com/onestardao/WFGY/tree/main/ProblemMap/README.md)
-> 📎 [Semantic Clinic: AI Failure Triage →](https://github.com/onestardao/WFGY/blob/main/ProblemMap/SemanticClinicIndex.md)
+> 📎 [See the full Problem Map](https://github.com/onestardao/WFGY/tree/main/ProblemMap/README.md)
+> 📎 [Semantic Clinic: AI Failure Triage](https://github.com/onestardao/WFGY/blob/main/ProblemMap/SemanticClinicIndex.md)
 
 > **Benchmarking GPT-5**
 > This engine isn’t theory. It’s entering open combat — benchmarked head-to-head against GPT-5.
-> 📎 [See the showdown benchmarks →](https://github.com/onestardao/WFGY/tree/main/benchmarks/benchmark-vs-gpt5/README.md)
+> 📎 [See the showdown benchmarks](https://github.com/onestardao/WFGY/tree/main/benchmarks/benchmark-vs-gpt5/README.md)
 
 > **Build from First Principles**
 > Our logic stack is open, symbolic, and composable. Want to see the engine’s core blueprint?
-> 📎 [Explore the Semantic Blueprint →](https://github.com/onestardao/WFGY/tree/main/SemanticBlueprint/README.md)
+> 📎 [Explore the Semantic Blueprint](https://github.com/onestardao/WFGY/tree/main/SemanticBlueprint/README.md)
 
 > **Full-Pipeline Debugging**
 > Still seeing hallucinations, black box errors, or logic collapse? You’re not alone.
 > This new visual guide maps the **entire RAG pipeline**, shows **where it fails**, and how to **fix it with WFGY’s math tools**.
-> 📎 [See the RAG Architecture & Recovery Guide →](https://github.com/onestardao/WFGY/blob/main/ProblemMap/rag-architecture-and-recovery.md)
+> 📎 [See the RAG Architecture & Recovery Guide](https://github.com/onestardao/WFGY/blob/main/ProblemMap/rag-architecture-and-recovery.md)
 
 </details>
 
@@ -1431,6 +1431,7 @@ It treats alignment as a living semantic contract — not just accuracy, but mea
 [![Blow](https://img.shields.io/badge/Blow-Game%20Logic-purple?style=flat-square)](https://github.com/onestardao/WFGY/tree/main/OS/BlowBlowBlow)
 &nbsp;
 </div>
+
 
 
 
