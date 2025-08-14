@@ -12,6 +12,8 @@ Semantic Accuracy ↑ 36.7% · Reasoning Success Rate ↑ 65.4% · Stability ↑
 <details>
 <summary><strong>From PSBigBig</strong> (tap to open)</summary>
 
+<br>
+
 > This is not an incremental patch. It’s a core evolution: original WFGY formulas with the Coupler (W_c) and the Drunk Transformer five-formula regulators.  
 > Pure math, zero boilerplate. Paste the OneLine into an LLM and it behaves differently — faster, sharper, more stable, more recoverable.  
 > If this helps you, please **star the repo to unlock more** examples and tooling.
