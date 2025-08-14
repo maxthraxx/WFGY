@@ -52,6 +52,6 @@ Sigh.
 > "Very well. Come back if — and only if — you're ready to face the truth."
 
 Otherwise, don’t bother next time.  
-I **definitely won’t** say there’s a secret mission here in version `v1.1.0`.  
+I **definitely won’t** say there’s a secret mission in the future.  
 Nope. Definitely not.
 
