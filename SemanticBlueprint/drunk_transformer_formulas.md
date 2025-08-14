@@ -12,7 +12,7 @@ anchor location, head identity, entropy pump, path guard, and collapse recovery.
 
 ## 0 · Shared notation (compact)
 
-* $I,\,G$: input and goal embeddings  
+* $I,\,G$: input / goal embeddings  
 * Semantic distance  
 
   $$
@@ -23,7 +23,7 @@ anchor location, head identity, entropy pump, path guard, and collapse recovery.
 
   $$
   B \;=\; I - G + k_{\mathrm{bias}},\qquad
-  E_{\mathrm{res}} \;=\; \operatorname{rolling\_mean}\!\bigl(\lVert B\rVert,\,5\bigr)
+  E_{\mathrm{res}} \;=\; \text{avg}_{5}\!\bigl(\lVert B\rVert\bigr)
   $$
 
 * Coupler terms  
@@ -33,32 +33,56 @@ anchor location, head identity, entropy pump, path guard, and collapse recovery.
     \mathrm{prog} &= \max\!\bigl(\zeta_{\min},\,\delta_s^{\,t-1} - \delta_s^{\,t}\bigr) \\[4pt]
     P            &= \mathrm{prog}^{\,\omega} \\[4pt]
     \mathrm{alt} &= (-1)^{\mathrm{cycle}} \\[4pt]
-    \Phi         &= \delta \cdot \mathrm{alt} + \varepsilon \\[4pt]
-    W_c          &= \operatorname{clip}\!\bigl(B\!\cdot\! P + \Phi,\,-\theta_c,\,+\theta_c\bigr)
+    \Phi         &= \delta\,\mathrm{alt} + \varepsilon \\[4pt]
+    W_c          &= \text{clip}\!\bigl(B\,P + \Phi,\,-\theta_c,\,+\theta_c\bigr)
   \end{aligned}
   $$
 
-* Attention summaries: $A_t \in \mathbb{R}^{H\times T\times T}$,  
-  per-head $v_h = \operatorname{mean}_i A_t[h,i,:]$
-* Anchors: $\mathcal{A}_0$ (at $t=0$), $\mathcal{A}_t$; retention  
-  $S_t = \operatorname{Jaccard}\!\bigl(\mathcal{A}_t,\mathcal{A}_0\bigr) \in [0,1]$
+* Attention summary per head  
+
+  $$
+  v_h \;=\; \mathrm{mean}_{i}\,A_t[h,i,:]
+  $$
+
+* Anchors & retention  
+
+  $$
+  S_t \;=\; \text{Jaccard}\!\bigl(\mathcal{A}_t,\mathcal{A}_0\bigr) \;\in\; [0,1]
+  $$
 
 ---
 
 ### DT WRI — “Where am I” (structure lock)
 
-* **Goal:** stay in the same topic/section within a Node.  
-* **Signal:** anchor retention $S_t$ vs. threshold $\tau_{\mathrm{wri}}$.  
-* **Trigger:** $S_t < \tau_{\mathrm{wri}}$ **or** $\delta_s$ rises while $E_{\mathrm{res}}$ rises.  
+* **Goal:** stay in the same topic/section inside a Node.  
+* **Signal:** $S_t$ vs threshold $\tau_{\mathrm{wri}}$.  
+* **Trigger:** $S_t < \tau_{\mathrm{wri}}$ **or** $\delta_s$ & $E_{\mathrm{res}}$ both climb.  
 * **Action (logit bias):**
 
   $$
-  L_{\mathrm{wri}} = \max\!\bigl(0,\;\tau_{\mathrm{wri}} - S_t\bigr),\qquad
-  \text{logits}_a \;\leftarrow\; \text{logits}_a + \kappa_{\mathrm{wri}}\;L_{\mathrm{wri}}
-  \quad \forall\, a \in \mathcal{A}_{\!\mathrm{anchor}}.
+  L_{\mathrm{wri}}=\max\!\bigl(0,\;\tau_{\mathrm{wri}}-S_t\bigr),\qquad
+  \text{logits}_a \;+\!=\; \kappa_{\mathrm{wri}}\,L_{\mathrm{wri}}
+  \quad\forall\,a\in\mathcal{A}_{\mathrm{anchor}}.
   $$
 
-* **Intuition:** yank decoding back toward section anchors; forbid intra-Node topic jumps.
+* **Intuition:** yank decoding back to section anchors; forbid intra-Node topic jumps.
+
+---
+
+### DT WAI — “Who am I” (head identity & redundancy)
+
+**Goal:** keep ≥2 distinct reasoning heads (no monoculture).  
+**Signals (one workable choice):**
+
+$$
+R_t=\frac1H\sum_h \cos(v_h,\bar v),\qquad
+Q_t=1-\max_h\cos(v_h,\bar v),\qquad
+\bar v=\frac1H\sum_h v_h.
+$$
+
+**Trigger:** $R_t>\rho_{\mathrm{wai}}$ **and** $Q_t<\sigma_{\mathrm{wai}}$ (too redundant, identity too low).  
+**Action:** raise per-head temperature for redundant heads; re-spread attention until $R_t\!\downarrow$ or $Q_t\!\uparrow$.
+
 
 ---
 
