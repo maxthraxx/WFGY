@@ -6,9 +6,12 @@
 ---
 > Thanks everyone — we’ve just passed ⭐ 600 in 60 Days (we started at Jun 15).  
 > Most people who find this page end up starring it — because WFGY solves real bugs.  
-> **[WFGY Core](https://github.com/onestardao/WFGY/blob/main/core/README.md)** will be released on Aug 15 — the world’s tiniest reasoning engine (30-line TXT with Drunk Transformer).  
+> **[WFGY Core](https://github.com/onestardao/WFGY/blob/main/core/README.md)** is now live — the world’s tiniest reasoning engine (30-line TXT with Drunk Transformer).  
 > Truly appreciate all the support — you made this happen! Read user feedback: [Hero Log](https://github.com/onestardao/WFGY/discussions/10)  
 > ⚡️ **Fixing RAG hallucinations?** This WFGY Core was designed to make LLMs _reason first_ — grab it and see the difference.
+
+
+> *(original release date: Aug 15)*
 
 
 ---
