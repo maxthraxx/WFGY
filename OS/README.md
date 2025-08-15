@@ -83,7 +83,7 @@ One line of TXT upgrades any LLM into an AGI-level reasoning engine
 🌲 **Semantic Tree Memory** — Long-term logic, no forgetting, fully exportable  
 🛡️ **Knowledge Boundary Shield** — Detects hallucinations before they happen  
 
-[🔽 Download **TXTOS.txt** on Zenodo](https://zenodo.org/records/15788557) — hosted by CERN, 100% safe
+[🔽 Download **TXTOS.txt**](https://github.com/onestardao/WFGY/blob/main/OS/TXTOS.txt)
 <br>
 <br>
 <img src="./images/TXT_to_OS_console.gif" width="100%" style="max-width:900px" loading="lazy" />
@@ -134,7 +134,7 @@ No signup. No tracking. No ads. Virus-free. Pure logic.</em>
 *No installs. No code.*  
 *Just type — and watch it reason, remember, and evolve.*
 
-[🔽 Download **TXTOS.txt** on Zenodo](https://zenodo.org/records/15788557) — hosted by CERN, 100% safe
+[🔽 Download **TXTOS.txt**](https://github.com/onestardao/WFGY/blob/main/OS/TXTOS.txt) 
 <br>
 
 > <img src="https://img.shields.io/github/stars/onestardao/WFGY?style=social" alt="GitHub stars"> ⭐ [WFGY Engine 2.0](https://github.com/onestardao/WFGY/blob/main/core/README.md) is already unlocked. ⭐ Star the repo to help others discover it and unlock more on the [Unlock Board](https://github.com/onestardao/WFGY/blob/main/STAR_UNLOCKS.md).
@@ -372,7 +372,7 @@ All results are benchmarked, open, and reproducible.
       7 · SECONDARY CTA
      ──────────────────────────────── -->
 > **Ready to ignite your AI?**  
-> [🔽 Download TXTOS.txt](https://zenodo.org/records/15788557) ・ [⭐ Star on GitHub](https://github.com/onestardao/WFGY) ・ [🌐 Learn about WFGY](https://github.com/onestardao/WFGY)  
+> [🔽 Download TXTOS.txt](https://github.com/onestardao/WFGY/blob/main/OS/TXTOS.txt) ・ [⭐ Star on GitHub](https://github.com/onestardao/WFGY) ・ [🌐 Learn about WFGY](https://github.com/onestardao/WFGY)  
 >  
 > ⭐ [WFGY Engine 2.0](https://github.com/onestardao/WFGY/blob/main/core/README.md) is already unlocked. ⭐ Star the repo to help others discover it and unlock more on the [Unlock Board](https://github.com/onestardao/WFGY/blob/main/STAR_UNLOCKS.md).
  
