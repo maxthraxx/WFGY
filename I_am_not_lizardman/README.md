@@ -3,25 +3,21 @@
 Welcome to the official dataset and evaluation archive for PSBigBig's *WFGY 1.0* project.  
 This repo includes **8+1 groundbreaking papers** evaluated by SciSpace AI and organized for peer testing, semantic research, and reasoning games.
 
-> 🧠 WFGY PDF on Zenodo(https://doi.org/10.5281/zenodo.15630969)   
-> 🔥 Prompt Revolution PDF on Zenodo(https://doi.org/10.5281/zenodo.15657016)  
-> 💻 Main Entrance: https://github.com/onestardao/WFGY  
-> 📧 Contact: hello@onestardao.com  
 
----
 ## 📊 Endorsed Papers Summary
 
-| Title                                           | Score   | DOI                                                                | Review                                                                           |
-| ----------------------------------------------- | ------- | ------------------------------------------------------------------ | -------------------------------------------------------------------------------- |
-| **WFGY《萬法歸一》**                                  | 95  | [10.5281/zenodo.15630969](https://doi.org/10.5281/zenodo.15630969) | ![](scispace_reviews/SciSpace_Endorsement_WFGY_PSBigBig_Score95.png)                      |
-| **Semantic Relativity Theory**                  | 93    | [10.5281/zenodo.15630802](https://doi.org/10.5281/zenodo.15630802) | ![](scispace_reviews/SciSpace_Endorsement_SemanticRelativity_PSBigBig_Score93.png)        |
-| **Semantic BioEnergy: Plants vs. Einstein**     | 94  | [10.5281/zenodo.15630370](https://doi.org/10.5281/zenodo.15630370) | ![](scispace_reviews/SciSpace_Endorsement_SemanticBioEnergy_PSBigBig_Score94.png)         |
-| **Semantic Collapse in Quantum Measurement**    | 94    | [10.5281/zenodo.15630681](https://doi.org/10.5281/zenodo.15630681) | ![](scispace_reviews/SciSpace_Endorsement_SemanticCollapse_PSBigBig_Score94.png)          |
-| **Semantic Field–Mediated Fifth Force**         | 93  | [10.5281/zenodo.15630650](https://doi.org/10.5281/zenodo.15630650) | ![](scispace_reviews/SciSpace_Endorsement_SemanticFifthForce_PSBigBig_Score93.png)        |
-| **Semantic Entropy under Landauer's Principle** | 94  | [10.5281/zenodo.15630478](https://doi.org/10.5281/zenodo.15630478) | ![](scispace_reviews/SciSpace_Endorsement_SemanticEntropy_PSBigBig_Score94.png)           |
-| **Semantic Holography & Causal Fields**         | 94  | [10.5281/zenodo.15630163](https://doi.org/10.5281/zenodo.15630163) | ![](scispace_reviews/SciSpace_Endorsement_SemanticHolography_PSBigBig_Score94.png)        |
-| **Trinity of Light Hypothesis**                 | 91  | [10.5281/zenodo.15387617](https://doi.org/10.5281/zenodo.15387617) | ![](scispace_reviews/SciSpace_Endorsement_TrinityOfLight_PSBigBig_Score91.png)            |
-| **Asymmetric Self-Consistency Hypothesis**      | 93  | [10.5281/zenodo.15630260](https://doi.org/10.5281/zenodo.15630260) | ![](scispace_reviews/SciSpace_Endorsement_AsymmetricSelfConsistency_PSBigBig_Score93.png) |
+| Title                                           | Score | GitHub Download Link                                                                                                     | Review                                                                           |
+|-------------------------------------------------|-------|--------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------|
+| **WFGY《萬法歸一》**                                  | 95    | [📥 Download](https://github.com/onestardao/WFGY/blob/main/I_am_not_lizardman/WFGY_All_Principles_Return_to_One_v1.0_PSBigBig_Public.pdf) | ![](scispace_reviews/SciSpace_Endorsement_WFGY_PSBigBig_Score95.png)            |
+| **Semantic Relativity Theory**                  | 93    | [📥 Download](https://github.com/onestardao/WFGY/blob/main/I_am_not_lizardman/papers/Semantic_Relativity_Theory_v1.0_PSBigBig_Public.pdf) | ![](scispace_reviews/SciSpace_Endorsement_SemanticRelativity_PSBigBig_Score93.png)        |
+| **Semantic BioEnergy: Plants vs. Einstein**     | 94    | [📥 Download](https://github.com/onestardao/WFGY/blob/main/I_am_not_lizardman/papers/Semantic_BioEnergy_Plants_vs_Einstein_v1.0_PSBigBig_Public.pdf) | ![](scispace_reviews/SciSpace_Endorsement_SemanticBioEnergy_PSBigBig_Score94.png)         |
+| **Semantic Collapse in Quantum Measurement**    | 94    | [📥 Download](https://github.com/onestardao/WFGY/blob/main/I_am_not_lizardman/papers/Semantic_Field_Induced_Objective_Collapse_v1.0_PSBigBig_Public.pdf) | ![](scispace_reviews/SciSpace_Endorsement_SemanticCollapse_PSBigBig_Score94.png)          |
+| **Semantic Field–Mediated Fifth Force**         | 93    | [📥 Download](https://github.com/onestardao/WFGY/blob/main/I_am_not_lizardman/papers/Semantic_Field_Fifth_Force_v1.0_PSBigBig_Public.pdf) | ![](scispace_reviews/SciSpace_Endorsement_SemanticFifthForce_PSBigBig_Score93.png)        |
+| **Semantic Entropy under Landauer's Principle** | 94    | [📥 Download](https://github.com/onestardao/WFGY/blob/main/I_am_not_lizardman/papers/BERT-Based_Semantic_Entropy_under_Landauer%27s_Principle_v1.0_PSBigBig_Public.pdf) | ![](scispace_reviews/SciSpace_Endorsement_SemanticEntropy_PSBigBig_Score94.png)           |
+| **Semantic Holography & Causal Fields**         | 94    | [📥 Download](https://github.com/onestardao/WFGY/blob/main/I_am_not_lizardman/papers/Semantic_Holography_CausalFields_v1.0_PSBigBig_Public.pdf) | ![](scispace_reviews/SciSpace_Endorsement_SemanticHolography_PSBigBig_Score94.png)        |
+| **Trinity of Light Hypothesis**                 | 91    | [📥 Download](https://github.com/onestardao/WFGY/blob/main/I_am_not_lizardman/papers/TrinityOfLight_Hypothesis_v1.0_PSBigBig_Public.pdf) | ![](scispace_reviews/SciSpace_Endorsement_TrinityOfLight_PSBigBig_Score91.png)            |
+| **Asymmetric Self-Consistency Hypothesis**      | 93    | [📥 Download](https://github.com/onestardao/WFGY/blob/main/I_am_not_lizardman/papers/Asymmetric_SelfConsistency_AI_Verification_v1.0_PSBigBig_Public.pdf) | ![](scispace_reviews/SciSpace_Endorsement_AsymmetricSelfConsistency_PSBigBig_Score93.png) |
+
 
 
 
