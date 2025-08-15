@@ -1,5 +1,5 @@
 # 🌌 WFGY Core (WanFaGuiYi) — Reasoning Engine 2.0 · **Now Live**
-### "One man, one life, one line — the sum of my life’s work , unleashed for all of humanity ✨."
+## "One man, one life, one line — the sum of my life’s work , unleashed for all of humanity ✨."
 
 🚀 **We’ve built the world’s first “No-Brain Mode” for AI** — just upload, and our **AutoBoot** engine silently activates in the background.  
 In seconds, your AI’s reasoning, stability, and problem-solving across *all domains* jump to a new level — **no prompts, no hacks, no retraining.**  
