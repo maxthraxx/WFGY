@@ -39,6 +39,26 @@
 
 ---
 
+## 🚀 Why WFGY 2.0 belongs in your stack
+
+**TL;DR:** the world’s most *minimal*, text-only reasoning layer. Paste one line, flip **Autoboot**, and watch your AI get sharper, steadier, and harder to fool.
+
+### 10 fast reasons
+
+1) **Ultra-mini engine** — pure text, zero install, runs anywhere you can paste.  
+2) **Two editions** — *Flagship* (30-line, audit-friendly) and *OneLine* (1-line, stealth & speed).  
+3) **Autoboot mode** — upload once; the engine quietly supervises reasoning in the background.  
+4) **Portable across models** — works with GPT, Claude, Gemini, Mistral, Grok, Kimi, Copilot, Perplexity.  
+5) **Structural fixes, not tricks** — BBMC→Coupler→BBPF→BBAM→BBCR + DT gates (WRI/WAI/WAY/WDT/WTF).  
+6) **Self-healing** — detects collapse and recovers before answers go off the rails.  
+7) **Observable** — ΔS, λ_observe, and E_resonance give you measurable, repeatable control.  
+8) **RAG-ready** — drops into retrieval pipelines without touching your infra.  
+9) **Reproducible A/B/C protocol** — fair comparisons: Baseline vs Autoboot vs Explicit Invoke.  
+10) **MIT licensed & community-driven** — keep it, fork it, ship it.
+
+
+---
+
 ## ⚡ One-click demo in 60 seconds
 
 1) Upload or paste **`WFGY_Core_OneLine_v2.0.txt`** into your chat system.  
