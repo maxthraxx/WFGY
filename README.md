@@ -75,7 +75,8 @@ Output a Markdown table and a Markdown-ready bar chart for Overall.
 3. Paste the prompt above and run any benchmark (e.g., GSM8K, Truthful-QA, etc.)
 
 That’s it — no retraining, no jailbreaks.
-**More details, incl. side-by-side comparisons with GPT-5 (tables, prompts, raw logs):**  [Benchmark vs GPT-5](https://github.com/onestardao/WFGY/tree/main/benchmarks/benchmark-vs-gpt5/README.md)
+**More details, incl. side-by-side comparisons with GPT-5 (tables, prompts, raw logs):**  
+[Benchmark vs GPT-5](https://github.com/onestardao/WFGY/tree/main/benchmarks/benchmark-vs-gpt5/README.md)
 
 </details>
 
@@ -1424,5 +1425,6 @@ It treats alignment as a living semantic contract — not just accuracy, but mea
 [![Blow](https://img.shields.io/badge/Blow-Game%20Logic-purple?style=flat-square)](https://github.com/onestardao/WFGY/tree/main/OS/BlowBlowBlow)
 &nbsp;
 </div>
+
 
 
