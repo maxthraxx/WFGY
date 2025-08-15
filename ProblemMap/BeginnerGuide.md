@@ -157,8 +157,8 @@ I’ve loaded TXT OS. Diagnose my RAG:
 
 | Asset | Link |
 |---|---|
-| **WFGY 1.0 PDF** | https://zenodo.org/records/15630969 |
-| **TXT OS (plain-text)** | https://zenodo.org/records/15788557 |
+| **WFGY 1.0 PDF** | [Download](https://github.com/onestardao/WFGY/blob/main/I_am_not_lizardman/WFGY_All_Principles_Return_to_One_v1.0_PSBigBig_Public.pdf) |
+| **TXT OS (plain-text)** | [Downlaod](https://github.com/onestardao/WFGY/blob/main/OS/TXTOS.txt) |
 
 MIT-licensed. Copy, ship, and adapt.
 
