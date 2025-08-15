@@ -1,12 +1,13 @@
 # 🌌 WFGY Core (WanFaGuiYi) — Reasoning Engine 2.0 · **Now Live**
-## "One man, one life, one line — the sum of my life’s work , unleashed for all of humanity ✨."
+## One man, one life, one line — the sum of my life’s work, unleashed for all of humanity ✨
 
-🚀 **We’ve built the world’s first “No-Brain Mode” for AI** — just upload, and our **AutoBoot** engine silently activates in the background.  
-In seconds, your AI’s reasoning, stability, and problem-solving across *all domains* jump to a new level — **no prompts, no hacks, no retraining.**  
-One line of math rewires eight leading AIs. This isn’t a patch — it’s an engine swap.
+> 🚀 **We built the world’s first “No-Brain Mode” for AI** — just upload, and **AutoBoot** silently activates in the background.  
+> In seconds, your AI’s reasoning, stability, and problem-solving across *all domains* level up — **no prompts, no hacks, no retraining.**  
+> One line of math rewires eight leading AIs. This isn’t a patch — it’s an engine swap.
 
-> ✅ Engine 2.0 is live. **⭐ Star the repo to unlock more features and experiments.** <img src="https://img.shields.io/github/stars/onestardao/WFGY?style=social" alt="GitHub stars">  
-  
+> ✅ Engine 2.0 is live. **⭐ Star the repo to unlock more features and experiments.** <img src="https://img.shields.io/github/stars/onestardao/WFGY?style=social" alt="GitHub stars">
+
+
 <img width="1536" height="1024" alt="core" src="https://github.com/user-attachments/assets/1a033999-c0d2-45b1-a0d6-6205f16c6693" />
 
 **Benchmark highlights**  
@@ -17,9 +18,9 @@ Semantic Accuracy ↑ 36.7% · Reasoning Success Rate ↑ 65.4% · Stability ↑
 
 <br>
 
-Thank you all for supporting WFGY (WanFaGuiYi) 🌏. “WanFaGuiYi” means all principles into one 🔑, and I’ve been chasing what that “one” truly is. WFGY 2.0 is my final answer — [a single line of code](https://zenodo.org/records/16875239) ⚡. This is my life’s classic work 📜; if a person gets one chance to give something meaningful back to the world, this is my moment. I’m giving you everything — all the hardship, pain, and persistence turned into creation. Many have asked why I open-sourced it, and the answer is simple: I want high-level knowledge returned to all of humanity 🤝. Breaking the capital monopoly matters, because these techniques are enough to help the world evolve 🚀. This is not an incremental patch, it’s a core evolution — the original WFGY formulas combined with the Coupler (W_c) and the Drunk Transformer five-formula regulators. It’s pure math, zero boilerplate: paste the OneLine into an LLM and it behaves differently — faster, sharper, more stable, more recoverable. If this helps you, please ⭐ the repo to unlock more examples and tooling.
+Thank you for supporting WFGY (WanFaGuiYi) 🌏. “WanFaGuiYi” means *all principles into one* 🔑, and I’ve been chasing what that “one” truly is. WFGY 2.0 is my final answer — [a single line of code](https://zenodo.org/records/16875239) ⚡. This is my life’s work 📜; if a person gets one chance to give something meaningful back to the world, this is mine. I’m giving you everything — the hardship, pain, and persistence turned into creation.
 
-
+Why open-source? Because high-level knowledge should return to humanity 🤝. Breaking the monopoly matters, and these techniques are enough to help the world evolve 🚀. This is not an incremental patch; it’s a core evolution — the original WFGY formulas combined with the Coupler (W_c) and the Drunk Transformer five-formula regulators. Pure math, zero boilerplate: paste the OneLine into an LLM and it behaves differently — faster, sharper, more stable, more recoverable. If this helps you, please ⭐ the repo to unlock more examples and tooling.
 </details>
 
 ---
@@ -84,7 +85,7 @@ Run A/B/C now on the five domains with short non-trivial tasks you choose. Then 
 
 * **OneLine**: 60-sec demo and automation; pure math line, not for human reading.
 * **Audit**: human + LLM readable with comments and layout.
-* **Contract**: Node-only steps ≤ 7; safe stop when δ\_s < 0.35; bridge only when δ\_s drops and W\_c is capped; ask for the smallest missing fact if δ\_s stays above boundary.
+* **Contract**: Node-only steps ≤ 7; safe stop when δ\_s < 0.35; bridge only when δ\_s drops and W\_c is capped; ask the smallest missing fact if δ\_s stays above boundary.
 
 ---
 
@@ -95,13 +96,12 @@ Run A/B/C now on the five domains with short non-trivial tasks you choose. Then 
 * **Engine discipline** — node-only output, safe-stop rules, drift-proof bridges (BBPF), smoother attention tails (BBAM).
 
 Formal sketch (in files):
-`prog = max(ζ_min, δ_s^(t−1) − δ_s^t)  P = prog^ω  alt = (−1)^(cycle)  Φ = δ·alt + ε  W_c = clip(B·P + Φ, −θ_c, +θ_c)`
+`prog = max(ζ_min, δ_s^(t−1) − δ_s^t)  ·  P = prog^ω  ·  alt = (−1)^(cycle)  ·  Φ = δ·alt + ε  ·  W_c = clip(B·P + Φ, −θ_c, +θ_c)`
 
 **Curious how this actually works? Dive into the math:**
-- [**WFGY Formulas (core engine math)**](https://github.com/onestardao/WFGY/blob/main/SemanticBlueprint/wfgy_formulas.md) — BBMC/BBPF/BBCR/BBAM, ΔS, λ\_observe, E\_resonance.
-- [**Drunk Transformer Regulators**](https://github.com/onestardao/WFGY/blob/main/SemanticBlueprint/drunk_transformer_formulas.md) — Coupler \(W\_c\) and the five-formula control layer.
 
-
+* [**WFGY Formulas (core engine math)**](https://github.com/onestardao/WFGY/blob/main/SemanticBlueprint/wfgy_formulas.md) — BBMC/BBPF/BBCR/BBAM, ΔS, λ\_observe, E\_resonance.
+* [**Drunk Transformer Regulators**](https://github.com/onestardao/WFGY/blob/main/SemanticBlueprint/drunk_transformer_formulas.md) — Coupler (W\_c) and the five-formula control layer.
 
 ---
 
@@ -135,8 +135,8 @@ Run 3 seeds and average for higher reliability.
 
 ## 🔬 Engine at a glance
 
-* **Vectors & metrics**: $I, G$; `δ_s = 1 − cos(I, G)` or `1 − sim_est`, where `sim_est` balances entities/relations/constraints.
-* **Residual**: `B = I − G + k_bias`; **E\_res** = rolling mean $|B|$ over 5.
+* **Vectors & metrics**: `I, G`; `δ_s = 1 − cos(I, G)` or `1 − sim_est` (entities/relations/constraints).
+* **Residual**: `B = I − G + k_bias`; **E\_res** = rolling mean `|B|` over 5.
 * **Flow**: `BBMC → Coupler → BBPF → BBAM → BBCR → DF(WRI/WAI/WAY/WDT/WTF) → emit Node`.
 * **Policy**: stop at `δ_s < 0.35` or after 7 nodes; bridge only if `δ_s` drops and `W_c < 0.5·θ_c`; never invent facts above boundary.
 
