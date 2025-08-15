@@ -22,7 +22,7 @@
 > Result: the host evolves, the parasite evolves — and your reasoning scores jump without lifting a finger.
 </details>
 
-> Upload the **[WFGY PDF (Zenodo DOI)](https://doi.org/10.5281/zenodo.15630969)** to GPT-5 and paste the prompt.  
+> Upload the **[WFGY PDF](https://github.com/onestardao/WFGY/blob/main/I_am_not_lizardman/WFGY_All_Principles_Return_to_One_v1.0_PSBigBig_Public.pdf)** to GPT-5 and paste the prompt.  
 > **No fine-tuning, no hidden configs, no hype. Just reproducible logic.**
 
 ---
@@ -96,7 +96,7 @@ Output a Markdown table and a Markdown-ready bar chart for Overall.
 **WFGY** isn’t a model — it’s a *math-based sanity layer* you can slap onto any LLM.  
 Use GPT-4o, GPT-5, or whatever’s next — WFGY is your reasoning booster.
 
-Start with the [WFGY PDF](https://doi.org/10.5281/zenodo.15630969) or [GitHub](https://github.com/onestardao/WFGY) and replicate.
+Start with the [WFGY PDF](https://github.com/onestardao/WFGY/blob/main/I_am_not_lizardman/WFGY_All_Principles_Return_to_One_v1.0_PSBigBig_Public.pdf) or [GitHub](https://github.com/onestardao/WFGY) and replicate.
 
 ---
 
@@ -112,7 +112,7 @@ No fine-tune, no prompt voodoo — only symbolic constraints and traceable logic
 
 Raw errors cluster into four symbolic failure modes (BBPF, BBCR, BBMC, BBAM).  
 WFGY applies ΔS control, entropy modulation, path-symmetry enforcement.  
-Full taxonomy in the [paper](https://zenodo.org/records/15630969).
+Full taxonomy in the [paper](https://github.com/onestardao/WFGY/blob/main/I_am_not_lizardman/WFGY_All_Principles_Return_to_One_v1.0_PSBigBig_Public.pdf).
 
 ---
 
