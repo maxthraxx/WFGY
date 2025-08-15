@@ -1,6 +1,7 @@
 # 🔬 **WFGY 1.0 — Core Formulas & Variables**
 
-> **Canonical reference — DOI:** [https://zenodo.org/records/15630969](https://zenodo.org/records/15630969)  (“*WFGY 1.0: A Universal Unification Framework for Large‑Scale Self‑Healing LLMs*”). This page **quotes every mathematical statement verbatim** from the public PDF so developers can link code ↔ theory without opening the paper.
+> **Canonical reference  (“*[WFGY 1.0: A Universal Unification Framework for Large‑Scale Self‑Healing LLMs](https://github.com/onestardao/WFGY/blob/main/I_am_not_lizardman/WFGY_All_Principles_Return_to_One_v1.0_PSBigBig_Public.pdf
+)*”). This page **quotes every mathematical statement verbatim** from the public PDF so developers can link code ↔ theory without opening the paper.
 >
 > *BBMC*’s name is **not** a marketing acronym—it literally sounds like **“Big Mac”** when you read the formula aloud. The pun stuck, so “BigBig Semantic Residue Formula” became **BBMC**.
 
