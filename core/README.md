@@ -12,7 +12,9 @@
 
 **Benchmark highlights**  
 > Semantic Accuracy: +25–35% · Reasoning Success: +45–65% · Stability: 3–5×  
-> Drift Reduction: −40–60% · Self-Recovery: 0.80–0.92 (median 0.87)
+> Drift Reduction: −40–60% · Self-Recovery: 0.80–0.92 (median 0.87)  
+> _Values derived from [Eight-model evidence (A/B/C protocol)](#eight-model-evidence-abc-protocol) — theoretical estimates based on aggregated model data._
+
 
 <details>
 <summary><strong>From PSBigBig</strong> (tap to open)</summary>
@@ -68,7 +70,7 @@ Run A/B/C now on the five domains with short non-trivial tasks you choose. Then 
 
 ---
 
-## 🧾 Eight-model evidence (A/B/C protocol)
+## Eight-model evidence (A/B/C protocol)
 
 *Same task set across modes. The only change is adding the OneLine math file.*
 
