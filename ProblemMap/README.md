@@ -10,10 +10,6 @@
 > Truly appreciate all the support — you made this happen! Read user feedback: [Hero Log](https://github.com/onestardao/WFGY/discussions/10)  
 > ⚡️ **Fixing RAG hallucinations?** This WFGY Core was designed to make LLMs _reason first_ — grab it and see the difference.
 
-
-> *(original release date: Aug 15)*
-
-
 ---
 
 <div align="center">
