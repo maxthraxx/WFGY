@@ -44,7 +44,7 @@
 <!-- ✅ Minimal, high-value quick links -->
 
 **Quick Links:**
-[WFGY Core (Engine 2.0 — Now Live)](https://github.com/onestardao/WFGY/blob/main/core/README.md) ·
+[WFGY Core (Engine 2.0 🚀 Now Live)](https://github.com/onestardao/WFGY/blob/main/core/README.md) ·
 [Starter Village (Newcomer Walkthrough)](https://github.com/onestardao/WFGY/blob/main/StarterVillage/README.md) ·
 [Problem Map (All Fixes)](https://github.com/onestardao/WFGY/tree/main/ProblemMap) ·
 [Semantic Clinic (Triage)](https://github.com/onestardao/WFGY/blob/main/ProblemMap/SemanticClinicIndex.md)
@@ -1428,6 +1428,7 @@ It treats alignment as a living semantic contract — not just accuracy, but mea
 [![Blow](https://img.shields.io/badge/Blow-Game%20Logic-purple?style=flat-square)](https://github.com/onestardao/WFGY/tree/main/OS/BlowBlowBlow)
 &nbsp;
 </div>
+
 
 
 
