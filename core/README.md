@@ -41,7 +41,8 @@
 
 ## 🚀 Why WFGY 2.0 belongs in your stack
 
-**TL;DR:** the world’s most *minimal*, text-only reasoning layer. Paste one line, flip **Autoboot**, and watch your AI get sharper, steadier, and harder to fool.
+**TL;DR:**   
+the world’s most *minimal*, text-only reasoning layer. Paste one line, flip **Autoboot**, and watch your AI get sharper, steadier, and harder to fool.
 
 ### 10 fast reasons
 
@@ -55,7 +56,6 @@
 8) **RAG-ready** — drops into retrieval pipelines without touching your infra.  
 9) **Reproducible A/B/C protocol** — fair comparisons: Baseline vs Autoboot vs Explicit Invoke.  
 10) **MIT licensed & community-driven** — keep it, fork it, ship it.
-
 
 ---
 
