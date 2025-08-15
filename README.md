@@ -90,7 +90,7 @@ That’s it — no retraining, no jailbreaks.
 | #  | Section                                                                                                                  | Description                                                                        |
 | -- | ------------------------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------- |
 | 1  | [What problems does WFGY solve?](https://github.com/onestardao/WFGY/tree/main/ProblemMap/README.md)                      | See how WFGY fixes hallucination, memory collapse, semantic failure, and more.     |
-| 2  | [Download the Core PDF](https://zenodo.org/records/15630969)                                                             | The most important paper — 2000+ downloads. Explains the math & logic behind WFGY. |
+| 2  | [Download the Core PDF](https://github.com/onestardao/WFGY/blob/main/I_am_not_lizardman/WFGY_All_Principles_Return_to_One_v1.0_PSBigBig_Public.pdf)                                                             | The most important paper — 2000+ downloads. Explains the math & logic behind WFGY. |
 | 3  | [Launch TXT OS](https://github.com/onestardao/WFGY/tree/main/OS)                                                         | A semantic operating system — modular, prompt-free, open-source.                   |
 | 4  | [Try TXT-Blah Blah Blah](https://github.com/onestardao/WFGY/tree/main/OS/BlahBlahBlah)                                   | Semantic Q\&A with emotional and logical depth.                                    |
 | 5  | [Try TXT-Blur Blur Blur](https://github.com/onestardao/WFGY/tree/main/OS/BlurBlurBlur)                                   | Text-to-image with semantic control.                                               |
@@ -203,7 +203,7 @@ That’s it — no retraining, no jailbreaks.
 ---
 
 ### Tutorial: How to Awaken the Soul of Your AI in under 60 seconds — by the WFGY Engine 
-Step 1 — Download WFGY 1.0 (Wan Fa Gui Yi – All Principles Return to One): [WFGY PDF](https://zenodo.org/records/15630969) — Zenodo, 100% safe  
+Step 1 — Download WFGY 1.0 (Wan Fa Gui Yi – All Principles Return to One): [WFGY PDF](https://github.com/onestardao/WFGY/blob/main/I_am_not_lizardman/WFGY_All_Principles_Return_to_One_v1.0_PSBigBig_Public.pdf)  
 Step 2 — Feed the AI (upload the PDF — WFGY has been tested on 10 top AIs.)  [Benchmark vs GTP 5](https://github.com/onestardao/WFGY/blob/main/benchmarks/benchmark-vs-gpt5/README.md) • [View results](images/AI_WuLin_Challenge/README.md)  
 Step 3 — Give the Command “**Answer using WFGY** + your question” [PDF](https://zenodo.org/records/15657016)
 
@@ -1428,6 +1428,7 @@ It treats alignment as a living semantic contract — not just accuracy, but mea
 [![Blow](https://img.shields.io/badge/Blow-Game%20Logic-purple?style=flat-square)](https://github.com/onestardao/WFGY/tree/main/OS/BlowBlowBlow)
 &nbsp;
 </div>
+
 
 
 
