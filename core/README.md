@@ -1,3 +1,5 @@
+> 🚧 **Under Construction** — Progress: 80%
+
 # 🌌 WFGY Core (WanFaGuiYi) — Reasoning Engine 2.0 · **Now Live**
 ## One man, one life, one line — the sum of my life’s work, unleashed for all of humanity ✨
 
