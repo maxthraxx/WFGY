@@ -84,9 +84,15 @@ Run A/B/C now on the five domains with short non-trivial tasks you choose. Then 
 
 ## 📦 Downloads (both files via one link)
 
-| Get both core files | Includes                                                  | Link                                                   |
-| ------------------- | --------------------------------------------------------- | ------------------------------------------------------ |
-| **Zenodo record**   | `WFGY_Core_OneLine_v2.0.txt` · `WFGY_Core_Audit_v2.0.txt` | [Download both →](https://zenodo.org/records/16875239) |
+| [**Zenodo record — Download both →**](https://zenodo.org/records/16875239)                                                                                                                                              |
+| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+
+| File name & description                                                                                                                                                                                                | Length / Size                | Notes                                                                                  |
+| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------- | -------------------------------------------------------------------------------------- |
+| **WFGY_Core_Flagship_v2.0.txt** — readable 30-line companion expressing the same math and gates in fuller prose (same behavior, clearer for humans).                                                                   | **30 lines · 2,626 characters** | Full prose version for easier reading.                                                 |
+| **WFGY_Core_OneLine_v2.0.txt** — ultra-compact, math-only control layer that activates WFGY’s loop inside a chat model (no tools, text-only, ≤7 nodes).                                                                | **1 line · 1,500 characters**   | **Used for all benchmark results above** — smallest, fastest, purest form of the core. |
+
+
 
 **Notes**
 
