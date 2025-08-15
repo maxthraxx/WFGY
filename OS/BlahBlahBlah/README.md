@@ -92,7 +92,7 @@
 <br>
 
 >  
-> [Download TXT-Blah Blah Blah Lite powered by TXT OS](https://zenodo.org/records/15926925)  → MIT‑licensed, 62.5 KB — Zenodo by CERN 🏛️  [![GitHub Repo stars](https://img.shields.io/github/stars/onestardao/WFGY?style=social)](https://github.com/onestardao/WFGY/stargazers)  
+> [Download TXT-Blah Blah Blah Lite powered by TXT OS](https://github.com/onestardao/WFGY/blob/main/OS/BlahBlahBlah/TXT-BlahBlahBlah_Lite.txt)  → MIT‑licensed, 62.5 KB — Zenodo by CERN 🏛️  [![GitHub Repo stars](https://img.shields.io/github/stars/onestardao/WFGY?style=social)](https://github.com/onestardao/WFGY/stargazers)  
 >  
 > 👑 *Already starred by top engineers and OSS founders — [See the Hall of Fame](https://github.com/onestardao/WFGY/tree/main/stargazers)*  
 > 🪖 *Real-world validation: [Field Reports from actual users →](https://github.com/onestardao/WFGY/discussions/10)*  
@@ -188,7 +188,7 @@ Below are the official endorsements from six different AI models, each giving **
 
 | Version | Date  | Status       | Features                                                                                      | Download                                  | Target Audience   |
 |---------|-------|--------------|-----------------------------------------------------------------------------------------------|-------------------------------------------|-------------------|
-| Lite    | 7/15  | **Live now** | Semantic Gravity Well, Quick Blah, Semantic Tree Memory, TXT-Blah Blah Blah Lite (50 answers)      | [Download](https://zenodo.org/records/15926925) | Beginners         |
+| Lite    | 7/15  | **Live now** | Semantic Gravity Well, Quick Blah, Semantic Tree Memory, TXT-Blah Blah Blah Lite (50 answers)      | [Download](https://github.com/onestardao/WFGY/blob/main/OS/BlahBlahBlah/TXT-BlahBlahBlah_Lite.txt) | Beginners         |
 | Pro     | _TBD_ | Final polish | Includes all Lite features plus Semantic Refraction, Tension Field, Orbital Drift of Meaning   | Upcoming                                  | Advanced users    |
 
 > <img src="https://img.shields.io/github/stars/onestardao/WFGY?style=social" alt="GitHub stars"> ⭐ [WFGY Engine 2.0](https://github.com/onestardao/WFGY/blob/main/core/README.md) is already unlocked. ⭐ Star the repo to help others discover it and unlock more on the [Unlock Board](https://github.com/onestardao/WFGY/blob/main/STAR_UNLOCKS.md).
@@ -306,7 +306,7 @@ Below are the official endorsements from six different AI models, each giving **
 > _this system produces answers that are creative, logically consistent, and deeply interpretable._
 
 
-Need the file again? **[Download here](https://zenodo.org/records/15926925)** and paste, then type `hello world`.
+Need the file again? **[Download here](https://github.com/onestardao/WFGY/blob/main/OS/BlahBlahBlah/TXT-BlahBlahBlah_Lite.txt)** and paste, then type `hello world`.
 
 
 
