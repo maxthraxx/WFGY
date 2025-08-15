@@ -10,7 +10,7 @@ One line. 1500 chars. Plug-and-play reasoning engine.
 
 ## Quick Start — Kindergarten / Starter Village
 No-brain mode. Copy. Paste. Watch.
-1. Download **OneLine v2.0**: [`/core/WFGY_Core_OneLine_v2.0.txt`](../core/WFGY_Core_OneLine_v2.0.txt) *(placeholder)*
+1. Download **OneLine v2.0**: [`/core/WFGY_Core_OneLine_v2.0.txt`](../core/WFGY_Core_OneLine_v2.0.txt) 
 2. Open your LLM chat. Upload if needed.
 3. Paste the one line. Type `WFGY`.
 4. Ask anything. Observe stability & reasoning depth rise.  
@@ -54,11 +54,6 @@ Trouble? See **Starter Tips** (placeholder).
 - **Guild Board** — Roadmap & milestones *(placeholder)*
 
 ---
-
-## Downloads
-- One-Line: [`/core/WFGY_Core_OneLine_v2.0.txt`](../core/WFGY_Core_OneLine_v2.0.txt) *(placeholder)*
-- Audit: [`/core/WFGY_Core_Audit_v2.0.txt`](../core/WFGY_Core_Audit_v2.0.txt) *(placeholder)*
-- Classic 1.0 (PDF): [`/specs/WFGY_Core_v1.0_Classic.pdf`](../specs/WFGY_Core_v1.0_Classic.pdf) *(placeholder)*
 
 > Lost? [Return to the Starter Village](#wgfy-starter-village--school-of-thought)
 
