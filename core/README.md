@@ -41,7 +41,8 @@
 
 ## 🚀 Why WFGY 2.0 belongs in your stack
 
-> The world’s most *minimal*, text-only reasoning layer. Paste one line, flip **Autoboot**, and watch your AI get sharper, steadier, and harder to fool.
+> The world’s most *minimal*, text-only reasoning layer. Paste one line, flip **Autoboot**  
+> and watch your AI get sharper, steadier, and harder to fool.
 
 ### 10 fast reasons
 
