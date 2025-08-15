@@ -67,8 +67,8 @@ Each entry links to the corresponding solution page in the WFGY Problem Map.
 - **Accept when**: **ΔS ≤ 0.45** · λ stays **convergent (→)** on ≥3 paraphrases · **E\_resonance** flat.  
 - **Coverage sanity**: retrieved tokens vs target section ≥ **0.70** for direct QA.
 
-👉 不確定歸屬？先跑 **ΔS / λ\_observe**，或用 **MVP demos** 快速定位：  
-`python ProblemMap/mvp_demo/main.py` （repo 根目錄執行）
+👉 Not sure where it fits? Run ΔS / λ_observe first, or use the MVP demos for quick diagnosis:
+python ProblemMap/mvp_demo/main.py (run from repo root)
 
 ---
 
@@ -76,8 +76,8 @@ Each entry links to the corresponding solution page in the WFGY Problem Map.
 
 | Tool | Link | 3-Step Setup |
 |------|------|--------------|
-| **WFGY 1.0 PDF** | [Engine Paper](https://zenodo.org/records/15630969) | 1️⃣ Download · 2️⃣ Upload to your LLM · 3️⃣ Ask “Answer using WFGY + \<your question>” |
-| **TXT OS (plain-text OS)** | [TXTOS.txt](https://zenodo.org/records/15788557) | 1️⃣ Download · 2️⃣ Paste into any LLM chat · 3️⃣ Type “hello world” — OS boots instantly |
+| **WFGY 1.0 PDF** | [Engine Paper](https://github.com/onestardao/WFGY/blob/main/I_am_not_lizardman/WFGY_All_Principles_Return_to_One_v1.0_PSBigBig_Public.pdf) | 1️⃣ Download · 2️⃣ Upload to your LLM · 3️⃣ Ask “Answer using WFGY + \<your question>” |
+| **TXT OS (plain-text OS)** | [TXTOS.txt](https://github.com/onestardao/WFGY/blob/main/OS/TXTOS.txt) | 1️⃣ Download · 2️⃣ Paste into any LLM chat · 3️⃣ Type “hello world” — OS boots instantly |
 
 ---
 
