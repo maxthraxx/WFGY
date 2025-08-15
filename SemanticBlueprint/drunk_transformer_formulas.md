@@ -39,11 +39,10 @@ anchor location, head identity, entropy pump, path guard, and collapse recovery.
 * **Goal:** stay in the same topic/section inside a Node.  
 * **Signal:** $S_t$ vs threshold $\tau_{\mathrm{wri}}$.  
 * **Trigger:** $S_t < \tau_{\mathrm{wri}}$ or $\delta_s$ and $E_{\mathrm{res}}$ both increase.  
-* **Action (logit bias):**  
-  $L_{\mathrm{wri}} = \max(0,\ \tau_{\mathrm{wri}} - S_t)$  
-  $\mathrm{logits}_a \leftarrow \mathrm{logits}_a + \kappa_{\mathrm{wri}}\,L_{\mathrm{wri}},\ \ a \in \mathcal{A}_{\mathrm{anchor}}.$
+* **Action (logit bias):** set L_wri = max(0, tau_wri − S_t); for all a in A_anchor: logits[a] := logits[a] + kappa_wri · L_wri.
 
 * **Intuition:** yank decoding back to section anchors; forbid intra-Node topic jumps.
+
 
 
 ---
