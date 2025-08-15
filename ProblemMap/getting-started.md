@@ -17,7 +17,8 @@ A laptop with 16 to 32 GB RAM is enough for a 300 to 800 page corpus using CPU e
 
 * Problem Map index: `ProblemMap/README.md`
 * RAG Architecture and Recovery: `ProblemMap/rag-architecture-and-recovery.md`
-* Math layer and rules (PDF): [https://doi.org/10.5281/zenodo.15630969](https://doi.org/10.5281/zenodo.15630969)
+* Math layer and rules (PDF): [Download Now](https://github.com/onestardao/WFGY/blob/main/I_am_not_lizardman/WFGY_All_Principles_Return_to_One_v1.0_PSBigBig_Public.pdf
+)
 
 ---
 
