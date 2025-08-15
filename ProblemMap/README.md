@@ -51,8 +51,8 @@
 ## Quick-Start Downloads (60 sec)
 | Tool | Link | 3-Step Setup |
 |------|------|--------------|
-| **WFGY 1.0 PDF** | [Engine Paper](https://zenodo.org/records/15630969) | 1) Download  2) Upload to your LLM  3) Ask: “answer using WFGY + <your question>” |
-| **TXT OS (plain-text OS)** | [TXTOS.txt](https://zenodo.org/records/15788557) | 1) Download  2) Paste into any LLM chat  3) Type “hello world” to boot |
+| **WFGY 1.0 PDF** | [Engine Paper](https://github.com/onestardao/WFGY/blob/main/I_am_not_lizardman/WFGY_All_Principles_Return_to_One_v1.0_PSBigBig_Public.pdf) | 1) Download  2) Upload to your LLM  3) Ask: “answer using WFGY + <your question>” |
+| **TXT OS (plain-text OS)** | [TXTOS.txt](https://github.com/onestardao/WFGY/blob/main/OS/TXTOS.txt) | 1) Download  2) Paste into any LLM chat  3) Type “hello world” to boot |
 
 ---
 
