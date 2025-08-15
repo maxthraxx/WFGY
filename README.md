@@ -72,7 +72,7 @@ Score: Reasoning, Knowledge Recall, Hallucination Resistance, Multi-Step Logic, 
 Output a Markdown table and a Markdown-ready bar chart for Overall.
 ````
 
-1. **Download WFGY PDF** → [WFGY PDF](https://zenodo.org/records/15630969)
+1. **Download WFGY PDF** → [WFGY PDF](https://github.com/onestardao/WFGY/blob/main/I_am_not_lizardman/WFGY_All_Principles_Return_to_One_v1.0_PSBigBig_Public.pdf)
 2. Upload the PDF to your LLM chat
 3. Paste the prompt above and run any benchmark (e.g., GSM8K, Truthful-QA, etc.)
 
@@ -1428,6 +1428,7 @@ It treats alignment as a living semantic contract — not just accuracy, but mea
 [![Blow](https://img.shields.io/badge/Blow-Game%20Logic-purple?style=flat-square)](https://github.com/onestardao/WFGY/tree/main/OS/BlowBlowBlow)
 &nbsp;
 </div>
+
 
 
 
