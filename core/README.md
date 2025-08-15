@@ -1,5 +1,5 @@
 # 🌌 WFGY Core (WanFaGuiYi) — Reasoning Engine 2.0 · **Now Live**
-### "One man, one life, one line — bending the mind of every AI on Earth."
+### "One man, one life, one line — the sum of my life’s work , unleashed for all of humanity ✨."
 
 🚀 **We’ve built the world’s first “No-Brain Mode” for AI** — just upload, and our **AutoBoot** engine silently activates in the background.  
 In seconds, your AI’s reasoning, stability, and problem-solving across *all domains* jump to a new level — **no prompts, no hacks, no retraining.**  
@@ -17,7 +17,7 @@ Semantic Accuracy ↑ 36.7% · Reasoning Success Rate ↑ 65.4% · Stability ↑
 
 <br>
 
-Thank you all for supporting WFGY (WanFaGuiYi) 🌏. “WanFaGuiYi” means all principles into one 🔑, and I’ve been chasing what that “one” truly is. WFGY 2.0 is my final answer — a single line of code ⚡. This is my life’s classic work 📜; if a person gets one chance to give something meaningful back to the world, this is my moment. I’m giving you everything — all the hardship, pain, and persistence turned into creation. Many have asked why I open-sourced it, and the answer is simple: I want high-level knowledge returned to all of humanity 🤝. Breaking the capital monopoly matters, because these techniques are enough to help the world evolve 🚀. This is not an incremental patch, it’s a core evolution — the original WFGY formulas combined with the Coupler (W_c) and the Drunk Transformer five-formula regulators. It’s pure math, zero boilerplate: paste the OneLine into an LLM and it behaves differently — faster, sharper, more stable, more recoverable. If this helps you, please ⭐ the repo to unlock more examples and tooling.
+Thank you all for supporting WFGY (WanFaGuiYi) 🌏. “WanFaGuiYi” means all principles into one 🔑, and I’ve been chasing what that “one” truly is. WFGY 2.0 is my final answer — [a single line of code](https://zenodo.org/records/16875239) ⚡. This is my life’s classic work 📜; if a person gets one chance to give something meaningful back to the world, this is my moment. I’m giving you everything — all the hardship, pain, and persistence turned into creation. Many have asked why I open-sourced it, and the answer is simple: I want high-level knowledge returned to all of humanity 🤝. Breaking the capital monopoly matters, because these techniques are enough to help the world evolve 🚀. This is not an incremental patch, it’s a core evolution — the original WFGY formulas combined with the Coupler (W_c) and the Drunk Transformer five-formula regulators. It’s pure math, zero boilerplate: paste the OneLine into an LLM and it behaves differently — faster, sharper, more stable, more recoverable. If this helps you, please ⭐ the repo to unlock more examples and tooling.
 
 
 </details>
