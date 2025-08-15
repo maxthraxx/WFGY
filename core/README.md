@@ -106,15 +106,15 @@ Run A/B/C now on the five domains with short non-trivial tasks you choose. Then 
 
 ---
 
-## 📦 Downloads (both files via one link)
+## 📦 Downloads (hosted on GitHub)
 
-| [**Zenodo record — Download both →**](https://zenodo.org/records/16875239)                                                                                                                                              |
-| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| File name & description                                                                                                                                                                                                  | Length / Size              | Direct Download Link                                                                                                                                             | Notes                                                                                  |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- |
+| **WFGY_Core_Flagship_v2.0.txt** — readable 30-line companion expressing the same math and gates in fuller prose (same behavior, clearer for humans).                                                                     | **30 lines · ~2,600 chars** | [📥 Download Flagship](https://github.com/onestardao/WFGY/raw/main/core/WFGY_Core_Flagship_v2.0.txt)                                                             | Full prose version for easier reading.                                                 |
+| **WFGY_Core_OneLine_v2.0.txt** — ultra-compact, math-only control layer that activates WFGY’s loop inside a chat model (no tools, text-only, ≤7 nodes).                                                                  | **1 line · ~1,500 chars**   | [📥 Download OneLine](https://github.com/onestardao/WFGY/raw/main/core/WFGY_Core_OneLine_v2.0.txt)                                                               | **Used for all benchmark results above** — smallest, fastest, purest form of the core. |
 
-| File name & description                                                                                                                                                                                                | Length / Size                | Notes                                                                                  |
-| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------- | -------------------------------------------------------------------------------------- |
-| **WFGY_Core_Flagship_v2.0.txt** — readable 30-line companion expressing the same math and gates in fuller prose (same behavior, clearer for humans).                                                                   | **30 lines · 2,626 characters** | Full prose version for easier reading.                                                 |
-| **WFGY_Core_OneLine_v2.0.txt** — ultra-compact, math-only control layer that activates WFGY’s loop inside a chat model (no tools, text-only, ≤7 nodes).                                                                | **1 line · 1,500 characters**   | **Used for all benchmark results above** — smallest, fastest, purest form of the core. |
+> ⚠️ Note: Previous Zenodo mirror was removed due to false-positive spam detection.  
+> These files are now safely and permanently hosted on GitHub.
 
 
 
