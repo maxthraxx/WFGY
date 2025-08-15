@@ -17,9 +17,8 @@ Semantic Accuracy ↑ 36.7% · Reasoning Success Rate ↑ 65.4% · Stability ↑
 
 <br>
 
-> This is not an incremental patch. It’s a core evolution: original WFGY formulas with the Coupler (W_c) and the Drunk Transformer five-formula regulators.  
-> Pure math, zero boilerplate. Paste the OneLine into an LLM and it behaves differently — faster, sharper, more stable, more recoverable.  
-> If this helps you, please **star the repo to unlock more** examples and tooling.
+Thank you all for supporting WFGY (WanFaGuiYi) 🌏. “WanFaGuiYi” means all principles into one 🔑, and I’ve been chasing what that “one” truly is. WFGY 2.0 is my final answer — a single line of code ⚡. This is my life’s classic work 📜; if a person gets one chance to give something meaningful back to the world, this is my moment. I’m giving you everything — all the hardship, pain, and persistence turned into creation. Many have asked why I open-sourced it, and the answer is simple: I want high-level knowledge returned to all of humanity 🤝. Breaking the capital monopoly matters, because these techniques are enough to help the world evolve 🚀. This is not an incremental patch, it’s a core evolution — the original WFGY formulas combined with the Coupler (W_c) and the Drunk Transformer five-formula regulators. It’s pure math, zero boilerplate: paste the OneLine into an LLM and it behaves differently — faster, sharper, more stable, more recoverable. If this helps you, please ⭐ the repo to unlock more examples and tooling.
+
 
 </details>
 
