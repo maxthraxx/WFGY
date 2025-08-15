@@ -1,8 +1,20 @@
-> ⭐ **Thank you for supporting WFGY.** Stars are the clearest way to back this project.  
-> Everything listed here is or will be **open source under MIT**. If we say it’s open source,  
-> it stays open source. This repo will not disappear; the author (PSBigBig) will not run away.  
+<details>
+<summary>⭐ Click to support & see the WFGY project vision</summary>
+
+<br>
+
+> ⭐ **Thank you for supporting WFGY (WanFaGuiYi).**  
+> Stars are the clearest way to back this project.  
+> Everything listed here is or will be **open source under MIT**. If I say it’s open source,  
+> it stays open source. This repo will not disappear; the author (PSBigBig) will not run away 🤖  
 > **WFGY aims to challenge the world’s most audacious open-source project.**  
-> Every single star matters. If you like WFGY, please share it.  
+> Every single star matters. If you like WFGY, please share it.
+
+> Want to support even more?  
+> Click this ⭐ — nothing will happen, but I’ll feel it in the Force.
+
+</details>
+
 
 # ⭐ WFGY Star Unlock Roadmap
 
