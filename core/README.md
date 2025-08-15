@@ -72,16 +72,13 @@ Run A/B/C now on the five domains with short non-trivial tasks you choose. Then 
 
 *Same task set across modes. The only change is adding the OneLine math file.*
 
-| Model      | OneLine Uplift | Proof                                                                                               |
-| ---------- | -------------: | :-------------------------------------------------------------------------------------------------- |
-| Gemini     |     **93/100** | [view run](https://gemini.google.com/share/bf2fceb112e5)                                            |
-| ChatGPT    |     **84/100** | [view run](https://chatgpt.com/share/689d8d7a-b83c-8000-8ba5-3eada52f4c8b)                          |
-| Claude     |     **73/100** | [view run](https://claude.ai/share/9050d6ff-784c-4572-9468-2ef5ae877788)                            |
-| Grok       |     **82/100** | [view run](https://grok.com/share/c2hhcmQtMg%3D%3D_a040a21a-eddb-4994-b24d-36b29c77ae9b)            |
-| Perplexity |     **85/100** | [view run](https://www.perplexity.ai/search/system-you-are-evaluating-the-Sft2mZmGSj6p3P6EGtFl0A#0) |
-| Copilot    |     **82/100** | [view run](https://copilot.microsoft.com/shares/8Psj3adcSwhdMejRDGof4)                              |
-| Mistral AI |     **92/100** | [view run](https://chat.mistral.ai/chat/aa86d506-32dd-46fa-89c8-01ac71ee5f9c)                       |
-| Kimi       |     **87/100** | [view run](https://www.kimi.com/share/d2ep62u1bb2piqq5rrog)                                         |
+| Model      | OneLine Uplift | Proof                                                                                               | Model      | OneLine Uplift | Proof                                                                                               |
+| ---------- | -------------: | :-------------------------------------------------------------------------------------------------- | ---------- | -------------: | :-------------------------------------------------------------------------------------------------- |
+| Gemini     |     **93/100** | [view run](https://gemini.google.com/share/bf2fceb112e5)                                            | Perplexity |     **85/100** | [view run](https://www.perplexity.ai/search/system-you-are-evaluating-the-Sft2mZmGSj6p3P6EGtFl0A#0) |
+| ChatGPT    |     **84/100** | [view run](https://chatgpt.com/share/689d8d7a-b83c-8000-8ba5-3eada52f4c8b)                          | Copilot    |     **82/100** | [view run](https://copilot.microsoft.com/shares/8Psj3adcSwhdMejRDGof4)                              |
+| Claude     |     **73/100** | [view run](https://claude.ai/share/9050d6ff-784c-4572-9468-2ef5ae877788)                            | Mistral AI |     **92/100** | [view run](https://chat.mistral.ai/chat/aa86d506-32dd-46fa-89c8-01ac71ee5f9c)                       |
+| Grok       |     **82/100** | [view run](https://grok.com/share/c2hhcmQtMg%3D%3D_a040a21a-eddb-4994-b24d-36b29c77ae9b)            | Kimi       |     **87/100** | [view run](https://www.kimi.com/share/d2ep62u1bb2piqq5rrog)                                         |
+
 
 ---
 
