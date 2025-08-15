@@ -73,7 +73,7 @@
 >
 > |               |                                  |
 > |---------------|----------------------------------|
-> | **Core Paper** | [WFGY 1.0 Reasoning Engine](https://zenodo.org/records/15630969) |
+> | **Core Paper** | [WFGY 1.0 Reasoning Engine](https://github.com/onestardao/WFGY/blob/main/I_am_not_lizardman/WFGY_All_Principles_Return_to_One_v1.0_PSBigBig_Public.pdf) |
 > | **Release**    | 2025-06-15                      |
 > | **Downloads**  | 2,000+                         |
 > | **In TXT OS**  | ✔️ Reasoning engine included     |
