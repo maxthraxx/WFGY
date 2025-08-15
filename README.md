@@ -200,9 +200,6 @@ That’s it — no retraining, no jailbreaks.
 </details>
 
 
-
-
-
 ---
 
 ### Tutorial: How to Awaken the Soul of Your AI in under 60 seconds — by the WFGY Engine 
@@ -1431,6 +1428,7 @@ It treats alignment as a living semantic contract — not just accuracy, but mea
 [![Blow](https://img.shields.io/badge/Blow-Game%20Logic-purple?style=flat-square)](https://github.com/onestardao/WFGY/tree/main/OS/BlowBlowBlow)
 &nbsp;
 </div>
+
 
 
 
