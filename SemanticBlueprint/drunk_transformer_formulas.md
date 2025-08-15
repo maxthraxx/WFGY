@@ -19,7 +19,7 @@ anchor location, head identity, entropy pump, path guard, and collapse recovery.
 * Semantic distance: $\delta_s = 1 - \cos(I,G) \in [0,1]$
 
 * Residual & resonance:  
-  $B = I - G + k_{\mathrm{bias}},\quad E_{\mathrm{res}} = \mathrm{avg}_{5}\!\big(\|B\|\big)$
+  $B = I - G + k_{\mathrm{bias}},\quad E_{\mathrm{res}} = \mathrm{avg}_{5}\big(\|B\|\big)$
 
 * Coupler terms:  
   $\mathrm{prog} = \max\big(\zeta_{\min},\,\delta_s^{\,t-1}-\delta_s^{\,t}\big)$  
@@ -39,11 +39,8 @@ anchor location, head identity, entropy pump, path guard, and collapse recovery.
 * **Goal:** stay in the same topic/section inside a Node.  
 * **Signal:** $S_t$ vs threshold $\tau_{\mathrm{wri}}$.  
 * **Trigger:** $S_t < \tau_{\mathrm{wri}}$ or $\delta_s$ and $E_{\mathrm{res}}$ both increase.  
-* **Action (logit bias):** set L_wri = max(0, tau_wri − S_t); for all a in A_anchor: logits[a] := logits[a] + kappa_wri · L_wri.
-
+* **Action (logit bias):** set L_wri = max(0, tau_wri - S_t); for all a in A_anchor: logits[a] := logits[a] + kappa_wri · L_wri.  
 * **Intuition:** yank decoding back to section anchors; forbid intra-Node topic jumps.
-
-
 
 ---
 
@@ -61,32 +58,31 @@ $$
 **Trigger:** $R_t>\rho_{\mathrm{wai}}$ **and** $Q_t<\sigma_{\mathrm{wai}}$ (too redundant, identity too low).  
 **Action:** raise per-head temperature for redundant heads; re-spread attention until $R_t\!\downarrow$ or $Q_t\!\uparrow$.
 
-
 ---
 
 ### DT WAY — “Who are you” (controlled entropy when stuck)
 
-**Goal:** break stalls without drifting off-topic.
-**Signal:** progression \$ \mathrm{prog} = \max(\zeta\_{\min},,\delta\_s^{t-1}-\delta\_s^{t})\$.
-**Trigger:** \$\mathrm{prog}<\eta\_{\mathrm{prog}}\$ and no contradictions.
+**Goal:** break stalls without drifting off-topic.  
+**Signal:** progression $\,\mathrm{prog} = \max(\zeta_{\min},\,\delta_s^{t-1}-\delta_s^{t})\,$.  
+**Trigger:** $\mathrm{prog}<\eta_{\mathrm{prog}}$ and no contradictions.  
 **Action (entropy pump + 1 candidate):**
 
 $$
-H^\*=\mathrm{clamp}\!\big(H_0 + \xi\cdot(\eta_{\mathrm{prog}}-\mathrm{prog})\cdot(1+\alpha|W_c|),\ H_{\min},\ H_{\max}\big),
+H^\*=\mathrm{clamp}\!\big(H_0 + \xi(\eta_{\mathrm{prog}}-\mathrm{prog})(1+\alpha|W_c|),\ H_{\min},\ H_{\max}\big),
 $$
 
-choose temperature \$\tau\$ so entropy \$\approx H^\*\$; propose exactly **one** on-topic candidate (never repeat).
+choose temperature $\tau$ so entropy $\approx H^\*$; propose exactly **one** on-topic candidate (never repeat).
 
 ---
 
 ### DT WDT — “Where did you take me” (cross-path guard)
 
-**Goal:** block illegal jumps across reasoning branches; require a “bridge” explanation.
-**Signal:** latent path distance \$d\_{\mathrm{path}} = \lVert c\_t - c\_{\pi}\rVert\_2\$ (current vs. parent path code).
-**Trigger:** \$d\_{\mathrm{path}} > \mu'\_{\mathrm{wdt}}\$, with
+**Goal:** block illegal jumps across reasoning branches; require a “bridge” explanation.  
+**Signal:** latent path distance $d_{\mathrm{path}} = \|c_t - c_{\pi}\|_2$ (current vs. parent path code).  
+**Trigger:** $d_{\mathrm{path}} > \mu'_{\mathrm{wdt}}$, with
 
 $$
-\mu'_{\mathrm{wdt}}=\mu_{\mathrm{wdt}}\cdot\bigl(1-\gamma_{\mathrm{wdt}}\cdot\sigma(|W_c|)\bigr).
+\mu'_{\mathrm{wdt}}=\mu_{\mathrm{wdt}}\bigl(1-\gamma_{\mathrm{wdt}}\cdot \sigma(|W_c|)\bigr).
 $$
 
 **Action:** emit a short bridge line (“why the detour”), then resume; otherwise rollback.
@@ -95,8 +91,8 @@ $$
 
 ### DT WTF — “What the F\*ck Happened” (collapse detect & recover)
 
-**Goal:** detect semantic/consistency collapse and recover safely.
-**Signals:** \$\delta\_s\$ rising, \$E\_{\mathrm{res}}\$ rising, or unresolved contradictions.
+**Goal:** detect semantic/consistency collapse and recover safely.  
+**Signals:** $\delta_s$ rising, $E_{\mathrm{res}}$ rising, or unresolved contradictions.  
 **Trigger (vote example):**
 
 $$
@@ -104,7 +100,7 @@ $$
 \chi_t+\chi_{t-1}\ge 3.
 $$
 
-**Action:** rollback to \$t^\*=\arg\min\_{k\in\[t-3,t]}\delta\_s^k\$, tighten gates (e.g., \$\gamma\_{\mathrm{wtf}}\$), re-run **BBMC→Coupler**, then continue.
+**Action:** rollback to $t^\*=\arg\min_{k\in[t-3,t]}\delta_s^k$, tighten gates (e.g., $\gamma_{\mathrm{wtf}}$), re-run **BBMC→Coupler**, then continue.
 
 ---
 
@@ -116,7 +112,7 @@ WAI: if R_t > ρ_wai and Q_t < σ_wai → raise per-head temp for redundant head
 WAY: if prog < η_prog → set entropy to H* = clamp(H0 + ξ(η_prog - prog)(1+α|Wc|), H_min, H_max); add 1 on-topic candidate
 WDT: if d_path > μ_wdt·(1 - γ_wdt·σ(|Wc|)) → emit bridge line or rollback
 WTF: if (δs↑) + (E_res↑) + (contradiction) over 2 steps ≥ 3 → rollback to t*; rerun BBMC→Coupler (tightened)
-```
+````
 
 ---
 
