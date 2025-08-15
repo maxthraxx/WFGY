@@ -96,15 +96,15 @@ Result: one coherent rescue plan, no role mix‑ups.
 
 ---
 
-### 🔗 Quick‑Start Downloads (60 sec)
 
-| Tool                       | Link                                                | 3‑Step Setup                                                                             |
-| -------------------------- | --------------------------------------------------- | ---------------------------------------------------------------------------------------- |
-| **WFGY 1.0 PDF**           | [Engine Paper](https://zenodo.org/records/15630969) | 1️⃣ Download · 2️⃣ Upload to LLM · 3️⃣ Ask “Answer using WFGY + \<your question>”        |
-| **TXT OS (plain‑text OS)** | [TXTOS.txt](https://zenodo.org/records/15788557)    | 1️⃣ Download · 2️⃣ Paste into any LLM chat · 3️⃣ Type “hello world” — OS boots instantly |
+### 🔗 Quick-Start Downloads (60 sec)
+
+| Tool | Link | 3-Step Setup |
+|------|------|--------------|
+| **WFGY 1.0 PDF** | [Engine Paper](https://github.com/onestardao/WFGY/blob/main/I_am_not_lizardman/WFGY_All_Principles_Return_to_One_v1.0_PSBigBig_Public.pdf) | 1️⃣ Download · 2️⃣ Upload to your LLM · 3️⃣ Ask “Answer using WFGY + \<your question>” |
+| **TXT OS (plain-text OS)** | [TXTOS.txt](https://github.com/onestardao/WFGY/blob/main/OS/TXTOS.txt) | 1️⃣ Download · 2️⃣ Paste into any LLM chat · 3️⃣ Type “hello world” — OS boots instantly |
 
 ---
-
 
 ### 🧭 Explore More
 
@@ -142,4 +142,3 @@ Result: one coherent rescue plan, no role mix‑ups.
 [![Blow](https://img.shields.io/badge/Blow-Game%20Logic-purple?style=flat-square)](https://github.com/onestardao/WFGY/tree/main/OS/BlowBlowBlow)
 &nbsp;
 </div>
-
