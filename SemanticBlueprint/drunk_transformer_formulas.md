@@ -16,42 +16,21 @@ anchor location, head identity, entropy pump, path guard, and collapse recovery.
 ## 0 · Shared notation (compact)
 
 * $I,\,G$: input / goal embeddings  
-* Semantic distance  
+* Semantic distance: $\delta_s = 1 - \cos(I,G) \in [0,1]$
 
-  $$
-  \delta_s \;=\; 1 - \cos(I,G) \;\in\; [0,1]
-  $$
+* Residual & resonance:  
+  $B = I - G + k_{\mathrm{bias}},\quad E_{\mathrm{res}} = \mathrm{avg}_{5}\!\big(\|B\|\big)$
 
-* Residual & resonance  
+* Coupler terms:  
+  $\mathrm{prog} = \max\big(\zeta_{\min},\,\delta_s^{\,t-1}-\delta_s^{\,t}\big)$  
+  $P = \mathrm{prog}^{\,\omega}$  
+  $\mathrm{alt} = (-1)^{\mathrm{cycle}}$  
+  $\Phi = \delta\,\mathrm{alt} + \varepsilon$  
+  $W_c = \mathrm{clip}\big(BP + \Phi,\,-\theta_c,\,+\theta_c\big)$
 
-  $$
-  B \;=\; I - G + k_{\mathrm{bias}},\qquad
-  E_{\mathrm{res}} \;=\; \operatorname{avg}_{5}\!\Bigl(\left\lVert B\right\rVert\Bigr)
-  $$
+* Attention summary per head: $v_h = \mathrm{mean}_{i}\,A_t[h,i,:]$
 
-* Coupler terms  
-
-  $$
-  \begin{aligned}
-    \mathrm{prog} &= \max\!\bigl(\zeta_{\min},\,\delta_s^{\,t-1}-\delta_s^{\,t}\bigr) \\
-    P            &= \mathrm{prog}^{\,\omega} \\
-    \mathrm{alt} &= (-1)^{\mathrm{cycle}} \\
-    \Phi         &= \delta\,\mathrm{alt} + \varepsilon \\
-    W_c          &= \operatorname{clip}\!\bigl(BP + \Phi,\,-\theta_c,\,+\theta_c\bigr)
-  \end{aligned}
-  $$
-
-* Attention summary per head  
-
-  $$
-  v_h \;=\; \operatorname{mean}_{i}\,A_t[h,i,:]
-  $$
-
-* Anchors & retention  
-
-  $$
-  S_t \;=\; \operatorname{Jaccard}\!\bigl(\mathcal{A}_t,\mathcal{A}_0\bigr) \;\in\; [0,1]
-  $$
+* Anchors & retention: $S_t = \mathrm{Jaccard}\big(\mathcal{A}_t,\mathcal{A}_0\big) \in [0,1]$
 
 ---
 
@@ -59,14 +38,10 @@ anchor location, head identity, entropy pump, path guard, and collapse recovery.
 
 * **Goal:** stay in the same topic/section inside a Node.  
 * **Signal:** $S_t$ vs threshold $\tau_{\mathrm{wri}}$.  
-* **Trigger:** $S_t < \tau_{\mathrm{wri}}$ **or** $\delta_s$ & $E_{\mathrm{res}}$ both climb.  
-* **Action (logit bias):**
-
-  $$
-  L_{\mathrm{wri}} \;=\; \max\!\bigl(0,\;\tau_{\mathrm{wri}} - S_t\bigr),\qquad
-  \mathrm{logits}_a \;\gets\; \mathrm{logits}_a + \kappa_{\mathrm{wri}}\,L_{\mathrm{wri}}
-  \quad \forall\,a\in\mathcal{A}_{\mathrm{anchor}}.
-  $$
+* **Trigger:** $S_t < \tau_{\mathrm{wri}}$ or $\delta_s$ and $E_{\mathrm{res}}$ both increase.  
+* **Action (logit bias):**  
+  $L_{\mathrm{wri}} = \max(0,\ \tau_{\mathrm{wri}} - S_t)$  
+  $\mathrm{logits}_a \leftarrow \mathrm{logits}_a + \kappa_{\mathrm{wri}}\,L_{\mathrm{wri}},\ \ a \in \mathcal{A}_{\mathrm{anchor}}.$
 
 * **Intuition:** yank decoding back to section anchors; forbid intra-Node topic jumps.
 
