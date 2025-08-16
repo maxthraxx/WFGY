@@ -111,16 +111,16 @@ Run A/B/C now on the five domains with short non-trivial tasks you choose. Then 
 
 | Model      | Model Choice    | OneLine Uplift | Proof |
 | ---------- | --------------- | -------------: | :---- |
-| Claude     | Sonnet 4        | **78/100**     | [view run](https://claude.ai/share/b17e5436-8298-4619-a243-ac451cc64b17) |
-| Grok       | Auto Grok 4     | **85/100**     | [view run](https://grok.com/share/c2hhcmQtMg%3D%3D_4e6798eb-9288-4a09-b00f-8292ce23dab6) |
 | Mistral AI | —               | **92/100**     | [view run](https://chat.mistral.ai/chat/b5c303f8-1905-4954-a566-a6c9a7bfb54f) |
+| Gemini     | 2.5 Pro         | **89/100**     | [view run](https://g.co/gemini/share/4fb0b172d61a) |
+| ChatGPT    | GPT-5 Thinking  | **89/100**     | [view run](https://chatgpt.com/s/t_689ff6c42dac8191963e63e3f26348b2) |
 | Kimi       | K2              | **87/100**     | [view run](https://www.kimi.com/share/d2fvbevhq49s4blc862g) |
 | Perplexity | Pro             | **87/100**     | [view run](https://www.perplexity.ai/search/system-you-are-evaluating-the-njklNbVRTCmQOlEd8fDzcg) |
-| Gemini     | 2.5 Pro         | **89/100**     | [view run](https://g.co/gemini/share/4fb0b172d61a) |
+| Grok       | Auto Grok 4     | **85/100**     | [view run](https://grok.com/share/c2hhcmQtMg%3D%3D_4e6798eb-9288-4a09-b00f-8292ce23dab6) |
 | Copilot    | Think Deeper    | **80/100**     | [view run](https://copilot.microsoft.com/shares/7FjR19TYBjg9sp8k9WcuE) |
-| ChatGPT    | GPT-5 Thinking  | **89/100**     | [view run](https://chatgpt.com/s/t_689ff6c42dac8191963e63e3f26348b2) |
-                                   
+| Claude     | Sonnet 4        | **78/100**     | [view run](https://claude.ai/share/b17e5436-8298-4619-a243-ac451cc64b17) |
 
+                                
 ---
 
 ## Downloads
