@@ -106,15 +106,43 @@ Run A/B/C now on the five domains with short non-trivial tasks you choose. Then 
 
 ---
 
-## 📦 Downloads (hosted on GitHub)
+## Downloads
 
-| File name & description                                                                                                                                                                                                  | Length / Size              | Direct Download Link                                                                                                                                             | Notes                                                                                  |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- |
-| **WFGY_Core_Flagship_v2.0.txt** — readable 30-line companion expressing the same math and gates in fuller prose (same behavior, clearer for humans).                                                                     | **30 lines · ~2,600 chars** | [📥 Download Flagship](https://github.com/onestardao/WFGY/raw/main/core/WFGY_Core_Flagship_v2.0.txt)                                                             | Full prose version for easier reading.                                                 |
-| **WFGY_Core_OneLine_v2.0.txt** — ultra-compact, math-only control layer that activates WFGY’s loop inside a chat model (no tools, text-only, ≤7 nodes).                                                                  | **1 line · ~1,500 chars**   | [📥 Download OneLine](https://github.com/onestardao/WFGY/raw/main/core/WFGY_Core_OneLine_v2.0.txt)                                                               | **Used for all benchmark results above** — smallest, fastest, purest form of the core. |
+| File name & description | Length / Size | Direct Download Link | Verify (MD5 / SHA1 / SHA256) | Notes |
+| --- | --- | --- | --- | --- |
+| **WFGY_Core_Flagship_v2.0.txt** — readable 30-line companion expressing the same math and gates in fuller prose (same behavior, clearer for humans). | **30 lines · 3,049 chars** | [Download Flagship](./WFGY_Core_Flagship_v2.0.txt) | [md5](./checksums/WFGY_Core_Flagship_v2.0.txt.md5) · [sha1](./checksums/WFGY_Core_Flagship_v2.0.txt.sha1) · [sha256](./checksums/WFGY_Core_Flagship_v2.0.txt.sha256) | Full prose version for easier reading. |
+| **WFGY_Core_OneLine_v2.0.txt** — ultra-compact, math-only control layer that activates WFGY’s loop inside a chat model (no tools, text-only, ≤7 nodes). | **1 line · 1,500 chars** | [Download OneLine](./WFGY_Core_OneLine_v2.0.txt) | [md5](./checksums/WFGY_Core_OneLine_v2.0.txt.md5) · [sha1](./checksums/WFGY_Core_OneLine_v2.0.txt.sha1) · [sha256](./checksums/WFGY_Core_OneLine_v2.0.txt.sha256) | Used for all benchmark results above — smallest, fastest, purest form of the core. |
 
-> ⚠️ Note: Previous Zenodo mirror was removed due to false-positive spam detection.  
-> These files are now safely and permanently hosted on GitHub.
+<details>
+<summary><strong>How to verify checksums</strong></summary>
+
+<br>
+
+**What is a checksum?**  
+A checksum is a cryptographic fingerprint of a file’s exact bytes. If the hash you compute locally matches the published value, the file is intact and untampered.
+
+**macOS / Linux**
+```bash
+cd core
+# Verify with the published SHA256 files
+sha256sum -c checksums/WFGY_Core_Flagship_v2.0.txt.sha256
+sha256sum -c checksums/WFGY_Core_OneLine_v2.0.txt.sha256
+
+# Or compute and compare manually
+sha256sum WFGY_Core_Flagship_v2.0.txt
+sha256sum WFGY_Core_OneLine_v2.0.txt
+````
+
+**Windows PowerShell**
+
+```powershell
+Get-FileHash .\core\WFGY_Core_Flagship_v2.0.txt -Algorithm SHA256
+Get-FileHash .\core\WFGY_Core_OneLine_v2.0.txt -Algorithm SHA256
+```
+
+</details>
+
+
 
 
 
