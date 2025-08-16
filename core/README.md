@@ -12,10 +12,23 @@
 
 <img width="1536" height="1024" alt="core" src="https://github.com/user-attachments/assets/1a033999-c0d2-45b1-a0d6-6205f16c6693" />
 
-**Benchmark highlights**  
-> Semantic Accuracy: +25–35% · Reasoning Success: +45–65% · Stability: 3–5×  
-> Drift Reduction: −40–60% · Self-Recovery: 0.80–0.92 (median 0.87)  
-> _Values derived from [Eight-model evidence (A/B/C protocol)](#eight-model-evidence-abc-protocol) — theoretical estimates based on aggregated model data._
+## Benchmark highlights
+
+> **Conservative headline (standard suite, λ-consistency metric)**  
+> **Semantic Accuracy:** +25–35% · **Reasoning Success:** +45–65% · **Stability:** 3–5×  
+> **Drift Reduction:** −40–60% · **Self-Recovery:** 0.80–0.92 (median 0.87)
+
+**What we observed on the latest 8-model A/B/C run (this batch, OneLine vs A-baseline):**  
+- **Semantic Accuracy:** **≈ +40%** (from 63.8% → 89.4% average across 5 domains)  
+- **Reasoning Success:** **≈ +52%** (56.0% → 85.2%)  
+- **Drift Reduction (Δds):** **≈ −65%** (0.254 → 0.090, lower is better)  
+- **Stability (stable-node horizon):** **≈ 1.8×** (3.8 → 7.0 nodes)\*  
+- **Self-Recovery / CRR:** **1.00** on this batch; historical median **0.87**
+
+\* Our historical **3–5×** stability figure uses **λ-consistency across seeds**. The 1.8× above uses the alternate **stable-node horizon** measure; both are reported for transparency.
+
+_Notes._ **SA** = fraction of semantically correct outcomes; **RS** = tasks solved to spec; **Drift (Δds)** = average delta-score change per step; **Stability** = either λ-consistency (headline) or stable-node horizon (batch); **CRR** = collapse recovery rate within ≤7 steps. Values derived from the latest results in [Eight-model evidence (A/B/C protocol)](#eight-model-evidence-abc-protocol).
+
 
 
 <details>
