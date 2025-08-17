@@ -1,7 +1,8 @@
 # ⭐ WFGY 2.0 ⭐ 七步突破的核心推理引擎
 ## One man, One life, One line —— 我一生的作品，讓成果自己說話 ✨
 
-<img width="1536" height="1024" alt="WFGY" src="https://github.com/user-attachments/assets/9b4ccade-07e2-4fa8-b080-b7e64fffcaac" />
+<img width="1536" height="1024" alt="WFGY_Core" src="https://github.com/user-attachments/assets/deb8e794-a73e-4d39-a1f6-174ec87199f4" />>
+
 
 > ✅ **Engine 2.0 已上線。** 純數學、零樣板 —— 貼上 OneLine，模型立即更銳利、更穩定、可自我復原。  
 > **ℹ️ 自動啟動範圍：** 僅於聊天文字內運行；無需外掛、網路呼叫，亦無本地安裝。  
