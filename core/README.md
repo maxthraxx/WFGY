@@ -65,6 +65,8 @@ We will **deep-analyze one sequence** on this page and link the other two for tr
 <details>
   <summary>🧪 ChatGPT setup & image prompt (click to copy)</summary>
 
+  <br>
+
 This comparison was produced **in ChatGPT** using a **single, high-semantic-density prompt**. Same model & settings; *only* WFGY on/off differs.
 
 ```text
@@ -153,6 +155,8 @@ Run A/B/C now on the five domains with short non-trivial tasks you choose. Then 
 <details>
   <summary><em>How to verify checksums</em></summary>
 
+  <br>
+
 **macOS / Linux**
 
 ```bash
@@ -178,6 +182,8 @@ Get-FileHash .\core\WFGY_Core_OneLine_v2.0.txt -Algorithm SHA256
 <details>
   <summary>🧠 How WFGY 2.0 works (Seven-Step Reasoning Chain)</summary>
 
+  <br>
+
 *Most models can understand your prompt; very few can **hold** that meaning through generation.*
 WFGY inserts a reasoning chain between language and pixels so intent survives sampling noise, style drift, and compositional traps.
 
@@ -195,6 +201,8 @@ WFGY inserts a reasoning chain between language and pixels so intent survives sa
 
 <details>
   <summary>📊 How these numbers are measured</summary>
+
+  <br>
 
 * **Semantic Accuracy**: `ACC = correct_facts / total_facts`
 * **Reasoning Success Rate**: `SR = tasks_solved / tasks_total`
