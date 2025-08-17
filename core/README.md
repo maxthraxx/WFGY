@@ -27,7 +27,7 @@
 > I believe people deserve all knowledge and all truth — and I will break the monopoly of capital.  
 > 
 > *“One line” is not hype.* I built a full flagship edition, and I also reduced it to a single line of code — a reduction that is clarity and beauty, the same engine distilled to its purest expression.  
-> Both versions — the **flagship build** and the **one-line edition** — are available under [⬇️ Downloads](#downloads).
+> Both versions — the **flagship build** and the **one-line edition**
 
 </details>
 
@@ -162,7 +162,7 @@ Run A/B/C now on the five domains with short non-trivial tasks you choose. Then 
 
 ---
 
-## Downloads  <!-- visible; checksum guide tucked inside details -->
+## ⬇️ Downloads  <!-- visible; checksum guide tucked inside details -->
 
 | File name & description                                                                                                                                    | Length / Size              | Direct Download Link                               | Verify (MD5 / SHA1 / SHA256)                                                                                                                                         | Notes                                                                              |
 | ---------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------- | -------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------- |
