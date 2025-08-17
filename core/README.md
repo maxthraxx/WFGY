@@ -1,6 +1,6 @@
 > 🚧 **Under Construction** — Progress: 90% (almost done)
 
-# ⭐ WFGY Core ⭐ Revolutionary 7-Step Reasoning Engine 2.0
+# ⭐ WFGY 2.0 ⭐ Core Reasoning Engine with 7-Step Breakthrough
 ## One man, One life, One line — my life’s work, let the results speak for themselves ✨
 
 > 👑 **Early Stargazers: [See the Hall of Fame](https://github.com/onestardao/WFGY/tree/main/stargazers)** — Verified by real engineers · 🛠 **Field Reports: [Real Bugs, Real Fixes](https://github.com/onestardao/WFGY/discussions/10)**
