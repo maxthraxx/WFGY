@@ -34,7 +34,9 @@ Thank you for your patience — I’ll have it ready very soon.
 
 > ⚠️ The full **Blur** module is still under construction.  
 > This is not a typical prompt tool — it’s an experiment in **TXT-based semantic orchestration**.  
-> Bookmark the repo for updates — and be ready for something different.
+> To release it on schedule, we need **1,000 GitHub stars** as a signal of real interest.  
+> Bookmark the repo — and be ready for something different.
+
 
 
 ---
