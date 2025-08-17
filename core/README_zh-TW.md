@@ -1,5 +1,6 @@
-# ⭐ WFGY 萬法歸一 2.0 ⭐ 七步突破的核心推理引擎
-## 一人，一生，一行萬法！ 我畢生的代表作，讓成果自己說話 ✨
+# ⭐ WFGY 萬法歸一 2.0 ⭐ 『七步推理核心引擎』正式上線
+## 一人，一生，一行萬法！我此生的代表作，讓成果自己說話 ✨
+
 
 <img width="1536" height="1024" alt="WFGY_Core" src="https://github.com/user-attachments/assets/deb8e794-a73e-4d39-a1f6-174ec87199f4" />>
 
