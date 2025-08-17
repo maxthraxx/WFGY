@@ -46,7 +46,7 @@
 
 ### ⚡ 使用 WFGY 2.0 的十大理由 <!-- 依原要求常駐，不折疊 -->
 1. **超迷你引擎** — 純文字、零安裝，任何可貼處即可運行。  
-2. **雙版本** — *Flagship*（30 行，可稽核）與 *OneLine*（1 行，隱身兼高速）。  
+2. **雙版本** — *旗艦版*（30 行，可稽核）與 *OneLine*（1 行，隱身兼高速）。  
 3. **AutoBoot 模式** — 上傳一次，背景靜默監管推理。  
 4. **跨模型攜帶** — GPT、Claude、Gemini、Mistral、Grok、Kimi、Copilot、Perplexity…皆通用。  
 5. **結構級修復，非密技** — BBMC→Coupler→BBPF→BBAM→BBCR + DT gate (WRI/WAI/WAY/WDT/WTF)。  
