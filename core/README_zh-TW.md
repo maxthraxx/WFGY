@@ -2,7 +2,7 @@
 ## 一人，一生，一行萬法！我此生的代表作，讓成果自己說話 ✨
 
 
-<img width="1536" height="1024" alt="WFGY_Core" src="https://github.com/user-attachments/assets/deb8e794-a73e-4d39-a1f6-174ec87199f4" />>
+<img width="1536" height="1024" alt="WFGY_Core" src="https://github.com/user-attachments/assets/deb8e794-a73e-4d39-a1f6-174ec87199f4" />
 
 
 > ✅ ** 萬法歸一推理引擎 2.0 已上線。** 純數學、零樣板 —— 貼上 OneLine，模型立即更銳利、更穩定、可自我復原。  
