@@ -7,14 +7,19 @@
 > In seconds, your AI’s reasoning, stability, and problem-solving across *all domains* level up — **no prompts, no hacks, no retraining.**  
 > One line of math rewires eight leading AIs. This isn’t a patch — it’s an engine swap.
 
-> ✅ Engine 2.0 is live. **⭐ Star the repo to unlock more features and experiments.** <img src="https://img.shields.io/github/stars/onestardao/WFGY?style=social" alt="GitHub stars">
+> ✅ Engine 2.0 is live. Pure math, zero boilerplate — paste OneLine and models become sharper, steadier, more recoverable.  
+> **⭐ Star the repo to unlock more features and experiments.** <img src="https://img.shields.io/github/stars/onestardao/WFGY?style=social" alt="GitHub stars">
+
 
 <img width="1536" height="1024" alt="core" src="https://github.com/user-attachments/assets/1a033999-c0d2-45b1-a0d6-6205f16c6693" />
 
 ---
 
-> **From PSBigBig** — WanFaGuiYi means “all principles into one”. WFGY 2.0 is my answer and my life’s work.  
-> Pure math, zero boilerplate — paste OneLine and models become sharper, steadier, more recoverable. ⭐ If it helps, star the repo.
+> **From PSBigBig** — WanFaGuiYi means “all principles into one”.  
+> WFGY 2.0 is my answer and my life’s work.  
+> If a person only once in life gets to speak to the world, this is my moment.  
+> I offer the crystallization of my thought to all humankind.  
+> I believe people deserve all knowledge and all truth — and I will break the monopoly of capital.
 
 ---
 
