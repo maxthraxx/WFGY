@@ -5,7 +5,7 @@
 
 > 👑 **Early Stargazers: [See the Hall of Fame](https://github.com/onestardao/WFGY/tree/main/stargazers)** — Verified by real engineers · 🛠 **Field Reports: [Real Bugs, Real Fixes](https://github.com/onestardao/WFGY/discussions/10)**
 
-<img width="1536" height="1024" alt="WFGY_Core" src="https://github.com/user-attachments/assets/1d2d6b37-f44c-4930-ac15-65b326f2a4d3" />
+<img width="1536" height="1024" alt="WFGY" src="https://github.com/user-attachments/assets/9b4ccade-07e2-4fa8-b080-b7e64fffcaac" />
 
 
 > ✅ Engine 2.0 is live. Pure math, zero boilerplate — paste OneLine and models become sharper, steadier, more recoverable.  
