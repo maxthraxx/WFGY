@@ -1,4 +1,4 @@
-## Blur Blur Blur — A Language-Controlled Visual Generation System (Beta)
+## Blur Blur Blur — Drawing the Beauty of Math for the First Time
 
 >  👑 **Early Stargazers: [See the Hall of Fame](https://github.com/onestardao/WFGY/tree/main/stargazers)** — Verified by real engineers · 🛠 **Field Reports: [Real Bugs, Real Fixes](https://github.com/onestardao/WFGY/discussions/10)**
 
