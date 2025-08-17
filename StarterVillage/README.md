@@ -41,8 +41,9 @@ Choose your quest by **difficulty**; the 😈 icons show how spicy each tier is.
 | Demo | Link | One-liner |
 |------|------|-----------|
 | **Blah Blah Blah** — Truth Generator | [Demo →](https://github.com/onestardao/WFGY/blob/main/OS/BlahBlahBlah/README.md) | “Ask any cosmic question, receive a self-consistent answer.” |
-| **Blow Blow Blow** — AIGC Game Boy | [Demo →](https://github.com/onestardao/WFGY/blob/main/OS/BlowBlowBlow/README.md) | “Mini RPGs coded by AI, launched right in chat.” |
 | **Blur Blur Blur** — Geometry T2I | [Demo →](https://github.com/onestardao/WFGY/blob/main/OS/BlurBlurBlur/README.md) | “Draw pure math onto 8 K images without distortion.” |
+| **Blow Blow Blow** — AIGC Game Boy | [Demo →](https://github.com/onestardao/WFGY/blob/main/OS/BlowBlowBlow/README.md) | “Mini RPGs coded by AI, launched right in chat.” |
+
 
 *(Just have fun; theory comes later.)*
 
