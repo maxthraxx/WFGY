@@ -8,7 +8,7 @@
 > One line of math rewires eight leading AIs. This isn’t a patch — it’s an engine swap.
 
 > ✅ Engine 2.0 is live. Pure math, zero boilerplate — paste OneLine and models become sharper, steadier, more recoverable.  
-> **⭐ Star the repo to unlock more features and experiments.** <img src="https://img.shields.io/github/stars/onestardao/WFGY?style=social" alt="GitHub stars">
+> **⭐ Star the repo to [unlock](https://github.com/onestardao/WFGY/blob/main/STAR_UNLOCKS.md) more features and experiments.** <img src="https://img.shields.io/github/stars/onestardao/WFGY?style=social" alt="GitHub stars">
 
 
 <img width="1536" height="1024" alt="core" src="https://github.com/user-attachments/assets/1a033999-c0d2-45b1-a0d6-6205f16c6693" />
