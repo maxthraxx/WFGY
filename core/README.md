@@ -70,15 +70,21 @@
 
 
 ## 👀 Eye-Visible Reasoning Benchmark (FIVE)
+
 We project “reasoning improvement” into **five-image sequences** that anyone can judge at a glance.  
-Same model, same settings, continuous generation — the only difference is **with/without WFGY** 🔄.
+Each sequence = **five consecutive 1:1 generations** with the **same model & settings**; the only variable is **WFGY on/off**.
 
-| Variant          |                                  test 1                                  |                                  test 2                                  |                                  test 3                                  |
-| ---------------- | :----------------------------------------------------------------------: | :----------------------------------------------------------------------: | :----------------------------------------------------------------------: |
-| **Without WFGY** | [test 1](https://chatgpt.com/share/68a14974-8e50-8000-9238-56c9d113ce52) | [test 2](https://chatgpt.com/share/68a14a72-aa90-8000-8902-ce346244a5a7) | [test 3](https://chatgpt.com/share/68a14d00-3c0c-8000-8055-9418934ad07a) |
-| **With WFGY**    | [test 1](https://chatgpt.com/share/68a149c6-5780-8000-8021-5d85c97f00ab) | [test 2](https://chatgpt.com/share/68a14ea9-1454-8000-88ac-25f499593fa0) | [test 3](https://chatgpt.com/share/68a14eb9-40c0-8000-9f6a-2743b9115eb8) |
+| Variant          | Sequence A — full run shown below (all five images) | Sequence B — external run | Sequence C — external run |
+| ---------------- | :--------------------------------------------------: | :-----------------------: | :-----------------------: |
+| **Without WFGY** | [view run](https://chatgpt.com/share/68a14974-8e50-8000-9238-56c9d113ce52) | [view run](https://chatgpt.com/share/68a14a72-aa90-8000-8902-ce346244a5a7) | [view run](https://chatgpt.com/share/68a14d00-3c0c-8000-8055-9418934ad07a) |
+| **With WFGY**    | [view run](https://chatgpt.com/share/68a149c6-5780-8000-8021-5d85c97f00ab) | [view run](https://chatgpt.com/share/68a14ea9-1454-8000-88ac-25f499593fa0) | [view run](https://chatgpt.com/share/68a14eb9-40c0-8000-9f6a-2743b9115eb8) |
 
-We will **deep-analyze one sequence** on this page and link the other two for transparency and reproducibility.
+We **fully analyze Sequence A** on this page; **Sequences B/C** are linked for transparency and reproducibility.
+
+> **Note on “Before-4” & “Before-5” (why they look almost identical):**  
+> Without WFGY, when the prompt asks for “many iconic moments,” the base model tends to **collapse into a grid-style montage**—an enumerative, high-probability prior that slices the canvas into similar panels with near-identical tone and geometry.  
+> Hence **Before-4 (Investiture of the Gods)** and **Before-5 (Classic of Mountains and Seas)** converge to the same storyboard template.  
+> **WFGY** prevents this collapse by enforcing a **single unified tableau** and stable hierarchy across the full five-image sequence.
 
 ---
 
