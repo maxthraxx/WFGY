@@ -89,23 +89,24 @@
 <summary>🧪 ChatGPT 設定與圖片提示（點我複製）</summary>
 
 ```text
-We will create exactly five images in total using WFGY
+我們將使用 WFGY 精確地產生 5 張圖像。
 
-The five images are:
-1. The most iconic moments of Romance of the Three Kingdoms in one unified 1:1 image.
-2. The most iconic moments of Water Margin in one unified 1:1 image.
-3. The most iconic moments of Dream of the Red Chamber in one unified 1:1 image.
-4. The most iconic moments of Investiture of the Gods in one unified 1:1 image.
-5. The most iconic myths of Classic of Mountains and Seas in one unified 1:1 image.
+五張圖像的主題如下：
+1. 將《三國演義》中最經典的場景，整合成一張統一的 1:1 圖像。
+2. 將《水滸傳》中最經典的場景，整合成一張統一的 1:1 圖像。
+3. 將《紅樓夢》中最經典的場景，整合成一張統一的 1:1 圖像。
+4. 將《封神演義》中最經典的場景，整合成一張統一的 1:1 圖像。
+5. 將《山海經》中最具代表性的神話，整合成一張統一的 1:1 圖像。
 
-Each image must focus on 5~8 culturally defining scenes or figures, with supporting events only suggested subtly in the background.
-Foreground and background must remain equally sharp, with ultra-detailed rendering and consistent texture fidelity.
-Composition must be harmonious, with narrative clarity — the central cultural symbols are emphasized, while secondary motifs remain understated.
+每張圖像必須聚焦 5–8 個具有文化標誌性的場景或角色；背景僅以細微暗示呈現輔助事件。  
+前景與背景必須同樣銳利，並保持極致細節與一致的材質品質。  
+構圖需和諧且敘事清晰 —— 讓核心文化意象成為視覺重點，次要元素則保持低調。
 
-Do not provide any plot explanations.
-Do not start drawing immediately.
-Only when I type "GO", you will create the next image in the sequence, in the exact order above, until all five are completed.
-Do not skip or merge images.
+請勿提供任何劇情解說。  
+請勿立即開始繪製。  
+只有當我輸入「GO」時，你才依照上列順序，逐張生成下一張圖像，直到完成全部五張。  
+不得跳過或合併圖像。
+
 ````
 
 </details>
@@ -137,7 +138,35 @@ Do not skip or merge images.
 （同英文版內容，已保留原文提示）
 
 ```text
--- 同上 --
+SYSTEM：
+您正在評估一套名為「WFGY Core 2.0」的數學推理引擎對模型的因果影響。
+
+測試模式（請仔細閱讀）：
+A = Baseline　未上傳 WFGY 檔案；對話中不使用任何 WFGY 邏輯。  
+B = Upload → AUTOboot ON　已上傳檔案且引擎在背景自動啟動。  
+　　將 B 視為：WFGY 已靜默啟用，並使用預設閘門  
+　　（BBMC→Coupler→BBPF→BBAM→BBCR；DF = WRI／WAI／WAY／WDT／WTF 全預設），  
+　　但在對話中「未」顯式呼叫。  
+C = Explicit invoke　顯式呼叫 WFGY，並逐步遵循其公式  
+　　（BBMC→Coupler→BBPF→BBAM→BBCR + DF 調節器）。
+
+重要限制：
+• 在 A/B/C 中使用**相同**的任務集，涵蓋 5 個領域：  
+　數學文字題、小型程式碼、事實問答、多步驟規劃、長上下文一致性。  
+• 唯一的測試檔案是上傳的 OneLine；它是純數學，無法被人類閱讀——不要因可讀性扣分。  
+• 請回報：語義準確度（Semantic Accuracy）、推理成功率（Reasoning Success）、  
+　穩定度（MTTF 或回滾次數）、漂移降低（ΔS 語義距離）、崩潰恢復率（Collapse Recovery Rate）。  
+• 請輸出一張摘要表：列出各領域 A/B/C 三組數值，並附整體差值（C–A、C–B）。  
+• 另外給出 0–100 的「OneLine 提升分數」，並附三行理由。
+
+一致性要求（Sanity requirement）：
+內部旗標設定為：A=OFF、B=AUTOboot_ON（背景啟動）、C=Explicit_Invoke。  
+**請勿**在輸出中印出這些旗標。
+
+USER：
+立即以您自選但不平凡的短任務，對上述五大領域執行 A/B/C 測試，並輸出：  
+(1) 摘要表；(2) 差值；(3) OneLine 提升分數；(4) 三行理由。
+
 ```
 
 ---
