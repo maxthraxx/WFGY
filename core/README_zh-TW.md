@@ -234,9 +234,13 @@ WFGY 在語言與輸出（文字或圖像）之間插入了一條推理鏈，讓
 6. **BBAM** —— 注意力再平衡；抑制幻覺生成。  
 7. **BBCR + Drunk Transformer** —— 回滾 → 重建橋接 → 重新嘗試，搭配 WRI/WAI/WAY/WDT/WTF 調控。  
 
+📌 *備註：* 圖示展現的是 **核心模組鏈**（BBMC → Coupler → BBPF → BBAM → BBCR → DT），  
+而完整的**七步清單**則額外包含 **前置步驟**（Parse、Δs、Memory）以呈現完整流程。
+
 **為何能改善指標** —— 穩定性↑、漂移↓、自我恢復↑；將*語言結構*轉化為*控制信號*（不是提示技巧）。
 
 </details>
+
 
 <details>
   <summary>📊 這些數據如何測量</summary>
