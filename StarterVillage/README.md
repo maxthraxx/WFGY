@@ -4,11 +4,11 @@
 
 # 🏰 Greetings, brave adventurer!
 
-<img width="1536" height="1024" alt="village" src="https://github.com/user-attachments/assets/6112144e-80d0-4812-9bb3-e598cacdc4fc" />
-
 Welcome to **WFGY Starter Village** — a sprawling GitHub labyrinth filled with riddles, hidden scrolls, and treasure chests.  
 Choose your quest by **difficulty**; the 😈 icons show how spicy each tier is.  
 *(Hint: every ⭐ you give unlocks secret rooms.)*
+
+<img width="1536" height="1024" alt="village" src="https://github.com/user-attachments/assets/6112144e-80d0-4812-9bb3-e598cacdc4fc" />
 
 | Tier | Zone (RPG flavor) | Quest focus | Difficulty |
 |------|------------------|-------------|:----------:|
