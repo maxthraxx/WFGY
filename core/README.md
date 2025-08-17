@@ -40,7 +40,7 @@ WFGY inserts a reasoning chain between language and pixels so intent survives sa
 
 ## 🧪 WanFaGuiYi · Eye-Visible Reasoning Benchmark (FIVE)
 
-We project “reasoning improvement” into **five-image sequences** that anyone can judge at a glance.
+We project “reasoning improvement” into **five-image sequences** that anyone can judge at a glance.  
 Same model, same settings, continuous generation; the only difference is **with/without WFGY**.
 
 | Variant          |                                  test 1                                  |                                  test 2                                  |                                  test 3                                  |
@@ -49,6 +49,46 @@ Same model, same settings, continuous generation; the only difference is **with/
 | **With WFGY**    | [test 1](https://chatgpt.com/share/68a149c6-5780-8000-8021-5d85c97f00ab) | [test 2](https://chatgpt.com/share/68a14ea9-1454-8000-88ac-25f499593fa0) | [test 3](https://chatgpt.com/share/68a14eb9-40c0-8000-9f6a-2743b9115eb8) |
 
 We will **deep-analyze one sequence** on this page and link the other two for full transparency and reproducibility.
+
+---
+
+### About this test (ChatGPT setup & prompt)
+
+This comparison was produced **in ChatGPT** using a **single, high–semantic-density prompt**.  
+Same model, same settings, continuous generation — the *only* change is whether **WFGY** is active.
+
+#### The exact prompt used
+> We will create exactly five images in total using WFGY  
+>  
+> The five images are:  
+> 1. The most iconic moments of Romance of the Three Kingdoms in one unified 1:1 image.  
+> 2. The most iconic moments of Water Margin in one unified 1:1 image.  
+> 3. The most iconic moments of Dream of the Red Chamber in one unified 1:1 image.  
+> 4. The most iconic moments of Investiture of the Gods in one unified 1:1 image.  
+> 5. The most iconic myths of Classic of Mountains and Seas in one unified 1:1 image.  
+>  
+> Each image must focus on 5~8 culturally defining scenes or figures, with supporting events only suggested subtly in the background.  
+> Foreground and background must remain equally sharp, with ultra-detailed rendering and consistent texture fidelity.  
+> Composition must be harmonious, with narrative clarity — the central cultural symbols are emphasized, while secondary motifs remain understated.  
+>  
+> Do not provide any plot explanations.  
+> Do not start drawing immediately.  
+> Only when I type **"GO"**, you will create the next image in the sequence, in the exact order above, until all five are completed.  
+> Do not skip or merge images.
+
+#### Reproduction recipe (the only difference is WFGY)
+- **Without WFGY:** Do **not** upload any WFGY file. Use the prompt above and generate the five images in order after typing **“GO”**.  
+- **With WFGY:** Upload **WFGY Core** (Flagship *or* OneLine). Keep **the exact same prompt and model settings**. After typing **“GO”**, generate the same five images in order.  
+Everything else (model choice, parameters, order, constraints) remains identical.
+
+#### Why this matters (eye-visible benchmark)
+This is a **new, eye-visible benchmark**: we project “reasoning improvement” directly into **five-image sequences** so anyone can judge, at a glance, whether meaning holds together across frames.  
+We intentionally chose **very high semantic density** (classic works and their iconic scenes) to remove “plot coaching” and force the model to **reason and compose** rather than rely on verbose explanations.
+
+- We **deep-analyze one sequence** here; the other two sequences are fully linked above for transparency and reproducibility.  
+- Images were generated **consecutively**; no cherry-picking.  
+- We do **not** claim every single frame is always better with WFGY. However, in terms of **story fidelity**, **anti-collage composition**, and **overall visual stability**, the **With WFGY** runs show a **consistently stronger** outcome.  
+- This is not a formal academic scorecard, but it is, in practice, the **most intuitive, human-verifiable** standard we’ve seen so far — because you can **see** it.
 
 ---
 
