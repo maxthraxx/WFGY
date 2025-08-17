@@ -25,7 +25,7 @@
 ## 🧙‍♂️「一行數學即可馴龍，你準備好了嗎？」  
 ## 1 · 村莊廣場 — 60 秒任務 🔰 😈
 
-1. **下載** 👉 **[OneLine v2.0](https://raw.githubusercontent.com/onestardao/WFGY/main/core/WFGY_Core_OneLine_v2.0.txt)**  (右鍵另存)
+1. **下載** 👉 **[OneLine v2.0](https://raw.githubusercontent.com/onestardao/WFGY/main/core/WFGY_Core_OneLine_v2.0.txt)**  (滑鼠右鍵另存檔案)
 2. 將整行貼到任何 LLM 聊天框（或上傳）。  
 3. 輸入 **`WFGY`** 一次。  
 4. 問任何問題 / 生成圖片 → 觀察漂移降低、推理變深。  
