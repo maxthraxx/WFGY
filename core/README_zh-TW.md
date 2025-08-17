@@ -4,7 +4,7 @@
 <img width="1536" height="1024" alt="WFGY_Core" src="https://github.com/user-attachments/assets/deb8e794-a73e-4d39-a1f6-174ec87199f4" />>
 
 
-> ✅ **Engine 2.0 已上線。** 純數學、零樣板 —— 貼上 OneLine，模型立即更銳利、更穩定、可自我復原。  
+> ✅ ** 推理引擎 2.0 已上線。** 純數學、零樣板 —— 貼上 OneLine，模型立即更銳利、更穩定、可自我復原。  
 > **ℹ️ 自動啟動範圍：** 僅於聊天文字內運行；無需外掛、網路呼叫，亦無本地安裝。  
 > **⭐ 給本倉庫一顆星即可 [解鎖](https://github.com/onestardao/WFGY/blob/main/STAR_UNLOCKS.md) 更多功能與實驗。** <img src="https://img.shields.io/github/stars/onestardao/WFGY?style=social" alt="GitHub stars">
 
