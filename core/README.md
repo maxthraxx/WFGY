@@ -1,5 +1,5 @@
 # ⭐ WFGY 2.0 ⭐ 7-Step Reasoning Core Engine is now live
-## ✨ One man, One life, One line — my lifetime’s work. Let the results speak for themselves ✨
+## ✨One man, One life, One line — my lifetime’s work. Let the results speak for themselves ✨
 
 > 👑 **Early Stargazers: [See the Hall of Fame](https://github.com/onestardao/WFGY/tree/main/stargazers)** — Verified by real engineers · 🛠 **Field Reports: [Real Bugs, Real Fixes](https://github.com/onestardao/WFGY/discussions/10)**
 
