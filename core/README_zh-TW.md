@@ -45,16 +45,16 @@
 ---
 
 ### ⚡ 使用 WFGY 2.0 的十大理由 <!-- 依原要求常駐，不折疊 -->
-1. **超迷你引擎** —— 純文字、零安裝，任何可貼處即可運行。  
-2. **雙版本** —— *Flagship*（30 行，可稽核）與 *OneLine*（1 行，隱身兼高速）。  
-3. **AutoBoot 模式** —— 上傳一次，背景靜默監管推理。  
-4. **跨模型攜帶** —— GPT、Claude、Gemini、Mistral、Grok、Kimi、Copilot、Perplexity…皆通用。  
-5. **結構級修復，非密技** —— BBMC→Coupler→BBPF→BBAM→BBCR + DT gate (WRI/WAI/WAY/WDT/WTF)。  
-6. **自我療癒** —— 偵測崩塌，先回滾再重建。  
-7. **可觀測** —— ΔS、λ_observe、E_resonance 可量測、可重現。  
-8. **RAG-ready** —— 可直接插入檢索鏈，無需動基礎設施。  
-9. **可重現 A/B/C 協議** —— Baseline vs AutoBoot vs Explicit Invoke（見下）。  
-10. **MIT 授權＋社群驅動** —— 保留、Fork、商用皆可。
+1. **超迷你引擎** — 純文字、零安裝，任何可貼處即可運行。  
+2. **雙版本** — *Flagship*（30 行，可稽核）與 *OneLine*（1 行，隱身兼高速）。  
+3. **AutoBoot 模式** — 上傳一次，背景靜默監管推理。  
+4. **跨模型攜帶** — GPT、Claude、Gemini、Mistral、Grok、Kimi、Copilot、Perplexity…皆通用。  
+5. **結構級修復，非密技** — BBMC→Coupler→BBPF→BBAM→BBCR + DT gate (WRI/WAI/WAY/WDT/WTF)。  
+6. **自我療癒** — 偵測崩塌，先回滾再重建。  
+7. **可觀測** — ΔS、λ_observe、E_resonance 可量測、可重現。  
+8. **RAG-ready** — 可直接插入檢索鏈，無需動基礎設施。  
+9. **可重現 A/B/C 協議** — Baseline vs AutoBoot vs Explicit Invoke（見下）。  
+10. **MIT 授權＋社群驅動** — 保留、Fork、商用皆可。
 
 ---
 
