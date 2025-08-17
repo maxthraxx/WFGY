@@ -72,6 +72,8 @@
 We project “reasoning improvement” into **five-image sequences** that anyone can judge at a glance.  
 Each sequence = **five consecutive 1:1 generations** with the **same model & settings** *(temperature, top_p, seed policy, negatives)*; the only variable is **WFGY on/off**.
 
+> **Methodology for this demo.** We deliberately use short, high–semantic-density prompts that reference canonical stories, with no extra guidance or style hints. This stresses whether WFGY can (a) parse intent more precisely and (b) stabilize composition via its seven-step reasoning chain. This setup isn’t prescriptive—use WFGY with any prompts you like. In many cases the uplift is eye-visible; in others it may be subtler but still measurable.
+
 | Variant          | Sequence A — full run shown below (all five images) | Sequence B — external run | Sequence C — external run |
 | ---------------- | :--------------------------------------------------: | :-----------------------: | :-----------------------: |
 | **Without WFGY** | [view run](https://chatgpt.com/share/68a14974-8e50-8000-9238-56c9d113ce52) | [view run](https://chatgpt.com/share/68a14a72-aa90-8000-8902-ce346244a5a7) | [view run](https://chatgpt.com/share/68a14d00-3c0c-8000-8055-9418934ad07a) |
