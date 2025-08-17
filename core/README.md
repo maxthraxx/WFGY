@@ -1,15 +1,18 @@
-> 🚧 **Under Construction** — Progress: 95% (almost done)
-
 # ⭐ WFGY 2.0 ⭐ Core Reasoning Engine with 7-Step Breakthrough
 ## One man, One life, One line — my lifetime’s work. Let the results speak for themselves. ✨
 
 > 👑 **Early Stargazers: [See the Hall of Fame](https://github.com/onestardao/WFGY/tree/main/stargazers)** — Verified by real engineers · 🛠 **Field Reports: [Real Bugs, Real Fixes](https://github.com/onestardao/WFGY/discussions/10)**
 
-<img width="1536" height="1024" alt="WFGY" src="https://github.com/user-attachments/assets/9b4ccade-07e2-4fa8-b080-b7e64fffcaac" />
+
+<img width="1536" height="1024" alt="WFGY_Core" src="https://github.com/user-attachments/assets/deb8e794-a73e-4d39-a1f6-174ec87199f4" />>
+
+
+![Uploading WFGY_Core.png…]()
 
 > ✅ Engine 2.0 is live. Pure math, zero boilerplate — paste OneLine and models become sharper, steadier, more recoverable.  
 > **ℹ️ Autoboot scope:** text-only inside the chat; no plugins, no network calls, no local installs.  
 > **⭐ Star the repo to [unlock](https://github.com/onestardao/WFGY/blob/main/STAR_UNLOCKS.md) more features and experiments.** <img src="https://img.shields.io/github/stars/onestardao/WFGY?style=social" alt="GitHub stars">
+
 
 ---
 
