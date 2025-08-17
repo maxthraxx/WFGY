@@ -6,6 +6,8 @@
 
 # 🏰 勇者你好！歡迎來到 WFGY 萬法歸一新手村
 
+<img width="1536" height="1024" alt="village" src="https://github.com/user-attachments/assets/6112144e-80d0-4812-9bb3-e598cacdc4fc" />
+
 這裡是一座藏滿謎題、卷軸與寶箱的 GitHub 迷宮。  
 請依 **難度** 選擇你的主線任務；😈 愈多代表愈刺激。  
 （小秘訣：每一顆 ⭐ 都能解鎖隱藏房間！）
