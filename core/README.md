@@ -235,9 +235,13 @@ WFGY inserts a reasoning chain between language and pixels so intent survives sa
 6. **BBAM** — attention rebalancer; suppress hallucinations.
 7. **BBCR + Drunk Transformer** — rollback → re-bridge → retry with WRI/WAI/WAY/WDT/WTF.
 
+📌 *Note:* The diagram shows the **core module chain** (BBMC → Coupler → BBPF → BBAM → BBCR → DT).  
+The full **7-step list** here includes additional **pre-processing steps** (Parse, Δs, Memory) for completeness.
+
 **Why it improves metrics** — Stability↑, Drift↓, Self-Recovery↑; turns *language* structure into *image* control signals (not prompt tricks).
 
 </details>
+
 
 <details>
   <summary>📊 How these numbers are measured</summary>
