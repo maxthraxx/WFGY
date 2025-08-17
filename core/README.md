@@ -217,7 +217,7 @@ Get-FileHash .\core\WFGY_Core_OneLine_v2.0.txt -Algorithm SHA256
 ---
 
 <details>
-  <summary>🧠 How WFGY 2.0 works (Seven-Step Reasoning Chain)</summary>
+  <summary>🧠 How WFGY 2.0 works (7-Step Reasoning Chain)</summary>
 
   <br>
 
