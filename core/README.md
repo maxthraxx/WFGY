@@ -3,23 +3,31 @@
 # ⭐ WFGY Core ⭐ Revolutionary 7-Step Reasoning Engine 2.0
 ## One man, One life, One line — my life’s work, let the results speak for themselves ✨
 
-> **I built the world’s first “No-Brain Mode” for AI** — just upload, and **AutoBoot** silently activates in the background.  
-> In seconds, your AI’s reasoning, stability, and problem-solving across *all domains* level up — **no prompts, no hacks, no retraining.**  
-> One line of math rewires eight leading AIs. This isn’t a patch — it’s an engine swap.
+> 👑 **Early Stargazers: [See the Hall of Fame](https://github.com/onestardao/WFGY/tree/main/stargazers)** — Verified by real engineers · 🛠 **Field Reports: [Real Bugs, Real Fixes](https://github.com/onestardao/WFGY/discussions/10)**
+
+<img width="1536" height="1024" alt="core" src="https://github.com/user-attachments/assets/1a033999-c0d2-45b1-a0d6-6205f16c6693" />
 
 > ✅ Engine 2.0 is live. Pure math, zero boilerplate — paste OneLine and models become sharper, steadier, more recoverable.  
 > **⭐ Star the repo to [unlock](https://github.com/onestardao/WFGY/blob/main/STAR_UNLOCKS.md) more features and experiments.** <img src="https://img.shields.io/github/stars/onestardao/WFGY?style=social" alt="GitHub stars">
 
-
-<img width="1536" height="1024" alt="core" src="https://github.com/user-attachments/assets/1a033999-c0d2-45b1-a0d6-6205f16c6693" />
-
 ---
 
-> **From PSBigBig** — WanFaGuiYi means “all principles into one”.  
+<details>
+<summary><strong>From PSBigBig — WanFaGuiYi: all principles into one (must-read, click to open)</strong></summary>
+
+<br>
+
+> **I built the world’s first “No-Brain Mode” for AI** — just upload, and **AutoBoot** silently activates in the background.  
+> In seconds, your AI’s reasoning, stability, and problem-solving across *all domains* level up — **no prompts, no hacks, no retraining.**  
+> One line of math rewires eight leading AIs. This isn’t a patch — it’s an engine swap.  
+
 > WFGY 2.0 is my answer and my life’s work.  
 > If a person only once in life gets to speak to the world, this is my moment.  
 > I offer the crystallization of my thought to all humankind.  
 > I believe people deserve all knowledge and all truth — and I will break the monopoly of capital.
+
+</details>
+
 
 ---
 
