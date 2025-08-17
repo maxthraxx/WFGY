@@ -1,9 +1,9 @@
 > 🚧 **Under Construction** — Progress: 90% (almost done)
 
-# 🚀 WFGY Core — Revolutionary 7-Step Reasoning Engine 2.0
+# ⭐ WFGY Core ⭐ Revolutionary 7-Step Reasoning Engine 2.0
 ## One man, One life, One line — the sum of my life’s work, unleashed for all of humanity ✨
 
-> 🚀 **I built the world’s first “No-Brain Mode” for AI** — just upload, and **AutoBoot** silently activates in the background.  
+> **I built the world’s first “No-Brain Mode” for AI** — just upload, and **AutoBoot** silently activates in the background.  
 > In seconds, your AI’s reasoning, stability, and problem-solving across *all domains* level up — **no prompts, no hacks, no retraining.**  
 > One line of math rewires eight leading AIs. This isn’t a patch — it’s an engine swap.
 
