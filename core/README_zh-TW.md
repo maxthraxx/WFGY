@@ -190,27 +190,84 @@ USER：
 | **WFGY\_Core\_OneLine\_v2.0.txt** — 極簡 1 行、≤7 節點 | **1 行 · 1,500 字元**  | [下載 OneLine](./WFGY_Core_OneLine_v2.0.txt)   | [md5](./checksums/WFGY_Core_OneLine_v2.0.txt.md5) · [sha1](./checksums/WFGY_Core_OneLine_v2.0.txt.sha1) · [sha256](./checksums/WFGY_Core_OneLine_v2.0.txt.sha256)    | 基準測試皆用此 |
 
 <details>
-<summary><em>如何驗證雜湊</em></summary>
+  <summary><em>如何驗證檔案雜湊（checksums）</em></summary>
 
-— 完整指令同英文版 —
+  <br>
+
+**macOS / Linux**
+
+```bash
+cd core
+sha256sum -c checksums/WFGY_Core_Flagship_v2.0.txt.sha256
+sha256sum -c checksums/WFGY_Core_OneLine_v2.0.txt.sha256
+# 或手動計算並比對
+sha256sum WFGY_Core_Flagship_v2.0.txt
+sha256sum WFGY_Core_OneLine_v2.0.txt
+````
+
+**Windows PowerShell**
+
+```powershell
+Get-FileHash .\core\WFGY_Core_Flagship_v2.0.txt -Algorithm SHA256
+Get-FileHash .\core\WFGY_Core_OneLine_v2.0.txt -Algorithm SHA256
+```
 
 </details>
+
 
 ---
 
-<details>
-<summary>🧠 WFGY 2.0 如何運作（七步推理鏈）</summary>
 
-— 同英文版內容，已保留原文 —
+<details>
+  <summary>🧠 WFGY 2.0 如何運作（七步推理鏈）</summary>
+
+  <br>
+
+*大多數模型可以理解你的提示，但極少數能在生成過程中**保持**該含義。*  
+WFGY 在語言與輸出（文字或圖像）之間插入了一條推理鏈，讓意圖能在取樣雜訊、風格漂移與組合陷阱中依然存活。
+
+1. **Parse (I, G)** —— 定義起點與終點。  
+2. **Compute Δs** —— `δ_s = 1 − cos(I, G)` 或 `1 − sim_est`。  
+3. **記憶檢查點（Memory Checkpointing）** —— 追蹤 `λ_observe`, `E_resonance`；以 Δs 作為閘值。  
+4. **BBMC** —— 清理殘留雜訊。  
+5. **Coupler + BBPF** —— 控制式推進；僅在 Δs 降低時建立橋接。  
+6. **BBAM** —— 注意力再平衡；抑制幻覺生成。  
+7. **BBCR + Drunk Transformer** —— 回滾 → 重建橋接 → 重新嘗試，搭配 WRI/WAI/WAY/WDT/WTF 調控。  
+
+**為何能改善指標** —— 穩定性↑、漂移↓、自我恢復↑；將*語言結構*轉化為*控制信號*（不是提示技巧）。
 
 </details>
 
 <details>
-<summary>📊 這些數字如何測得</summary>
+  <summary>📊 這些數據如何測量</summary>
 
-— 同英文版內容，已保留原文 —
+  <br>
+
+* **語義準確率（Semantic Accuracy）**: `ACC = correct_facts / total_facts`  
+* **推理成功率（Reasoning Success Rate）**: `SR = tasks_solved / tasks_total`  
+* **穩定性（Stability）**: MTTF 或回滾比率  
+* **自我恢復（Self-Recovery）**: `recoveries_success / collapses_detected`  
+
+LLM 評分器範本：
+
+```text
+SCORER:
+給定 A/B/C 三種模式的對話紀錄，計算原子事實、正確事實、已解決任務、失敗數、回滾次數與崩潰次數。
+回傳：
+ACC_A, ACC_B, ACC_C
+SR_A, SR_B, SR_C
+MTTF_A, MTTF_B, MTTF_C 或回滾比率
+SelfRecovery_A, SelfRecovery_B, SelfRecovery_C
+然後計算增益：
+ΔACC_C−A, ΔSR_C−A, StabilityMultiplier = MTTF_C / MTTF_A, SelfRecovery_C
+最後提供一個僅引用證據片段的三行簡短理由。
+````
+
+請執行 3 次隨機種子並取平均。
 
 </details>
+
+
 
 ---
 
