@@ -68,6 +68,7 @@
 > Want formal numbers and vendor links? See **Eight-model evidence** right after it.  
 > Want to reproduce the numeric test yourself? Use the **A/B/C prompt** (copy-to-run) at the end of this section.
 
+
 ## 👀 Eye-Visible Reasoning Benchmark (FIVE)
 We project “reasoning improvement” into **five-image sequences** that anyone can judge at a glance.  
 Same model, same settings, continuous generation — the only difference is **with/without WFGY** 🔄.
@@ -78,6 +79,20 @@ Same model, same settings, continuous generation — the only difference is **wi
 | **With WFGY**    | [test 1](https://chatgpt.com/share/68a149c6-5780-8000-8021-5d85c97f00ab) | [test 2](https://chatgpt.com/share/68a14ea9-1454-8000-88ac-25f499593fa0) | [test 3](https://chatgpt.com/share/68a14eb9-40c0-8000-9f6a-2743b9115eb8) |
 
 We will **deep-analyze one sequence** on this page and link the other two for transparency and reproducibility.
+
+---
+
+### Deep analysis — Sequence A (five unified 1:1 tableaux)
+
+| Work (繁體中文) | Before | After | Verdict (global, at-a-glance) |
+|---|---|---|---|
+| **Romance of the Three Kingdoms (三國演義)** | <img src="images/group1_before1.png" width="300"> | <img src="images/group1_after1.png" width="300"> | **After wins.** Unified tableau locks a clear center and pyramid hierarchy; the grid fragments attention. *Tags:* Unification↑ Hierarchy↑ Cohesion↑ Depth/Flow↑ Memorability↑ |
+| **Water Margin (水滸傳)** | <img src="images/group1_before2.png" width="300"> | <img src="images/group1_after2.png" width="300"> | **After wins.** “Wu Song vs. Tiger” anchors the scene; continuous momentum and layered scale beat the multi-panel storyboard. *Tags:* Unification↑ Iconicity↑ Depth/Scale↑ Cohesion↑ |
+| **Dream of the Red Chamber (紅樓夢)** | <img src="images/group1_before3.png" width="300"> | <img src="images/group1_after3.png" width="300"> | **After wins.** Garden tableau with a calm emotional center; space breathes, mood coheres. The grid slices emotion into vignettes. *Tags:* Unification↑ Hierarchy↑ Air/Depth↑ Readability↑ |
+| **Investiture of the Gods (封神演義)** | <img src="images/group1_before4.png" width="300"> | <img src="images/group1_after4.png" width="300"> | **After wins.** Dragon–tiger diagonal and cloud–sea layering create epic scale; the grid dilutes focus. *Tags:* Unification↑ Depth/Scale↑ Flow↑ Iconicity↑ |
+| **Classic of Mountains and Seas (山海經)** | <img src="images/group1_before5.png" width="300"> | <img src="images/group1_after5.png" width="300"> | **After wins.** A single, continuous “mountains-and-seas” world with stable triangle hierarchy and smooth diagonal flow; grid breaks narrative. *Tags:* Unification↑ Hierarchy↑ Depth/Scale↑ Flow↑ Memorability↑ |
+
+---
 
 <details>
   <summary>🧪 ChatGPT setup & image prompt (click to copy)</summary>
@@ -107,6 +122,8 @@ Do not skip or merge images.
 ````
 
 </details>
+
+
 
 ---
 
