@@ -13,7 +13,7 @@
 ---
 
 <details>
-<summary><strong>From PSBigBig — WanFaGuiYi: all principles into one (must-read, click to open)</strong></summary>
+<summary><strong>From PSBigBig — WFGY (WanFaGuiYi) : All Principles into One (must-read, click to open)</strong></summary>
 
 <br>
 
