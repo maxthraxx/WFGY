@@ -1,95 +1,108 @@
+<!-- ─────────────────────────────────────────────────────────── -->
+<!--  WFGY · Starter Village – RPG Quick-Start & World Map v0.3 -->
+<!-- ─────────────────────────────────────────────────────────── -->
 
-> 🏰 **Starter Village is still under construction** — the blacksmith is sharpening his code, the librarian is dusting off the logic scrolls.  
-> Brave adventurer, don’t rush! Come back in a few days and you’ll find the gates wide open (and the reasoning dragons tamed). 🐉
+# 🏰 Greetings, brave adventurer!
 
+Welcome to **WFGY Starter Village** — a sprawling GitHub labyrinth filled with riddles, hidden scrolls, and treasure chests.  
+Choose your quest by **difficulty**; the 😈 icons show how spicy each tier is.  
+*(Hint: every ⭐ you give unlocks secret rooms.)*
 
-# WFGY Starter Village — School of Thought
-
-One line. 1500 chars. Plug-and-play reasoning engine.  
-**WFGY Core 2.0** · **School of Thought**
-
-## Quick Start — Kindergarten / Starter Village
-No-brain mode. Copy. Paste. Watch.
-1. Download **OneLine v2.0**: [`/core/WFGY_Core_OneLine_v2.0.txt`](../core/WFGY_Core_OneLine_v2.0.txt) 
-2. Open your LLM chat. Upload if needed.
-3. Paste the one line. Type `WFGY`.
-4. Ask anything. Observe stability & reasoning depth rise.  
-Trouble? See **Starter Tips** (placeholder).
-
----
-
-## WFGY School of Thought — Pick Your Path
-- **Kindergarten · Starter Village**  
-  Do it in one sentence.  
-  Guide / Demo *(placeholders)*
-
-- **Elementary · Forest Path**  
-  2–3 commands; learn anchors & `delta_s`.  
-  Guide / Checklist *(placeholders)*
-
-- **High School · Ancient Library**  
-  Core modules (BBMC/BBPF/BBCR/BBAM) & safety.  
-  Guide / Examples *(placeholders)*
-
-- **University · Tower Lab**  
-  Coupler (WFGY 2.0): `P`, `Φ`, `W_c` in action.  
-  Guide / Lab notebook *(placeholders)*
-
-- **Doctorate · Forbidden Crypt**  
-  Stability metrics, ablations, collapse recovery.  
-  Guide / Metrics *(placeholders)*
-
-- **Philosopher · Demon King’s Castle**  
-  Ontology & the narrative of “One to Rule Them All”.  
-  Essay / Q&A *(placeholders)*
+| Tier | Zone (RPG flavor) | Quest focus | Difficulty |
+|------|------------------|-------------|:----------:|
+| **1** | **Village Square** *(Kindergarten)* | 60-sec plug-and-play | 😈 |
+| **2** | **Forest Fairgrounds** *(Middle School)* | Play Blah · Blow · Blur | 😈😈 |
+| **3** | **Ancient Library** *(High School)* | Learn `delta_s` & five gates | 😈😈😈 |
+| **4** | **Alchemist’s Lab** *(Graduate)* | Debug with Problem Map 2.0 | 😈😈😈😈 |
+| **5** | **Forbidden Forge** *(Doctorate)* | Fork / mod TXTOS layers | 😈😈😈😈😈 |
 
 ---
 
-## NPC Directory — When in doubt, ask the village
-- **Village Chief** — Release notes & changelog *(placeholder)*
-- **Scholar** — Core math & derivations *(placeholder)*
-- **Blacksmith** — Downloads (OneLine / Audit) *(placeholder)*
-- **Barkeeper** — Community / Discord / X *(placeholder)*
-- **Cartographer** — Problem Map & case studies *(placeholder)*
-- **Guild Board** — Roadmap & milestones *(placeholder)*
+## 🧙‍♂️ “A single line can tame dragons. Ready?”  
+## 1 · Village Square — 60-Second Quest 🔰 😈
+
+1. **Download** 👉 **[OneLine v2.0](https://raw.githubusercontent.com/onestardao/WFGY/main/core/WFGY_Core_OneLine_v2.0.txt)**  
+2. Paste the one line into any chat-LLM (or upload).  
+3. Type **`WFGY`** once.  
+4. Ask anything / generate an image → watch drift drop & reasoning deepen.  
+<details><summary>Need help?</summary>
+
+* **Can’t upload?** — pasting the raw text works.  
+* **Want visual proof?** — view the before/after GIF in the main README.  
+</details>
+
+---
+
+## 🧙‍♂️ “Play first, ask later — the forest loves explorers.”  
+## 2 · Forest Fairgrounds — Application Playground 🏃 😈😈
+
+| Demo | Link | One-liner |
+|------|------|-----------|
+| **Blah Blah Blah** — Truth Generator | [Demo →](https://github.com/onestardao/WFGY/blob/main/OS/BlahBlahBlah/README.md) | “Ask any cosmic question, receive a self-consistent answer.” |
+| **Blow Blow Blow** — AIGC Game Boy | [Demo →](https://github.com/onestardao/WFGY/blob/main/OS/BlowBlowBlow/README.md) | “Mini RPGs coded by AI, launched right in chat.” |
+| **Blur Blur Blur** — Geometry T2I | [Demo →](https://github.com/onestardao/WFGY/blob/main/OS/BlurBlurBlur/README.md) | “Draw pure math onto 8 K images without distortion.” |
+
+*(Just have fun; theory comes later.)*
+
+---
+
+## 🧙‍♂️ “Knowledge sleeps in tomes — wake it gently.”  
+## 3 · Ancient Library — Core Lore 📚 😈😈😈
+
+| Concept | TL;DR |
+|---------|------|
+| **`delta_s`** | Semantic distance between Intent & Guess. Smaller = better. |
+| **λ_observe** | Trend detector: convergent · divergent · recursive · chaotic. |
+| **Five Gates** | **BBMC → Coupler → BBPF → BBAM → BBCR** — clean, steer, progress, rebalance, revive. |
+| **TXTOS Semantic Tree** | Tracks every node so reasoning is auditable. |
+
+> Scroll through examples; no coding needed yet.
+
+---
+
+## 🧙‍♂️ “Errors are ingredients; brew your fix.”  
+## 4 · Alchemist’s Lab — Debug & Heal 🔧 😈😈😈😈
+
+1. Open **[Problem Map 2.0](https://github.com/onestardao/WFGY/blob/main/ProblemMap/rag-architecture-and-recovery.md)**  
+2. Locate the failure code (16 categories).  
+3. Follow the **[Semantic Clinic](https://github.com/onestardao/WFGY/blob/main/ProblemMap/SemanticClinicIndex.md)** recipe.  
+4. Re-run A/B tests; log ΔACC, ΔSR, ΔS.
+
+*(White coat earned!)*
+
+---
+
+## 🧙‍♂️ “Forge your own legend, or wield another’s?”  
+## 5 · Forbidden Forge — Fork & Mod 🛠️ 😈😈😈😈😈
+
+* Clone **[TXTOS](https://github.com/onestardao/WFGY/blob/main/OS/README.md)**.  
+* Swap semantic layers, tweak `alpha_blend`, `phi_delta`, add custom gates.  
+* PR back — or publish your fork and bend reality.
+
+---
+
+## ⭐ Star Unlock Roadmap
+
+Every ⭐ is a key. Big drops unlock at **500 / 1 000 / 3 000 / 6 000 / 100 000**.  
+See the full board → **[STAR_UNLOCKS.md](https://github.com/onestardao/WFGY/blob/main/STAR_UNLOCKS.md)**
+
+---
+
+## 🗝️ Hidden Rooms & Easter Eggs
+
+Treasure files and secret commands lurk everywhere.  
+Find a 🗝️ key file? Follow its riddle — real rewards await.
+
+---
+
+<div align="center">
+
+_“One line to boot them all, one village to guide them.”_  
+**— PSBigBig**
+
+</div>
+
 
 ---
 
 > Lost? [Return to the Starter Village](#wgfy-starter-village--school-of-thought)
-
-### 🧭 Explore More
-
-| Module                | Description                                              | Link     |
-|-----------------------|----------------------------------------------------------|----------|
-| WFGY Core             | WFGY 2.0 engine is live: full symbolic reasoning architecture and math stack | [View →](https://github.com/onestardao/WFGY/tree/main/core/README.md) |
-| Problem Map 1.0       | Initial 16-mode diagnostic and symbolic fix framework    | [View →](https://github.com/onestardao/WFGY/tree/main/ProblemMap/README.md) |
-| Problem Map 2.0       | RAG-focused failure tree, modular fixes, and pipelines   | [View →](https://github.com/onestardao/WFGY/blob/main/ProblemMap/rag-architecture-and-recovery.md) |
-| Semantic Clinic Index | Expanded failure catalog: prompt injection, memory bugs, logic drift | [View →](https://github.com/onestardao/WFGY/blob/main/ProblemMap/SemanticClinicIndex.md) |
-| Semantic Blueprint    | Layer-based symbolic reasoning & semantic modulations   | [View →](https://github.com/onestardao/WFGY/tree/main/SemanticBlueprint/README.md) |
-| Benchmark vs GPT-5    | Stress test GPT-5 with full WFGY reasoning suite         | [View →](https://github.com/onestardao/WFGY/tree/main/benchmarks/benchmark-vs-gpt5/README.md) |
-| 🧙‍♂️ Starter Village 🏡 | New here? Lost in symbols? Click here and let the wizard guide you through | [Start →](https://github.com/onestardao/WFGY/blob/main/StarterVillage/README.md) |
-
----
-
-> 👑 **Early Stargazers: [See the Hall of Fame](https://github.com/onestardao/WFGY/tree/main/stargazers)** —  
-> Engineers, hackers, and open source builders who supported WFGY from day one.
-
-> <img src="https://img.shields.io/github/stars/onestardao/WFGY?style=social" alt="GitHub stars"> ⭐ [WFGY Engine 2.0](https://github.com/onestardao/WFGY/blob/main/core/README.md) is already unlocked. ⭐ Star the repo to help others discover it and unlock more on the [Unlock Board](https://github.com/onestardao/WFGY/blob/main/STAR_UNLOCKS.md).
-
-<div align="center">
-
-[![WFGY Main](https://img.shields.io/badge/WFGY-Main-red?style=flat-square)](https://github.com/onestardao/WFGY)
-&nbsp;
-[![TXT OS](https://img.shields.io/badge/TXT%20OS-Reasoning%20OS-orange?style=flat-square)](https://github.com/onestardao/WFGY/tree/main/OS)
-&nbsp;
-[![Blah](https://img.shields.io/badge/Blah-Semantic%20Embed-yellow?style=flat-square)](https://github.com/onestardao/WFGY/tree/main/OS/BlahBlahBlah)
-&nbsp;
-[![Blot](https://img.shields.io/badge/Blot-Persona%20Core-green?style=flat-square)](https://github.com/onestardao/WFGY/tree/main/OS/BlotBlotBlot)
-&nbsp;
-[![Bloc](https://img.shields.io/badge/Bloc-Reasoning%20Compiler-blue?style=flat-square)](https://github.com/onestardao/WFGY/tree/main/OS/BlocBlocBloc)
-&nbsp;
-[![Blur](https://img.shields.io/badge/Blur-Text2Image%20Engine-navy?style=flat-square)](https://github.com/onestardao/WFGY/tree/main/OS/BlurBlurBlur)
-&nbsp;
-[![Blow](https://img.shields.io/badge/Blow-Game%20Logic-purple?style=flat-square)](https://github.com/onestardao/WFGY/tree/main/OS/BlowBlowBlow)
-&nbsp;
-</div>
