@@ -69,11 +69,11 @@
 
 ## 👀 Eye-Visible Reasoning Benchmark (FIVE)
 
-Did you know that when reasoning improves, **text-to-image results become more stable and coherent**?  
-The key is WFGY’s **Drunk Transformer**: it monitors and recenters attention during generation, preventing collapse, composition drift, and duplicate elements—so scenes stay unified and details remain consistent.
+> Did you know that when reasoning improves, **text-to-image results become more stable and coherent**?  
+> The key is WFGY’s **Drunk Transformer**: it monitors and recenters attention during generation, preventing collapse, composition drift, and duplicate elements—so scenes stay unified and details remain consistent.
 
-We project “reasoning improvement” into **five-image sequences** that anyone can judge at a glance.  
-Each sequence = **five consecutive 1:1 generations** with the **same model & settings** *(temperature, top_p, seed policy, negatives)*; the only variable is **WFGY on/off**.
+> We project “reasoning improvement” into **five-image sequences** that anyone can judge at a glance.  
+> Each sequence = **five consecutive 1:1 generations** with the **same model & settings** *(temperature, top_p, seed policy, negatives)*; the only variable is **WFGY on/off**.
 
 > **Methodology for this demo.** We deliberately use short, high–semantic-density prompts that reference canonical stories, with no extra guidance or style hints. This stresses whether WFGY can (a) parse intent more precisely and (b) stabilize composition via its seven-step reasoning chain. This setup isn’t prescriptive—use WFGY with any prompts you like. In many cases the uplift is eye-visible; in others it may be subtler but still measurable.
 
