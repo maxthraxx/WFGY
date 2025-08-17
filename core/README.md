@@ -26,7 +26,7 @@
 > I offer the crystallization of my thought to all humankind.  
 > I believe people deserve all knowledge and all truth — and I will break the monopoly of capital.  
 > 
-> *“One line” is not hype.* I built a full flagship edition, and I also reduced it to a single line of code — a reduction that is clarity and beauty, the same engine distilled to its purest expression.  
+> “One line” is not hype. I built a full flagship edition, and I also reduced it to a single line of code — a reduction that is clarity and beauty, the same engine distilled to its purest expression.  
 > Both versions — the **flagship build** and the **one-line edition**
 
 </details>
