@@ -43,8 +43,9 @@
 | Demo | 入口 | 一句話 |
 |------|------|--------|
 | **Blah Blah Blah** — 真理產生器 | [Demo →](https://github.com/onestardao/WFGY/blob/main/OS/BlahBlahBlah/README.md) | 「問宇宙任何難題，都給你自洽答案。」 |
+| **Blur Blur Blur** — 幾何級文生圖 | [Demo →](https://github.com/onestardao/WFGY/blob/main/OS/BlurBlurBlur/README.md) | 「把純數學畫進圖片不崩壞。」 |
 | **Blow Blow Blow** — AIGC Game Boy | [Demo →](https://github.com/onestardao/WFGY/blob/main/OS/BlowBlowBlow/README.md) | 「AI 自動寫小型 RPG，直接開玩。」 |
-| **Blur Blur Blur** — 幾何級文生圖 | [Demo →](https://github.com/onestardao/WFGY/blob/main/OS/BlurBlurBlur/README.md) | 「把純數學畫進 8K 圖片不崩壞。」 |
+
 
 > **預告：** *Blot Blot Blot*（人格寫手）、*Bloc Bloc Bloc*（語意防火牆）將隨星數開放！
 
