@@ -44,6 +44,8 @@
 
 \* Historical **3–5×** stability uses λ-consistency across seeds; 1.8× uses the stable-node horizon.
 
+[⬇️Downloads](#downloads) | [💰 Try the 20 Profit Prompts](#profit-prompts-pack) | [Eye-Visible Reasoning Benchmark](#eye-benchmark) | [🧬Eight-model evidence (A/B/C protocol)](#eight-model) 
+
 ---
 
 ## ⚡ Quick Usage
@@ -58,7 +60,6 @@ Both **Flagship** and **OneLine** editions behave the same; choose based on read
 That’s it — no plugins, no installs, pure text.  
 *In practice, Autoboot yields about ~70–80% of the uplift you see with explicit WFGY invoke (see eight-model results below).*
 
-[⬇️Downloads→](#downloads)  [💰 Try the 20 Profit Prompts →](#profit-prompts-pack)
 
 ---
 
@@ -81,6 +82,8 @@ That’s it — no plugins, no installs, pure text.
 > Want the fastest way to *see* impact? Jump to the **Eye-Visible Benchmark (FIVE)** below.  
 > Want formal numbers and vendor links? See **Eight-model evidence** right after it.  
 > Want to reproduce the numeric test yourself? Use the **A/B/C prompt** (copy-to-run) at the end of this section.
+
+<a id="eye-benchmark"></a>
 
 ## 👀 Eye-Visible Reasoning Benchmark (FIVE)
 
