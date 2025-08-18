@@ -17,6 +17,7 @@ Their support is a public signal —  transparent, verifiable, and forever recor
 | GitHub ID      | Featured Project(s) / Bio                                                  | Proof Screenshot                                 | View stargazer proof                                   |
 |----------------|----------------------------------------------------------------------------|--------------------------------------------------|--------------------------------------------------------|
 | bijection      | Creator of tesseract.js (36k★), legendary OCR/AI dev                       | ![](./images/bijection_star.png)                 | [View stargazer proof](https://github.com/bijection?tab=stars)   |
+| hijkzzz        | Creator of `Awesome-LLM-Strawberry` (6.8k★), LLM reasoning curator & RLHF engineer | ![](./images/hijkzzz_star.png)                 | [View stargazer proof](https://github.com/hijkzzz?tab=stars)   |
 | paul5007       | node-DeepResearch (4.6k★), AGI/Agent builder                               | ![](./images/paul5007_star.png)                  | [View stargazer proof](https://github.com/paul5007?tab=stars)    |
 | shiyanhui      | libcsp (1.3k★), dht (2.8k★), hero (1.6k★); hardcore C/Go/Python developer  | ![](./images/shiyanhui_star.png)                 | [View stargazer proof](https://github.com/shiyanhui?tab=stars)   |
 | davidkimai     | Context-Engineering (2.8k★), Recursive Labs, AGI/context research          | ![](./images/davidkimai_star.png)                | [View stargazer proof](https://github.com/davidkimai?tab=stars)  |
