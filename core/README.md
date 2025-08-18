@@ -31,6 +31,8 @@
 
 </details>
 
+[⬇️Downloads](#downloads) | [👀 Eye-Visible Reasoning Benchmark](#eye-benchmark) | [🧬Eight-model evidence (A/B/C protocol)](#eight-model) | [💰 Try the 20 Profit Prompts](#profit-prompts-pack) 
+
 ---
 
 ## 🚀 WFGY 2.0 Headline Uplift (this release)
@@ -43,8 +45,6 @@
 - **Self-Recovery / CRR:** **1.00** on this batch; historical median **0.87**
 
 \* Historical **3–5×** stability uses λ-consistency across seeds; 1.8× uses the stable-node horizon.
-
-[⬇️Downloads](#downloads) | [💰 Try the 20 Profit Prompts](#profit-prompts-pack) | [Eye-Visible Reasoning Benchmark](#eye-benchmark) | [🧬Eight-model evidence (A/B/C protocol)](#eight-model) 
 
 ---
 
