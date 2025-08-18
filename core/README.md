@@ -84,7 +84,6 @@ That’s it — no plugins, no installs, pure text.
 > Want to reproduce the numeric test yourself? Use the **A/B/C prompt** (copy-to-run) at the end of this section.
 
 <a id="eye-benchmark"></a>
-
 ## 👀 Eye-Visible Reasoning Benchmark (FIVE)
 
 > Did you know that when reasoning improves, **text-to-image results become more stable and coherent**?  
@@ -154,7 +153,6 @@ Do not skip or merge images.
 ---
 
 <a id="eight-model"></a>
-
 ## 🧬 Eight-model evidence (A/B/C protocol)   <!-- per your request: NOT collapsed -->
 
 *Same task set across modes. The only change is adding the OneLine math file.*
@@ -208,7 +206,6 @@ Run A/B/C now on the five domains with short non-trivial tasks you choose. Then 
 ---
 
 <a id="downloads"></a>
-
 ## ⬇️ Downloads  <!-- visible; checksum guide tucked inside details -->
 
 | File name & description                                                                                                                                    | Length / Size              | Direct Download Link                               | Verify (MD5 / SHA1 / SHA256)                                                                                                                                         | Notes                                                                              |
@@ -301,7 +298,6 @@ Run 3 seeds and average.
 ---
 
 <a id="profit-prompts-pack"></a>
-
 # 💰 Profit Prompts Pack (WFGY 2.0)
 
 > Copy → paste into your model. Prompts only, no answers.
