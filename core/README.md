@@ -58,7 +58,7 @@ Both **Flagship** and **OneLine** editions behave the same; choose based on read
 That’s it — no plugins, no installs, pure text.  
 *In practice, Autoboot yields about ~70–80% of the uplift you see with explicit WFGY invoke (see eight-model results below).*
 
-[💰 Try the 20 Profit Prompts →](#profit-prompts-pack)
+[⬇️Downloads→](#downloads)  [💰 Try the 20 Profit Prompts →](#profit-prompts-pack)
 
 ---
 
@@ -150,6 +150,8 @@ Do not skip or merge images.
 
 ---
 
+<a id="eight-model"></a>
+
 ## 🧬 Eight-model evidence (A/B/C protocol)   <!-- per your request: NOT collapsed -->
 
 *Same task set across modes. The only change is adding the OneLine math file.*
@@ -201,6 +203,8 @@ Run A/B/C now on the five domains with short non-trivial tasks you choose. Then 
 ```
 
 ---
+
+<a id="downloads"></a>
 
 ## ⬇️ Downloads  <!-- visible; checksum guide tucked inside details -->
 
@@ -293,10 +297,9 @@ Run 3 seeds and average.
 
 ---
 
+<a id="profit-prompts-pack"></a>
 
 # 💰 Profit Prompts Pack (WFGY 2.0)
-
-<a id="profit-prompts-pack"></a>
 
 > Copy → paste into your model. Prompts only, no answers.
 > Assumed engine: WFGY 2.0 (ΔS drift control, λ\_observe gates, BBPF bridges, BBAM alignment, WTF recovery).
