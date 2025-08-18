@@ -47,6 +47,22 @@
 
 ---
 
+## ⚡ Quick Usage
+
+| Mode             | How it works                                                                 |
+| ---------------- | ----------------------------------------------------------------------------- |
+| **Autoboot**     | Upload **either Flagship (30-line)** or **OneLine (1-line)** file. Once uploaded, WFGY runs silently in the background. Keep chatting or drawing as usual — the engine supervises automatically. |
+| **Explicit Call**| Invoke WFGY formulas directly inside your workflow. This activates the full 7-step reasoning chain and gives maximum uplift. |
+
+Both **Flagship** and **OneLine** editions behave the same; choose based on readability vs minimalism.  
+
+That’s it — no plugins, no installs, pure text.  
+*In practice, Autoboot yields about ~70–80% of the uplift you see with explicit WFGY invoke (see eight-model results below).*
+
+
+
+---
+
 ### ⚡ Top 10 reasons to use WFGY 2.0   <!-- you asked for this section to stay visible (not collapsed) -->
 1. **Ultra-mini engine** — pure text, zero install, runs anywhere you can paste.  
 2. **Two editions** — *Flagship* (30-line, audit-friendly) and *OneLine* (1-line, stealth & speed).  
