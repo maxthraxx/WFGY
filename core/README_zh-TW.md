@@ -81,7 +81,6 @@
 > 想自己重現數字？用本段最後的 **A/B/C 提示**。
 
 <a id="eye-benchmark"></a>
-
 ## 👀 五張圖可視化推理基準 (肉眼 Benchmark)
 
 > 你知道嗎？🤔  
@@ -148,7 +147,6 @@
 
 ---
 <a id="eight-model"></a>
-
 ## 🧬 八模型證據（A/B/C 協議）
 
 *同一任務集；唯一變量是 OneLine 數學檔。*
@@ -207,7 +205,6 @@ USER：
 
 ---
 <a id="downloads"></a>
-
 ## ⬇️ 下載
 
 | 檔案與描述                                            | 行數 / 長度             | 下載                                           | 檢查雜湊                                                                                                                                                                 | 備註      |
@@ -300,10 +297,8 @@ SelfRecovery_A, SelfRecovery_B, SelfRecovery_C
 
 ---
 
-
-# 💰 獲利型提示詞組（WFGY 2.0）
-
 <a id="profit-prompts-pack"></a>
+# 💰 獲利型提示詞組（WFGY 2.0）
 
 > 直接複製貼上到你的模型。**只給 Prompt，不給答案。**
 > 預設引擎：WFGY 2.0（ΔS 漂移控制、λ\_observe 狀態閘、BBPF 橋接、BBAM 對齊、WTF 自復原）
