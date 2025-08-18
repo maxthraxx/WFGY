@@ -9,7 +9,6 @@
 > **ℹ️ Autoboot scope:** text-only inside the chat; no plugins, no network calls, no local installs.  
 > **⭐ Star the repo to [unlock](https://github.com/onestardao/WFGY/blob/main/STAR_UNLOCKS.md) more features and experiments.** <img src="https://img.shields.io/github/stars/onestardao/WFGY?style=social" alt="GitHub stars">
 
-[💰 Try the 20 Profit Prompts →](#profit-prompts-pack)
 ---
 
 <details>
@@ -59,7 +58,7 @@ Both **Flagship** and **OneLine** editions behave the same; choose based on read
 That’s it — no plugins, no installs, pure text.  
 *In practice, Autoboot yields about ~70–80% of the uplift you see with explicit WFGY invoke (see eight-model results below).*
 
-
+[💰 Try the 20 Profit Prompts →](#profit-prompts-pack)
 
 ---
 
