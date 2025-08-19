@@ -23,15 +23,18 @@ Choose your quest by **difficulty**; the 😈 icons show how spicy each tier is.
 ## 🧙‍♂️ “A single line can tame dragons. Ready?”  
 ## 1 · Village Square — 60-Second Quest 🔰 😈
 
-1. **Download** 👉 **[OneLine v2.0](https://raw.githubusercontent.com/onestardao/WFGY/main/core/WFGY_Core_OneLine_v2.0.txt)**  
+1. **Download** 👉 **[WFGY Core OneLine v2.0](https://raw.githubusercontent.com/onestardao/WFGY/main/core/WFGY_Core_OneLine_v2.0.txt)**  
 2. Paste the one line into any chat-LLM (or upload).  
 3. Type **`WFGY`** once.  
 4. Ask anything / generate an image → watch drift drop & reasoning deepen.  
+
 <details><summary>Need help?</summary>
 
-* **Can’t upload?** — pasting the raw text works.  
-* **Want visual proof?** — view the before/after GIF in the main README.  
+> **Can’t upload?** — pasting the raw text works.  
+> **Want visual proof?** — view the before/after GIF in the main README.  
 </details>
+
+👉 More info → [WFGY 2.0 Documentation](https://github.com/onestardao/WFGY/blob/main/core/README.md)
 
 ---
 
@@ -44,8 +47,9 @@ Choose your quest by **difficulty**; the 😈 icons show how spicy each tier is.
 | **Blur Blur Blur** — Geometry T2I | [Demo →](https://github.com/onestardao/WFGY/blob/main/OS/BlurBlurBlur/README.md) | “Draw pure math onto 8 K images without distortion.” |
 | **Blow Blow Blow** — AIGC Game Boy | [Demo →](https://github.com/onestardao/WFGY/blob/main/OS/BlowBlowBlow/README.md) | “Mini RPGs coded by AI, launched right in chat.” |
 
-
 *(Just have fun; theory comes later.)*
+
+👉 More info → [TXT OS — Explore More](https://github.com/onestardao/WFGY/blob/main/OS/README.md)
 
 ---
 
@@ -58,20 +62,34 @@ Choose your quest by **difficulty**; the 😈 icons show how spicy each tier is.
 | **λ_observe** | Trend detector: convergent · divergent · recursive · chaotic. |
 | **Five Gates** | **BBMC → Coupler → BBPF → BBAM → BBCR** — clean, steer, progress, rebalance, revive. |
 | **TXTOS Semantic Tree** | Tracks every node so reasoning is auditable. |
+| **Drunk Transformer** | A 5-formula layer: WRI (Where am I?), WAI (Who am I?), WAY (Who are you?), WDT (Where did you take me?), WTF (What happened?). Stabilizes & recovers reasoning. |
 
 > Scroll through examples; no coding needed yet.
+
+👉 More info → [Semantic Blueprint — Core Functions of the WFGY Engine](https://github.com/onestardao/WFGY/blob/main/SemanticBlueprint/README.md)
 
 ---
 
 ## 🧙‍♂️ “Errors are ingredients; brew your fix.”  
 ## 4 · Alchemist’s Lab — Debug & Heal 🔧 😈😈😈😈
 
-1. Open **[Problem Map 2.0](https://github.com/onestardao/WFGY/blob/main/ProblemMap/rag-architecture-and-recovery.md)**  
-2. Locate the failure code (16 categories).  
-3. Follow the **[Semantic Clinic](https://github.com/onestardao/WFGY/blob/main/ProblemMap/SemanticClinicIndex.md)** recipe.  
-4. Re-run A/B tests; log ΔACC, ΔSR, ΔS.
+### The path: 1.0 → 2.0 → Clinic
 
-*(White coat earned!)*
+| Stage | What it is | When to use | Link |
+|------|-------------|-------------|------|
+| **Problem Map 1.0** | Symptom catalog by failure family, fast triage and naming the bug | First touch, you need a clean label and a quick route | **[Open 1.0](https://github.com/onestardao/WFGY/blob/main/ProblemMap/README.md)** |
+| **Problem Map 2.0** | Architecture and recovery guide, pipeline oriented view with the 7-step WFGY recovery flow | After you have a label, you want a step-by-step repair plan | **[Open 2.0](https://github.com/onestardao/WFGY/blob/main/ProblemMap/rag-architecture-and-recovery.md)** |
+| **Semantic Clinic** | Deep dives, exact fixes with runnable recipes and edge-case notes | When the case is tricky or mixed class, you need precise procedures | **[Open Clinic](https://github.com/onestardao/WFGY/blob/main/ProblemMap/SemanticClinicIndex.md)** |
+
+### How to run the lab
+
+1) Start at **Problem Map 1.0**. Read the quick access, match your symptom, pick the failure code.  
+2) Jump to **Problem Map 2.0** with that code. Walk the recovery pipeline step by step, apply the guardrails and instruments.  
+3) If the issue persists or is multi-factor, enter **Semantic Clinic**. Choose the matching clinic page and follow the recipe.  
+4) Re-run A/B tests. Log **ΔACC**, **ΔSR**, **ΔS** and write one sentence on what changed and why.
+
+*(White coat earned.)*
+
 
 ---
 
@@ -80,7 +98,9 @@ Choose your quest by **difficulty**; the 😈 icons show how spicy each tier is.
 
 * Clone **[TXTOS](https://github.com/onestardao/WFGY/blob/main/OS/README.md)**.  
 * Swap semantic layers, tweak `alpha_blend`, `phi_delta`, add custom gates.  
-* PR back — or publish your fork and bend reality.
+* PR back — or publish your fork and bend reality.  
+* Use the TXTOS framework as inspiration to design and launch **your own TXTOS-series creation**, expanding the lineage of tools and worlds.
+
 
 ---
 
