@@ -18,9 +18,12 @@
 
 # ⭐ WFGY Star Unlock Roadmap
 
+
+<img width="1536" height="1024" alt="StarRoadMap" src="https://github.com/user-attachments/assets/76775a97-a477-454f-818f-530d445dd9ce" />
+
 _Type legend: **Theory** (concepts, specs, PDFs) · **Application** (engines, OS modules, tools) · **Teaching** (maps, tutorials, clinics)_
 
-_Last updated: Aug 15, 2025_
+_Last updated: Aug 19, 2025_
 
 ---
 
