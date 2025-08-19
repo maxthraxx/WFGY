@@ -44,8 +44,9 @@ Their support is a public signal — transparent, verifiable, and forever record
 | **4350pChris** | slack-vuevisualizer (99★), vike-vue contributor · Full stack dev (DE) | ![](./images/4350pChris_star.png) | [proof](https://github.com/4350pChris?tab=stars) |
 | **marcos930807** | awesomeDialogs (342★) · Flutter/mobile dev (Miami) | ![](./images/marcos930807_star.png) | [proof](https://github.com/marcos930807?tab=stars) |
 | **mpontus** | react-modal-hook (255★), webpack-react (56★) · TS/JS OSS dev | ![](./images/mpontus_star.png) | [proof](https://github.com/mpontus?tab=stars) |
-| **mattcurf** | ollama-intel-gpu (253★) · AI infra/devops | ![](./images/mattcurf_star.png) | [proof](https://github.com/mattcurf?tab=stars) |
-| **neoneye** | PlanExe (226★), ARC-interactive (28★) · Symbolic/logic AI researcher | ![](./images/neoneye_star.png) | [proof](https://github.com/neoneye?tab=stars) |
+| **mattcurf** | ollama-intel-gpu (253★) · AI infra/devops | ![](./images/Mattcurf_star.png) | [proof](https://github.com/mattcurf?tab=stars) |
+| **Duanyll** | CANConv (61★), Standard TLE Library (10★) · Embedded/C++/Qt dev (China) | ![](./images/Duanyll_star.png) | [proof](https://github.com/Duanyll?tab=stars) |
+| **neoneye** | PlanExe (226★), ARC-interactive (28★) · Symbolic/logic AI researcher | ![](./images/Neoneye_star.png) | [proof](https://github.com/neoneye?tab=stars) |
 | **sogrey** | Android-Kotlin-Drak-UE tools · High GitHub activity | ![](./images/sogrey_star.png) | [proof](https://github.com/Sogrey?tab=stars) |
 | **schnoog** | Joystick_ESP32S2 (77★) · Chemistry scientist, Arduino/C++ hobbyist | ![](./images/schnoog_star.png) | [proof](https://github.com/schnoog?tab=stars) |
 | **jakevossen5** | Apple visionOS UI engineer, ex-Amazon/TI | ![](./images/jakevossen5_star.png) | [proof](https://github.com/jakevossen5?tab=stars) |
