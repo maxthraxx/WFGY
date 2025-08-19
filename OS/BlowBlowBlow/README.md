@@ -56,7 +56,7 @@ except this time, the magic is semantic instead of static electricity.
 
 > 💥 Want to see demo images?  
 > Too bad — **we haven’t built them yet.**  
-> Go play [Blah Blah Blah](#) or [Blur Blur Blur](#) while you wait.
+> Go play [Blah Blah Blah](https://github.com/onestardao/WFGY/blob/main/OS/BlahBlahBlah/README.md) or [Blur Blur Blur](https://github.com/onestardao/WFGY/blob/main/OS/BlurBlurBlur/README.md) while you wait.
 
 ---
 
