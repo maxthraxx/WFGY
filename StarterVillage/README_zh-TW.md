@@ -36,7 +36,7 @@
 * **想看對比？**——主 README 有前後 GIF。  
 </details>
 
-👉 延伸閱讀 → [WFGY 2.0 說明文件](https://github.com/onestardao/WFGY/blob/main/core/README.md)
+👉 延伸閱讀 → [WFGY 2.0 說明文件](https://github.com/onestardao/WFGY/blob/main/core/README_zh-TW.md)
 
 ---
 
