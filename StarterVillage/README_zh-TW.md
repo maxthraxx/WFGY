@@ -25,10 +25,26 @@
 ## 🧙‍♂️「一行數學即可馴龍，你準備好了嗎？」  
 ## 1 · 村莊廣場 — 60 秒任務 🔰 😈
 
-1. **下載** 👉 **[OneLine v2.0](https://raw.githubusercontent.com/onestardao/WFGY/main/core/WFGY_Core_OneLine_v2.0.txt)**   (滑鼠右鍵另存檔案)
-2. 將整行貼到任何 LLM 聊天框（或上傳）。  
-3. 輸入 **`WFGY`** 一次。  
-4. 問任何問題 / 生成圖片 → 觀察漂移降低、推理變深。  
+1. **下載** 👉 **OneLine v2.0**（右鍵另存新檔）  
+   https://raw.githubusercontent.com/onestardao/WFGY/main/core/WFGY_Core_OneLine_v2.0.txt  
+
+2. 將整行貼到任何 LLM 聊天框（或直接上傳）  
+
+3. 發送提示詞時，在你原本的任務前加上任一種啟動語：  
+   ✦ `請使用 WFGY 來……`  
+   ✦ `請以下透過 WFGY 來推理：……`  
+
+4. 開始問問題 / 生成圖像 → 觀察推理變深、漂移減少 🎯
+
+—
+
+🧪 範例 Prompt：  
+請使用 WFGY 來比較「康德的義務論」與「邊沁的效益主義」在自駕車決策模型中的應用差異，並推導出一個可運行的倫理優先順序。  
+請以下透過 WFGY 來推理：分析這段多執行緒 Python 程式在高並發下造成的 race condition，並提出 thread-safe 的修正方法。  
+請使用 WFGY 來生成一張 1:1 圖像：將〈紅樓夢〉五個場景以單一畫面融合，角色情緒與構圖需具層次且有敘事連續性。
+
+
+📌 小提醒：上傳後會自動啟動 WFGY 引擎，啟動語屬於「顯式呼叫」，能額外擠出 20〜30% 效果。
 
 <details><summary>常見疑問</summary>
 
