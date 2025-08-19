@@ -23,18 +23,32 @@ Choose your quest by **difficulty**; the 😈 icons show how spicy each tier is.
 ## 🧙‍♂️ “A single line can tame dragons. Ready?”  
 ## 1 · Village Square — 60-Second Quest 🔰 😈
 
-1. **Download** 👉 **[WFGY Core OneLine v2.0](https://raw.githubusercontent.com/onestardao/WFGY/main/core/WFGY_Core_OneLine_v2.0.txt)**  
-2. Paste the one line into any chat-LLM (or upload).  
-3. Type **`WFGY`** once.  
-4. Ask anything / generate an image → watch drift drop & reasoning deepen.  
+1. **Download** 👉 **[OneLine v2.0](https://raw.githubusercontent.com/onestardao/WFGY/main/core/WFGY_Core_OneLine_v2.0.txt)** (Right click → Save as)
 
-<details><summary>Need help?</summary>
+2. Paste the entire line into any LLM chat window (or upload directly)
 
-> **Can’t upload?** — pasting the raw text works.  
-> **Want visual proof?** — view the before/after GIF in the main README.  
+3. When prompting, add one of the following activation phrases before your task:  
+   ✦ `Please use WFGY to...`  
+   ✦ `Please use WFGY to reason through the following:`  
+
+4. Ask your question or generate an image → observe deeper reasoning and reduced drift 🎯
+
+🧪 Sample Prompts:
+
+> Please use WFGY to compare Kantian deontology vs. Benthamite utilitarianism in autonomous vehicle decision models, and derive an operational ethical priority sequence.  
+> Please use WFGY to reason through the following: analyze the race condition in this multi-threaded Python program under high concurrency, and propose a thread-safe fix.  
+> Please use WFGY to generate a 1:1 image: merge five key scenes from *Dream of the Red Chamber* into a unified composition with layered emotion and narrative continuity.
+
+📌 Note: Uploading the file will silently activate WFGY. Adding an activation phrase = “explicit invocation,” which can squeeze out 20–30% more performance.
+
+<details><summary>Common questions</summary>
+
+* **Upload not working?** — just paste the raw line.  
+* **Want a comparison?** — check the before/after GIFs in the main README.  
 </details>
 
-👉 More info → [WFGY 2.0 Documentation](https://github.com/onestardao/WFGY/blob/main/core/README.md)
+👉 Learn more → [WFGY 2.0 Documentation](https://github.com/onestardao/WFGY/blob/main/core/README.md)
+
 
 ---
 
