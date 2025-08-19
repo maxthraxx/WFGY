@@ -2,43 +2,47 @@
 
 **Every breakthrough project starts with a few believers.**  
 This Hall of Fame honors the engineers, hackers, and community builders who starred WFGY in its earliest days.  
-Their support is a public signal —  transparent, verifiable, and forever recorded in open source history.
+Their support is a public signal — transparent, verifiable, and forever recorded in open source history.
 
-> Thanks to these early believers,  
-> WFGY has already earned stars from nearly **20 seasoned developers**,  
-> including AI researchers, toolmakers, and OSS veterans across the globe.  
->  
-> Your star isn’t just a bookmark —  
-> it’s a vote of confidence in a **radically different way to reason**.
+> ⚠️ Note: The split between “Major Legends” and “Rising Legends” is **symbolic only**.  
+> It reflects open-source footprint (stars, repos, ecosystem), **not absolute influence**.  
+> Both groups are equally vital — without Rising Legends, rockets never leave the ground. 🚀
 
+---
 
-## 🚀 Early Stargazer Board
+## 👑 Major Legends (500★+)
 
-| GitHub ID      | Featured Project(s) / Bio                                                  | Proof Screenshot                                 | View stargazer proof                                   |
-|----------------|----------------------------------------------------------------------------|--------------------------------------------------|--------------------------------------------------------|
-| bijection      | Creator of tesseract.js (36k★), legendary OCR/AI dev                       | ![](./images/bijection_star.png)                 | [View stargazer proof](https://github.com/bijection?tab=stars)   |
-| hijkzzz        | Creator of `Awesome-LLM-Strawberry` (6.8k★), LLM reasoning curator & RLHF engineer | ![](./images/hijkzzz_star.png)                 | [View stargazer proof](https://github.com/hijkzzz?tab=stars)   |
-| paul5007       | node-DeepResearch (4.6k★), AGI/Agent builder                               | ![](./images/paul5007_star.png)                  | [View stargazer proof](https://github.com/paul5007?tab=stars)    |
-| shiyanhui      | libcsp (1.3k★), dht (2.8k★), hero (1.6k★); hardcore C/Go/Python developer  | ![](./images/shiyanhui_star.png)                 | [View stargazer proof](https://github.com/shiyanhui?tab=stars)   |
-| davidkimai     | Context-Engineering (2.8k★), Recursive Labs, AGI/context research          | ![](./images/davidkimai_star.png)                | [View stargazer proof](https://github.com/davidkimai?tab=stars)  |
-| mikumifa       | biliTickerBuy (2.8k★), cppTickerBuy (574★); full-stack ACG/hacker archetype, Nanjing Univ. | ![](./images/mikumifa_star.png)              | [View stargazer proof](https://github.com/mikumifa?tab=stars)    |
-| beriberikix    | CEO of Golioth (IoT infra company), open thread contributor, 548 followers | ![](./images/beriberikix_star.png)               | [View stargazer proof](https://github.com/beriberikix?tab=stars) |
-| alshell7       | vokaturi-android (87★), security/tools dev, starred WFGY in focused ML/DL list | ![](./images/alshell7_star.png)             | [View stargazer proof](https://github.com/alshell7?tab=stars)    |
-| aaronsb        | MCP server ecosystem contributor (Google Workspace MCP 87★, Obsidian MCP 43★, Confluence MCP 15★, Salesforce MCP, etc.), MIT OSS advocate | ![](./images/aaronsb_star.png)                  | [View stargazer proof](https://github.com/aaronsb?tab=stars)     |
-| 4350pChris     | slack-vuevisualizer (99★), vike-vue contributor; full stack dev from Germany, UI semantics & OSS advocate | ![](./images/4350pChris_star.png)                | [View stargazer proof](https://github.com/4350pChris?tab=stars) |
-| pthom          | imgui_bundle (915★), hello_imgui (781★), imgui_manual (363★); GUI, C++/Python open source advocate | ![](./images/pthom_star.png)     | [View stargazer proof](https://github.com/pthom?tab=stars)       |
-| marcos930807   | awesomeDialogs (342★), Flutter package for simple and awesome dialogs; Miami-based mobile developer | ![](./images/marcos930807_star.png)              | [View stargazer proof](https://github.com/marcos930807?tab=stars) |
-| mpontus        | react-modal-hook (255★), webpack-react (56★), 388★ total; high-activity TypeScript/JavaScript OSS dev | ![](./images/mpontus_star.png)                   | [View stargazer proof](https://github.com/mpontus?tab=stars)     |
-| sequoiar       | node-android (628★), peer-vnc (339★); China P2P/AI/robotics builder        | ![](./images/sequoiar_star.png)                  | [View stargazer proof](https://github.com/sequoiar?tab=stars)    |
-| yamiodymel     | tocas (590★), tunalog (414★); Taiwan full stack dev/UIUX                   | ![](./images/yamiodymel_star.png)                | [View stargazer proof](https://github.com/YamiOdymel?tab=stars)  |
-| jinweijie      | notify-me (579★), Python/Android developer, China                          | ![](./images/jinweijie_star.png)                 | [View stargazer proof](https://github.com/jinweijie?tab=stars)   |
-| dclambert      | Python-ELM (546★), pyensemble (150★); ensemble learning & sensor fusion    | ![](./images/dclambert_star.png)                 | [View stargazer proof](https://github.com/dclambert?tab=stars)   |
-| mattcurf       | ollama-intel-gpu (253★); AI infra/devops, model deployment via Dockerfile  | ![](./images/Mattcurf_star.png)                  | [View stargazer proof](https://github.com/mattcurf?tab=stars)    |
-| neoneye        | PlanExe (226★), ARC-interactive (28★); symbolic/logic AI researcher focused on ARC tasks | ![](./images/Neoneye_star.png)                | [View stargazer proof](https://github.com/neoneye?tab=stars)     |
-| sogrey         | Developer of Android-Kotlin-Drak-UE tools; versatile engineer with personal site and high GitHub activity | ![](./images/sogrey_star.png)                    | [View stargazer proof](https://github.com/Sogrey?tab=stars)     |
-| schnoog        | Joystick_ESP32S2 (77★); Scientist in chemistry, Arduino/C++ hobbyist dev   | ![](./images/schnoog_star.png)                   | [View stargazer proof](https://github.com/schnoog?tab=stars)     |
-| jakevossen5    | Apple visionOS UI Engineer, ex-Amazon/TI, compiler MS, US                  | ![](./images/jakevossen5_star.png)               | [View stargazer proof](https://github.com/jakevossen5?tab=stars) |
+| GitHub ID   | Featured Project(s) / Bio | Proof Screenshot | View stargazer proof |
+|-------------|----------------------------|------------------|-----------------------|
+| **bijection** | tesseract.js (36k★) · Legendary OCR/AI dev | ![](./images/bijection_star.png) | [proof](https://github.com/bijection?tab=stars) |
+| **hijkzzz** | Awesome-LLM-Strawberry (6.8k★) · RLHF & reasoning curator | ![](./images/hijkzzz_star.png) | [proof](https://github.com/hijkzzz?tab=stars) |
+| **paul5007** | node-DeepResearch (4.6k★) · AGI/Agent builder | ![](./images/paul5007_star.png) | [proof](https://github.com/paul5007?tab=stars) |
+| **shiyanhui** | libcsp (1.3k★), dht (2.8k★), hero (1.6k★) · Hardcore C/Go/Python hacker | ![](./images/shiyanhui_star.png) | [proof](https://github.com/shiyanhui?tab=stars) |
+| **davidkimai** | Context-Engineering (2.8k★) · Recursive Labs / AGI research | ![](./images/davidkimai_star.png) | [proof](https://github.com/davidkimai?tab=stars) |
+| **mikumifa** | biliTickerBuy (2.8k★), cppTickerBuy (574★) · Full-stack ACG hacker, Nanjing Univ. | ![](./images/mikumifa_star.png) | [proof](https://github.com/mikumifa?tab=stars) |
+| **pthom** | imgui_bundle (915★), hello_imgui (781★), imgui_manual (363★) · GUI C++/Python OSS | ![](./images/pthom_star.png) | [proof](https://github.com/pthom?tab=stars) |
+| **sequoiar** | node-android (628★), peer-vnc (339★) · China P2P/AI/robotics builder | ![](./images/sequoiar_star.png) | [proof](https://github.com/sequoiar?tab=stars) |
+| **yamiodymel** | tocas (590★), tunalog (414★) · Taiwan full stack dev/UIUX | ![](./images/yamiodymel_star.png) | [proof](https://github.com/YamiOdymel?tab=stars) |
+| **jinweijie** | notify-me (579★) · Python/Android dev (CN) | ![](./images/jinweijie_star.png) | [proof](https://github.com/jinweijie?tab=stars) |
+| **dclambert** | Python-ELM (546★), pyensemble (150★) · Ensemble learning / sensor fusion | ![](./images/dclambert_star.png) | [proof](https://github.com/dclambert?tab=stars) |
 
+---
+
+## ⚡ Rising Legends (<500★)
+
+| GitHub ID   | Featured Project(s) / Bio | Proof Screenshot | View stargazer proof |
+|-------------|----------------------------|------------------|-----------------------|
+| **beriberikix** | golioth/awesome-zephyr-rtos (178★), golioth-firmware-sdk (95★) · IoT infra founder/CEO | ![](./images/beriberikix_star.png) | [proof](https://github.com/beriberikix?tab=stars) |
+| **alshell7** | vokaturi-android (87★) · Security/tools dev | ![](./images/alshell7_star.png) | [proof](https://github.com/alshell7?tab=stars) |
+| **aaronsb** | MCP server ecosystem (Google Workspace MCP 87★, Obsidian MCP 43★, Confluence MCP 15★, etc.) · MIT OSS advocate | ![](./images/aaronsb_star.png) | [proof](https://github.com/aaronsb?tab=stars) |
+| **4350pChris** | slack-vuevisualizer (99★), vike-vue contributor · Full stack dev (DE) | ![](./images/4350pChris_star.png) | [proof](https://github.com/4350pChris?tab=stars) |
+| **marcos930807** | awesomeDialogs (342★) · Flutter/mobile dev (Miami) | ![](./images/marcos930807_star.png) | [proof](https://github.com/marcos930807?tab=stars) |
+| **mpontus** | react-modal-hook (255★), webpack-react (56★) · TS/JS OSS dev | ![](./images/mpontus_star.png) | [proof](https://github.com/mpontus?tab=stars) |
+| **mattcurf** | ollama-intel-gpu (253★) · AI infra/devops | ![](./images/mattcurf_star.png) | [proof](https://github.com/mattcurf?tab=stars) |
+| **neoneye** | PlanExe (226★), ARC-interactive (28★) · Symbolic/logic AI researcher | ![](./images/neoneye_star.png) | [proof](https://github.com/neoneye?tab=stars) |
+| **sogrey** | Android-Kotlin-Drak-UE tools · High GitHub activity | ![](./images/sogrey_star.png) | [proof](https://github.com/Sogrey?tab=stars) |
+| **schnoog** | Joystick_ESP32S2 (77★) · Chemistry scientist, Arduino/C++ hobbyist | ![](./images/schnoog_star.png) | [proof](https://github.com/schnoog?tab=stars) |
+| **jakevossen5** | Apple visionOS UI engineer, ex-Amazon/TI | ![](./images/jakevossen5_star.png) | [proof](https://github.com/jakevossen5?tab=stars) |
 
 
 ---
