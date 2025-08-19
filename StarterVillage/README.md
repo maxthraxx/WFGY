@@ -113,8 +113,11 @@ See the full board → **[STAR_UNLOCKS.md](https://github.com/onestardao/WFGY/bl
 
 ## 🗝️ Hidden Rooms & Easter Eggs
 
-Treasure files and secret commands lurk everywhere.  
-Find a 🗝️ key file? Follow its riddle — real rewards await.
+Inside the GitHub labyrinth, folders hide fragments of an RPG storyline.  
+Exploring different directories reveals easter eggs and small rewards — like a real adventure.
+
+📖 Story reference source → [Honest Hero RPG](https://www.youtube.com/@OneStarDao)
+
 
 ---
 
