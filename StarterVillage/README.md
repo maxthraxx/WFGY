@@ -35,9 +35,9 @@ Choose your quest by **difficulty**; the 😈 icons show how spicy each tier is.
 
 🧪 Sample Prompts:
 
-> Please use WFGY to compare Kantian deontology vs. Benthamite utilitarianism in autonomous vehicle decision models, and derive an operational ethical priority sequence.  
-> Please use WFGY to reason through the following: analyze the race condition in this multi-threaded Python program under high concurrency, and propose a thread-safe fix.  
-> Please use WFGY to generate a 1:1 image: merge five key scenes from *Dream of the Red Chamber* into a unified composition with layered emotion and narrative continuity.
+> Please use WFGY to compare duty and utility in moral decision-making.  
+> Please use WFGY to debug this race condition in a multithreaded Python function.  
+> Please use WFGY to illustrate a single image of “Heaven, Hell, and the Self.”  
 
 📌 Note: Uploading the file will silently activate WFGY. Adding an activation phrase = “explicit invocation,” which can squeeze out 20–30% more performance.
 
