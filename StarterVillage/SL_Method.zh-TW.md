@@ -1,6 +1,7 @@
 # SL 大法 — Share = Save，Paste = Load
-
 概念很單純。按下 **Share** 會把當前對話狀態「凍結」。之後把連結貼回來，就能**完整還原那個已調教好的人格**。不需要重訓，也不需要重置，沒有暖機時間。
+
+<img width="1536" height="1024" alt="SL" src="https://github.com/user-attachments/assets/92cfcf4c-53a6-41bc-9d5a-5fa4f0710d23" />
 
 ## 30 秒快速上手
 
