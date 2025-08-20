@@ -1,6 +1,7 @@
 # SL Method — Share to Save, Paste to Load
-
 The idea is simple. Press **Share** and you freeze the session state. Paste the link later and you **reload the exact tuned persona**. No retraining, no reset, no drift.
+
+<img width="1536" height="1024" alt="SL" src="https://github.com/user-attachments/assets/92cfcf4c-53a6-41bc-9d5a-5fa4f0710d23" />
 
 ## Quickstart in 30 seconds
 
