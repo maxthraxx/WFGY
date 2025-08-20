@@ -1,191 +1,198 @@
-# SL Method: Share to Save, Paste to Load
+# SL Method — Share to Save, Paste to Load
 
-**TL;DR**
-SL treats the chat “Share” link as a state snapshot. Save your best behavior once, then load it later by pasting the link. No retraining, no reset, reliable return to a verified state. Pairs extremely well with WFGY for idempotent boots and non-regression.
+The idea is simple. Press **Share** and you freeze the session state. Paste the link later and you **reload the exact tuned persona**. No retraining, no reset, no drift.
 
----
+## Quickstart in 30 seconds
 
-## 1) What SL really is
+1) Tune the chat until it behaves right.  
+2) Hit **Share**, copy the link.  
+3) Next time, paste the link to boot that persona instantly.  
+4) Keep multiple links, each one is a distinct “save slot”.
 
-* A practical snapshot discipline for chat systems.
-* You freeze a working state that already behaves the way you want.
-* The link acts like an RPG save slot. Pasting the link restores that exact state on demand.
-* This bypasses day-to-day drift, warmup rituals, and “please behave like...” boilerplate.
-
-**Mental model**: WFGY shapes reasoning, SL preserves the shaped state. One builds, the other seals.
+> Works on: ChatGPT, Gemini, Perplexity, Grok, Claude  
+> Not true snapshots on: Mistral, Kimi
 
 ---
 
-## 2) Where SL shines (scenarios)
+## Who should use this
 
-1. **Persona cloning for multi tracks**
-   Research persona, reviewer persona, debugger persona. One link per persona, jump between them without warmup.
-2. **A/B reproducibility**
-   Keep “before” and “after” states. Paste to load A, run task. Paste to load B, run the same task. Compare deltas cleanly.
-3. **High-stakes demos**
-   Freeze a known good state before a live demo. If a session degrades, reload in two seconds.
-4. **Agent pipelines**
-   Stage 1 scoper, Stage 2 planner, Stage 3 implementer, Stage 4 auditor. Each stage has an SL link. You can hand off by pasting the next link.
-5. **RAG triage clinic**
-   After you stabilize retrieval prompts and guardrails, snapshot the state. Future debugging starts from a known safe baseline.
-6. **Team handoff**
-   Share the link with a teammate so they can reproduce your environment without instructions or training walls of text.
-7. **Curriculum checkpoints**
-   For long learning paths. Save at “Milestone 1 reasoning”, “Milestone 2 symbolics”, “Milestone 3 safety”.
-8. **Disaster recovery**
-   When behavior collapses or drifts, load the last stable SL to continue the session instead of starting over.
+- Researchers and engineers who need repeatable states for A/B tests  
+- RAG, OCR, and agents folks who fight pipeline drift  
+- PMs, growth, support, educators, legal, finance, SRE, security  
+- Artists, T2I users, game masters, storytellers  
+- Anyone who wants one-click reproducibility without infra changes
 
 ---
 
-## 3) Compatibility notes
+## 20 high-value scenarios with mini-recipes
 
-* Works as true snapshots on: ChatGPT, Gemini, Perplexity, Grok, Claude.
-* Often not true snapshots on: Mistral, Kimi. Their “share” may only dump text, not state.
-* Behavior can change if the provider upgrades the base model. Use “snapshot hygiene” below to reduce risk.
+Each item shows goal, how to snapshot, how to reuse, plus a small tip.
 
----
+1) **RAG Incident Responder**  
+Goal: Recover a failing retrieval stack without redeploy.  
+Snapshot: tune a “RAG doctor” session with your error taxonomy and guardrails. Share.  
+Reuse: paste link whenever a ticket arrives, drop the logs, follow the triage script.  
+Tip: keep separate links for “indexing faults”, “vector drift”, “routing bugs”.
 
-## 4) Minimal workflow
+2) **OCR Clinic for messy PDFs**  
+Goal: Stable diagnosis of layout faults and language mix issues.  
+Snapshot: persona with your OCR heuristics and page taxonomy.  
+Reuse: paste, feed 5 sample pages, get consistent checklists.  
+Tip: store a second link for low-resource CJK edge cases.
 
-1. Tune to a state you like.
-2. Click Share, copy the link.
-3. Store the link in your private notes.
-4. When you want that exact state, paste the link into a new tab or window.
+3) **Prompt-Injection Lab**  
+Goal: Red-team a toolformer safely.  
+Snapshot: one link for attacker patterns, one link for defender rules.  
+Reuse: run head-to-head by pasting both links in parallel windows.  
+Tip: version your attack link by wave numbers, keep a changelog inline.
 
-That is all you need for basic use.
+4) **Long-form Writer With Revision Memory**  
+Goal: Maintain tone and structure across chapters.  
+Snapshot: persona with voice, outline, citation style.  
+Reuse: paste for each new chapter start.  
+Tip: keep a second link frozen at “line-edit mode” for late passes.
 
----
+5) **Grant or Research Proposal Engine**  
+Goal: Generate domain-correct sections with reviewer POV baked in.  
+Snapshot: persona trained on the agency’s rubrics.  
+Reuse: paste, then feed project notes per section.  
+Tip: one link per funder, plus a general “boilerplate assembler”.
 
-## 5) Snapshot hygiene (do this and SL stays useful for months)
+6) **Peer-Review Assistant**  
+Goal: Consistent critique with ethics and methods checklists.  
+Snapshot: persona with review rubric and disallowed fallacies.  
+Reuse: paste for each paper, batch comments.  
+Tip: keep a “gentle tone” variant and a “hard review” variant.
 
-* **Version your slots**
-  Naming template: `SL_<role or task>_<yyyymmdd>_v<rev>`
-  Example: `SL_editorial_policy_20250820_v2`
-* **One purpose per slot**
-  Do not mix “math-heavy planner” with “narrative stylist”. Make separate saves.
-* **Record the boot recipe**
-  In the note next to the link, write the one line you used and the activation phrase. This makes the state auditable.
-* **Protect secrets**
-  Never publish SL links that carry sensitive context. Assume the link restores everything in scope.
-* **Expiry and rotation**
-  If the provider pushes a major model update, re-verify the slot. If drift appears, rebuild the state and save a new link.
+7) **Codebase Librarian**  
+Goal: Navigable mental map of a repo without RTFM every time.  
+Snapshot: persona with repo layout, naming rules, coding standards.  
+Reuse: paste, then query by feature or module.  
+Tip: make a second link for release-note drafting.
 
----
+8) **SQL Fix-and-Explain**  
+Goal: Repair queries and teach reasons.  
+Snapshot: persona that always shows plan, cost, indexes.  
+Reuse: paste, drop the failing query.  
+Tip: add “no hallucinated columns” rule to the frozen prompt.
 
-## 6) Pairing with WFGY (best practice)
+9) **Security Red Team**  
+Goal: Enumerate misconfig and chain of exploits.  
+Snapshot: attacker persona with scope limits.  
+Reuse: paste per target, run checklists.  
+Tip: maintain a defender link with the same taxonomy to produce patches.
 
-**Boot order**
+10) **Marketing A/B Copywriter**  
+Goal: Fast, controlled message exploration.  
+Snapshot: brand voice persona with banned phrases and CTAs.  
+Reuse: paste for each campaign brief, export 3 variants.  
+Tip: keep a “compliance scrub” link for final passes.
 
-1. Load WFGY OneLine or Flagship into the chat.
-2. Run one short warmup task to confirm gates and trend detectors are stable.
-3. When you see the behavior you want, Share. That link is now your WFGY-stabilized slot.
+11) **Product Requirements Gardener**  
+Goal: Turn raw notes into clean PRDs.  
+Snapshot: persona with your PRD skeleton and acceptance criteria.  
+Reuse: paste per feature, attach call notes.  
+Tip: keep “PRD summarizer” link for exec digests.
 
-**Invocation text**
-Keep two prompt starters in your note, they improve reproducibility:
+12) **Customer Support Knowledge Triage**  
+Goal: Normalize bug reports and map to known fixes.  
+Snapshot: persona with failure codes and escalation rules.  
+Reuse: paste, drop the ticket text, get code and next step.  
+Tip: a second link for “macro generator” that writes canned replies.
 
-* “Please use WFGY to...”
-* “Please use WFGY to reason through the following:”
+13) **Video Lecture Summarizer With Taxonomy**  
+Goal: Produce learning notes with outcomes and quiz items.  
+Snapshot: persona with pedagogy style and section headers.  
+Reuse: paste per video transcript.  
+Tip: keep “quiz-only” variant link for batch item generation.
 
-**Why this works**
-WFGY reduces semantic drift and collapse, SL preserves that state. Together you get faster restarts and less variance across days and devices.
+14) **Contract Risk Scanner**  
+Goal: Highlight risk clauses and missing terms.  
+Snapshot: persona with clause library and thresholds.  
+Reuse: paste per document.  
+Tip: separate links for NDA, MSA, DPA to keep rule sets small.
 
----
+15) **Hiring Interview Kit**  
+Goal: Structured interview questions and scorecards by role.  
+Snapshot: persona with leveling rubric.  
+Reuse: paste by role, export one-pager.  
+Tip: maintain a “candidate reply parser” link for post-interview notes.
 
-## 7) Advanced patterns
+16) **Game Master World Builder**  
+Goal: Stable lore and rules across sessions.  
+Snapshot: persona with canon, rulebook, NPC registers.  
+Reuse: paste at session start.  
+Tip: keep a “battle-only” link that hides lore spoilers from players.
 
-1. **Multi-slot ensembles**
-   Keep `SL_plan`, `SL_code`, `SL_review`, `SL_redteam`. For a complex task, hop slots in sequence. This simulates a lightweight multi-agent workflow without infra.
-2. **Cold-start booster**
-   If a new model feels raw, load a “discipline slot” first, do one sanity prompt, then pivot to a task slot. The first slot compresses warmup.
-3. **Cross-model bridges**
-   Keep equivalent slots on two providers. When one provider rate limits or drifts, paste the other link and continue. Use the same naming schema for mirrors.
-4. **Guarded demos**
-   For public talks, create a read-only demo slot with scrubbed context. Keep the live slot private. Switch by pasting the link. Avoid leaking customer or research notes.
-5. **Regression sentry**
-   Once a week, paste your canonical benchmark prompts into the same slot. If accuracy or tone changes past your tolerance, rebuild and resave. Keep the old link archived for forensics.
+17) **Data Annotation Arbiter**  
+Goal: Resolve edge labels consistently.  
+Snapshot: persona with labeling policy and examples.  
+Reuse: paste during adjudication.  
+Tip: keep separate links per dataset family.
 
----
+18) **Localization Pair Clones**  
+Goal: Parallel writers for EN↔JP, EN↔ZH, EN↔ES with exact style.  
+Snapshot: one persona per language pair with tone constraints.  
+Reuse: paste the pair you need, then swap.  
+Tip: lock punctuation and unit rules in the frozen prompt.
 
-## 8) Governance and safety
+19) **SRE Incident Postmortem Drafter**  
+Goal: Clean timeline and action items every time.  
+Snapshot: persona with IM format and 5 why’s.  
+Reuse: paste after an incident.  
+Tip: maintain a “blameless rewrite” link for publication.
 
-* **Confidentiality**
-  Treat SL links as credentials. Store them where you store API keys, not in public issues.
-* **Access control**
-  If you must share, prefer short-lived doc shares inside your org wiki that can be rotated later.
-* **Audit trail**
-  Maintain a small table per slot: `created_at, base_model, WFGY_version, purpose, known_limits, link_owner`.
-* **Incident response**
-  If a slot leaks or drifts badly, mark it revoked in your notes, archive the link, and mint a new one from a clean session.
-
----
-
-## 9) Known pitfalls and fixes
-
-* **Platform “share” is not a real snapshot**
-  Symptom: pasted link does not restore tone or tools. Fix: choose a platform that snapshots state, or rebuild using WFGY then resave.
-* **Model family update changed behavior**
-  Symptom: same link, different answers. Fix: run your weekly sentry prompts. If deviation exceeds tolerance, rebuild a new slot with the same recipe.
-* **Context contamination**
-  Symptom: you pasted the link into a tab that already has a long unrelated conversation and behavior is odd. Fix: always paste into a clean tab or new window.
-* **Leaky secrets**
-  Symptom: a public link included customer data. Fix: never publish raw SL links, and keep a habit of scrubbing before making demo slots.
-
----
-
-## 10) Quick recipes
-
-**A/B reproducibility**
-
-* Keep `SL_baseline_yyyymmdd` and `SL_wfgy_yyyymmdd`.
-* For each test case, paste baseline link, run the case, jot the answer. Paste WFGY link, run the same case, jot the answer.
-* Compare deltas in accuracy, stability, or drift.
-
-**Four-stage pipeline**
-
-* Plan with `SL_plan`.
-* Implement with `SL_code`.
-* Unit check with `SL_review`.
-* Adversarial check with `SL_redteam`.
-* Each stage owns a short checklist in the slot note, so behavior stays ritualized.
-
-**RAG clinic**
-
-* After you finish Problem Map triage and apply the fixes, mint `SL_rag_stable`.
-* Future RAG debugging starts by loading this slot. You avoid re-solving the same hygiene.
-
----
-
-## 11) Minimal checklist before you hit Share
-
-* The behavior you want has actually appeared at least once in the current tab.
-* You ran one small sanity prompt and the answer looked right.
-* You wrote a 1-line note next to the link: purpose, WFGY version, model family.
-* You did not include secrets that must not leave your machine.
-* You can explain to a teammate how to use the link in two sentences.
+20) **Investor Memo Aggregator**  
+Goal: Combine raw notes into a decision memo.  
+Snapshot: persona with thesis template and risk buckets.  
+Reuse: paste for each deal.  
+Tip: a “one-slide summary” link for partner meetings.
 
 ---
 
-## 12) FAQ
+## Power patterns and micro-methods
 
-**Q. Why not just keep a long prompt file instead of SL**
-A. You can, but it does not freeze hidden state and tool wiring. SL reduces variance from hidden knobs you do not control.
-
-**Q. Can I chain SL links inside a single conversation**
-A. Prefer separate tabs. It reduces cross-context contamination.
-
-**Q. Will SL survive model upgrades**
-A. Sometimes. Treat weekly sentry checks as policy, rebuild promptly when drift is detected.
-
-**Q. Is SL only for WFGY**
-A. No, but WFGY increases the value of each save because it stabilizes the state you are saving.
+1) **Twin links**: one “creator” persona, one “editor” persona.  
+2) **A/B link duel**: paste two links side by side for blind tests.  
+3) **Frozen seed**: keep an untouched master link, clone from it.  
+4) **Layered warmup**: small primer message after load to set context.  
+5) **Role islands**: one link per role to prevent cross-contamination.  
+6) **Compliance scrub**: final pass link that only deletes risky output.  
+7) **Shadow sandbox**: use a private link for experiments, never public.  
+8) **Version tags**: add `@v1.2` in the first line of the frozen prompt.  
+9) **Naming convention**: `sl_<team>_<role>_<date8>.txtlink`.  
+10) **Changelog in prompt**: last lines store notable changes.  
+11) **Diff review**: compare outputs from `v1` and `v2` before rollout.  
+12) **Fail-safe default**: add “when unsure, ask three clarifying questions”.  
+13) **Guard-band**: forbid tools, browsing, or code exec if unsafe.  
+14) **Minimal context**: keep the frozen state lean, attach case data at use.  
+15) **Expiry note**: write “rotate in 30 days” in the frozen prompt.
 
 ---
 
-## 13) One-page quickstart you can paste in your notes
+## Team workflow and ops
 
-* Make state good, click Share, copy link.
-* Store as `SL_<task>_<yyyymmdd>_v<n>`.
-* Write one line: “WFGY 2.0 + ChatGPT o4-mini, purpose: planner.”
-* New day, new device, paste link, continue.
-* If drift shows, rebuild and mint a new link, keep the old for forensics.
+- Keep a shared doc of link names, owners, last audit date  
+- Rotate links monthly or after big policy changes  
+- Store sensitive links in a secret manager or private notes  
+- Keep public demo links sanitized  
+- Record which link produced which artifact for audit
+
+---
+
+## Safety checklist
+
+- Do not share links that contain client data  
+- Pin what the persona must never do  
+- Log final outputs with the link id used  
+- Use private windows for sensitive work  
+- When in doubt, rebuild the link from the master seed
+
+---
+
+## Troubleshooting
+
+- Link loads but behavior drifts: apply a one-line warmup message  
+- Platform removed your context: recreate the link, keep the frozen prompt shorter  
+- Coworker sees a different state: they used a different platform model, document it
 
