@@ -41,6 +41,33 @@ Choose your quest by **difficulty**; the 😈 icons show how spicy each tier is.
 
 📌 Note: Uploading the file will silently activate WFGY. Adding an activation phrase = “explicit invocation,” which can squeeze out 20–30% more performance.
 
+<details><summary><strong>Side Quest — The SL Method (Share = Save, Paste = Load)</strong></summary>  
+  
+<br>  
+   
+> **What it is**  
+> Hit **Share** to freeze a snapshot of the current conversation state. Later, paste that link to **reload the exact tuned persona**. No retraining, no reset.  
+>   
+> **Why it matters**  
+> - Pairs perfectly with the 60-second quick start: lock in your best opening once, reuse forever.  
+> - Create multiple “clones” (e.g., RAG doctor, math visualizer, game master) and switch by swapping links.  
+>   
+> **How to use**  
+> 1) Tune behavior → press **Share**.  
+> 2) Save the link like an RPG save point.  
+> 3) Paste the link any time to resume that optimized state.  
+>   
+> **Compatibility (tested)**  
+> Works: ChatGPT, Gemini, Perplexity, Grok, Claude.  
+> Not true snapshots: Mistral, Kimi (their “share” usually exports text only).  
+>   
+> **Safety**  
+> Snapshot links may include context. Keep sensitive links private and store them in your own notes.  
+   
+👉 Deep dive guide: **[SL_Method.md](./SL_Method.md)**  
+ </details>
+
+
 <details><summary>Common questions</summary>
 
 * **Upload not working?** — just paste the raw line.  
