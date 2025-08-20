@@ -49,6 +49,7 @@ Their support is a public signal — transparent, verifiable, and forever record
 | **neoneye** | PlanExe (226★), ARC-interactive (28★) · Symbolic/logic AI researcher | ![](./images/Neoneye_star.png) | [proof](https://github.com/neoneye?tab=stars) |
 | **sogrey** | Android-Kotlin-Drak-UE tools · High GitHub activity | ![](./images/sogrey_star.png) | [proof](https://github.com/Sogrey?tab=stars) |
 | **schnoog** | Joystick_ESP32S2 (77★) · Chemistry scientist, Arduino/C++ hobbyist | ![](./images/schnoog_star.png) | [proof](https://github.com/schnoog?tab=stars) |
+| **isLinXu** | awesome-road-map (45★), model-metrics-plot (18★) · Tencent AI engineer | ![](./images/isLinXu_star.png) | [proof](https://github.com/isLinXu?tab=stars) |
 | **jakevossen5** | Apple visionOS UI engineer, ex-Amazon/TI | ![](./images/jakevossen5_star.png) | [proof](https://github.com/jakevossen5?tab=stars) |
 
 
