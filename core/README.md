@@ -35,7 +35,7 @@
 
 ---
 
-## 🚀 WFGY 2.0 Headline Uplift (this release)
+## 🚀 WFGY 2.0 Headline Uplift (this release)  
 **These are the 2.0 results you should see first — the “big upgrade.”**
 
 - **Semantic Accuracy:** **≈ +40%** (63.8% → 89.4% across 5 domains)  
@@ -45,6 +45,12 @@
 - **Self-Recovery / CRR:** **1.00** on this batch; historical median **0.87**
 
 \* Historical **3–5×** stability uses λ-consistency across seeds; 1.8× uses the stable-node horizon.
+
+---
+
+### 📖 Mathematical Reference  
+WFGY 2.0 (WFGY Core) = [WFGY 1.0 math formulas](https://github.com/onestardao/WFGY/blob/main/SemanticBlueprint/wfgy_formulas.md) + [Drunk Transformer](https://github.com/onestardao/WFGY/blob/main/SemanticBlueprint/drunk_transformer_formulas.md)
+
 
 ---
 
