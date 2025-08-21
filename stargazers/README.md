@@ -21,6 +21,7 @@ Their support is a public signal — transparent, verifiable, and forever record
 | GitHub ID   | Featured Project(s) / Bio | Proof Screenshot | View stargazer proof |
 |-------------|----------------------------|------------------|-----------------------|
 | **bijection** | tesseract.js (36k★) · Legendary OCR/AI dev | ![](./images/bijection_star.png) | [proof](https://github.com/bijection?tab=stars) |
+| **major** | MySQLTuner (9.2k★) · Red Hat engineer · Maintainer of real-world infra tools | ![](./images/major_star.png) | [proof](https://github.com/major?tab=stars) |
 | **hijkzzz** | Awesome-LLM-Strawberry (6.8k★) · RLHF & reasoning curator | ![](./images/hijkzzz_star.png) | [proof](https://github.com/hijkzzz?tab=stars) |
 | **paul5007** | node-DeepResearch (4.6k★) · AGI/Agent builder | ![](./images/paul5007_star.png) | [proof](https://github.com/paul5007?tab=stars) |
 | **shiyanhui** | libcsp (1.3k★), dht (2.8k★), hero (1.6k★) · Hardcore C/Go/Python hacker | ![](./images/shiyanhui_star.png) | [proof](https://github.com/shiyanhui?tab=stars) |
