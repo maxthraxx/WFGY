@@ -32,6 +32,7 @@ Their support is a public signal — transparent, verifiable, and forever record
 | **yamiodymel** | tocas (590★), tunalog (414★) · Taiwan full stack dev/UIUX | ![](./images/yamiodymel_star.png) | [proof](https://github.com/YamiOdymel?tab=stars) |
 | **jinweijie** | notify-me (579★) · Python/Android dev (CN) | ![](./images/jinweijie_star.png) | [proof](https://github.com/jinweijie?tab=stars) |
 | **dclambert** | Python-ELM (546★), pyensemble (150★) · Ensemble learning / sensor fusion | ![](./images/dclambert_star.png) | [proof](https://github.com/dclambert?tab=stars) |
+| **mrjohannchang** | fz.sh (544★), zsh-interactive-cd (326★) · Shell & multi-language OSS dev (Taiwan) | ![](./images/mrjohannchang_star.png) | [proof](https://github.com/mrjohannchang?tab=stars) |
 
 ---
 
@@ -46,6 +47,7 @@ Their support is a public signal — transparent, verifiable, and forever record
 | **marcos930807** | awesomeDialogs (342★) · Flutter/mobile dev (Miami) | ![](./images/marcos930807_star.png) | [proof](https://github.com/marcos930807?tab=stars) |
 | **mpontus** | react-modal-hook (255★), webpack-react (56★) · TS/JS OSS dev | ![](./images/mpontus_star.png) | [proof](https://github.com/mpontus?tab=stars) |
 | **Purus** | launch_review (192★) · Flutter plugin dev, also active in API/GraphQL repos | ![](./images/Purus_star.png) | [proof](https://github.com/Purus?tab=stars) |
+| **vsaravind007** | nodeScratchpad (111★) · Director of Engineering @DiagnaI, co-founder @iostashiot | ![](./images/vsaravind007_star.png) | [proof](https://github.com/vsaravind007?tab=stars) |
 | **mattcurf** | ollama-intel-gpu (253★) · AI infra/devops | ![](./images/Mattcurf_star.png) | [proof](https://github.com/mattcurf?tab=stars) |
 | **Duanyll** | CANConv (61★), Standard TLE Library (10★) · Embedded/C++/Qt dev (China) | ![](./images/Duanyll_star.png) | [proof](https://github.com/Duanyll?tab=stars) |
 | **neoneye** | PlanExe (226★), ARC-interactive (28★) · Symbolic/logic AI researcher | ![](./images/Neoneye_star.png) | [proof](https://github.com/neoneye?tab=stars) |
