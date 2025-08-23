@@ -12,7 +12,7 @@ single place to find every Discussion article. each line links out. this page is
   Discussion → [https://github.com/onestardao/WFGY/discussions/25](https://github.com/onestardao/WFGY/discussions/25)
 
 * **Day 2: OCR noise and phantom tokens** *(No.1, No.11)*
-  Discussion → \[TBD]
+  Discussion → [https://github.com/onestardao/WFGY/discussions/26](https://github.com/onestardao/WFGY/discussions/26)
 
 * **Day 3: Multi-version PDFs cause timeline confusion** *(No.2, No.6)*
   Discussion → \[TBD]
