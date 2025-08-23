@@ -46,7 +46,7 @@
 
 ### 📖 數學參考  
 
-WFGY 2.0 (WFGY Core) = [WFGY 1.0 數學公式](https://github.com/onestardao/WFGY/blob/main/SemanticBlueprint/wfgy_formulas.md) + [Drunk Transformer](https://github.com/onestardao/WFGY/blob/main/SemanticBlueprint/drunk_transformer_formulas.md)
+WFGY 2.0 (WFGY 核心) = [WFGY 1.0 數學公式](https://github.com/onestardao/WFGY/blob/main/SemanticBlueprint/wfgy_formulas.md) + [Drunk Transformer](https://github.com/onestardao/WFGY/blob/main/SemanticBlueprint/drunk_transformer_formulas.md)
 
 
 ---
