@@ -44,6 +44,11 @@
 
 \* 歷史 **3–5×** 穩定度使用 λ-consistency 跨種子；1.8× 為穩定節點視窗。
 
+### 📖 數學參考  
+
+WFGY 2.0 (WFGY Core) = [WFGY 1.0 數學公式](https://github.com/onestardao/WFGY/blob/main/SemanticBlueprint/wfgy_formulas.md) + [Drunk Transformer](https://github.com/onestardao/WFGY/blob/main/SemanticBlueprint/drunk_transformer_formulas.md)
+
+
 ---
 
 ## ⚡ 快速使用方式
