@@ -103,7 +103,7 @@
 | **Without WFGY** | [觀看](https://chatgpt.com/share/68a14974-8e50-8000-9238-56c9d113ce52) | [觀看](https://chatgpt.com/share/68a14a72-aa90-8000-8902-ce346244a5a7) | [觀看](https://chatgpt.com/share/68a14d00-3c0c-8000-8055-9418934ad07a) |
 | **With WFGY**    | [觀看](https://chatgpt.com/share/68a149c6-5780-8000-8021-5d85c97f00ab) | [觀看](https://chatgpt.com/share/68a14ea9-1454-8000-88ac-25f499593fa0) | [觀看](https://chatgpt.com/share/68a14eb9-40c0-8000-9f6a-2743b9115eb8) |
 
-> **為什麼 Sequence A “Before-4” & “Before-5” 幾乎一樣？**  
+> **為什麼 Sequence A “Without WFGY-4” & “Without WFGY-5” 幾乎一樣？**  
 > 無 WFGY 時，當提示要求「多個經典場景」時，基礎模型常 **崩成九宮格拼貼**。  
 > 高機率先驗將畫面切割為相似格子，色調、幾何幾乎一致。  
 > **WFGY** 透過「單一統一畫面」與穩定層次，阻止此崩解。
