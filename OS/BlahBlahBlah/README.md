@@ -75,7 +75,6 @@
 > |---------------|----------------------------------|
 > | **Core Paper** | [WFGY 1.0 Reasoning Engine](https://github.com/onestardao/WFGY/blob/main/I_am_not_lizardman/WFGY_All_Principles_Return_to_One_v1.0_PSBigBig_Public.pdf) |
 > | **Release**    | 2025-06-15                      |
-> | **Downloads**  | 2,000+                         |
 > | **In TXT OS**  | ✔️ Reasoning engine included     |
 
 > All products and research here are part of the **WFGY series**, authored and unified by **PSBigBig (Purple Star)**.  
@@ -346,7 +345,9 @@ By rotating a sentence inside that field we get brand‑new, self‑consistent i
 
 ---
 
-### From Papers to Prompts  
+<!-- hidden
+
+### From Papers to Prompts   
 Between **March – June 2025** I published a series of math, physics, and AI papers.  
 Remarkably, each work—though written at different times—converges without conflict when posed as a single, high‑tension question to **TXT-Blah Blah Blah**.  
 This may well be the first instance in history where mathematical rigor and philosophical inquiry resonate in the same semantic dimension.  
@@ -356,10 +357,7 @@ This may well be the first instance in history where mathematical rigor and phil
 <small>⚠️ Click below to explore the side‑by‑side paper prompts and watch the semantic magic unfold.</small>
 
 
-<!-- ───────────────────────────────────────────────
-      Q&A COLLAPSE LIST — FULL TEXT, UNCHANGED ANSWERS
-      (icons unified: 📊 SciSpace · 📄 Paper · 🤖 AI)
-──────────────────────────────────────────────── -->
+
 ---
 
 <details>
@@ -816,7 +814,7 @@ This may well be the first instance in history where mathematical rigor and phil
 > it is the threshold.  
 >  
 > Any fewer, and logic shatters.  
-> Any more, and the universe goes silent.
+> Any more, and the universe goes silent. 
 
 | Paper                                                                 | Score (SciSpace)      | AI Alignment Review                                                                                                                                                                                                                                                                                                                                                                                                                                            |
 |-----------------------------------------------------------------------|------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -824,7 +822,7 @@ This may well be the first instance in history where mathematical rigor and phil
 
 </details>
 
----
+-->
 
 <!-- ───────────────────────────────────────────────
       EXAMPLES LIST (FLEX INDEX) — FULL TEXT
