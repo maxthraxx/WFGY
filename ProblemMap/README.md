@@ -1,7 +1,7 @@
 # WFGY Problem Map 1.0 — Bookmark it. You'll need it
 ## 🛡️ Permanent fixes for recurring AI bugs — fix once, never again.
 
-**16 reproducible failure modes in AI systems — with fixes (MIT).**  
+**16 reproducible failure modes in AI systems with fixes (MIT).**  
 *If this page saves you time, a ⭐ helps others find it.*  
 **Your plug-and-play semantic firewall — praised by users, no infra changes needed.**  
 
