@@ -42,24 +42,23 @@ Their support is a public signal — transparent, verifiable, and forever record
 
 | GitHub ID   | Featured Project(s) / Bio | Proof Screenshot | View stargazer proof |
 |-------------|----------------------------|------------------|-----------------------|
-| **beriberikix** | golioth/awesome-zephyr-rtos (178★), golioth-firmware-sdk (95★) · IoT infra founder/CEO | ![](./images/beriberikix_star.png) | [proof](https://github.com/beriberikix?tab=stars&q=WFGY) |
-| **alshell7** | vokaturi-android (87★) · Security/tools dev | ![](./images/alshell7_star.png) | [proof](https://github.com/alshell7?tab=stars&q=WFGY) |
-| **aaronsb** | MCP server ecosystem (Google Workspace MCP 87★, Obsidian MCP 43★, Confluence MCP 15★, etc.) · MIT OSS advocate | ![](./images/aaronsb_star.png) | [proof](https://github.com/aaronsb?tab=stars&q=WFGY) |
-| **4350pChris** | slack-vuevisualizer (99★), vike-vue contributor · Full stack dev (DE) | ![](./images/4350pChris_star.png) | [proof](https://github.com/4350pChris?tab=stars&q=WFGY) |
+| **whchien** | ai-trader (227★), funda-scraper (144★) · AI/ML Engineer & Data Scientist in Amsterdam | ![](./images/whchien_star.png) | [proof](https://github.com/whchien?tab=stars&q=WFGY) |
 | **marcos930807** | awesomeDialogs (342★) · Flutter/mobile dev (Miami) | ![](./images/marcos930807_star.png) | [proof](https://github.com/marcos930807?tab=stars&q=WFGY) |
+| **mattcurf** | ollama-intel-gpu (253★) · AI infra/devops | ![](./images/Mattcurf_star.png) | [proof](https://github.com/mattcurf?tab=stars&q=WFGY) |
 | **mpontus** | react-modal-hook (255★), webpack-react (56★) · TS/JS OSS dev | ![](./images/mpontus_star.png) | [proof](https://github.com/mpontus?tab=stars&q=WFGY) |
+| **neoneye** | PlanExe (226★), ARC-interactive (28★) · Symbolic/logic AI researcher | ![](./images/Neoneye_star.png) | [proof](https://github.com/neoneye?tab=stars&q=WFGY) |
 | **Purus** | launch_review (192★) · Flutter plugin dev, also active in API/GraphQL repos | ![](./images/Purus_star.png) | [proof](https://github.com/Purus?tab=stars&q=WFGY) |
 | **vsaravind007** | nodeScratchpad (111★) · Director of Engineering @DiagnaI, co-founder @iostashiot | ![](./images/vsaravind007_star.png) | [proof](https://github.com/vsaravind007?tab=stars&q=WFGY) |
-| **mattcurf** | ollama-intel-gpu (253★) · AI infra/devops | ![](./images/Mattcurf_star.png) | [proof](https://github.com/mattcurf?tab=stars&q=WFGY) |
-| **Duanyll** | CANConv (61★), Standard TLE Library (10★) · Embedded/C++/Qt dev (China) | ![](./images/Duanyll_star.png) | [proof](https://github.com/Duanyll?tab=stars&q=WFGY) |
-| **neoneye** | PlanExe (226★), ARC-interactive (28★) · Symbolic/logic AI researcher | ![](./images/Neoneye_star.png) | [proof](https://github.com/neoneye?tab=stars&q=WFGY) |
+| **4350pChris** | slack-vuevisualizer (99★), vike-vue contributor · Full stack dev (DE) | ![](./images/4350pChris_star.png) | [proof](https://github.com/4350pChris?tab=stars&q=WFGY) |
+| **Yuuzi261** | Tweetcord (97★), FuseFairy/HBR-AxleTool-vue (28★) · Discord bot & Vue developer | ![](./images/Yuuzi261_star.png) | [proof](https://github.com/Yuuzi261?tab=stars&q=WFGY) |
+| **beriberikix** | golioth/awesome-zephyr-rtos (178★), golioth-firmware-sdk (95★) · IoT infra founder/CEO | ![](./images/beriberikix_star.png) | [proof](https://github.com/beriberikix?tab=stars&q=WFGY) |
+| **aaronsb** | MCP server ecosystem (Google Workspace MCP 87★, Obsidian MCP 43★, Confluence MCP 15★, etc.) · MIT OSS advocate | ![](./images/aaronsb_star.png) | [proof](https://github.com/aaronsb?tab=stars&q=WFGY) |
+| **alshell7** | vokaturi-android (87★) · Security/tools dev | ![](./images/alshell7_star.png) | [proof](https://github.com/alshell7?tab=stars&q=WFGY) |
 | **sogrey** | Android-Kotlin-Drak-UE tools · High GitHub activity | ![](./images/sogrey_star.png) | [proof](https://github.com/Sogrey?tab=stars&q=WFGY) |
 | **schnoog** | Joystick_ESP32S2 (77★) · Chemistry scientist, Arduino/C++ hobbyist | ![](./images/schnoog_star.png) | [proof](https://github.com/schnoog?tab=stars&q=WFGY) |
+| **Duanyll** | CANConv (61★), Standard TLE Library (10★) · Embedded/C++/Qt dev (China) | ![](./images/Duanyll_star.png) | [proof](https://github.com/Duanyll?tab=stars&q=WFGY) |
 | **isLinXu** | awesome-road-map (45★), model-metrics-plot (18★) · Tencent AI engineer | ![](./images/isLinXu_star.png) | [proof](https://github.com/isLinXu?tab=stars&q=WFGY) |
-| **whchien** | ai-trader (227★), funda-scraper (144★) · AI/ML Engineer & Data Scientist in Amsterdam | ![](./images/whchien_star.png) | [proof](https://github.com/whchien?tab=stars&q=WFGY) |
-| **Yuuzi261** | Tweetcord (97★), FuseFairy/HBR-AxleTool-vue (28★) · Discord bot & Vue developer | ![](./images/Yuuzi261_star.png) | [proof](https://github.com/Yuuzi261?tab=stars&q=WFGY) |
 | **jakevossen5** | Apple visionOS UI engineer, ex-Amazon/TI | ![](./images/jakevossen5_star.png) | [proof](https://github.com/jakevossen5?tab=stars&q=WFGY) |
-
 
 
 
