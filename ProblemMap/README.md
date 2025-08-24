@@ -1,5 +1,5 @@
-# WFGY Problem Map 1.0 — Bookmark it. You'll need it
-## 🛡️ Permanent fixes for recurring AI bugs — fix once, never again.
+# WFGY Problem Map 1.0 — Bookmark it. You'll need it  
+## 🛡️ Permanent fixes for recurring AI bugs. Fix once, never again.
 
 **16 reproducible failure modes in AI systems with fixes (MIT).**  
 *If this page saves you time, a ⭐ helps others find it.*  
