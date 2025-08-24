@@ -56,9 +56,9 @@ Their support is a public signal — transparent, verifiable, and forever record
 | **sogrey** | Android-Kotlin-Drak-UE tools · High GitHub activity | ![](./images/sogrey_star.png) | [proof](https://github.com/Sogrey?tab=stars&q=WFGY) |
 | **schnoog** | Joystick_ESP32S2 (77★) · Chemistry scientist, Arduino/C++ hobbyist | ![](./images/schnoog_star.png) | [proof](https://github.com/schnoog?tab=stars&q=WFGY) |
 | **isLinXu** | awesome-road-map (45★), model-metrics-plot (18★) · Tencent AI engineer | ![](./images/isLinXu_star.png) | [proof](https://github.com/isLinXu?tab=stars&q=WFGY) |
-| **jakevossen5** | Apple visionOS UI engineer, ex-Amazon/TI | ![](./images/jakevossen5_star.png) | [proof](https://github.com/jakevossen5?tab=stars&q=WFGY) |
 | **whchien** | ai-trader (227★), funda-scraper (144★) · AI/ML Engineer & Data Scientist in Amsterdam | ![](./images/whchien_star.png) | [proof](https://github.com/whchien?tab=stars&q=WFGY) |
 | **Yuuzi261** | Tweetcord (97★), FuseFairy/HBR-AxleTool-vue (28★) · Discord bot & Vue developer | ![](./images/Yuuzi261_star.png) | [proof](https://github.com/Yuuzi261?tab=stars&q=WFGY) |
+| **jakevossen5** | Apple visionOS UI engineer, ex-Amazon/TI | ![](./images/jakevossen5_star.png) | [proof](https://github.com/jakevossen5?tab=stars&q=WFGY) |
 
 
 
