@@ -11,7 +11,9 @@
 > Most people who find this page end up starring it — because WFGY solves real bugs.  
 > **[WFGY 2.0](https://github.com/onestardao/WFGY/blob/main/core/README.md)** is now live — the world’s tiniest reasoning engine (30-line TXT with Drunk Transformer).  
 > Truly appreciate all the support — you made this happen! Read user feedback: [Hero Log](https://github.com/onestardao/WFGY/discussions/10)  
-> ⚡️ **Fixing RAG hallucinations?** This WFGY 2.0 was designed to make LLMs _reason first_ — grab it and see the difference.
+> ⚡️ **Fixing RAG hallucinations?** This WFGY 2.0 was designed to make LLMs _reason first_ — grab it and see the difference.  
+> 🛠️ Next up: launching the **Semantic Surgery Room** and **Global Map of Fixes** (n8n, GHL, Make.com and more). ETA: **Sep 1**
+
 
 ---
 
