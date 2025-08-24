@@ -1,9 +1,10 @@
 # WFGY Problem Map 1.0 — Bookmark it. You'll need it  
 ## 🛡️ Permanent fixes for recurring AI bugs. Fix once, never again.
 
-**16 reproducible failure modes in AI systems with fixes (MIT).**  
-*If this page saves you time, a ⭐ helps others find it.*  
-**Your plug-and-play semantic firewall — praised by users, no infra changes needed.**  
+**16 reproducible failure modes in AI systems, each with a clear fix (MIT).**  
+**A plug-and-play semantic firewall, praised by users, with no infra changes required.**  
+**Built on structural fixes at the semantic layer — solve it once, and it stays solved.**  
+*If this page saves you time, a ⭐ helps others discover it.*
 
 ---
 > Thanks everyone — we’ve just passed ⭐ 600 in 60 Days (we started at Jun 15).  
