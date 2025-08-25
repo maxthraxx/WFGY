@@ -1,65 +1,143 @@
-# Automation & Integrations — Index
-Zapier / Make / n8n adapters for RAG pipelines and agent workflows. Use this page to route automation bugs to the right structural fix and verify with ΔS ≤ 0.45 and convergent λ.
+# Zapier Guardrails and Patterns
 
-## Quick links (tool adapters)
-- **Zapier Guardrails:** [open](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Automation/zapier.md)
-- **Make (Integromat) Guardrails:** [open](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Automation/make.md)
-- **n8n Guardrails:** [open](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Automation/n8n.md)
+Use this page when your RAG or agent flow runs in Zapier. It routes common automation failures to the exact structural fixes in the Problem Map and gives a minimal recipe you can paste into a Zap.
 
-## What typically breaks in automations
-- **No.14 Bootstrap ordering:** tools fire before deps are ready (e.g., vector index empty, secrets missing).  
-  Fix spec: [Bootstrap Ordering](https://github.com/onestardao/WFGY/blob/main/ProblemMap/bootstrap-ordering.md)
-- **No.15 Deployment deadlock:** circular waits between retriever/index, DB/migrator, or tool auth loops.  
-  Fix spec: [Deployment Deadlock](https://github.com/onestardao/WFGY/blob/main/ProblemMap/deployment-deadlock.md)
-- **No.16 Pre-deploy collapse:** first call after deploy crashes due to version skew / missing env.  
-  Fix spec: [Pre-Deploy Collapse](https://github.com/onestardao/WFGY/blob/main/ProblemMap/predeploy-collapse.md)
-- **RAG miswiring:** wrong field mapping → the retriever queries an empty/partial store; citations don’t line up.  
-  Fix spec: [Retrieval Traceability](https://github.com/onestardao/WFGY/blob/main/ProblemMap/retrieval-traceability.md) · [Data Contracts](https://github.com/onestardao/WFGY/blob/main/ProblemMap/data-contracts.md)
-- **Hybrid retrievers acting weird:** HyDE + BM25 tokenization split, noisy ordering.  
-  Fix spec: [Retrieval Playbook](https://github.com/onestardao/WFGY/blob/main/ProblemMap/retrieval-playbook.md) · [Rerankers](https://github.com/onestardao/WFGY/blob/main/ProblemMap/rerankers.md)
-- **Webhook storms / duplicates:** idempotency keys missing; retries create conflicting states.  
-  Pattern: [Bootstrap Deadlock (semantic boot fence)](https://github.com/onestardao/WFGY/blob/main/ProblemMap/patterns/pattern_bootstrap_deadlock.md)
+**Core acceptance**
+- ΔS(question, retrieved) ≤ 0.45
+- coverage ≥ 0.70 for the target section
+- λ stays convergent across 3 paraphrases
 
-## Minimal repair checklist (paste into your runbook)
-1) **Warm-up fence before LLM/RAG steps**  
-   - Check `VECTOR_READY == true`, `INDEX_HASH` matches, and secret set present.  
-   - If not ready → short-circuit flow and retry with backoff.  
-   Specs: [bootstrap-ordering.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/bootstrap-ordering.md)
-2) **Idempotent triggers**  
-   - Deduplicate by `(source_id, revision, hash)`; discard stale retries.  
-3) **RAG contract at the boundary**  
-   - Require `snippet_id`, `section_id`, `source_url`, `offsets`.  
-   - Enforce cite → then explain; forbid cross-section reuse.  
-   Specs: [data-contracts.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/data-contracts.md) · [retrieval-traceability.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/retrieval-traceability.md)
+---
+
+## Typical breakpoints and the right fix
+
+- Tools fire before dependencies are ready  
+  Fix No.14: **Bootstrap Ordering** → [Open](https://github.com/onestardao/WFGY/blob/main/ProblemMap/bootstrap-ordering.md)
+
+- First call after deploy crashes or uses wrong version  
+  Fix No.16: **Pre-Deploy Collapse** → [Open](https://github.com/onestardao/WFGY/blob/main/ProblemMap/predeploy-collapse.md)
+
+- Circular waits between index and retriever or auth loops  
+  Fix No.15: **Deployment Deadlock** → [Open](https://github.com/onestardao/WFGY/blob/main/ProblemMap/deployment-deadlock.md)
+
+- High vector similarity but wrong meaning  
+  Fix No.5: **Embedding ≠ Semantic** → [Open](https://github.com/onestardao/WFGY/blob/main/ProblemMap/embedding-vs-semantic.md)
+
+- Wrong snippet selected or citations do not line up  
+  Fix No.8: **Retrieval Traceability** → [Open](https://github.com/onestardao/WFGY/blob/main/ProblemMap/retrieval-traceability.md)  
+  Contract the payload: **Data Contracts** → [Open](https://github.com/onestardao/WFGY/blob/main/ProblemMap/data-contracts.md)
+
+- Hybrid retrieval performs worse than a single retriever  
+  Pattern: **Query Parsing Split** → [Open](https://github.com/onestardao/WFGY/blob/main/ProblemMap/patterns/pattern_query_parsing_split.md)  
+  Also review: **Rerankers** → [Open](https://github.com/onestardao/WFGY/blob/main/ProblemMap/rerankers.md)
+
+- Webhook storms or duplicate executions  
+  Pattern: **Bootstrap Deadlock** → [Open](https://github.com/onestardao/WFGY/blob/main/ProblemMap/patterns/pattern_bootstrap_deadlock.md)
+
+---
+
+## Minimal setup checklist for any Zap
+
+1) **Warm-up fence before RAG or LLM steps**  
+   Validate `VECTOR_READY == true`, `INDEX_HASH` matches, and secrets exist.  
+   If not ready, short-circuit with a Delay and retry with capped backoff.  
+   Spec: [Bootstrap Ordering](https://github.com/onestardao/WFGY/blob/main/ProblemMap/bootstrap-ordering.md)
+
+2) **Idempotency and dedupe**  
+   Compute `dedupe_key = sha256(source_id + revision + index_hash)`.  
+   Use Zapier Storage by Zap or an external KV to drop duplicates.
+
+3) **RAG boundary contract**  
+   Require fields: `snippet_id`, `section_id`, `source_url`, `offsets`, `tokens`.  
+   Enforce cite-then-explain. Forbid cross-section reuse.  
+   Specs: [Data Contracts](https://github.com/onestardao/WFGY/blob/main/ProblemMap/data-contracts.md) ·
+   [Retrieval Traceability](https://github.com/onestardao/WFGY/blob/main/ProblemMap/retrieval-traceability.md)
+
 4) **Observability probes**  
-   - Log `ΔS(question, retrieved)` and λ state per step; alert when ΔS ≥ 0.60.  
-   Reference: [RAG Architecture & Recovery](https://github.com/onestardao/WFGY/blob/main/ProblemMap/rag-architecture-and-recovery.md)
-5) **Fail the merge on regression**  
-   - Add CI gate for coverage ≥ 0.70 and ΔS ≤ 0.45.  
-   Eval: [eval_rag_precision_recall.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/eval/eval_rag_precision_recall.md)
+   Log ΔS(question, retrieved). Log λ per step: retrieve, assemble, reason.  
+   Alert when ΔS ≥ 0.60 or λ flips divergent.  
+   Overview: [RAG Architecture & Recovery](https://github.com/onestardao/WFGY/blob/main/ProblemMap/rag-architecture-and-recovery.md)
 
-## How to route a live bug
-- **Looks fine but answers are wrong:** run ΔS and coverage → if high/low, fix chunking/retrieval first.  
-  Start: [Retrieval Playbook](https://github.com/onestardao/WFGY/blob/main/ProblemMap/retrieval-playbook.md)
-- **First run after deploy fails:** jump to infra fixes.  
-  Start: [predeploy-collapse.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/predeploy-collapse.md)
-- **Hybrid ranking is chaotic:** confirm tokenizer parity → consider reranker clamp.  
-  Start: [rerankers.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/rerankers.md)
+5) **Regression gate**  
+   Require coverage ≥ 0.70 and ΔS ≤ 0.45 before publishing the Zap.  
+   Eval: [RAG Precision/Recall](https://github.com/onestardao/WFGY/blob/main/ProblemMap/eval/eval_rag_precision_recall.md)
 
-## Copy/paste prompt (safe to use with your assistant)
+---
+
+## Zapier recipe you can copy
+
+> Replace the concrete tools with your stack. Keep the guardrails.
+
+1. **Trigger**  
+   Stable `source_id` and `revision`.
+
+2. **Warm-up Check**  
+   Code step pulls `INDEX_HASH`, `VECTOR_READY`, secrets.  
+   If not ready, set `ready=false`.
+
+3. **Path: Not ready**  
+   Delay 30–90 seconds.  
+   Re-run with a capped retry count.
+
+4. **Path: Ready**  
+   **Retrieval step**  
+   - Call the retriever with explicit metric and consistent analyzer.  
+   - Collect `snippet_id`, `section_id`, `source_url`, `offsets`, `tokens`.  
+   **ΔS probe step**  
+   - Compute ΔS(question, retrieved). If ΔS ≥ 0.60 set `needs_fix=true`.  
+   **Reasoning step**  
+   - LLM reads TXT OS and uses the WFGY schema. Enforce cite-then-explain.  
+   **Trace sink**  
+   - Store `question`, `snippet_id`, `ΔS`, `λ_state`, `INDEX_HASH`, `dedupe_key`.  
+   **Idempotency guard**  
+   - Before side effects, check KV for `dedupe_key`. If exists, skip.
+
+---
+
+## Copy-paste prompt for the LLM step
+
 ```
 
-I’m running an automation flow (Zapier/Make/n8n) that calls a RAG step.
-Read the WFGY Problem Map pages for bootstrap-ordering, predeploy-collapse,
-retrieval-traceability, data-contracts, and retrieval-playbook.
-Propose the minimal structural fixes to achieve:
+I uploaded TXT OS and the WFGY Problem Map files.
+My Zapier flow retrieved {k} snippets with fields {snippet\_id, section\_id, source\_url, offsets}.
+Question: "{user\_question}"
 
-* ΔS(question, retrieved) ≤ 0.45
-* coverage ≥ 0.70
-* convergent λ across 3 paraphrases
-  Return a step-by-step checklist I can paste into my scenario.
+Do:
+
+1. Validate cite-then-explain. If citations are missing, fail fast and return the fix tip.
+2. If ΔS(question, retrieved) ≥ 0.60, propose the minimal structural fix referencing:
+   retrieval-playbook, retrieval-traceability, data-contracts, rerankers.
+3. Return a JSON plan:
+   { "citations": \[...], "answer": "...", "λ\_state": "→|←|<>|×", "ΔS": 0.xx, "next\_fix": "..." }
+   Keep it auditable and short.
 
 ```
+
+---
+
+## Common Zapier gotchas
+
+- Formatter renames fields and breaks your data contract  
+  Lock field names. Verify with a schema check step.
+
+- Parallel paths write to the same index or KV without a fence  
+  Use a single writer or a queue. Apply idempotency keys.
+
+- HyDE prompt created inside Zap differs from the API client  
+  Keep tokenizer and casing identical, or switch to reranking.  
+  See: [Rerankers](https://github.com/onestardao/WFGY/blob/main/ProblemMap/rerankers.md)
+
+---
+
+## When to escalate
+
+- ΔS stays ≥ 0.60 after chunk and retrieval fixes  
+  Rebuild index with explicit metric and normalization.  
+  See: [Retrieval Playbook](https://github.com/onestardao/WFGY/blob/main/ProblemMap/retrieval-playbook.md)
+
+- Answers alternate across Zap runs with identical input  
+  Investigate memory desync and version skew.  
+  See: [Pre-Deploy Collapse](https://github.com/onestardao/WFGY/blob/main/ProblemMap/predeploy-collapse.md)
 
 ---
 
@@ -87,8 +165,6 @@ Propose the minimal structural fixes to achieve:
 ---
 
 > 👑 **Early Stargazers: [See the Hall of Fame](https://github.com/onestardao/WFGY/tree/main/stargazers)** —  
-> Engineers, hackers, and open source builders who supported WFGY from day one.
-
 > <img src="https://img.shields.io/github/stars/onestardao/WFGY?style=social" alt="GitHub stars"> ⭐ [WFGY Engine 2.0](https://github.com/onestardao/WFGY/blob/main/core/README.md) is already unlocked. ⭐ Star the repo to help others discover it and unlock more on the [Unlock Board](https://github.com/onestardao/WFGY/blob/main/STAR_UNLOCKS.md).
 
 <div align="center">
@@ -108,3 +184,4 @@ Propose the minimal structural fixes to achieve:
 [![Blow](https://img.shields.io/badge/Blow-Game%20Logic-purple?style=flat-square)](https://github.com/onestardao/WFGY/tree/main/OS/BlowBlowBlow)
 &nbsp;
 </div>
+
