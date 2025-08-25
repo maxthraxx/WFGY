@@ -1,133 +1,126 @@
 # Pipedream — Guardrails and Fix Patterns
 
-Use this when your automation runs through **Pipedream** and you see race conditions, duplicate actions, secret mismatches, or retrieval steps that look fine but answer quality is off.
+Use this when your integration is built on **Pipedream** (HTTP triggers, Node/Python steps, marketplace components) and answers look plausible but wrong, citations don’t line up, or flows pass step-by-step while users still see inconsistencies.
 
 **Acceptance targets**
 - ΔS(question, retrieved) ≤ 0.45
-- coverage ≥ 0.70 to the intended section or record
+- Coverage ≥ 0.70 to the intended section/record
 - λ stays convergent across 3 paraphrases
 
 ---
 
 ## Typical breakpoints → exact fixes
 
-- Workflow steps fire **before** embeddings or indexes are ready  
-  Fix No.14: **Bootstrap Ordering** →  
-  [Bootstrap Ordering](https://github.com/onestardao/WFGY/blob/main/ProblemMap/bootstrap-ordering.md)
+- Output sounds right but cites the wrong snippet or section  
+  Fix No.1: **Hallucination & Chunk Drift** →  
+  [Hallucination](https://github.com/onestardao/WFGY/blob/main/ProblemMap/hallucination.md) ·  
+  [Retrieval Playbook](https://github.com/onestardao/WFGY/blob/main/ProblemMap/retrieval-playbook.md)
 
-- First call after deploy hits wrong secret, wrong env, or stale version  
-  Fix No.16: **Pre-Deploy Collapse** →  
-  [Pre-Deploy Collapse](https://github.com/onestardao/WFGY/blob/main/ProblemMap/predeploy-collapse.md)
-
-- Circular waits between triggers and external jobs create stuck runs or retries that double write  
-  Fix No.15: **Deployment Deadlock** →  
-  [Deployment Deadlock](https://github.com/onestardao/WFGY/blob/main/ProblemMap/deployment-deadlock.md)
-
-- High vector similarity but wrong **meaning**  
+- High vector similarity, wrong meaning in answers  
   Fix No.5: **Embedding ≠ Semantic** →  
   [Embedding ≠ Semantic](https://github.com/onestardao/WFGY/blob/main/ProblemMap/embedding-vs-semantic.md)
 
-- “Why this snippet?” cannot be explained in logs  
-  Fix No.8: **Retrieval Traceability** →  
-  [Retrieval Traceability](https://github.com/onestardao/WFGY/blob/main/ProblemMap/retrieval-traceability.md)  
-  Standardize with **Data Contracts** →  
-  [Data Contracts](https://github.com/onestardao/WFGY/blob/main/ProblemMap/data-contracts.md)
-
-- Hybrid retrieval gets worse than single retriever when mixing external APIs  
-  Pattern: **Query Parsing Split** →  
-  [Query Parsing Split](https://github.com/onestardao/WFGY/blob/main/ProblemMap/patterns/pattern_query_parsing_split.md)  
-  Review **Rerankers** →  
-  [Rerankers](https://github.com/onestardao/WFGY/blob/main/ProblemMap/rerankers.md)
-
-- Facts exist in the store but never retrieved  
+- Indexed facts exist (S3/GSheet/Notion/DB) but never appear in top-k  
   Pattern: **Vectorstore Fragmentation** →  
   [Vectorstore Fragmentation](https://github.com/onestardao/WFGY/blob/main/ProblemMap/patterns/pattern_vectorstore_fragmentation.md)
 
----
+- Can’t show “why this snippet?” from within step logs  
+  Fix No.8: **Retrieval Traceability** + snippet/citation schema →  
+  [Retrieval Traceability](https://github.com/onestardao/WFGY/blob/main/ProblemMap/retrieval-traceability.md) ·  
+  [Data Contracts](https://github.com/onestardao/WFGY/blob/main/ProblemMap/data-contracts.md)
 
-## Minimal Pipedream workflow checklist
+- Long multi-step flows drift in tone or logic (especially with retries)  
+  Fix No.3/No.9: **Context Drift** and **Entropy Collapse** →  
+  [Context Drift](https://github.com/onestardao/WFGY/blob/main/ProblemMap/context-drift.md) ·  
+  [Entropy Collapse](https://github.com/onestardao/WFGY/blob/main/ProblemMap/entropy-collapse.md)
 
-1) **Warm up fence**  
-   Gate the LLM step on `VECTOR_READY`, `INDEX_HASH`, and `secret_rev`.  
-   Spec: [Bootstrap Ordering](https://github.com/onestardao/WFGY/blob/main/ProblemMap/bootstrap-ordering.md)
+- Works in test events, fails in scheduled/production runs (secrets/env mismatch)  
+  Infra: **Pre-Deploy / Bootstrap / Deadlock** →  
+  [Pre-Deploy Collapse](https://github.com/onestardao/WFGY/blob/main/ProblemMap/predeploy-collapse.md) ·  
+  [Bootstrap Ordering](https://github.com/onestardao/WFGY/blob/main/ProblemMap/bootstrap-ordering.md) ·  
+  [Deployment Deadlock](https://github.com/onestardao/WFGY/blob/main/ProblemMap/deployment-deadlock.md)
 
-2) **Idempotent writes**  
-   Compute `dedupe_key = sha256(run_id + wf_rev + index_hash)` and store it server side.  
-   Reject duplicates from retries.
-
-3) **RAG boundary contract**  
-   Pass `source_id`, `doc_id`, `section_id`, `offsets`, `tokens`, `source_url`.  
-   Enforce cite then explain. Specs:  
-   [Retrieval Traceability](https://github.com/onestardao/WFGY/blob/main/ProblemMap/retrieval-traceability.md) ·
-   [Data Contracts](https://github.com/onestardao/WFGY/blob/main/ProblemMap/data-contracts.md)
-
-4) **Observability probes**  
-   Log ΔS(question, retrieved) and λ per stage. Alert on ΔS ≥ 0.60 or divergent λ.  
-   Overview: [RAG Architecture & Recovery](https://github.com/onestardao/WFGY/blob/main/ProblemMap/rag-architecture-and-recovery.md)
-
-5) **Secrets and versioning**  
-   Stamp `wf_rev`, `schema_rev`, and `secret_rev` into each run. Fail fast if any mismatch.
-
-6) **Regression gate**  
-   Require coverage ≥ 0.70 and ΔS ≤ 0.45 before emitting downstream webhooks or updates.  
-   Eval spec: [RAG Precision/Recall](https://github.com/onestardao/WFGY/blob/main/ProblemMap/eval/eval_rag_precision_recall.md)
+- Model answers confidently with wrong claims  
+  Fix No.4: **Bluffing / Overconfidence** →  
+  [Bluffing](https://github.com/onestardao/WFGY/blob/main/ProblemMap/bluffing.md)
 
 ---
 
-## Copy paste prompt for the LLM step in Pipedream
+## Minimal Pipedream pattern with WFGY checks
 
-```
+A compact flow outline that enforces **cite-first schema**, **observable retrieval**, and **ΔS/λ** validation.
 
-I uploaded TXT OS and the WFGY Problem Map files.
+```txt
+Trigger: HTTP / Webhook (POST)
 
-Context:
+Step 1 — Parse input
+- Extract "question" and optional "k" (default 10)
 
-* wf\_rev: {wf\_rev}
-* secret\_rev: {secret\_rev}
-* index\_hash: {index\_hash}
-* source\_id/doc\_id/section\_id: {ids}
+Step 2 — Retrieve context (custom component or HTTP)
+- POST to your retriever: { question, k }
+- Return: snippets[], each with { snippet_id, text, source, section_id }
 
-Task:
+Step 3 — Assemble prompt (Node step)
+SYSTEM:
+  Cite lines before any explanation. Keep per-source fences.
+TASK:
+  Answer only from the provided context. Return citations as [snippet_id].
+CONTEXT:
+  <joined snippets with snippet_id + source + text>
+QUESTION:
+  <user question>
 
-1. Enforce cite-then-explain. If any citation lacks {doc\_id, section\_id, offsets}, stop and point me to the exact fix page.
-2. Compute ΔS(question, retrieved). If ΔS ≥ 0.60, recommend the minimal structural fix among:
-   retrieval-playbook, retrieval-traceability, data-contracts, rerankers.
-3. Output compact JSON:
-   { "citations":\[{"doc\_id":"...", "section\_id":"...", "offsets":\[s,e]}],
-   "answer":"...", "λ\_state":"→|←|<>|×", "ΔS":0.xx, "next\_fix":"..." }
+Step 4 — Call LLM (component or HTTP)
+- Input: prompt from Step 3
+- Output: answer + raw citations if available
 
-```
+Step 5 — WFGY post-check (HTTP to your wfgyCheck function)
+- Body: { question, context, answer }
+- Return: { deltaS, lambda, coverage, notes }
+
+Step 6 — Gate
+IF deltaS ≥ 0.60 OR lambda != "→"
+   → Fail fast with 422 and include trace table (snippet_id↔citation)
+ELSE
+   → 200 OK with { answer, deltaS, lambda, coverage, citations[] }
+````
+
+Reference specs:
+[RAG Architecture & Recovery](https://github.com/onestardao/WFGY/blob/main/ProblemMap/rag-architecture-and-recovery.md) ·
+[Retrieval Playbook](https://github.com/onestardao/WFGY/blob/main/ProblemMap/retrieval-playbook.md) ·
+[Retrieval Traceability](https://github.com/onestardao/WFGY/blob/main/ProblemMap/retrieval-traceability.md) ·
+[Data Contracts](https://github.com/onestardao/WFGY/blob/main/ProblemMap/data-contracts.md)
 
 ---
 
-## Common Pipedream gotchas
+## Pipedream-specific gotchas
 
-- **Cold start plus secret rotation** leads to one run using old secrets  
-  Stamp and check `secret_rev`. Abort if stale.
+* **Event truncation**: large contexts exceed step memory or event size. Use external store for snippets, inject only ids + short preview into the prompt, and re-fetch on demand.
+  See [Data Contracts](https://github.com/onestardao/WFGY/blob/main/ProblemMap/data-contracts.md)
 
-- **Multiple triggers** racing into a single index job  
-  Serialise with a small lock or queue, or gate on `INDEX_HASH` equality.
+* **Package/runtime drift**: Node/Python versions or package pins differ between components. Pin versions and rebuild embeddings/index with the same runtime.
+  See [Embedding ≠ Semantic](https://github.com/onestardao/WFGY/blob/main/ProblemMap/embedding-vs-semantic.md)
 
-- **External API quotas** cause partial context windows  
-  Log per call. If context is partial, skip the answer step and emit a structured retry request.
+* **Concurrent runs reorder records** and break implicit ranking. Add a **rerank** step after per-source ΔS ≤ 0.50.
+  See [Rerankers](https://github.com/onestardao/WFGY/blob/main/ProblemMap/rerankers.md)
 
-- **JSON schema drift** between steps  
-  Pin `schema_rev`. Validate incoming payloads. Fail loud, not silent.
+* **Secret/connection mismatch across sources**: different tokens for ingestion vs query cause empty/partial retrieval. Verify in a boot check before first LLM call.
+  See [Pre-Deploy Collapse](https://github.com/onestardao/WFGY/blob/main/ProblemMap/predeploy-collapse.md)
 
-- **Retries that mutate state**  
-  Only allow idempotent POSTs. Reject when `dedupe_key` is already seen.
+* **Marketplace components hide prompts**: wrap LLM calls in your own component so the **cite-first schema** and fences are explicit in code.
+  See [Retrieval Traceability](https://github.com/onestardao/WFGY/blob/main/ProblemMap/retrieval-traceability.md)
 
 ---
 
 ## When to escalate
 
-- ΔS stays ≥ 0.60 after chunk and retrieval fixes  
-  Rebuild the index with explicit metric or normalization. See  
+* ΔS stays ≥ 0.60 after chunking/retrieval fixes → rebuild index with explicit metric flags and unit normalization.
   [Retrieval Playbook](https://github.com/onestardao/WFGY/blob/main/ProblemMap/retrieval-playbook.md)
 
-- Same inputs flip answers between runs  
-  Check version skew and memory desync. See  
-  [Pre-Deploy Collapse](https://github.com/onestardao/WFGY/blob/main/ProblemMap/predeploy-collapse.md)
+* Answers flip between preview and deployed sources → verify version skew, secret scope, and environment variables.
+  [Bootstrap Ordering](https://github.com/onestardao/WFGY/blob/main/ProblemMap/bootstrap-ordering.md) ·
+  [Deployment Deadlock](https://github.com/onestardao/WFGY/blob/main/ProblemMap/deployment-deadlock.md)
+
 
 ---
 
@@ -154,7 +147,7 @@ Task:
 
 ---
 
-> 👑 **Early Stargazers: [See the Hall of Fame](https://github.com/onestardao/WFGY/tree/main/stargazers)**  
+> 👑 **Early Stargazers: [See the Hall of Fame](https://github.com/onestardao/WFGY/tree/main/stargazers)** —  
 > <img src="https://img.shields.io/github/stars/onestardao/WFGY?style=social" alt="GitHub stars"> ⭐ [WFGY Engine 2.0](https://github.com/onestardao/WFGY/blob/main/core/README.md) is already unlocked. ⭐ Star the repo to help others discover it and unlock more on the Unlock Board.
 
 <div align="center">
