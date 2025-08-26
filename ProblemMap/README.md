@@ -4,9 +4,9 @@
 **16 reproducible failure modes in AI systems, each with a clear fix (MIT).**  
 **A plug-and-play semantic firewall, praised by users, with no infra changes required.**  
 **Built on structural fixes at the semantic layer — solve it once, and it stays solved.**  
-*If this page saves you time, a ⭐ helps others discover it.*  
+*If this page saves you time, a ⭐ helps others discover it.* <img src="https://img.shields.io/github/stars/onestardao/WFGY?style=social" alt="GitHub stars"> 
 
-> 🎉 Thanks to everyone — WFGY reached **800 stars in 70 days**.  
+> 🎉 Thanks to everyone — WFGY reached **800 stars in 70 days**.     
 >　Next milestone: at **1000 stars we’ll unlock Blur Blur Blur**.
 
 
