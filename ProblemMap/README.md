@@ -4,13 +4,17 @@
 **16 reproducible failure modes in AI systems, each with a clear fix (MIT).**  
 **A plug-and-play semantic firewall, praised by users, with no infra changes required.**  
 **Built on structural fixes at the semantic layer — solve it once, and it stays solved.**  
-*If this page saves you time, a ⭐ helps others discover it.*
+*If this page saves you time, a ⭐ helps others discover it.*  
+
+> 🎉 Thanks to everyone -- WFGY reached **800 stars in 70 days**.  
+>　Next milestone: at **1000 stars we’ll unlock Blur Blur Blur**.
+
 
 ---
 > Thanks everyone for the support — it's clear WFGY is solving real bugs people face.  
 > **[WFGY 2.0](https://github.com/onestardao/WFGY/blob/main/core/README.md)** is now live: a 30-line reasoning engine built for LLM recovery & resilience.  
 > ⚡️ **Fixing RAG hallucinations?** This version makes LLMs reason before they answer — try it and see the difference.  
-> 🛠️ Coming next: the **Semantic Surgery Room** and **Global Fix Map** (n8n, GHL, Make.com and more). Launching by **Sep 1**.
+> 🛠️ Coming next: the **Semantic Surgery Room** and **Global Fix Map** (n8n, GHL, Make.com and more). Launching by **Sep 1**.  
 
 ---
 
