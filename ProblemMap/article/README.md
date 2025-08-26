@@ -15,13 +15,13 @@ single place to find every Discussion article. each line links out. this page is
   Discussion → [https://github.com/onestardao/WFGY/discussions/26](https://github.com/onestardao/WFGY/discussions/26)
 
 * **Day 3: Multi-version PDFs cause timeline confusion** *(No.2, No.6)*
-  Discussion → \[TBD]
+  Discussion → [https://github.com/onestardao/WFGY/discussions/27](https://github.com/onestardao/WFGY/discussions/27)
 
 * **Day 4: Bad chunking ruins retrieval** *(No.5, No.14)*
-  Discussion → \[TBD]
+  Discussion → [https://github.com/onestardao/WFGY/discussions/28](https://github.com/onestardao/WFGY/discussions/28)
 
 * **Day 5: Semantic ≠ Embedding** *(No.5)*
-  Discussion → \[TBD]
+  Discussion → [https://github.com/onestardao/WFGY/discussions/29](https://github.com/onestardao/WFGY/discussions/29)
 
 * **Day 6: Vector anisotropy and collapse** *(No.5, No.6)*
   Discussion → \[TBD]
