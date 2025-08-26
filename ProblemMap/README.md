@@ -11,7 +11,6 @@
 
 
 ---
-> Thanks everyone for the support — it's clear WFGY is solving real bugs people face.  
 > **[WFGY 2.0](https://github.com/onestardao/WFGY/blob/main/core/README.md)** is now live: a 30-line reasoning engine built for LLM recovery & resilience.  
 > ⚡️ **Fixing RAG hallucinations?** This version makes LLMs reason before they answer — try it and see the difference.  
 > 🛠️ Coming next: the **Semantic Surgery Room** and **Global Fix Map** (n8n, GHL, Make.com and more). Launching by **Sep 1**.  
