@@ -6,7 +6,7 @@
 **Built on structural fixes at the semantic layer — solve it once, and it stays solved.**  
 *If this page saves you time, a ⭐ helps others discover it.*  
 
-> 🎉 Thanks to everyone -- WFGY reached **800 stars in 70 days**.  
+> 🎉 Thanks to everyone — WFGY reached **800 stars in 70 days**.  
 >　Next milestone: at **1000 stars we’ll unlock Blur Blur Blur**.
 
 
