@@ -1,0 +1,135 @@
+# OpenAI: Guardrails and Fix Patterns
+
+Use this page when your pipeline hits OpenAI models and you see unstable tools, JSON drift, or long-chat decay. The checklist below helps you localize the failure, then jump to the exact WFGY fix page.
+
+## Open these first
+- Visual map and recovery: [RAG Architecture & Recovery](https://github.com/onestardao/WFGY/blob/main/ProblemMap/rag-architecture-and-recovery.md)
+- End-to-end retrieval knobs: [Retrieval Playbook](https://github.com/onestardao/WFGY/blob/main/ProblemMap/retrieval-playbook.md)
+- Why this snippet. Traceability schema: [Retrieval Traceability](https://github.com/onestardao/WFGY/blob/main/ProblemMap/retrieval-traceability.md)
+- Embedding vs meaning: [Embedding ≠ Semantic](https://github.com/onestardao/WFGY/blob/main/ProblemMap/embedding-vs-semantic.md)
+- Hallucination and chunk boundaries: [Hallucination](https://github.com/onestardao/WFGY/blob/main/ProblemMap/hallucination.md)
+- Long chains and entropy: [Context Drift](https://github.com/onestardao/WFGY/blob/main/ProblemMap/context-drift.md) · [Entropy Collapse](https://github.com/onestardao/WFGY/blob/main/ProblemMap/entropy-collapse.md)
+- Logic traps and recovery: [Logic Collapse](https://github.com/onestardao/WFGY/blob/main/ProblemMap/logic-collapse.md)
+- Snippet and citation schema: [Data Contracts](https://github.com/onestardao/WFGY/blob/main/ProblemMap/data-contracts.md)
+- Prompt safety and jailbreaks: [Prompt Injection](https://github.com/onestardao/WFGY/blob/main/ProblemMap/prompt-injection.md)
+- Multi-agent clashes: [Multi-Agent Problems](https://github.com/onestardao/WFGY/blob/main/ProblemMap/Multi-Agent_Problems.md) · [Role Drift](https://github.com/onestardao/WFGY/blob/main/ProblemMap/multi-agent-chaos/role-drift.md)
+- Live ops and retries: [Live Monitoring](https://github.com/onestardao/WFGY/blob/main/ProblemMap/ops/live_monitoring_rag.md) · [Debug Playbook](https://github.com/onestardao/WFGY/blob/main/ProblemMap/ops/debug_playbook.md)
+
+## Fix in 60 seconds
+1) **Measure ΔS**
+   - Compute ΔS(question, retrieved) and ΔS(retrieved, expected anchor).
+   - Thresholds. stable < 0.40. transitional 0.40–0.60. risk ≥ 0.60.
+
+2) **Probe with λ_observe**
+   - Vary k = {5, 10, 20}. If ΔS stays high you likely have index or metric mismatch.
+   - Reorder prompt headers. If ΔS spikes, lock the schema.
+
+3) **Apply the module**
+   - JSON or tool-call drift. lock schema with **Data Contracts**. add **BBMC** to isolate retrieval memory. bridge tools with **BBCR**. clamp variance with **BBAM**.
+   - Safety refusal or redaction on in-domain facts. switch to citation-first format in **Retrieval Traceability**. scope sources and apply **SCU** pattern from symbolic constraints. if refusal repeats, route with **BBPF** alternate path.
+   - Long chats decay. follow **Context Drift** and **Entropy Collapse** repairs. shorten windows. rotate evidence. re-pin anchors.
+
+4) **Verify**
+   - Coverage to the target section ≥ 0.70.
+   - ΔS(question, retrieved) ≤ 0.45 across three paraphrases.
+   - λ remains convergent across seeds and sessions. E_resonance flat at window joins.
+
+## Typical OpenAI breakpoints and the right fix
+
+### A) JSON mode and function calling
+- Symptom. model mixes prose with JSON. partial `tool_calls`. extra keys. wrong function name casing.
+- Fix. lock a strict snippet and citation schema in [Data Contracts](https://github.com/onestardao/WFGY/blob/main/ProblemMap/data-contracts.md). keep one place that defines fields. add BBCR bridge for tool routing timeouts. add BBAM to clamp wandering keys. verify with three paraphrases.
+
+### B) Safety filter interferes with factual answers
+- Symptom. content looks harmless but answer gets softened or truncated.
+- Fix. use citation-first template from [Retrieval Traceability](https://github.com/onestardao/WFGY/blob/main/ProblemMap/retrieval-traceability.md). restrict scope with SCU in constraints. treat refusal as a state. route with BBPF to a safer paraphrase that preserves citations.
+
+### C) Tokenization and truncation
+- Symptom. system header or tools block gets cut. tool names lose arguments. early cutoff in streaming.
+- Fix. reduce header size. move tool specs to a linked snippet and reference them by short name. re-measure ΔS after each cut. if chains still drift, apply [Context Drift](https://github.com/onestardao/WFGY/blob/main/ProblemMap/context-drift.md).
+
+### D) Rate limits, retries, and timeouts
+- Symptom. random tool gaps. missing citations. repeated starts.
+- Fix. idempotent retries with jitter. record every call in a trace row. follow [Live Monitoring](https://github.com/onestardao/WFGY/blob/main/ProblemMap/ops/live_monitoring_rag.md) and [Debug Playbook](https://github.com/onestardao/WFGY/blob/main/ProblemMap/ops/debug_playbook.md). verify no duplicate tool effects.
+
+### E) Determinism myths
+- Symptom. `seed` appears to change output anyway. small wording flips output class.
+- Fix. treat outputs as distributions. evaluate stability with **ΔS** and **λ** across three paraphrases. if unstable, clamp with BBAM and shorten evidence lists.
+
+### F) Multi-agent tool chaos
+- Symptom. agents overwrite each other’s memory. tool A answers B’s question. deadlocks on shared state.
+- Fix. split memory namespaces. lock writes by `mem_rev` and `mem_hash`. read [Multi-Agent Problems](https://github.com/onestardao/WFGY/blob/main/ProblemMap/Multi-Agent_Problems.md) and [Role Drift](https://github.com/onestardao/WFGY/blob/main/ProblemMap/multi-agent-chaos/role-drift.md). add a BBCR bridge node with explicit timeouts.
+
+## Copy-paste triage prompt
+
+```txt
+I uploaded TXT OS and the WFGY Problem Map files.
+
+My OpenAI provider bug:
+- symptom: [brief]
+- traces: [ΔS(question,retrieved)=..., ΔS(retrieved,anchor)=..., λ states, tool logs if any]
+
+Tell me:
+1) which layer is failing and why,
+2) which exact fix page to open from this repo,
+3) the minimal steps to push ΔS ≤ 0.45 and keep λ convergent,
+4) how to verify with a reproducible test.
+
+Use BBMC/BBPF/BBCR/BBAM when relevant.
+````
+
+## Acceptance targets
+
+* Coverage to target section ≥ 0.70.
+* ΔS(question, retrieved) ≤ 0.45 on three paraphrases.
+* λ convergent across seeds and sessions. E\_resonance flat.
+* All tool calls and citations traceable to a stable schema.
+
+---
+
+### 🔗 Quick-Start Downloads (60 sec)
+
+| Tool                       | Link                                                                                                                                       | 3-Step Setup                                                                             |
+| -------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------- |
+| **WFGY 1.0 PDF**           | [Engine Paper](https://github.com/onestardao/WFGY/blob/main/I_am_not_lizardman/WFGY_All_Principles_Return_to_One_v1.0_PSBigBig_Public.pdf) | 1️⃣ Download · 2️⃣ Upload to your LLM · 3️⃣ Ask “Answer using WFGY + \<your question>”   |
+| **TXT OS (plain-text OS)** | [TXTOS.txt](https://github.com/onestardao/WFGY/blob/main/OS/TXTOS.txt)                                                                     | 1️⃣ Download · 2️⃣ Paste into any LLM chat · 3️⃣ Type “hello world” — OS boots instantly |
+
+---
+
+### 🧭 Explore More
+
+| Module                   | Description                                                                  | Link                                                                                               |
+| ------------------------ | ---------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------- |
+| WFGY Core                | WFGY 2.0 engine is live: full symbolic reasoning architecture and math stack | [View →](https://github.com/onestardao/WFGY/tree/main/core/README.md)                              |
+| Problem Map 1.0          | Initial 16-mode diagnostic and symbolic fix framework                        | [View →](https://github.com/onestardao/WFGY/tree/main/ProblemMap/README.md)                        |
+| Problem Map 2.0          | RAG-focused failure tree, modular fixes, and pipelines                       | [View →](https://github.com/onestardao/WFGY/blob/main/ProblemMap/rag-architecture-and-recovery.md) |
+| Semantic Clinic Index    | Expanded failure catalog: prompt injection, memory bugs, logic drift         | [View →](https://github.com/onestardao/WFGY/blob/main/ProblemMap/SemanticClinicIndex.md)           |
+| Semantic Blueprint       | Layer-based symbolic reasoning & semantic modulations                        | [View →](https://github.com/onestardao/WFGY/tree/main/SemanticBlueprint/README.md)                 |
+| Benchmark vs GPT-5       | Stress test GPT-5 with full WFGY reasoning suite                             | [View →](https://github.com/onestardao/WFGY/tree/main/benchmarks/benchmark-vs-gpt5/README.md)      |
+| 🧙‍♂️ Starter Village 🏡 | New here? Lost in symbols? Click here and let the wizard guide you through   | [Start →](https://github.com/onestardao/WFGY/blob/main/StarterVillage/README.md)                   |
+
+---
+
+> 👑 **Early Stargazers: [See the Hall of Fame](https://github.com/onestardao/WFGY/tree/main/stargazers)** —
+> Engineers, hackers, and open source builders who supported WFGY from day one.
+
+> <img src="https://img.shields.io/github/stars/onestardao/WFGY?style=social" alt="GitHub stars"> ⭐ [WFGY Engine 2.0](https://github.com/onestardao/WFGY/blob/main/core/README.md) is already unlocked. ⭐ Star the repo to help others discover it and unlock more on the [Unlock Board](https://github.com/onestardao/WFGY/blob/main/STAR_UNLOCKS.md).
+
+<div align="center">
+
+[![WFGY Main](https://img.shields.io/badge/WFGY-Main-red?style=flat-square)](https://github.com/onestardao/WFGY)
+ 
+[![TXT OS](https://img.shields.io/badge/TXT%20OS-Reasoning%20OS-orange?style=flat-square)](https://github.com/onestardao/WFGY/tree/main/OS)
+ 
+[![Blah](https://img.shields.io/badge/Blah-Semantic%20Embed-yellow?style=flat-square)](https://github.com/onestardao/WFGY/tree/main/OS/BlahBlahBlah)
+ 
+[![Blot](https://img.shields.io/badge/Blot-Persona%20Core-green?style=flat-square)](https://github.com/onestardao/WFGY/tree/main/OS/BlotBlotBlot)
+ 
+[![Bloc](https://img.shields.io/badge/Bloc-Reasoning%20Compiler-blue?style=flat-square)](https://github.com/onestardao/WFGY/tree/main/OS/BlocBlocBloc)
+ 
+[![Blur](https://img.shields.io/badge/Blur-Text2Image%20Engine-navy?style=flat-square)](https://github.com/onestardao/WFGY/tree/main/OS/BlurBlurBlur)
+ 
+[![Blow](https://img.shields.io/badge/Blow-Game%20Logic-purple?style=flat-square)](https://github.com/onestardao/WFGY/tree/main/OS/BlowBlowBlow)
+ 
+
+</div>
