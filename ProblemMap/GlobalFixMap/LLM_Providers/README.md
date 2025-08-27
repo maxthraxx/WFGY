@@ -1,6 +1,6 @@
 # LLM Providers: Guardrails and Fix Patterns
 
-A compact hub to stabilize provider-specific failures without changing your infra. Use this when symptoms look “model problem” but root cause is actually schema, retrieval, or orchestration.
+Use this hub when failures smell “provider specific” but root cause is actually schema, retrieval, orchestration, or eval drift. Every fix maps back to WFGY pages with measurable targets, so you can verify without changing infra.
 
 ## Open these first
 - Visual map and recovery: [RAG Architecture & Recovery](https://github.com/onestardao/WFGY/blob/main/ProblemMap/rag-architecture-and-recovery.md)
@@ -19,7 +19,7 @@ A compact hub to stabilize provider-specific failures without changing your infr
 - ΔS(question, retrieved) ≤ 0.45
 - Coverage ≥ 0.70 for the target section
 - λ remains convergent across three paraphrases and two seeds
-- E_resonance stays flat through long windows
+- E_resonance stays flat on long windows
 
 ## Typical provider symptoms → exact fix
 
@@ -48,24 +48,22 @@ A compact hub to stabilize provider-specific failures without changing your infr
 4) **Verify**  
 Coverage ≥ 0.70 on three paraphrases. λ convergent on two seeds.
 
-## Provider-level gotchas checklist
-- **Truncation**. Confirm token accounting for system + tools + hidden preambles. If truncated, compress citations through [Data Contracts](https://github.com/onestardao/WFGY/blob/main/ProblemMap/data-contracts.md).  
-- **Streaming chunk boundaries**. Do not parse partial JSON while λ is unstable. Buffer until BBAM settles.  
-- **Temperature and top-p**. If ΔS is already high, reduce entropy. If retrieval is sparse, raise recall through rerankers instead of temperature.  
-- **Multi-model routing**. Keep traceability stable when swapping GPT, Claude, Gemini, Mistral. Use the same snippet schema and citation header across providers.  
-- **Rate limits and retries**. Backoff with idempotent ops. Never rebuild indexes inside retry loops.  
-- **Eval parity**. Run the same acceptance on all providers to avoid overfitting a single model.
-
 ## Quick routes to per-provider pages
-- OpenAI: [openai.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/LLM_Providers/openai.md)  
-- Anthropic: [anthropic.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/LLM_Providers/anthropic.md)  
-- Google Gemini: [google_gemini.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/LLM_Providers/google_gemini.md)  
-- Mistral: [mistral.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/LLM_Providers/mistral.md)  
-- Groq: [groq.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/LLM_Providers/groq.md)  
-- Cohere: [cohere.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/LLM_Providers/cohere.md)  
-- DeepSeek: [deepseek.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/LLM_Providers/deepseek.md)  
-- AWS Bedrock: [bedrock.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/LLM_Providers/bedrock.md)  
+- OpenAI: [openai.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/LLM_Providers/openai.md)
 - Azure OpenAI: [azure_openai.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/LLM_Providers/azure_openai.md)
+- Anthropic: [anthropic.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/LLM_Providers/anthropic.md)
+- Anthropic Claude: [anthropic_claude.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/LLM_Providers/anthropic_claude.md)
+- Google Gemini: [gemini.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/LLM_Providers/gemini.md)
+- Google Vertex AI: [google_vertex_ai.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/LLM_Providers/google_vertex_ai.md)
+- Mistral: [mistral.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/LLM_Providers/mistral.md)
+- Meta Llama: [meta_llama.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/LLM_Providers/meta_llama.md)
+- Cohere: [cohere.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/LLM_Providers/cohere.md)
+- DeepSeek: [deepseek.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/LLM_Providers/deepseek.md)
+- Kimi: [kimi.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/LLM_Providers/kimi.md)
+- Groq (LPU inference): [groq.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/LLM_Providers/groq.md)
+- xAI Grok: [grok_xai.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/LLM_Providers/grok_xai.md)
+- AWS Bedrock: [aws_bedrock.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/LLM_Providers/aws_bedrock.md)
+- OpenRouter: [openrouter.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/LLM_Providers/openrouter.md)
 
 ---
 
@@ -73,7 +71,7 @@ Coverage ≥ 0.70 on three paraphrases. λ convergent on two seeds.
 
 | Tool | Link | 3-Step Setup |
 |------|------|--------------|
-| **WFGY 1.0 PDF** | [Engine Paper](https://github.com/onestardao/WFGY/blob/main/I_am_not_lizardman/WFGY_All_Principles_Return_to_One_v1.0_PSBigBig_Public.pdf) | 1️⃣ Download · 2️⃣ Upload to your LLM · 3️⃣ Ask “Answer using WFGY + \<your question>” |
+| **WFGY 1.0 PDF** | [Engine Paper](https://github.com/onestardao/WFGY/blob/main/I_am_not_lizardman/WFGY_All_Principles_Return_to_One_v1.0_PSBigBig_Public.pdf) | 1️⃣ Download · 2️⃣ Upload to your LLM · 3️⃣ Ask “Answer using WFGY + <your question>” |
 | **TXT OS (plain-text OS)** | [TXTOS.txt](https://github.com/onestardao/WFGY/blob/main/OS/TXTOS.txt) | 1️⃣ Download · 2️⃣ Paste into any LLM chat · 3️⃣ Type “hello world” — OS boots instantly |
 
 ---
@@ -114,5 +112,3 @@ Coverage ≥ 0.70 on three paraphrases. λ convergent on two seeds.
 [![Blow](https://img.shields.io/badge/Blow-Game%20Logic-purple?style=flat-square)](https://github.com/onestardao/WFGY/tree/main/OS/BlowBlowBlow)
 &nbsp;
 </div>
-
-say “GO” and I’ll do the first provider page. I suggest `ProblemMap/GlobalFixMap/LLM_Providers/openai.md` next.
