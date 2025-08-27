@@ -219,4 +219,3 @@ Tell me:
 
 </div>
 
-要我繼續下一頁就說：**GO chunk\_id\_schema.md**
