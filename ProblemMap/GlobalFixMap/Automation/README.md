@@ -1,143 +1,69 @@
-# Zapier Guardrails and Patterns
+# Automation Platforms — Global Fix Map
 
-Use this page when your RAG or agent flow runs in Zapier. It routes common automation failures to the exact structural fixes in the Problem Map and gives a minimal recipe you can paste into a Zap.
-
-**Core acceptance**
-- ΔS(question, retrieved) ≤ 0.45
-- coverage ≥ 0.70 for the target section
-- λ stays convergent across 3 paraphrases
+This hub routes **automation framework bugs** (Zapier, n8n, Make, Retool, etc.) to the structural guardrails in WFGY Problem Map.  
+Each page below contains failure points, linked fixes, and a copy-paste recipe for stabilization.
 
 ---
 
-## Typical breakpoints and the right fix
+## Quick routes to per-tool pages
 
-- Tools fire before dependencies are ready  
-  Fix No.14: **Bootstrap Ordering** → [Open](https://github.com/onestardao/WFGY/blob/main/ProblemMap/bootstrap-ordering.md)
-
-- First call after deploy crashes or uses wrong version  
-  Fix No.16: **Pre-Deploy Collapse** → [Open](https://github.com/onestardao/WFGY/blob/main/ProblemMap/predeploy-collapse.md)
-
-- Circular waits between index and retriever or auth loops  
-  Fix No.15: **Deployment Deadlock** → [Open](https://github.com/onestardao/WFGY/blob/main/ProblemMap/deployment-deadlock.md)
-
-- High vector similarity but wrong meaning  
-  Fix No.5: **Embedding ≠ Semantic** → [Open](https://github.com/onestardao/WFGY/blob/main/ProblemMap/embedding-vs-semantic.md)
-
-- Wrong snippet selected or citations do not line up  
-  Fix No.8: **Retrieval Traceability** → [Open](https://github.com/onestardao/WFGY/blob/main/ProblemMap/retrieval-traceability.md)  
-  Contract the payload: **Data Contracts** → [Open](https://github.com/onestardao/WFGY/blob/main/ProblemMap/data-contracts.md)
-
-- Hybrid retrieval performs worse than a single retriever  
-  Pattern: **Query Parsing Split** → [Open](https://github.com/onestardao/WFGY/blob/main/ProblemMap/patterns/pattern_query_parsing_split.md)  
-  Also review: **Rerankers** → [Open](https://github.com/onestardao/WFGY/blob/main/ProblemMap/rerankers.md)
-
-- Webhook storms or duplicate executions  
-  Pattern: **Bootstrap Deadlock** → [Open](https://github.com/onestardao/WFGY/blob/main/ProblemMap/patterns/pattern_bootstrap_deadlock.md)
+- Zapier → [zapier.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Automation/zapier.md)  
+- n8n → [n8n.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Automation/n8n.md)  
+- Make (Integromat) → [make.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Automation/make.md)  
+- Retool → [retool.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Automation/retool.md)  
+- IFTTT → [ifttt.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Automation/ifttt.md)  
+- Pipedream → [pipedream.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Automation/pipedream.md)  
+- Power Automate → [power-automate.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Automation/power-automate.md)  
+- GitHub Actions → [github-actions.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Automation/github-actions.md)  
+- Airflow → [airflow.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Automation/airflow.md)  
+- Airtable → [airtable.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Automation/airtable.md)  
+- Asana → [asana.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Automation/asana.md)  
+- GoHighLevel (GHL) → [ghl.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Automation/ghl.md)  
+- Parabola → [parabola.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Automation/parabola.md)  
+- LangChain (automation mode) → [langchain.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Automation/langchain.md)  
+- LlamaIndex (automation mode) → [llamaindex.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Automation/llamaindex.md)  
 
 ---
 
-## Minimal setup checklist for any Zap
+## Typical failure classes
 
-1) **Warm-up fence before RAG or LLM steps**  
-   Validate `VECTOR_READY == true`, `INDEX_HASH` matches, and secrets exist.  
-   If not ready, short-circuit with a Delay and retry with capped backoff.  
-   Spec: [Bootstrap Ordering](https://github.com/onestardao/WFGY/blob/main/ProblemMap/bootstrap-ordering.md)
+- **Bootstrap race conditions**  
+  Tools firing before the data index or vector store is ready.  
+  → [bootstrap-ordering.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/bootstrap-ordering.md)
 
-2) **Idempotency and dedupe**  
-   Compute `dedupe_key = sha256(source_id + revision + index_hash)`.  
-   Use Zapier Storage by Zap or an external KV to drop duplicates.
+- **Deployment deadlocks**  
+  Infinite waits between worker, retriever, or webhook callbacks.  
+  → [deployment-deadlock.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/deployment-deadlock.md)
 
-3) **RAG boundary contract**  
-   Require fields: `snippet_id`, `section_id`, `source_url`, `offsets`, `tokens`.  
-   Enforce cite-then-explain. Forbid cross-section reuse.  
-   Specs: [Data Contracts](https://github.com/onestardao/WFGY/blob/main/ProblemMap/data-contracts.md) ·
-   [Retrieval Traceability](https://github.com/onestardao/WFGY/blob/main/ProblemMap/retrieval-traceability.md)
+- **Pre-deploy collapse**  
+  Wrong version triggered on first call after shipping.  
+  → [predeploy-collapse.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/predeploy-collapse.md)
 
-4) **Observability probes**  
-   Log ΔS(question, retrieved). Log λ per step: retrieve, assemble, reason.  
-   Alert when ΔS ≥ 0.60 or λ flips divergent.  
-   Overview: [RAG Architecture & Recovery](https://github.com/onestardao/WFGY/blob/main/ProblemMap/rag-architecture-and-recovery.md)
+- **Embedding vs. semantic drift**  
+  Looks correct but meaning diverges.  
+  → [embedding-vs-semantic.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/embedding-vs-semantic.md)
 
-5) **Regression gate**  
-   Require coverage ≥ 0.70 and ΔS ≤ 0.45 before publishing the Zap.  
-   Eval: [RAG Precision/Recall](https://github.com/onestardao/WFGY/blob/main/ProblemMap/eval/eval_rag_precision_recall.md)
+- **Traceability breaks**  
+  Citations do not match source or section.  
+  → [retrieval-traceability.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/retrieval-traceability.md)  
+  → [data-contracts.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/data-contracts.md)
 
 ---
 
-## Zapier recipe you can copy
+## Minimal contract for any workflow
 
-> Replace the concrete tools with your stack. Keep the guardrails.
+1. **Check readiness before calling RAG/LLM**  
+   Use `VECTOR_READY` and `INDEX_HASH`. Delay if not valid.
 
-1. **Trigger**  
-   Stable `source_id` and `revision`.
+2. **Idempotency**  
+   Always compute a dedupe key. Store in KV to block duplicates.
 
-2. **Warm-up Check**  
-   Code step pulls `INDEX_HASH`, `VECTOR_READY`, secrets.  
-   If not ready, set `ready=false`.
+3. **Boundary contract**  
+   Require `{snippet_id, section_id, source_url, offsets, tokens}`.  
+   Never reuse across sections.
 
-3. **Path: Not ready**  
-   Delay 30–90 seconds.  
-   Re-run with a capped retry count.
-
-4. **Path: Ready**  
-   **Retrieval step**  
-   - Call the retriever with explicit metric and consistent analyzer.  
-   - Collect `snippet_id`, `section_id`, `source_url`, `offsets`, `tokens`.  
-   **ΔS probe step**  
-   - Compute ΔS(question, retrieved). If ΔS ≥ 0.60 set `needs_fix=true`.  
-   **Reasoning step**  
-   - LLM reads TXT OS and uses the WFGY schema. Enforce cite-then-explain.  
-   **Trace sink**  
-   - Store `question`, `snippet_id`, `ΔS`, `λ_state`, `INDEX_HASH`, `dedupe_key`.  
-   **Idempotency guard**  
-   - Before side effects, check KV for `dedupe_key`. If exists, skip.
-
----
-
-## Copy-paste prompt for the LLM step
-
-```
-
-I uploaded TXT OS and the WFGY Problem Map files.
-My Zapier flow retrieved {k} snippets with fields {snippet\_id, section\_id, source\_url, offsets}.
-Question: "{user\_question}"
-
-Do:
-
-1. Validate cite-then-explain. If citations are missing, fail fast and return the fix tip.
-2. If ΔS(question, retrieved) ≥ 0.60, propose the minimal structural fix referencing:
-   retrieval-playbook, retrieval-traceability, data-contracts, rerankers.
-3. Return a JSON plan:
-   { "citations": \[...], "answer": "...", "λ\_state": "→|←|<>|×", "ΔS": 0.xx, "next\_fix": "..." }
-   Keep it auditable and short.
-
-```
-
----
-
-## Common Zapier gotchas
-
-- Formatter renames fields and breaks your data contract  
-  Lock field names. Verify with a schema check step.
-
-- Parallel paths write to the same index or KV without a fence  
-  Use a single writer or a queue. Apply idempotency keys.
-
-- HyDE prompt created inside Zap differs from the API client  
-  Keep tokenizer and casing identical, or switch to reranking.  
-  See: [Rerankers](https://github.com/onestardao/WFGY/blob/main/ProblemMap/rerankers.md)
-
----
-
-## When to escalate
-
-- ΔS stays ≥ 0.60 after chunk and retrieval fixes  
-  Rebuild index with explicit metric and normalization.  
-  See: [Retrieval Playbook](https://github.com/onestardao/WFGY/blob/main/ProblemMap/retrieval-playbook.md)
-
-- Answers alternate across Zap runs with identical input  
-  Investigate memory desync and version skew.  
-  See: [Pre-Deploy Collapse](https://github.com/onestardao/WFGY/blob/main/ProblemMap/predeploy-collapse.md)
+4. **Observability**  
+   Log ΔS and λ across steps. Alert if ΔS ≥ 0.60.
 
 ---
 
@@ -145,7 +71,7 @@ Do:
 
 | Tool | Link | 3-Step Setup |
 |------|------|--------------|
-| **WFGY 1.0 PDF** | [Engine Paper](https://github.com/onestardao/WFGY/blob/main/I_am_not_lizardman/WFGY_All_Principles_Return_to_One_v1.0_PSBigBig_Public.pdf) | 1️⃣ Download · 2️⃣ Upload to your LLM · 3️⃣ Ask “Answer using WFGY + \<your question>” |
+| **WFGY 1.0 PDF** | [Engine Paper](https://github.com/onestardao/WFGY/blob/main/I_am_not_lizardman/WFGY_All_Principles_Return_to_One_v1.0_PSBigBig_Public.pdf) | 1️⃣ Download · 2️⃣ Upload to your LLM · 3️⃣ Ask “Answer using WFGY + <your question>” |
 | **TXT OS (plain-text OS)** | [TXTOS.txt](https://github.com/onestardao/WFGY/blob/main/OS/TXTOS.txt) | 1️⃣ Download · 2️⃣ Paste into any LLM chat · 3️⃣ Type “hello world” — OS boots instantly |
 
 ---
