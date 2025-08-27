@@ -64,6 +64,7 @@ Coverage ≥ 0.70 on three paraphrases. λ convergent on two seeds.
 - xAI Grok: [grok_xai.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/LLM_Providers/grok_xai.md)
 - AWS Bedrock: [aws_bedrock.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/LLM_Providers/aws_bedrock.md)
 - OpenRouter: [openrouter.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/LLM_Providers/openrouter.md)
+- Together: [together.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/LLM_Providers/together.md)
 
 ---
 
