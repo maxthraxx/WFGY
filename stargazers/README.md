@@ -47,6 +47,7 @@ Their support is a public signal — transparent, verifiable, and forever record
 | **mattcurf** | ollama-intel-gpu (253★) · AI infra/devops | ![](./images/Mattcurf_star.png) | [proof](https://github.com/mattcurf?tab=stars&q=WFGY) |
 | **mpontus** | react-modal-hook (255★), webpack-react (56★) · TS/JS OSS dev | ![](./images/mpontus_star.png) | [proof](https://github.com/mpontus?tab=stars&q=WFGY) |
 | **neoneye** | PlanExe (226★), ARC-interactive (28★) · Symbolic/logic AI researcher | ![](./images/Neoneye_star.png) | [proof](https://github.com/neoneye?tab=stars&q=WFGY) |
+| **christian-korneck** | get_win8key (190★), docker-pushrm (146★) · DevOps / CLI tooling | ![](./images/christian-korneck_star.png) | [proof](https://github.com/christian-korneck?tab=stars&q=WFGY) |
 | **Purus** | launch_review (192★) · Flutter plugin dev, also active in API/GraphQL repos | ![](./images/Purus_star.png) | [proof](https://github.com/Purus?tab=stars&q=WFGY) |
 | **vsaravind007** | nodeScratchpad (111★) · Director of Engineering @DiagnaI, co-founder @iostashiot | ![](./images/vsaravind007_star.png) | [proof](https://github.com/vsaravind007?tab=stars&q=WFGY) |
 | **4350pChris** | slack-vuevisualizer (99★), vike-vue contributor · Full stack dev (DE) | ![](./images/4350pChris_star.png) | [proof](https://github.com/4350pChris?tab=stars&q=WFGY) |
