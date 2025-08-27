@@ -3,43 +3,33 @@
 A hub to stabilize retrieval pipelines across popular vector stores.  
 Use this page to jump to per-tool guardrails and verify fixes with the same acceptance targets.
 
----
-
 ## Quick routes to per-store pages
-
 - FAISS → [faiss.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/VectorDBs_and_Stores/faiss.md)  
 - Chroma → [chroma.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/VectorDBs_and_Stores/chroma.md)  
 - Qdrant → [qdrant.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/VectorDBs_and_Stores/qdrant.md)  
 - Weaviate → [weaviate.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/VectorDBs_and_Stores/weaviate.md)  
 - Milvus → [milvus.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/VectorDBs_and_Stores/milvus.md)  
 - pgvector → [pgvector.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/VectorDBs_and_Stores/pgvector.md)  
-- Redis (Search/Vec) → [redis.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/VectorDBs_and_Stores/redis.md)  
-- Elasticsearch (kNN / dense) → [elasticsearch.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/VectorDBs_and_Stores/elasticsearch.md)  
-- Pinecone → [pinecone.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/VectorDBs_and_Stores/pinecone.md)
-
----
+- Redis Search/Vec → [redis.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/VectorDBs_and_Stores/redis.md)  
+- Elasticsearch (ANN) → [elasticsearch.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/VectorDBs_and_Stores/elasticsearch.md)  
+- Pinecone → [pinecone.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/VectorDBs_and_Stores/pinecone.md)  
+- Typesense → [typesense.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/VectorDBs_and_Stores/typesense.md)  
+- Vespa → [vespa.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/VectorDBs_and_Stores/vespa.md)
 
 ## When to use this folder
-
 - High similarity but wrong meaning.  
-- Citations don’t line up with the retrieved section.  
+- Citations do not line up with the retrieved section.  
 - Hybrid retrievers underperform a single retriever.  
-- Query casing / analyzer / metric mismatches after deploy.  
+- Query casing or analyzer or metric mismatches after deploy.  
 - Index looks healthy yet coverage remains low.
 
----
-
 ## Acceptance targets for any store
-
-- ΔS(question, retrieved) ≤ **0.45**  
-- Coverage of target section ≥ **0.70**  
-- λ\_observe stays **convergent** across 3 paraphrases  
-- E\_resonance flat on long windows
-
----
+- ΔS(question, retrieved) ≤ 0.45  
+- Coverage of target section ≥ 0.70  
+- λ_observe stays convergent across 3 paraphrases  
+- E_resonance flat on long windows
 
 ## Map symptoms → structural fixes (Problem Map)
-
 - **Embedding ≠ Semantic**  
   Wrong-meaning hits despite high similarity.  
   → [embedding-vs-semantic.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/embedding-vs-semantic.md)
@@ -47,53 +37,52 @@ Use this page to jump to per-tool guardrails and verify fixes with the same acce
 - **Retrieval traceability**  
   Snippet/section mismatch or unverifiable citations.  
   → [retrieval-traceability.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/retrieval-traceability.md)  
-  Payload schema: → [data-contracts.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/data-contracts.md)
+  Payload schema → [data-contracts.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/data-contracts.md)
 
 - **Ordering / version skew**  
   Old index or analyzer used at runtime.  
-  → [bootstrap-ordering.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/bootstrap-ordering.md) ·
-  [predeploy-collapse.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/predeploy-collapse.md)
+  → [bootstrap-ordering.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/bootstrap-ordering.md) · [predeploy-collapse.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/predeploy-collapse.md)
 
 - **Hybrid collapse / query split**  
   HyDE vs BM25 disagreement, reranker blind spots.  
   → Pattern: [patterns/pattern_query_parsing_split.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/patterns/pattern_query_parsing_split.md)  
   → Knobs: [rerankers.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/rerankers.md)
 
----
-
 ## 60-second fix checklist (store-agnostic)
+1) Lock metrics and analyzers  
+   One embedding model per field. One distance function. Same analyzer for write and read.
 
-1) **Lock metrics & analyzers**  
-   Pin distance metric, tokenizer/casing, and normalization on both write and read.
+2) Contract the snippet  
+   Require `{snippet_id, section_id, source_url, offsets, tokens}`. Enforce cite-then-explain.  
+   → [data-contracts.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/data-contracts.md)
 
-2) **Contract the snippet**  
-   Require `{snippet_id, section_id, source_url, offsets, tokens}`.
+3) Add deterministic reranking  
+   Keep candidate lists from BM25 and ANN. Detect query split.  
+   → [rerankers.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/rerankers.md)
 
-3) **Probe ΔS and λ**  
-   Log ΔS(question, retrieved) and λ per step; alert at ΔS ≥ 0.60.
+4) Cold-start and deploy fences  
+   Block traffic until index hash, analyzer, and model versions match.  
+   → [bootstrap-ordering.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/bootstrap-ordering.md)
 
-4) **Verify coverage**  
-   Run a 10-question eval on the target section; require coverage ≥ 0.70.
+5) Observability  
+   Log ΔS and λ across retrieve → rerank → reason. Alert when ΔS ≥ 0.60.
 
-5) **Reranking pass**  
-   If hybrid disagrees, add a rerank step and re-measure ΔS.
+6) Regression gate  
+   Require coverage ≥ 0.70 and ΔS ≤ 0.45 before publish.
 
----
-
-## Copy-paste prompt for a quick audit
-
+## Copy-paste audit prompt
 ```
 
 I uploaded TXT OS and the WFGY Problem Map pages.
-My stack uses <store> with metric \<cosine|l2|dot>, analyzer <...>, and normalization <...>.
+Store: <name>. Retrieval: \<bm25/ann/hybrid> with <distance>.
 
-Do:
+Audit this query and return:
 
-1. Report ΔS(question, retrieved) and λ states across retrieve → rerank → reason.
-2. If ΔS ≥ 0.60, point to one minimal structural fix:
-   embedding-vs-semantic, retrieval-traceability, data-contracts, rerankers.
-3. Return JSON:
-   { "citations":\[...], "ΔS":0.xx, "λ":"→|←|<>|×", "next\_fix":"..." }
+* ΔS(question, retrieved) and λ across retrieve → rerank → reason.
+* If ΔS ≥ 0.60, choose one minimal structural fix and name the page:
+  embedding-vs-semantic, retrieval-traceability, data-contracts, rerankers.
+* JSON only:
+  { "citations":\[...], "ΔS":0.xx, "λ":"→|←|<>|×", "next\_fix":"..." }
 
 ```
 
@@ -142,3 +131,4 @@ Do:
 [![Blow](https://img.shields.io/badge/Blow-Game%20Logic-purple?style=flat-square)](https://github.com/onestardao/WFGY/tree/main/OS/BlowBlowBlow)
 &nbsp;
 </div>
+
