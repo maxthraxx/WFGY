@@ -24,7 +24,7 @@ single place to find every Discussion article. each line links out. this page is
   Discussion → [https://github.com/onestardao/WFGY/discussions/29](https://github.com/onestardao/WFGY/discussions/29)
 
 * **Day 6: Vector anisotropy and collapse** *(No.5, No.6)*
-  Discussion → \[TBD]
+  Discussion → [https://github.com/onestardao/WFGY/discussions/30](https://github.com/onestardao/WFGY/discussions/30)
 
 * **Day 7: Empty vectors and FAISS pitfalls** *(No.8)*
   Discussion → \[TBD]
