@@ -59,6 +59,26 @@ A focused fix when nearest neighbors look similar in cosine distance but your st
 
 ---
 
+## Quick reference — store defaults
+
+> 版本與託管方案可能改變預設。以實際索引 schema 為準。
+
+| Store | Typical default metric | Where to verify |
+|---|---|---|
+| FAISS | No fixed default. You must choose L2 or IP. Cosine via normalized IP. | Index type name, for example `IndexFlatL2`, `IndexFlatIP`. |
+| Chroma | cosine | Client setting `distance_function`. |
+| Qdrant | cosine | Collection config field `distance`. |
+| Weaviate | cosine | Class schema `vectorIndexConfig.distance`. |
+| Milvus | L2 for float vectors | Index params `metric_type` on the collection or index. |
+| pgvector | No fixed default. Query operator decides. | `<->` L2, `<#>` inner product, `<=>` cosine. |
+| Redis Vector Similarity | L2 | Index or HNSW param `DISTANCE_METRIC`. |
+| Elasticsearch or OpenSearch | Often L2 on dense_vector unless set otherwise | Field mapping `similarity` set to `l2_norm`, `cosine`, or `dot_product`. |
+| Pinecone | cosine | Index spec `metric`. |
+| Typesense | cosine | Collection vector field `similarity`. |
+| Vespa | euclidean unless changed | Schema `distance-metric` such as `euclidean`, `angular`, `dotproduct`. |
+
+---
+
 ## Minimal rebuild checklist
 - Lock tokenizer, casing, and Unicode NFC.  
 - Recompute embeddings with a single model id and version string.  
