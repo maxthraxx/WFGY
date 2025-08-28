@@ -1,84 +1,58 @@
 # Embeddings — Global Fix Map
-Make embedding space match real meaning, not just cosine tricks.  
-Use this when recall looks high yet answers point to the wrong idea, or when FAISS/Qdrant “works” but context is off.
 
-## What this page is
-- A tight checklist to align models, metrics, and normalization.
-- Structural fixes that do not require changing your LLM or infra.
-- Steps you can verify with ΔS and small A/B probes.
+A hub to stabilize embedding pipelines across stores and retrievers. Use this page to jump to per-tool guardrails and verify fixes with the same acceptance targets.
 
-## When to use
-- Similarity scores look strong but retrieved snippets are semantically wrong.
-- Different pipelines write/read with different distance metrics.
-- Mixed models created the index and now query it.
-- Some facts never show up although definitely indexed.
-- Cross-language corpus drifts or tokenizers don’t match.
+## Quick routes to per-page fixes
+- Metric mismatch → [metric_mismatch.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Embeddings/metric_mismatch.md)
+- Normalization and scaling → [normalization_and_scaling.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Embeddings/normalization_and_scaling.md)
+- Tokenization and casing → [tokenization_and_casing.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Embeddings/tokenization_and_casing.md)
+- Chunking to embedding contract → [chunking_to_embedding_contract.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Embeddings/chunking_to_embedding_contract.md)
+- Vectorstore fragmentation → [vectorstore_fragmentation.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Embeddings/vectorstore_fragmentation.md)
+- Dimension mismatch and projection → [dimension_mismatch_and_projection.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Embeddings/dimension_mismatch_and_projection.md)
+- Update and index skew → [update_and_index_skew.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Embeddings/update_and_index_skew.md)
+- Hybrid retriever weights → [hybrid_retriever_weights.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Embeddings/hybrid_retriever_weights.md)
+- Duplication and near-duplicate collapse → [duplication_and_near_duplicate_collapse.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Embeddings/duplication_and_near_duplicate_collapse.md)
+- Poisoning and contamination → [poisoning_and_contamination.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Embeddings/poisoning_and_contamination.md)
 
-## Open these first
-- Meaning vs vector score: [Embedding ≠ Semantic](https://github.com/onestardao/WFGY/blob/main/ProblemMap/embedding-vs-semantic.md)
-- Fragmented or half-empty index: [Vectorstore Fragmentation](https://github.com/onestardao/WFGY/blob/main/ProblemMap/patterns/pattern_vectorstore_fragmentation.md)
-- End-to-end knobs: [Retrieval Playbook](https://github.com/onestardao/WFGY/blob/main/ProblemMap/retrieval-playbook.md)
-- Ordering layer after recall: [Rerankers](https://github.com/onestardao/WFGY/blob/main/ProblemMap/rerankers.md)
-- Trace why a snippet was picked: [Retrieval Traceability](https://github.com/onestardao/WFGY/blob/main/ProblemMap/retrieval-traceability.md)
-- Quality gates: [RAG Precision/Recall](https://github.com/onestardao/WFGY/blob/main/ProblemMap/eval/eval_rag_precision_recall.md) · [Latency vs Accuracy](https://github.com/onestardao/WFGY/blob/main/ProblemMap/eval/eval_latency_vs_accuracy.md)
-
-## Fix in 60 seconds
-1) **Measure ΔS**
-   - Compute `ΔS(question, retrieved)` and `ΔS(retrieved, expected anchor)`.
-   - Triggers: ΔS ≥ 0.60 or flat-high ΔS when you vary k ∈ {5,10,20}.
-
-2) **Check metric + normalization agreement**
-   - The model that built vectors must match the model used at query time.  
-   - Confirm cosine vs inner-product flags on both write and read.  
-   - Unit-normalize on both sides if you use cosine.
-
-3) **Verify dimensionality and truncation**
-   - Same vector length everywhere.  
-   - No hidden cast, dtype mismatch, or silent truncation.
-
-4) **Rebuild once with explicit config**
-   - Persist metric, normalizer, and model id with the index file.  
-   - After rebuild, probe ΔS again and compare the ΔS-vs-k curve.
-
-5) **Patch recall before ranking**
-   - If ΔS drops yet ordering still looks noisy, enable a light reranker from the playbook.  
-   - Keep citation schema from traceability to audit the change.
-
-## Copy-paste prompt
-```
-
-I uploaded TXT OS and the WFGY ProblemMap files.
-
-My embedding bug:
-
-* symptom: \[brief]
-* traces: ΔS(question, retrieved)=..., ΔS(retrieved, anchor)=..., curve vs k=...
-* context: write-model=\[...], read-model=\[...], metric=\[cosine|ip], norm=\[on|off]
-
-Tell me:
-
-1. which mismatch explains the failure,
-2. which exact pages to open from this repo,
-3. the minimal steps to rebuild or rescore to push ΔS ≤ 0.45,
-4. how to verify with a reproducible ΔS-vs-k chart and a citation table.
-   Use BBMC alignment if anchors are stable, then add a lightweight reranker if needed.
-
-```
-
-## Minimal checklist
-- One embedding model per corpus or store the model id with each vector.  
-- Fix the metric flag once and persist it with the index.  
-- Enforce unit normalization for cosine, never mix with raw dot product.  
-- Keep text pre-processing identical on write and read.  
-- Log vector counts per collection; compare to document counts.  
-- Run the fragmentation pattern if some facts vanish from results.
+## When to use this folder
+- High similarity yet wrong meaning.
+- Citations do not line up with the retrieved section.
+- Hybrid retrievers underperform a single retriever.
+- Quality drops after re-embed or re-index.
+- Index looks healthy but coverage stays low.
 
 ## Acceptance targets
-- ΔS(question, retrieved) ≤ 0.45 across three paraphrases.  
-- ΔS-vs-k curve descends then flattens, not flat-high.  
-- Recall/precision meet your eval sheet thresholds.  
-- λ stays convergent at the retrieval layer after the rebuild.  
-- Traceability explains why each snippet was selected.
+- ΔS(question, retrieved) ≤ 0.45  
+- Coverage of target section ≥ 0.70  
+- λ remains convergent across 3 paraphrases and 2 seeds  
+- E_resonance flat on long windows
+
+## 60-second checklist
+1) **Metrics and analyzer sanity** → [metric_mismatch.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Embeddings/metric_mismatch.md)  
+2) **Normalize and rescale vectors** → [normalization_and_scaling.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Embeddings/normalization_and_scaling.md)  
+3) **Unify tokenization and casing** → [tokenization_and_casing.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Embeddings/tokenization_and_casing.md)  
+4) **Lock the chunk→embed contract** → [chunking_to_embedding_contract.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Embeddings/chunking_to_embedding_contract.md)  
+5) **Defragment the store** → [vectorstore_fragmentation.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Embeddings/vectorstore_fragmentation.md)  
+6) **Fix dimension and projection paths** → [dimension_mismatch_and_projection.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Embeddings/dimension_mismatch_and_projection.md)  
+7) **Repair update and index skew** → [update_and_index_skew.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Embeddings/update_and_index_skew.md)  
+8) **Rebalance hybrid retrievers** → [hybrid_retriever_weights.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Embeddings/hybrid_retriever_weights.md)  
+9) **Collapse near-duplicates** → [duplication_and_near_duplicate_collapse.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Embeddings/duplication_and_near_duplicate_collapse.md)  
+10) **Audit poisoning and contamination** → [poisoning_and_contamination.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Embeddings/poisoning_and_contamination.md)
+
+## Map symptoms to structural fixes
+- Wrong-meaning hits despite high similarity  
+  → [embedding-vs-semantic.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/embedding-vs-semantic.md)
+- Unverifiable citations or snippet drift  
+  → [retrieval-traceability.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/retrieval-traceability.md) · [data-contracts.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/data-contracts.md)
+- Results flip across runs or small paraphrases  
+  → [context-drift.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/context-drift.md) · [entropy-collapse.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/entropy-collapse.md) · [rerankers.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/rerankers.md)
+- Hallucination re-entry after correction  
+  → [pattern_hallucination_reentry.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/patterns/pattern_hallucination_reentry.md)
+
+## Verify the fix
+- Log ΔS and λ for three paraphrases and two seeds.  
+- Require coverage ≥ 0.70 and ΔS ≤ 0.45 before publish.  
+- Keep a small gold set to re-test after any change to metric, tokenizer, or chunking.
 
 ---
 
@@ -127,3 +101,4 @@ Tell me:
 [![Blow](https://img.shields.io/badge/Blow-Game%20Logic-purple?style=flat-square)](https://github.com/onestardao/WFGY/tree/main/OS/BlowBlowBlow)
 &nbsp;
 </div>
+
