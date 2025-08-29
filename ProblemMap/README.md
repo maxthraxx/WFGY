@@ -1,260 +1,207 @@
-# WFGY Problem Map 1.0 — Bookmark it. You'll need it  
-## 🛡️ Permanent fixes for recurring AI bugs. Fix once, never again.
+# WFGY Problem Map 1.0 — bookmark it. you’ll need it
+## 🛡️ permanent fixes for recurring ai bugs. fix once, never again.
+
+**WFGY Problem Map = a reasoning layer for your AI.**  
+no infra change. just load **TXT OS** or **WFGY Core**, then ask your model: *“which problem map number am i hitting?”*  
+you get the diagnosis and the exact fix steps.
 
 **16 reproducible failure modes in AI systems, each with a clear fix (MIT).**  
-**A plug-and-play semantic firewall, praised by users, with no infra changes required.**  
-**Built on structural fixes at the semantic layer — solve it once, and it stays solved.**  
-*If this page saves you time, a ⭐ helps others discover it.* <img src="https://img.shields.io/github/stars/onestardao/WFGY?style=social" alt="GitHub stars"> 
+**A plug-and-play semantic firewall, with no infra changes required.**  
+**Built at the semantic layer. solve it once, it stays solved.**  
+*if this page saves you time, a ⭐ helps others discover it.* <img src="https://img.shields.io/github/stars/onestardao/WFGY?style=social" alt="GitHub stars">
 
-> 🎉 Thanks to everyone — WFGY reached **800 stars in 70 days**.     
->　Next milestone: at **1000 stars we’ll unlock Blur Blur Blur**.
-
-
----
-> **[WFGY 2.0](https://github.com/onestardao/WFGY/blob/main/core/README.md)** is now live: a 30-line reasoning engine built for LLM recovery & resilience.  
-> ⚡️ **Fixing RAG hallucinations?** This version makes LLMs reason before they answer — try it and see the difference.  
-> 🛠️ Coming next: the **Semantic Surgery Room** and **Global Fix Map** (n8n, GHL, Make.com and more). Launching by **Sep 1**.  
+> thanks everyone — WFGY reached **800 stars in 70 days**.  
+> next milestone: at **1000 stars we’ll unlock Blur Blur Blur**.
 
 ---
+> **[WFGY Core](https://github.com/onestardao/WFGY/blob/main/core/README.md)** is live: a 30-line reasoning engine for recovery and resilience.  
+> fixing rag hallucinations? it makes models **reason before answering**.  
+> coming next: **Semantic Surgery Room** and **Global Fix Map** (n8n, GHL, Make, more). planned by **Sep 1**.
 
 <div align="center">
-  <!-- keep one visual; remove if you prefer text-only -->
   <img src="https://github.com/onestardao/WFGY/raw/main/OS/images/tree-semantic-memory.gif"
-       alt="Semantic memory & reasoning fix in action"
+       alt="semantic memory & reasoning fix in action"
        width="100%" style="max-width:900px" loading="lazy">
 </div>
 
 ---
 
-## Quick access
+## quick access
 
-- 🏥 **Semantic Clinic (AI Triage Hub):** [Fix symptoms when you don’t know what’s broken →](./SemanticClinicIndex.md)
-- 🚀 **Getting Started (Practical Implementation):** [Run a guarded RAG pipeline with WFGY →](./getting-started.md)
-- **Beginner Guide:** [Identify & fix your first failure](./BeginnerGuide.md)
-- **Diagnose by symptom:** [Fast triage table → `Diagnose.md`](./Diagnose.md)
-- **Visual RAG Guide (multi-dimensional):** [`RAG Architecture & Recovery – Problem Map 2.0`](./rag-architecture-and-recovery.md) — high-altitude view linking symptom × pipeline stage × failure class, with the exact recovery path.
-- **Multi-Agent Chaos (Map-B):** [Role Drift & Memory Overwrite →](./Multi-Agent_Problems.md)
-- **Field Reports:** [Real bugs & fixes from users](https://github.com/onestardao/WFGY/discussions/10)
-- **TXT OS directory:** [Browse the OS repo](../OS/README.md)
-- 🧩 **MVP Demos:** [Run minimal WFGY examples in `mvp_demo` →](./mvp_demo/README.md)
+> don’t worry if this looks long. with TXT OS loaded, simply ask your LLM:  
+> *“which Problem Map number fits my issue?”* it will point you to the right page.
 
-<!-- New reference links -->
-- ❓ **FAQ:** [Common questions & gotchas →](./faq.md)
-- 🔎 **Retrieval Playbook:** [Practical fixes before changing models →](./retrieval-playbook.md)
-- 🧮 **Rerankers:** [When & how to use them →](./rerankers.md)
-- 📑 **Data Contracts:** [Snippets / citations / memory schema →](./data-contracts.md)
-- 📚 **Glossary:** [WFGY & RAG terms →](./glossary.md)
-- 🌍 **Multilingual Guide:** [CJK/RTL & cross-lingual RAG →](./multilingual-guide.md)
-- 🔐 **Privacy & Governance:** [Auditability & policy guardrails →](./privacy-and-governance.md)
+- **Semantic Clinic (triage when unsure):** [Fix symptoms fast →](./SemanticClinicIndex.md)
+- **Getting Started (practical):** [Guard a RAG pipeline with WFGY →](./getting-started.md)
+- **Beginner Guide:** [Find and fix your first failure →](./BeginnerGuide.md)
+- **Diagnose by symptom:** [`Diagnose.md` table →](./Diagnose.md)
+- **Visual RAG Guide:** [`RAG Architecture & Recovery`](./rag-architecture-and-recovery.md)  
+  high-altitude map linking symptom × stage × failure class with exact recovery paths.
+- **Multi-Agent chaos:** [Role drift & memory overwrite →](./Multi-Agent_Problems.md)
+- **Field reports:** [Real bugs and fixes from users →](https://github.com/onestardao/WFGY/discussions/10)
+- **TXT OS directory:** [browse the OS repo →](../OS/README.md)
+- **MVP demos:** [Minimal WFGY examples →](./mvp_demo/README.md)
 
-> 📌 This map isn’t just a list of bugs. It’s a diagnostic framework — a semantic X-ray for AI failure.  
-> Each entry represents a *systemic breakdown* across input, retrieval, or reasoning.  
-> WFGY doesn’t patch symptoms. It restructures the entire reasoning chain.
+> tip: if you’re new, skip scrolling — use the **minimal quick-start** below.
 
 ---
 
-## Quick-Start Downloads (60 sec)
-| Tool | Link | 3-Step Setup |
+## quick-start downloads (60 sec)
+
+> new here? skip the map. grab TXT OS or the WFGY PDF, boot, then ask your model:  
+> *“answer using WFGY: <your question>”* or *“which Problem Map number am i hitting?”*
+
+| tool | link | 3-step setup |
 |------|------|--------------|
-| **WFGY 1.0 PDF** | [Engine Paper](https://github.com/onestardao/WFGY/blob/main/I_am_not_lizardman/WFGY_All_Principles_Return_to_One_v1.0_PSBigBig_Public.pdf) | 1) Download  2) Upload to your LLM  3) Ask: “answer using WFGY + <your question>” |
-| **TXT OS (plain-text OS)** | [TXTOS.txt](https://github.com/onestardao/WFGY/blob/main/OS/TXTOS.txt) | 1) Download  2) Paste into any LLM chat  3) Type “hello world” to boot |
+| **WFGY 1.0 PDF** | [engine paper](https://github.com/onestardao/WFGY/blob/main/I_am_not_lizardman/WFGY_All_Principles_Return_to_One_v1.0_PSBigBig_Public.pdf) | 1) download  2) upload to your LLM  3) ask: “answer using WFGY + <your question>” |
+| **TXT OS** | [TXTOS.txt](https://github.com/onestardao/WFGY/blob/main/OS/TXTOS.txt) | 1) download  2) paste into any LLM chat  3) type “hello world” to boot |
 
 ---
 
-## 🧪 One-click sandboxes — run WFGY instantly
+## why this matters long-term
 
-Run lightweight diagnostics with **zero install**, **zero API key**. Powered by Colab.
+these 16 errors are not random. they are structural weak points every ai pipeline hits eventually.  
+with WFGY as a **semantic firewall** you don’t just fix today’s issue — you shield tomorrow’s.
 
-> These 4 CLI tools demonstrate WFGY's diagnostic power — each maps directly to one of the 16 failure modes. 
-> Other problems (like deployment bugs or reasoning collapse) are already handled inside WFGY,  
-> but are not exposed as CLI yet — either because they require full context, or operate at system level.  
-> More tools coming soon.
+> this isn’t just a bug list. it’s an **x-ray** for your pipeline, so you stop guessing and start repairing.
 
-<details>
-<summary><strong>⭐ ΔS Diagnostic (MVP)</strong> — Measure semantic drift</summary>
-
-<br>
-
-[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/onestardao/WFGY/blob/main/tools/wfgy_diagnose_colab.ipynb)
-
-> **How to use**  
-> 1. Click the badge ▸ Runtime ▸ Run all  
-> 2. Replace `prompt` and `answer`  
-> 3. See ΔS score and suggested fix  
->
-> **What it detects:**  
-> No.2 – [Interpretation Collapse](./retrieval-collapse.md)  
-> (Prompt and output look fine, but meaning is mismatched)
-
-</details>
-
-<details>
-<summary><strong>⭐ λ_observe Checkpoint</strong> — Mid-step re-grounding</summary>
-
-<br>
-
-[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/onestardao/WFGY/blob/main/tools/wfgy_lambda_observe_colab.ipynb)
-
-> **How to use**  
-> 1. Run all cells  
-> 2. Edit `prompt`, `step1`, `step2`  
-> 3. Compare ΔS before vs after  
->
-> If ΔS drops → checkpoint worked  
-> If not → try BBCR fallback  
->
-> **What it fixes:**  
-> No.6 – [Logic Collapse & Recovery](./logic-collapse.md)  
-> (Multi-step reasoning veers off and needs semantic midpoints)
-
-</details>
-
-<details>
-<summary><strong>⭐ ε_resonance</strong> — Domain-level semantic harmony</summary>
-
-<br>
-
-[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/onestardao/WFGY/blob/main/tools/wfgy_e_resonance_colab.ipynb)
-
-> **How to use**  
-> 1. Run all cells  
-> 2. Edit `prompt` and `answer`  
-> 3. Optionally update the `anchors` list  
->
-> Higher ε → deeper resonance with domain anchors  
->
-> **What it explains:**  
-> No.12 – [Philosophical Recursion](./philosophical-recursion.md)  
-> (Looping abstraction caused by mismatched domains)
-
-</details>
-
-<details>
-<summary><strong>⭐ λ_diverse</strong> — Answer-set diversity check</summary>
-
-<br>
-
-[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/onestardao/WFGY/blob/main/tools/wfgy_lambda_diverse_colab.ipynb)
-
-> **How to use**  
-> 1. Run all cells  
-> 2. Fill in `prompt` and `answers` (≥ 3 examples)  
-> 3. See λ_diverse score  
->
-> Low (≤ 0.40) — near duplicates  
-> Medium (0.40–0.70) — partial variety  
-> High (≥ 0.70) — rich semantic variation  
->
-> **What it detects:**  
-> No.3 – [Long Reasoning Chains](./context-drift.md)  
-> (Early steps diverge silently across variants)
-
-</details>
-
-> ⚠️ Warning ⚠️ These tools may trigger existential reflection — especially if you've spent months chasing ghost bugs in your RAG stack. 
+see the end-to-end view: [`RAG Architecture & Recovery`](./rag-architecture-and-recovery.md)
 
 ---
 
-## Failure catalog (with fixes)
+## 🧪 one-click sandboxes — run WFGY instantly
+run lightweight diagnostics with zero install and zero api key. powered by colab.
 
-| #  | Problem Domain                  | What breaks                                   | Doc |
+> these tools map directly to the problem classes. others are handled inside WFGY and will surface in later CLIs.
+
+<details>
+<summary><strong>ΔS diagnostic (mvp)</strong> — measure semantic drift</summary>
+
+[open in colab](https://colab.research.google.com/github/onestardao/WFGY/blob/main/tools/wfgy_diagnose_colab.ipynb)
+
+detects: No.2 — [Interpretation Collapse](./retrieval-collapse.md)  
+steps: run all, paste prompt+answer, read ΔS and fix tip
+</details>
+
+<details>
+<summary><strong>λ_observe checkpoint</strong> — mid-step re-grounding</summary>
+
+[open in colab](https://colab.research.google.com/github/onestardao/WFGY/blob/main/tools/wfgy_lambda_observe_colab.ipynb)
+
+fixes: No.6 — [Logic Collapse & Recovery](./logic-collapse.md)  
+steps: run all, compare ΔS before/after, fallback to BBCR if needed
+</details>
+
+<details>
+<summary><strong>ε_resonance</strong> — domain-level harmony</summary>
+
+[open in colab](https://colab.research.google.com/github/onestardao/WFGY/blob/main/tools/wfgy_e_resonance_colab.ipynb)
+
+explains: No.12 — [Philosophical Recursion](./philosophical-recursion.md)  
+steps: run, tune anchors, read ε
+</details>
+
+<details>
+<summary><strong>λ_diverse</strong> — answer-set diversity</summary>
+
+[open in colab](https://colab.research.google.com/github/onestardao/WFGY/blob/main/tools/wfgy_lambda_diverse_colab.ipynb)
+
+detects: No.3 — [Long Reasoning Chains](./context-drift.md)  
+steps: run, supply ≥3 answers, read score
+</details>
+
+---
+
+## failure catalog (with fixes)
+
+> if you are unsure which one applies, ask your LLM with TXT OS loaded:  
+> *“which Problem Map number matches my trace?”* it will route you.
+
+| #  | problem domain                  | what breaks                                   | doc |
 |----|---------------------------------|-----------------------------------------------|-----|
-| 1  | Hallucination & Chunk Drift     | Retrieval returns wrong/irrelevant content    | [hallucination.md](./hallucination.md) |
-| 2  | Interpretation Collapse         | Chunk is right, logic is wrong                | [retrieval-collapse.md](./retrieval-collapse.md) |
-| 3  | Long Reasoning Chains           | Drifts across multi-step tasks                | [context-drift.md](./context-drift.md) |
-| 4  | Bluffing / Overconfidence       | Confident but unfounded answers               | [bluffing.md](./bluffing.md) |
-| 5  | Semantic ≠ Embedding            | Cosine match ≠ true meaning                   | [embedding-vs-semantic.md](./embedding-vs-semantic.md) |
-| 6  | Logic Collapse & Recovery       | Dead-end paths; needs controlled reset        | [logic-collapse.md](./logic-collapse.md) |
-| 7  | Memory Breaks Across Sessions   | Lost threads, no continuity                   | [memory-coherence.md](./memory-coherence.md) |
-| 8  | Debugging is a Black Box        | No visibility into failure path               | [retrieval-traceability.md](./retrieval-traceability.md) |
-| 9  | Entropy Collapse                | Attention melts, incoherent output            | [entropy-collapse.md](./entropy-collapse.md) |
-| 10 | Creative Freeze                 | Flat, literal outputs                         | [creative-freeze.md](./creative-freeze.md) |
-| 11 | Symbolic Collapse               | Abstract/logical prompts break                | [symbolic-collapse.md](./symbolic-collapse.md) |
-| 12 | Philosophical Recursion         | Self-reference/paradoxes crash reasoning      | [philosophical-recursion.md](./philosophical-recursion.md) |
-| 13 | **Multi-Agent Chaos**           | Agents overwrite/misalign logic               | **[Multi-Agent Problems](./Multi-Agent_Problems.md)** |
-| 14 | Bootstrap Ordering              | Services fire before deps ready               | [bootstrap-ordering.md](./bootstrap-ordering.md) |
-| 15 | Deployment Deadlock             | Circular waits (index⇆retriever, DB⇆migrator) | [deployment-deadlock.md](./deployment-deadlock.md) |
-| 16 | Pre-Deploy Collapse             | Version skew / missing secret on first call   | [predeploy-collapse.md](./predeploy-collapse.md) |
+| 1  | hallucination & chunk drift     | retrieval returns wrong/irrelevant content    | [hallucination.md](./hallucination.md) |
+| 2  | interpretation collapse         | chunk is right, logic is wrong                | [retrieval-collapse.md](./retrieval-collapse.md) |
+| 3  | long reasoning chains           | drifts across multi-step tasks                | [context-drift.md](./context-drift.md) |
+| 4  | bluffing / overconfidence       | confident but unfounded answers               | [bluffing.md](./bluffing.md) |
+| 5  | semantic ≠ embedding            | cosine match ≠ true meaning                   | [embedding-vs-semantic.md](./embedding-vs-semantic.md) |
+| 6  | logic collapse & recovery       | dead-ends, needs controlled reset             | [logic-collapse.md](./logic-collapse.md) |
+| 7  | memory breaks across sessions   | lost threads, no continuity                   | [memory-coherence.md](./memory-coherence.md) |
+| 8  | debugging is a black box        | no visibility into failure path               | [retrieval-traceability.md](./retrieval-traceability.md) |
+| 9  | entropy collapse                | attention melts, incoherent output            | [entropy-collapse.md](./entropy-collapse.md) |
+| 10 | creative freeze                 | flat, literal outputs                         | [creative-freeze.md](./creative-freeze.md) |
+| 11 | symbolic collapse               | abstract/logical prompts break                | [symbolic-collapse.md](./symbolic-collapse.md) |
+| 12 | philosophical recursion         | self-reference loops, paradox traps           | [philosophical-recursion.md](./philosophical-recursion.md) |
+| 13 | multi-agent chaos               | agents overwrite or misalign logic            | [Multi-Agent_Problems.md](./Multi-Agent_Problems.md) |
+| 14 | bootstrap ordering              | services fire before deps ready               | [bootstrap-ordering.md](./bootstrap-ordering.md) |
+| 15 | deployment deadlock             | circular waits in infra                       | [deployment-deadlock.md](./deployment-deadlock.md) |
+| 16 | pre-deploy collapse             | version skew / missing secret on first call   | [predeploy-collapse.md](./predeploy-collapse.md) |
 
-> For #13 (Multi-Agent), see deep dives:  
-> • **Role Drift** → [`multi-agent-chaos/role-drift.md`](./multi-agent-chaos/role-drift.md)  
-> • **Cross-Agent Memory Overwrite** → [`multi-agent-chaos/memory-overwrite.md`](./multi-agent-chaos/memory-overwrite.md)
-
----
-
-## Why these 16 errors were solvable
-WFGY does not just react; it gives **semantic altitude**. Core tools `ΔS`, `λ_observe`, and `e_resonance` help detect, decode, and defuse collapse patterns from **outside** the maze.
-
-**See the pipeline and recovery end-to-end:**  
-→ [`RAG Architecture & Recovery`](./rag-architecture-and-recovery.md)
+for No.13 deep dives:  
+• role drift → [`multi-agent-chaos/role-drift.md`](./multi-agent-chaos/role-drift.md)  
+• cross-agent memory overwrite → [`multi-agent-chaos/memory-overwrite.md`](./multi-agent-chaos/memory-overwrite.md)
 
 ---
 
-## Problem Maps Index (Map-A … Map-G)
-These short IDs let you route quickly in issues/PRs/support threads.
+## minimal quick-start
 
-| Map ID | Map Name                     | Linked Issues        | Focus                                          | Link |
-|-------:|------------------------------|----------------------|------------------------------------------------|------|
-| Map-A  | RAG Problem Table            | #1, #2, #3, #5, #8   | Retrieval-augmented generation failures        | [View](./RAG_Problems.md) |
-| Map-B  | **Multi-Agent Chaos Map**    | #13                  | Coordination failures, role drift, memory overwrite | [View](./Multi-Agent_Problems.md) |
-| Map-C  | Symbolic & Recursive Map     | #11, #12             | Symbolic logic traps, abstraction, paradox     | [View](./Symbolic_Logic_Problems.md) |
-| Map-D  | Logic Recovery Map           | #6                   | Dead-end logic, reset loops, controlled recovery | [View](./logic-collapse.md) |
-| Map-E  | Long-Context Stress Map      | #3, #7, #10          | 100k-token memory, noisy PDFs, long-task drift | [View](./LongContext_Problems.md) |
-| Map-F  | Safety Boundary Map          | #4, #8               | Overconfidence, jailbreak resistance, traceability | [View](./Safety_Boundary_Problems.md) |
-| Map-G  | Infra Boot Map               | #14–#16              | Ordering, boot loops, version skew, deadlocks  | [View](./Infra_Boot_Problems.md) |
+1) open **Beginner Guide** and follow the symptom checklist.  
+2) use the **Visual RAG Guide** to locate the failing stage.  
+3) open the matching page and apply the patch.
 
----
+ask any LLM to apply WFGY (TXT OS makes it smoother):
 
-## Minimal quick-start
-1. Open **Beginner Guide** → follow the symptom checklist.  
-2. Use the **Visual RAG Guide** to locate the failing stage.  
-3. Open the matching page above and apply the patch.  
-   _Need definitions or common pitfalls?_ See **[FAQ](./faq.md)** · **[Glossary](./glossary.md)** · **[Data Contracts](./data-contracts.md)** · **[Retrieval Playbook](./retrieval-playbook.md)**.
-
-Ask any LLM to apply WFGY (TXT OS makes it smoother):
 ```
 
-I’ve uploaded TXT OS / WFGY notes.
-My issue: \[e.g., OCR tables from scanned PDFs look fine but answers are wrong].
-Which WFGY modules should I apply and in what order?
+i’ve uploaded TXT OS / WFGY notes.
+my issue: \[e.g., OCR tables look fine but answers point to wrong sections]
+which WFGY modules should i apply and in what order?
 
 ```
 
 <details>
-<summary><strong>Status & difficulty</strong></summary>
+<summary><strong>status & difficulty</strong></summary>
 
-| #  | Problem                         | Difficulty* | Implementation |
+| #  | problem                         | difficulty* | implementation |
 |----|---------------------------------|-------------|----------------|
-| 1  | Hallucination & Chunk Drift     | Medium      | ✅ Stable |
-| 2  | Interpretation Collapse         | High        | ✅ Stable |
-| 3  | Long Reasoning Chains           | High        | ✅ Stable |
-| 4  | Bluffing / Overconfidence       | High        | ✅ Stable |
-| 5  | Semantic ≠ Embedding            | Medium      | ✅ Stable |
-| 6  | Logic Collapse & Recovery       | Very High   | ✅ Stable |
-| 7  | Memory Breaks Across Sessions   | High        | ✅ Stable |
-| 8  | Debugging Black Box             | Medium      | ✅ Stable |
-| 9  | Entropy Collapse                | High        | ✅ Stable |
-| 10 | Creative Freeze                 | Medium      | ✅ Stable |
-| 11 | Symbolic Collapse               | Very High   | ✅ Stable |
-| 12 | Philosophical Recursion         | Very High   | ✅ Stable |
-| 13 | Multi-Agent Chaos               | Very High   | ✅ Stable |
-| 14 | Bootstrap Ordering              | Medium      | ✅ Stable |
-| 15 | Deployment Deadlock             | High        | ⚠️ Beta |
-| 16 | Pre-Deploy Collapse             | Medium-High | ✅ Stable |
+| 1  | hallucination & chunk drift     | medium      | ✅ stable |
+| 2  | interpretation collapse         | high        | ✅ stable |
+| 3  | long reasoning chains           | high        | ✅ stable |
+| 4  | bluffing / overconfidence       | high        | ✅ stable |
+| 5  | semantic ≠ embedding            | medium      | ✅ stable |
+| 6  | logic collapse & recovery       | very high   | ✅ stable |
+| 7  | memory breaks across sessions   | high        | ✅ stable |
+| 8  | debugging black box             | medium      | ✅ stable |
+| 9  | entropy collapse                | high        | ✅ stable |
+| 10 | creative freeze                 | medium      | ✅ stable |
+| 11 | symbolic collapse               | very high   | ✅ stable |
+| 12 | philosophical recursion         | very high   | ✅ stable |
+| 13  | multi-agent chaos              | very high   | ✅ stable |
+| 14 | bootstrap ordering              | medium      | ✅ stable |
+| 15 | deployment deadlock             | high        | ⚠️ beta |
+| 16 | pre-deploy collapse             | medium-high | ✅ stable |
 
-\*Distance from default LLM behavior to a production-ready fix.
+\*distance from default LLM behavior to a production-ready fix.
 </details>
 
 ---
 
-## Contributing / support
-- Open an **Issue** with a minimal repro (inputs → calls → wrong output).  
-- PRs for clearer docs, repros, or patches are welcome.  
-- WFGY Project home: [github.com/onestardao/WFGY](https://github.com/onestardao/WFGY)  
-- TXT OS: [github.com/onestardao/WFGY/tree/main/OS](https://github.com/onestardao/WFGY/tree/main/OS)  
-- If this map helped you, a ⭐ helps more devs find it.
+## 🔮 coming soon: global fix map
+
+a universal layer above providers, agents, and infra.  
+Problem Map is step one. **Global Fix Map** expands the same reasoning-first firewall to RAG, infra boot, agents, evals, and more. same zero-install experience. launching around **Sep**.
 
 ---
+
+## contributing / support
+
+- open an issue with a minimal repro (inputs → calls → wrong output).  
+- PRs for clearer docs, repros, or patches are welcome.  
+- project home: [github.com/onestardao/WFGY](https://github.com/onestardao/WFGY)  
+- TXT OS: [browse the OS](https://github.com/onestardao/WFGY/tree/main/OS)  
+- if this map helped you, a ⭐ helps more devs find it.
+
+---
+
 
 ### 🧭 Explore More
 
