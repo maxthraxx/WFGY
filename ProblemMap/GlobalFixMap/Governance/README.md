@@ -11,7 +11,7 @@ Every page links to a structural WFGY fix and carries measurable acceptance targ
 - Data provenance is lost between documents, chunks, embeddings, and answers.  
 - PII handling and minimization cannot be proven.  
 - License or usage rights are ambiguous.  
-- Audit trail or incident response is missing.
+- Audit trail or incident response is missing.  
 
 ---
 
@@ -21,22 +21,27 @@ Every page links to a structural WFGY fix and carries measurable acceptance targ
 - Coverage ≥ 0.70 for target section in evals.  
 - λ remains convergent across 3 paraphrases and 2 seeds.  
 - Every waiver has expiry and owner.  
-- Immutable audit logs joinable to lineage and approvals.
+- Immutable audit logs joinable to lineage and approvals.  
 
 ---
 
 ## Quick routes — per governance page
-- Policy baseline → [policy_baseline.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Governance/policy_baseline.md)  
-- Roles and access (RBAC/ABAC) → [roles_and_access_rbac_abac.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Governance/roles_and_access_rbac_abac.md)  
-- Data lineage and provenance → [data_lineage_and_provenance.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Governance/data_lineage_and_provenance.md)  
-- PII handling and minimization → [pii_handling_and_minimization.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Governance/pii_handling_and_minimization.md)  
-- License and dataset rights → [license_and_dataset_rights.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Governance/license_and_dataset_rights.md)  
-- Prompt policy and change control → [prompt_policy_and_change_control.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Governance/prompt_policy_and_change_control.md)  
-- Model governance: cards and releases → [model_governance_model_cards_and_releases.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Governance/model_governance_model_cards_and_releases.md)  
-- Eval governance: gates and sign-off → [eval_governance_gates_and_signoff.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Governance/eval_governance_gates_and_signoff.md)  
-- Audit logs and traceability → [audit_logs_and_traceability.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Governance/audit_logs_and_traceability.md)  
-- Incident response and postmortems → [incident_response_and_postmortems.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Governance/incident_response_and_postmortems.md)  
-- Risk register and waivers → [risk_register_and_waivers.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Governance/risk_register_and_waivers.md)  
+- Policy baseline → [policy_baseline.md](./policy_baseline.md)  
+- Roles and access (RBAC/ABAC) → [roles_and_access_rbac_abac.md](./roles_and_access_rbac_abac.md)  
+- Data lineage and provenance → [data_lineage_and_provenance.md](./data_lineage_and_provenance.md)  
+- PII handling and minimization → [pii_handling_and_minimization.md](./pii_handling_and_minimization.md)  
+- License and dataset rights → [license_and_dataset_rights.md](./license_and_dataset_rights.md)  
+- Prompt policy and change control → [prompt_policy_and_change_control.md](./prompt_policy_and_change_control.md)  
+- Model governance: cards and releases → [model_governance_model_cards_and_releases.md](./model_governance_model_cards_and_releases.md)  
+- Eval governance: gates and sign-off → [eval_governance_gates_and_signoff.md](./eval_governance_gates_and_signoff.md)  
+- Audit and logging → [audit_and_logging.md](./audit_and_logging.md)  
+- Audit logs and traceability → [audit_logs_and_traceability.md](./audit_logs_and_traceability.md)  
+- Escalation and governance → [escalation_and_governance.md](./escalation_and_governance.md)  
+- Ethics and bias mitigation → [ethics_and_bias_mitigation.md](./ethics_and_bias_mitigation.md)  
+- Regulatory alignment → [regulatory_alignment.md](./regulatory_alignment.md)  
+- Transparency and explainability → [transparency_and_explainability.md](./transparency_and_explainability.md)  
+- Incident response and postmortems → [incident_response_and_postmortems.md](./incident_response_and_postmortems.md)  
+- Risk register and waivers → [risk_register_and_waivers.md](./risk_register_and_waivers.md)  
 
 ---
 
@@ -44,7 +49,7 @@ Every page links to a structural WFGY fix and carries measurable acceptance targ
 
 | Tool | Link | 3-Step Setup |
 |------|------|--------------|
-| **WFGY 1.0 PDF** | [Engine Paper](https://github.com/onestardao/WFGY/blob/main/I_am_not_lizardman/WFGY_All_Principles_Return_to_One_v1.0_PSBigBig_Public.pdf) | 1️⃣ Download · 2️⃣ Upload to your LLM · 3️⃣ Ask “Answer using WFGY + \<your question>” |
+| **WFGY 1.0 PDF** | [Engine Paper](https://github.com/onestardao/WFGY/blob/main/I_am_not_lizardman/WFGY_All_Principles_Return_to_One_v1.0_PSBigBig_Public.pdf) | 1️⃣ Download · 2️⃣ Upload to your LLM · 3️⃣ Ask “Answer using WFGY + <your question>” |
 | **TXT OS (plain-text OS)** | [TXTOS.txt](https://github.com/onestardao/WFGY/blob/main/OS/TXTOS.txt) | 1️⃣ Download · 2️⃣ Paste into any LLM chat · 3️⃣ Type “hello world” — OS boots instantly |
 
 ---
