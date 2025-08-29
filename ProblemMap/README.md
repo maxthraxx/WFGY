@@ -2,8 +2,9 @@
 ## 🛡️ permanent fixes for recurring ai bugs. fix once, never again.
 
 **WFGY Problem Map = a reasoning layer for your AI.**  
-no infra change. just load **TXT OS** or **WFGY Core**, then ask your model: *“which problem map number am i hitting?”*  
+no infra change. just load [**TXT OS**](https://github.com/onestardao/WFGY/blob/main/OS/README.md) or [**WFGY Core**](https://github.com/onestardao/WFGY/tree/main/core), then ask your model: *“which problem map number am i hitting?”*  
 you get the diagnosis and the exact fix steps.
+
 
 **16 reproducible failure modes in AI systems, each with a clear fix (MIT).**  
 **A plug-and-play semantic firewall, with no infra changes required.**  
