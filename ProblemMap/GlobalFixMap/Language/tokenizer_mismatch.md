@@ -1,5 +1,3 @@
-# File: `ProblemMap/GlobalFixMap/Language/tokenizer_mismatch.md`
-
 # Tokenizer Mismatch — Guardrails and Fix Patterns
 
 Stabilize multilingual retrieval when the query and the index segment text differently.
