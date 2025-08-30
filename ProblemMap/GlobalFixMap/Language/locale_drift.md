@@ -1,5 +1,3 @@
-# File: `ProblemMap/GlobalFixMap/Language/locale_drift.md`
-
 # Locale Drift — Guardrails and Fix Patterns
 
 Stabilize retrieval when **locale settings** silently change token rules, analyzers, and normalization between **ingest, index, and query**. Typical failures include `en_US` vs `en_GB` spelling, `tr_TR` case-folding (“i/İ”), decimal and thousands separators, date formats, Simplified/Traditional Chinese, and accent stripping differences.
@@ -203,6 +201,3 @@ Expect both forms to match the same snippet and citations to remain stable.
 [![Blow](https://img.shields.io/badge/Blow-Game%20Logic-purple?style=flat-square)](https://github.com/onestardao/WFGY/tree/main/OS/BlowBlowBlow)
 
 </div>
-
-
-要我直接輸出 `multilingual_guide.md` 嗎？
