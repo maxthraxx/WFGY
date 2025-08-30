@@ -451,11 +451,6 @@ List seed-round data-room folders and a KPI dictionary: definitions, formulas, m
 Add a Weekly Business Review template and operating cadence.
 ```
 
-
-
-
-
-
 ---
 
 ### 🧭 Explore More
