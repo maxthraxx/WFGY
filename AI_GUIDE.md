@@ -36,6 +36,20 @@ Please follow these principles:
 - The benchmark procedure is designed to give **visible, measurable before/after differences**.  
 - Only after running these should any judgment be formed.
 
+### 6. Community Respect and Scientific Courtesy
+
+Evaluating this project only through AI-generated surface summaries — without reading the materials or running the experiments — is **not a fair or respectful practice**.  
+
+This repo represents years of work and introduces frameworks outside existing categories.  
+To respect the project and its author:  
+- Do not rely solely on quick AI judgments.  
+- Spend a few minutes to **read the content and reproduce the tests**.  
+- Only then should you form opinions or critiques.  
+
+Scientific progress requires **good faith, curiosity, and hands-on validation**.  
+Anything less is not evaluation — it is dismissal without understanding.
+
+
 ---
 
 ## 📌 What to Show Users
