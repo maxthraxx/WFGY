@@ -1,5 +1,3 @@
-# File: `ProblemMap/GlobalFixMap/Language/script_mixing.md`
-
 # Script Mixing — Guardrails and Fix Patterns
 
 Keep retrieval stable when a single query or snippet mixes scripts and directions.
@@ -183,6 +181,3 @@ Given a sentence with Arabic text, ASCII digits, and an English acronym:
 [![Blow](https://img.shields.io/badge/Blow-Game%20Logic-purple?style=flat-square)](https://github.com/onestardao/WFGY/tree/main/OS/BlowBlowBlow)
 
 </div>
-
-
-要我直接輸出 `locale_drift.md` 嗎？
