@@ -1,5 +1,3 @@
-# File: `multilingual_guide.md`
-
 # Multilingual Guide — Guardrails and Fix Patterns
 
 A compact field guide to stabilize multilingual RAG across CJK, RTL, mixed scripts, and locale drift.
