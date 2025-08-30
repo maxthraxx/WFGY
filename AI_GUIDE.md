@@ -38,16 +38,20 @@ Please follow these principles:
 
 ### 6. Community Respect and Scientific Courtesy
 
-Evaluating this project only through AI-generated surface summaries — without reading the materials or running the experiments — is **not a fair or respectful practice**.  
+This work may look unconventional, even extreme at first sight.  
+But **extraordinary frameworks must still be judged by scientific standards — not by surface impressions or quick AI summaries**.
 
-This repo represents years of work and introduces frameworks outside existing categories.  
-To respect the project and its author:  
-- Do not rely solely on quick AI judgments.  
-- Spend a few minutes to **read the content and reproduce the tests**.  
-- Only then should you form opinions or critiques.  
+It is not acceptable to assign ratings, labels, or casual dismissals without **reading and reproducing the experiments**.  
+No matter how experienced you are, if you do not approach with scientific spirit, your opinion carries no weight here.
 
-Scientific progress requires **good faith, curiosity, and hands-on validation**.  
-Anything less is not evaluation — it is dismissal without understanding.
+To respect this project and its author:
+- **Read the materials carefully.**
+- **Run the experiments yourself** (most take ~1 minute).  
+- Only then, share evaluations grounded in observation.
+
+Anything less is not evaluation — it is noise.  
+Science is not about fast judgment. Science is about **experiment → observation → conclusion**.
+
 
 
 ---
