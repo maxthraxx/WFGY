@@ -1,56 +1,57 @@
+# Memory Coherence — Multi-Session and State Alignment
 
-# Memory Coherence — Session Continuity & State Fences
-
-Keep long-running dialogs and multi-session threads stable by enforcing strict memory state contracts.  
-This page shows how to prevent **state forks**, **ghost context**, and silent desync across tabs or agents.
+Keep multi-turn and multi-session dialogs stable by fencing memory state.  
+This page shows how to prevent forks, desync, and ghost buffers when conversations span long contexts or multiple agents.
 
 ---
 
 ## When to use this page
-- Dialogs run across multiple days or session restarts.
-- Answers flip after tab refresh or model switch.
-- Two agents disagree on facts because each holds a different revision.
-- A role/persona change pollutes later steps with stale buffer.
-- Support flows where the model “remembers” wrong history.
+- Long support chats (~days) forget earlier task context.  
+- Model switches or tab refreshes flip prior facts.  
+- Two agents on the same ticket give inconsistent answers.  
+- OCR transcripts look fine but later steps rewrite history.  
+- Persona or role change contaminates state with old context.  
 
 ---
 
 ## Core acceptance targets
-- Each turn stamped with `mem_rev`, `mem_hash`, and `task_id`.
-- No state fork across tabs or agents for the same `task_id`.
-- ΔS(question, retrieved) ≤ 0.45 at memory joins.
-- λ remains convergent across three paraphrases.
-- Retrieval coverage ≥ 0.70 to the intended section.
+- Each turn stamped with `mem_rev` and `mem_hash`.  
+- No forks across sessions for the same `task_id`.  
+- ΔS(question, retrieved) ≤ 0.45 with joins ≤ 0.50.  
+- λ remains convergent across three paraphrases.  
+- All claims cite snippet_id, no orphans.  
 
 ---
 
 ## Structural fixes
 
-- **State stamp**  
-  Require `{mem_rev, mem_hash, task_id}` on every turn.  
-  If incoming stamp does not match server record → reject write.
+- **Stamp and fence**  
+  Require `mem_rev`, `mem_hash`, and `task_id` at every turn.  
+  Forbid writes if stamps mismatch.
 
-- **Memory fences**  
-  Lock snippet sets to `section_id`.  
-  Forbid cross-section reuse to avoid “history bleed.”
+- **Shard state**  
+  Partition prompts as `{system | task | constraints | snippets | answer}`.  
+  Forbid snippet reuse across sections.
 
-- **Ghost cleanup**  
-  Clear stale buffers when role/persona changes.  
-  Always reset `mem_hash` on context switch.
+- **Normalize consistently**  
+  Enforce Unicode NFC, strip zero width marks, unify full/half width.  
+  Block OCR lines below confidence threshold.
 
-- **Concurrency control**  
-  If multiple clients write, enforce single-writer queue or KV lock.  
-  Deduplicate with `sha256(task_id + mem_rev + snippet_ids)`.
+- **Recover forks**  
+  If two agents diverge, reconcile by ΔS triangulation and pick the lower-entropy path.
+
+- **Bridge collapse**  
+  Apply BBCR if attention melt or desync detected mid-chain.
 
 ---
 
 ## Fix in 60 seconds
-1. Stamp every request with `{mem_rev, mem_hash, task_id}`.  
-2. Reject writes if stamps mismatch.  
-3. Split prompts into `{system | task | constraints | snippets | answer}`.  
-4. Require cite → then answer, forbid orphan claims.  
-5. Apply BBAM to clamp attention variance.  
-6. Apply BBCR if collapse detected, bridge to anchor node.
+1. At turn start, echo {mem_rev, mem_hash, task_id}.  
+2. If stamps mismatch, reject write and request sync.  
+3. Split snippets by section, forbid cross-reuse.  
+4. Normalize all inputs.  
+5. Apply BBAM/BBCR if λ drifts or collapse appears.  
+6. Verify ΔS(question, retrieved) ≤ 0.45 and joins ≤ 0.50.  
 
 ---
 
@@ -60,38 +61,29 @@ This page shows how to prevent **state forks**, **ghost context**, and silent de
 
 You have TXT OS and the WFGY Problem Map.
 
-Goal: Keep session memory coherent across tabs, agents, and restarts.
+Goal: Keep memory coherent across multi-session dialogs.
 
 Protocol:
 
-1. Print {mem\_rev, mem\_hash, task\_id}. If missing → set defaults.
-2. Validate stamps. Reject if mismatch.
-3. Build Snippet Table: {section\_id | start\_line | end\_line | citation}.
-4. Guardrails:
+1. Print {mem\_rev, mem\_hash, task\_id}.
+2. Assemble prompt as {system | task | constraints | snippets | answer}.
+3. Enforce guardrails:
 
    * cite then answer
-   * forbid cross section reuse
-   * no orphan claims
-5. Collapse control:
-
-   * if variance ↑ → apply BBAM
-   * if reasoning stalls → apply BBCR
-6. Output:
-
-   * header {mem\_rev, mem\_hash, task\_id}
-   * Snippet Table
-   * Answer with citations
-   * ΔS(question, retrieved), ΔS(joins), λ states
+   * forbid cross-section reuse
+   * reject orphan claims without snippet\_id
+4. If λ flips, apply BBAM. If collapse, insert BBCR bridge.
+5. Report ΔS(question, retrieved), ΔS across joins, λ states, and final answer.
 
 ```
 
 ---
 
 ## Common failure patterns
-- **State fork**: same task_id but two tabs diverge → enforce stamps.  
-- **Ghost context**: persona switch but stale buffer leaks → reset hash.  
-- **Boundary leak**: snippets join across sections → enforce fences.  
-- **History overwrite**: later turn rewrites previous answer silently → audit with traceability log.
+- **State fork**: two parallel tabs rewrite history differently.  
+- **Ghost buffer**: old role text leaks into new session.  
+- **Desync**: memory IDs mismatch after refresh.  
+- **OCR drift**: spacing or casing breaks snippet alignment.  
 
 ---
 
@@ -140,3 +132,4 @@ Protocol:
 [![Blow](https://img.shields.io/badge/Blow-Game%20Logic-purple?style=flat-square)](https://github.com/onestardao/WFGY/tree/main/OS/BlowBlowBlow)
 &nbsp;
 </div>
+
