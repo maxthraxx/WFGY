@@ -1,5 +1,3 @@
-# File: `ProblemMap/GlobalFixMap/Language/README.md`
-
 # Language & Multilingual — Global Fix Map
 
 A compact hub to **stabilize cross-lingual retrieval and reasoning**. Use this folder when your corpus or queries span CJK, RTL, Indic, Cyrillic, accented Latin, or when users code-switch.
@@ -142,6 +140,3 @@ MVP 完成。若要擴充，建議下一步加入「測試與評估」小頁。
 
 </div>
 
-
-`ProblemMap/GlobalFixMap/Language/code_switching_eval.md`
-簡短測試與評估腳本，提供三語版 ΔS/λ 檢查與可複製的 gold set 格式。
