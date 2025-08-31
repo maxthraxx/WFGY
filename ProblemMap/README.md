@@ -14,16 +14,33 @@ you’ll get a diagnosis and exact fix steps — no infra changes required.
 
 **16 reproducible failure modes, each with a clear fix (MIT).** *(e.g. rag drift, broken indexes)*  
 **A semantic firewall you install once, and every failure stays fixed.**  
-*if this page saves you time, a ⭐ helps others discover it.* <img src="https://img.shields.io/github/stars/onestardao/WFGY?style=social" alt="GitHub stars">
+
+<details>
+<summary><strong>⏱️ 30 seconds: Why WFGY Works as a Semantic Firewall</strong></summary>
+
+Most fixes today happen **after generation**:  
+- The model outputs something wrong, then we patch it with retrieval, chains, or tools.  
+- This means the same failures reappear again and again.  
+
+WFGY inverts the sequence.  
+- **Before generation**, it inspects the semantic field (tension, residue, drift signals).  
+- If the state is unstable, it loops, resets, or redirects the path.  
+- Only a stable semantic state is allowed to generate output.  
+
+This is why every failure mode, once mapped, stays fixed.  
+You’re not firefighting after the fact—you’re installing a reasoning firewall at the entry point.
+
+</details>
 
 > thanks everyone — WFGY reached **800 stars in 70 days**.  
-> next milestone: at **1000 stars we’ll unlock Blur Blur Blur**.
-
+> next milestone: at **1000 stars we’ll unlock Blur Blur Blur**.  
+> if this page saves you time, a ⭐ helps others discover it. <img src="https://img.shields.io/github/stars/onestardao/WFGY?style=social" alt="GitHub stars">  
 
 ---
 > **[WFGY Core](https://github.com/onestardao/WFGY/blob/main/core/README.md)** is live: a 30-line reasoning engine for recovery and resilience.  
 > fixing rag hallucinations? it makes models **reason before answering**.  
 > coming next: **Semantic Surgery Room** and **Global Fix Map** (n8n, GHL, Make, more). planned by **Sep 1**.
+
 
 <div align="center">
   <img src="https://github.com/onestardao/WFGY/raw/main/OS/images/tree-semantic-memory.gif"
