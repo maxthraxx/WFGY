@@ -3,7 +3,8 @@
 
 ---
 
-**❓ BigBig Question — If AI bugs are not random but mathematically inevitable, can we finally define and prevent them?**
+> **❓ BigBig Question — If AI bugs are not random but mathematically inevitable, can we finally define and prevent them?**  
+> *(this repo is one experiment toward that direction)*
 
 ---
 
