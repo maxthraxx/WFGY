@@ -1,6 +1,8 @@
 # WFGY Problem Map 1.0 — bookmark it. you’ll need it
 ## 🛡️ permanent fixes for recurring ai bugs. fix once, never again.
 
+---
+
 **❓ BigBig Question — If AI bugs are not random but mathematically inevitable, can we finally define and prevent them?**
 
 ---
