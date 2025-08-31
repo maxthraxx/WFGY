@@ -18,17 +18,21 @@ you’ll get a diagnosis and exact fix steps — no infra changes required.
 <details>
 <summary><strong>⏱️ 30 seconds: Why WFGY Works as a Semantic Firewall</strong></summary>
 
-Most fixes today happen **after generation**:  
-- The model outputs something wrong, then we patch it with retrieval, chains, or tools.  
-- This means the same failures reappear again and again.  
+<br>
 
-WFGY inverts the sequence.  
-- **Before generation**, it inspects the semantic field (tension, residue, drift signals).  
-- If the state is unstable, it loops, resets, or redirects the path.  
-- Only a stable semantic state is allowed to generate output.  
+> Most fixes today happen **after generation**:  
+> - The model outputs something wrong, then we patch it with retrieval, chains, or tools.  
+> - This means the same failures reappear again and again.  
+>
+> WFGY inverts the sequence.  
+> - **Before generation**, it inspects the semantic field (tension, residue, drift signals).  
+> - If the state is unstable, it loops, resets, or redirects the path.  
+> - Only a stable semantic state is allowed to generate output.  
 
 This is why every failure mode, once mapped, stays fixed.  
 You’re not firefighting after the fact—you’re installing a reasoning firewall at the entry point.
+
+---
 
 </details>
 
