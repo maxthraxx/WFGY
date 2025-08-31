@@ -50,6 +50,7 @@ Their support is a public signal — transparent, verifiable, and forever record
 | **christian-korneck** | get_win8key (190★), docker-pushrm (146★) · DevOps / CLI tooling | ![](./images/christian-korneck_star.png) | [proof](https://github.com/christian-korneck?tab=stars&q=WFGY) |
 | **Purus** | launch_review (192★) · Flutter plugin dev, also active in API/GraphQL repos | ![](./images/Purus_star.png) | [proof](https://github.com/Purus?tab=stars&q=WFGY) |
 | **jasonnoahchoi** | awesome-free-startup-resources (289★) · React Native / iOS dev (New York) | ![](./images/jasonnoahchoi_star.png) | [proof](https://github.com/jasonnoahchoi?tab=stars&q=WFGY) |
+| **Ashton-Sidhu** | Automated Data Science/ML Engineer projects (183★) · ML Engineer (Toronto, Canada) | ![](./images/Ashton-Sidhu_star.png) | [proof](https://github.com/Ashton-Sidhu?tab=stars&q=WFGY) |
 | **vsaravind007** | nodeScratchpad (111★) · Director of Engineering @DiagnaI, co-founder @iostashiot | ![](./images/vsaravind007_star.png) | [proof](https://github.com/vsaravind007?tab=stars&q=WFGY) |
 | **4350pChris** | slack-vuevisualizer (99★), vike-vue contributor · Full stack dev (DE) | ![](./images/4350pChris_star.png) | [proof](https://github.com/4350pChris?tab=stars&q=WFGY) |
 | **Yuuzi261** | Tweetcord (97★), FuseFairy/HBR-AxleTool-vue (28★) · Discord bot & Vue developer | ![](./images/Yuuzi261_star.png) | [proof](https://github.com/Yuuzi261?tab=stars&q=WFGY) |
@@ -61,6 +62,8 @@ Their support is a public signal — transparent, verifiable, and forever record
 | **Duanyll** | CANConv (61★), Standard TLE Library (10★) · Embedded/C++/Qt dev (China) | ![](./images/Duanyll_star.png) | [proof](https://github.com/Duanyll?tab=stars&q=WFGY) |
 | **isLinXu** | awesome-road-map (45★), model-metrics-plot (18★) · Tencent AI engineer | ![](./images/isLinXu_star.png) | [proof](https://github.com/isLinXu?tab=stars&q=WFGY) |
 | **jakevossen5** | Apple visionOS UI engineer, ex-Amazon/TI | ![](./images/jakevossen5_star.png) | [proof](https://github.com/jakevossen5?tab=stars&q=WFGY) |
+
+
 
 
 
