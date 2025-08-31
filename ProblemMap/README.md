@@ -124,24 +124,29 @@ steps: run, supply ≥3 answers, read score
 > if you are unsure which one applies, ask your LLM with TXT OS loaded:  
 > *“which Problem Map number matches my trace?”* it will route you.
 
-| #  | problem domain                  | what breaks                                   | doc |
-|----|---------------------------------|-----------------------------------------------|-----|
-| 1  | hallucination & chunk drift     | retrieval returns wrong/irrelevant content    | [hallucination.md](./hallucination.md) |
-| 2  | interpretation collapse         | chunk is right, logic is wrong                | [retrieval-collapse.md](./retrieval-collapse.md) |
-| 3  | long reasoning chains           | drifts across multi-step tasks                | [context-drift.md](./context-drift.md) |
-| 4  | bluffing / overconfidence       | confident but unfounded answers               | [bluffing.md](./bluffing.md) |
-| 5  | semantic ≠ embedding            | cosine match ≠ true meaning                   | [embedding-vs-semantic.md](./embedding-vs-semantic.md) |
-| 6  | logic collapse & recovery       | dead-ends, needs controlled reset             | [logic-collapse.md](./logic-collapse.md) |
-| 7  | memory breaks across sessions   | lost threads, no continuity                   | [memory-coherence.md](./memory-coherence.md) |
-| 8  | debugging is a black box        | no visibility into failure path               | [retrieval-traceability.md](./retrieval-traceability.md) |
-| 9  | entropy collapse                | attention melts, incoherent output            | [entropy-collapse.md](./entropy-collapse.md) |
-| 10 | creative freeze                 | flat, literal outputs                         | [creative-freeze.md](./creative-freeze.md) |
-| 11 | symbolic collapse               | abstract/logical prompts break                | [symbolic-collapse.md](./symbolic-collapse.md) |
-| 12 | philosophical recursion         | self-reference loops, paradox traps           | [philosophical-recursion.md](./philosophical-recursion.md) |
-| 13 | multi-agent chaos               | agents overwrite or misalign logic            | [Multi-Agent_Problems.md](./Multi-Agent_Problems.md) |
-| 14 | bootstrap ordering              | services fire before deps ready               | [bootstrap-ordering.md](./bootstrap-ordering.md) |
-| 15 | deployment deadlock             | circular waits in infra                       | [deployment-deadlock.md](./deployment-deadlock.md) |
-| 16 | pre-deploy collapse             | version skew / missing secret on first call   | [predeploy-collapse.md](./predeploy-collapse.md) |
+### legend
+`[IN]` Input & Retrieval   `[RE]` Reasoning & Planning  
+`[ST]` State & Context     `[OP]` Infra & Deployment  
+`{OBS}` Observability/Eval `{SEC}` Security `{LOC}` Language/OCR
+
+| #  | problem domain (with layer/tags)           | what breaks                                   | doc |
+|----|--------------------------------------------|-----------------------------------------------|-----|
+| 1  | **[IN]** hallucination & chunk drift {OBS} | retrieval returns wrong/irrelevant content    | [hallucination.md](./hallucination.md) |
+| 2  | **[RE]** interpretation collapse           | chunk is right, logic is wrong                | [retrieval-collapse.md](./retrieval-collapse.md) |
+| 3  | **[RE]** long reasoning chains {OBS}       | drifts across multi-step tasks                | [context-drift.md](./context-drift.md) |
+| 4  | **[RE]** bluffing / overconfidence         | confident but unfounded answers               | [bluffing.md](./bluffing.md) |
+| 5  | **[IN]** semantic ≠ embedding {OBS}        | cosine match ≠ true meaning                   | [embedding-vs-semantic.md](./embedding-vs-semantic.md) |
+| 6  | **[RE]** logic collapse & recovery {OBS}   | dead-ends, needs controlled reset             | [logic-collapse.md](./logic-collapse.md) |
+| 7  | **[ST]** memory breaks across sessions     | lost threads, no continuity                   | [memory-coherence.md](./memory-coherence.md) |
+| 8  | **[IN]** debugging is a black box {OBS}    | no visibility into failure path               | [retrieval-traceability.md](./retrieval-traceability.md) |
+| 9  | **[ST]** entropy collapse                  | attention melts, incoherent output            | [entropy-collapse.md](./entropy-collapse.md) |
+| 10 | **[RE]** creative freeze                   | flat, literal outputs                         | [creative-freeze.md](./creative-freeze.md) |
+| 11 | **[RE]** symbolic collapse                 | abstract/logical prompts break                | [symbolic-collapse.md](./symbolic-collapse.md) |
+| 12 | **[RE]** philosophical recursion           | self-reference loops, paradox traps           | [philosophical-recursion.md](./philosophical-recursion.md) |
+| 13 | **[ST]** multi-agent chaos {OBS}           | agents overwrite or misalign logic            | [Multi-Agent_Problems.md](./Multi-Agent_Problems.md) |
+| 14 | **[OP]** bootstrap ordering                | services fire before deps ready               | [bootstrap-ordering.md](./bootstrap-ordering.md) |
+| 15 | **[OP]** deployment deadlock               | circular waits in infra                       | [deployment-deadlock.md](./deployment-deadlock.md) |
+| 16 | **[OP]** pre-deploy collapse {OBS}         | version skew / missing secret on first call   | [predeploy-collapse.md](./predeploy-collapse.md) |
 
 for No.13 deep dives:  
 • role drift → [`multi-agent-chaos/role-drift.md`](./multi-agent-chaos/role-drift.md)  
@@ -168,24 +173,24 @@ which WFGY modules should i apply and in what order?
 <details>
 <summary><strong>status & difficulty</strong></summary>
 
-| #  | problem                         | difficulty* | implementation |
-|----|---------------------------------|-------------|----------------|
-| 1  | hallucination & chunk drift     | medium      | ✅ stable |
-| 2  | interpretation collapse         | high        | ✅ stable |
-| 3  | long reasoning chains           | high        | ✅ stable |
-| 4  | bluffing / overconfidence       | high        | ✅ stable |
-| 5  | semantic ≠ embedding            | medium      | ✅ stable |
-| 6  | logic collapse & recovery       | very high   | ✅ stable |
-| 7  | memory breaks across sessions   | high        | ✅ stable |
-| 8  | debugging black box             | medium      | ✅ stable |
-| 9  | entropy collapse                | high        | ✅ stable |
-| 10 | creative freeze                 | medium      | ✅ stable |
-| 11 | symbolic collapse               | very high   | ✅ stable |
-| 12 | philosophical recursion         | very high   | ✅ stable |
-| 13  | multi-agent chaos              | very high   | ✅ stable |
-| 14 | bootstrap ordering              | medium      | ✅ stable |
-| 15 | deployment deadlock             | high        | ⚠️ beta |
-| 16 | pre-deploy collapse             | medium-high | ✅ stable |
+| #  | problem (with layer/tags)                  | difficulty* | implementation |
+|----|--------------------------------------------|-------------|----------------|
+| 1  | **[IN]** hallucination & chunk drift {OBS} | medium      | ✅ stable |
+| 2  | **[RE]** interpretation collapse           | high        | ✅ stable |
+| 3  | **[RE]** long reasoning chains {OBS}       | high        | ✅ stable |
+| 4  | **[RE]** bluffing / overconfidence         | high        | ✅ stable |
+| 5  | **[IN]** semantic ≠ embedding {OBS}        | medium      | ✅ stable |
+| 6  | **[RE]** logic collapse & recovery {OBS}   | very high   | ✅ stable |
+| 7  | **[ST]** memory breaks across sessions     | high        | ✅ stable |
+| 8  | **[IN]** debugging black box {OBS}         | medium      | ✅ stable |
+| 9  | **[ST]** entropy collapse                  | high        | ✅ stable |
+| 10 | **[RE]** creative freeze                   | medium      | ✅ stable |
+| 11 | **[RE]** symbolic collapse                 | very high   | ✅ stable |
+| 12 | **[RE]** philosophical recursion           | very high   | ✅ stable |
+| 13 | **[ST]** multi-agent chaos {OBS}           | very high   | ✅ stable |
+| 14 | **[OP]** bootstrap ordering                | medium      | ✅ stable |
+| 15 | **[OP]** deployment deadlock               | high        | ⚠️ beta |
+| 16 | **[OP]** pre-deploy collapse {OBS}         | medium-high | ✅ stable |
 
 \*distance from default LLM behavior to a production-ready fix.
 </details>
