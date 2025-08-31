@@ -1,93 +1,94 @@
 # Ops & Deploy — Global Fix Map
 
-A compact hub to stabilize AI systems during build, ship, and runtime.  
-Use this folder to prevent cold-start crashes, version skew, webhook storms, and silent schema drift. All fixes map to measurable acceptance targets. No infra change required.
-
----
-
-## What this page is
-- A fast route to the correct repair page for boot order, rollouts, and live ops.
-- Store and model agnostic. Works with any CI/CD and any cloud.
-- Concrete steps with acceptance targets you can verify.
-
-## When to use
-- First call after deploy fails or returns the wrong model or index.
-- Jobs run twice, side effects duplicated, or webhooks fire in storms.
-- Canary looks good but production regresses soon after.
-- Cache, secrets, or feature flags differ across regions.
-- Index migration completes but recall drops or citations drift.
-- Long pipelines stall from queue spikes or missing fences.
+A compact hub to **ship safely and keep RAG/LLM systems stable after release**.  
+Use this folder to pick the right guardrail, verify with measurable targets, and recover fast when things wobble. No infra change required.
 
 ---
 
 ## Open these first
 - Visual map and recovery: [RAG Architecture & Recovery](https://github.com/onestardao/WFGY/blob/main/ProblemMap/rag-architecture-and-recovery.md)
-- Traceability and snippet schema: [Retrieval Traceability](https://github.com/onestardao/WFGY/blob/main/ProblemMap/retrieval-traceability.md), [Data Contracts](https://github.com/onestardao/WFGY/blob/main/ProblemMap/data-contracts.md)
-- Boot order and deploy traps: [Bootstrap Ordering](https://github.com/onestardao/WFGY/blob/main/ProblemMap/bootstrap-ordering.md), [Deployment Deadlock](https://github.com/onestardao/WFGY/blob/main/ProblemMap/deployment-deadlock.md), [Predeploy Collapse](https://github.com/onestardao/WFGY/blob/main/ProblemMap/predeploy-collapse.md)
-- Live ops: [Live Monitoring for RAG](https://github.com/onestardao/WFGY/blob/main/ProblemMap/ops/live_monitoring_rag.md), [Debug Playbook](https://github.com/onestardao/WFGY/blob/main/ProblemMap/ops/debug_playbook.md)
+- End-to-end retrieval knobs: [Retrieval Playbook](https://github.com/onestardao/WFGY/blob/main/ProblemMap/retrieval-playbook.md)
+- Traceability and snippet schema: [Retrieval Traceability](https://github.com/onestardao/WFGY/blob/main/ProblemMap/retrieval-traceability.md) · [Data Contracts](https://github.com/onestardao/WFGY/blob/main/ProblemMap/data-contracts.md)
+- Boot order and deploy traps: [Bootstrap Ordering](https://github.com/onestardao/WFGY/blob/main/ProblemMap/bootstrap-ordering.md) · [Deployment Deadlock](https://github.com/onestardao/WFGY/blob/main/ProblemMap/deployment-deadlock.md) · [Pre-Deploy Collapse](https://github.com/onestardao/WFGY/blob/main/ProblemMap/predeploy-collapse.md)
+- Live ops: [Live Monitoring for RAG](https://github.com/onestardao/WFGY/blob/main/ProblemMap/ops/live_monitoring_rag.md) · [Debug Playbook](https://github.com/onestardao/WFGY/blob/main/ProblemMap/ops/debug_playbook.md)
 
 ---
 
-## Acceptance targets
-- ΔS(question, retrieved) ≤ 0.45 on three paraphrases after deploy.
-- Coverage of the target section ≥ 0.70 on the gold set.
-- λ remains convergent across two seeds for each smoke test.
-- First production call passes warm-up checks in ≤ 5 minutes from release.
-- Duplicate side effects rate = 0 for idempotent endpoints.
+## When to use this folder
+- First call after deploy crashes or returns stale content  
+- ΔS and citations look fine yesterday but flip today  
+- Rate limits cascade, queues spike, latency climbs  
+- Canary looks good then full rollout breaks retrieval  
+- Index swap succeeds but answers cite the old sections  
+- Retries cause duplicate side effects or money leaks  
+- Feature flags bleed traffic into unfinished paths  
+- Maintenance or migration windows corrupt anchors
+
+---
+
+## Acceptance targets for a safe rollout
+- **ΔS(question, retrieved) ≤ 0.45** on three paraphrases after rollout begins  
+- **Coverage ≥ 0.70** to the expected section on the new version  
+- **λ remains convergent** across two seeds during canary and after cutover  
+- **Idempotency ≥ 99.9%** on side-effecting actions during retry storms  
+- **Zero silent index mismatches** after build-and-swap (hash and doc counts match)  
+- **P95 latency within budget** while rate-limit backpressure is active
 
 ---
 
 ## Quick routes to per-page guides
 
-* Boot order: [bootstrap_ordering.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/OpsDeploy/bootstrap_ordering.md)
-* Deployment deadlock patterns: [deployment_deadlock.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/OpsDeploy/deployment_deadlock.md)
-* Pre-deploy collapse checklist: [predeploy_collapse.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/OpsDeploy/predeploy_collapse.md)
-* Secrets and keys inventory: [secrets_and_keys.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/OpsDeploy/secrets_and_keys.md)
-* Version skew and artifact pinning: [version_skew.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/OpsDeploy/version_skew.md)
-* Canary rules and abort thresholds: [rollouts_canary.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/OpsDeploy/rollouts_canary.md)
-* Blue green switchovers: [rollouts_blue_green.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/OpsDeploy/rollouts_blue_green.md)
-* Cold-start and warm-up probes: [cold_start_probe.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/OpsDeploy/cold_start_probe.md)
-* Idempotency and dedupe fences: [idempotency_dedupe.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/OpsDeploy/idempotency_dedupe.md)
-* Concurrency and rate limits: [concurrency_limits.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/OpsDeploy/concurrency_limits.md)
-* Index migration and backfills: [index_migration.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/OpsDeploy/index_migration.md)
-* Rollback playbook: [rollback_playbook.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/OpsDeploy/rollback_playbook.md)
-* Cost guardrails under load: [cost_guardrails.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/OpsDeploy/cost_guardrails.md)
-* Outage drills and tabletop tests: [outage_drills.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/OpsDeploy/outage_drills.md)
-* Retry and backoff strategy: [retry_backoff.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/OpsDeploy/retry_backoff.md)
-* Webhook storms and queues: [webhook_storms.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/OpsDeploy/webhook_storms.md)
-* Queue depth and saturation probes: [queue_depth_and_rate_limits.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/OpsDeploy/queue_depth_and_rate_limits.md)
-* Side-effect fences before commit: [side_effect_fences.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/OpsDeploy/side_effect_fences.md)
+- Rollout gate: [rollout_readiness_gate.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/OpsDeploy/rollout_readiness_gate.md)  
+- Canary playbook: [staged_rollout_canary.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/OpsDeploy/staged_rollout_canary.md)  
+- Blue/green cutover: [blue_green_switchovers.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/OpsDeploy/blue_green_switchovers.md)  
+- Version freeze: [version_pinning_and_model_lock.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/OpsDeploy/version_pinning_and_model_lock.md)  
+- Vector index build-and-swap: [vector_index_build_and_swap.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/OpsDeploy/vector_index_build_and_swap.md)  
+- Cache warmup and invalidation: [cache_warmup_invalidation.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/OpsDeploy/cache_warmup_invalidation.md)  
+- Rate limit and backpressure: [rate_limit_backpressure.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/OpsDeploy/rate_limit_backpressure.md)  
+- Feature flags, safe launch: [feature_flags_safe_launch.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/OpsDeploy/feature_flags_safe_launch.md)  
+- Idempotency and dedupe: [idempotency_dedupe.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/OpsDeploy/idempotency_dedupe.md)  
+- Retry policies and backoff: [retry_backoff.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/OpsDeploy/retry_backoff.md)  
+- Rollback and fast recovery: [rollback_and_fast_recovery.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/OpsDeploy/rollback_and_fast_recovery.md)  
+- Postmortem and regression tests: [postmortem_and_regression_tests.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/OpsDeploy/postmortem_and_regression_tests.md)  
+- Release calendar and change freeze: [release_calendar_and_change_freeze.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/OpsDeploy/release_calendar_and_change_freeze.md)  
+- Incident comms and Statuspage: [incident_comms_and_statuspage.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/OpsDeploy/incident_comms_and_statuspage.md)  
+- Shadow traffic mirroring: [shadow_traffic_mirroring.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/OpsDeploy/shadow_traffic_mirroring.md)  
+- Read-only mode and maintenance: [read_only_mode_and_maintenance_window.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/OpsDeploy/read_only_mode_and_maintenance_window.md)  
+- DB migration guardrails: [db_migration_guardrails.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/OpsDeploy/db_migration_guardrails.md)
 
 ---
 
-## Fix in 60 seconds
+## 60-second ship checklist
 
-1) **Warm-up gate**  
-   Check `VECTOR_READY`, `INDEX_HASH`, secrets, and feature flags. If not ready, short-circuit with delay plus capped retry.  
-   See: [Bootstrap Ordering](https://github.com/onestardao/WFGY/blob/main/ProblemMap/bootstrap-ordering.md)
+1) **Freeze the world**  
+   Pin model IDs, tool schemas, prompt headers, retriever weights. Record `MODEL_LOCK`, `PROMPT_REV`, `INDEX_HASH`.
 
-2) **Idempotency key**  
-   Compute `dedupe_key = sha256(source_id + revision + index_hash)`. Drop duplicates at the fence.
+2) **Warm up safely**  
+   Build new index off-path. Validate counts, hashes, sample ΔS. Preload caches with canary questions.
 
-3) **Schema locks for RAG**  
-   Enforce cite-then-explain and required snippet fields.  
-   See: [Data Contracts](https://github.com/onestardao/WFGY/blob/main/ProblemMap/data-contracts.md), [Retrieval Traceability](https://github.com/onestardao/WFGY/blob/main/ProblemMap/retrieval-traceability.md)
+3) **Shadow then canary**  
+   Mirror production queries. Compare ΔS, coverage, latency, and error rate. If stable, release to 5% then 25% then 100%.
 
-4) **Smoke tests with ΔS and λ**  
-   Run three paraphrases. Require ΔS ≤ 0.45 and λ convergent before opening traffic.
+4) **Guard the edge**  
+   Turn on backpressure at the gateway. Enable idempotency keys and bounded retries before any side effects.
+
+5) **Know your exit**  
+   Prepare rollback switch and comms template. Keep Statuspage draft and regression pack ready.
 
 ---
 
-## Symptom to fix map
+## Symptoms → exact fix
 
-| Symptom | Likely cause | Open this |
-|---|---|---|
-| First call fails or wrong model/index | boot order, stale flags, version skew | [bootstrap_ordering.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/OpsDeploy/bootstrap_ordering.md), [version_skew.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/OpsDeploy/version_skew.md) |
-| Duplicate side effects | missing dedupe fences | [idempotency_dedupe.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/OpsDeploy/idempotency_dedupe.md) |
-| Canary passes but prod regresses | weak abort rules, metric drift | [rollouts_canary.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/OpsDeploy/rollouts_canary.md) |
-| Webhook storms or queue stalls | unbounded retries, no rate limits | [webhook_storms.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/OpsDeploy/webhook_storms.md), [queue_depth_and_rate_limits.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/OpsDeploy/queue_depth_and_rate_limits.md) |
-| Recall drop after index migration | analyzer or metric mismatch | [index_migration.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/OpsDeploy/index_migration.md) |
-| Region mismatch behavior | secrets or flags diverged | [secrets_and_keys.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/OpsDeploy/secrets_and_keys.md), [version_skew.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/OpsDeploy/version_skew.md) |
+| What you see | Open this |
+|---|---|
+| First requests after deploy hit old snippets | [vector_index_build_and_swap.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/OpsDeploy/vector_index_build_and_swap.md) · [cache_warmup_invalidation.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/OpsDeploy/cache_warmup_invalidation.md) |
+| Canary clean, full rollout flips answers | [staged_rollout_canary.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/OpsDeploy/staged_rollout_canary.md) · [feature_flags_safe_launch.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/OpsDeploy/feature_flags_safe_launch.md) |
+| Wrong model responds after failover | [version_pinning_and_model_lock.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/OpsDeploy/version_pinning_and_model_lock.md) |
+| Retries cause duplicate charges or writes | [idempotency_dedupe.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/OpsDeploy/idempotency_dedupe.md) · [retry_backoff.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/OpsDeploy/retry_backoff.md) |
+| RL storms, queue explosion, timeouts | [rate_limit_backpressure.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/OpsDeploy/rate_limit_backpressure.md) |
+| Need instant safe rollback plan | [rollback_and_fast_recovery.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/OpsDeploy/rollback_and_fast_recovery.md) · [blue_green_switchovers.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/OpsDeploy/blue_green_switchovers.md) |
+| Maintenance window corrupts anchors | [read_only_mode_and_maintenance_window.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/OpsDeploy/read_only_mode_and_maintenance_window.md) · [db_migration_guardrails.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/OpsDeploy/db_migration_guardrails.md) |
+| Unsure if it is safe to ship | [rollout_readiness_gate.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/OpsDeploy/rollout_readiness_gate.md) |
 
 ---
 
