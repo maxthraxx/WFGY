@@ -191,6 +191,14 @@ which WFGY modules should i apply and in what order?
 
 ---
 
+### 🔬 Behind the Map
+The Problem Map is practical and ready to use.  
+But if you wonder *why* these fixes work, and how we’re defining physics inside embedding space:  
+→ [The Hidden Value Engine (WFGY Physics)](https://github.com/onestardao/WFGY/tree/main/value_manifest/README.md)
+
+---
+
+
 ## 🔮 coming soon: global fix map
 
 a universal layer above providers, agents, and infra.  
@@ -205,6 +213,7 @@ Problem Map is step one. **Global Fix Map** expands the same reasoning-first fir
 - project home: [github.com/onestardao/WFGY](https://github.com/onestardao/WFGY)  
 - TXT OS: [browse the OS](https://github.com/onestardao/WFGY/tree/main/OS)  
 - if this map helped you, a ⭐ helps more devs find it.
+
 
 ---
 
