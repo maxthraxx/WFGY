@@ -1,18 +1,22 @@
 # WFGY Problem Map 1.0 — bookmark it. you’ll need it
 ## 🛡️ permanent fixes for recurring ai bugs. fix once, never again.
 
+### ❓ BigBig Question
+*If AI bugs are not random but mathematically inevitable, can we finally define and prevent them?*
+
+---
+
 **WFGY Problem Map = a reasoning layer for your AI.**  
-no infra change. just load [**TXT OS**](https://github.com/onestardao/WFGY/blob/main/OS/README.md) or [**WFGY Core**](https://github.com/onestardao/WFGY/tree/main/core), then ask your model: *“which problem map number am i hitting?”*  
-you get the diagnosis and the exact fix steps.
+just load [**TXT OS**](https://github.com/onestardao/WFGY/blob/main/OS/README.md) or [**WFGY Core**](https://github.com/onestardao/WFGY/tree/main/core), then ask: *“which problem map number am i hitting?”*  
+you’ll get a diagnosis and exact fix steps — no infra changes needed.
 
-
-**16 reproducible failure modes in AI systems, each with a clear fix (MIT).**  
-**A plug-and-play semantic firewall, with no infra changes required.**  
-**Built at the semantic layer. solve it once, it stays solved.**  
+**16 reproducible failure modes, each with a clear fix (MIT).**  
+**A plug-and-play semantic firewall, built at the reasoning layer: solve once, it stays solved.**  
 *if this page saves you time, a ⭐ helps others discover it.* <img src="https://img.shields.io/github/stars/onestardao/WFGY?style=social" alt="GitHub stars">
 
 > thanks everyone — WFGY reached **800 stars in 70 days**.  
 > next milestone: at **1000 stars we’ll unlock Blur Blur Blur**.
+
 
 ---
 > **[WFGY Core](https://github.com/onestardao/WFGY/blob/main/core/README.md)** is live: a 30-line reasoning engine for recovery and resilience.  
