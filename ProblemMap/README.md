@@ -1,5 +1,5 @@
 # WFGY Problem Map 1.0 — bookmark it. you’ll need it
-## 🛡️ permanent fixes for recurring ai bugs. fix once, never again.
+## 🛡️ reproducible ai bugs, permanently fixed at the reasoning layer
 
 ---
 
@@ -9,14 +9,14 @@
 ---
 
 **WFGY Problem Map = a reasoning layer for your AI.**  
-just load [**TXT OS**](https://github.com/onestardao/WFGY/blob/main/OS/README.md) or [**WFGY Core**](https://github.com/onestardao/WFGY/tree/main/core), then ask: *“which problem map number am i hitting?”*  
-you’ll get a diagnosis and exact fix steps, no infra changes needed.
+load [**TXT OS**](https://github.com/onestardao/WFGY/blob/main/OS/README.md) or [**WFGY Core**](https://github.com/onestardao/WFGY/tree/main/core), then ask: *“which problem map number am i hitting?”*  
+you’ll get a diagnosis and exact fix steps — no infra changes required.
 
 **16 reproducible failure modes, each with a clear fix (MIT).** *(e.g. rag drift, broken indexes)*  
-**A plug-and-play semantic firewall built at the reasoning layer: solve once, it stays solved.**  
+**A semantic firewall you install once, and every failure stays fixed.**  
 *if this page saves you time, a ⭐ helps others discover it.* <img src="https://img.shields.io/github/stars/onestardao/WFGY?style=social" alt="GitHub stars">
 
-> thanks everyone, WFGY reached **800 stars in 70 days**.  
+> thanks everyone — WFGY reached **800 stars in 70 days**.  
 > next milestone: at **1000 stars we’ll unlock Blur Blur Blur**.
 
 
