@@ -1,37 +1,118 @@
 # RAG — Global Fix Map
 
-A focused hub for **Retrieval-Augmented Generation failures**.  
-Use this folder when answers exist in the corpus but retrieval or evaluation drifts. Each page gives precise guardrails, measurable acceptance targets, and direct links to structural fixes.
+A focused hub for **Retrieval Augmented Generation** failures.  
+Use this folder when answers exist in the corpus but retrieval or evaluation drifts.  
+Each page gives guardrails, measurable targets, and direct links to structural fixes. No infra change required.
+
+---
+
+## Orientation: what each page solves
+
+| Page | What it fixes | Typical symptom |
+|---|---|---|
+| [retrieval_drift.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/RAG/retrieval_drift.md) | Keeps retrieve → rerank → reason aligned | Correct facts exist but never show up in the top k |
+| [hallucination_rag.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/RAG/hallucination_rag.md) | Blocks free text invention inside RAG | Citations look right but answer adds content not in source |
+| [citation_break.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/RAG/citation_break.md) | Enforces cite then explain schema | Links point to the wrong snippet or disappear on retry |
+| [hybrid_failure.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/RAG/hybrid_failure.md) | Makes BM25 + ANN + reranker agree | Hybrid worse than a single retriever |
+| [index_skew.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/RAG/index_skew.md) | Recovers broken or stale indexes | Index looks healthy yet recall is low |
+| [context_drift.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/RAG/context_drift.md) | Stabilizes header order and prompt state | Answers flip between runs with only header changes |
+| [entropy_collapse.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/RAG/entropy_collapse.md) | Caps chain growth and noise in long flows | Steps balloon, chain never lands |
+| [eval_drift.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/RAG/eval_drift.md) | Makes eval runs deterministic | Metrics vary across identical replays |
 
 ---
 
 ## When to use this folder
-- Correct facts exist in the corpus but never appear in answers.  
-- Citations break, hallucinations creep in, or snippets drift.  
-- Hybrid retrievers perform worse than single retrievers.  
-- Index looks healthy but coverage remains low.  
-- Evaluation metrics vary wildly across identical runs.  
+
+- Correct facts exist in the corpus but never appear in answers  
+- Citations break, hallucinations creep in, or snippets drift  
+- Hybrid retrievers perform worse than single retrievers  
+- Index looks healthy but coverage remains low  
+- Evaluation metrics vary across identical runs
 
 ---
 
 ## Acceptance targets
+
 - ΔS(question, retrieved) ≤ 0.45  
 - Coverage of target section ≥ 0.70  
-- λ remains convergent across 3 paraphrases and 2 seeds  
-- Eval variance ≤ 0.05 across 5 replays  
+- λ_observe convergent across 3 paraphrases and 2 seeds  
+- Eval variance ≤ 0.05 across 5 replays
 
 ---
 
-## Quick routes to per-page guides
+## Symptoms → exact fixes
 
-- Retrieval drift → [retrieval_drift.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/RAG/retrieval_drift.md)  
-- Hallucination in RAG → [hallucination_rag.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/RAG/hallucination_rag.md)  
-- Citation breaks → [citation_break.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/RAG/citation_break.md)  
-- Hybrid retriever failure → [hybrid_failure.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/RAG/hybrid_failure.md)  
-- Index skew → [index_skew.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/RAG/index_skew.md)  
-- Context drift → [context_drift.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/RAG/context_drift.md)  
-- Entropy collapse → [entropy_collapse.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/RAG/entropy_collapse.md)  
-- Eval drift → [eval_drift.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/RAG/eval_drift.md)  
+| Symptom | Likely cause | Open this |
+|---|---|---|
+| High similarity yet wrong meaning | metric or analyzer mismatch | [Vectorstore Fragmentation](https://github.com/onestardao/WFGY/blob/main/ProblemMap/patterns/pattern_vectorstore_fragmentation.md) · [Embedding ≠ Semantic](https://github.com/onestardao/WFGY/blob/main/ProblemMap/embedding-vs-semantic.md) |
+| Correct section never retrieved | fragmented store or missing anchors | [retrieval_drift.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/RAG/retrieval_drift.md) · [citation_break.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/RAG/citation_break.md) |
+| Hybrid worse than single | query split or mis weighted rerank | [hybrid_failure.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/RAG/hybrid_failure.md) |
+| Citations unstable or missing | schema not enforced | [citation_break.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/RAG/citation_break.md) |
+| Answers flip between runs | prompt header reordering or λ variance | [context_drift.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/RAG/context_drift.md) |
+| Index “healthy” but recall low | stale build, analyzer mismatch | [index_skew.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/RAG/index_skew.md) |
+| Eval scores noisy across replays | non deterministic eval path | [eval_drift.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/RAG/eval_drift.md) |
+
+---
+
+## 60 second fix checklist
+
+1) **Lock metrics and analyzers**  
+   One embedding family per field. One distance metric. Same analyzer on write and read.  
+   Use: [Vector DBs & Stores](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/VectorDBs_and_Stores/README.md)
+
+2) **Enforce the snippet contract**  
+   Required: `snippet_id`, `section_id`, `source_url`, `offsets`, `tokens`.  
+   Use: [Retrieval Traceability](https://github.com/onestardao/WFGY/blob/main/ProblemMap/retrieval-traceability.md) · [Data Contracts](https://github.com/onestardao/WFGY/blob/main/ProblemMap/data-contracts.md)
+
+3) **Measure ΔS and λ**  
+   Three paraphrases, two seeds. Alert when ΔS ≥ 0.60 or λ flips.  
+   Use: [Context Drift](https://github.com/onestardao/WFGY/blob/main/ProblemMap/context-drift.md)
+
+4) **Add a deterministic reranker**  
+   Keep BM25 and ANN candidate lists. Detect query split and resolve.  
+   Use: [hybrid_failure.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/RAG/hybrid_failure.md)
+
+5) **Rebuild where needed**  
+   Follow the rebuild order with a small gold set.  
+   Use: [Retrieval Playbook](https://github.com/onestardao/WFGY/blob/main/ProblemMap/retrieval-playbook.md)
+
+---
+
+## Vector DBs — jump if store specific
+
+- Family index:  
+  [Vector DBs & Stores](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/VectorDBs_and_Stores/README.md)
+
+- Direct store guides:  
+  [FAISS](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/VectorDBs_and_Stores/faiss.md) ·
+  [Chroma](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/VectorDBs_and_Stores/chroma.md) ·
+  [Qdrant](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/VectorDBs_and_Stores/qdrant.md) ·
+  [Weaviate](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/VectorDBs_and_Stores/weaviate.md) ·
+  [Milvus](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/VectorDBs_and_Stores/milvus.md) ·
+  [pgvector](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/VectorDBs_and_Stores/pgvector.md) ·
+  [Redis](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/VectorDBs_and_Stores/redis.md) ·
+  [Elasticsearch](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/VectorDBs_and_Stores/elasticsearch.md) ·
+  [Pinecone](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/VectorDBs_and_Stores/pinecone.md) ·
+  [Typesense](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/VectorDBs_and_Stores/typesense.md) ·
+  [Vespa](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/VectorDBs_and_Stores/vespa.md)
+
+---
+
+## Minimal probe pack you can paste
+
+```txt
+Context: TXT OS and WFGY pages are loaded.
+
+Task:
+- For question Q, log ΔS(Q, retrieved) and λ across 3 paraphrases and 2 seeds.
+- Enforce cite-then-explain with the traceability schema.
+- If ΔS ≥ 0.60 or λ flips, return the smallest structural change that
+  pushes ΔS ≤ 0.45 and coverage ≥ 0.70.
+- Use BBMC, BBCR, BBPF, BBAM when relevant.
+
+Return JSON only:
+{ "citations": [...], "ΔS": 0.xx, "λ_state": "<>", "coverage": 0.xx, "next_fix": "..." }
+```
 
 ---
 
