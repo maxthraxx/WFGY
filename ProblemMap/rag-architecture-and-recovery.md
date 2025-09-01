@@ -76,8 +76,8 @@ A hands-on guide to implementing WFGY in real RAG workflows.**
 >
 > | Tool                | Link                                                | 3-Step Setup                                                                     |
 > | ------------------- | --------------------------------------------------- | -------------------------------------------------------------------------------- |
-> | WFGY 1.0 (PDF)      | [Engine Paper](https://zenodo.org/records/15630969) | ① Download · ② Upload to your LLM · ③ Ask “Answer using WFGY + \<your question>” |
-> | TXT OS (plain-text) | [TXTOS.txt](https://zenodo.org/records/15788557)    | ① Download · ② Paste into any LLM chat · ③ Type “hello world” to boot            |
+> | WFGY 1.0 (PDF)      | [Engine Paper](https://github.com/onestardao/WFGY/blob/main/I_am_not_lizardman/WFGY_All_Principles_Return_to_One_v1.0_PSBigBig_Public.pdf) | ① Download · ② Upload to your LLM · ③ Ask “Answer using WFGY + \<your question>” |
+> | TXT OS (plain-text) | [TXTOS.txt](https://github.com/onestardao/WFGY/blob/main/OS/TXTOS.txt)    | ① Download · ② Paste into any LLM chat · ③ Type “hello world” to boot            |
 >
 > Compatible with all Ten Masters (GPT-4, Claude, Gemini, Kimi etc) — no setup needed.
 >
