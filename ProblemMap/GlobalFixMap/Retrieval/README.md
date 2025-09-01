@@ -75,6 +75,16 @@ Use this page to route symptoms to the exact structural fix and verify with meas
 
 ---
 
+## Checklists — copy before deploy
+
+| Checklist | Scope | Link |
+|---|---|---|
+| Retrieval Readiness | Pre-flight: embeddings, analyzers, index, gold set | [retrieval_readiness.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Retrieval/checklists/retrieval_readiness.md) |
+| Reranker Sanity | Hybrid reranking health and overlap checks | [reranker_sanity.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Retrieval/checklists/reranker_sanity.md) |
+| Traceability Gate | Contract enforcement for cite-then-explain | [traceability_gate.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Retrieval/checklists/traceability_gate.md) |
+
+---
+
 ## Vector DBs — jump if store specific
 
 - Family index:  
@@ -108,7 +118,6 @@ Task:
 
 Return JSON:
 { "citations": [...], "ΔS": 0.xx, "λ_state": "<>", "coverage": 0.xx, "next_fix": "..." }
-````
 
 ---
 
