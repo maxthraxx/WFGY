@@ -99,6 +99,86 @@ Use this folder when your corpus or queries include CJK, RTL, Indic, Cyrillic, a
 - CJK/Thai require segmentation or bigrams; keep entity fields as keyword  
 - If no multilingual embeddings, add a lexical sidecar and align features with a deterministic rerank
 
+Got it — here’s the **English FAQ version** for the *Language & Multilingual · Global Fix Map* README. It follows the same style and clarity as the Chinese one, but rewritten in English for new users.
+
+---
+
+## FAQ — Common Questions (Language & Multilingual)
+
+**Q1. Why does a bilingual or mixed query look similar but hit the wrong section?**  
+A1. Most often the index and query use different analyzers or normalization steps, or CJK/Thai segmentation was never applied. Always lock the same normalization (width, accents, casing, segmentation) for both sides, then rebuild the index.  
+Open: [tokenizer_mismatch.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Language/tokenizer_mismatch.md) · [query_routing_and_analyzers.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Language/query_routing_and_analyzers.md)
+
+**Q2. Why do zh-Hans and zh-Hant never co-retrieve?**  
+A2. Variant and width rules are missing. Apply Unicode normalization, full/half-width mapping, and variant mapping before indexing.  
+Open: [locale_drift.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Language/locale_drift.md)
+
+**Q3. After translating the question into English, citations jump to the wrong section.**  
+A3. The citation schema is too loose, missing fields like `section_id` and `offsets`. Enforce snippet contracts and cite-then-explain.  
+Open: [data-contracts.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/data-contracts.md) · [retrieval-traceability.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/retrieval-traceability.md)
+
+**Q4. Why does Thai or Japanese recall fluctuate a lot?**  
+A4. Classic tokenizer mismatch. Ensure index and query share the same segmenter; if not, use bigram or hybrid segmentation.  
+Open: [tokenizer_mismatch.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Language/tokenizer_mismatch.md)
+
+**Q5. Why do mixed Latin + CJK queries under-recall?**  
+A5. The analyzer splits into two routes and weights unevenly. Script-aware splitting or fixed routing is needed.  
+Open: [script_mixing.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Language/script_mixing.md) · [query_routing_and_analyzers.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Language/query_routing_and_analyzers.md)
+
+**Q6. Why do proper nouns oscillate between native, romanized, and English aliases?**  
+A6. Alias fields and romanization tables are missing. Add aliases and protect them with keyword fields.  
+Open: [proper_noun_aliases.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Language/proper_noun_aliases.md) · [romanization_transliteration.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Language/romanization_transliteration.md)
+
+**Q7. Why does multilingual reranking give different orderings each run?**  
+A7. You are using a monolingual reranker or unaligned features. Switch to a multilingual reranker or dual-track (lexical+vector) with deterministic tie-breaks.  
+Open: [hybrid_ranking_multilingual.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Language/hybrid_ranking_multilingual.md)
+
+**Q8. Should I enable translation bridging from the start?**  
+A8. No. Always try the native language path first. Only enable when ΔS stays above 0.45 over time, and always with glossaries.  
+Open: [fallback_translation_and_glossary_bridge.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Language/fallback_translation_and_glossary_bridge.md)
+
+**Q9. Why do negations or particles disappear, flipping the meaning?**  
+A9. Stopword or morphology rules are too aggressive. Protect negations, units, and structural particles.  
+Open: [stopword_and_morphology_controls.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Language/stopword_and_morphology_controls.md)
+
+**Q10. Why does language detection keep flipping and causing misrouting?**  
+A10. The detection contract isn’t locked, or samples are too short. Set stable model, sample length, confidence threshold, and fallback paths.  
+Open: [query_language_detection.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Language/query_language_detection.md)
+
+**Q11. Metrics look fine but recall for non-Latin languages stays low.**  
+A11. First check normalization and segmentation, then verify aliases/romanization and multilingual rerank alignment. Add code-switch eval sets for validation.  
+Open: [multilingual_guide.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Language/multilingual_guide.md) · [code_switching_eval.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Language/code_switching_eval.md)
+
+**Q12. What is the minimum acceptance test?**  
+A12. Run bilingual and code-switch eval sets. Confirm all:  
+1) ΔS(question, retrieved) ≤ 0.45  
+2) Coverage ≥ 0.70  
+3) λ convergent.  
+If not, debug in order: detection → normalization → entity protection → rerank → translation bridge.
+
+**Q13. Is there a ready-to-paste diagnostic prompt?**  
+A13. Yes. Use the following inside your LLM:  
+```txt
+You have TXTOS and the WFGY Problem Map loaded.
+
+Task:  
+- Given a bilingual question Q, measure ΔS(Q, retrieved) and λ across 3 paraphrases.  
+- Verify index/query normalization (width, accents, casing, segmentation).  
+- Enforce cite-then-explain. Protect entities with alias/romanization.  
+- If ΔS ≥ 0.60 or λ flips, output minimal structural fix until ΔS ≤ 0.45, Coverage ≥ 0.70.
+
+Return JSON:  
+{ "citations":[...], "ΔS":0.xx, "λ_state":"<>|→|←|×", "coverage":0.xx, "next_fix":"..." }
+````
+
+**Q14. If I want to change the least, what’s the fix priority?**
+A14. 1) Lock language detection contract  2) Lock normalization and analyzers  3) Add aliases/romanization  4) Multilingual rerank  5) Only then enable translation bridge.
+
+**Q15. Accuracy improved, but rankings across languages still flip occasionally.**
+A15. Add stable sort keys and fixed weight tables. Inject language features into rerankers and set deterministic tie-break rules.
+Open: [hybrid\_ranking\_multilingual.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Language/hybrid_ranking_multilingual.md)
+
+
 ---
 
 ### 🔗 Quick-Start Downloads (60 sec)
