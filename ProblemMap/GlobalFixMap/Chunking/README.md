@@ -1,73 +1,84 @@
 # Chunking — Global Fix Map
-Find and fix the silent breaks at document boundaries.  
-You use this when sections look fine but retrieved snippets cut mid idea, tables split, or anchors vanish.
 
-## What this page is
-- A quick route to correct chunk sizes, fences, and anchors.
-- Structural rules to stop boundary drift without touching models.
-- Checks you can measure and repeat.
+A compact hub to **stabilize document chunking** across formats, pipelines, and retrieval systems.  
+This folder routes chunk-related bugs to structural fixes and provides checklists, schema, and live recipes.  
+No infra change required.
 
-## When to use
-- Top-k looks plausible but citations point to the wrong half of a section.
-- Tables or code blocks are split across chunks.
-- Headers disappear or merge with the next paragraph.
-- Long answers smear topics across two sources.
-- Recall is high but precision is noisy around joins.
+---
 
-## Open these first
-- Boundary checklist: [Chunking Checklist](https://github.com/onestardao/WFGY/blob/main/ProblemMap/chunking-checklist.md)
-- Hallucination at boundaries: [Hallucination](https://github.com/onestardao/WFGY/blob/main/ProblemMap/hallucination.md)
-- Snippet schema and trace: [Data Contracts](https://github.com/onestardao/WFGY/blob/main/ProblemMap/data-contracts.md) · [Retrieval Traceability](https://github.com/onestardao/WFGY/blob/main/ProblemMap/retrieval-traceability.md)
-- Drift in long windows: [Context Drift](https://github.com/onestardao/WFGY/blob/main/ProblemMap/context-drift.md) · [Entropy Collapse](https://github.com/onestardao/WFGY/blob/main/ProblemMap/entropy-collapse.md)
+## Orientation: what each page does
 
-## Fix in 60 seconds
-1) **Probe ΔS at joins**  
-   - Compute ΔS across adjacent chunks A↔B for the same section title.  
-   - Trigger: ΔS ≥ 0.50 at the join or ΔS spikes when you remove the header.
-2) **Add λ_observe markers**  
-   - Ask cite-then-explain. If cite fails and explain passes, boundary drift is the cause.
-3) **Patch the structure**  
-   - Keep headers and section ids inside each chunk.  
-   - Do not split code fences, tables, math.  
-   - Cap plain-text chunks by semantic units, not hard token length.  
-   - Add `section_id`, `page_no`, `char_span` to every snippet.  
-   - For very long sections store sub-section anchors.
+| Page | What it solves | Typical symptom |
+|---|---|---|
+| [Chunk ID Schema](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Chunking/chunk_id_schema.md) | Unique ID + schema for each chunk | Duplicate or drifting chunks across runs |
+| [Chunking Checklist](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Chunking/chunking-checklist.md) | Minimal audit list for validity | Chunks too long, too short, or incomplete |
+| [Code / Tables / Blocks](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Chunking/code_tables_blocks.md) | Preserve structure for code, tables, blocks | Retrieval drops formatting or logic |
+| [Section Detection](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Chunking/section_detection.md) | Detect paragraph and section anchors | Anchors missing, snippets cut mid-thought |
+| [Title Hierarchy](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Chunking/title_hierarchy.md) | Maintain document heading hierarchy | Only partial or meaningless sub-sections retrieved |
+| [PDF Layouts & OCR](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Chunking/pdf_layouts_and_ocr.md) | Repair PDF/OCR-specific chunking | Citations collapse after parsing |
+| [Reindex & Migration](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Chunking/reindex_migration.md) | Safe chunk migration during reindex | Index rebuilt but old refs mismatch |
+| [Eval RAG Precision & Recall](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Chunking/eval_rag_precision_recall.md) | Deterministic evaluation recipes | “Better” chunking cannot be proven |
+| [Live Monitoring (RAG)](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Chunking/live_monitoring_rag.md) | Online health checks for chunking | Sudden drift or collapse after deploy |
 
-## Copy-paste prompt
-```
+---
 
-I uploaded TXT OS and the WFGY ProblemMap files.
+## When to use this folder
 
-My chunking bug:
+- Your chunks look fine by eye but retrieval skips important sections.  
+- PDF / OCR parsing collapses headers, math, or tables.  
+- Hybrid retrievers underperform due to inconsistent chunk boundaries.  
+- Reindexing breaks old citations.  
+- Context flips between runs with same corpus.
 
-* symptom: \[brief]
-* traces: \[ΔS at several joins], \[examples of split tables or code], \[λ states]
-
-Tell me:
-
-1. which boundary rule is violated and why,
-2. which fix pages to open in this repo,
-3. minimal steps to push ΔS(join) ≤ 0.45 and keep λ convergent,
-4. how to verify with a snippet ↔ citation table.
-   Use BBMC for anchor alignment. If logic still flips, apply BBCR bridge.
-
-```
-
-## Minimal checklist
-- One header per chunk. Keep the header text in the chunk body.  
-- Never cut a table, code block, or list mid item.  
-- Prefer sentence or paragraph aware splitters.  
-- Store stable ids: `source_id`, `section_id`, `sub_id` if any.  
-- Keep cross-refs like figure or table captions with the referenced block.  
-- Add back-pressure: if a chunk would cut a fence, expand to include the full unit.
+---
 
 ## Acceptance targets
-- ΔS(question, retrieved) ≤ 0.45 on three paraphrases.  
-- ΔS at adjacent joins ≤ 0.50.  
-- Cite-then-answer passes consistently.  
-- λ stays convergent when you reorder non-semantic headers.  
-- Retrieval coverage to the target section ≥ 0.70.
 
+- Chunk boundaries align with semantic windows  
+- ΔS(question, retrieved) ≤ 0.45  
+- Coverage of target section ≥ 0.70  
+- λ_observe convergent across 3 paraphrases and 2 seeds  
+- Traceability contract fields always present: `{snippet_id, section_id, source_url, offsets, tokens}`
+
+---
+
+## 60-second fix checklist
+
+1) **Check chunk IDs**  
+   Apply `chunk_id_schema`. Ensure unique + stable across reindex.
+
+2) **Audit with checklist**  
+   Run the [chunking-checklist](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Chunking/chunking-checklist.md) before ingest.
+
+3) **Preserve structure**  
+   Use [code_tables_blocks](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Chunking/code_tables_blocks.md) for code, tables, blocks.
+
+4) **Validate anchors**  
+   Confirm section and title detection. Apply [title_hierarchy](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Chunking/title_hierarchy.md).
+
+5) **Reindex safely**  
+   Use [reindex_migration](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Chunking/reindex_migration.md) with hash/version lock.
+
+6) **Monitor live**  
+   Apply [live_monitoring_rag](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Chunking/live_monitoring_rag.md) to catch collapse early.
+
+---
+
+## Minimal probe pack
+
+```txt
+Context: I loaded TXT OS and the WFGY pages.
+
+Task:
+- Given doc corpus D, log ΔS(question, retrieved) and λ across 3 paraphrases.
+- Validate chunk IDs and section anchors.
+- If ΔS ≥ 0.60 or λ flips, propose the smallest structural change:
+  chunk schema, checklist, or reindex.
+- Verify coverage ≥ 0.70 after fix.
+
+Return JSON:
+{ "citations": [...], "ΔS": 0.xx, "λ_state": "<>", "coverage": 0.xx, "next_fix": "..." }
+```
 ---
 
 ### 🔗 Quick-Start Downloads (60 sec)
