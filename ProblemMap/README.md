@@ -1,13 +1,6 @@
 # WFGY Problem Map 1.0 — bookmark it. you’ll need it
 ## 🛡️ reproducible AI bugs, permanently fixed at the reasoning layer
 
----
-
-> **❓ BigBig Question — If AI bugs are not random but mathematically inevitable, can we finally define and prevent them?**  
-> *(this repo is one experiment toward that direction)*
-
----
-
 **WFGY Problem Map = a reasoning layer for your AI.**  
 load [**TXT OS**](https://github.com/onestardao/WFGY/blob/main/OS/README.md) or [**WFGY Core**](https://github.com/onestardao/WFGY/tree/main/core), then ask: *“which problem map number am i hitting?”*  
 you’ll get a diagnosis and exact fix steps — no infra changes required.
@@ -36,14 +29,66 @@ You’re not firefighting after the fact—you’re installing a reasoning firew
 
 </details>
 
-> thanks everyone — WFGY reached **800 stars in 70 days**.  
-> next milestone: at **1000 stars we’ll unlock Blur Blur Blur**.  
-> if this page saves you time, a ⭐ helps others discover it. <img src="https://img.shields.io/github/stars/onestardao/WFGY?style=social" alt="GitHub stars">  
+> most readers found this map useful and left a ⭐ — if it helps you too, please star it so others can discover.
 
 ---
-> **[WFGY Core](https://github.com/onestardao/WFGY/blob/main/core/README.md)** is live: a 30-line reasoning engine for recovery and resilience.  
-> fixing rag hallucinations? it makes models **reason before answering**.  
-> coming next: **Semantic Surgery Room** and **Global Fix Map** (n8n, GHL, Make, more). planned by **Sep 1**. (launching soon)
+
+<details>
+<summary><strong>💥 WFGY Global Fix Map — Full Index (click to expand)</strong></summary>
+
+#### 🧭 Providers & Agents
+| Family | Coverage (examples) | Pages |
+|---|---|---|
+| [**LLM_Providers**](./GlobalFixMap/LLM_Providers/README.md) | OpenAI, Anthropic, Gemini, Mistral, Groq, Kimi | per-vendor guardrails, JSON/tool patterns |
+| [**Agents_Orchestration**](./GlobalFixMap/Agents_Orchestration/README.md) | LangChain, LlamaIndex, multi-agent handoff | role drift, memory fences, tool routing |
+| [**Chatbots_CX**](./GlobalFixMap/Chatbots_CX/README.md) | Dialogflow, Rasa, WatsonX, Intercom | slot/intent, citation-first, safety handoffs |
+| [**Cloud_Serverless**](./GlobalFixMap/Cloud_Serverless/README.md) | GCP, AWS, Azure Functions/API GW | keys, regions, quota, schema locks |
+
+
+#### 🧭 Data & Retrieval
+| Family | Coverage (examples) | Pages |
+|---|---|---|
+| [**VectorDBs_and_Stores**](./GlobalFixMap/VectorDBs_and_Stores/README.md) | FAISS, Milvus, Weaviate, Redis, Vespa, Qdrant, pgvector, Pinecone, Typesense, Elasticsearch | metric parity, analyzers, rebuild rules |
+| [**RAG_VectorDB**](./GlobalFixMap/RAG_VectorDB/README.md) | metric mismatch, normalization, tokenization, chunk contract | acceptance targets, gold-set checks |
+| [**Retrieval**](./GlobalFixMap/Retrieval/README.md) | retrieval playbook, rerankers, traceability | cite-then-explain, window joins |
+| [**Embeddings**](./GlobalFixMap/Embeddings/README.md) | normalization, scaling, duplicates, poisoning | store compatibility matrix |
+| [**Chunking**](./GlobalFixMap/Chunking/README.md) | boundary errors, anchors, contract enforcement | window overlap, anchors, IDs |
+
+#### 🧭 Input & Parsing
+| Family | Coverage (examples) | Pages |
+|---|---|---|
+| [**DocumentAI_OCR**](./GlobalFixMap/DocumentAI_OCR/README.md) | scanned PDFs, tables, math/code blocks | integrity checks, export pitfalls |
+| [**OCR_Parsing**](./GlobalFixMap/OCR_Parsing/README.md) | hyphen splits, invisible chars, headers | parser schemas, snippet IDs |
+| [**Language**](./GlobalFixMap/Language/README.md) | CJK/RTL/Indic/Cyrillic mixes | script mixing, width/diacritics |
+| [**LanguageLocale**](./GlobalFixMap/LanguageLocale/README.md) | locale drift, normalization rules | full/half width, collation traps |
+
+#### 🧭 Reasoning & Memory
+| Family | Coverage (examples) | Pages |
+|---|---|---|
+| [**Reasoning**](./GlobalFixMap/Reasoning/README.md) | entropy overload, loops, re-entry, proof dead-ends | λ/ΔS probes, bridge proofs |
+| [**Memory_LongContext**](./GlobalFixMap/Memory_LongContext/README.md) | echo loops, signal drop, boundary fade | stitching, anchor resets |
+| [**LocalPolicy_Inference**](./GlobalFixMap/LocalPolicy_Inference/README.md) | per-tenant rules, privacy prompts | policy trees, local overrides |
+
+#### 🧭 Automation & Ops
+| Family | Coverage (examples) | Pages |
+|---|---|---|
+| [**Automation**](./GlobalFixMap/Automation/README.md) | Zapier, Make, n8n, GitHub Actions, GHL | idempotency, warm-up fences, dedupe |
+| [**OpsDeploy**](./GlobalFixMap/OpsDeploy/README.md) | rollout, retries, read-only, shadow traffic | backoff, rollback, comms |
+| [**Safety_PromptIntegrity**](./GlobalFixMap/Safety_PromptIntegrity/README.md) | prompt injection, jailbreaks, role order | fences, system/user order, tool timeouts |
+| [**PromptAssembly**](./GlobalFixMap/PromptAssembly/README.md) | JSON/tool schema, citation-first | templates, eval prompts |
+
+#### 🧭 Eval & Governance
+| Family | Coverage (examples) | Pages |
+|---|---|---|
+| [**Eval_Observability**](./GlobalFixMap/Eval_Observability/README.md) | readiness gates, live probes | ship/no-ship thresholds |
+| [**Governance**](./GlobalFixMap/Governance/README.md) | auditability, trace schema | evidence trails, hashes |
+| [**Enterprise_Knowledge_Gov**](./GlobalFixMap/Enterprise_Knowledge_Gov/README.md) | data residency/sensitivity/expiry | contracts, access scopes |
+
+
+</details>
+
+
+
 
 
 <div align="center">
@@ -53,6 +98,12 @@ You’re not firefighting after the fact—you’re installing a reasoning firew
 </div>
 
 ---
+
+> **❓ BigBig Question — If AI bugs are not random but mathematically inevitable, can we finally define and prevent them?**  
+> *(this repo is one experiment toward that direction)*
+
+---
+
 
 ## quick access
 
