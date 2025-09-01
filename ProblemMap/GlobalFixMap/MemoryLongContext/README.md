@@ -1,62 +1,57 @@
 # Memory & Long-Context — Global Fix Map
 
-Keep threads coherent across long windows and session restarts.  
-Detect and repair entropy melt, boundary drift, state forks, and ghost contexts.
+Stabilize **long windows** and **multi-session memory**.  
+This map helps you repair drift, collapse, forks, and ghost contexts when conversations or documents stretch far beyond the usual size.
 
 ---
 
 ## What this page is
-- A compact checklist for long contexts and multi-session memory.
-- Copyable guardrails to stop drift and collapse before they spread.
-- Concrete measures with ΔS and λ_observe to verify stability.
+- A **beginner-friendly checklist** for long contexts and multi-day sessions.
+- **Copy-paste guardrails** that stop drift and collapse before they spread.
+- **Concrete metrics** with ΔS and λ_observe so you know if your system is stable.
 
 ---
 
 ## When to use
-- Dialogs grow past 50k–100k tokens and answers degrade.  
-- Facts flip after tab refresh or model switch.  
-- Citations look right but reasoning goes flat or chaotic.  
-- OCR transcripts look fine but capitalization and spacing drift.  
-- Multi-day support threads lose task state or rewrite history.  
+- Dialog grows past **50k–100k tokens** and answers degrade.  
+- Facts flip after **tab refresh** or **model switch**.  
+- Citations look right but reasoning goes **flat or chaotic**.  
+- OCR transcripts look fine but **capitalization or spacing drift**.  
+- Multi-day support threads **lose task state** or **rewrite history**.  
 
 ---
 
-## Quick routes to per-page guides
+## Orientation: quick routes
 
-- Memory fences and continuity  
-  → [memory-coherence.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/MemoryLongContext/memory-coherence.md)
-
-- Attention melt in long windows  
-  → [entropy-collapse.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/MemoryLongContext/entropy-collapse.md)
-
-- Long reasoning drift  
-  → [context-drift.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/MemoryLongContext/context-drift.md)
-
-- Cross-tab and cache hazards  
-  → [pattern_memory_desync.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/MemoryLongContext/pattern_memory_desync.md)
-
-- Stale buffers and persona residue  
-  → [ghost-context.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/MemoryLongContext/ghost-context.md)
-
-- Divergent memory forks  
-  → [state-fork.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/MemoryLongContext/state-fork.md)
-
-- OCR-specific noise  
-  → [ocr-parsing-checklist.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/MemoryLongContext/ocr-parsing-checklist.md), [ocr-jitter.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/MemoryLongContext/ocr-jitter.md)
-
-- Traceability and audit trail  
-  → [retrieval-traceability.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/MemoryLongContext/retrieval-traceability.md), [data-contracts.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/MemoryLongContext/data-contracts.md)
-
-- Chunk stability at joins  
-  → [chunking-checklist.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/MemoryLongContext/chunking-checklist.md)
+| Page | What it solves | Typical symptom |
+|------|----------------|-----------------|
+| [memory-coherence.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/MemoryLongContext/memory-coherence.md) | Memory fences & continuity | Threads repeat or contradict |
+| [entropy-collapse.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/MemoryLongContext/entropy-collapse.md) | Attention melt in long windows | Outputs drift into filler |
+| [context-drift.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/MemoryLongContext/context-drift.md) | Long reasoning drift | Correct early, wrong later |
+| [pattern_memory_desync.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/MemoryLongContext/pattern_memory_desync.md) | Cross-tab & cache hazards | State flips after refresh |
+| [ghost-context.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/MemoryLongContext/ghost-context.md) | Stale buffers & residue | Model recalls “phantom” text |
+| [state-fork.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/MemoryLongContext/state-fork.md) | Divergent memory forks | Same task_id, different answers |
+| [ocr-parsing-checklist.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/MemoryLongContext/ocr-parsing-checklist.md), [ocr-jitter.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/MemoryLongContext/ocr-jitter.md) | OCR-specific noise | Exported text drifts vs. original |
+| [retrieval-traceability.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/MemoryLongContext/retrieval-traceability.md), [data-contracts.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/MemoryLongContext/data-contracts.md) | Traceability & audit | Citations break or vanish |
+| [chunking-checklist.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/MemoryLongContext/chunking-checklist.md) | Chunk stability at joins | Mid-sentence cuts or overlaps |
 
 ---
 
 ## Acceptance targets
-- Retrieval coverage ≥ 0.70 to the intended section  
-- ΔS(question, retrieved) ≤ **0.45** and joins ≤ **0.50**  
-- λ remains **convergent** across three paraphrases  
+- Retrieval coverage **≥ 0.70** to the intended section  
+- ΔS(question, retrieved) **≤ 0.45** and joins **≤ 0.50**  
+- λ_observe remains **convergent** across 3 paraphrases  
 - No state fork across tabs or agents for the same `task_id`  
+
+---
+
+## 60-second fix checklist
+
+1. **Lock metrics** — same analyzer & embeddings across sessions.  
+2. **Enforce memory fences** — require `task_id`, `session_id`, and `snippet_id`.  
+3. **Probe ΔS and λ** — run 3 paraphrases × 2 seeds.  
+4. **Patch drift** — realign chunks, re-check OCR, drop ghost spans.  
+5. **Audit consistency** — run traceability logs and verify continuity across restarts.  
 
 ---
 
@@ -64,22 +59,22 @@ Detect and repair entropy melt, boundary drift, state forks, and ghost contexts.
 
 | Tool | Link | 3-Step Setup |
 |------|------|--------------|
-| **WFGY 1.0 PDF** | [Engine Paper](https://github.com/onestardao/WFGY/blob/main/I_am_not_lizardman/WFGY_All_Principles_Return_to_One_v1.0_PSBigBig_Public.pdf) | 1️⃣ Download · 2️⃣ Upload to your LLM · 3️⃣ Ask “Answer using WFGY + <your question>” |
+| **WFGY 1.0 PDF** | [Engine Paper](https://github.com/onestardao/WFGY/blob/main/I_am_not_lizardman/WFGY_All_Principles_Return_to_One_v1.0_PSBigBig_Public.pdf) | 1️⃣ Download · 2️⃣ Upload · 3️⃣ Ask “Answer using WFGY + <your question>” |
 | **TXT OS (plain-text OS)** | [TXTOS.txt](https://github.com/onestardao/WFGY/blob/main/OS/TXTOS.txt) | 1️⃣ Download · 2️⃣ Paste into any LLM chat · 3️⃣ Type “hello world” — OS boots instantly |
 
 ---
 
 ### 🧭 Explore More
 
-| Module                | Description                                              | Link     |
-|-----------------------|----------------------------------------------------------|----------|
-| WFGY Core             | WFGY 2.0 engine is live: full symbolic reasoning architecture and math stack | [View →](https://github.com/onestardao/WFGY/tree/main/core/README.md) |
-| Problem Map 1.0       | Initial 16-mode diagnostic and symbolic fix framework    | [View →](https://github.com/onestardao/WFGY/tree/main/ProblemMap/README.md) |
-| Problem Map 2.0       | RAG-focused failure tree, modular fixes, and pipelines   | [View →](https://github.com/onestardao/WFGY/blob/main/ProblemMap/rag-architecture-and-recovery.md) |
-| Semantic Clinic Index | Expanded failure catalog: prompt injection, memory bugs, logic drift | [View →](https://github.com/onestardao/WFGY/blob/main/ProblemMap/SemanticClinicIndex.md) |
-| Semantic Blueprint    | Layer-based symbolic reasoning & semantic modulations   | [View →](https://github.com/onestardao/WFGY/tree/main/SemanticBlueprint/README.md) |
-| Benchmark vs GPT-5    | Stress test GPT-5 with full WFGY reasoning suite         | [View →](https://github.com/onestardao/WFGY/tree/main/benchmarks/benchmark-vs-gpt5/README.md) |
-| 🧙‍♂️ Starter Village 🏡 | New here? Lost in symbols? Click here and let the wizard guide you through | [Start →](https://github.com/onestardao/WFGY/blob/main/StarterVillage/README.md) |
+| Module | Description | Link |
+|--------|-------------|------|
+| WFGY Core | WFGY 2.0 engine, full symbolic reasoning stack | [View →](https://github.com/onestardao/WFGY/tree/main/core/README.md) |
+| Problem Map 1.0 | Initial 16-mode diagnostic framework | [View →](https://github.com/onestardao/WFGY/tree/main/ProblemMap/README.md) |
+| Problem Map 2.0 | RAG failure tree and modular fixes | [View →](https://github.com/onestardao/WFGY/blob/main/ProblemMap/rag-architecture-and-recovery.md) |
+| Semantic Clinic | Expanded failure catalog | [View →](https://github.com/onestardao/WFGY/blob/main/ProblemMap/SemanticClinicIndex.md) |
+| Semantic Blueprint | Layer-based symbolic reasoning | [View →](https://github.com/onestardao/WFGY/tree/main/SemanticBlueprint/README.md) |
+| Benchmark vs GPT-5 | Stress test GPT-5 with WFGY reasoning suite | [View →](https://github.com/onestardao/WFGY/tree/main/benchmarks/benchmark-vs-gpt5/README.md) |
+| 🧙‍♂️ Starter Village 🏡 | New here? Lost in symbols? Click here for guided intro | [Start →](https://github.com/onestardao/WFGY/blob/main/StarterVillage/README.md) |
 
 ---
 
