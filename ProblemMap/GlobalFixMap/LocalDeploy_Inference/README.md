@@ -1,117 +1,125 @@
 # Local Deploy & Inference — Global Fix Map
 
-A hub to stabilize locally hosted models on your own machine or cluster. Use this folder when symptoms look like “model problem” but the root cause is tokenizer skew, rope scaling, kv-cache settings, build flags, or server parameters. Every fix maps back to WFGY pages with measurable targets, so you can verify without changing infra elsewhere.
+A beginner-friendly hub to **stabilize locally hosted LLMs** on your own machine or cluster.  
+Use this folder when it looks like the “model is broken” but the **real cause is infra settings**: tokenizer mismatch, rope scaling, kv-cache size, build flags, or server parameters.  
+Every guide links back to WFGY with measurable acceptance targets. No infra rebuild required.
+
+---
 
 ## When to use this folder
-- Local server returns plausible text but citations do not line up with the right snippet.
-- Answers alternate between runs on the same input.
-- JSON mode breaks on long outputs, or tool calls loop.
-- Latency spikes after a few turns, or context truncates early.
-- Quantized model behaves very differently from the fp16 baseline.
-- After switching loaders or UIs, retrieval quality drops.
+- Local server gives fluent answers but citations point to the wrong snippet  
+- Same input produces different outputs on each run  
+- JSON mode fails on long answers or tool calls loop endlessly  
+- Latency keeps growing after a few turns, or context cuts off too early  
+- Quantized model outputs diverge heavily from fp16 baseline  
+- Retrieval quality drops after switching loaders or UIs  
+
+---
 
 ## Open these first
-- Visual map and recovery: [RAG Architecture & Recovery](https://github.com/onestardao/WFGY/blob/main/ProblemMap/rag-architecture-and-recovery.md)
-- End to end retrieval knobs: [Retrieval Playbook](https://github.com/onestardao/WFGY/blob/main/ProblemMap/retrieval-playbook.md)
-- Why this snippet (traceability schema): [Retrieval Traceability](https://github.com/onestardao/WFGY/blob/main/ProblemMap/retrieval-traceability.md)
-- Embedding vs meaning: [Embedding ≠ Semantic](https://github.com/onestardao/WFGY/blob/main/ProblemMap/embedding-vs-semantic.md)
-- Ordering control: [Rerankers](https://github.com/onestardao/WFGY/blob/main/ProblemMap/rerankers.md)
-- Long chains and entropy: [Context Drift](https://github.com/onestardao/WFGY/blob/main/ProblemMap/context-drift.md), [Entropy Collapse](https://github.com/onestardao/WFGY/blob/main/ProblemMap/entropy-collapse.md)
-- Structural collapse and recovery: [Logic Collapse](https://github.com/onestardao/WFGY/blob/main/ProblemMap/logic-collapse.md)
-- Prompt injection and schema locks: [Prompt Injection](https://github.com/onestardao/WFGY/blob/main/ProblemMap/prompt-injection.md)
-- Snippet and citation schema: [Data Contracts](https://github.com/onestardao/WFGY/blob/main/ProblemMap/data-contracts.md)
+- Recovery map: [RAG Architecture & Recovery](../../rag-architecture-and-recovery.md)  
+- Retrieval knobs: [Retrieval Playbook](../../retrieval-playbook.md)  
+- Traceability schema: [Retrieval Traceability](../../retrieval-traceability.md)  
+- Meaning vs similarity: [Embedding ≠ Semantic](../../embedding-vs-semantic.md)  
+- Rank ordering: [Rerankers](../../rerankers.md)  
+- Drift in long runs: [Context Drift](../../context-drift.md), [Entropy Collapse](../../entropy-collapse.md)  
+- Logic collapse and repair: [Logic Collapse](../../logic-collapse.md)  
+- Guarding against bad prompts: [Prompt Injection](../../prompt-injection.md)  
+- Contract schema for snippets: [Data Contracts](../../data-contracts.md)  
+
+---
 
 ## Acceptance targets
-- ΔS(question, retrieved) ≤ 0.45
-- Coverage of target section ≥ 0.70
-- λ remains convergent across three paraphrases and two seeds
-- E_resonance stays flat on long windows
+- ΔS(question, retrieved) ≤ **0.45**  
+- Coverage of target section ≥ **0.70**  
+- λ convergent across 3 paraphrases × 2 seeds  
+- E_resonance stays flat on long windows  
+
+---
 
 ## Quick routes to per-tool pages
-- Ollama: [ollama.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/LocalDeploy_Inference/ollama.md)
-- vLLM: [vllm.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/LocalDeploy_Inference/vllm.md)
-- llama.cpp (server and bindings): [llama_cpp.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/LocalDeploy_Inference/llama_cpp.md)
-- TGI Text Generation Inference: [tgi.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/LocalDeploy_Inference/tgi.md)
-- LM Studio: [lmstudio.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/LocalDeploy_Inference/lmstudio.md)
-- KoboldCpp: [koboldcpp.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/LocalDeploy_Inference/koboldcpp.md)
-- OpenWebUI: [openwebui.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/LocalDeploy_Inference/openwebui.md)
-- Oobabooga Text Gen WebUI: [oobabooga.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/LocalDeploy_Inference/oobabooga.md)
+- [ollama.md](./ollama.md)  
+- [vllm.md](./vllm.md)  
+- [llama_cpp.md](./llama_cpp.md)  
+- [tgi.md](./tgi.md)  
+- [lmstudio.md](./lmstudio.md)  
+- [koboldcpp.md](./koboldcpp.md)  
+- [openwebui.md](./openwebui.md)  
+- [oobabooga.md](./oobabooga.md)  
 
-## Map symptoms to structural fixes
-- Wrong snippet despite high similarity  
-  → [Embedding ≠ Semantic](https://github.com/onestardao/WFGY/blob/main/ProblemMap/embedding-vs-semantic.md)  
-  Check analyzer, metric, and normalization in your retriever. Do not blame the model yet.
+---
 
-- JSON tool calls or functions go unstable  
-  → [Data Contracts](https://github.com/onestardao/WFGY/blob/main/ProblemMap/data-contracts.md), [Logic Collapse](https://github.com/onestardao/WFGY/blob/main/ProblemMap/logic-collapse.md)  
-  Lock schemas, forbid free text in tool outputs, and echo the contract.
+## Common local causes & fixes
+| Symptom | Likely cause | Fix |
+|---------|--------------|-----|
+| Wrong snippet despite high similarity | Tokenizer mismatch, analyzer drift | Align tokenizer files, check retriever metric, use [Embedding ≠ Semantic](../../embedding-vs-semantic.md) |
+| JSON tool calls unstable | Schema drift, free text in outputs | Enforce [Data Contracts](../../data-contracts.md), apply [Logic Collapse](../../logic-collapse.md) |
+| Outputs flip each run | Context order drift, variance | Clamp header order, use [Context Drift](../../context-drift.md), enforce trace table |
+| Hybrid retrieval worse than single | Ranker instability | Split parsing → [pattern_query_parsing_split.md](../../patterns/pattern_query_parsing_split.md) |
+| Fixed hallucination returns later | Long chain decay | [hallucination-reentry.md](../../patterns/pattern_hallucination_reentry.md) |
 
-- Answers flip between identical runs  
-  → [Context Drift](https://github.com/onestardao/WFGY/blob/main/ProblemMap/context-drift.md), [Retrieval Traceability](https://github.com/onestardao/WFGY/blob/main/ProblemMap/retrieval-traceability.md)  
-  Fix header order, clamp variance, and add cite-then-explain guardrails.
-
-- Hybrid retrieval loses to a single retriever  
-  → [Pattern: Query Parsing Split](https://github.com/onestardao/WFGY/blob/main/ProblemMap/patterns/pattern_query_parsing_split.md), [Rerankers](https://github.com/onestardao/WFGY/blob/main/ProblemMap/rerankers.md)
-
-- Hallucination returns after you fixed it once  
-  → [Pattern: Hallucination Re-entry](https://github.com/onestardao/WFGY/blob/main/ProblemMap/patterns/pattern_hallucination_reentry.md)
+---
 
 ## Local-specific guardrails
-- **Model format and loader**  
-  GGUF vs safetensors vs HF transformers produce different tokenizer defaults and rope settings. Keep the same tokenizer files and rope scale when comparing.  
-  Check: max context, rope base, rope scale, sliding window, logits processors.
+- **Model format**: GGUF vs safetensors vs HF transformers → use same tokenizer and rope scale  
+- **Quantization**: Compare q4/q8 vs fp16; if ΔS drifts, tune kv_cache and sampling params  
+- **Server flags**: Align defaults (temp, top_p, penalties, stop tokens) across servers  
+- **Tokenizer & casing**: Keep analyzers consistent across retrievers, rerankers, HyDE  
+- **Batching**: Fix batch size during eval; dynamic batching fakes “randomness”  
 
-- **Quantization parity**  
-  Compare quantized model to fp16 on a small gold set. If ΔS rises or λ flips, adjust `kv_cache` size and sampling params before suspecting retrieval.
-
-- **Server flags**  
-  Normalize across servers: temperature, top_p, min_p, frequency_penalty, presence_penalty, max_tokens, stop sequences, repetition penalty. Mismatched defaults mimic reasoning bugs.
-
-- **Tokenizer and casing**  
-  Keep casing and analyzer identical for HyDE, rerank, and retriever prompts. A different tokenizer in the local UI explains “looks the same but not the same.”
-
-- **Concurrency and batching**  
-  Turn off dynamic batching during eval runs or fix batch size. Batch drift looks like “randomness.”
+---
 
 ## 60-second fix checklist
-1) Measure ΔS  
-Compute ΔS(question, retrieved) and ΔS(retrieved, expected anchor).  
-Stable less than 0.40. Transitional 0.40 to 0.60. Risk at least 0.60.
+1. Compute ΔS(question, retrieved) and ΔS(retrieved, anchor)  
+   - <0.40 = stable, 0.40–0.60 = risky, ≥0.60 = broken  
+2. Probe λ_observe at k=5,10,20; if ΔS flat & high → metric/index bug  
+3. Apply modules:  
+   - Retrieval drift → BBMC + Data Contracts  
+   - Collapse in reasoning → BBCR + BBAM  
+   - Dead ends in long runs → BBPF alternate paths  
+4. Verify coverage ≥0.70 and λ convergent on 2 seeds  
 
-2) Probe λ_observe  
-Vary k at 5, 10, 20. If ΔS stays flat and high, suspect metric or index mismatch.  
-Reorder prompt headers. If ΔS spikes, lock the schema.
-
-3) Apply the module  
-- Retrieval drift → BBMC plus [Data Contracts](https://github.com/onestardao/WFGY/blob/main/ProblemMap/data-contracts.md)  
-- Reasoning collapse → BBCR bridge plus BBAM, verify with [Logic Collapse](https://github.com/onestardao/WFGY/blob/main/ProblemMap/logic-collapse.md)  
-- Dead ends in long chains → BBPF alternate paths, then re-join with BBCR
-
-4) Verify  
-Coverage at least 0.70 on three paraphrases. λ convergent on two seeds.
+---
 
 ## Copy-paste prompt for local servers
 ```
 
-You have TXT OS and the WFGY Problem Map loaded.
+I have TXT OS + WFGY loaded.
 
-My local inference setup:
+Local setup:
 
-* server: \<ollama | vllm | llama.cpp | tgi | lmstudio | koboldcpp | openwebui>
-* model: <name>, quant: \<fp16 | q4\_k\_m | q8\_0 | awq | gptq>, ctx: \<n\_ctx>, rope: \<base, scale>
-* sampling: temp=<...> top\_p=<...> min\_p=<...> max\_tokens=<...> stop=\[...]
+* server: \<ollama|vllm|llama.cpp|tgi|lmstudio|koboldcpp|openwebui>
+* model: <name>, quant=\<fp16|q4|q8|awq|gptq>, ctx=<...>, rope=<...>
+* sampling: temp=<...>, top\_p=<...>, max\_tokens=<...>
 * retriever: <metric>, <analyzer>, k=<...>
 
 Tell me:
 
-1. which layer is failing and why,
-2. which exact WFGY page to open,
-3. the minimal steps to push ΔS ≤ 0.45 and keep λ convergent,
-4. a reproducible test to verify it.
-   Use BBMC, BBPF, BBCR, BBAM when relevant.
+1. which layer is failing and why
+2. which WFGY page to open
+3. steps to push ΔS ≤ 0.45 and keep λ convergent
+4. reproducible test to confirm
 
 ```
 
+---
+
+## FAQ (Beginner-Friendly)
+
+**Q: Why does my local model give fluent text but wrong citations?**  
+A: Usually not the model — it’s tokenizer or retriever mismatch. Fix by aligning tokenizer files and checking ΔS against the gold section.
+
+**Q: Why does JSON mode fail locally but work on cloud APIs?**  
+A: Local servers often don’t enforce schema strictly. Apply [Data Contracts](../../data-contracts.md) and disallow free-form prose in tool outputs.
+
+**Q: My quantized model is much worse — is quantization broken?**  
+A: Not always. Small kv_cache or rope mis-scaling causes drift. Compare fp16 vs quant on a gold set before blaming quantization.
+
+**Q: Why do answers flip between runs?**  
+A: Header order, batching, or randomness. Use variance clamps (BBAM) and fix batch size during tests.
+
+**Q: Which numbers matter for stability?**  
+A: ΔS ≤ 0.45, coverage ≥0.70, λ convergent across paraphrases, flat E_resonance over long docs.
 
 ---
 
