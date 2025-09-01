@@ -1,58 +1,88 @@
 # Embeddings — Global Fix Map
 
-A hub to stabilize embedding pipelines across stores and retrievers. Use this page to jump to per-tool guardrails and verify fixes with the same acceptance targets.
+A hub to stabilize the **embedding layer** before retrieval begins.  
+Use this folder if your vectors look fine at a glance but retrieval keeps drifting, coverage stays low, or store queries fail silently. No infra change needed.
 
-## Quick routes to per-page fixes
-- Metric mismatch → [metric_mismatch.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Embeddings/metric_mismatch.md)
-- Normalization and scaling → [normalization_and_scaling.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Embeddings/normalization_and_scaling.md)
-- Tokenization and casing → [tokenization_and_casing.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Embeddings/tokenization_and_casing.md)
-- Chunking to embedding contract → [chunking_to_embedding_contract.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Embeddings/chunking_to_embedding_contract.md)
-- Vectorstore fragmentation → [vectorstore_fragmentation.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Embeddings/vectorstore_fragmentation.md)
-- Dimension mismatch and projection → [dimension_mismatch_and_projection.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Embeddings/dimension_mismatch_and_projection.md)
-- Update and index skew → [update_and_index_skew.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Embeddings/update_and_index_skew.md)
-- Hybrid retriever weights → [hybrid_retriever_weights.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Embeddings/hybrid_retriever_weights.md)
-- Duplication and near-duplicate collapse → [duplication_and_near_duplicate_collapse.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Embeddings/duplication_and_near_duplicate_collapse.md)
-- Poisoning and contamination → [poisoning_and_contamination.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Embeddings/poisoning_and_contamination.md)
+---
+
+## Orientation: what each page covers
+
+| Page | What it solves | Typical symptom |
+|---|---|---|
+| [Metric Mismatch](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Embeddings/metric_mismatch.md) | Store metric (L2, cosine, dot) differs from model assumption | High similarity but wrong neighbors |
+| [Normalization & Scaling](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Embeddings/normalization_and_scaling.md) | Embeddings not normalized or scaled | Results unstable across runs |
+| [Tokenization & Casing](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Embeddings/tokenization_and_casing.md) | Tokenizer mismatch, casing differences | Same text gives different vectors |
+| [Chunking → Embedding Contract](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Embeddings/chunking_to_embedding_contract.md) | Chunk cuts misaligned with semantic windows | Snippets cut mid-thought, anchors lost |
+| [Vectorstore Fragmentation](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Embeddings/vectorstore_fragmentation.md) | Index silently fragmented | Recall too low even with large k |
+| [Dimension Mismatch & Projection](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Embeddings/dimension_mismatch_and_projection.md) | Store dimension vs embedding dimension mismatch | Index errors or silent truncation |
+| [Update & Index Skew](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Embeddings/update_and_index_skew.md) | Old vectors remain in index | Results point to stale data |
+| [Hybrid Retriever Weights](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Embeddings/hybrid_retriever_weights.md) | BM25 + ANN weights unbalanced | Hybrid worse than single retriever |
+| [Duplication & Near-Duplicate Collapse](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Embeddings/duplication_and_near_duplicate_collapse.md) | Duplicate data overwhelms recall | Same doc retrieved repeatedly |
+| [Poisoning & Contamination](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Embeddings/poisoning_and_contamination.md) | Embeddings polluted by adversarial/noisy vectors | Retrieval looks “randomized” |
+
+---
 
 ## When to use this folder
-- High similarity yet wrong meaning.
-- Citations do not line up with the retrieved section.
-- Hybrid retrievers underperform a single retriever.
-- Quality drops after re-embed or re-index.
-- Index looks healthy but coverage stays low.
+
+- Retrieval looks **fine by eye** but metrics drift across runs.  
+- Coverage stays low despite healthy-looking indexes.  
+- Citations pull from **stale** or duplicated data.  
+- Same query yields different answers depending on casing or seed.  
+- Hybrid retrievers collapse into noise.
+
+---
 
 ## Acceptance targets
+
 - ΔS(question, retrieved) ≤ 0.45  
-- Coverage of target section ≥ 0.70  
-- λ remains convergent across 3 paraphrases and 2 seeds  
-- E_resonance flat on long windows
+- Coverage ≥ 0.70 for target section  
+- λ_observe convergent across 3 paraphrases and 2 seeds  
+- No index skew between write/read
 
-## 60-second checklist
-1) **Metrics and analyzer sanity** → [metric_mismatch.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Embeddings/metric_mismatch.md)  
-2) **Normalize and rescale vectors** → [normalization_and_scaling.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Embeddings/normalization_and_scaling.md)  
-3) **Unify tokenization and casing** → [tokenization_and_casing.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Embeddings/tokenization_and_casing.md)  
-4) **Lock the chunk→embed contract** → [chunking_to_embedding_contract.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Embeddings/chunking_to_embedding_contract.md)  
-5) **Defragment the store** → [vectorstore_fragmentation.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Embeddings/vectorstore_fragmentation.md)  
-6) **Fix dimension and projection paths** → [dimension_mismatch_and_projection.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Embeddings/dimension_mismatch_and_projection.md)  
-7) **Repair update and index skew** → [update_and_index_skew.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Embeddings/update_and_index_skew.md)  
-8) **Rebalance hybrid retrievers** → [hybrid_retriever_weights.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Embeddings/hybrid_retriever_weights.md)  
-9) **Collapse near-duplicates** → [duplication_and_near_duplicate_collapse.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Embeddings/duplication_and_near_duplicate_collapse.md)  
-10) **Audit poisoning and contamination** → [poisoning_and_contamination.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Embeddings/poisoning_and_contamination.md)
+---
 
-## Map symptoms to structural fixes
-- Wrong-meaning hits despite high similarity  
-  → [embedding-vs-semantic.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/embedding-vs-semantic.md)
-- Unverifiable citations or snippet drift  
-  → [retrieval-traceability.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/retrieval-traceability.md) · [data-contracts.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/data-contracts.md)
-- Results flip across runs or small paraphrases  
-  → [context-drift.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/context-drift.md) · [entropy-collapse.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/entropy-collapse.md) · [rerankers.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/rerankers.md)
-- Hallucination re-entry after correction  
-  → [pattern_hallucination_reentry.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/patterns/pattern_hallucination_reentry.md)
+## 60-second fix checklist
 
-## Verify the fix
-- Log ΔS and λ for three paraphrases and two seeds.  
-- Require coverage ≥ 0.70 and ΔS ≤ 0.45 before publish.  
-- Keep a small gold set to re-test after any change to metric, tokenizer, or chunking.
+1. **Lock metrics**  
+   One model family, one distance metric.  
+   Guide: [Metric Mismatch](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Embeddings/metric_mismatch.md)
+
+2. **Normalize**  
+   Apply L2 norm to embeddings at both write and query.  
+   Guide: [Normalization & Scaling](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Embeddings/normalization_and_scaling.md)
+
+3. **Unify tokenization**  
+   Same tokenizer + casing across ingestion and query.  
+   Guide: [Tokenization & Casing](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Embeddings/tokenization_and_casing.md)
+
+4. **Audit chunking**  
+   Verify semantic alignment, no mid-thought splits.  
+   Guide: [Chunking → Embedding Contract](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Embeddings/chunking_to_embedding_contract.md)
+
+5. **Rebuild index if skewed**  
+   Drop old embeddings, rebuild with correct dimension.  
+   Guide: [Update & Index Skew](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Embeddings/update_and_index_skew.md)
+
+---
+
+## FAQ for newcomers
+
+**Why is metric mismatch so common?**  
+Because vector DBs default differently: FAISS often L2, Pinecone cosine, Redis dot. If your embedding model expects cosine, L2 will silently break recall.
+
+**Why normalize embeddings?**  
+Without normalization, embeddings vary in magnitude. Distance stops reflecting meaning.
+
+**Why do tokenizers matter?**  
+“Apple” vs “apple” may yield different vectors if one side lowercases, the other doesn’t.
+
+**What if coverage stays low after all fixes?**  
+Check for fragmentation and duplication collapse. The issue may not be the embedding model itself, but how the index is populated.
+
+---
+
+- [Retrieval (Global Fix Map)](https://github.com/onestardao/WFGY/tree/main/ProblemMap/GlobalFixMap/Retrieval/README.md)  
+- [Vector DBs & Stores](https://github.com/onestardao/WFGY/tree/main/ProblemMap/GlobalFixMap/VectorDBs_and_Stores/README.md)
 
 ---
 
