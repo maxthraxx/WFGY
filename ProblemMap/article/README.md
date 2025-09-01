@@ -33,13 +33,13 @@ single place to find every Discussion article. each line links out. this page is
   Discussion → [https://github.com/onestardao/WFGY/discussions/33](https://github.com/onestardao/WFGY/discussions/33)
 
 * **Day 9: Over-reliance on reranker** *(No.5, No.6)*
-  Discussion → \[TBD]
+  Discussion → [https://github.com/onestardao/WFGY/discussions/34](https://github.com/onestardao/WFGY/discussions/34)
 
 * **Day 10: Memory breaks across sessions** *(No.7)*
-  Discussion → \[TBD]
+  Discussion → [https://github.com/onestardao/WFGY/discussions/35](https://github.com/onestardao/WFGY/discussions/35)
 
 * **Day 11: Logic collapse and recovery** *(No.6)*
-  Discussion → \[TBD]
+  Discussion → [https://github.com/onestardao/WFGY/discussions/36](https://github.com/onestardao/WFGY/discussions/36)
 
 * **Day 12: Bootstrap ordering mistake** *(No.14)*
   Discussion → \[TBD]
