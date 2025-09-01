@@ -1,59 +1,81 @@
 # RAG + VectorDB — Global Fix Map
 
-A hub to stabilize retrieval pipelines at the **embedding ↔ vector store layer**.  
-Use this folder when retrieval looks healthy on paper but citations, meaning, or stability collapse in practice.  
-Every fix is structural, measurable, and store-agnostic.
+This hub covers **typical retrieval bugs caused by vector databases and embeddings**.  
+Use this page if your RAG pipeline looks fine but answers keep drifting, citations don’t match, or hybrid retrievers underperform.  
+Every page here is a guardrail with copy-paste recipes and acceptance targets.  
 
 ---
 
-## Quick routes to per-page guides
+## Orientation: what each page means
 
-* Metric mismatch → [metric_mismatch.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/RAG_VectorDB/metric_mismatch.md)  
-* Normalization and scaling → [normalization_and_scaling.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/RAG_VectorDB/normalization_and_scaling.md)  
-* Tokenization and casing → [tokenization_and_casing.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/RAG_VectorDB/tokenization_and_casing.md)  
-* Chunking ↔ embedding contract → [chunking_to_embedding_contract.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/RAG_VectorDB/chunking_to_embedding_contract.md)  
-* Vectorstore fragmentation → [vectorstore_fragmentation.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/RAG_VectorDB/vectorstore_fragmentation.md)  
-* Dimension mismatch / projection errors → [dimension_mismatch_and_projection.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/RAG_VectorDB/dimension_mismatch_and_projection.md)  
-* Update drift and index skew → [update_and_index_skew.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/RAG_VectorDB/update_and_index_skew.md)  
-* Hybrid retriever weight errors → [hybrid_retriever_weights.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/RAG_VectorDB/hybrid_retriever_weights.md)  
-* Duplication / near-duplicate collapse → [duplication_and_near_duplicate_collapse.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/RAG_VectorDB/duplication_and_near_duplicate_collapse.md)  
-* Poisoning and contamination → [poisoning_and_contamination.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/RAG_VectorDB/poisoning_and_contamination.md)  
+| Fix Page | What it solves | Typical symptom |
+|----------|----------------|-----------------|
+| [metric_mismatch.md](./metric_mismatch.md) | Distance metric mismatch (cosine vs L2 vs dot) | High similarity numbers but wrong meaning |
+| [normalization_and_scaling.md](./normalization_and_scaling.md) | Missing normalization or scaling issues | Embeddings with larger norms dominate |
+| [tokenization_and_casing.md](./tokenization_and_casing.md) | Tokenizer or casing drift | Same text embeds differently across runs |
+| [chunking_to_embedding_contract.md](./chunking_to_embedding_contract.md) | Chunking not aligned with embedding model | Citations cut mid-sentence or incoherent snippets |
+| [vectorstore_fragmentation.md](./vectorstore_fragmentation.md) | Over-fragmented stores | Retrieval pulls incomplete, scattered sections |
+| [dimension_mismatch_and_projection.md](./dimension_mismatch_and_projection.md) | Embedding and index dimension mismatch | Runtime errors or silent drop of vectors |
+| [update_and_index_skew.md](./update_and_index_skew.md) | Index not refreshed after updates | Old sections keep showing up |
+| [hybrid_retriever_weights.md](./hybrid_retriever_weights.md) | Hybrid weighting not tuned | BM25+ANN underperforms single retriever |
+| [duplication_and_near_duplicate_collapse.md](./duplication_and_near_duplicate_collapse.md) | Redundant entries collapse signal | Top-k filled with near-identical chunks |
+| [poisoning_and_contamination.md](./poisoning_and_contamination.md) | Malicious or noisy vectors | Hallucinations, unsafe content retrieval |
 
 ---
 
 ## When to use this folder
 
-- High similarity but wrong meaning.  
-- Correct facts exist in the corpus but never surface.  
-- Citations inconsistent or missing across runs.  
-- Token count spikes after deploy without corpus changes.  
-- Index “looks fine” yet coverage stays flat.  
-- Retrieval quality drifts after updates or merges.  
-- Hybrid retrievers underperform single retrievers.  
-- Duplicate or poisoned vectors destabilize the store.  
+- Your answers look **semantically wrong** even though top-k similarity looks high.  
+- Citations point to the wrong section or cannot be verified.  
+- Hybrid retrieval underperforms vs single retriever.  
+- Index seems “healthy” but recall/coverage stays low.  
 
 ---
 
-## Acceptance targets (store-agnostic)
+## Core acceptance targets
 
-- ΔS(question, retrieved) ≤ **0.45**  
-- Coverage of target section ≥ **0.70**  
-- λ stays convergent across **3 paraphrases** and **2 seeds**  
-- E_resonance flat across long windows  
-- Index skew ≤ **5%** after updates  
+- ΔS(question, retrieved) ≤ 0.45  
+- Coverage of target section ≥ 0.70  
+- λ_observe convergent across 3 paraphrases  
+- E_resonance flat on long windows  
 
 ---
 
-## 60-second checklist
+## FAQ for newcomers
 
-1. Lock **metric** and **analyzer** (cosine vs L2 vs dot).  
-2. Normalize embeddings (L2 norm, zero-mean scaling).  
-3. Align tokenization and casing with retriever.  
-4. Enforce chunking ↔ embedding contract.  
-5. Probe ΔS across paraphrases. If ≥0.60, escalate.  
-6. Audit duplication and contamination (hash and dedupe).  
-7. Monitor index skew after every update.  
-8. Verify hybrid retriever weights explicitly.  
+**Why do we need these fixes if VectorDBs are mature?**  
+Because RAG pipelines often break not at the infra level but at the **semantic boundary**. Even if FAISS, Milvus, or Pinecone run fine, the *contracts* between embedding, chunking, and retrieval are fragile.
+
+**What is metric mismatch and why is it deadly?**  
+If your index uses `L2` but embeddings were trained for `cosine`, the “closest” neighbors are meaningless. This is the single most common RAG failure.
+
+**Why do duplicates matter so much?**  
+If your corpus has many repeated sentences, the retriever fills top-k with clones. The LLM sees no diversity and hallucinates.
+
+**Is poisoning really a real-world issue?**  
+Yes. Even a single malicious doc can bias retrieval. This page shows how to detect and quarantine them without retraining the whole pipeline.
+
+---
+
+## 60-Second Fix Checklist
+
+1. **Lock metrics and analyzers**  
+   One embedding model per field. One distance metric. Same analyzer for read/write.
+
+2. **Enforce snippet contracts**  
+   Require `{snippet_id, section_id, source_url, offsets, tokens}`.  
+   → See [data-contracts](https://github.com/onestardao/WFGY/blob/main/ProblemMap/data-contracts.md)
+
+3. **Tune hybrid retrievers**  
+   Keep candidate lists from BM25 and ANN. Detect query splits.  
+   → See [rerankers](https://github.com/onestardao/WFGY/blob/main/ProblemMap/rerankers.md)
+
+4. **Cold-start fences**  
+   Block traffic until index hash and embedding version match.  
+   → See [bootstrap-ordering](https://github.com/onestardao/WFGY/blob/main/ProblemMap/bootstrap-ordering.md)
+
+5. **Observability**  
+   Log ΔS and λ. Alert if ΔS ≥ 0.60.  
 
 ---
 
