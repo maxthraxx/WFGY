@@ -33,7 +33,7 @@ You’re not firefighting after the fact—you’re installing a reasoning firew
 
 
 <details>
-<summary>💥 WFGY Global Fix Map — full index ( beta , click to open)</summary>
+<summary>💥 WFGY Global Fix Map (Beta) — full index (click to open) </summary>
 
 #### 🧭 Providers & Agents
 
