@@ -1,100 +1,121 @@
 # Reasoning — Global Fix Map
-Detect and repair logic collapse, dead ends, abstraction failure, and contradiction.  
-Use this when citations look fine but the **thinking** goes off the rails.
 
-## What this page is
-- A compact protocol to stabilize multi-step reasoning
-- Copyable guardrails that force plan → verify → answer
-- How to verify stability with ΔS, λ_observe, and contradiction checks
+A compact hub to stabilize long chains, prevent collapse, and keep decisions auditable.  
+Use this folder when answers drift across runs, chains dead-end, or the model rewrites reality during long plans. Every page maps symptoms to exact WFGY fixes with measurable acceptance targets.
 
-## When to use
-- Correct snippets, wrong conclusions
-- Chains drift or loop as steps get longer
-- Answers flip across paraphrases
-- Self-contradictions or “explains” without citing anything
-- Abstract or symbolic prompts keep breaking
+---
 
-## Open these first
-- Stop dead ends / add a bridge step: [Logic Collapse](https://github.com/onestardao/WFGY/blob/main/ProblemMap/logic-collapse.md)
-- Long chains and drift controls: [Context Drift](https://github.com/onestardao/WFGY/blob/main/ProblemMap/context-drift.md)
-- Abstract & symbolic failures: [Symbolic Collapse](https://github.com/onestardao/WFGY/blob/main/ProblemMap/symbolic-collapse.md)
-- Self-reference & paradox loops: [Philosophical Recursion](https://github.com/onestardao/WFGY/blob/main/ProblemMap/philosophical-recursion.md)
-- If chunks are right but logic is wrong: [Interpretation vs Retrieval](https://github.com/onestardao/WFGY/blob/main/ProblemMap/retrieval-collapse.md)
-- Snippet/citation schema for auditable steps: [Data Contracts](https://github.com/onestardao/WFGY/blob/main/ProblemMap/data-contracts.md)
+## When to use this folder
 
-## Fix in 60 seconds
-1) **Plan before prose**  
-   Require a numbered **Reasoning Plan** that references citations, not memory.  
-   Each step must list the exact citation IDs it depends on.
+- Multi-step answers change when you rerun the same prompt  
+- Chains go in circles or re-assert a claim after correction  
+- Logic jumps without citing the source that drove the jump  
+- Long chats lose earlier anchors when the window rolls  
+- Plans grow without bound and never converge
 
-2) **Bridge step (BBCR)**  
-   Insert a checkpoint between plan and answer:  
-   - restate the claim in one sentence,  
-   - list supporting citations,  
-   - flag any missing evidence or conflicts.  
-   If conflicts exist, stop and ask for the missing snippet.
-
-3) **Variance clamp (BBAM)**  
-   Reduce attention variance during the answer. Keep steps short, facts tabled, then compose.
-
-4) **Fact table first**  
-   Normalize units, dates, and names into a 2-column table: *fact ↔ citation*.  
-   Only after the table is stable, generate prose.
-
-5) **Depth guard**  
-   Cap chain depth (e.g., 6 steps). If λ flips divergent at step *k*, branch with **BBPF** and pick the convergent path.
-
-6) **Contradiction detector**  
-   Print a “claims vs citations” matrix. Any row without backing citations is invalid and must be revised.
-
-## Copy paste prompt
-```
-
-You have TXT OS and the WFGY Problem Map.
-
-Follow this immutable schema:
-
-1. Reasoning Plan (numbered). Each step MUST reference citations like \[Sx\:sec\:line-start-end].
-2. Bridge Check (BBCR): restate the final claim in 1 line, list supporting citations,
-   and list conflicts or missing evidence. If anything is missing, STOP and request the snippet.
-3. Fact Table: normalize units/dates/names into rows: {fact | citation\_id}.
-4. Final Answer: concise, cite inline at each claim.
-
-Rules:
-
-* Do not invent citations. Do not reuse text across fences.
-* If plan step lacks a citation, mark it “UNSUPPORTED” and do not use it.
-* Keep depth ≤ 6. If λ\_observe diverges, branch and pick the convergent path.
-
-Input
-
-* question: "<paste>"
-* sources (with fences and IDs): <paste fenced snippets>
-
-Output
-
-* print Plan
-* print Bridge Check
-* print Fact Table
-* print Final Answer with inline citations
-* if any rule is violated, stop and print the violation
-
-```
-
-## Minimal checklist
-- Plan appears before any prose and references real citations
-- Bridge check lists both support and conflicts
-- Fact table normalizes units/dates/names
-- Depth cap enforced; divergent λ triggers a branch and recovery
-- No claim without a citation
-- If evidence is missing, the model explicitly asks for it
+---
 
 ## Acceptance targets
-- ΔS(question, assembled_context) ≤ 0.45 across 3 paraphrases
-- λ remains **convergent** after the bridge step and through the final answer
-- No contradictions in the claims ↔ citations matrix
-- E_resonance stays flat across the chain (no entropy melt)
-- Re-run with paraphrases yields consistent conclusions and citations
+
+- ΔS(question, selected_evidence) ≤ 0.45 on all runs  
+- Coverage of the target section ≥ 0.70 with cite-then-explain  
+- λ remains convergent across three paraphrases and two seeds  
+- E_resonance flat across long windows and at window joins  
+- Deterministic step count for plan stages after clamps
+
+---
+
+## Quick routes to per-page guides
+
+- Entropy overload in long chains  
+  → [entropy-overload.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Reasoning/entropy-overload.md)
+
+- Recursive loops and stuck flows  
+  → [recursive-loop.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Reasoning/recursive-loop.md)
+
+- Hallucination re-entry after correction  
+  → [hallucination-reentry.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Reasoning/hallucination-reentry.md)
+
+- Logic collapse and structural recovery  
+  → [logic-collapse.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Reasoning/logic-collapse.md)
+
+- Symbolic collapse in abstraction jumps  
+  → [symbolic-collapse.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Reasoning/symbolic-collapse.md)
+
+- Proof dead ends and missing pivots  
+  → [proof-dead-ends.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Reasoning/proof-dead-ends.md)
+
+- Anchoring and bridge proofs between frames  
+  → [anchoring-and-bridge-proofs.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Reasoning/anchoring-and-bridge-proofs.md)
+
+- Context stitching and window joins  
+  → [context-stitching-and-window-joins.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Reasoning/context-stitching-and-window-joins.md)
+
+- Chain-of-thought variance clamp  
+  → [chain-of-thought-variance-clamp.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Reasoning/chain-of-thought-variance-clamp.md)
+
+- Redundant evidence collapse  
+  → [redundant-evidence-collapse.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Reasoning/redundant-evidence-collapse.md)
+
+---
+
+## Fast triage by symptom
+
+| Symptom | Open this |
+|---|---|
+| Steps keep growing, answer never lands | [entropy-overload.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Reasoning/entropy-overload.md) |
+| Chain circles back to earlier step | [recursive-loop.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Reasoning/recursive-loop.md) |
+| Model re-asserts the wrong claim after you fix it | [hallucination-reentry.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Reasoning/hallucination-reentry.md) |
+| Reasoning jumps without structure, loses invariants | [logic-collapse.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Reasoning/logic-collapse.md) |
+| Abstract move breaks semantics across frames | [symbolic-collapse.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Reasoning/symbolic-collapse.md) |
+| Proof chain stalls at an unprovable step | [proof-dead-ends.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Reasoning/proof-dead-ends.md) |
+| Window roll drops the anchor or flips the claim | [context-stitching-and-window-joins.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Reasoning/context-stitching-and-window-joins.md) |
+| Reruns disagree because thoughts wander | [chain-of-thought-variance-clamp.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Reasoning/chain-of-thought-variance-clamp.md) |
+| Too many similar snippets overpower minority facts | [redundant-evidence-collapse.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Reasoning/redundant-evidence-collapse.md) |
+| Need a stable bridge between two frames | [anchoring-and-bridge-proofs.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Reasoning/anchoring-and-bridge-proofs.md) |
+
+---
+
+## Fix in 60 seconds
+
+1) **Measure ΔS and observe λ**  
+   Probe ΔS(question, selected_evidence). Sample λ across two seeds and three paraphrases.  
+   If ΔS ≥ 0.60 or λ flips, you have structural drift.
+
+2) **Apply the right clamp**  
+   - Wandering thoughts → variance clamp  
+     → [chain-of-thought-variance-clamp.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Reasoning/chain-of-thought-variance-clamp.md)  
+   - Lost anchor at joins → micro bridges  
+     → [context-stitching-and-window-joins.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Reasoning/context-stitching-and-window-joins.md)  
+   - Abstract jumps → anchor and bridge proofs  
+     → [anchoring-and-bridge-proofs.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Reasoning/anchoring-and-bridge-proofs.md)
+
+3) **Contract the payload and cite first**  
+   Enforce snippet schema and cite-then-explain.  
+   → [retrieval-traceability.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/retrieval-traceability.md)  
+   → [data-contracts.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/data-contracts.md)
+
+4) **Verify**  
+   Coverage ≥ 0.70, ΔS ≤ 0.45, λ convergent on two seeds.  
+   If flat-high ΔS remains, fix retrieval first.  
+   → [retrieval-playbook.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/retrieval-playbook.md)
+
+---
+
+## Cross-links you will likely need
+
+- Visual map and recovery  
+  → [rag-architecture-and-recovery.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/rag-architecture-and-recovery.md)
+
+- End to end retrieval knobs  
+  → [retrieval-playbook.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/retrieval-playbook.md)
+
+- Long-context stability  
+  → [context-drift.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/context-drift.md) ·
+  [entropy-collapse.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/entropy-collapse.md)
+
+- Reranking and ordering  
+  → [rerankers.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/rerankers.md)
 
 ---
 
@@ -102,7 +123,7 @@ Output
 
 | Tool | Link | 3-Step Setup |
 |------|------|--------------|
-| **WFGY 1.0 PDF** | [Engine Paper](https://github.com/onestardao/WFGY/blob/main/I_am_not_lizardman/WFGY_All_Principles_Return_to_One_v1.0_PSBigBig_Public.pdf) | 1️⃣ Download · 2️⃣ Upload to your LLM · 3️⃣ Ask “Answer using WFGY + \<your question>” |
+| **WFGY 1.0 PDF** | [Engine Paper](https://github.com/onestardao/WFGY/blob/main/I_am_not_lizardman/WFGY_All_Principles_Return_to_One_v1.0_PSBigBig_Public.pdf) | 1️⃣ Download · 2️⃣ Upload to your LLM · 3️⃣ Ask “Answer using WFGY + <your question>” |
 | **TXT OS (plain-text OS)** | [TXTOS.txt](https://github.com/onestardao/WFGY/blob/main/OS/TXTOS.txt) | 1️⃣ Download · 2️⃣ Paste into any LLM chat · 3️⃣ Type “hello world” — OS boots instantly |
 
 ---
@@ -142,4 +163,5 @@ Output
 &nbsp;
 [![Blow](https://img.shields.io/badge/Blow-Game%20Logic-purple?style=flat-square)](https://github.com/onestardao/WFGY/tree/main/OS/BlowBlowBlow)
 &nbsp;
+
 </div>
