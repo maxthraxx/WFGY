@@ -1,128 +1,95 @@
 # Agents & Orchestration — Global Fix Map
 
-A hub to stabilize **agent frameworks and orchestration layers** without changing your infra. Use this page to jump to per-tool guardrails and verify fixes with the same acceptance targets.
+A practical hub to stabilize **multi-agent and tool-augmented workflows**.  
+Most “agent bugs” are not model issues. They come from role mixups, tool schema drift, uncontrolled loops, and cold-boot ordering. This page routes symptoms to structural fixes with measurable targets.
 
-## Quick routes to per-framework pages
+---
 
-- LangChain → [langchain.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Agents_Orchestration/langchain.md)
-- LangGraph → [langgraph.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Agents_Orchestration/langgraph.md)
-- LlamaIndex → [llamaindex.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Agents_Orchestration/llamaindex.md)
-- CrewAI → [crewai.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Agents_Orchestration/crewai.md)
-- Smolagents → [smolagents.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Agents_Orchestration/smolagents.md)
-- Rewind Agents → [rewind_agents.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Agents_Orchestration/rewind_agents.md)
-- AutoGen → [autogen.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Agents_Orchestration/autogen.md)
-- Semantic Kernel → [semantic_kernel.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Agents_Orchestration/semantic_kernel.md)
-- Haystack Agents → [haystack_agents.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Agents_Orchestration/haystack_agents.md)
-- OpenAI Assistants v2 → [openai_assistants_v2.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Agents_Orchestration/openai_assistants_v2.md)
+## Orientation: pick your orchestration layer
 
-## When to use this folder
+| Framework | What it is | Typical use | Link |
+|---|---|---|---|
+| Autogen | Multi-agent collaboration patterns | Debate, reviewer loops, tool arbitration | [autogen.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Agents_Orchestration/autogen.md) |
+| CrewAI | Role-based project crews | Task pipelines with clear roles | [crewai.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Agents_Orchestration/crewai.md) |
+| Haystack Agents | RAG-centric agents from deepset | Retrieval-heavy assistants | [haystack_agents.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Agents_Orchestration/haystack_agents.md) |
+| LangChain | Largest ecosystem of tools/memory | Rapid prototyping, complex chains | [langchain.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Agents_Orchestration/langchain.md) |
+| LangGraph | Graph execution over LC | Stateful paths, loops, guards | [langgraph.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Agents_Orchestration/langgraph.md) |
+| LlamaIndex | Knowledge-first orchestration | RAG pipelines, index control | [llamaindex.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Agents_Orchestration/llamaindex.md) |
+| OpenAI Assistants v2 | First-party assistants API | Files, tools, code-interpreter | [openai_assistants_v2.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Agents_Orchestration/openai_assistants_v2.md) |
+| Rewind Agents | Context replay paradigms | User-state reconstruction | [rewind_agents.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Agents_Orchestration/rewind_agents.md) |
+| Semantic Kernel | MS orchestration SDK | Plugins, plans, .NET/TS stacks | [semantic_kernel.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Agents_Orchestration/semantic_kernel.md) |
+| Smolagents | Minimalistic agent runtime | Constrained envs, fast spin-up | [smolagents.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Agents_Orchestration/smolagents.md) |
 
-- Agents loop or stall on tool calls.
-- High similarity yet the answer cites the wrong section.
-- Hybrid retrieval underperforms a single retriever.
-- Answers flip between runs with identical input.
-- JSON schemas fail or pass inconsistently.
-- Memories re-assert stale facts after refresh or handoff.
-- First call after deploy crashes or uses the wrong index.
+---
 
-## Acceptance targets for any orchestrator
+## Core acceptance targets
 
 - ΔS(question, retrieved) ≤ 0.45  
-- Coverage of target section ≥ 0.70  
-- λ remains convergent across three paraphrases and two seeds
+- Coverage ≥ 0.70 for the target section  
+- λ stays convergent across 3 paraphrases and 2 seeds  
+- E_resonance remains flat on long windows
+
+These targets let you ship safely regardless of framework.
 
 ---
 
-## Map symptoms → structural fixes (Problem Map)
+## Fix Hub — symptoms mapped to structural pages
 
-- **Embedding ≠ Semantic**  
-  Wrong-meaning hits despite high similarity.  
-  → [embedding-vs-semantic.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/embedding-vs-semantic.md)
-
-- **Retrieval traceability**  
-  Suspect or missing citations and unverifiable sections.  
-  → [retrieval-traceability.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/retrieval-traceability.md)  
-  Payload schema → [data-contracts.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/data-contracts.md)
-
-- **Ordering and version skew**  
-  Old index or analyzer used at runtime, or deploy race.  
-  → [bootstrap-ordering.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/bootstrap-ordering.md) · [deployment-deadlock.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/deployment-deadlock.md) · [predeploy-collapse.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/predeploy-collapse.md)
-
-- **Hybrid collapse and query split**  
-  Hybrid pipelines underperform single retriever.  
-  → Pattern: [pattern_query_parsing_split.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/patterns/pattern_query_parsing_split.md)  
-  Ordering control → [rerankers.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/rerankers.md)
-
-- **Hallucination and chunk drift**  
-  Plausible but wrong chunks or blended sources.  
-  → [hallucination.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/hallucination.md)  
-  Re-entry loop → [pattern_hallucination_reentry.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/patterns/pattern_hallucination_reentry.md)
-
-- **Long chain instability**  
-  Style flattening, entropy spikes, dead ends.  
-  → [context-drift.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/context-drift.md) · [entropy-collapse.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/entropy-collapse.md)
-
-- **Agent role conflicts**  
-  Role confusion, memory overwrite, unsafe handoffs.  
-  → [Multi-Agent_Problems.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/Multi-Agent_Problems.md) ·  
-  [role-drift.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/multi-agent-chaos/role-drift.md) ·  
-  [memory-overwrite.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/multi-agent-chaos/memory-overwrite.md) ·  
-  Namespaces split → [pattern_memory_namespace_split.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Agents_Orchestration/patterns/pattern_memory_namespace_split.md)
-
-- **Prompt injection and schema drift**  
-  Tool schemas allow free text or header order changes.  
-  → [prompt-injection.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/prompt-injection.md)
+| Symptom | Likely cause | Open this |
+|---|---|---|
+| JSON mode breaks, invalid tool objects | Tool protocol too loose | [Data Contracts](https://github.com/onestardao/WFGY/blob/main/ProblemMap/data-contracts.md) |
+| Agents overwrite each other’s memory | Namespace collision, missing locks | Pattern: **memory-namespace split** in [patterns](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Agents_Orchestration/patterns) |
+| Run loops never end | Unbounded cycles, missing guards | [logic-collapse.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/logic-collapse.md) |
+| High similarity yet wrong snippet | Metric/store mismatch or fragmentation | [embedding-vs-semantic.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/embedding-vs-semantic.md) |
+| Alternating answers across runs | Prompt header reorder, λ flips | [context-drift.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/context-drift.md), [retrieval-traceability.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/retrieval-traceability.md) |
+| First live call fails after deploy | Cold boot and ordering issues | [bootstrap-ordering.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/bootstrap-ordering.md), [predeploy-collapse.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/predeploy-collapse.md) |
+| Tool storms and rate limits | Missing backoff and budgets | Ops: **rate-limit backpressure**, **timeouts** in `ops/` |
 
 ---
 
-## 60-second fix checklist
+## Minimal agent contract
 
-1) **Measure**  
-Compute ΔS(question, retrieved) and ΔS(retrieved, anchor). If ΔS ≥ 0.60 stop and repair chunking or metric first.
-
-2) **Lock the schema**  
-Fix prompt header order. Enforce cite-then-explain. Require strict tool JSON. Add idempotency keys for side effects.
-
-3) **Split memory**  
-Create per-agent and per-tool namespaces with `mem_rev` and `mem_hash`. Deny cross-namespace merges without a reducer.
-
-4) **Clamp variance**  
-Insert a BBCR bridge on long chains. Use deterministic reranking for hybrid. Add timeouts to tool loops.
-
-5) **Verify**  
-Coverage ≥ 0.70 on three paraphrases. λ convergent on two seeds.  
-Bootstrap sanity → [agent_bootstrap_checklist.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Agents_Orchestration/checklists/agent_bootstrap_checklist.md)
+1. **Separate memory namespaces**  
+   One namespace per agent. Writes guarded by `mem_rev` and `mem_hash`.  
+2. **Strict tool schemas**  
+   Enforce JSON schemas. Reject free-text arguments and responses.  
+3. **Path guards**  
+   Max steps, variance clamp, and illegal cross-path suppression.  
+4. **Traceability first**  
+   Cite then explain. Require `{snippet_id, section_id, source_url, offsets, tokens}`.  
+5. **Boot ordering**  
+   Do not accept traffic until index hash, analyzer, and model versions match.  
+6. **Observability**  
+   Log ΔS and λ across retrieve → rerank → reason. Alert at ΔS ≥ 0.60.
 
 ---
 
-## Copy-paste prompt for your LLM step
+## 60-second triage
 
-```txt
-You have TXTOS and the WFGY Problem Map loaded.
-
-My agent-orchestration issue:
-- framework: <langchain | crewai | autogen | llamaindex | smolagents | semantic-kernel | haystack | assistants-v2>
-- symptom: <one line>
-- traces: ΔS(q,retrieved)=..., ΔS(retrieved,anchor)=..., λ over last 3 steps
-- memory: namespaces used? mem_rev, mem_hash present?
-
-Tell me:
-1) failing layer and why,
-2) the exact WFGY page to open,
-3) the minimal structural fix to push ΔS ≤ 0.45 and keep λ convergent,
-4) a reproducible test to verify the fix.
-Use BBMC, BBCR, BBPF, BBAM where relevant.
-````
+1) **Measure ΔS** for question vs retrieved and vs anchor.  
+2) **Probe λ** by varying top-k and prompt headers. If λ flips, clamp variance and lock the schema.  
+3) **Apply**  
+   Retrieval drift → BBMC + Data Contracts  
+   Reasoning collapse → BBCR bridge + BBAM  
+   Dead ends → BBPF alternate paths  
+4) **Verify**  
+   Coverage ≥ 0.70 on three paraphrases. λ convergent on two seeds.
 
 ---
 
-## Common gotchas
+## FAQ
 
-* Mixed embedding functions across write and read paths. Scores look high but meaning is wrong.
-* Hybrid pipelines without deterministic rerank produce unstable top k and flip states.
-* Agents recreate tool registries per run. Order and JSON schemas drift.
-* Shared memories without namespaces cause re-entry of stale facts after refresh.
-* First live run executes before stores are ready. See bootstrap and deploy pages above.
+**Why do agents step on each other’s memory?**  
+Shared state without namespaces. Split memory by agent and lock writes.
+
+**Why do I get infinite loops after adding a reviewer agent?**  
+No path guards. Add step caps and illegal cross-path suppression.
+
+**Why does tool calling randomly fail JSON?**  
+Your tool protocol allows prose. Enforce strict JSON schemas both ways.
+
+**Why is dev stable but prod flips answers?**  
+Boot order and analyzer mismatch. Warm the index and verify hashes before traffic.
 
 ---
 
@@ -169,5 +136,3 @@ Use BBMC, BBCR, BBPF, BBAM where relevant.
  
 
 </div>
-
-要不要我幫你直接補上「Index 置頂一句簡介」或是再加一張簡短的 flow 圖示占位，之後你有圖再換上？
