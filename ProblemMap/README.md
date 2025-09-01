@@ -10,30 +10,46 @@ you’ll get a diagnosis and exact fix steps — no infra changes required.
 
 > most readers found this map useful and left a ⭐ — if it helps you too, please star it so others can discover.
 
+
 <details>
 <summary><strong>⏱️ 30 seconds: Why WFGY Works as a Semantic Firewall</strong></summary>
 
 <br>
 
-> Most fixes today happen **after generation**:  
-> - The model outputs something wrong, then we patch it with retrieval, chains, or tools.  
-> - This means the same failures reappear again and again.  
+> most fixes today happen **after generation**:  
+> - the model outputs something wrong, then we patch it with retrieval, chains, or tools.  
+> - the same failures reappear again and again.  
 >
 > WFGY inverts the sequence.  
-> - **Before generation**, it inspects the semantic field (tension, residue, drift signals).  
-> - If the state is unstable, it loops, resets, or redirects the path.  
-> - Only a stable semantic state is allowed to generate output.  
+> - **before generation**, it inspects the semantic field (tension, residue, drift signals).  
+> - if the state is unstable, it loops, resets, or redirects the path.  
+> - only a stable semantic state is allowed to generate output.  
 
-This is why every failure mode, once mapped, stays fixed.  
-You’re not firefighting after the fact—you’re installing a reasoning firewall at the entry point.
-
----
+this is why every failure mode, once mapped, stays fixed.  
+you’re not firefighting after the fact — you’re installing a reasoning firewall at the entry point.
 
 </details>
 
 
+## quick-start downloads (60 sec)
+
+> new here? skip the map. grab TXT OS or the WFGY PDF, boot, then ask your model:  
+> *“answer using WFGY: <your question>”* or *“which Problem Map number am i hitting?”*
+
+| tool | link | 3-step setup |
+|------|------|--------------|
+| **WFGY 1.0 PDF** | [engine paper](https://github.com/onestardao/WFGY/blob/main/I_am_not_lizardman/WFGY_All_Principles_Return_to_One_v1.0_PSBigBig_Public.pdf) | 1) download  2) upload to your LLM  3) ask: “answer using WFGY + <your question>” |
+| **TXT OS** | [TXTOS.txt](https://github.com/onestardao/WFGY/blob/main/OS/TXTOS.txt) | 1) download  2) paste into any LLM chat  3) type “hello world” to boot |
+
+
+### start here
+- **RAG broke** → open **Retrieval Playbook** and **RAG Architecture & Recovery**
+- **Agents drift or loop** → open **Agents & Orchestration** or **Safety_PromptIntegrity**
+- **Local model feels unstable** → open **LocalDeploy_Inference** and **Embeddings: Metric Mismatch**
+
+
 <details>
-<summary>💥 WFGY Global Fix Map (Beta) — full index (click to open) </summary>
+<summary>💥 WFGY Global Fix Map (Beta) — full index (click to open)</summary>
 
 ---
 
@@ -120,7 +136,6 @@ You’re not firefighting after the fact—you’re installing a reasoning firew
 
 ---
 
-
 ## quick access
 
 > don’t worry if this looks long. with TXT OS loaded, simply ask your LLM:  
@@ -139,30 +154,40 @@ You’re not firefighting after the fact—you’re installing a reasoning firew
 
 > tip: if you’re new, skip scrolling — use the **minimal quick-start** below.
 
----
 
-## quick-start downloads (60 sec)
+## failure catalog (with fixes)
 
-> new here? skip the map. grab TXT OS or the WFGY PDF, boot, then ask your model:  
-> *“answer using WFGY: <your question>”* or *“which Problem Map number am i hitting?”*
+> if you are unsure which one applies, ask your LLM with TXT OS loaded:  
+> *“which Problem Map number matches my trace?”* it will route you.
 
-| tool | link | 3-step setup |
-|------|------|--------------|
-| **WFGY 1.0 PDF** | [engine paper](https://github.com/onestardao/WFGY/blob/main/I_am_not_lizardman/WFGY_All_Principles_Return_to_One_v1.0_PSBigBig_Public.pdf) | 1) download  2) upload to your LLM  3) ask: “answer using WFGY + <your question>” |
-| **TXT OS** | [TXTOS.txt](https://github.com/onestardao/WFGY/blob/main/OS/TXTOS.txt) | 1) download  2) paste into any LLM chat  3) type “hello world” to boot |
+### legend
+`[IN]` Input & Retrieval   `[RE]` Reasoning & Planning  
+`[ST]` State & Context     `[OP]` Infra & Deployment  
+`{OBS}` Observability/Eval `{SEC}` Security `{LOC}` Language/OCR
 
----
+| #  | problem domain (with layer/tags)           | what breaks                                   | doc |
+|----|--------------------------------------------|-----------------------------------------------|-----|
+| 1  | **[IN]** hallucination & chunk drift {OBS} | retrieval returns wrong/irrelevant content    | [hallucination.md](./hallucination.md) |
+| 2  | **[RE]** interpretation collapse           | chunk is right, logic is wrong                | [retrieval-collapse.md](./retrieval-collapse.md) |
+| 3  | **[RE]** long reasoning chains {OBS}       | drifts across multi-step tasks                | [context-drift.md](./context-drift.md) |
+| 4  | **[RE]** bluffing / overconfidence         | confident but unfounded answers               | [bluffing.md](./bluffing.md) |
+| 5  | **[IN]** semantic ≠ embedding {OBS}        | cosine match ≠ true meaning                   | [embedding-vs-semantic.md](./embedding-vs-semantic.md) |
+| 6  | **[RE]** logic collapse & recovery {OBS}   | dead-ends, needs controlled reset             | [logic-collapse.md](./logic-collapse.md) |
+| 7  | **[ST]** memory breaks across sessions     | lost threads, no continuity                   | [memory-coherence.md](./memory-coherence.md) |
+| 8  | **[IN]** debugging is a black box {OBS}    | no visibility into failure path               | [retrieval-traceability.md](./retrieval-traceability.md) |
+| 9  | **[ST]** entropy collapse                  | attention melts, incoherent output            | [entropy-collapse.md](./entropy-collapse.md) |
+| 10 | **[RE]** creative freeze                   | flat, literal outputs                         | [creative-freeze.md](./creative-freeze.md) |
+| 11 | **[RE]** symbolic collapse                 | abstract/logical prompts break                | [symbolic-collapse.md](./symbolic-collapse.md) |
+| 12 | **[RE]** philosophical recursion           | self-reference loops, paradox traps           | [philosophical-recursion.md](./philosophical-recursion.md) |
+| 13 | **[ST]** multi-agent chaos {OBS}           | agents overwrite or misalign logic            | [Multi-Agent_Problems.md](./Multi-Agent_Problems.md) |
+| 14 | **[OP]** bootstrap ordering                | services fire before deps ready               | [bootstrap-ordering.md](./bootstrap-ordering.md) |
+| 15 | **[OP]** deployment deadlock               | circular waits in infra                       | [deployment-deadlock.md](./deployment-deadlock.md) |
+| 16 | **[OP]** pre-deploy collapse {OBS}         | version skew / missing secret on first call   | [predeploy-collapse.md](./predeploy-collapse.md) |
 
-## why this matters long-term
+for No.13 deep dives:  
+• role drift → [`multi-agent-chaos/role-drift.md`](./multi-agent-chaos/role-drift.md)  
+• cross-agent memory overwrite → [`multi-agent-chaos/memory-overwrite.md`](./multi-agent-chaos/memory-overwrite.md)
 
-these 16 errors are not random. they are structural weak points every ai pipeline hits eventually.  
-with WFGY as a **semantic firewall** you don’t just fix today’s issue — you shield tomorrow’s.
-
-> this isn’t just a bug list. it’s an **x-ray** for your pipeline, so you stop guessing and start repairing.
-
-see the end-to-end view: [`RAG Architecture & Recovery`](./rag-architecture-and-recovery.md)
-
----
 
 ## 🧪 one-click sandboxes — run WFGY instantly
 run lightweight diagnostics with zero install and zero api key. powered by colab.
@@ -205,42 +230,16 @@ detects: No.3 — [Long Reasoning Chains](./context-drift.md)
 steps: run, supply ≥3 answers, read score
 </details>
 
----
 
-## failure catalog (with fixes)
+## why this matters long-term
 
-> if you are unsure which one applies, ask your LLM with TXT OS loaded:  
-> *“which Problem Map number matches my trace?”* it will route you.
+these 16 errors are not random. they are structural weak points every ai pipeline hits eventually.  
+with WFGY as a **semantic firewall** you don’t just fix today’s issue — you shield tomorrow’s.
 
-### legend
-`[IN]` Input & Retrieval   `[RE]` Reasoning & Planning  
-`[ST]` State & Context     `[OP]` Infra & Deployment  
-`{OBS}` Observability/Eval `{SEC}` Security `{LOC}` Language/OCR
+> this isn’t just a bug list. it’s an **x-ray** for your pipeline, so you stop guessing and start repairing.
 
-| #  | problem domain (with layer/tags)           | what breaks                                   | doc |
-|----|--------------------------------------------|-----------------------------------------------|-----|
-| 1  | **[IN]** hallucination & chunk drift {OBS} | retrieval returns wrong/irrelevant content    | [hallucination.md](./hallucination.md) |
-| 2  | **[RE]** interpretation collapse           | chunk is right, logic is wrong                | [retrieval-collapse.md](./retrieval-collapse.md) |
-| 3  | **[RE]** long reasoning chains {OBS}       | drifts across multi-step tasks                | [context-drift.md](./context-drift.md) |
-| 4  | **[RE]** bluffing / overconfidence         | confident but unfounded answers               | [bluffing.md](./bluffing.md) |
-| 5  | **[IN]** semantic ≠ embedding {OBS}        | cosine match ≠ true meaning                   | [embedding-vs-semantic.md](./embedding-vs-semantic.md) |
-| 6  | **[RE]** logic collapse & recovery {OBS}   | dead-ends, needs controlled reset             | [logic-collapse.md](./logic-collapse.md) |
-| 7  | **[ST]** memory breaks across sessions     | lost threads, no continuity                   | [memory-coherence.md](./memory-coherence.md) |
-| 8  | **[IN]** debugging is a black box {OBS}    | no visibility into failure path               | [retrieval-traceability.md](./retrieval-traceability.md) |
-| 9  | **[ST]** entropy collapse                  | attention melts, incoherent output            | [entropy-collapse.md](./entropy-collapse.md) |
-| 10 | **[RE]** creative freeze                   | flat, literal outputs                         | [creative-freeze.md](./creative-freeze.md) |
-| 11 | **[RE]** symbolic collapse                 | abstract/logical prompts break                | [symbolic-collapse.md](./symbolic-collapse.md) |
-| 12 | **[RE]** philosophical recursion           | self-reference loops, paradox traps           | [philosophical-recursion.md](./philosophical-recursion.md) |
-| 13 | **[ST]** multi-agent chaos {OBS}           | agents overwrite or misalign logic            | [Multi-Agent_Problems.md](./Multi-Agent_Problems.md) |
-| 14 | **[OP]** bootstrap ordering                | services fire before deps ready               | [bootstrap-ordering.md](./bootstrap-ordering.md) |
-| 15 | **[OP]** deployment deadlock               | circular waits in infra                       | [deployment-deadlock.md](./deployment-deadlock.md) |
-| 16 | **[OP]** pre-deploy collapse {OBS}         | version skew / missing secret on first call   | [predeploy-collapse.md](./predeploy-collapse.md) |
+see the end-to-end view: [`RAG Architecture & Recovery`](./rag-architecture-and-recovery.md)
 
-for No.13 deep dives:  
-• role drift → [`multi-agent-chaos/role-drift.md`](./multi-agent-chaos/role-drift.md)  
-• cross-agent memory overwrite → [`multi-agent-chaos/memory-overwrite.md`](./multi-agent-chaos/memory-overwrite.md)
-
----
 
 ## minimal quick-start
 
@@ -257,6 +256,7 @@ my issue: \[e.g., OCR tables look fine but answers point to wrong sections]
 which WFGY modules should i apply and in what order?
 
 ```
+
 
 <details>
 <summary><strong>status & difficulty</strong></summary>
@@ -283,14 +283,11 @@ which WFGY modules should i apply and in what order?
 \*distance from default LLM behavior to a production-ready fix.
 </details>
 
----
 
 ### 🔬 Behind the Map
 The Problem Map is practical and ready to use.  
 But if you wonder *why* these fixes work, and how we’re defining physics inside embedding space:  
 → [The Hidden Value Engine (WFGY Physics)](https://github.com/onestardao/WFGY/tree/main/value_manifest/README.md)
-
----
 
 
 ## 🔮 coming soon: global fix map
@@ -298,7 +295,6 @@ But if you wonder *why* these fixes work, and how we’re defining physics insid
 a universal layer above providers, agents, and infra.  
 Problem Map is step one. **Global Fix Map** expands the same reasoning-first firewall to RAG, infra boot, agents, evals, and more. same zero-install experience. launching around **Sep**.
 
----
 
 ## contributing / support
 
@@ -307,9 +303,6 @@ Problem Map is step one. **Global Fix Map** expands the same reasoning-first fir
 - project home: [github.com/onestardao/WFGY](https://github.com/onestardao/WFGY)  
 - TXT OS: [browse the OS](https://github.com/onestardao/WFGY/tree/main/OS)  
 - if this map helped you, a ⭐ helps more devs find it.
-
-
----
 
 
 ### 🧭 Explore More
