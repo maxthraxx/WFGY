@@ -118,7 +118,7 @@ Task:
 
 Return JSON:
 { "citations": [...], "ΔS": 0.xx, "λ_state": "<>", "coverage": 0.xx, "next_fix": "..." }
-
+```
 ---
 
 ### 🔗 Quick-Start Downloads (60 sec)
