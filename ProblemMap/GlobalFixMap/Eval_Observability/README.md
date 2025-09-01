@@ -1,41 +1,50 @@
 # Eval Observability — Global Fix Map
 
 This folder provides **guardrails for evaluation and observability** in RAG and agent pipelines.  
-It captures the failure points that make evals drift, regress, or collapse, and gives structural fixes with measurable thresholds.
+It shows how to catch silent drift, regressions, and unstable metrics before they break your system.
 
 ---
 
-## When to use this folder
+## What this folder is
+- A starter kit to make evals predictable and repeatable.
+- Guardrails for metrics, variance, and drift detection.
+- Copy-paste probes and configs you can add to your pipeline.
+- Acceptance targets you can actually measure and enforce.
 
-- Metrics look unstable between runs.  
+---
+
+## When to use
+- Metrics look **unstable** between runs.  
 - Coverage seems high but answers still drift.  
-- ΔS is inconsistent across paraphrases or seeds.  
-- λ flips divergent for harmless changes.  
-- Benchmarks regress without code changes.  
-- Long-run evals show monotonic decline.
+- ΔS changes across paraphrases or seeds.  
+- λ flips divergent after harmless edits.  
+- Benchmarks regress without any code change.  
+- Long-run evals show a slow decline.
 
 ---
 
 ## Acceptance targets
-
 - **ΔS(question, retrieved) ≤ 0.45**  
 - **Coverage ≥ 0.70** to target section  
 - **λ remains convergent** across 3 paraphrases and 2 seeds  
-- **Variance ratio ≤ 0.15** across seed runs  
-- **No monotonic downward drift** beyond 3 windows  
-- **E_resonance stays flat** on long eval windows
+- **Variance ratio ≤ 0.15** across seeds  
+- **No downward drift** beyond 3 eval windows  
+- **E_resonance stays flat** on long evals  
 
 ---
 
-## Quick routes — core fixes
+## Quick routes — open these first
 
-- Regression gating → [regression_gate.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Eval_Observability/regression_gate.md)  
-- Live probes and alerts → [alerting_and_probes.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Eval_Observability/alerting_and_probes.md)  
-- Coverage metrics → [coverage_tracking.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Eval_Observability/coverage_tracking.md)  
-- ΔS normalization → [deltaS_thresholds.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Eval_Observability/deltaS_thresholds.md)  
-- λ schema probes → [lambda_observe.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Eval_Observability/lambda_observe.md)  
-- Variance and drift → [variance_and_drift.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Eval_Observability/variance_and_drift.md)  
-- Full integration guide → [eval_playbook.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Eval_Observability/eval_playbook.md)
+| Symptom | Open this page |
+|---------|----------------|
+| Benchmarks regress with no code change | [regression_gate.md](./regression_gate.md) |
+| Metrics fluctuate or alerts missing | [alerting_and_probes.md](./alerting_and_probes.md) |
+| Coverage looks high but not real | [coverage_tracking.md](./coverage_tracking.md) |
+| ΔS thresholds unclear | [deltaS_thresholds.md](./deltaS_thresholds.md) |
+| λ flips or diverges | [lambda_observe.md](./lambda_observe.md) |
+| Variance high between seeds | [variance_and_drift.md](./variance_and_drift.md) |
+| Need a full setup | [eval_playbook.md](./eval_playbook.md) |
+| Logging + monitoring integration | [metrics_and_logging.md](./metrics_and_logging.md) |
 
 ---
 
@@ -56,6 +65,25 @@ alerts:
   - lambda divergent
   - drift slope >0.02
 ````
+
+---
+
+## FAQ
+
+**Q: What if my metrics vary a lot each run?**
+A: Check [variance\_and\_drift.md](./variance_and_drift.md). Add more seeds and enforce variance ≤0.15.
+
+**Q: My eval passes locally but fails in CI — why?**
+A: See [metrics\_and\_logging.md](./metrics_and_logging.md). Local runs often miss logging detail. CI must enforce the same eval contract.
+
+**Q: What if coverage is high but the answer is still wrong?**
+A: Open [coverage\_tracking.md](./coverage_tracking.md). You might be measuring snippet recall, not semantic coverage. Switch to ΔS-based coverage.
+
+**Q: ΔS is always drifting, even on simple questions.**
+A: Look at [deltaS\_thresholds.md](./deltaS_thresholds.md). Adjust thresholds and clamp variance with λ probes.
+
+**Q: How do I stop regressions before release?**
+A: Use [regression\_gate.md](./regression_gate.md). It defines pass/fail rules so bad models never ship.
 
 ---
 
