@@ -43,7 +43,7 @@ You’re not firefighting after the fact—you’re installing a reasoning firew
 ---
 > **[WFGY Core](https://github.com/onestardao/WFGY/blob/main/core/README.md)** is live: a 30-line reasoning engine for recovery and resilience.  
 > fixing rag hallucinations? it makes models **reason before answering**.  
-> coming next: **Semantic Surgery Room** and **Global Fix Map** (n8n, GHL, Make, more). planned by **Sep 1**.
+> coming next: **Semantic Surgery Room** and **Global Fix Map** (n8n, GHL, Make, more). planned by **Sep 1**. (launching soon)
 
 
 <div align="center">
