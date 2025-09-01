@@ -1,74 +1,46 @@
-
 # RAG — Global Fix Map
-Production RAG triage and structural fixes using the WFGY engine.  
-Use this when retrieval “looks fine” but answers drift.
 
-## What this page is
-- A fast path to locate the failing layer across OCR → chunk → embed → store → retrieve → prompt → reason.
-- Structural repairs that do not require infra changes.
-- Concrete steps with measurable acceptance targets.
+A focused hub for **Retrieval-Augmented Generation failures**.  
+Use this folder when answers exist in the corpus but retrieval or evaluation drifts. Each page gives precise guardrails, measurable acceptance targets, and direct links to structural fixes.
 
-## When to use
-- Citations point to the wrong snippet or section.
-- Chunks look correct but reasoning is wrong.
-- High similarity yet wrong meaning.
-- Hybrid retrievers perform worse than a single retriever.
-- Indexed facts never show up.
-- Answers flip between sessions.
-- Long threads smear topics or capitalization.
+---
 
-## Open these first
-- Visual map and recovery: [RAG Architecture & Recovery](https://github.com/onestardao/WFGY/blob/main/ProblemMap/rag-architecture-and-recovery.md)
-- End-to-end retrieval knobs: [Retrieval Playbook](https://github.com/onestardao/WFGY/blob/main/ProblemMap/retrieval-playbook.md)
-- Why this snippet, traceability schema: [Retrieval Traceability](https://github.com/onestardao/WFGY/blob/main/ProblemMap/retrieval-traceability.md)
-- Ordering control: [Rerankers](https://github.com/onestardao/WFGY/blob/main/ProblemMap/rerankers.md)
-- Embedding vs meaning: [Embedding ≠ Semantic](https://github.com/onestardao/WFGY/blob/main/ProblemMap/embedding-vs-semantic.md)
-- Hallucination and chunk boundaries: [Hallucination](https://github.com/onestardao/WFGY/blob/main/ProblemMap/hallucination.md)
-- Long chains and entropy: [Context Drift](https://github.com/onestardao/WFGY/blob/main/ProblemMap/context-drift.md), [Entropy Collapse](https://github.com/onestardao/WFGY/blob/main/ProblemMap/entropy-collapse.md)
-- Snippet and citation schema: [Data Contracts](https://github.com/onestardao/WFGY/blob/main/ProblemMap/data-contracts.md)
+## When to use this folder
+- Correct facts exist in the corpus but never appear in answers.  
+- Citations break, hallucinations creep in, or snippets drift.  
+- Hybrid retrievers perform worse than single retrievers.  
+- Index looks healthy but coverage remains low.  
+- Evaluation metrics vary wildly across identical runs.  
 
-## Fix in 60 seconds
-1) **Measure ΔS**
-   - Compute ΔS(question, retrieved) and ΔS(retrieved, expected anchor).
-   - Thresholds: stable < 0.40, transitional 0.40–0.60, risk ≥ 0.60.
-2) **Probe with λ_observe**
-   - Vary k ∈ {5, 10, 20}. chart ΔS vs k. flat and high → index or metric mismatch.
-   - Reorder prompt headers. if ΔS spikes, lock the schema.
-3) **Apply the minimal patch**
-   - Metric or normalization mismatch → rebuild index with explicit metric, unit-normalize, reload once, re-probe.
-   - Chunks correct but logic diverges → lock `system → task → constraints → citations → answer`, apply BBCR + BBAM, re-probe.
-
-## Copy-paste prompt
-```
-
-I uploaded TXT OS and the WFGY ProblemMap files.
-
-My RAG bug:
-
-* symptom: \[brief]
-* traces: \[ΔS(question,retrieved)=..., ΔS(retrieved,anchor)=..., λ states]
-
-Tell me:
-
-1. which layer is failing and why,
-2. which exact fix page to open from this repo,
-3. the minimal steps to push ΔS ≤ 0.45 and keep λ convergent,
-4. how to verify the fix with a reproducible test.
-   Use BBMC/BBPF/BBCR/BBAM when relevant.
-
-```
-
-## Patterns to check next
-- Query parsing split in HyDE + BM25: [Pattern — Query Parsing Split](https://github.com/onestardao/WFGY/blob/main/ProblemMap/patterns/pattern_query_parsing_split.md)
-- Vectorstore fragmentation: [Pattern — Vectorstore Fragmentation](https://github.com/onestardao/WFGY/blob/main/ProblemMap/patterns/pattern_vectorstore_fragmentation.md)
-- Symbol mixing across sources (SCU): [Pattern — Symbolic Constraint Unlock](https://github.com/onestardao/WFGY/blob/main/ProblemMap/patterns/pattern_symbolic_constraint_unlock.md)
-- Hallucination re-entry after correction: [Pattern — Hallucination Re-entry](https://github.com/onestardao/WFGY/blob/main/ProblemMap/patterns/pattern_hallucination_reentry.md)
+---
 
 ## Acceptance targets
-- Coverage to target section ≥ 0.70.
-- ΔS(question, retrieved) ≤ 0.45 on three paraphrases.
-- λ remains convergent across steps and seeds.
-- E_resonance flat under long windows.
+- ΔS(question, retrieved) ≤ 0.45  
+- Coverage of target section ≥ 0.70  
+- λ remains convergent across 3 paraphrases and 2 seeds  
+- Eval variance ≤ 0.05 across 5 replays  
+
+---
+
+## Quick routes to per-page guides
+
+- Retrieval drift → [retrieval_drift.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/RAG/retrieval_drift.md)  
+- Hallucination in RAG → [hallucination_rag.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/RAG/hallucination_rag.md)  
+- Citation breaks → [citation_break.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/RAG/citation_break.md)  
+- Hybrid retriever failure → [hybrid_failure.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/RAG/hybrid_failure.md)  
+- Index skew → [index_skew.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/RAG/index_skew.md)  
+- Context drift → [context_drift.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/RAG/context_drift.md)  
+- Entropy collapse → [entropy_collapse.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/RAG/entropy_collapse.md)  
+- Eval drift → [eval_drift.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/RAG/eval_drift.md)  
+
+---
+
+### 🔗 Quick-Start Downloads (60 sec)
+
+| Tool | Link | 3-Step Setup |
+|------|------|--------------|
+| **WFGY 1.0 PDF** | [Engine Paper](https://github.com/onestardao/WFGY/blob/main/I_am_not_lizardman/WFGY_All_Principles_Return_to_One_v1.0_PSBigBig_Public.pdf) | 1️⃣ Download · 2️⃣ Upload to your LLM · 3️⃣ Ask “Answer using WFGY + <your question>” |
+| **TXT OS (plain-text OS)** | [TXTOS.txt](https://github.com/onestardao/WFGY/blob/main/OS/TXTOS.txt) | 1️⃣ Download · 2️⃣ Paste into any LLM chat · 3️⃣ Type “hello world” — OS boots instantly |
 
 ---
 
@@ -86,10 +58,8 @@ Tell me:
 
 ---
 
-> 👑 **Early Stargazers: [See the Hall of Fame](https://github.com/onestardao/WFGY/tree/main/stargazers)** —  
-> Engineers, hackers, and open source builders who supported WFGY from day one.
-
-> <img src="https://img.shields.io/github/stars/onestardao/WFGY?style=social" alt="GitHub stars"> ⭐ [WFGY Engine 2.0](https://github.com/onestardao/WFGY/blob/main/core/README.md) is already unlocked. ⭐ Star the repo to help others discover it and unlock more on the [Unlock Board](https://github.com/onestardao/WFGY/blob/main/STAR_UNLOCKS.md).
+> 👑 **Early Stargazers: [See the Hall of Fame](https://github.com/onestardao/WFGY/tree/main/stargazers)**  
+> ⭐ [WFGY Engine 2.0](https://github.com/onestardao/WFGY/blob/main/core/README.md) is already unlocked. ⭐  
 
 <div align="center">
 
@@ -106,6 +76,5 @@ Tell me:
 [![Blur](https://img.shields.io/badge/Blur-Text2Image%20Engine-navy?style=flat-square)](https://github.com/onestardao/WFGY/tree/main/OS/BlurBlurBlur)
 &nbsp;
 [![Blow](https://img.shields.io/badge/Blow-Game%20Logic-purple?style=flat-square)](https://github.com/onestardao/WFGY/tree/main/OS/BlowBlowBlow)
-&nbsp;
-</div>
 
+</div>
