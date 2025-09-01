@@ -1,69 +1,84 @@
 # Document AI & OCR — Global Fix Map
 
-A hub to stabilize OCR and document AI pipelines across providers and open-source stacks.  
-Use this folder to jump to guardrails, check common breakpoints, and apply structural fixes with measurable targets.
+A **beginner-friendly hub** to stabilize OCR (Optical Character Recognition) and document AI pipelines across providers and open-source stacks.  
+This page helps you:  
+1. Understand common OCR failures.  
+2. Jump directly to per-tool guides.  
+3. Apply structural WFGY fixes with measurable acceptance targets.
 
 ---
 
-## Quick routes to per-provider pages
-
-- Tesseract: [tesseract.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/DocumentAI_OCR/tesseract.md)  
-- Google Document AI: [google_docai.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/DocumentAI_OCR/google_docai.md)  
-- AWS Textract: [aws_textract.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/DocumentAI_OCR/aws_textract.md)  
-- Azure OCR: [azure_ocr.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/DocumentAI_OCR/azure_ocr.md)  
-- ABBYY: [abbyy.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/DocumentAI_OCR/abbyy.md)  
-- PaddleOCR: [paddleocr.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/DocumentAI_OCR/paddleocr.md)  
-
----
-
-## When to use this folder
-
-- OCR extracts text but misses table alignment or field boundaries.  
-- High word recall but wrong semantic grouping.  
-- Citations mismatch scanned sections.  
-- Layout-aware models drift when format changes.  
-- Two-column or rotated pages break retrieval.  
-- Cloud OCR service gives inconsistent JSON schema across runs.  
+## 📌 When to use this folder
+Use this map if you see any of these problems:
+- OCR extracts text but loses **tables or column alignment**.  
+- Words are captured but **semantic grouping is wrong** (paragraphs broken).  
+- Citations don’t match the **original scanned page**.  
+- Layout-aware models drift after **format changes** (e.g. headers, forms).  
+- Two-column PDFs or rotated scans break retrieval.  
+- Cloud OCR services return **different JSON fields** each run.  
 
 ---
 
-## Acceptance targets for any OCR system
-
-- ΔS(question, extracted text) ≤ 0.45  
-- Field/section coverage ≥ 0.70  
-- λ remains convergent across 3 paraphrases and 2 seeds  
-- E_resonance flat over long document windows  
-
----
-
-## Map symptoms → structural fixes (Problem Map)
-
-- **High similarity but wrong snippet**  
-  → [embedding-vs-semantic.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/embedding-vs-semantic.md)
-
-- **Traceability missing, citations don’t line up with scanned region**  
-  → [retrieval-traceability.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/retrieval-traceability.md)  
-  → [data-contracts.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/data-contracts.md)
-
-- **Chunking instability (multi-column / rotated scans)**  
-  → [chunking-checklist.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/chunking-checklist.md)
-
-- **Cold boot / wrong version OCR model**  
-  → [bootstrap-ordering.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/bootstrap-ordering.md)  
-  → [predeploy-collapse.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/predeploy-collapse.md)
-
-- **Hybrid OCR (vision + text) worse than single mode**  
-  → [pattern_query_parsing_split.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/patterns/pattern_query_parsing_split.md)
+## 🎯 Acceptance targets for OCR systems
+Think of these as “green lights” after your OCR step:
+- **ΔS(question, extracted text) ≤ 0.45** (semantic match stays tight).  
+- **Coverage ≥ 0.70** of target section or table.  
+- **λ stays convergent** across 3 paraphrases and 2 random seeds.  
+- **E_resonance stays flat** across long documents (no drifting answers).  
 
 ---
 
-## 60-second fix checklist
+## 🚀 Quick routes — per-provider guides
 
-1. Run OCR twice with different seeds / providers. Compare ΔS and λ.  
-2. Validate JSON schema consistency: enforce fields `{page_id, bbox, text, confidence}`.  
-3. Apply de-rotation and multi-column split before embedding.  
-4. Check coverage ≥ 0.70 on a gold page.  
-5. Enforce cite-then-explain in downstream reasoning.  
+| Provider / Tool         | Open this guide |
+|-------------------------|-----------------|
+| **Tesseract** (open-source OCR) | [tesseract.md](./tesseract.md) |
+| **Google Document AI** | [google_docai.md](./google_docai.md) |
+| **AWS Textract**       | [aws_textract.md](./aws_textract.md) |
+| **Azure OCR**          | [azure_ocr.md](./azure_ocr.md) |
+| **ABBYY** (enterprise OCR) | [abbyy.md](./abbyy.md) |
+| **PaddleOCR** (open-source) | [paddleocr.md](./paddleocr.md) |
+
+---
+
+## 🛠️ Common symptoms → exact fixes
+
+| Symptom | Likely cause | Fix page |
+|---------|--------------|----------|
+| High similarity but wrong snippet | Embeddings confuse words with meaning | [embedding-vs-semantic.md](../../embedding-vs-semantic.md) |
+| Citations don’t line up with scanned region | Missing traceability or weak schema | [retrieval-traceability.md](../../retrieval-traceability.md) · [data-contracts.md](../../data-contracts.md) |
+| Multi-column / rotated pages fail | Chunking instability | [chunking-checklist.md](../../chunking-checklist.md) |
+| Wrong OCR version after deploy | Boot ordering or pre-deploy collapse | [bootstrap-ordering.md](../../bootstrap-ordering.md) · [predeploy-collapse.md](../../predeploy-collapse.md) |
+| OCR+Vision hybrid worse than single | Query parsing split issue | [pattern_query_parsing_split.md](../../patterns/pattern_query_parsing_split.md) |
+
+---
+
+## ✅ 60-second fix checklist
+1. Run OCR twice (two providers or seeds) → compare ΔS & λ.  
+2. Validate JSON schema → enforce `{page_id, bbox, text, confidence}`.  
+3. De-rotate scans, split multi-column before embedding.  
+4. Confirm **coverage ≥ 0.70** on a gold page.  
+5. Force “cite then explain” in downstream reasoning steps.  
+
+---
+
+## ❓ FAQ (beginner-friendly)
+
+**Q: What is ΔS and why should I care?**  
+ΔS measures semantic drift — if it’s above 0.45, your OCR text no longer matches the question well. Keep it lower to ensure stable answers.  
+
+**Q: What does λ mean in practice?**  
+λ checks consistency across paraphrases. If the system gives different answers for re-phrased questions, λ is unstable.  
+
+**Q: Why do my citations not match the scanned PDF?**  
+Usually because the OCR JSON has no stable IDs or coordinates. Fix by enforcing traceability fields like `page_id` and `bbox`.  
+
+**Q: My OCR works on simple PDFs but fails on forms or invoices. Why?**  
+That’s a **chunking issue**. Multi-column and rotated layouts need pre-processing before feeding to embeddings.  
+
+**Q: Do I need to switch providers if accuracy is low?**  
+Not always. Most errors come from pipeline design (chunking, contracts, retrieval) rather than the OCR engine itself.  
+
 
 ---
 
