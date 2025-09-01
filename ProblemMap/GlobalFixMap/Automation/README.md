@@ -1,34 +1,36 @@
 # Automation Platforms — Global Fix Map
 
-This hub routes **automation framework bugs** (Zapier, n8n, Make, Retool, etc.) to the structural guardrails in WFGY Problem Map.  
-Each page below contains failure points, linked fixes, and a copy-paste recipe for stabilization.
+Stabilize automations across Zapier, n8n, Make, Retool, Power Automate, and more.  
+Most “platform bugs” are not bugs at all — they are ordering, retries, dedupe, or time drift. This hub routes you to exact structural fixes with measurable acceptance targets.
 
 ---
 
-## Quick routes to per-tool pages
+## Orientation: pick your tool
 
-- Zapier → [zapier.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Automation/zapier.md)  
-- n8n → [n8n.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Automation/n8n.md)  
-- Make (Integromat) → [make.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Automation/make.md)  
-- Retool → [retool.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Automation/retool.md)  
-- IFTTT → [ifttt.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Automation/ifttt.md)  
-- Pipedream → [pipedream.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Automation/pipedream.md)  
-- Power Automate → [power-automate.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Automation/power-automate.md)  
-- GitHub Actions → [github-actions.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Automation/github-actions.md)  
-- Airflow → [airflow.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Automation/airflow.md)  
-- Airtable → [airtable.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Automation/airtable.md)  
-- Asana → [asana.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Automation/asana.md)  
-- GoHighLevel (GHL) → [ghl.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Automation/ghl.md)  
-- Parabola → [parabola.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Automation/parabola.md)  
-- LangChain (automation mode) → [langchain.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Automation/langchain.md)  
-- LlamaIndex (automation mode) → [llamaindex.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Automation/llamaindex.md)  
+| Platform | What it is | Typical use | Link |
+|---|---|---|---|
+| Zapier | Mainstream no-code automation | Broad connectors, fast start | [zapier.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Automation/zapier.md) |
+| n8n | Open-source workflow engine | Self-hosted, extensible | [n8n.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Automation/n8n.md) |
+| Make (Integromat) | Visual workflow builder | SMB and RAG pipelines | [make.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Automation/make.md) |
+| Retool | Internal-tool builder + workflows | Backoffice jobs, cron | [retool.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Automation/retool.md) |
+| IFTTT | Consumer-grade triggers | Personal automations | [ifttt.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Automation/ifttt.md) |
+| Pipedream | Event platform + code steps | Webhooks, SaaS APIs | [pipedream.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Automation/pipedream.md) |
+| Power Automate | Microsoft ecosystem automation | O365, SharePoint, Dynamics | [power-automate.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Automation/power-automate.md) |
+| GitHub Actions | CI/CD + repo event runner | Build, test, deploy | [github-actions.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Automation/github-actions.md) |
+| Airflow | Code-first workflow scheduler | Data/ETL DAGs | [airflow.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Automation/airflow.md) |
+| Airtable Automations | Table-driven automations | CRUD triggers | [airtable.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Automation/airtable.md) |
+| Asana Rules | Project management rules | PM events to actions | [asana.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Automation/asana.md) |
+| GoHighLevel (GHL) | CRM automation platform | Marketing + sales flows | [ghl.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Automation/ghl.md) |
+| Parabola | Dataflow-based automation | Transform + schedule | [parabola.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Automation/parabola.md) |
+| LangChain (automation mode) | Agent orchestration | LLM-based workflows | [langchain.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Automation/langchain.md) |
+| LlamaIndex (automation mode) | Knowledge orchestration | RAG pipelines | [llamaindex.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Automation/llamaindex.md) |
 
 ---
 
-## Typical failure classes
+## Common failure classes
 
 - **Bootstrap race conditions**  
-  Tools firing before the data index or vector store is ready.  
+  Trigger fires before vector/index is ready.  
   → [bootstrap-ordering.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/bootstrap-ordering.md)
 
 - **Deployment deadlocks**  
@@ -39,40 +41,54 @@ Each page below contains failure points, linked fixes, and a copy-paste recipe f
   Wrong version triggered on first call after shipping.  
   → [predeploy-collapse.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/predeploy-collapse.md)
 
-- **Embedding vs. semantic drift**  
-  Looks correct but meaning diverges.  
+- **Embedding vs semantic drift**  
+  High similarity but wrong meaning.  
   → [embedding-vs-semantic.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/embedding-vs-semantic.md)
 
 - **Traceability breaks**  
-  Citations do not match source or section.  
-  → [retrieval-traceability.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/retrieval-traceability.md)  
-  → [data-contracts.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/data-contracts.md)
+  Citations do not match the source.  
+  → [retrieval-traceability.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/retrieval-traceability.md), [data-contracts.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/data-contracts.md)
 
 ---
 
 ## Minimal contract for any workflow
 
-1. **Check readiness before calling RAG/LLM**  
-   Use `VECTOR_READY` and `INDEX_HASH`. Delay if not valid.
-
+1. **Check readiness**  
+   Verify `VECTOR_READY` and `INDEX_HASH` before RAG/LLM calls.  
 2. **Idempotency**  
-   Always compute a dedupe key. Store in KV to block duplicates.
-
+   Always compute a dedupe key and block duplicates.  
 3. **Boundary contract**  
    Require `{snippet_id, section_id, source_url, offsets, tokens}`.  
-   Never reuse across sections.
-
 4. **Observability**  
-   Log ΔS and λ across steps. Alert if ΔS ≥ 0.60.
+   Log ΔS and λ across steps, alert if ΔS ≥ 0.60.
 
 ---
 
-### 🔗 Quick-Start Downloads (60 sec)
+## FAQ for newcomers
+
+**Why does my Zap/Flow run twice?**  
+Because triggers are at-least-once. Add idempotency keys to dedupe.
+
+**Why did my webhook return 200 but no data was processed?**  
+You acknowledged before persisting. Always store → then process.
+
+**Why do my cron jobs drift?**  
+Local timezone drift. Always store schedules in UTC.
+
+**Why do retries overload my API?**  
+You used immediate retries. Add exponential backoff with jitter.
+
+**Why does everything work in dev but break in prod?**  
+Because of boot order. Index not warmed, wrong analyzer, or cache empty.
+
+---
+
+### 🔗 Quick-Start Downloads
 
 | Tool | Link | 3-Step Setup |
 |------|------|--------------|
-| **WFGY 1.0 PDF** | [Engine Paper](https://github.com/onestardao/WFGY/blob/main/I_am_not_lizardman/WFGY_All_Principles_Return_to_One_v1.0_PSBigBig_Public.pdf) | 1️⃣ Download · 2️⃣ Upload to your LLM · 3️⃣ Ask “Answer using WFGY + <your question>” |
-| **TXT OS (plain-text OS)** | [TXTOS.txt](https://github.com/onestardao/WFGY/blob/main/OS/TXTOS.txt) | 1️⃣ Download · 2️⃣ Paste into any LLM chat · 3️⃣ Type “hello world” — OS boots instantly |
+| **WFGY 1.0 PDF** | [Engine Paper](https://github.com/onestardao/WFGY/blob/main/I_am_not_lizardman/WFGY_All_Principles_Return_to_One_v1.0_PSBigBig_Public.pdf) | 1) Download · 2) Upload to LLM · 3) Ask “Use WFGY to fix my automation bug” |
+| **TXT OS** | [TXTOS.txt](https://github.com/onestardao/WFGY/blob/main/OS/TXTOS.txt) | 1) Download · 2) Paste into LLM · 3) Type “hello world” |
 
 ---
 
