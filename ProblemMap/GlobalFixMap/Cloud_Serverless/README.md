@@ -34,9 +34,8 @@ Each symptom maps to an auditable WFGY fix page with measurable acceptance.
 | Streaming stalls, body cutoffs | [timeouts_streaming_body_limits.md](./timeouts_streaming_body_limits.md) |
 | Stateless jobs, idempotency, dedupe | [stateless_kv_queue_patterns.md](./stateless_kv_queue_patterns.md) |
 | Edge cache invalidation | [edge_cache_invalidation.md](./edge_cache_invalidation.md) |
-| Egress rules and webhook storms | [network_egress_and_vpc.md](./network_egress_and_vpc.md) |
-| CI/CD for serverless | [deploy_traffic_shaping.md](./deploy_traffic_shaping.md) |
-| Bootstrap order and migrations | [bootstrap-ordering.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/bootstrap-ordering.md) |
+| Egress rules, VPC, webhooks | [network_egress_and_vpc.md](./network_egress_and_vpc.md) |
+| Deploy traffic shaping / CI-CD | [deploy_traffic_shaping.md](./deploy_traffic_shaping.md) |
 | Quotas, scaling, budget caps | [serverless_limits_matrix.md](./serverless_limits_matrix.md) |
 | Secrets rotation | [secrets_rotation.md](./secrets_rotation.md) |
 | Multi-region routing | [multi_region_routing.md](./multi_region_routing.md) |
@@ -60,7 +59,6 @@ Each symptom maps to an auditable WFGY fix page with measurable acceptance.
 | Users see stale results | Cache keys drift, no purge on writes | [edge_cache_invalidation.md](./edge_cache_invalidation.md) |
 | Webhook storms or data leaks | Open egress, retry spirals, payload bloat | [network_egress_and_vpc.md](./network_egress_and_vpc.md) |
 | Drift between preview and prod | Env mismatch, unsafe deploys, missing checks | [deploy_traffic_shaping.md](./deploy_traffic_shaping.md) |
-| Boot fails after migration | Schema not ready, wrong order, partial writes | [bootstrap-ordering.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/bootstrap-ordering.md) |
 | Surprise bills and throttles | No quotas, bursty retries, N+1 calls | [serverless_limits_matrix.md](./serverless_limits_matrix.md) |
 | Token leaks and broken rotation | Long-lived keys, missing overlap windows | [secrets_rotation.md](./secrets_rotation.md) |
 | Cross-region weirdness | Sticky sessions, unsynced caches, DNS TTLs | [multi_region_routing.md](./multi_region_routing.md) |
@@ -71,6 +69,7 @@ Each symptom maps to an auditable WFGY fix page with measurable acceptance.
 | DR playbooks collapse | Missing drills, restore paths untested | [disaster_recovery_tabletop.md](./disaster_recovery_tabletop.md) |
 | Backups exist but useless | Wrong cadence, missing manifests | [data_retention_and_backups.md](./data_retention_and_backups.md) |
 | PII shows up in logs/vectors | No DLP, loose schemas, unsafe webhooks | [privacy_and_pii_edges.md](./privacy_and_pii_edges.md) |
+
 
 ---
 
