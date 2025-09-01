@@ -1,56 +1,47 @@
 # Language & Multilingual · Global Fix Map
 
 A compact hub to **stabilize cross-lingual retrieval and reasoning**.  
-Use this folder when your corpus or queries include CJK, RTL, Indic, Cyrillic, accented Latin, or frequent code-switching.
+Use this folder when your corpus or queries include CJK, RTL, Indic, Cyrillic, accented Latin, or frequent code-switching. No infra change required.
 
 ---
 
-## Quick routes to per-page guides
+## Orientation — pages and what they solve
 
-- Tokenizer mismatch → [tokenizer_mismatch.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Language/tokenizer_mismatch.md)
-- Script mixing inside one query → [script_mixing.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Language/script_mixing.md)
-- Locale normalization and variants → [locale_drift.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Language/locale_drift.md)
-- End-to-end overview and recipes → [multilingual_guide.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Language/multilingual_guide.md)
-- Proper nouns and alias shield → [proper_noun_aliases.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Language/proper_noun_aliases.md)
-- Romanization and transliteration rules → [romanization_transliteration.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Language/romanization_transliteration.md)
-- Query language detection contract → [query_language_detection.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Language/query_language_detection.md)
-- Analyzer routing per language → [query_routing_and_analyzers.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Language/query_routing_and_analyzers.md)
-- Multilingual hybrid ranking → [hybrid_ranking_multilingual.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Language/hybrid_ranking_multilingual.md)
-- Stopwords and morphology locks → [stopword_and_morphology_controls.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Language/stopword_and_morphology_controls.md)
-- Fallback translation with glossary → [fallback_translation_and_glossary_bridge.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Language/fallback_translation_and_glossary_bridge.md)
-- Bilingual and code-switch eval sets → [code_switching_eval.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Language/code_switching_eval.md)
+| Page | What it solves | Typical symptom |
+|------|----------------|-----------------|
+| [tokenizer_mismatch.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Language/tokenizer_mismatch.md) | Locks tokenization and segmentation for CJK/Thai/Indic | High sim but low recall on CJK/Thai; broken tokens |
+| [script_mixing.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Language/script_mixing.md) | One query carries mixed scripts and analyzers split | Mixed Latin+CJK queries under-recall or flip |
+| [locale_drift.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Language/locale_drift.md) | Normalization for width/accents/variants (Hans↔Hant) | zh-Hans/zh-Hant never co-retrieve; accent variants miss |
+| [multilingual_guide.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Language/multilingual_guide.md) | End-to-end recipes and acceptance targets | Unsure where drift comes from across languages |
+| [proper_noun_aliases.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Language/proper_noun_aliases.md) | Alias shield for names, brands, products | Proper nouns oscillate across spellings |
+| [romanization_transliteration.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Language/romanization_transliteration.md) | Romanization pairs and transliteration consistency | Inconsistent transliteration causes misses |
+| [query_language_detection.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Language/query_language_detection.md) | Stable language detection contract | Detection flips per run; routing becomes random |
+| [query_routing_and_analyzers.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Language/query_routing_and_analyzers.md) | Route analyzers per language + parity w/ index | Search vs index behave differently |
+| [hybrid_ranking_multilingual.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Language/hybrid_ranking_multilingual.md) | Deterministic hybrid rerank across languages | Multilingual ranking unstable, hybrid < single |
+| [stopword_and_morphology_controls.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Language/stopword_and_morphology_controls.md) | Clamp stopwords/lemmatizers to protect meaning | Negations/particles vanish; unit words lost |
+| [fallback_translation_and_glossary_bridge.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Language/fallback_translation_and_glossary_bridge.md) | Controlled translation bridge with glossary | Local path ΔS stays high; glossary needed |
+| [code_switching_eval.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Language/code_switching_eval.md) | Bilingual & code-switch eval sets + checks | Cannot prove multilingual stability before ship |
 
 ---
 
 ## When to use this folder
 
-- High similarity yet wrong meaning on bilingual or mixed-script corpora
-- Citations point to the wrong section after translating the question
-- Hybrid retrievers underperform a single retriever across languages
-- Index looks healthy while coverage stays low for non-Latin scripts
-- Names flip between native, transliteration, and English aliases
-- zh-Hans and zh-Hant never co-retrieve, Thai recall drops with no clear cause
+- High similarity yet wrong meaning on bilingual or mixed-script corpora  
+- Citations point to the wrong section after translating the question  
+- Hybrid retrievers underperform a single retriever across languages  
+- Index looks healthy while coverage stays low for non-Latin scripts  
+- Names flip between native, transliteration, and English aliases  
+- zh-Hans and zh-Hant never co-retrieve; Thai recall drops for no reason  
 
 ---
 
 ## Acceptance targets
 
-- ΔS(question, retrieved) ≤ 0.45 across language variants
-- Coverage of the target section ≥ 0.70 after repair
-- λ remains convergent across three paraphrases and two seeds
-- E_resonance stays flat on long windows that mix scripts
-- Citation fields complete, alias noise does not leak into evidence
-
----
-
-## Open these first
-
-- Visual map and recovery → [rag-architecture-and-recovery.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/rag-architecture-and-recovery.md)
-- End-to-end retrieval knobs → [retrieval-playbook.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/retrieval-playbook.md)
-- Why this snippet and how to cite → [retrieval-traceability.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/retrieval-traceability.md)
-- Snippet schema fence → [data-contracts.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/data-contracts.md)
-- Embedding vs meaning → [embedding-vs-semantic.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/embedding-vs-semantic.md)
-- Chunk boundary sanity → [chunking-checklist.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/chunking-checklist.md)
+- **ΔS(question, retrieved) ≤ 0.45** across language variants  
+- **Coverage ≥ 0.70** to the intended section after repair  
+- **λ_observe convergent** across 3 paraphrases and 2 seeds  
+- **E_resonance flat** on long windows that mix scripts  
+- Citation fields complete; alias noise does not leak into evidence  
 
 ---
 
@@ -62,52 +53,51 @@ Use this folder when your corpus or queries include CJK, RTL, Indic, Cyrillic, a
 | Citations jump sections after translation | Snippet schema too loose | [data-contracts.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/data-contracts.md) · [retrieval-traceability.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/retrieval-traceability.md) |
 | zh-Hans and zh-Hant never co-retrieve | Variant mapping and width rules missing | [locale_drift.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Language/locale_drift.md) |
 | Thai or CJK recall collapses | Tokenizer mismatch or missing segmenter | [tokenizer_mismatch.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Language/tokenizer_mismatch.md) |
-| Mixed Latin plus CJK query under-recalls | Analyzer split across scripts | [script_mixing.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Language/script_mixing.md) |
-| Hybrid retriever worse than single | Query parsing split or mis-weighted rerank | [patterns/pattern_query_parsing_split.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/patterns/pattern_query_parsing_split.md) · [rerankers.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/rerankers.md) |
-| Proper nouns oscillate across spellings | Missing alias fields and entity shield | [proper_noun_aliases.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Language/proper_noun_aliases.md) |
-| Inconsistent transliteration causes misses | Romanization rules and aliases not aligned | [romanization_transliteration.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Language/romanization_transliteration.md) |
-| Language detection drifts | Detection contract unlocked or weak samples | [query_language_detection.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Language/query_language_detection.md) |
-| Search vs index behave differently | Analyzer routing error | [query_routing_and_analyzers.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Language/query_routing_and_analyzers.md) |
-| Ranking unstable across languages | Monolingual reranker or unaligned features | [hybrid_ranking_multilingual.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Language/hybrid_ranking_multilingual.md) |
-| Negations or particles vanish | Stopword or morphology rules too aggressive | [stopword_and_morphology_controls.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Language/stopword_and_morphology_controls.md) |
-| Persistent high ΔS on local language path | Need controlled translation bridge with glossary | [fallback_translation_and_glossary_bridge.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Language/fallback_translation_and_glossary_bridge.md) |
+| Mixed Latin + CJK query under-recalls | Analyzer split across scripts | [script_mixing.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Language/script_mixing.md) |
+| Hybrid worse than single | Query parsing split or mis-weighted rerank | [patterns/pattern_query_parsing_split.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/patterns/pattern_query_parsing_split.md) · [rerankers.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/rerankers.md) |
+| Proper nouns oscillate | Missing alias fields and entity shield | [proper_noun_aliases.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Language/proper_noun_aliases.md) |
+| Transliteration inconsistency | Romanization rules not aligned | [romanization_transliteration.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Language/romanization_transliteration.md) |
+| Language detection drifts | Detection contract weak or unlocked | [query_language_detection.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Language/query_language_detection.md) |
+| Search vs index disagree | Analyzer routing error | [query_routing_and_analyzers.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Language/query_routing_and_analyzers.md) |
+| Ranking unstable across languages | Mono-lingual reranker or unaligned features | [hybrid_ranking_multilingual.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Language/hybrid_ranking_multilingual.md) |
+| Negations/particles vanish | Stopword or morphology too aggressive | [stopword_and_morphology_controls.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Language/stopword_and_morphology_controls.md) |
+| Persistent high ΔS on local path | Need glossary-backed translation bridge | [fallback_translation_and_glossary_bridge.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Language/fallback_translation_and_glossary_bridge.md) |
 
 ---
 
 ## Fix in 60 seconds
 
-1. **Detect language**  
-   Emit stable language and confidence per the detection contract. If unstable, stop and fix detection first.  
-   Open → [query_language_detection.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Language/query_language_detection.md)
+1) **Detect language**  
+   Emit stable language + confidence. If unstable, fix detection first.  
+   → [query_language_detection.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Language/query_language_detection.md)
 
-2. **Lock normalization and analyzers**  
-   Keep the same locale, width, accents, and segmentation for both index and search.  
-   Open → [locale_drift.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Language/locale_drift.md) · [query_routing_and_analyzers.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Language/query_routing_and_analyzers.md)
+2) **Lock normalization and analyzers**  
+   Keep locale, width, accents, and segmentation identical on write/read.  
+   → [locale_drift.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Language/locale_drift.md) · [query_routing_and_analyzers.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Language/query_routing_and_analyzers.md)
 
-3. **Protect entities and syntax**  
-   Add alias fields and romanization pairs. Clamp stopwords and morphological rules for scope words like negations or units.  
-   Open → [proper_noun_aliases.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Language/proper_noun_aliases.md) · [romanization_transliteration.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Language/romanization_transliteration.md) · [stopword_and_morphology_controls.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Language/stopword_and_morphology_controls.md)
+3) **Protect entities and syntax**  
+   Alias fields and romanization pairs; clamp stopwords/morphology for negations and units.  
+   → [proper_noun_aliases.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Language/proper_noun_aliases.md) · [romanization_transliteration.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Language/romanization_transliteration.md) · [stopword_and_morphology_controls.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Language/stopword_and_morphology_controls.md)
 
-4. **Stabilize ranking and hybrid flows**  
-   Use multilingual reranker or dual-track lexical plus vector, keep ordering deterministic.  
-   Open → [hybrid_ranking_multilingual.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Language/hybrid_ranking_multilingual.md)
+4) **Stabilize ranking**  
+   Use multilingual or dual-track rerank with deterministic ordering.  
+   → [hybrid_ranking_multilingual.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Language/hybrid_ranking_multilingual.md)
 
-5. **Use a translation bridge only as last resort**  
-   Enable only when the native path keeps high ΔS. Always pair with a glossary.  
-   Open → [fallback_translation_and_glossary_bridge.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Language/fallback_translation_and_glossary_bridge.md)
+5) **Translation bridge only if needed**  
+   Pair with a glossary and keep native path as default.  
+   → [fallback_translation_and_glossary_bridge.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Language/fallback_translation_and_glossary_bridge.md)
 
-6. **Verify**  
-   With bilingual and code-switch test sets confirm ΔS ≤ 0.45 and Coverage ≥ 0.70, λ convergent.  
-   Open → [code_switching_eval.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Language/code_switching_eval.md)
+6) **Verify**  
+   With bilingual & code-switch sets confirm ΔS ≤ 0.45, Coverage ≥ 0.70, λ convergent.  
+   → [code_switching_eval.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Language/code_switching_eval.md)
 
 ---
 
 ## Store-agnostic quick recipes
 
-- Normalize the same way for corpus and queries before any vector store, keep tokenizer consistent on both sides  
-- CJK and Thai need segmentation or bigrams, keep critical fields as keyword to protect entities  
-- If you cannot use multilingual embeddings, add a lexical sidecar then align features in a deterministic rerank
-
+- Normalize the same way for corpus and queries before storing vectors  
+- CJK/Thai require segmentation or bigrams; keep entity fields as keyword  
+- If no multilingual embeddings, add a lexical sidecar and align features with a deterministic rerank
 
 ---
 
