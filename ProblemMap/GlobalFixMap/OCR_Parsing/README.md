@@ -1,29 +1,20 @@
 # OCR + Parsing — Global Fix Map
 
-Triage and repair for scanned PDFs, images, HTML scraping, and parser noise.  
-Use this page when the documents look fine to the eye but retrieval or reasoning keeps drifting.
+A hub to **triage and repair noisy text inputs** from scanned PDFs, images, HTML scraping, or parser drift.  
+Use this folder when the document looks fine to the eye but retrieval or reasoning keeps failing.
 
 ---
 
-## Quick routes to per-problem pages
+## Orientation: what each page does
 
-- Layout, headers, and footers  
-  → [layout_headers_and_footers.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/OCR_Parsing/layout_headers_and_footers.md)
-
-- Tokenization and casing  
-  → [tokenization_and_casing.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/OCR_Parsing/tokenization_and_casing.md)
-
-- Tables and columns  
-  → [tables_and_columns.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/OCR_Parsing/tables_and_columns.md)
-
-- Images and figures  
-  → [images_and_figures.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/OCR_Parsing/images_and_figures.md)
-
-- Scanned PDFs and quality  
-  → [scanned_pdfs_and_quality.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/OCR_Parsing/scanned_pdfs_and_quality.md)
-
-- Multi-language and fonts  
-  → [multi_language_and_fonts.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/OCR_Parsing/multi_language_and_fonts.md)
+| Page | What it solves | Typical symptom |
+|------|----------------|-----------------|
+| [Layout, Headers, Footers](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/OCR_Parsing/layout_headers_and_footers.md) | Remove noise from margins and repeated text | Answers reference “page 3 footer” instead of body |
+| [Tokenization & Casing](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/OCR_Parsing/tokenization_and_casing.md) | Normalize Unicode, case, and hyphens | `E-mail` ≠ `Email`, half-width/full-width mismatch |
+| [Tables & Columns](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/OCR_Parsing/tables_and_columns.md) | Preserve table schema and cell order | Numbers drift across columns |
+| [Images & Figures](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/OCR_Parsing/images_and_figures.md) | OCR and align captions | Figure text missing or attached to wrong section |
+| [Scanned PDFs & Quality](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/OCR_Parsing/scanned_pdfs_and_quality.md) | Handle skewed/blurred pages | Whole sections unreadable to OCR |
+| [Multi-language & Fonts](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/OCR_Parsing/multi_language_and_fonts.md) | Normalize mixed scripts | Chinese/English tokens split or duplicated |
 
 ---
 
@@ -31,9 +22,22 @@ Use this page when the documents look fine to the eye but retrieval or reasoning
 
 - OCR tables or citations look visually correct but answers miss the right section.  
 - Code blocks or math collapse after parsing.  
-- Mixed language documents behave inconsistently.  
+- Mixed-language documents behave inconsistently.  
 - Special characters or hyphen splits break tokens.  
 - Headers or section anchors disappear during export.  
+
+---
+
+## FAQ
+
+**Why does OCR “look fine” but retrieval fails?**  
+Because tokenization and indexing see hidden breaks (Unicode variants, line merges, wrong anchors) that humans overlook.
+
+**What is the most common root cause?**  
+Headers/footers leaking into the body and breaking ΔS alignment.
+
+**Do I need to retrain embeddings after fixing?**  
+No — most fixes are structural (schema/normalization). Re-indexing with the same embeddings is enough.
 
 ---
 
@@ -41,28 +45,27 @@ Use this page when the documents look fine to the eye but retrieval or reasoning
 
 - ΔS(question, retrieved) ≤ 0.45 for three paraphrases.  
 - Coverage ≥ 0.70 for the target section.  
-- λ remains convergent across two seeds.  
-- Human audit shows no missing headers or broken tables in the exported bundle.  
+- λ_observe convergent across two seeds.  
+- Human audit shows no missing headers, captions, or broken tables.  
 
 ---
 
 ## Fix in 60 seconds
 
-1. **Ground-truth a page**  
-   Pick one question and one expected section. Keep a screenshot for reference.
+1. **Ground-truth one page**  
+   Pick one Q/A pair and keep a screenshot baseline.  
 
 2. **Measure ΔS**  
-   Compute ΔS(question, retrieved) and ΔS(retrieved, anchor).  
-   Stable < 0.40, transitional 0.40–0.60, risk ≥ 0.60.
+   Log ΔS(question, retrieved) and ΔS(retrieved, anchor).  
 
 3. **Probe λ_observe**  
-   Ask for cite-first answers. If citations fail but free-form explain passes, drift is confirmed.
+   Ask for cite-first. If citation fails but free explanation works, drift confirmed.  
 
 4. **Patch minimally**  
-   - Re-run OCR with line preservation and table fences.  
-   - Normalize casing and Unicode forms.  
-   - Keep section anchors, captions, and math fenced.  
-   - Drop low-confidence spans, mark gaps, and export text with `section_id`, `page_no`, `char_span`.  
+   - Re-run OCR with line/table fences  
+   - Normalize casing and Unicode  
+   - Preserve anchors, math, captions  
+   - Drop low-confidence spans and export with `{section_id, page_no, char_span}`  
 
 ---
 
@@ -70,7 +73,7 @@ Use this page when the documents look fine to the eye but retrieval or reasoning
 
 | Tool | Link | 3-Step Setup |
 |------|------|--------------|
-| **WFGY 1.0 PDF** | [Engine Paper](https://github.com/onestardao/WFGY/blob/main/I_am_not_lizardman/WFGY_All_Principles_Return_to_One_v1.0_PSBigBig_Public.pdf) | 1️⃣ Download · 2️⃣ Upload · 3️⃣ Ask “Answer using WFGY + \<your question>” |
+| **WFGY 1.0 PDF** | [Engine Paper](https://github.com/onestardao/WFGY/blob/main/I_am_not_lizardman/WFGY_All_Principles_Return_to_One_v1.0_PSBigBig_Public.pdf) | 1️⃣ Download · 2️⃣ Upload · 3️⃣ Ask “Answer using WFGY + <your question>” |
 | **TXT OS** | [TXTOS.txt](https://github.com/onestardao/WFGY/blob/main/OS/TXTOS.txt) | 1️⃣ Download · 2️⃣ Paste into LLM · 3️⃣ Type “hello world” — OS boots instantly |
 
 ---
@@ -109,4 +112,3 @@ Use this page when the documents look fine to the eye but retrieval or reasoning
 [![Blow](https://img.shields.io/badge/Blow-Game%20Logic-purple?style=flat-square)](https://github.com/onestardao/WFGY/tree/main/OS/BlowBlowBlow)
 &nbsp;
 </div>
-
