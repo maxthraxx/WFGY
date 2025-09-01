@@ -6,89 +6,104 @@ Use this folder to pick the right guardrail, verify with measurable targets, and
 ---
 
 ## Open these first
-- Visual map and recovery: [RAG Architecture & Recovery](https://github.com/onestardao/WFGY/blob/main/ProblemMap/rag-architecture-and-recovery.md)
-- End-to-end retrieval knobs: [Retrieval Playbook](https://github.com/onestardao/WFGY/blob/main/ProblemMap/retrieval-playbook.md)
-- Traceability and snippet schema: [Retrieval Traceability](https://github.com/onestardao/WFGY/blob/main/ProblemMap/retrieval-traceability.md) · [Data Contracts](https://github.com/onestardao/WFGY/blob/main/ProblemMap/data-contracts.md)
-- Boot order and deploy traps: [Bootstrap Ordering](https://github.com/onestardao/WFGY/blob/main/ProblemMap/bootstrap-ordering.md) · [Deployment Deadlock](https://github.com/onestardao/WFGY/blob/main/ProblemMap/deployment-deadlock.md) · [Pre-Deploy Collapse](https://github.com/onestardao/WFGY/blob/main/ProblemMap/predeploy-collapse.md)
-- Live ops: [Live Monitoring for RAG](https://github.com/onestardao/WFGY/blob/main/ProblemMap/ops/live_monitoring_rag.md) · [Debug Playbook](https://github.com/onestardao/WFGY/blob/main/ProblemMap/ops/debug_playbook.md)
+- Visual recovery map → [RAG Architecture & Recovery](../../rag-architecture-and-recovery.md)  
+- Retrieval knobs end-to-end → [Retrieval Playbook](../../retrieval-playbook.md)  
+- Traceability and snippet schema → [Retrieval Traceability](../../retrieval-traceability.md) · [Data Contracts](../../data-contracts.md)  
+- Boot order and deploy traps → [Bootstrap Ordering](../../bootstrap-ordering.md) · [Deployment Deadlock](../../deployment-deadlock.md) · [Pre-Deploy Collapse](../../predeploy-collapse.md)  
+- Live ops tools → [Live Monitoring for RAG](../../ops/live_monitoring_rag.md) · [Debug Playbook](../../ops/debug_playbook.md)  
 
 ---
 
 ## When to use this folder
-- First call after deploy crashes or returns stale content  
-- ΔS and citations look fine yesterday but flip today  
-- Rate limits cascade, queues spike, latency climbs  
-- Canary looks good then full rollout breaks retrieval  
-- Index swap succeeds but answers cite the old sections  
-- Retries cause duplicate side effects or money leaks  
-- Feature flags bleed traffic into unfinished paths  
-- Maintenance or migration windows corrupt anchors
+- First calls after deploy crash or return stale content.  
+- ΔS and citations look fine yesterday but flip today.  
+- Rate limits cascade, queues spike, latency climbs.  
+- Canary looks good then full rollout breaks retrieval.  
+- Index swap succeeds but answers cite old snippets.  
+- Retries cause duplicate side effects or charges.  
+- Feature flags bleed traffic into unfinished paths.  
+- Maintenance windows corrupt embeddings or anchors.  
 
 ---
 
 ## Acceptance targets for a safe rollout
-- **ΔS(question, retrieved) ≤ 0.45** on three paraphrases after rollout begins  
-- **Coverage ≥ 0.70** to the expected section on the new version  
-- **λ remains convergent** across two seeds during canary and after cutover  
-- **Idempotency ≥ 99.9%** on side-effecting actions during retry storms  
-- **Zero silent index mismatches** after build-and-swap (hash and doc counts match)  
-- **P95 latency within budget** while rate-limit backpressure is active
+- **ΔS(question, retrieved) ≤ 0.45** across three paraphrases.  
+- **Coverage ≥ 0.70** on the expected new section.  
+- **λ remains convergent** on 2 seeds during rollout.  
+- **Idempotency ≥ 99.9%** on retry storms.  
+- **Zero silent index mismatches** (hash + counts match).  
+- **P95 latency stays in budget** with backpressure active.  
 
 ---
 
-## Quick routes to per-page guides
+## Quick routes — per-page guides
 
-- Rollout gate: [rollout_readiness_gate.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/OpsDeploy/rollout_readiness_gate.md)  
-- Canary playbook: [staged_rollout_canary.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/OpsDeploy/staged_rollout_canary.md)  
-- Blue/green cutover: [blue_green_switchovers.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/OpsDeploy/blue_green_switchovers.md)  
-- Version freeze: [version_pinning_and_model_lock.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/OpsDeploy/version_pinning_and_model_lock.md)  
-- Vector index build-and-swap: [vector_index_build_and_swap.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/OpsDeploy/vector_index_build_and_swap.md)  
-- Cache warmup and invalidation: [cache_warmup_invalidation.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/OpsDeploy/cache_warmup_invalidation.md)  
-- Rate limit and backpressure: [rate_limit_backpressure.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/OpsDeploy/rate_limit_backpressure.md)  
-- Feature flags, safe launch: [feature_flags_safe_launch.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/OpsDeploy/feature_flags_safe_launch.md)  
-- Idempotency and dedupe: [idempotency_dedupe.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/OpsDeploy/idempotency_dedupe.md)  
-- Retry policies and backoff: [retry_backoff.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/OpsDeploy/retry_backoff.md)  
-- Rollback and fast recovery: [rollback_and_fast_recovery.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/OpsDeploy/rollback_and_fast_recovery.md)  
-- Postmortem and regression tests: [postmortem_and_regression_tests.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/OpsDeploy/postmortem_and_regression_tests.md)  
-- Release calendar and change freeze: [release_calendar_and_change_freeze.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/OpsDeploy/release_calendar_and_change_freeze.md)  
-- Incident comms and Statuspage: [incident_comms_and_statuspage.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/OpsDeploy/incident_comms_and_statuspage.md)  
-- Shadow traffic mirroring: [shadow_traffic_mirroring.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/OpsDeploy/shadow_traffic_mirroring.md)  
-- Read-only mode and maintenance: [read_only_mode_and_maintenance_window.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/OpsDeploy/read_only_mode_and_maintenance_window.md)  
-- DB migration guardrails: [db_migration_guardrails.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/OpsDeploy/db_migration_guardrails.md)
+| Scenario | Fix Page |
+|----------|----------|
+| Rollout readiness | [rollout_readiness_gate.md](./rollout_readiness_gate.md) |
+| Canary strategy | [staged_rollout_canary.md](./staged_rollout_canary.md) |
+| Blue/green cutover | [blue_green_switchovers.md](./blue_green_switchovers.md) |
+| Version pin & freeze | [version_pinning_and_model_lock.md](./version_pinning_and_model_lock.md) |
+| Vector index swap | [vector_index_build_and_swap.md](./vector_index_build_and_swap.md) |
+| Cache warmup | [cache_warmup_invalidation.md](./cache_warmup_invalidation.md) |
+| Rate limits | [rate_limit_backpressure.md](./rate_limit_backpressure.md) |
+| Feature flags | [feature_flags_safe_launch.md](./feature_flags_safe_launch.md) |
+| Idempotency | [idempotency_dedupe.md](./idempotency_dedupe.md) |
+| Retry logic | [retry_backoff.md](./retry_backoff.md) |
+| Rollback plan | [rollback_and_fast_recovery.md](./rollback_and_fast_recovery.md) |
+| Postmortems | [postmortem_and_regression_tests.md](./postmortem_and_regression_tests.md) |
+| Change freeze | [release_calendar_and_change_freeze.md](./release_calendar_and_change_freeze.md) |
+| Incident comms | [incident_comms_and_statuspage.md](./incident_comms_and_statuspage.md) |
+| Shadow traffic | [shadow_traffic_mirroring.md](./shadow_traffic_mirroring.md) |
+| Maintenance window | [read_only_mode_and_maintenance_window.md](./read_only_mode_and_maintenance_window.md) |
+| DB migrations | [db_migration_guardrails.md](./db_migration_guardrails.md) |
 
 ---
 
 ## 60-second ship checklist
 
-1) **Freeze the world**  
-   Pin model IDs, tool schemas, prompt headers, retriever weights. Record `MODEL_LOCK`, `PROMPT_REV`, `INDEX_HASH`.
-
-2) **Warm up safely**  
-   Build new index off-path. Validate counts, hashes, sample ΔS. Preload caches with canary questions.
-
-3) **Shadow then canary**  
-   Mirror production queries. Compare ΔS, coverage, latency, and error rate. If stable, release to 5% then 25% then 100%.
-
-4) **Guard the edge**  
-   Turn on backpressure at the gateway. Enable idempotency keys and bounded retries before any side effects.
-
-5) **Know your exit**  
-   Prepare rollback switch and comms template. Keep Statuspage draft and regression pack ready.
+1. **Freeze the world** → Pin model IDs, prompt revs, index hashes.  
+2. **Warm up safely** → Build index off-path, preload caches with canary.  
+3. **Shadow then canary** → Mirror prod queries, step rollout 5% → 25% → 100%.  
+4. **Guard the edge** → Enable backpressure, retries with jitter, idempotency keys.  
+5. **Know your exit** → Keep rollback switch and comms draft ready.  
 
 ---
 
 ## Symptoms → exact fix
 
 | What you see | Open this |
-|---|---|
-| First requests after deploy hit old snippets | [vector_index_build_and_swap.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/OpsDeploy/vector_index_build_and_swap.md) · [cache_warmup_invalidation.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/OpsDeploy/cache_warmup_invalidation.md) |
-| Canary clean, full rollout flips answers | [staged_rollout_canary.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/OpsDeploy/staged_rollout_canary.md) · [feature_flags_safe_launch.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/OpsDeploy/feature_flags_safe_launch.md) |
-| Wrong model responds after failover | [version_pinning_and_model_lock.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/OpsDeploy/version_pinning_and_model_lock.md) |
-| Retries cause duplicate charges or writes | [idempotency_dedupe.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/OpsDeploy/idempotency_dedupe.md) · [retry_backoff.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/OpsDeploy/retry_backoff.md) |
-| RL storms, queue explosion, timeouts | [rate_limit_backpressure.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/OpsDeploy/rate_limit_backpressure.md) |
-| Need instant safe rollback plan | [rollback_and_fast_recovery.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/OpsDeploy/rollback_and_fast_recovery.md) · [blue_green_switchovers.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/OpsDeploy/blue_green_switchovers.md) |
-| Maintenance window corrupts anchors | [read_only_mode_and_maintenance_window.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/OpsDeploy/read_only_mode_and_maintenance_window.md) · [db_migration_guardrails.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/OpsDeploy/db_migration_guardrails.md) |
-| Unsure if it is safe to ship | [rollout_readiness_gate.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/OpsDeploy/rollout_readiness_gate.md) |
+|--------------|-----------|
+| Deploy points to old snippets | [vector_index_build_and_swap.md](./vector_index_build_and_swap.md) · [cache_warmup_invalidation.md](./cache_warmup_invalidation.md) |
+| Canary fine, full rollout breaks | [staged_rollout_canary.md](./staged_rollout_canary.md) · [feature_flags_safe_launch.md](./feature_flags_safe_launch.md) |
+| Wrong model after failover | [version_pinning_and_model_lock.md](./version_pinning_and_model_lock.md) |
+| Retries duplicate charges | [idempotency_dedupe.md](./idempotency_dedupe.md) · [retry_backoff.md](./retry_backoff.md) |
+| RL storms, timeouts | [rate_limit_backpressure.md](./rate_limit_backpressure.md) |
+| Need rollback now | [rollback_and_fast_recovery.md](./rollback_and_fast_recovery.md) · [blue_green_switchovers.md](./blue_green_switchovers.md) |
+| Maintenance corrupts anchors | [read_only_mode_and_maintenance_window.md](./read_only_mode_and_maintenance_window.md) · [db_migration_guardrails.md](./db_migration_guardrails.md) |
+| Unsure if safe to ship | [rollout_readiness_gate.md](./rollout_readiness_gate.md) |
+
+---
+
+## FAQ
+
+**Q: What does ΔS mean here?**  
+A: ΔS is a stability score. It measures how much the retrieved content drifts from the expected anchor when you change the query slightly. Lower is better (≤ 0.45 is safe).  
+
+**Q: What is λ convergence?**  
+A: λ tracks whether retrieval order flips unpredictably. If λ is stable across seeds, your rollout is consistent.  
+
+**Q: Why do I need idempotency keys?**  
+A: Without them, retries can double-charge a user or run the same side-effect twice. Keys make every request “safe to retry.”  
+
+**Q: How do I know if my index swap worked?**  
+A: Check doc counts and hashes before cutover. If they mismatch, you’re pointing at an incomplete index.  
+
+**Q: Canary looked fine but production broke — why?**  
+A: Canary often hides tail-latency, cache misses, or load-based rate limits. Always test at increasing % of live traffic.  
+
+**Q: Why do you mention rollback comms?**  
+A: Technical rollback is only half. Users and stakeholders need fast updates, so pre-draft Statuspage or Slack messages are essential.  
 
 ---
 
