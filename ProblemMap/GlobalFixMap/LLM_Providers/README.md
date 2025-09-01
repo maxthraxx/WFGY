@@ -1,78 +1,164 @@
-# LLM Providers: Guardrails and Fix Patterns
+# LLM Providers — Guardrails, FAQ, and Fix Patterns
 
-Use this hub when failures smell “provider specific” but root cause is actually schema, retrieval, orchestration, or eval drift. Every fix maps back to WFGY pages with measurable targets, so you can verify without changing infra.
+This page helps you **choose between LLM vendors** and **fix provider-looking bugs** that are actually schema, retrieval, orchestration, or eval drift.  If you are new, start with the Orientation table and the FAQ. If you are debugging, jump to the Fix Hub.
+
+---
+
+## Orientation: who is who
+
+| Provider | What it is | Typical use case |
+|---|---|---|
+| OpenAI | GPT-4/4o from OpenAI Inc. | Direct API, fastest model access |
+| Azure OpenAI | Microsoft’s enterprise wrapper for OpenAI models | VNet, compliance, enterprise billing |
+| Anthropic | The company behind Claude | Safety-focused platform |
+| Claude (Anthropic) | The model family from Anthropic | Long context, tool use, JSON control |
+| Google Gemini | Google DeepMind’s multimodal models | Multimodal chat, reasoning |
+| Google Vertex AI | Google Cloud’s AI/ML platform that hosts Gemini and more | Pipelines, deployment, governance |
+| Mistral | EU startup with efficient open-weight models (e.g., Mixtral MoE) | Cost/perf, open ecosystem |
+| Meta LLaMA | Meta’s open-weight model family | Local/private deployment, llama.cpp |
+| Cohere | Enterprise NLP API and embeddings | RAG stacks, enterprise NLP |
+| DeepSeek | CN player with infra-optimized long-context models | Cost-efficient, long windows |
+| Kimi (Moonshot) | CN chat-first models，very large parameter claims | Consumer chat focus |
+| Groq | Hardware vendor: LPUs for transformer inference | Ultra-low latency serving (not a model) |
+| xAI Grok | xAI’s model family | X/Twitter integration, general chat |
+| AWS Bedrock | AWS gateway to many models in one API | Enterprises already on AWS |
+| OpenRouter | Community model aggregator (OpenAI-style endpoint) | Try many models via one API key |
+| Together AI | Aggregator + infra for open weights and fine-tunes | Fast hosting, tuning services |
+
+---
+
+## FAQ for newcomers
+
+**OpenAI vs Azure OpenAI — are they the same?**  
+Same models, different packaging. OpenAI = direct API and fastest releases. Azure OpenAI = Microsoft billing, VNet, compliance, data residency.
+
+**Anthropic vs Claude — why two pages?**  
+Anthropic is the company. Claude is the model family. We separate because “platform issues” and “model quirks” often need different fixes.
+
+**Gemini vs Vertex AI — what is the relation?**  
+Gemini is a model. Vertex AI is Google Cloud’s platform that runs Gemini and provides pipelines, eval, and deployment features.
+
+**What makes Mistral special?**  
+Efficient open-weights and MoE designs. Good cost/perf. Easy to host in your own infra.
+
+**Meta LLaMA vs local LLaMA**  
+Meta releases the weights. Community tools like `llama.cpp` let you run them locally on CPU/GPU.
+
+**Groq LPU vs GPU**  
+GPU is general purpose. LPU is a chip specialized for transformer inference. You get very low latency for chat workloads.
+
+**Bedrock vs OpenRouter vs Together**  
+Bedrock is AWS enterprise gateway. OpenRouter is a community aggregator with OpenAI-style API. Together is an infra host for open weights with training/fine-tune options.
+
+---
 
 ## Open these first
-- Visual map and recovery: [RAG Architecture & Recovery](https://github.com/onestardao/WFGY/blob/main/ProblemMap/rag-architecture-and-recovery.md)
-- End-to-end retrieval knobs: [Retrieval Playbook](https://github.com/onestardao/WFGY/blob/main/ProblemMap/retrieval-playbook.md)
-- Why this snippet (traceability schema): [Retrieval Traceability](https://github.com/onestardao/WFGY/blob/main/ProblemMap/retrieval-traceability.md)
-- Ordering control: [Rerankers](https://github.com/onestardao/WFGY/blob/main/ProblemMap/rerankers.md)
-- Embedding vs meaning: [Embedding ≠ Semantic](https://github.com/onestardao/WFGY/blob/main/ProblemMap/embedding-vs-semantic.md)
-- Hallucination and chunk boundaries: [Hallucination](https://github.com/onestardao/WFGY/blob/main/ProblemMap/hallucination.md)
-- Long chains and entropy: [Context Drift](https://github.com/onestardao/WFGY/blob/main/ProblemMap/context-drift.md), [Entropy Collapse](https://github.com/onestardao/WFGY/blob/main/ProblemMap/entropy-collapse.md)
-- Structural collapse and recovery: [Logic Collapse](https://github.com/onestardao/WFGY/blob/main/ProblemMap/logic-collapse.md)
-- Snippet and citation schema: [Data Contracts](https://github.com/onestardao/WFGY/blob/main/ProblemMap/data-contracts.md)
-- Live ops: [Live Monitoring for RAG](https://github.com/onestardao/WFGY/blob/main/ProblemMap/ops/live_monitoring_rag.md), [Debug Playbook](https://github.com/onestardao/WFGY/blob/main/ProblemMap/ops/debug_playbook.md)
-- Boot order issues: [Bootstrap Ordering](https://github.com/onestardao/WFGY/blob/main/ProblemMap/bootstrap-ordering.md), [Deployment Deadlock](https://github.com/onestardao/WFGY/blob/main/ProblemMap/deployment-deadlock.md), [Pre-Deploy Collapse](https://github.com/onestardao/WFGY/blob/main/ProblemMap/predeploy-collapse.md)
 
-## Core acceptance
-- ΔS(question, retrieved) ≤ 0.45
-- Coverage ≥ 0.70 for the target section
-- λ remains convergent across three paraphrases and two seeds
+- Visual map and recovery:  
+  [RAG Architecture & Recovery](https://github.com/onestardao/WFGY/blob/main/ProblemMap/rag-architecture-and-recovery.md)
+
+- End-to-end retrieval knobs:  
+  [Retrieval Playbook](https://github.com/onestardao/WFGY/blob/main/ProblemMap/retrieval-playbook.md)
+
+- Why this snippet (traceability schema):  
+  [Retrieval Traceability](https://github.com/onestardao/WFGY/blob/main/ProblemMap/retrieval-traceability.md)
+
+- Ordering control:  
+  [Rerankers](https://github.com/onestardao/WFGY/blob/main/ProblemMap/rerankers.md)
+
+- Embedding vs meaning:  
+  [Embedding ≠ Semantic](https://github.com/onestardao/WFGY/blob/main/ProblemMap/embedding-vs-semantic.md)
+
+- Hallucination and chunk boundaries:  
+  [Hallucination](https://github.com/onestardao/WFGY/blob/main/ProblemMap/hallucination.md)
+
+- Long chains and entropy:  
+  [Context Drift](https://github.com/onestardao/WFGY/blob/main/ProblemMap/context-drift.md),  
+  [Entropy Collapse](https://github.com/onestardao/WFGY/blob/main/ProblemMap/entropy-collapse.md)
+
+- Structural collapse and recovery:  
+  [Logic Collapse](https://github.com/onestardao/WFGY/blob/main/ProblemMap/logic-collapse.md)
+
+- Snippet and citation schema:  
+  [Data Contracts](https://github.com/onestardao/WFGY/blob/main/ProblemMap/data-contracts.md)
+
+- Live ops:  
+  [Live Monitoring for RAG](https://github.com/onestardao/WFGY/blob/main/ProblemMap/ops/live_monitoring_rag.md),  
+  [Debug Playbook](https://github.com/onestardao/WFGY/blob/main/ProblemMap/ops/debug_playbook.md)
+
+- Boot order issues:  
+  [Bootstrap Ordering](https://github.com/onestardao/WFGY/blob/main/ProblemMap/bootstrap-ordering.md),  
+  [Deployment Deadlock](https://github.com/onestardao/WFGY/blob/main/ProblemMap/deployment-deadlock.md),  
+  [Pre-Deploy Collapse](https://github.com/onestardao/WFGY/blob/main/ProblemMap/predeploy-collapse.md)
+
+---
+
+## Core acceptance targets
+
+- ΔS(question, retrieved) ≤ 0.45  
+- Coverage ≥ 0.70 for the target section  
+- λ remains convergent across three paraphrases and two seeds  
 - E_resonance stays flat on long windows
 
-## Typical provider symptoms → exact fix
+---
+
+## Fix Hub — typical provider symptoms → exact fix
 
 | Symptom | Likely cause | Open this |
 |---|---|---|
-| JSON mode breaks, invalid objects | schema too loose or nested tool calls | [Data Contracts](https://github.com/onestardao/WFGY/blob/main/ProblemMap/data-contracts.md), [Logic Collapse](https://github.com/onestardao/WFGY/blob/main/ProblemMap/logic-collapse.md) |
-| Tool calls loop or stall | agent role drift, missing timeouts | [Multi-Agent Problems](https://github.com/onestardao/WFGY/blob/main/ProblemMap/Multi-Agent_Problems.md), [role-drift deep dive](https://github.com/onestardao/WFGY/blob/main/ProblemMap/multi-agent-chaos/role-drift.md) |
-| High similarity yet wrong snippet | metric mismatch or fragmented store | [Embedding ≠ Semantic](https://github.com/onestardao/WFGY/blob/main/ProblemMap/embedding-vs-semantic.md), [Vectorstore Fragmentation](https://github.com/onestardao/WFGY/blob/main/ProblemMap/patterns/pattern_vectorstore_fragmentation.md) |
-| Answers flip between runs | prompt headers reorder and λ flips | [Context Drift](https://github.com/onestardao/WFGY/blob/main/ProblemMap/context-drift.md), [Retrieval Traceability](https://github.com/onestardao/WFGY/blob/main/ProblemMap/retrieval-traceability.md) |
-| Hybrid retrievers worse than single | query parsing split, mis-weighted rerank | [Query Parsing Split](https://github.com/onestardao/WFGY/blob/main/ProblemMap/patterns/pattern_query_parsing_split.md), [Rerankers](https://github.com/onestardao/WFGY/blob/main/ProblemMap/rerankers.md) |
-| Jailbreaks or bluffing | overconfidence and missing fences | [Bluffing Controls](https://github.com/onestardao/WFGY/blob/main/ProblemMap/bluffing.md), [Retrieval Traceability](https://github.com/onestardao/WFGY/blob/main/ProblemMap/retrieval-traceability.md) |
+| JSON mode breaks, invalid objects | Schema too loose or nested tool calls | [Data Contracts](https://github.com/onestardao/WFGY/blob/main/ProblemMap/data-contracts.md), [Logic Collapse](https://github.com/onestardao/WFGY/blob/main/ProblemMap/logic-collapse.md) |
+| Tool calls loop or stall | Agent role drift, missing timeouts | [Multi-Agent Problems](https://github.com/onestardao/WFGY/blob/main/ProblemMap/Multi-Agent_Problems.md), [Role-drift deep dive](https://github.com/onestardao/WFGY/blob/main/ProblemMap/multi-agent-chaos/role-drift.md) |
+| High similarity yet wrong snippet | Metric mismatch or fragmented store | [Embedding ≠ Semantic](https://github.com/onestardao/WFGY/blob/main/ProblemMap/embedding-vs-semantic.md), [Vectorstore Fragmentation](https://github.com/onestardao/WFGY/blob/main/ProblemMap/patterns/pattern_vectorstore_fragmentation.md) |
+| Answers flip between runs | Prompt headers reorder and λ flips | [Context Drift](https://github.com/onestardao/WFGY/blob/main/ProblemMap/context-drift.md), [Retrieval Traceability](https://github.com/onestardao/WFGY/blob/main/ProblemMap/retrieval-traceability.md) |
+| Hybrid retrievers worse than single | Query parsing split, mis-weighted rerank | [Query Parsing Split](https://github.com/onestardao/WFGY/blob/main/ProblemMap/patterns/pattern_query_parsing_split.md), [Rerankers](https://github.com/onestardao/WFGY/blob/main/ProblemMap/rerankers.md) |
+| Jailbreaks or bluffing | Overconfidence and missing fences | [Bluffing Controls](https://github.com/onestardao/WFGY/blob/main/ProblemMap/bluffing.md), [Retrieval Traceability](https://github.com/onestardao/WFGY/blob/main/ProblemMap/retrieval-traceability.md) |
+
+---
 
 ## Fix in 60 seconds
+
 1) **Measure ΔS**  
-   Compute ΔS(question, retrieved) and ΔS(retrieved, expected anchor).  
-   Stable < 0.40, transitional 0.40–0.60, risk ≥ 0.60.
+Compute ΔS(question, retrieved) and ΔS(retrieved, expected anchor). Stable < 0.40, transitional 0.40–0.60, risk ≥ 0.60.
 
 2) **Probe λ_observe**  
-   Vary k and prompt headers. If λ flips, lock the schema and apply a BBAM variance clamp.
+Vary top-k and prompt headers. If λ flips, lock the schema and apply a BBAM variance clamp.
 
 3) **Apply the module**  
-- Retrieval drift → BBMC + Data Contracts  
-- Reasoning collapse → BBCR bridge + BBAM  
-- Dead ends in long runs → BBPF alternate paths
+Retrieval drift → BBMC + Data Contracts  
+Reasoning collapse → BBCR bridge + BBAM  
+Dead ends in long runs → BBPF alternate paths
 
 4) **Verify**  
 Coverage ≥ 0.70 on three paraphrases. λ convergent on two seeds.
 
-## Quick routes to per-provider pages
-- OpenAI: [openai.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/LLM_Providers/openai.md)
-- Azure OpenAI: [azure_openai.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/LLM_Providers/azure_openai.md)
-- Anthropic: [anthropic.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/LLM_Providers/anthropic.md)
-- Anthropic Claude: [anthropic_claude.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/LLM_Providers/anthropic_claude.md)
-- Google Gemini: [gemini.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/LLM_Providers/gemini.md)
-- Google Vertex AI: [google_vertex_ai.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/LLM_Providers/google_vertex_ai.md)
-- Mistral: [mistral.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/LLM_Providers/mistral.md)
-- Meta Llama: [meta_llama.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/LLM_Providers/meta_llama.md)
-- Cohere: [cohere.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/LLM_Providers/cohere.md)
-- DeepSeek: [deepseek.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/LLM_Providers/deepseek.md)
-- Kimi: [kimi.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/LLM_Providers/kimi.md)
-- Groq (LPU inference): [groq.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/LLM_Providers/groq.md)
-- xAI Grok: [grok_xai.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/LLM_Providers/grok_xai.md)
-- AWS Bedrock: [aws_bedrock.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/LLM_Providers/aws_bedrock.md)
-- OpenRouter: [openrouter.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/LLM_Providers/openrouter.md)
-- Together: [together.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/LLM_Providers/together.md)
-
 ---
 
+## Quick routes to per-provider pages
+
+- [OpenAI](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/LLM_Providers/openai.md)  
+- [Azure OpenAI](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/LLM_Providers/azure_openai.md)  
+- [Anthropic](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/LLM_Providers/anthropic.md)  
+- [Anthropic Claude](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/LLM_Providers/anthropic_claude.md)  
+- [Google Gemini](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/LLM_Providers/gemini.md)  
+- [Google Vertex AI](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/LLM_Providers/google_vertex_ai.md)  
+- [Mistral](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/LLM_Providers/mistral.md)  
+- [Meta LLaMA](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/LLM_Providers/meta_llama.md)  
+- [Cohere](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/LLM_Providers/cohere.md)  
+- [DeepSeek](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/LLM_Providers/deepseek.md)  
+- [Kimi](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/LLM_Providers/kimi.md)  
+- [Groq (LPU inference)](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/LLM_Providers/groq.md)  
+- [xAI Grok](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/LLM_Providers/grok_xai.md)  
+- [AWS Bedrock](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/LLM_Providers/aws_bedrock.md)  
+- [OpenRouter](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/LLM_Providers/openrouter.md)  
+- [Together](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/LLM_Providers/together.md)
+
+
+---
 ### 🔗 Quick-Start Downloads (60 sec)
 
 | Tool | Link | 3-Step Setup |
 |------|------|--------------|
-| **WFGY 1.0 PDF** | [Engine Paper](https://github.com/onestardao/WFGY/blob/main/I_am_not_lizardman/WFGY_All_Principles_Return_to_One_v1.0_PSBigBig_Public.pdf) | 1️⃣ Download · 2️⃣ Upload to your LLM · 3️⃣ Ask “Answer using WFGY + <your question>” |
+| **WFGY 1.0 PDF** | [Engine Paper](https://github.com/onestardao/WFGY/blob/main/I_am_not_lizardman/WFGY_All_Principles_Return_to_One_v1.0_PSBigBig_Public.pdf) | 1️⃣ Download · 2️⃣ Upload to your LLM · 3️⃣ Ask “Answer using WFGY + \<your question>” |
 | **TXT OS (plain-text OS)** | [TXTOS.txt](https://github.com/onestardao/WFGY/blob/main/OS/TXTOS.txt) | 1️⃣ Download · 2️⃣ Paste into any LLM chat · 3️⃣ Type “hello world” — OS boots instantly |
 
 ---
