@@ -34,10 +34,10 @@ Each symptom maps to an auditable WFGY fix page with measurable acceptance.
 | Streaming stalls, body cutoffs | [timeouts_streaming_body_limits.md](./timeouts_streaming_body_limits.md) |
 | Stateless jobs, idempotency, dedupe | [stateless_kv_queue_patterns.md](./stateless_kv_queue_patterns.md) |
 | Edge cache invalidation | [edge_cache_invalidation.md](./edge_cache_invalidation.md) |
-| Egress rules and webhook storms | [egress_rules_and_webhooks.md](./egress_rules_and_webhooks.md) |
-| CI/CD for serverless | [serverless_ci_cd.md](./serverless_ci_cd.md) |
-| Bootstrap order and migrations | [env_bootstrap_and_migrations.md](./env_bootstrap_and_migrations.md) |
-| Quotas, scaling, budget caps | [quotas_scaling_budget_caps.md](./quotas_scaling_budget_caps.md) |
+| Egress rules and webhook storms | [network_egress_and_vpc.md](./network_egress_and_vpc.md) |
+| CI/CD for serverless | [deploy_traffic_shaping.md](./deploy_traffic_shaping.md) |
+| Bootstrap order and migrations | [bootstrap-ordering.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/bootstrap-ordering.md) |
+| Quotas, scaling, budget caps | [serverless_limits_matrix.md](./serverless_limits_matrix.md) |
 | Secrets rotation | [secrets_rotation.md](./secrets_rotation.md) |
 | Multi-region routing | [multi_region_routing.md](./multi_region_routing.md) |
 | Region failover drills | [region_failover_drills.md](./region_failover_drills.md) |
@@ -58,10 +58,10 @@ Each symptom maps to an auditable WFGY fix page with measurable acceptance.
 | Streaming stalls or body cutoffs | Proxy buffers, tiny read timeouts, chunked encoding quirks | [timeouts_streaming_body_limits.md](./timeouts_streaming_body_limits.md) |
 | Stateless bugs and lost work | In-memory state, duplicate triggers, missing idempotency | [stateless_kv_queue_patterns.md](./stateless_kv_queue_patterns.md) |
 | Users see stale results | Cache keys drift, no purge on writes | [edge_cache_invalidation.md](./edge_cache_invalidation.md) |
-| Webhook storms or data leaks | Open egress, retry spirals, payload bloat | [egress_rules_and_webhooks.md](./egress_rules_and_webhooks.md) |
-| Drift between preview and prod | Env mismatch, unsafe deploys, missing checks | [serverless_ci_cd.md](./serverless_ci_cd.md) |
-| Boot fails after migration | Schema not ready, wrong order, partial writes | [env_bootstrap_and_migrations.md](./env_bootstrap_and_migrations.md) |
-| Surprise bills and throttles | No quotas, bursty retries, N+1 calls | [quotas_scaling_budget_caps.md](./quotas_scaling_budget_caps.md) |
+| Webhook storms or data leaks | Open egress, retry spirals, payload bloat | [network_egress_and_vpc.md](./network_egress_and_vpc.md) |
+| Drift between preview and prod | Env mismatch, unsafe deploys, missing checks | [deploy_traffic_shaping.md](./deploy_traffic_shaping.md) |
+| Boot fails after migration | Schema not ready, wrong order, partial writes | [bootstrap-ordering.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/bootstrap-ordering.md) |
+| Surprise bills and throttles | No quotas, bursty retries, N+1 calls | [serverless_limits_matrix.md](./serverless_limits_matrix.md) |
 | Token leaks and broken rotation | Long-lived keys, missing overlap windows | [secrets_rotation.md](./secrets_rotation.md) |
 | Cross-region weirdness | Sticky sessions, unsynced caches, DNS TTLs | [multi_region_routing.md](./multi_region_routing.md) |
 | Failover works only on paper | Stale health checks, untested runbooks | [region_failover_drills.md](./region_failover_drills.md) |
