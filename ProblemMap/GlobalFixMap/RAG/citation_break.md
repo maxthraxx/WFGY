@@ -1,8 +1,3 @@
-好的，來完成 **`ProblemMap/GlobalFixMap/RAG/citation_break.md`**。我會保持和前面幾頁一致的格式、文字超連結、你的統一 footer。
-
----
-
-````markdown
 # Citation Break in RAG — Guardrails and Fix Pattern
 
 When answers look plausible but the supporting citation is missing, wrong, or broken.  
@@ -116,11 +111,4 @@ Tell me:
 [![Blow](https://img.shields.io/badge/Blow-Game%20Logic-purple?style=flat-square)](https://github.com/onestardao/WFGY/tree/main/OS/BlowBlowBlow)
 
 </div>
-```
 
----
-
-✅ **`citation_break.md` 已完成**。
-下一個要處理的是 **`hybrid_failure.md`**。
-
-要我直接開始寫 **hybrid\_failure.md** 嗎？
