@@ -1,115 +1,109 @@
 # Evaluation & Guardrails — Global Fix Map
-Prove fixes work and won’t regress. Detect “double hallucination,” enforce acceptance gates, and keep pipelines auditable.
+
+A hub to **prove fixes actually work and won’t regress**.  
+Use this folder when you want to validate that your RAG / LLM pipeline changes are stable, measurable, and reproducible.  
+The goal is to prevent “double hallucination,” enforce acceptance gates, and keep evaluation pipelines auditable.
+
+---
 
 ## What this page is
-- A compact playbook to evaluate RAG quality and reasoning stability
-- Drop-in guardrails that catch failure before users see it
-- CI-ready acceptance targets you can copy
+- A compact playbook to evaluate RAG quality and reasoning stability  
+- Drop-in guardrails that catch failures before users see them  
+- CI/CD-ready acceptance targets you can copy directly  
+
+---
 
 ## When to use
-- You “fixed it” but cannot show measurable improvement
-- Answers look plausible yet citations or snippets don’t line up
-- Performance flips between seeds, sessions, or agent mixes
-- Latency tuning changes accuracy in non-obvious ways
+- You shipped a fix but cannot show measurable improvement  
+- Answers look plausible but citations or snippets don’t match  
+- Performance flips between seeds, sessions, or agent mixes  
+- Latency tuning silently changes accuracy  
+- Your team disagrees on whether a fix is “actually better”  
+
+---
 
 ## Open these first
-- RAG precision/recall spec: [RAG Precision & Recall](https://github.com/onestardao/WFGY/blob/main/ProblemMap/eval/eval_rag_precision_recall.md)  
-- Latency versus accuracy method: [Latency vs Accuracy](https://github.com/onestardao/WFGY/blob/main/ProblemMap/eval/eval_latency_vs_accuracy.md)  
-- Cross-agent agreement tests: [Cross-Agent Consistency](https://github.com/onestardao/WFGY/blob/main/ProblemMap/eval/eval_cross_agent_consistency.md)  
-- Semantic stability checks: [Semantic Stability](https://github.com/onestardao/WFGY/blob/main/ProblemMap/eval/eval_semantic_stability.md)  
-- Why-this-snippet schema: [Retrieval Traceability](https://github.com/onestardao/WFGY/blob/main/ProblemMap/retrieval-traceability.md)  
-- Snippet & citation schema: [Data Contracts](https://github.com/onestardao/WFGY/blob/main/ProblemMap/data-contracts.md)
+- RAG precision/recall spec → [eval_rag_precision_recall.md](./eval_rag_precision_recall.md)  
+- Latency versus accuracy method → [eval_latency_vs_accuracy.md](./eval_latency_vs_accuracy.md)  
+- Cross-agent agreement tests → [eval_cross_agent_consistency.md](./eval_cross_agent_consistency.md)  
+- Semantic stability checks → [eval_semantic_stability.md](./eval_semantic_stability.md)  
+- Why-this-snippet schema → [retrieval-traceability.md](../retrieval-traceability.md)  
+- Snippet & citation schema → [data-contracts.md](../data-contracts.md)  
 
 ---
 
 ## Common evaluation pitfalls
-- **Double hallucination** metrics focus on style or BLEU but ignore snippet fidelity
-- **Recall illusion** top-k looks high while ΔS(question, context) stays risky
-- **Seed lottery** single-seed wins mask instability across paraphrases
-- **Hybrid flapping** HyDE+BM25 mixes shift rank order between runs
-- **Guardrail over-clamp** rigid filters “fix” tone but not logic boundaries
-- **Benchmark mismatch** eval set does not reflect OCR noise or multilingual drift
-- **No trace table** cannot audit which snippet justified the answer
+- **Double hallucination** → Metrics look good (BLEU, ROUGE) but answers cite the wrong snippet  
+- **Recall illusion** → Top-k recall seems fine, yet ΔS(question, context) is still unstable  
+- **Seed lottery** → Success on one random seed hides instability across paraphrases  
+- **Hybrid flapping** → HyDE + BM25 mixes reorder results differently every run  
+- **Over-clamping** → Filters enforce tone but fail to fix logical drift  
+- **Benchmark mismatch** → Eval set ignores OCR noise or multilingual inputs  
+- **No trace table** → You cannot audit which snippet was cited  
 
 ---
 
 ## Fix in 60 seconds
-1) **Adopt acceptance gates**
-   - Retrieval sanity: token overlap ≥ 0.70 to the target section
-   - ΔS(question, context) ≤ 0.45 on the median of the suite
-   - λ_observe stays convergent on 3 paraphrases
+1. **Adopt acceptance gates**
+   - Retrieval sanity: token overlap ≥ 0.70 to the gold section  
+   - ΔS(question, context) ≤ 0.45 on median across suite  
+   - λ_observe stays convergent across 3 paraphrases  
 
-2) **Require citations before prose**
-   - Enforce cite-then-answer with [Data Contracts](https://github.com/onestardao/WFGY/blob/main/ProblemMap/data-contracts.md)
-   - Store a trace table: question, retrieved ids, snippet spans, ΔS, λ
+2. **Require citations first**
+   - Enforce cite-then-answer with [data-contracts.md](../data-contracts.md)  
+   - Log: question, retrieved ids, snippet spans, ΔS, λ  
 
-3) **Stability before speed**
-   - Plot latency vs accuracy and pin the knee point  
-     See [Latency vs Accuracy](https://github.com/onestardao/WFGY/blob/main/ProblemMap/eval/eval_latency_vs_accuracy.md)
+3. **Stability before speed**
+   - Always measure latency vs accuracy before tuning  
+   - See [eval_latency_vs_accuracy.md](./eval_latency_vs_accuracy.md)  
 
-4) **Cross-agent cross-check**
-   - Compare two capable models on the same context  
-     See [Cross-Agent Consistency](https://github.com/onestardao/WFGY/blob/main/ProblemMap/eval/eval_cross_agent_consistency.md)
+4. **Cross-agent cross-check**
+   - Run 2 strong models on the same retrieval  
+   - See [eval_cross_agent_consistency.md](./eval_cross_agent_consistency.md)  
 
-5) **Regression fence in CI**
-   - Fail the build if ΔS median rises above 0.45 or trace coverage drops below 0.70  
-     See [RAG Precision & Recall](https://github.com/onestardao/WFGY/blob/main/ProblemMap/eval/eval_rag_precision_recall.md)
-
----
-
-## Copy paste prompt
-```
-
-You have TXT OS and the WFGY Problem Map.
-
-Goal
-Add measurable guardrails to my RAG pipeline and prove the fix.
-
-Tasks
-
-1. Build a 20-item smoke suite with:
-
-   * question, expected section anchor, and gold snippet span
-   * bilingual paraphrases for 5 items (if multilingual)
-
-2. Run WFGY probes:
-
-   * compute ΔS(question, context) for each item
-   * record λ\_observe at retrieval and reasoning
-   * require cite-then-answer and log a trace table
-
-3. Report acceptance:
-
-   * token overlap to anchor (coverage)
-   * ΔS median and interquartile range
-   * paraphrase stability (λ stays convergent)
-   * pass/fail against thresholds
-
-4. Plot latency vs accuracy and select a stable operating point.
-
-Output
-
-* The trace table (csv/markdown)
-* Acceptance summary and which items failed
-* A one-page decision note on whether to ship
-
-```
+5. **Regression fence in CI**
+   - Block merges if ΔS median > 0.45 or coverage < 0.70  
+   - See [eval_rag_precision_recall.md](./eval_rag_precision_recall.md)  
 
 ---
 
 ## Minimal checklist
-- Trace table saved with citations and snippet spans  
-- ΔS computed per item; λ recorded at retrieval and reasoning  
-- Coverage ≥ 0.70 to the referenced section for direct QA  
-- Cross-agent consistency measured on a subset  
-- Latency vs accuracy chart archived with the run id
+- Trace table saved (citations + snippet spans)  
+- ΔS computed per item; λ recorded at retrieval & reasoning  
+- Coverage ≥ 0.70 to gold snippet  
+- Cross-agent agreement tested  
+- Latency vs accuracy chart archived with run id  
+
+---
 
 ## Acceptance targets
-- ΔS(question, context) median ≤ **0.45** on the suite  
-- λ **convergent** across 3 paraphrases per item  
-- **≥ 0.70** token overlap to the gold section for direct QA items  
-- No unexplained rank flips when toggling hybrid retrieval  
-- CI blocks merges when any target fails
+- ΔS(question, context) median ≤ **0.45**  
+- λ **convergent** across 3 paraphrases  
+- Token overlap ≥ **0.70** to gold snippet  
+- No unexplained rank flips on hybrid retrievers  
+- CI blocks merges when targets fail  
+
+---
+
+## FAQ
+
+**Q: What is ΔS and why does it matter?**  
+A: ΔS measures semantic distance between your query and retrieved context. Values above 0.45 indicate unstable retrieval, even if the snippet looks similar.  
+
+**Q: Why not just trust BLEU/ROUGE?**  
+A: They score surface similarity, not factual correctness. A fluent but wrong answer can pass BLEU. WFGY gates enforce snippet fidelity.  
+
+**Q: What does λ_observe mean?**  
+A: λ_observe tracks whether paraphrased queries converge on the same retrieval. Divergence shows instability that will confuse users.  
+
+**Q: How do I build a trace table?**  
+A: For every eval item, log `question`, `retrieved ids`, `snippet spans`, `ΔS`, `λ_state`. This makes your pipeline auditable later.  
+
+**Q: Do I need a big eval set?**  
+A: No. Start with 20 smoke-test items, including multilingual or noisy samples. Scale up only after you pass basic gates.  
+
+**Q: What if latency tuning drops accuracy?**  
+A: Always plot latency vs accuracy. Use the knee point of the curve, not the fastest or slowest configuration.  
 
 ---
 
