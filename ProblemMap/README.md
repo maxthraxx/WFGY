@@ -88,7 +88,6 @@ You’re not firefighting after the fact—you’re installing a reasoning firew
 
 </details>
 
----
 
 <div align="center">
   <img src="https://github.com/onestardao/WFGY/raw/main/OS/images/tree-semantic-memory.gif"
