@@ -33,61 +33,60 @@ You’re not firefighting after the fact—you’re installing a reasoning firew
 
 
 <details>
-<summary><strong>💥 WFGY Global Fix Map — Full Index (click to expand)</strong></summary>
+<summary>💥 WFGY Global Fix Map — full index (new, click to open)</summary>
 
 #### 🧭 Providers & Agents
-| Family | Coverage (examples) | Pages |
+| Family (link) | Coverage examples | Notes |
 |---|---|---|
-| [**LLM_Providers**](./GlobalFixMap/LLM_Providers/README.md) | OpenAI, Anthropic, Gemini, Mistral, Groq, Kimi | per-vendor guardrails, JSON/tool patterns |
-| [**Agents_Orchestration**](./GlobalFixMap/Agents_Orchestration/README.md) | LangChain, LlamaIndex, multi-agent handoff | role drift, memory fences, tool routing |
-| [**Chatbots_CX**](./GlobalFixMap/Chatbots_CX/README.md) | Dialogflow, Rasa, WatsonX, Intercom | slot/intent, citation-first, safety handoffs |
-| [**Cloud_Serverless**](./GlobalFixMap/Cloud_Serverless/README.md) | GCP, AWS, Azure Functions/API GW | keys, regions, quota, schema locks |
-
+| [**LLM_Providers**](./GlobalFixMap/LLM_Providers/README.md) | OpenAI, Anthropic, Gemini, Mistral, Groq, Kimi, Bedrock, OpenRouter | vendor guardrails + per-provider fix pages |
+| [**Agents_Orchestration**](./GlobalFixMap/Agents_Orchestration/README.md) | LangChain, LlamaIndex, multi-agent handoff | role drift, tool loops, state fences |
+| [**Chatbots_CX**](./GlobalFixMap/Chatbots_CX/README.md) | Dialogflow, Rasa, WatsonX, Intercom, Salesforce bots, Twilio, Copilot Studio | prod chat rails, JSON/tool schema |
+| [**Cloud_Serverless**](./GlobalFixMap/Cloud_Serverless/README.md) | GCP/AWS/Azure serverless, functions, schedulers | cold starts, secrets, ordering |
 
 #### 🧭 Data & Retrieval
-| Family | Coverage (examples) | Pages |
+| Family (link) | Coverage examples | Notes |
 |---|---|---|
-| [**VectorDBs_and_Stores**](./GlobalFixMap/VectorDBs_and_Stores/README.md) | FAISS, Milvus, Weaviate, Redis, Vespa, Qdrant, pgvector, Pinecone, Typesense, Elasticsearch | metric parity, analyzers, rebuild rules |
-| [**RAG_VectorDB**](./GlobalFixMap/RAG_VectorDB/README.md) | metric mismatch, normalization, tokenization, chunk contract | acceptance targets, gold-set checks |
-| [**Retrieval**](./GlobalFixMap/Retrieval/README.md) | retrieval playbook, rerankers, traceability | cite-then-explain, window joins |
-| [**Embeddings**](./GlobalFixMap/Embeddings/README.md) | normalization, scaling, duplicates, poisoning | store compatibility matrix |
-| [**Chunking**](./GlobalFixMap/Chunking/README.md) | boundary errors, anchors, contract enforcement | window overlap, anchors, IDs |
+| [**VectorDBs_and_Stores**](./GlobalFixMap/VectorDBs_and_Stores/README.md) | FAISS, Milvus, Weaviate, Redis, Qdrant, Pinecone, Elasticsearch, pgvector, Typesense, Vespa | metric, analyzer, index hygiene |
+| [**RAG_VectorDB**](./GlobalFixMap/RAG_VectorDB/README.md) | metric mismatch, normalization, casing/tokenization, projection, update skew, hybrid weights, dup collapse, poisoning | store-agnostic knobs |
+| [**Retrieval**](./GlobalFixMap/Retrieval/README.md) | playbook, traceability, rerankers | end-to-end routing & contracts |
+| [**Embeddings**](./GlobalFixMap/Embeddings/README.md) | scaling, normalization, dimension, drift | embedding≠semantic checks |
+| [**Chunking**](./GlobalFixMap/Chunking/README.md) | boundary errors, anchors, contracts | chunk/section discipline |
+| [**RAG**](./GlobalFixMap/RAG/README.md) | architecture & recovery map | visual routes, acceptance targets |
 
 #### 🧭 Input & Parsing
-| Family | Coverage (examples) | Pages |
+| Family (link) | Coverage examples | Notes |
 |---|---|---|
-| [**DocumentAI_OCR**](./GlobalFixMap/DocumentAI_OCR/README.md) | scanned PDFs, tables, math/code blocks | integrity checks, export pitfalls |
-| [**OCR_Parsing**](./GlobalFixMap/OCR_Parsing/README.md) | hyphen splits, invisible chars, headers | parser schemas, snippet IDs |
-| [**Language**](./GlobalFixMap/Language/README.md) | CJK/RTL/Indic/Cyrillic mixes | script mixing, width/diacritics |
-| [**LanguageLocale**](./GlobalFixMap/LanguageLocale/README.md) | locale drift, normalization rules | full/half width, collation traps |
+| [**DocumentAI_OCR**](./GlobalFixMap/DocumentAI_OCR/README.md) | scanned PDFs, tables, math, anchors | pre-embedding text integrity |
+| [**OCR_Parsing**](./GlobalFixMap/OCR_Parsing/README.md) | hyphen splits, headers, code/math collapse | parser rails & checks |
+| [**Language**](./GlobalFixMap/Language/README.md) | multilingual mixes, CJK/RTL/Indic | cross-script retrieval stability |
+| [**LanguageLocale**](./GlobalFixMap/LanguageLocale/README.md) | locale drift, full/halfwidth, diacritics | analyzer/normalization profiles |
 
 #### 🧭 Reasoning & Memory
-| Family | Coverage (examples) | Pages |
+| Family (link) | Coverage examples | Notes |
 |---|---|---|
-| [**Reasoning**](./GlobalFixMap/Reasoning/README.md) | entropy overload, loops, re-entry, proof dead-ends | λ/ΔS probes, bridge proofs |
-| [**Memory_LongContext**](./GlobalFixMap/MemoryLongContext/README.md) | echo loops, signal drop, boundary fade | stitching, anchor resets |
-| [**LocalPolicy_Inference**](./GlobalFixMap/Localpolicy_Inference/README.md) | per-tenant rules, privacy prompts | policy trees, local overrides |
+| [**Reasoning**](./GlobalFixMap/Reasoning/README.md) | entropy overload, loops, symbolic collapse, bridge proofs | BBMC/BBPF/BBCR/BBAM rails |
+| [**MemoryLongContext**](./GlobalFixMap/MemoryLongContext/README.md) | desync, echo loops, boundary fade, signal drop | long-window guardrails |
+| [**Multimodal_LongContext**](./GlobalFixMap/Multimodal_LongContext/README.md) | image+text spans, stitching | multimodal joins & anchors |
 
 #### 🧭 Automation & Ops
-| Family | Coverage (examples) | Pages |
+| Family (link) | Coverage examples | Notes |
 |---|---|---|
-| [**Automation**](./GlobalFixMap/Automation/README.md) | Zapier, Make, n8n, GitHub Actions, GHL | idempotency, warm-up fences, dedupe |
-| [**OpsDeploy**](./GlobalFixMap/OpsDeploy/README.md) | rollout, retries, read-only, shadow traffic | backoff, rollback, comms |
-| [**Safety_PromptIntegrity**](./GlobalFixMap/Safety_PromptIntegrity/README.md) | prompt injection, jailbreaks, role order | fences, system/user order, tool timeouts |
-| [**PromptAssembly**](./GlobalFixMap/PromptAssembly/README.md) | JSON/tool schema, citation-first | templates, eval prompts |
+| [**Automation**](./GlobalFixMap/Automation/README.md) | Zapier, n8n, Make, GitHub Actions, GHL, Airtable… | idempotency, warmups, fences |
+| [**OpsDeploy**](./GlobalFixMap/OpsDeploy/README.md) | rollback, retries, traffic mirroring, read-only mode, migrations | prod safety rails |
+| [**Safety_PromptIntegrity**](./GlobalFixMap/Safety_PromptIntegrity/README.md) | prompt injection, jailbreaks, role order, citations-first, tool timeouts | schema locks |
+| [**PromptAssembly**](./GlobalFixMap/PromptAssembly/README.md) | JSON/tool calls, templates, eval prompts | contract & eval kits |
+| [**LocalDeploy_Inference**](./GlobalFixMap/LocalDeploy_Inference/README.md) | ollama, vLLM, llama.cpp, loaders/quant, kv-cache | local stack guardrails |
+| [**DevTools_CodeAI**](./GlobalFixMap/DevTools_CodeAI/README.md) | Copilot, Cursor, Cody, Codeium, Tabnine, JetBrains AA | IDE/assist rails |
 
 #### 🧭 Eval & Governance
-| Family | Coverage (examples) | Pages |
+| Family (link) | Coverage examples | Notes |
 |---|---|---|
-| [**Eval_Observability**](./GlobalFixMap/Eval_Observability/README.md) | readiness gates, live probes | ship/no-ship thresholds |
-| [**Governance**](./GlobalFixMap/Governance/README.md) | auditability, trace schema | evidence trails, hashes |
-| [**Enterprise_Knowledge_Gov**](./GlobalFixMap/Enterprise_Knowledge_Gov/README.md) | data residency/sensitivity/expiry | contracts, access scopes |
-
+| [**Eval**](./GlobalFixMap/Eval/README.md) | ship gates, precision/recall, ΔS/λ probes | SDK-free evals |
+| [**Eval_Observability**](./GlobalFixMap/Eval_Observability/README.md) | live probes, regression boards | drift alarms |
+| [**Governance**](./GlobalFixMap/Governance/README.md) | policies, approvals, audit trails | program-level rails |
+| [**Enterprise_Knowledge_Gov**](./GlobalFixMap/Enterprise_Knowledge_Gov/README.md) | residency, sensitivity, expiry, compliance | knowledge governance |
 
 </details>
-
-
-
 
 
 <div align="center">
