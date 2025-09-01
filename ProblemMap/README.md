@@ -8,6 +8,8 @@ you’ll get a diagnosis and exact fix steps — no infra changes required.
 **16 reproducible failure modes, each with a clear fix (MIT).** *(e.g. rag drift, broken indexes)*  
 **A semantic firewall you install once, and every failure stays fixed.**  
 
+> most readers found this map useful and left a ⭐ — if it helps you too, please star it so others can discover.
+
 <details>
 <summary><strong>⏱️ 30 seconds: Why WFGY Works as a Semantic Firewall</strong></summary>
 
@@ -29,9 +31,6 @@ You’re not firefighting after the fact—you’re installing a reasoning firew
 
 </details>
 
-> most readers found this map useful and left a ⭐ — if it helps you too, please star it so others can discover.
-
----
 
 <details>
 <summary><strong>💥 WFGY Global Fix Map — Full Index (click to expand)</strong></summary>
@@ -66,8 +65,8 @@ You’re not firefighting after the fact—you’re installing a reasoning firew
 | Family | Coverage (examples) | Pages |
 |---|---|---|
 | [**Reasoning**](./GlobalFixMap/Reasoning/README.md) | entropy overload, loops, re-entry, proof dead-ends | λ/ΔS probes, bridge proofs |
-| [**Memory_LongContext**](./GlobalFixMap/Memory_LongContext/README.md) | echo loops, signal drop, boundary fade | stitching, anchor resets |
-| [**LocalPolicy_Inference**](./GlobalFixMap/LocalPolicy_Inference/README.md) | per-tenant rules, privacy prompts | policy trees, local overrides |
+| [**Memory_LongContext**](./GlobalFixMap/MemoryLongContext/README.md) | echo loops, signal drop, boundary fade | stitching, anchor resets |
+| [**LocalPolicy_Inference**](./GlobalFixMap/Localpolicy_Inference/README.md) | per-tenant rules, privacy prompts | policy trees, local overrides |
 
 #### 🧭 Automation & Ops
 | Family | Coverage (examples) | Pages |
