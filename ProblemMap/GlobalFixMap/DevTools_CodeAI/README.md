@@ -1,62 +1,75 @@
 # DevTools · Code AI — Global Fix Map
 
 A hub to stabilize IDE copilots and code-AI assistants without changing infra.  
-Use this to jump to per-tool guardrails and verify fixes with the same acceptance targets.
+Every tool has its own guardrail page. Each target here has simple explanations so even new users can follow.
+
+---
 
 ## When to use this folder
-- IDE chat answers flip between runs or tabs.
-- Tool calls loop or stall after partial edits.
-- JSON blocks fail or come back as prose.
-- RAG answers look right by similarity yet cite the wrong place.
-- Long refactors drift after 20–40 reasoning steps.
+- **Unstable answers**: IDE chat gives different results on the same question.
+- **Loops or stalls**: Tool calls stop halfway or keep retrying after edits.
+- **Broken JSON**: You expect JSON output but get plain text.
+- **Wrong citations**: Answer looks correct but cites the wrong part of code/docs.
+- **Drift in long refactors**: After 20–40 reasoning steps, output drifts off track.
 
-## Acceptance targets
-- ΔS(question, retrieved) ≤ 0.45
-- Coverage of target section ≥ 0.70
-- λ stays convergent across 3 paraphrases and 2 seeds
-- E_resonance flat on long windows
+---
+
+## Acceptance targets (with plain meaning)
+- **ΔS (semantic drift score) ≤ 0.45**  
+  *How far the answer drifts from your question. Lower is better.*
+- **Coverage ≥ 0.70**  
+  *How much of the correct section is included in the answer.*
+- **λ (stability factor) stays convergent**  
+  *If you re-ask with small rephrasing, results stay consistent.*
+- **E_resonance flat**  
+  *On long sessions, answers do not wander or change meaning.*
+
+---
 
 ## Quick routes to per-tool pages
-- GitHub Copilot: [github_copilot.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/DevTools_CodeAI/github_copilot.md)  
-- Cursor: [cursor.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/DevTools_CodeAI/cursor.md)  
-- Sourcegraph Cody: [sourcegraph_cody.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/DevTools_CodeAI/sourcegraph_cody.md)  
-- VS Code Copilot Chat: [vscode_copilot_chat.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/DevTools_CodeAI/vscode_copilot_chat.md)  
-- Codeium: [codeium.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/DevTools_CodeAI/codeium.md)  
-- Tabnine: [tabnine.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/DevTools_CodeAI/tabnine.md)  
-- AWS CodeWhisperer: [aws_codewhisperer.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/DevTools_CodeAI/aws_codewhisperer.md)  
-- JetBrains AI Assistant: [jetbrains_ai_assistant.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/DevTools_CodeAI/jetbrains_ai_assistant.md)
+
+| Tool                  | Open this page |
+|-----------------------|----------------|
+| GitHub Copilot        | [github_copilot.md](./github_copilot.md) |
+| Cursor                | [cursor.md](./cursor.md) |
+| Sourcegraph Cody      | [sourcegraph_cody.md](./sourcegraph_cody.md) |
+| VS Code Copilot Chat  | [vscode_copilot_chat.md](./vscode_copilot_chat.md) |
+| Codeium               | [codeium.md](./codeium.md) |
+| Tabnine               | [tabnine.md](./tabnine.md) |
+| AWS CodeWhisperer     | [aws_codewhisperer.md](./aws_codewhisperer.md) |
+| JetBrains AI Assistant| [jetbrains_ai_assistant.md](./jetbrains_ai_assistant.md) |
+
+---
 
 ## Map symptoms → structural fixes
-- Wrong-meaning hits despite high similarity  
-  → [embedding-vs-semantic.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/embedding-vs-semantic.md)
-- Citations do not line up with the returned section  
-  → [retrieval-traceability.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/retrieval-traceability.md) · [data-contracts.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/data-contracts.md)
-- Answers flip between sessions or file tabs  
-  → [context-drift.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/context-drift.md) · [entropy-collapse.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/entropy-collapse.md)
-- JSON mode breaks or tools accept prose  
-  → [logic-collapse.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/logic-collapse.md) · [prompt-injection.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/prompt-injection.md)
-- Multi-agent or tool handoff stalls  
-  → [Multi-Agent_Problems.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/Multi-Agent_Problems.md) · role drift deep dive → [multi-agent-chaos/role-drift.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/multi-agent-chaos/role-drift.md)
-- Hybrid retrievers worse than single  
-  → [patterns/pattern_query_parsing_split.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/patterns/pattern_query_parsing_split.md) · [rerankers.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/rerankers.md)
+
+| Symptom | Why it happens | Fix page |
+|---------|----------------|----------|
+| **Wrong-meaning hits despite high similarity** | Embedding captures surface form but not real meaning. | [embedding-vs-semantic.md](../../embedding-vs-semantic.md) |
+| **Citations do not line up** | Traceability layer too loose, snippet schema missing. | [retrieval-traceability.md](../../retrieval-traceability.md) · [data-contracts.md](../../data-contracts.md) |
+| **Answers flip between sessions/tabs** | Context not anchored, entropy builds up. | [context-drift.md](../../context-drift.md) · [entropy-collapse.md](../../entropy-collapse.md) |
+| **JSON mode breaks, prose returned** | Model leaves structured mode or prompt injection occurs. | [logic-collapse.md](../../logic-collapse.md) · [prompt-injection.md](../../prompt-injection.md) |
+| **Multi-agent or tool handoff stalls** | Agents lose roles, no schema lock in exchange. | [Multi-Agent_Problems.md](../../Multi-Agent_Problems.md) · [role-drift.md](../../multi-agent-chaos/role-drift.md) |
+| **Hybrid retrievers worse than single** | Query parsing split or reranker mis-weighted. | [pattern_query_parsing_split.md](../../patterns/pattern_query_parsing_split.md) · [rerankers.md](../../rerankers.md) |
+
+---
 
 ## Fix in 60 seconds
-1) **Measure ΔS**  
-   Compute ΔS(question, retrieved) and ΔS(retrieved, expected anchor).  
-   Stable < 0.40, transitional 0.40–0.60, risk ≥ 0.60.
+1. **Measure ΔS**  
+   If drift ≥ 0.60, you have unstable retrieval.  
+2. **Probe λ**  
+   Re-ask with 2–3 paraphrases. If answers flip, lock schema.  
+3. **Apply guardrails**  
+   - Retrieval drift → BBMC + [data-contracts.md](../../data-contracts.md)  
+   - Reasoning collapse → BBCR bridge + BBAM + [logic-collapse.md](../../logic-collapse.md)  
+   - Dead ends → BBPF alternate paths  
+4. **Verify**  
+   Coverage ≥ 0.70, λ stable, ΔS ≤ 0.45.
 
-2) **Probe λ_observe**  
-   Vary k and headers. If λ flips, lock schema and apply BBAM variance clamp.
-
-3) **Apply modules**  
-   Retrieval drift → BBMC + [data-contracts.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/data-contracts.md)  
-   Reasoning collapse → BBCR bridge + BBAM + [logic-collapse.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/logic-collapse.md)  
-   Long-run dead ends → BBPF alternate paths
-
-4) **Verify**  
-   Coverage ≥ 0.70 on 3 paraphrases. λ convergent on 2 seeds.
+---
 
 ## Copy-paste prompt for IDE chat
+
 ```
 
 I loaded TXT OS and the WFGY Problem Map.
@@ -64,17 +77,45 @@ I loaded TXT OS and the WFGY Problem Map.
 My code-AI issue:
 
 * symptom: \[one line]
-* traces: ΔS(question,retrieved)=..., ΔS(retrieved,anchor)=..., λ states across 3 paraphrases
+* traces: ΔS(question,retrieved)=..., ΔS(retrieved,anchor)=..., λ states
 
 Tell me:
 
 1. failing layer and why,
-2. the exact WFGY page to open from this repo,
+2. the exact WFGY page to open,
 3. minimal steps to push ΔS ≤ 0.45 and keep λ convergent,
 4. how to verify with a reproducible test.
-   Use BBMC/BBPF/BBCR/BBAM where relevant.
 
 ```
+
+---
+
+## FAQ
+
+**Q1. What is ΔS?**  
+It is the “semantic drift score”. Think of it as how far the answer strays from the original question. Lower numbers = more accurate.  
+
+**Q2. What is λ (lambda)?**  
+A stability check. If you slightly rephrase the same question, λ shows if the model’s answers converge or scatter.  
+
+**Q3. What does E_resonance mean?**  
+It is a long-run stability check. If E_resonance is flat, your assistant stays consistent even after many steps.  
+
+**Q4. Do I need to understand BBMC/BBPF/BBCR/BBAM?**  
+No. These are internal WFGY modules. Just know:  
+- BBMC = stabilizes retrieval,  
+- BBPF = creates fallback paths,  
+- BBCR = bridges reasoning collapse,  
+- BBAM = variance clamp for stability.  
+
+**Q5. I only use one IDE plugin. Why should I care?**  
+Because the same drift and instability happens across **all** copilots. Fixes here apply no matter which tool you use.  
+
+**Q6. How do I test quickly?**  
+Ask the same question 3 times with small wording changes. If answers flip, you need λ guardrails.  
+
+
+---
 
 ### 🔗 Quick-Start Downloads (60 sec)
 
