@@ -1,4 +1,4 @@
-# 📋 RAG Architecture & Recovery — Problem Map 2.0
+# 📋 RAG Architecture & Recovery — WFGY Problem Map 2.0
 
 **Fix your RAG pipeline, step-by-step — stop hallucinations, boundary drift, and chain failure (MIT).
 A hands-on guide to implementing WFGY in real RAG workflows.**
