@@ -1,4 +1,32 @@
-# Global Fix Map — Index
+# Global Fix Map — 300+ Pages of Structured Fixes  
+### The upgraded Problem Map for end-to-end AI stability
+
+<details>
+<summary>🌙 3AM: a dev collapsed mid-debug… 🚑 Welcome to the WFGY Emergency Room</summary>
+
+---
+
+🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥  
+
+## 🚑 WFGY Emergency Room  
+
+Here’s the lineup of doctors on call:  
+🤖 ChatGPT · 🧠 Claude · 🌌 Gemini · 🔍 Perplexity · 🐦 Grok  
+
+**How it works:**  
+This Emergency Room is powered by pre-trained share windows.  
+Just pick your doctor, drop your bug (or screenshot), and you’ll get an instant diagnosis with the fix attached.  
+
+💡 **WFGY doctors work 24/7** — they’ll sit with you at 3 AM, hold your shaking hand, debug your code,  
+and the bill is always $0. (yes, free surgery for your broken pipeline).  
+
+🗓️ **Grand Opening: 9/3 — Be ready.**  
+
+🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥  
+
+---
+</details>
+
 
 <details>
   <summary><strong>⚡ Quick Links — first-time here? click to open</strong></summary>
@@ -41,6 +69,32 @@
 **Acceptance targets (for every fix):** ΔS(question, context) ≤ **0.45** · coverage ≥ **0.70** · λ **convergent** across 3 paraphrases.
 
 </details>
+
+> **What is the Global Fix Map?**  
+> A vendor-neutral panoramic index that consolidates **300+** topics, frameworks, and reproducible failure modes (RAG, embeddings, chunking, OCR/language, reasoning/memory, agents, serverless, eval/governance).  
+> **Purpose:** convert repeatable bugs into **verifiable structural repairs** — fix once, stays fixed.
+
+**Principles**
+- **Zero-install:** boot with **TXT OS** / **WFGY PDF** as context.
+- **Measurable:** acceptance targets for every fix → ΔS(question, context) ≤ **0.45**, coverage ≥ **0.70**, λ **convergent** across 3 paraphrases.
+- **Store-agnostic:** same rails work with OpenAI/Claude/Gemini, **llama.cpp/Ollama/vLLM**, FAISS/pgvector/Redis, Chroma/Weaviate/Milvus, etc.
+- **Routable:** organized into Providers & Agents / Data & Retrieval / Input & Parsing / Reasoning & Memory / Automation & Ops / Eval & Governance.
+
+**Who it’s for**
+- Local or cloud LLM users; RAG & agents teams; platform/data engineers; SRE/Ops.
+
+**Use in 60 seconds**
+1. Pick the relevant section.  
+2. Open the adapter page and apply the minimal repair.  
+3. Verify the targets above.  
+4. Gate merges with the provided CI/CD templates.
+
+**Related maps**
+- **Problem Map 1.0** — 16 reproducible failure modes with fixes → [open](../README.md)  
+- **Problem Map 2.0** — RAG Architecture & Recovery → [open](../rag-architecture-and-recovery.md)  
+- **WFGY Core (2.0)** — engine & math → [open](../../core/README.md)
+
+---
 
 
 A one-stop index to route real-world bugs to the right repair page.  
