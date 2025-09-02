@@ -80,8 +80,8 @@ you’ll get a diagnosis and exact fix steps — no infra changes required.
 ---
 
 > 🗺️ **This is the panoramic index**: all common AI infra / RAG / reasoning errors are organized here by category.  
-> You can scroll down to browse each family in detail.  
-> If you only need a quick fix, jump straight to [Quick Access](#quick-access).
+> Prefer **Quick Access** — it is the fastest way to self-orient, understand how this system works, and jump to the right fix: [Quick Access](#quick-access).  
+> If you want the full folder view, open the Global Fix Map home: [Global Fix Map README](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/README.md).
 
 ---
 
