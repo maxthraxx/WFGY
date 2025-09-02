@@ -1,4 +1,4 @@
-# Global Fix Map — 300+ Pages of Structured Fixes  
+# WFGY Global Fix Map — 300+ Pages of Structured Fixes  
 ### The upgraded Problem Map for end-to-end AI stability
 
 <details>
