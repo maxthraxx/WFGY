@@ -1,14 +1,29 @@
 # WFGY Problem Map 1.0 — bookmark it. you’ll need it
 ## 🛡️ reproducible AI bugs, permanently fixed at the reasoning layer
 
-**WFGY Problem Map = a reasoning layer for your AI.**  
-load [**TXT OS**](https://github.com/onestardao/WFGY/blob/main/OS/README.md) or [**WFGY Core**](https://github.com/onestardao/WFGY/tree/main/core), then ask: *“which problem map number am i hitting?”*  
-you’ll get a diagnosis and exact fix steps — no infra changes required.
 
-**16 reproducible failure modes, each with a clear fix (MIT).** *(e.g. rag drift, broken indexes)*  
-**A semantic firewall you install once, and every failure stays fixed.**  
+<details>
+<summary>🌙 3AM: a dev collapsed mid-debug… 🚑 Welcome to the Emergency Room</summary>
 
-> most readers found this map useful and left a ⭐ — if it helps you too, please star it so others can discover.
+---
+
+🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥  
+
+## 🚑 WFGY Emergency Room  
+
+Here’s the lineup of doctors on call:  
+🤖 ChatGPT · 🧠 Claude · 🌌 Gemini · 🔍 Perplexity · 🐦 Grok  
+
+**How it works:**  
+This Emergency Room is powered by pre-trained share windows.  
+Just pick your doctor, drop your bug (or screenshot), and you’ll get an instant diagnosis with the fix attached.  
+
+🗓️ **Grand Opening: 9/3 — Be ready.**  
+
+🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥  
+
+---
+</details>
 
 <details>
 <summary><strong>⏱️ 30 seconds: Why WFGY Works as a Semantic Firewall</strong></summary>
@@ -29,6 +44,14 @@ you’re not firefighting after the fact — you’re installing a reasoning fir
 
 </details>
 
+**WFGY Problem Map = a reasoning layer for your AI.**  
+load [**TXT OS**](https://github.com/onestardao/WFGY/blob/main/OS/README.md) or [**WFGY Core**](https://github.com/onestardao/WFGY/tree/main/core), then ask: *“which problem map number am i hitting?”*  
+you’ll get a diagnosis and exact fix steps — no infra changes required.
+
+**16 reproducible failure modes, each with a clear fix (MIT).** *(e.g. rag drift, broken indexes)*  
+**A semantic firewall you install once, and every failure stays fixed.**  
+
+> most readers found this map useful and left a ⭐ — if it helps you too, please star it so others can discover.
 
 ## quick-start downloads (60 sec)
 
