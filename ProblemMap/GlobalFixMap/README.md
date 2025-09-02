@@ -1,5 +1,5 @@
 # WFGY Global Fix Map — 300+ Pages of Structured Fixes  
-### The upgraded Problem Map for end-to-end AI stability
+### 🛡️ The upgraded Problem Map for end-to-end AI stability
 
 <details>
 <summary>🌙 3AM: a dev collapsed mid-debug… 🚑 Welcome to the WFGY Emergency Room</summary>
