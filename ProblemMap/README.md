@@ -52,6 +52,12 @@ you’re not firefighting after the fact — you’re installing a reasoning fir
 
 ---
 
+> 🗺️ **This is the panoramic index**: all common AI infra / RAG / reasoning errors are organized here by category.  
+> You can scroll down to browse each family in detail.  
+> If you only need a quick fix, jump straight to [Quick Access](#quick-access).
+
+---
+
 ### 🧭 Providers & Agents
 
 | Family | Coverage (all links) | Notes |
