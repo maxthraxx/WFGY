@@ -65,6 +65,7 @@ Pick your stack, open the adapter, apply the structural fix, then verify:
 | OpsDeploy | prod safety rails, rollbacks, backpressure, canary | [OpsDeploy](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/OpsDeploy/README.md) |
 | Enterprise Knowledge & Gov | data residency, expiry, sensitivity, compliance | [Enterprise_Knowledge_Gov](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Enterprise_Knowledge_Gov/README.md) |
 | Governance | policies, change control, org-level workflows | [Governance](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Governance/README.md) |
+| Local Deploy & Inference | ollama, vLLM, tgi, llama.cpp, textgen-webui, exllama, koboldcpp, gpt4all, jan, AutoGPTQ/AWQ/bitsandbytes | [LocalDeploy_Inference](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/LocalDeploy_Inference/README.md) |
 
 ---
 
