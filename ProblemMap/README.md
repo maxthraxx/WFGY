@@ -143,7 +143,7 @@ you’re not firefighting after the fact — you’re installing a reasoning fir
 
 ---
 
-## quick access
+## Quick Access
 
 > don’t worry if this looks long. with TXT OS loaded, simply ask your LLM:  
 > *“which Problem Map number fits my issue?”* it will point you to the right page.
