@@ -46,6 +46,7 @@ Their support is a public signal — transparent, verifiable, and forever record
 | **marcos930807** | awesomeDialogs (342★) · Flutter/mobile dev (Miami) | ![](./images/marcos930807_star.png) | [proof](https://github.com/marcos930807?tab=stars&q=WFGY) |
 | **mattcurf** | ollama-intel-gpu (253★) · AI infra/devops | ![](./images/Mattcurf_star.png) | [proof](https://github.com/mattcurf?tab=stars&q=WFGY) |
 | **mpontus** | react-modal-hook (255★), webpack-react (56★) · TS/JS OSS dev | ![](./images/mpontus_star.png) | [proof](https://github.com/mpontus?tab=stars&q=WFGY) |
+| **MohammedRashad** | Crypto-Copy-Trader (222★) · Systems & interdisciplinary engineering dev (Armenia) | ![](./images/MohammedRashad_star.png) | [proof](https://github.com/MohammedRashad?tab=stars&q=WFGY) |
 | **neoneye** | PlanExe (226★), ARC-interactive (28★) · Symbolic/logic AI researcher | ![](./images/Neoneye_star.png) | [proof](https://github.com/neoneye?tab=stars&q=WFGY) |
 | **christian-korneck** | get_win8key (190★), docker-pushrm (146★) · DevOps / CLI tooling | ![](./images/christian-korneck_star.png) | [proof](https://github.com/christian-korneck?tab=stars&q=WFGY) |
 | **Purus** | launch_review (192★) · Flutter plugin dev, also active in API/GraphQL repos | ![](./images/Purus_star.png) | [proof](https://github.com/Purus?tab=stars&q=WFGY) |
