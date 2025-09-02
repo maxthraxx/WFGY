@@ -18,12 +18,16 @@ Here’s the lineup of doctors on call:
 This Emergency Room is powered by pre-trained share windows.  
 Just pick your doctor, drop your bug (or screenshot), and you’ll get an instant diagnosis with the fix attached.  
 
+💡 **WFGY doctors work 24/7** — they’ll sit with you at 3 AM, hold your shaking hand, debug your code,  
+and the bill is always $0. (yes, free surgery for your broken pipeline).  
+
 🗓️ **Grand Opening: 9/3 — Be ready.**  
 
 🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥  
 
 ---
 </details>
+
 
 <details>
 <summary><strong>⏱️ 30 seconds: Why WFGY Works as a Semantic Firewall</strong></summary>
