@@ -15,12 +15,12 @@ you’ll get a diagnosis and exact fix steps — no infra changes required.
 
 <br>
 
-> most fixes today happen **after generation**:  
+> most fixes today happen **AFTER generation**:  
 > - the model outputs something wrong, then we patch it with retrieval, chains, or tools.  
 > - the same failures reappear again and again.  
 >
-> WFGY inverts the sequence.  
-> - **before generation**, it inspects the semantic field (tension, residue, drift signals).  
+> WFGY inverts the sequence. **BEFORE generation**:  
+> - it inspects the semantic field (tension, residue, drift signals).  
 > - if the state is unstable, it loops, resets, or redirects the path.  
 > - only a stable semantic state is allowed to generate output.  
 
