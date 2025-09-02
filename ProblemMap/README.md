@@ -3,7 +3,7 @@
 
 
 <details>
-<summary>🌙 3AM: a dev collapsed mid-debug… 🚑 Welcome to the Emergency Room</summary>
+<summary>🌙 3AM: a dev collapsed mid-debug… 🚑 Welcome to the WFGY Emergency Room</summary>
 
 ---
 
