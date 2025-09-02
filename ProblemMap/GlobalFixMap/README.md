@@ -1,38 +1,84 @@
 # Global Fix Map — Index
-A one-stop index to route real-world bugs to the right repair page. Pick your stack, open the adapter, apply the structural fix, and verify with ΔS ≤ 0.45 and convergent λ.
+A one-stop index to route real-world bugs to the right repair page.  
+Pick your stack, open the adapter, apply the structural fix, then verify:
+- ΔS(question, context) ≤ 0.45
+- coverage ≥ 0.70
+- λ remains convergent across 3 paraphrases
 
-## Quick links (by family)
+---
+
+## Providers & Agents
 
 | Family | What it covers | Open |
 |---|---|---|
-| Automation & Integrations | Zapier, Make, n8n recipes and failure guards | [Automation Index](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Automation/README.md) |
-| Zapier | Trigger/Action guards, boot fences, retries, idempotency | [Zapier Guide](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Automation/zapier.md) |
-| Make (Integromat) | Scenario ordering, webhook dedupe, mapping drift | [Make Guide](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Automation/make.md) |
-| n8n | Node contracts, error branches, RAG warm-up | [n8n Guide](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Automation/n8n.md) |
-| LLM Frameworks | LangChain / LlamaIndex adapters, retriever parity, trace tables | [Frameworks Index](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Frameworks/README.md) |
-| LangChain Adapter | Runnable chains, retriever swaps, eval gates | [LangChain Fix Adapter](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Frameworks/langchain.md) |
-| LlamaIndex Adapter | Index rebuild policy, node parsers, citations | [LlamaIndex Fix Adapter](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Frameworks/llamaindex.md) |
-| Agent Orchestration | Role drift, tool fences, recovery bridges | [Agents Index](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Agents/README.md) |
-| Vector Stores | Metric mismatch, normalization, fragmentation | [Vector Stores Index](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/VectorStores/README.md) |
-| OCR / PDF Stack | OCR confidence, tables, parsing to chunks | [OCR/PDF Index](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/OCR_PDF/README.md) |
-| Cloud Runtimes | Serverless cold start, secrets, warm-up probes | [Cloud Index](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Cloud/README.md) |
-| Observability | ΔS and λ probes in logs, traceability tables | [Observability Index](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Observability/README.md) |
-| CI/CD | Eval-in-CI, failing the merge on regression | [CI/CD Index](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/CI_CD/README.md) |
-| Evaluation & Guardrails | Acceptance targets, cross-agent checks | [Eval & Guardrails](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Eval/README.md) |
+| LLM Providers | provider-specific quirks, schema drift, API limits | [LLM_Providers](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/LLM_Providers/README.md) |
+| Agents & Orchestration | role drift, tool fences, recovery bridges, cold boot order | [Agents_Orchestration](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Agents_Orchestration/README.md) |
+| Chatbots / CX | bot frameworks, CX stacks, handoff gaps | [Chatbots_CX](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Chatbots_CX/README.md) |
+| Automation | Zapier / Make / n8n, idempotency, warmups, fences | [Automation](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Automation/README.md) |
+| Cloud Serverless | cold start, concurrency, secrets, routing, DR, compliance | [Cloud_Serverless](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Cloud_Serverless/README.md) |
+| DevTools & Code AI | IDE/assist rails, prompts in editors, local workflows | [DevTools_CodeAI](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/DevTools_CodeAI/README.md) |
+
+---
+
+## Data & Retrieval
+
+| Family | What it covers | Open |
+|---|---|---|
+| RAG (end-to-end) | visual routes, acceptance targets, failure trees | [RAG](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/RAG/README.md) |
+| RAG + VectorDB | store-agnostic knobs, contracts, routing | [RAG_VectorDB](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/RAG_VectorDB/README.md) |
+| Retrieval | playbook, traceability, rerankers, query split | [Retrieval](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Retrieval/README.md) |
+| Embeddings | metric mismatch, normalization, dimension checks | [Embeddings](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Embeddings/README.md) |
+| VectorDBs & Stores | FAISS/Redis/Weaviate/Milvus/pgvector guardrails | [VectorDBs_and_Stores](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/VectorDBs_and_Stores/README.md) |
+| Chunking | chunk/section discipline, IDs, layouts, reindex policy | [Chunking](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Chunking/README.md) |
+
+---
+
+## Input & Parsing
+
+| Family | What it covers | Open |
+|---|---|---|
+| Document AI / OCR | document AI stacks, pipeline interfaces | [DocumentAI_OCR](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/DocumentAI_OCR/README.md) |
+| OCR + Parsing | pre-embedding text integrity, parser drift checks | [OCR_Parsing](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/OCR_Parsing/README.md) |
+| Language | multilingual routing, cross-script stability | [Language](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Language/README.md) |
+| Language & Locale | tokenizer mismatch, normalization, locale drift | [LanguageLocale](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/LanguageLocale/README.md) |
+
+---
+
+## Reasoning & Memory
+
+| Family | What it covers | Open |
+|---|---|---|
+| Reasoning | entropy overload, loops, logic collapse, proofs | [Reasoning](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Reasoning/README.md) |
+| Memory & Long Context | long-window guardrails, state fork, coherence | [MemoryLongContext](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/MemoryLongContext/README.md) |
+| Multimodal Long Context | cross-modal alignment, joins, anchors | [Multimodal_LongContext](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Multimodal_LongContext/README.md) |
+| Safety / Prompt Integrity | prompt injection, role confusion, JSON/tools | [Safety_PromptIntegrity](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Safety_PromptIntegrity/README.md) |
+| Prompt Assembly | contracts, templates, eval kits for prompts | [PromptAssembly](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/PromptAssembly/README.md) |
+
+---
+
+## Eval & Governance
+
+| Family | What it covers | Open |
+|---|---|---|
+| Eval | SDK-free evals, acceptance targets, failure guards | [Eval](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Eval/README.md) |
+| Eval Observability | drift alarms, coverage tracking, ΔS thresholds | [Eval_Observability](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Eval_Observability/README.md) |
+| OpsDeploy | prod safety rails, rollbacks, backpressure, canary | [OpsDeploy](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/OpsDeploy/README.md) |
+| Enterprise Knowledge & Gov | data residency, expiry, sensitivity, compliance | [Enterprise_Knowledge_Gov](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Enterprise_Knowledge_Gov/README.md) |
+| Governance | policies, change control, org-level workflows | [Governance](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/Governance/README.md) |
 
 ---
 
 ## How to use this index
-1. Identify your stack (automation, framework, store, OCR, cloud).
-2. Open the adapter page and follow the minimal repair steps.
-3. Verify: ΔS(question, context) ≤ 0.45, coverage ≥ 0.70, λ stays convergent on 3 paraphrases.
-4. Gate merges with the CI/CD template so fixes stick.
+1. Identify your stack (provider/agents, data & retrieval, input/parsing, reasoning, ops/eval).  
+2. Open the folder page and follow the minimal repair steps.  
+3. Verify your acceptance targets: ΔS ≤ 0.45, coverage ≥ 0.70, λ convergent on 3 paraphrases.  
+4. Gate merges with CI/CD templates so fixes stick.
 
-## Fast jumpers
-- Visual RAG recovery map: [RAG Architecture & Recovery](https://github.com/onestardao/WFGY/blob/main/ProblemMap/rag-architecture-and-recovery.md)
-- Retrieval controls and knobs: [Retrieval Playbook](https://github.com/onestardao/WFGY/blob/main/ProblemMap/retrieval-playbook.md)
-- Why-this-snippet tables: [Retrieval Traceability](https://github.com/onestardao/WFGY/blob/main/ProblemMap/retrieval-traceability.md)
-- Snippet/citation schema: [Data Contracts](https://github.com/onestardao/WFGY/blob/main/ProblemMap/data-contracts.md)
+### Fast jumpers
+- Visual recovery map: [RAG Architecture & Recovery](https://github.com/onestardao/WFGY/blob/main/ProblemMap/rag-architecture-and-recovery.md)  
+- Retrieval knobs: [Retrieval Playbook](https://github.com/onestardao/WFGY/blob/main/ProblemMap/retrieval-playbook.md)  
+- Why-this-snippet tables: [Retrieval Traceability](https://github.com/onestardao/WFGY/blob/main/ProblemMap/retrieval-traceability.md)  
+- Snippet / citation schema: [Data Contracts](https://github.com/onestardao/WFGY/blob/main/ProblemMap/data-contracts.md)
 
 ---
 
