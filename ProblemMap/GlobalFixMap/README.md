@@ -1,4 +1,48 @@
 # Global Fix Map — Index
+
+<details>
+  <summary><strong>⚡ Quick Links — first-time here? click to open</strong></summary>
+
+<br>
+
+**Goal:** route your bug to the right fix in &lt;60s. Pick your path:**
+
+### 1) Get oriented
+- 🧭 *What is this?* → **Global Fix Map (this page)** — panoramic index of RAG/infra/reasoning fixes.
+- 🧱 **Problem Map 1.0** (16 reproducible failure modes) → [open](../README.md)
+- 🌲 **Problem Map 2.0 — RAG Architecture & Recovery** → [open](../rag-architecture-and-recovery.md)
+- 🧠 **WFGY Core (2.0)** — engine & math → [open](../../core/README.md)
+
+### 2) One-minute quick-start
+- ⏳ **TXT OS (plain-text OS)** → copy–paste → ask *“which Problem Map number am I hitting?”* → [open](../../OS/README.md) · [txt](../../OS/TXTOS.txt)
+- 📄 **WFGY 1.0 PDF** (use as context file) → [open](../../I_am_not_lizardman/WFGY_All_Principles_Return_to_One_v1.0_PSBigBig_Public.pdf)
+- 🧪 **Minimal demos** (no SDK lock-in) → [open](../mvp_demo/README.md)
+
+### 3) Local LLaMA / on-device stacks
+- 🖥️ **LocalDeploy_Inference hub** → [open](./LocalDeploy_Inference/README.md)  
+  – `llama.cpp` → [open](./LocalDeploy_Inference/llamacpp.md) · `Ollama` → [open](./LocalDeploy_Inference/ollama.md) · `textgen-webui` → [open](./LocalDeploy_Inference/textgen-webui.md) · `vLLM` → [open](./LocalDeploy_Inference/vllm.md)
+
+### 4) Fast jumpers for RAG & retrieval
+- 🗺️ **Visual recovery map** → [RAG Architecture & Recovery](../rag-architecture-and-recovery.md)
+- 🔧 **Retrieval Playbook** → [open](./Retrieval/retrieval-playbook.md) · **Traceability** → [open](./Retrieval/retrieval-traceability.md)
+- 🧮 **Embeddings: Metric Mismatch** → [open](./Embeddings/metric_mismatch.md) · **Hybrid Weights** → [open](./RAG_VectorDB/hybrid_retriever_weights.md)
+- 🧱 **Vector DB guardrails** → [open](./VectorDBs_and_Stores/README.md) · **Chunking checklist** → [open](./Chunking/chunking-checklist.md)
+
+### Need triage?
+- 🩺 **Semantic Clinic (when unsure)** → [open](../SemanticClinicIndex.md)
+- 🧭 **Diagnose by symptom** → [open](../Diagnose.md) · **Beginner Guide** → [open](../BeginnerGuide.md)
+
+### Contribute / ask / FAQ
+- 💬 **Field reports & discussions** → [open](https://github.com/onestardao/WFGY/discussions/10)
+- 🌟 **Star unlocks & roadmap** → [open](../../STAR_UNLOCKS.md)
+
+---
+
+**Acceptance targets (for every fix):** ΔS(question, context) ≤ **0.45** · coverage ≥ **0.70** · λ **convergent** across 3 paraphrases.
+
+</details>
+
+
 A one-stop index to route real-world bugs to the right repair page.  
 Pick your stack, open the adapter, apply the structural fix, then verify:
 - ΔS(question, context) ≤ 0.45
