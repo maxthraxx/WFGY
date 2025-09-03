@@ -21,7 +21,7 @@ Just pick your doctor, drop your bug (or screenshot), and you’ll get an instan
 💡 **WFGY doctors work 24/7** — they’ll sit with you at 3 AM, hold your shaking hand, debug your code,  
 and the bill is always $0. (yes, free surgery for your broken pipeline).  
 
-🗓️ **Grand Opening: 9/3 — Be ready.**  
+🗓️ **Grand Opening: 9/3 — Be ready.** (come back later, you will see it) 
 
 🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥  
 
