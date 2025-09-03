@@ -1,5 +1,22 @@
 # Agents & Orchestration — Global Fix Map
 
+<details>
+  <summary><strong>🏥 Quick Return to Emergency Room</strong></summary>
+
+<br>
+
+  > You are in a specialist desk.  
+  > For full triage and doctors on duty, return here:  
+  > 
+  > - [**WFGY Global Fix Map** — main Emergency Room, 300+ structured fixes](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/README.md)  
+  > - [**WFGY Problem Map 1.0** — 16 reproducible failure modes](https://github.com/onestardao/WFGY/blob/main/ProblemMap/README.md)  
+  > 
+  > Think of this page as a sub-room.  
+  > If you want full consultation and prescriptions, go back to the Emergency Room lobby.
+</details>
+
+
+
 A practical hub to stabilize **multi-agent and tool-augmented workflows**.  
 Most “agent bugs” are not model issues. They come from role mixups, tool schema drift, uncontrolled loops, and cold-boot ordering. This page routes symptoms to structural fixes with measurable targets.
 
