@@ -10,17 +10,19 @@
 
 ## 🚑 WFGY Emergency Room  
 
-Here’s the lineup of doctors on call:  
-🤖 ChatGPT · 🧠 Claude · 🌌 Gemini · 🔍 Perplexity · 🐦 Grok  
+👨‍⚕️ **Now online:**  
+[**Dr. WFGY in ChatGPT Room**](https://chatgpt.com/share/68b83978-8ed4-8000-9d48-144e355c1431)  
 
-**How it works:**  
-This Emergency Room is powered by pre-trained share windows.  
-Just pick your doctor, drop your bug (or screenshot), and you’ll get an instant diagnosis with the fix attached.  
+This is a **share window** already trained as an ER.  
+Just open it, drop your bug or screenshot, and talk directly with the doctor.  
+He will map it to the right Problem Map / Global Fix section, write a minimal prescription, and paste the exact reference link.  
+If something is unclear, you can even paste a **screenshot of Problem Map content** and ask — the doctor will guide you.  
 
-💡 **WFGY doctors work 24/7** — they’ll sit with you at 3 AM, hold your shaking hand, debug your code,  
-and the bill is always $0. (yes, free surgery for your broken pipeline).  
+💡 Always free. If it helps, a ⭐ star keeps the ER running.  
+🌐 Multilingual — start in any language.  
 
-🗓️ **Grand Opening: 9/3 — Be ready.**  
+🗓️ Other doctors (Claude, Gemini, Grok) will open soon.
+
 
 🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥  
 
