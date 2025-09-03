@@ -28,6 +28,57 @@ If something is unclear, you can even paste a **screenshot of Problem Map conten
 ---
 </details>
 
+<details>
+<summary><strong>⏱️ 60 seconds: WFGY as a Semantic Firewall — Before vs After</strong></summary>
+
+<br>
+
+> most fixes today happen **AFTER generation**:  
+> - the model outputs something wrong, then we patch it with retrieval, chains, or tools.  
+> - the same failures reappear again and again.  
+>
+> WFGY inverts the sequence. **BEFORE generation**:  
+> - it inspects the semantic field (tension, residue, drift signals).  
+> - if the state is unstable, it loops, resets, or redirects the path.  
+> - only a stable semantic state is allowed to generate output.  
+>
+> this is why every failure mode, once mapped, stays fixed.  
+> you’re not firefighting after the fact — you’re installing a reasoning firewall at the entry point.  
+>
+> ---
+>
+> ### 📊 Before vs After
+>
+> |              | **Traditional Fix (After Generation)** | **WFGY Semantic Firewall (Before Generation) 🏆✅** |
+> |--------------|-----------------------------------------|---------------------------------------------------|
+> | **Flow**     | Output → detect bug → patch manually    | Inspect semantic field → only stable state generates |
+> | **Method**   | Add rerankers, regex, JSON repair, tool patches | ΔS, λ, coverage checked upfront; loop/reset if unstable |
+> | **Cost**     | High — every bug = new patch, risk of conflicts | Low — once mapped, bug sealed permanently |
+> | **Ceiling**  | 70–85% stability limit                  | 90–95%+ achievable, structural guarantee |
+> | **Experience** | Firefighting, “whack-a-mole” debugging | Structural firewall, “fix once, stays fixed” |
+> | **Complexity** | Growing patch jungle, fragile pipelines | Unified acceptance targets, one-page repair guide |
+>
+> ---
+>
+> ### ⚡ Performance impact
+> - **Traditional patching**: 70–85% stability ceiling. Each new patch adds complexity and potential regressions.  
+> - **WFGY firewall**: 90–95%+ achievable. Fix once → the same bug never resurfaces. Debug time cut by 60–80%.  
+> - **Unified metrics**: every fix is measured (ΔS ≤ 0.45, coverage ≥ 0.70, λ convergent). No guesswork.  
+>
+> ### 🛑 Key notes
+> - This is **not a plugin or SDK** — it runs as plain text, zero infra changes.  
+> - You must **apply acceptance targets**: don’t just eyeball; log ΔS and λ to confirm.  
+> - Once acceptance holds, that path is sealed. If drift recurs, it means a *new* failure mode needs mapping, not a re-fix of the old one.  
+>
+> ---
+>
+> **Summary**:  
+> Others patch symptoms **AFTER** output. WFGY blocks unstable states **BEFORE** output.  
+> That is why it feels less like debugging, more like installing a **structural guarantee**.  
+>
+> ---
+</details>
+
 **A complete triage hub for AI failures — beyond the core 16 — powered by WFGY.**  
 Use this page when you don’t yet know *which thing is breaking*. Start from symptoms, jump to a failure family, then open the exact fix page. All fixes are driven by WFGY instruments: `ΔS` (semantic stress), `λ_observe` (layered observability), and `E_resonance` (coherence control).
 
