@@ -1,4 +1,4 @@
-# 📋 RAG Architecture & Recovery — WFGY Problem Map 2.0
+# 🏥 RAG Architecture & Recovery — WFGY Problem Map 2.0
 
 <details>
 <summary>🌙 3AM: a dev collapsed mid-debug… 🚑 Welcome to the WFGY Emergency Room</summary>
