@@ -1,5 +1,20 @@
 # Ops & Deploy — Global Fix Map
 
+<details>
+  <summary><strong>🏥 Quick Return to Emergency Room</strong></summary>
+
+<br>
+
+  > You are in a specialist desk.  
+  > For full triage and doctors on duty, return here:  
+  > 
+  > - [**WFGY Global Fix Map** — main Emergency Room, 300+ structured fixes](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/README.md)  
+  > - [**WFGY Problem Map 1.0** — 16 reproducible failure modes](https://github.com/onestardao/WFGY/blob/main/ProblemMap/README.md)  
+  > 
+  > Think of this page as a sub-room.  
+  > If you want full consultation and prescriptions, go back to the Emergency Room lobby.
+</details>
+
 A compact hub to **ship safely and keep RAG/LLM systems stable after release**.  
 Use this folder to pick the right guardrail, verify with measurable targets, and recover fast when things wobble. No infra change required.
 
