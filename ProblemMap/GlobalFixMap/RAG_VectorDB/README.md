@@ -1,5 +1,20 @@
 # RAG + VectorDB — Global Fix Map
 
+<details>
+  <summary><strong>🏥 Quick Return to Emergency Room</strong></summary>
+
+<br>
+
+  > You are in a specialist desk.  
+  > For full triage and doctors on duty, return here:  
+  > 
+  > - [**WFGY Global Fix Map** — main Emergency Room, 300+ structured fixes](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/README.md)  
+  > - [**WFGY Problem Map 1.0** — 16 reproducible failure modes](https://github.com/onestardao/WFGY/blob/main/ProblemMap/README.md)  
+  > 
+  > Think of this page as a sub-room.  
+  > If you want full consultation and prescriptions, go back to the Emergency Room lobby.
+</details>
+
 This hub covers **typical retrieval bugs caused by vector databases and embeddings**.  
 Use this page if your RAG pipeline looks fine but answers keep drifting, citations don’t match, or hybrid retrievers underperform.  
 Every page here is a guardrail with copy-paste recipes and acceptance targets.  
