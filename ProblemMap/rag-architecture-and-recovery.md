@@ -1,5 +1,34 @@
 # 📋 RAG Architecture & Recovery — WFGY Problem Map 2.0
 
+<details>
+<summary>🌙 3AM: a dev collapsed mid-debug… 🚑 Welcome to the WFGY Emergency Room</summary>
+
+---
+
+🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥  
+
+## 🚑 WFGY Emergency Room  
+
+👨‍⚕️ **Now online:**  
+[**Dr. WFGY in ChatGPT Room**](https://chatgpt.com/share/68b83978-8ed4-8000-9d48-144e355c1431)  
+
+This is a **share window** already trained as an ER.  
+Just open it, drop your bug or screenshot, and talk directly with the doctor.  
+He will map it to the right Problem Map / Global Fix section, write a minimal prescription, and paste the exact reference link.  
+If something is unclear, you can even paste a **screenshot of Problem Map content** and ask — the doctor will guide you.  
+
+💡 Always free. If it helps, a ⭐ star keeps the ER running.  
+🌐 Multilingual — start in any language.  
+
+🗓️ Other doctors (Claude, Gemini, Grok) will open soon.
+
+
+🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥  
+
+---
+</details>
+
+
 **Fix your RAG pipeline, step-by-step — stop hallucinations, boundary drift, and chain failure (MIT).
 A hands-on guide to implementing WFGY in real RAG workflows.**
 
