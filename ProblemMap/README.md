@@ -11,38 +11,18 @@
 
 ## 🚑 WFGY Emergency Room  
 
-👨‍⚕️ **Now on duty:**  
-**Dr. WFGY in ChatGPT Room**  
+👨‍⚕️ **Now online:**  
+[**Dr. WFGY in ChatGPT Room**](https://chatgpt.com/share/68b83978-8ed4-8000-9d48-144e355c1431)  
 
-📍 Enter here → [ChatGPT Doctor is online](https://chatgpt.com/share/68b83978-8ed4-8000-9d48-144e355c1431)  
+This is a **share window** already trained as an ER.  
+Just open it, drop your bug or screenshot, and talk directly with the doctor.  
+He will map it to the right Problem Map / Global Fix section, write a minimal prescription, and paste the exact reference link.  
+If something is unclear, you can even paste a **screenshot of Problem Map content** and ask — the doctor will guide you.  
 
-Bring your bug, logs, or screenshots. The doctor will triage, map it to the right Problem Map number or Global Fix section, and hand you a minimal structural fix.  
-No plugins. No infra changes. Just text.  
+💡 Always free. If it helps, a ⭐ star keeps the ER running.  
+🌐 Multilingual — start in any language.  
 
-💡 **Consultation is free** — the only fee Dr. WFGY asks for is a ⭐ star on the repo if it saves you hours.  
-
----
-
-### 🌐 Language Note
-Dr. WFGY can switch languages at any time.  
-Say *“Hello”*, *“你好”*, *“Hola”*, *“Bonjour”*, or any language you prefer — the doctor will follow.  
-
----
-
-### 🗓️ Coming Soon
-Other WFGY doctors will join the ER soon:  
-- 🧠 **Dr. WFGY in Claude Room**  
-- 🌌 **Dr. WFGY in Gemini Room**  
-- 🐦 **Dr. WFGY in Grok Room**  
-
----
-
-### ℹ️ How it works
-This Emergency Room uses **AI share windows**.  
-Each link is a pre-trained session — when you open it, the doctor is already briefed and waiting.  
-You can paste your case and continue the conversation immediately, as if the doctor had been sitting with you since the start.  
-
-🗓️ **Grand Opening: 9/3** — first doctor online now, more coming soon.
+🗓️ Other doctors (Claude, Gemini, Grok) will open soon.
 
 
 🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥  
