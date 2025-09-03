@@ -1,5 +1,20 @@
 # Local Deploy & Inference — Global Fix Map
 
+<details>
+  <summary><strong>🏥 Quick Return to Emergency Room</strong></summary>
+
+<br>
+
+  > You are in a specialist desk.  
+  > For full triage and doctors on duty, return here:  
+  > 
+  > - [**WFGY Global Fix Map** — main Emergency Room, 300+ structured fixes](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/README.md)  
+  > - [**WFGY Problem Map 1.0** — 16 reproducible failure modes](https://github.com/onestardao/WFGY/blob/main/ProblemMap/README.md)  
+  > 
+  > Think of this page as a sub-room.  
+  > If you want full consultation and prescriptions, go back to the Emergency Room lobby.
+</details>
+
 A beginner-friendly hub to **stabilize locally hosted LLMs** on your own machine or cluster.  
 Use this folder when it looks like the “model is broken” but the **real cause is infra settings**: tokenizer mismatch, rope scaling, kv-cache size, build flags, or server parameters.  
 Every guide links back to WFGY with measurable acceptance targets. No infra rebuild required.
