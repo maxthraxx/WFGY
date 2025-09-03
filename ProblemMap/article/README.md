@@ -42,10 +42,10 @@ single place to find every Discussion article. each line links out. this page is
   Discussion → [https://github.com/onestardao/WFGY/discussions/36](https://github.com/onestardao/WFGY/discussions/36)
 
 * **Day 12: Bootstrap ordering mistake** *(No.14)*
-  Discussion → \[TBD]
+  Discussion  → [https://github.com/onestardao/WFGY/discussions/37](https://github.com/onestardao/WFGY/discussions/37)
 
 * **Day 13: Multi-agent chaos** *(No.13)*
-  Discussion → \[TBD]
+  Discussion →  [https://github.com/onestardao/WFGY/discussions/38](https://github.com/onestardao/WFGY/discussions/38)
 
 * **Day 14: Symbolic collapse** *(No.11)*
   Discussion → \[TBD]
