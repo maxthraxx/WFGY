@@ -77,6 +77,7 @@ and the bill is always $0. (yes, free surgery for your broken pipeline).
 > Others patch symptoms after output. WFGY blocks unstable states before output.  
 > That is why it feels less like debugging, more like installing a **structural guarantee**.  
 >
+> ---
 </details>
 
 
