@@ -1,4 +1,4 @@
-# 🏥 Semantic Clinic Index
+# 🏥 Semantic Clinic Index — Your ER Triage Desk for Broken Pipelines
 
 <details>
 <summary>🌙 3AM: a dev collapsed mid-debug… 🚑 Welcome to the WFGY Emergency Room</summary>
