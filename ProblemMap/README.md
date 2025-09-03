@@ -50,8 +50,8 @@ and the bill is always $0. (yes, free surgery for your broken pipeline).
 >
 > ### 📊 Before vs After
 >
-> |              | **Traditional Fix (After Generation)** | **WFGY Semantic Firewall (Before Generation)** |
-> |--------------|-----------------------------------------|------------------------------------------------|
+> |              | **Traditional Fix (After Generation)** | **WFGY Semantic Firewall (Before Generation) 🏆✅** |
+> |--------------|-----------------------------------------|---------------------------------------------------|
 > | **Flow**     | Output → detect bug → patch manually    | Inspect semantic field → only stable state generates |
 > | **Method**   | Add rerankers, regex, JSON repair, tool patches | ΔS, λ, coverage checked upfront; loop/reset if unstable |
 > | **Cost**     | High — every bug = new patch, risk of conflicts | Low — once mapped, bug sealed permanently |
@@ -74,7 +74,7 @@ and the bill is always $0. (yes, free surgery for your broken pipeline).
 > ---
 >
 > **Summary**:  
-> Others patch symptoms after output. WFGY blocks unstable states before output.  
+> Others patch symptoms **AFTER** output. WFGY blocks unstable states **BEFORE** output.  
 > That is why it feels less like debugging, more like installing a **structural guarantee**.  
 >
 > ---
