@@ -1,4 +1,4 @@
-# 🏥 WFGY Problem Map 1.0 — bookmark it. you’ll need it
+# 🏥 WFGY Problem Map 1.0 · bookmark it. you’ll need it
 ## 🛡️ reproducible AI bugs, permanently fixed at the reasoning layer
 
 
@@ -32,7 +32,7 @@ If something is unclear, you can even paste a **screenshot of Problem Map conten
 
 
 <details>
-<summary><strong>⏱️ 60 seconds: WFGY as a Semantic Firewall — Before vs After</strong></summary>
+<summary><strong>⏱️ 60 seconds: WFGY as a semantic firewall. before vs after</strong></summary>
 
 <br>
 
