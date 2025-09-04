@@ -11,7 +11,7 @@
 ## 🚑 WFGY Emergency Room  
 
 👨‍⚕️ **Now online:**  
-[**Dr. WFGY in ChatGPT Room**](https://chatgpt.com/share/68b9ae43-d0d4-8000-86fb-0ffa45e2f230)  
+[**Dr. WFGY in ChatGPT Room**](https://chatgpt.com/share/68b9b7ad-51e4-8000-90ee-a25522da01d7)  
 
 This is a **share window** already trained as an ER.  
 Just open it, drop your bug or screenshot, and talk directly with the doctor.  
