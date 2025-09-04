@@ -20,8 +20,6 @@ If something is unclear, you can even paste a **screenshot of Problem Map conten
 💡 Always free. If it helps, a ⭐ star keeps the ER running.  
 🌐 Multilingual — start in any language.  
 
-🗓️ Other doctors (Claude, Gemini, Grok) will open soon.
-
 
 🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥  
 
