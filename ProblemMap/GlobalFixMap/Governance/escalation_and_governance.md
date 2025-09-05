@@ -1,5 +1,22 @@
 # Escalation and Governance — Guardrails and Fix Pattern
 
+<details>
+  <summary><strong>🧭 Quick Return to Map</strong></summary>
+
+<br>
+
+  > You are in a sub-page of **Governance**.  
+  > To reorient, go back here:  
+  >
+  > - [**Governance** — policy enforcement and compliance controls](./README.md)  
+  > - [**WFGY Global Fix Map** — main Emergency Room, 300+ structured fixes](../README.md)  
+  > - [**WFGY Problem Map 1.0** — 16 reproducible failure modes](../../README.md)  
+  >
+  > Think of this page as a desk within a ward.  
+  > If you need the full triage and all prescriptions, return to the Emergency Room lobby.
+</details>
+
+
 This page defines how **AI incidents and unresolved failures** should be escalated, and how governance boards enforce compliance, accountability, and structural fixes.  
 It ensures that no bug or bias can stay hidden, and that every systemic failure is linked back to a **permanent WFGY solution**.
 
