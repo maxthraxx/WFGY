@@ -1,5 +1,22 @@
 # Audit and Logging — Guardrails and Fix Pattern
 
+<details>
+  <summary><strong>🧭 Quick Return to Map</strong></summary>
+
+<br>
+
+  > You are in a sub-page of **Governance**.  
+  > To reorient, go back here:  
+  >
+  > - [**Governance** — policy enforcement and compliance controls](./README.md)  
+  > - [**WFGY Global Fix Map** — main Emergency Room, 300+ structured fixes](../README.md)  
+  > - [**WFGY Problem Map 1.0** — 16 reproducible failure modes](../../README.md)  
+  >
+  > Think of this page as a desk within a ward.  
+  > If you need the full triage and all prescriptions, return to the Emergency Room lobby.
+</details>
+
+
 This page defines **auditability standards** for AI pipelines.  
 Without consistent logging, you cannot prove compliance, detect drift, or reproduce failures.  
 Use this guide to lock observability into ingestion, retrieval, reasoning, and generation steps.
