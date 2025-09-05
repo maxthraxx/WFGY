@@ -1,5 +1,22 @@
 # Redundant Evidence Collapse: Guardrails and Fix Pattern
 
+<details>
+  <summary><strong>🧭 Quick Return to Map</strong></summary>
+
+<br>
+
+  > You are in a sub-page of **Reasoning**.  
+  > To reorient, go back here:  
+  >
+  > - [**Reasoning** — multi-step inference and symbolic proofs](./README.md)  
+  > - [**WFGY Global Fix Map** — main Emergency Room, 300+ structured fixes](../README.md)  
+  > - [**WFGY Problem Map 1.0** — 16 reproducible failure modes](../../README.md)  
+  >
+  > Think of this page as a desk within a ward.  
+  > If you need the full triage and all prescriptions, return to the Emergency Room lobby.
+</details>
+
+
 When many near-identical snippets flood the context, the model over-trusts repetition and ignores minority evidence. Plans drift, citations skew to one source, and answers flatten. Use this page to dedupe, cap source dominance, and keep reasoning balanced.
 
 ---
