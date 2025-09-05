@@ -1,5 +1,21 @@
 # Parabola — Automation Guardrails
 
+<details>
+  <summary><strong>🧭 Quick Return to Map</strong></summary>
+
+<br>
+
+  > You are in a sub-page of **Automation Platforms**.  
+  > To reorient, go back here:  
+  >
+  > - [**Automation Platforms** — stabilize no-code workflows and integrations](./README.md)  
+  > - [**WFGY Global Fix Map** — main Emergency Room, 300+ structured fixes](../README.md)  
+  > - [**WFGY Problem Map 1.0** — 16 reproducible failure modes](../../README.md)  
+  >
+  > Think of this page as a desk within a ward.  
+  > If you need the full triage and all prescriptions, return to the Emergency Room lobby.
+</details>
+
 A focused repair guide for teams building pipelines with **Parabola**.
 Goal is simple: stop silent data drift, schema breaks, pagination traps, and idempotency bugs without changing your infra. Use the steps and acceptance targets below to make the fix repeatable.
 
