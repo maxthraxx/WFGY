@@ -1,5 +1,22 @@
 # Twilio Studio: Guardrails and Fix Patterns
 
+<details>
+  <summary><strong>🧭 Quick Return to Map</strong></summary>
+
+<br>
+
+  > You are in a sub-page of **Chatbots & CX**.  
+  > To reorient, go back here:  
+  >
+  > - [**Chatbots & CX** — customer dialogue flows and conversational stability](./README.md)  
+  > - [**WFGY Global Fix Map** — main Emergency Room, 300+ structured fixes](../README.md)  
+  > - [**WFGY Problem Map 1.0** — 16 reproducible failure modes](../../README.md)  
+  >
+  > Think of this page as a desk within a ward.  
+  > If you need the full triage and all prescriptions, return to the Emergency Room lobby.
+</details>
+
+
 Use this page when your CX or chatbot runs inside **Twilio Studio** flows and you see brittle retrieval, duplicate executions, or unstable tool calls. Each symptom maps to a structural fix in the WFGY Problem Map so you can verify with measurable targets.
 
 ## Open these first
