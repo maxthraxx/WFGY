@@ -1,5 +1,22 @@
 # Audit Logs and Traceability — Guardrails and Fix Patterns
 
+<details>
+  <summary><strong>🧭 Quick Return to Map</strong></summary>
+
+<br>
+
+  > You are in a sub-page of **Governance**.  
+  > To reorient, go back here:  
+  >
+  > - [**Governance** — policy enforcement and compliance controls](./README.md)  
+  > - [**WFGY Global Fix Map** — main Emergency Room, 300+ structured fixes](../README.md)  
+  > - [**WFGY Problem Map 1.0** — 16 reproducible failure modes](../../README.md)  
+  >
+  > Think of this page as a desk within a ward.  
+  > If you need the full triage and all prescriptions, return to the Emergency Room lobby.
+</details>
+
+
 A governance control page for **auditability, immutable logs, and lineage traceability**.  
 Use this page when failures stem not from infra or retrieval, but from missing **observability, log integrity, or provenance joins**.
 
