@@ -1,5 +1,22 @@
 # AWQ (Activation-aware Weight Quantization): Guardrails and Fix Patterns
 
+<details>
+  <summary><strong>🧭 Quick Return to Map</strong></summary>
+
+<br>
+
+  > You are in a sub-page of **LocalDeploy_Inference**.  
+  > To reorient, go back here:  
+  >
+  > - [**LocalDeploy_Inference** — on-prem deployment and model inference](./README.md)  
+  > - [**WFGY Global Fix Map** — main Emergency Room, 300+ structured fixes](../README.md)  
+  > - [**WFGY Problem Map 1.0** — 16 reproducible failure modes](../../README.md)  
+  >
+  > Think of this page as a desk within a ward.  
+  > If you need the full triage and all prescriptions, return to the Emergency Room lobby.
+</details>
+
+
 AWQ/AutoAWQ applies activation-aware quantization to compress weights into 4/8-bit, aiming for higher throughput on local inference with minimal accuracy loss.  
 This page maps typical AWQ failure modes to structural fixes in the WFGY Problem Map and defines measurable acceptance gates.
 
