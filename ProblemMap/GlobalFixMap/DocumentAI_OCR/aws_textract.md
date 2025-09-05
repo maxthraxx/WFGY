@@ -1,5 +1,22 @@
 # AWS Textract: Guardrails and Fix Patterns
 
+<details>
+  <summary><strong>🧭 Quick Return to Map</strong></summary>
+
+<br>
+
+  > You are in a sub-page of **DocumentAI_OCR**.  
+  > To reorient, go back here:  
+  >
+  > - [**DocumentAI_OCR** — document parsing and optical character recognition](./README.md)  
+  > - [**WFGY Global Fix Map** — main Emergency Room, 300+ structured fixes](../README.md)  
+  > - [**WFGY Problem Map 1.0** — 16 reproducible failure modes](../../README.md)  
+  >
+  > Think of this page as a desk within a ward.  
+  > If you need the full triage and all prescriptions, return to the Emergency Room lobby.
+</details>
+
+
 Stabilize ingestion flows with **AWS Textract** when parsing PDFs, invoices, or forms.  
 Use this when outputs fragment, lose semantic anchors, or citations drift across page boundaries. Each issue maps back to WFGY Problem Map structural fixes.
 
