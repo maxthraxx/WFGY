@@ -1,5 +1,22 @@
 # Cross-Modal Trace — Multimodal Long Context
 
+<details>
+  <summary><strong>🧭 Quick Return to Map</strong></summary>
+
+<br>
+
+  > You are in a sub-page of **Multimodal_LongContext**.  
+  > To reorient, go back here:  
+  >
+  > - [**Multimodal_LongContext** — long-context reasoning across text, vision, and audio](./README.md)  
+  > - [**WFGY Global Fix Map** — main Emergency Room, 300+ structured fixes](../README.md)  
+  > - [**WFGY Problem Map 1.0** — 16 reproducible failure modes](../../README.md)  
+  >
+  > Think of this page as a desk within a ward.  
+  > If you need the full triage and all prescriptions, return to the Emergency Room lobby.
+</details>
+
+
 When text, image, or video claims cannot be traced to an anchor, drift accumulates and phantom evidence appears.  
 This page defines the schema and checks that guarantee traceability across all modalities.
 
