@@ -1,5 +1,22 @@
 # Chunking Checklist — Guardrails and Minimal Fixes
 
+<details>
+  <summary><strong>🧭 Quick Return to Map</strong></summary>
+
+<br>
+
+  > You are in a sub-page of **Chunking**.  
+  > To reorient, go back here:  
+  >
+  > - [**Chunking** — text segmentation and context window management](./README.md)  
+  > - [**WFGY Global Fix Map** — main Emergency Room, 300+ structured fixes](../README.md)  
+  > - [**WFGY Problem Map 1.0** — 16 reproducible failure modes](../../README.md)  
+  >
+  > Think of this page as a desk within a ward.  
+  > If you need the full triage and all prescriptions, return to the Emergency Room lobby.
+</details>
+
+
 A field guide to stabilize document chunking before you touch embeddings or retrievers. Use this page to locate the boundary failure, apply the structural fix, and verify with measurable targets.
 
 ## Open these first
