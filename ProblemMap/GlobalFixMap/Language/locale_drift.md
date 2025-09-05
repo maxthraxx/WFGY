@@ -1,5 +1,22 @@
 # Locale Drift — Guardrails and Fix Patterns
 
+<details>
+  <summary><strong>🧭 Quick Return to Map</strong></summary>
+
+<br>
+
+  > You are in a sub-page of **Language**.  
+  > To reorient, go back here:  
+  >
+  > - [**Language** — multilingual processing and semantic alignment](./README.md)  
+  > - [**WFGY Global Fix Map** — main Emergency Room, 300+ structured fixes](../README.md)  
+  > - [**WFGY Problem Map 1.0** — 16 reproducible failure modes](../../README.md)  
+  >
+  > Think of this page as a desk within a ward.  
+  > If you need the full triage and all prescriptions, return to the Emergency Room lobby.
+</details>
+
+
 Stabilize retrieval when **locale settings** silently change token rules, analyzers, and normalization between **ingest, index, and query**. Typical failures include `en_US` vs `en_GB` spelling, `tr_TR` case-folding (“i/İ”), decimal and thousands separators, date formats, Simplified/Traditional Chinese, and accent stripping differences.
 
 ---
