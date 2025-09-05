@@ -1,5 +1,22 @@
 # Grok (xAI): Guardrails and Fix Patterns
 
+<details>
+  <summary><strong>🧭 Quick Return to Map</strong></summary>
+
+<br>
+
+  > You are in a sub-page of **LLM_Providers**.  
+  > To reorient, go back here:  
+  >
+  > - [**LLM_Providers** — model vendors and deployment options](./README.md)  
+  > - [**WFGY Global Fix Map** — main Emergency Room, 300+ structured fixes](../README.md)  
+  > - [**WFGY Problem Map 1.0** — 16 reproducible failure modes](../../README.md)  
+  >
+  > Think of this page as a desk within a ward.  
+  > If you need the full triage and all prescriptions, return to the Emergency Room lobby.
+</details>
+
+
 A compact field guide to stabilize Grok when you see joking tone, schema drift, or tool-call wobble. Use the checks below to localize failure, then jump to the exact WFGY fix page.
 
 ## Open these first
