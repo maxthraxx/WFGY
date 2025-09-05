@@ -1,5 +1,22 @@
 # Romanization & Transliteration — Guardrails and Fix Pattern
 
+<details>
+  <summary><strong>🧭 Quick Return to Map</strong></summary>
+
+<br>
+
+  > You are in a sub-page of **Language**.  
+  > To reorient, go back here:  
+  >
+  > - [**Language** — multilingual processing and semantic alignment](./README.md)  
+  > - [**WFGY Global Fix Map** — main Emergency Room, 300+ structured fixes](../README.md)  
+  > - [**WFGY Problem Map 1.0** — 16 reproducible failure modes](../../README.md)  
+  >
+  > Think of this page as a desk within a ward.  
+  > If you need the full triage and all prescriptions, return to the Emergency Room lobby.
+</details>
+
+
 Make cross-script search and RAG stable when users type Latin transliterations of non-Latin names and terms. This page gives a minimal contract, store wiring, and tests so **Hepburn vs Kunrei**, **Pinyin vs mixed tone marks**, **RR vs MR**, **ISO9 vs GOST**, **Buckwalter vs ISO 233**, and similar systems do not break recall or flip ranking.
 
 ---
