@@ -1,5 +1,22 @@
 # Memory Coherence — Multi-Session and State Alignment
 
+<details>
+  <summary><strong>🧭 Quick Return to Map</strong></summary>
+
+<br>
+
+  > You are in a sub-page of **MemoryLongContext**.  
+  > To reorient, go back here:  
+  >
+  > - [**MemoryLongContext** — extended context windows and memory retention](./README.md)  
+  > - [**WFGY Global Fix Map** — main Emergency Room, 300+ structured fixes](../README.md)  
+  > - [**WFGY Problem Map 1.0** — 16 reproducible failure modes](../../README.md)  
+  >
+  > Think of this page as a desk within a ward.  
+  > If you need the full triage and all prescriptions, return to the Emergency Room lobby.
+</details>
+
+
 Keep multi-turn and multi-session dialogs stable by fencing memory state.  
 This page shows how to prevent forks, desync, and ghost buffers when conversations span long contexts or multiple agents.
 
