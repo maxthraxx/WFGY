@@ -1,5 +1,22 @@
 # Vespa: Guardrails and Fix Patterns
 
+<details>
+  <summary><strong>🧭 Quick Return to Map</strong></summary>
+
+<br>
+
+  > You are in a sub-page of **VectorDBs_and_Stores**.  
+  > To reorient, go back here:  
+  >
+  > - [**VectorDBs_and_Stores** — vector indexes and storage backends](./README.md)  
+  > - [**WFGY Global Fix Map** — main Emergency Room, 300+ structured fixes](../README.md)  
+  > - [**WFGY Problem Map 1.0** — 16 reproducible failure modes](../../README.md)  
+  >
+  > Think of this page as a desk within a ward.  
+  > If you need the full triage and all prescriptions, return to the Emergency Room lobby.
+</details>
+
+
 Use this page when your retrieval stack runs on Vespa with vector or hybrid ranking. It routes common store-level failures to the right structural fixes in the Problem Map and gives a minimal checklist you can apply fast.
 
 ## When to open this page
