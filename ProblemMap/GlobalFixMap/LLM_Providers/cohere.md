@@ -1,5 +1,22 @@
 # Cohere: Guardrails and Fix Patterns
 
+<details>
+  <summary><strong>🧭 Quick Return to Map</strong></summary>
+
+<br>
+
+  > You are in a sub-page of **LLM_Providers**.  
+  > To reorient, go back here:  
+  >
+  > - [**LLM_Providers** — model vendors and deployment options](./README.md)  
+  > - [**WFGY Global Fix Map** — main Emergency Room, 300+ structured fixes](../README.md)  
+  > - [**WFGY Problem Map 1.0** — 16 reproducible failure modes](../../README.md)  
+  >
+  > Think of this page as a desk within a ward.  
+  > If you need the full triage and all prescriptions, return to the Emergency Room lobby.
+</details>
+
+
 Use this page when issues look provider-specific on Cohere (Command family, chat tools, embeddings). The checks below route you to the exact WFGY fix page and give a minimal recipe you can paste into your pipeline.
 
 ## Open these first
