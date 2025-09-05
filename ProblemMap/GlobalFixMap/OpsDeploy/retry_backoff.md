@@ -1,5 +1,22 @@
 # Retry and Backoff: OpsDeploy Guardrails
 
+<details>
+  <summary><strong>🧭 Quick Return to Map</strong></summary>
+
+<br>
+
+  > You are in a sub-page of **OpsDeploy**.  
+  > To reorient, go back here:  
+  >
+  > - [**OpsDeploy** — operations automation and deployment pipelines](./README.md)  
+  > - [**WFGY Global Fix Map** — main Emergency Room, 300+ structured fixes](../README.md)  
+  > - [**WFGY Problem Map 1.0** — 16 reproducible failure modes](../../README.md)  
+  >
+  > Think of this page as a desk within a ward.  
+  > If you need the full triage and all prescriptions, return to the Emergency Room lobby.
+</details>
+
+
 Make retries safe and predictable. Use structured backoff, deadlines, and idempotent fences so a bad minute does not become a bad day.
 
 ---
