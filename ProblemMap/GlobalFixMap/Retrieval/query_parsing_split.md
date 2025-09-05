@@ -1,5 +1,22 @@
 # Query Parsing Split
 
+<details>
+  <summary><strong>🧭 Quick Return to Map</strong></summary>
+
+<br>
+
+  > You are in a sub-page of **Retrieval**.  
+  > To reorient, go back here:  
+  >
+  > - [**Retrieval** — information access and knowledge lookup](./README.md)  
+  > - [**WFGY Global Fix Map** — main Emergency Room, 300+ structured fixes](../README.md)  
+  > - [**WFGY Problem Map 1.0** — 16 reproducible failure modes](../../README.md)  
+  >
+  > Think of this page as a desk within a ward.  
+  > If you need the full triage and all prescriptions, return to the Emergency Room lobby.
+</details>
+
+
 A field guide to diagnose and fix failures where the same user question turns into different queries across branches. Typical sources are HyDE, rewrite chains, keyword extraction, BM25 analyzers, and tool side expansions. The result is high recall but wrong ordering, unstable answers, or hybrid pipelines that underperform single retrievers.
 
 **Read together with**
