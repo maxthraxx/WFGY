@@ -51,7 +51,7 @@ single place to find every Discussion article. each line links out. this page is
   Discussion → [https://github.com/onestardao/WFGY/discussions/39](https://github.com/onestardao/WFGY/discussions/39)
 
 * **Day 15: Creative freeze** *(No.10)*
-  Discussion → \[TBD]
+  Discussion → [https://github.com/onestardao/WFGY/discussions/40](https://github.com/onestardao/WFGY/discussions/40)
 
 * **Day 16: Deployment deadlock** *(No.15)*
   Discussion → \[TBD]
