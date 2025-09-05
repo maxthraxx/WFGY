@@ -1,5 +1,22 @@
 # FAISS: Guardrails and Fix Patterns
 
+<details>
+  <summary><strong>🧭 Quick Return to Map</strong></summary>
+
+<br>
+
+  > You are in a sub-page of **VectorDBs_and_Stores**.  
+  > To reorient, go back here:  
+  >
+  > - [**VectorDBs_and_Stores** — vector indexes and storage backends](./README.md)  
+  > - [**WFGY Global Fix Map** — main Emergency Room, 300+ structured fixes](../README.md)  
+  > - [**WFGY Problem Map 1.0** — 16 reproducible failure modes](../../README.md)  
+  >
+  > Think of this page as a desk within a ward.  
+  > If you need the full triage and all prescriptions, return to the Emergency Room lobby.
+</details>
+
+
 A compact repair guide for FAISS retrieval stacks. Use this when recall looks fine but meaning drifts, or when IVF/HNSW tuning flips answers across seeds. The checks below route you to the exact WFGY fix pages and give a minimal recipe you can paste into a runbook.
 
 ## Open these first
