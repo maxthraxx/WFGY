@@ -1,5 +1,22 @@
 # Chain of Thought Variance Clamp: Guardrails and Fix Pattern
 
+<details>
+  <summary><strong>🧭 Quick Return to Map</strong></summary>
+
+<br>
+
+  > You are in a sub-page of **Reasoning**.  
+  > To reorient, go back here:  
+  >
+  > - [**Reasoning** — multi-step inference and symbolic proofs](./README.md)  
+  > - [**WFGY Global Fix Map** — main Emergency Room, 300+ structured fixes](../README.md)  
+  > - [**WFGY Problem Map 1.0** — 16 reproducible failure modes](../../README.md)  
+  >
+  > Think of this page as a desk within a ward.  
+  > If you need the full triage and all prescriptions, return to the Emergency Room lobby.
+</details>
+
+
 Reduce random drift in planning and multi step reasoning. This page gives a clamp recipe so your plan length, tool order, and citations stay stable across seeds and paraphrases.
 
 ---
