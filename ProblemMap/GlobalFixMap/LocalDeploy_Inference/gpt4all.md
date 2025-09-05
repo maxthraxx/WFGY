@@ -1,5 +1,22 @@
 # GPT4All: Guardrails and Fix Patterns
 
+<details>
+  <summary><strong>🧭 Quick Return to Map</strong></summary>
+
+<br>
+
+  > You are in a sub-page of **LocalDeploy_Inference**.  
+  > To reorient, go back here:  
+  >
+  > - [**LocalDeploy_Inference** — on-prem deployment and model inference](./README.md)  
+  > - [**WFGY Global Fix Map** — main Emergency Room, 300+ structured fixes](../README.md)  
+  > - [**WFGY Problem Map 1.0** — 16 reproducible failure modes](../../README.md)  
+  >
+  > Think of this page as a desk within a ward.  
+  > If you need the full triage and all prescriptions, return to the Emergency Room lobby.
+</details>
+
+
 [GPT4All](https://github.com/nomic-ai/gpt4all) is a popular desktop/local LLM runtime with a user-friendly interface and broad model support (GGUF/GGML).
 It enables plug-and-play inference on CPU/GPU without complex setup, but it introduces typical fragilities: schema drift, citation loss, and memory instability.
 This page provides WFGY-based guardrails and reproducible fixes.
