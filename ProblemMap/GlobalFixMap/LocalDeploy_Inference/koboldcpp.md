@@ -1,5 +1,22 @@
 # KoboldCPP: Guardrails and Fix Patterns
 
+<details>
+  <summary><strong>🧭 Quick Return to Map</strong></summary>
+
+<br>
+
+  > You are in a sub-page of **LocalDeploy_Inference**.  
+  > To reorient, go back here:  
+  >
+  > - [**LocalDeploy_Inference** — on-prem deployment and model inference](./README.md)  
+  > - [**WFGY Global Fix Map** — main Emergency Room, 300+ structured fixes](../README.md)  
+  > - [**WFGY Problem Map 1.0** — 16 reproducible failure modes](../../README.md)  
+  >
+  > Think of this page as a desk within a ward.  
+  > If you need the full triage and all prescriptions, return to the Emergency Room lobby.
+</details>
+
+
 KoboldCPP is a lightweight local inference runtime for LLaMA-based models, focused on CPU (with AVX/AVX2/AVX512) and GPU acceleration (CUDA, Metal, OpenCL).
 It is popular in hobbyist and low-VRAM deployments but frequently shows drift when paired with RAG, agents, or long-context reasoning.
 This page defines stability checks and exact WFGY fixes.
