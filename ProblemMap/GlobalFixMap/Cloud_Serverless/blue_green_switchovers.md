@@ -1,5 +1,22 @@
 # Blue-Green Switchovers for Serverless and Edge
 
+<details>
+  <summary><strong>🧭 Quick Return to Map</strong></summary>
+
+<br>
+
+  > You are in a sub-page of **Cloud_Serverless**.  
+  > To reorient, go back here:  
+  >
+  > - [**Cloud_Serverless** — scalable functions and event-driven pipelines](./README.md)  
+  > - [**WFGY Global Fix Map** — main Emergency Room, 300+ structured fixes](../README.md)  
+  > - [**WFGY Problem Map 1.0** — 16 reproducible failure modes](../../README.md)  
+  >
+  > Think of this page as a desk within a ward.  
+  > If you need the full triage and all prescriptions, return to the Emergency Room lobby.
+</details>
+
+
 A safe pattern to shift 100 percent of live traffic from **blue** to **green** without downtime, cache poison, or state skew. Works for API Gateway + Lambda, Cloudflare Workers, Vercel Edge, Fastly Compute, and similar stacks.
 
 ## Open these first
