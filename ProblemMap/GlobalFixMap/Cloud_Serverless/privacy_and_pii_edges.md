@@ -1,5 +1,22 @@
 # Privacy and PII Edges for Serverless and Edge
 
+<details>
+  <summary><strong>🧭 Quick Return to Map</strong></summary>
+
+<br>
+
+  > You are in a sub-page of **Cloud_Serverless**.  
+  > To reorient, go back here:  
+  >
+  > - [**Cloud_Serverless** — scalable functions and event-driven pipelines](./README.md)  
+  > - [**WFGY Global Fix Map** — main Emergency Room, 300+ structured fixes](../README.md)  
+  > - [**WFGY Problem Map 1.0** — 16 reproducible failure modes](../../README.md)  
+  >
+  > Think of this page as a desk within a ward.  
+  > If you need the full triage and all prescriptions, return to the Emergency Room lobby.
+</details>
+
+
 A field guide to prevent PII from leaking through serverless runtimes, edge functions, logs, vector pipelines, and third-party webhooks. Build a measurable privacy boundary that does not break retrieval quality.
 
 ## Open these first
