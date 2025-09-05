@@ -1,5 +1,22 @@
 # Store-Agnostic Guardrails for Retrieval
 
+<details>
+  <summary><strong>🧭 Quick Return to Map</strong></summary>
+
+<br>
+
+  > You are in a sub-page of **Retrieval**.  
+  > To reorient, go back here:  
+  >
+  > - [**Retrieval** — information access and knowledge lookup](./README.md)  
+  > - [**WFGY Global Fix Map** — main Emergency Room, 300+ structured fixes](../README.md)  
+  > - [**WFGY Problem Map 1.0** — 16 reproducible failure modes](../../README.md)  
+  >
+  > Think of this page as a desk within a ward.  
+  > If you need the full triage and all prescriptions, return to the Emergency Room lobby.
+</details>
+
+
 Use this page to harden retrieval quality without changing your vector store. The checks localize failure causes and route you to the exact structural fix so you can verify with measurable targets.
 
 ## Acceptance targets
