@@ -1,5 +1,22 @@
 # Code-Switching Eval — Gold Set and Probes
 
+<details>
+  <summary><strong>🧭 Quick Return to Map</strong></summary>
+
+<br>
+
+  > You are in a sub-page of **Language**.  
+  > To reorient, go back here:  
+  >
+  > - [**Language** — multilingual processing and semantic alignment](./README.md)  
+  > - [**WFGY Global Fix Map** — main Emergency Room, 300+ structured fixes](../README.md)  
+  > - [**WFGY Problem Map 1.0** — 16 reproducible failure modes](../../README.md)  
+  >
+  > Think of this page as a desk within a ward.  
+  > If you need the full triage and all prescriptions, return to the Emergency Room lobby.
+</details>
+
+
 A compact harness to verify **retrieval and reasoning under code-switching** and multilingual inputs. Use this to measure ΔS and λ across three variants of each question: source language, target language, and mixed script or code-switched.
 
 ---
