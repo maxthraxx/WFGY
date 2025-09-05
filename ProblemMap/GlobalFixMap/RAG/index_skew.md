@@ -1,5 +1,22 @@
 # Index Skew — Guardrails and Fix Pattern
 
+<details>
+  <summary><strong>🧭 Quick Return to Map</strong></summary>
+
+<br>
+
+  > You are in a sub-page of **RAG**.  
+  > To reorient, go back here:  
+  >
+  > - [**RAG** — retrieval-augmented generation and knowledge grounding](./README.md)  
+  > - [**WFGY Global Fix Map** — main Emergency Room, 300+ structured fixes](../README.md)  
+  > - [**WFGY Problem Map 1.0** — 16 reproducible failure modes](../../README.md)  
+  >
+  > Think of this page as a desk within a ward.  
+  > If you need the full triage and all prescriptions, return to the Emergency Room lobby.
+</details>
+
+
 When the index reports "healthy" (no errors, embeddings ingested, stats normal) but **retrieval still fails**:  
 coverage is low, ΔS unstable, or retrieved snippets are inconsistent with ground truth.  
 This indicates an **index skew** between data reality and retrieval semantics.
