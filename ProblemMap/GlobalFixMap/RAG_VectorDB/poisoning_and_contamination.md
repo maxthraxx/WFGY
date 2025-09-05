@@ -1,5 +1,22 @@
 # Poisoning and Contamination — Guardrails and Fix Pattern
 
+<details>
+  <summary><strong>🧭 Quick Return to Map</strong></summary>
+
+<br>
+
+  > You are in a sub-page of **RAG_VectorDB**.  
+  > To reorient, go back here:  
+  >
+  > - [**RAG_VectorDB** — vector databases for retrieval and grounding](./README.md)  
+  > - [**WFGY Global Fix Map** — main Emergency Room, 300+ structured fixes](../README.md)  
+  > - [**WFGY Problem Map 1.0** — 16 reproducible failure modes](../../README.md)  
+  >
+  > Think of this page as a desk within a ward.  
+  > If you need the full triage and all prescriptions, return to the Emergency Room lobby.
+</details>
+
+
 Use this page when your **retriever starts surfacing adversarial or low-trust text** that did not exist in your canonical corpus, or when cache/index merges leak content across tenants or environments. We treat three classes: content poisoning, index contamination, and query-time prompt-in-context attacks.
 
 ---
