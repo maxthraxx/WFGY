@@ -1,5 +1,22 @@
 # Chunking → Embedding Contract
 
+<details>
+  <summary><strong>🧭 Quick Return to Map</strong></summary>
+
+<br>
+
+  > You are in a sub-page of **Embeddings**.  
+  > To reorient, go back here:  
+  >
+  > - [**Embeddings** — vector representations and semantic search](./README.md)  
+  > - [**WFGY Global Fix Map** — main Emergency Room, 300+ structured fixes](../README.md)  
+  > - [**WFGY Problem Map 1.0** — 16 reproducible failure modes](../../README.md)  
+  >
+  > Think of this page as a desk within a ward.  
+  > If you need the full triage and all prescriptions, return to the Emergency Room lobby.
+</details>
+
+
 A hard interface that keeps your chunker and your embedding encoder in semantic lockstep. Use this page when the chunks look fine but retrieval quality wobbles, or when “high-similarity yet wrong meaning” shows up after an index rebuild.
 
 ## Open these first
