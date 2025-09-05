@@ -1,4 +1,21 @@
-<img width="1024" height="1536" alt="image" src="https://github.com/user-attachments/assets/f59495da-29cb-48e4-ab50-0173a943dcf8" /># Diacritics & Folding — Guardrails and Fix Pattern
+# Diacritics & Folding — Guardrails and Fix Pattern
+
+<details>
+  <summary><strong>🧭 Quick Return to Map</strong></summary>
+
+<br>
+
+  > You are in a sub-page of **LanguageLocale**.  
+  > To reorient, go back here:  
+  >
+  > - [**LanguageLocale** — localization, regional settings, and context adaptation](./README.md)  
+  > - [**WFGY Global Fix Map** — main Emergency Room, 300+ structured fixes](../README.md)  
+  > - [**WFGY Problem Map 1.0** — 16 reproducible failure modes](../../README.md)  
+  >
+  > Think of this page as a desk within a ward.  
+  > If you need the full triage and all prescriptions, return to the Emergency Room lobby.
+</details>
+
 
 A focused repair when accents and diacritic marks cause retrieval drift, broken citations, or unstable reranking. Use this page to lock a per-language normalization policy, keep citations faithful to the original text, and keep ΔS within target.
 
