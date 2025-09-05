@@ -1,5 +1,22 @@
 # Layout, Headers, and Footers: OCR Parsing Guardrails
 
+<details>
+  <summary><strong>🧭 Quick Return to Map</strong></summary>
+
+<br>
+
+  > You are in a sub-page of **OCR_Parsing**.  
+  > To reorient, go back here:  
+  >
+  > - [**OCR_Parsing** — text recognition and document structure parsing](./README.md)  
+  > - [**WFGY Global Fix Map** — main Emergency Room, 300+ structured fixes](../README.md)  
+  > - [**WFGY Problem Map 1.0** — 16 reproducible failure modes](../../README.md)  
+  >
+  > Think of this page as a desk within a ward.  
+  > If you need the full triage and all prescriptions, return to the Emergency Room lobby.
+</details>
+
+
 Strip or normalize page furniture before chunking or embedding. Stop headers, footers, page numbers, and watermarks from polluting semantic meaning and wrecking retrieval.
 
 ## Open these first
