@@ -1,5 +1,22 @@
 # Context Drift in RAG — Guardrails and Fix Pattern
 
+<details>
+  <summary><strong>🧭 Quick Return to Map</strong></summary>
+
+<br>
+
+  > You are in a sub-page of **RAG**.  
+  > To reorient, go back here:  
+  >
+  > - [**RAG** — retrieval-augmented generation and knowledge grounding](./README.md)  
+  > - [**WFGY Global Fix Map** — main Emergency Room, 300+ structured fixes](../README.md)  
+  > - [**WFGY Problem Map 1.0** — 16 reproducible failure modes](../../README.md)  
+  >
+  > Think of this page as a desk within a ward.  
+  > If you need the full triage and all prescriptions, return to the Emergency Room lobby.
+</details>
+
+
 When answers alternate or degrade as dialogs get longer, even though the retriever continues to surface the right snippets.  
 This page stabilizes λ (semantic convergence) and prevents entropy creep in retrieval-augmented pipelines.
 
