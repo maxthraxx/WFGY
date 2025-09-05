@@ -1,5 +1,22 @@
 # Regulatory Alignment — Guardrails and Fix Pattern
 
+<details>
+  <summary><strong>🧭 Quick Return to Map</strong></summary>
+
+<br>
+
+  > You are in a sub-page of **Governance**.  
+  > To reorient, go back here:  
+  >
+  > - [**Governance** — policy enforcement and compliance controls](./README.md)  
+  > - [**WFGY Global Fix Map** — main Emergency Room, 300+ structured fixes](../README.md)  
+  > - [**WFGY Problem Map 1.0** — 16 reproducible failure modes](../../README.md)  
+  >
+  > Think of this page as a desk within a ward.  
+  > If you need the full triage and all prescriptions, return to the Emergency Room lobby.
+</details>
+
+
 This page defines how to align AI pipelines with existing **laws, sector regulations, and compliance regimes**.  
 Most AI failures at scale are not purely technical but **compliance drift** — your pipeline silently breaks GDPR, HIPAA, or copyright law because logging or schema fences were never enforced.  
 
