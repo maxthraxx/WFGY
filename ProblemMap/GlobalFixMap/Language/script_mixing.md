@@ -1,5 +1,22 @@
 # Script Mixing — Guardrails and Fix Patterns
 
+<details>
+  <summary><strong>🧭 Quick Return to Map</strong></summary>
+
+<br>
+
+  > You are in a sub-page of **Language**.  
+  > To reorient, go back here:  
+  >
+  > - [**Language** — multilingual processing and semantic alignment](./README.md)  
+  > - [**WFGY Global Fix Map** — main Emergency Room, 300+ structured fixes](../README.md)  
+  > - [**WFGY Problem Map 1.0** — 16 reproducible failure modes](../../README.md)  
+  >
+  > Think of this page as a desk within a ward.  
+  > If you need the full triage and all prescriptions, return to the Emergency Room lobby.
+</details>
+
+
 Keep retrieval stable when a single query or snippet mixes scripts and directions.
 Common cases: CJK + Latin acronyms, Arabic or Hebrew with numbers and English terms, Devanagari with Latin product names, and datasets where full-width digits appear beside half-width ASCII.
 
