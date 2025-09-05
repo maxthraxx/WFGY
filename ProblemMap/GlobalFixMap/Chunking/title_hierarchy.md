@@ -1,5 +1,22 @@
 # Title Hierarchy: robust heading tree for chunking and citations
 
+<details>
+  <summary><strong>🧭 Quick Return to Map</strong></summary>
+
+<br>
+
+  > You are in a sub-page of **Chunking**.  
+  > To reorient, go back here:  
+  >
+  > - [**Chunking** — text segmentation and context window management](./README.md)  
+  > - [**WFGY Global Fix Map** — main Emergency Room, 300+ structured fixes](../README.md)  
+  > - [**WFGY Problem Map 1.0** — 16 reproducible failure modes](../../README.md)  
+  >
+  > Think of this page as a desk within a ward.  
+  > If you need the full triage and all prescriptions, return to the Emergency Room lobby.
+</details>
+
+
 A field guide to build a stable section tree from PDFs, HTML, and mixed sources. The output drives `section_id` paths like `1.2.3`, anchors for cite-then-explain, and deterministic `chunk_id` assembly.
 
 ## Open these first
