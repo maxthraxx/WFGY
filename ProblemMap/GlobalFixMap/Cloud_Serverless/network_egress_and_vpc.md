@@ -1,5 +1,22 @@
 # Network Egress and VPC — Guardrails
 
+<details>
+  <summary><strong>🧭 Quick Return to Map</strong></summary>
+
+<br>
+
+  > You are in a sub-page of **Cloud_Serverless**.  
+  > To reorient, go back here:  
+  >
+  > - [**Cloud_Serverless** — scalable functions and event-driven pipelines](./README.md)  
+  > - [**WFGY Global Fix Map** — main Emergency Room, 300+ structured fixes](../README.md)  
+  > - [**WFGY Problem Map 1.0** — 16 reproducible failure modes](../../README.md)  
+  >
+  > Think of this page as a desk within a ward.  
+  > If you need the full triage and all prescriptions, return to the Emergency Room lobby.
+</details>
+
+
 Keep serverless outbound traffic predictable and cheap. This page fixes DNS flakiness, NAT bottlenecks, blocked endpoints, and cross-region surprises that break RAG calls, vector writes, and webhook posts.
 
 ## When to use this page
