@@ -1,5 +1,22 @@
 # Chunking Checklist — Stability at Joins
 
+<details>
+  <summary><strong>🧭 Quick Return to Map</strong></summary>
+
+<br>
+
+  > You are in a sub-page of **MemoryLongContext**.  
+  > To reorient, go back here:  
+  >
+  > - [**MemoryLongContext** — extended context windows and memory retention](./README.md)  
+  > - [**WFGY Global Fix Map** — main Emergency Room, 300+ structured fixes](../README.md)  
+  > - [**WFGY Problem Map 1.0** — 16 reproducible failure modes](../../README.md)  
+  >
+  > Think of this page as a desk within a ward.  
+  > If you need the full triage and all prescriptions, return to the Emergency Room lobby.
+</details>
+
+
 Long-context retrieval often fails not at the level of whole documents but at the **joins between chunks**.  
 This checklist enforces stable, reproducible chunking so citations line up and entropy does not melt across boundaries.
 
