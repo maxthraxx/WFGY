@@ -1,5 +1,22 @@
 # VS Code Copilot Chat: Guardrails and Fix Patterns
 
+<details>
+  <summary><strong>🧭 Quick Return to Map</strong></summary>
+
+<br>
+
+  > You are in a sub-page of **DevTools_CodeAI**.  
+  > To reorient, go back here:  
+  >
+  > - [**DevTools_CodeAI** — AI-assisted coding and developer productivity](./README.md)  
+  > - [**WFGY Global Fix Map** — main Emergency Room, 300+ structured fixes](../README.md)  
+  > - [**WFGY Problem Map 1.0** — 16 reproducible failure modes](../../README.md)  
+  >
+  > Think of this page as a desk within a ward.  
+  > If you need the full triage and all prescriptions, return to the Emergency Room lobby.
+</details>
+
+
 Use this page when Copilot Chat is involved in code edits, refactors, tests, or RAG-style lookups over your repo. The goal is to localize the failure, then jump to the exact WFGY fix page with measurable acceptance.
 
 ## Open these first
