@@ -1,5 +1,22 @@
 # LM Studio: Guardrails and Fix Patterns
 
+<details>
+  <summary><strong>🧭 Quick Return to Map</strong></summary>
+
+<br>
+
+  > You are in a sub-page of **LocalDeploy_Inference**.  
+  > To reorient, go back here:  
+  >
+  > - [**LocalDeploy_Inference** — on-prem deployment and model inference](./README.md)  
+  > - [**WFGY Global Fix Map** — main Emergency Room, 300+ structured fixes](../README.md)  
+  > - [**WFGY Problem Map 1.0** — 16 reproducible failure modes](../../README.md)  
+  >
+  > Think of this page as a desk within a ward.  
+  > If you need the full triage and all prescriptions, return to the Emergency Room lobby.
+</details>
+
+
 [LM Studio](https://lmstudio.ai) is a desktop-native app for running LLMs locally. It integrates a polished UI, GGUF/GGML model loading, and provides both chat and API endpoints for developers.
 While convenient, LM Studio inherits typical inference-layer bugs: schema drift, memory desync, device initialization errors, and retrieval instability.
 This page aligns LM Studio workflows with WFGY guardrails.
