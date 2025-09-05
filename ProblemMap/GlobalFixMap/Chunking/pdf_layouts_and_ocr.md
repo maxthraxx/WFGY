@@ -1,5 +1,22 @@
 # PDF layouts and OCR
 
+<details>
+  <summary><strong>🧭 Quick Return to Map</strong></summary>
+
+<br>
+
+  > You are in a sub-page of **Chunking**.  
+  > To reorient, go back here:  
+  >
+  > - [**Chunking** — text segmentation and context window management](./README.md)  
+  > - [**WFGY Global Fix Map** — main Emergency Room, 300+ structured fixes](../README.md)  
+  > - [**WFGY Problem Map 1.0** — 16 reproducible failure modes](../../README.md)  
+  >
+  > Think of this page as a desk within a ward.  
+  > If you need the full triage and all prescriptions, return to the Emergency Room lobby.
+</details>
+
+
 A practical pipeline to extract clean, ordered text with stable offsets from PDFs and scanned pages, so your chunks, citations, and typed blocks remain consistent across reindex runs.
 
 ## Open these first
