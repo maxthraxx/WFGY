@@ -1,5 +1,22 @@
 # Duplication and Near Duplicate Collapse — Guardrails and Fix Patterns
 
+<details>
+  <summary><strong>🧭 Quick Return to Map</strong></summary>
+
+<br>
+
+  > You are in a sub-page of **Embeddings**.  
+  > To reorient, go back here:  
+  >
+  > - [**Embeddings** — vector representations and semantic search](./README.md)  
+  > - [**WFGY Global Fix Map** — main Emergency Room, 300+ structured fixes](../README.md)  
+  > - [**WFGY Problem Map 1.0** — 16 reproducible failure modes](../../README.md)  
+  >
+  > Think of this page as a desk within a ward.  
+  > If you need the full triage and all prescriptions, return to the Emergency Room lobby.
+</details>
+
+
 Use this page when repeated or slightly varied snippets crowd the index, citations look repetitive, or the right section is hidden behind many near copies. The goal is to detect exact and near duplicates before or during indexing, collapse them to a canonical record, and verify with ΔS, coverage, and λ.
 
 ## Open these first
