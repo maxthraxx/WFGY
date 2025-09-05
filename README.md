@@ -89,15 +89,16 @@ That’s it — no retraining, no jailbreaks.
 | #  | Section                                                                                                                  | Description                                                                        |
 | -- | ------------------------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------- |
 | 1  | [What problems does WFGY solve?](https://github.com/onestardao/WFGY/tree/main/ProblemMap/README.md)                      | See how WFGY fixes hallucination, memory collapse, semantic failure, and more.     |
-| 2  | [Download the Core PDF](https://github.com/onestardao/WFGY/blob/main/I_am_not_lizardman/WFGY_All_Principles_Return_to_One_v1.0_PSBigBig_Public.pdf)                                                             | The most important paper — 2000+ downloads. Explains the math & logic behind WFGY. |
-| 3  | [Launch TXT OS](https://github.com/onestardao/WFGY/tree/main/OS)                                                         | A semantic operating system — modular, prompt-free, open-source.                   |
-| 4  | [Try TXT-Blah Blah Blah](https://github.com/onestardao/WFGY/tree/main/OS/BlahBlahBlah)                                   | Semantic Q\&A with emotional and logical depth.                                    |
-| 5  | [Try TXT-Blur Blur Blur](https://github.com/onestardao/WFGY/tree/main/OS/BlurBlurBlur)                                   | Text-to-image with semantic control.                                               |
-| 6  | [Explore the Semantic Blueprint](https://github.com/onestardao/WFGY/tree/main/SemanticBlueprint)                         | Layer/module structure powering WFGY’s future extensions.                          |
-| 7  | [Check the Hero Log](https://github.com/onestardao/WFGY/tree/main/images/logs)                                           | Verified users, bugs, and breakthroughs — real field feedback.                     |
-| 8  | [Read the Semantic Clinic Index](https://github.com/onestardao/WFGY/blob/main/ProblemMap/SemanticClinicIndex.md)         | Triage symptoms → families → exact fixes. A structured recovery map.               |
-| 9  | [FAQ for New Stargazers](https://github.com/onestardao/WFGY/blob/main/FAQ_for_Stargazers.md)                             | Who we are, what you can do, and where to go next.                                 |
-| 10 | [See the RAG Architecture Map](https://github.com/onestardao/WFGY/blob/main/ProblemMap/rag-architecture-and-recovery.md) | Full pipeline view — chunking, embeddings, vector store, prompt, logic fix.        |
+| 2  | [Open the Global Fix Map (300+ guardrail pages)](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/README.md) | One index for providers, agents, vector DBs, embeddings, retrieval, ops, safety. Use this when you need exact, tool-specific fixes. |
+| 3  | [Download the Core PDF](https://github.com/onestardao/WFGY/blob/main/I_am_not_lizardman/WFGY_All_Principles_Return_to_One_v1.0_PSBigBig_Public.pdf) | The most important paper — 5000+ downloads. Explains the math & logic behind WFGY. |
+| 4  | [Launch TXT OS](https://github.com/onestardao/WFGY/tree/main/OS)                                                         | A semantic operating system — modular, prompt-free, open-source.                   |
+| 5  | [Try TXT-Blah Blah Blah](https://github.com/onestardao/WFGY/tree/main/OS/BlahBlahBlah)                                   | Semantic Q&A with emotional and logical depth.                                     |
+| 6  | [Try TXT-Blur Blur Blur](https://github.com/onestardao/WFGY/tree/main/OS/BlurBlurBlur)                                   | Text-to-image with semantic control.                                               |
+| 7  | [Explore the Semantic Blueprint](https://github.com/onestardao/WFGY/tree/main/SemanticBlueprint)                         | Layer/module structure powering WFGY’s future extensions.                          |
+| 8  | [Check the Hero Log](https://github.com/onestardao/WFGY/tree/main/images/logs)                                           | Verified users, bugs, and breakthroughs — real field feedback.                     |
+| 9  | [Read the Semantic Clinic Index](https://github.com/onestardao/WFGY/blob/main/ProblemMap/SemanticClinicIndex.md)         | Triage symptoms → families → exact fixes. A structured recovery map.               |
+| 10 | [FAQ for New Stargazers](https://github.com/onestardao/WFGY/blob/main/FAQ_for_Stargazers.md)                             | Who we are, what you can do, and where to go next.                                 |
+| 11 | [See the RAG Architecture Map](https://github.com/onestardao/WFGY/blob/main/ProblemMap/rag-architecture-and-recovery.md) | Full pipeline view — chunking, embeddings, vector store, prompt, logic fix.        |
 
 <br>
 
@@ -126,25 +127,20 @@ That’s it — no retraining, no jailbreaks.
 
 ### 🌍 Current Modules
 
-* [TXT: Blah Blah Blah](https://github.com/onestardao/WFGY/tree/main/OS/BlahBlahBlah) — Semantic Q\&A
-
+* [TXT: Blah Blah Blah](https://github.com/onestardao/WFGY/tree/main/OS/BlahBlahBlah) — Semantic Q&A
   > For paradoxes, philosophy, and abstract prompts — pure reasoning, zero hallucination.
 
 * [TXT: Blur Blur Blur](https://github.com/onestardao/WFGY/tree/main/OS/BlurBlurBlur) — Image Generation
-
   > No prompt tricks. Visual order within chaos. Hallucination-free realism.
 
 * [TXT: Blow Blow Blow](https://github.com/onestardao/WFGY/tree/main/OS/BlowBlowBlow) — Reasoning Games
-
   > AIGC-native RPGs. Memory-aware logic. Game interaction rewires narrative paths.
 
 * [TXT: Blot Blot Blot](https://github.com/onestardao/WFGY/tree/main/OS/BlotBlotBlot) — Humanized Writing
-
   > Emotional drift, sentence-level nuance, and AI detection evasion.
 
 * [TXT: Bloc Bloc Bloc](https://github.com/onestardao/WFGY/tree/main/OS/BlocBlocBloc) — Prompt Injection Firewall
-
-  > Semantic firewall with ΔS stability, hallucination confusion, and λ\_observe gating.
+  > Semantic firewall with ΔS stability, hallucination confusion, and λ_observe gating.
 
 > All modules run natively as `.txt` apps — no install, no dependencies.
 > This is not just tooling. It’s the architecture of a new semantic layer.
@@ -181,6 +177,7 @@ That’s it — no retraining, no jailbreaks.
 > **Solving Problems**
 > We built WFGY to crush the root causes of reasoning failure — not patch the symptoms.
 > 📎 [See the full Problem Map](https://github.com/onestardao/WFGY/tree/main/ProblemMap/README.md)
+> 📎 [Global Fix Map — Guardrails Index](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/README.md)
 > 📎 [Semantic Clinic: AI Failure Triage](https://github.com/onestardao/WFGY/blob/main/ProblemMap/SemanticClinicIndex.md)
 
 > **Benchmarking GPT-5**
@@ -197,6 +194,7 @@ That’s it — no retraining, no jailbreaks.
 > 📎 [See the RAG Architecture & Recovery Guide](https://github.com/onestardao/WFGY/blob/main/ProblemMap/rag-architecture-and-recovery.md)
 
 </details>
+
 
 
 ---
@@ -1425,6 +1423,7 @@ It treats alignment as a living semantic contract — not just accuracy, but mea
 [![Blow](https://img.shields.io/badge/Blow-Game%20Logic-purple?style=flat-square)](https://github.com/onestardao/WFGY/tree/main/OS/BlowBlowBlow)
 &nbsp;
 </div>
+
 
 
 
