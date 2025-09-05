@@ -1,5 +1,22 @@
 # Anti Prompt Injection Recipes · Prompt Assembly
 
+<details>
+  <summary><strong>🧭 Quick Return to Map</strong></summary>
+
+<br>
+
+  > You are in a sub-page of **PromptAssembly**.  
+  > To reorient, go back here:  
+  >
+  > - [**PromptAssembly** — prompt engineering and workflow composition](./README.md)  
+  > - [**WFGY Global Fix Map** — main Emergency Room, 300+ structured fixes](../README.md)  
+  > - [**WFGY Problem Map 1.0** — 16 reproducible failure modes](../../README.md)  
+  >
+  > Think of this page as a desk within a ward.  
+  > If you need the full triage and all prescriptions, return to the Emergency Room lobby.
+</details>
+
+
 Practical defenses to keep hostile text from hijacking your prompts. Use this page to isolate untrusted input, contract the I/O, and keep evidence grounded while agents and tools run safely.
 
 ## What this page is
