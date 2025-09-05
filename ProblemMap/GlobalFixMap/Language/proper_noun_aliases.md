@@ -1,5 +1,22 @@
 # Proper Noun Aliases — Names, Brands, and Transliteration Map
 
+<details>
+  <summary><strong>🧭 Quick Return to Map</strong></summary>
+
+<br>
+
+  > You are in a sub-page of **Language**.  
+  > To reorient, go back here:  
+  >
+  > - [**Language** — multilingual processing and semantic alignment](./README.md)  
+  > - [**WFGY Global Fix Map** — main Emergency Room, 300+ structured fixes](../README.md)  
+  > - [**WFGY Problem Map 1.0** — 16 reproducible failure modes](../../README.md)  
+  >
+  > Think of this page as a desk within a ward.  
+  > If you need the full triage and all prescriptions, return to the Emergency Room lobby.
+</details>
+
+
 A small but high leverage table that makes **names and brands retrievable across languages, scripts, and spellings**. This page gives a minimal schema, ingest rules, and tests so your RAG can resolve “Beyoncé vs Beyonce”, “Яндекс vs Yandex”, “劉慈欣 vs 刘慈欣 vs Cixin Liu”, and similar cases without breaking recall or precision.
 
 ---
