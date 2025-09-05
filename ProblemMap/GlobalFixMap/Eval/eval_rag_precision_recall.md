@@ -1,5 +1,22 @@
 # Eval RAG Precision & Recall — Guardrails and Fix Patterns
 
+<details>
+  <summary><strong>🧭 Quick Return to Map</strong></summary>
+
+<br>
+
+  > You are in a sub-page of **Eval**.  
+  > To reorient, go back here:  
+  >
+  > - [**Eval** — model evaluation and benchmarking](./README.md)  
+  > - [**WFGY Global Fix Map** — main Emergency Room, 300+ structured fixes](../README.md)  
+  > - [**WFGY Problem Map 1.0** — 16 reproducible failure modes](../../README.md)  
+  >
+  > Think of this page as a desk within a ward.  
+  > If you need the full triage and all prescriptions, return to the Emergency Room lobby.
+</details>
+
+
 This page defines how to measure **precision and recall** in RAG pipelines under the WFGY framework. It sets acceptance thresholds, common pitfalls, and structural fixes to keep evaluations meaningful and reproducible.
 
 ---
