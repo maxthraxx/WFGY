@@ -1,5 +1,22 @@
 # RAG ops debug playbook
 
+<details>
+  <summary><strong>🧭 Quick Return to Map</strong></summary>
+
+<br>
+
+  > You are in a sub-page of **Chunking**.  
+  > To reorient, go back here:  
+  >
+  > - [**Chunking** — text segmentation and context window management](./README.md)  
+  > - [**WFGY Global Fix Map** — main Emergency Room, 300+ structured fixes](../README.md)  
+  > - [**WFGY Problem Map 1.0** — 16 reproducible failure modes](../../README.md)  
+  >
+  > Think of this page as a desk within a ward.  
+  > If you need the full triage and all prescriptions, return to the Emergency Room lobby.
+</details>
+
+
 A fast triage guide for incidents after you change chunking, OCR, embedding, or index settings. The goal is to localize the failing layer in minutes and apply a reversible fix.
 
 ## Open these first
