@@ -1,5 +1,22 @@
 # Tokenization & Casing — OCR Parsing Guardrails
 
+<details>
+  <summary><strong>🧭 Quick Return to Map</strong></summary>
+
+<br>
+
+  > You are in a sub-page of **OCR_Parsing**.  
+  > To reorient, go back here:  
+  >
+  > - [**OCR_Parsing** — text recognition and document structure parsing](./README.md)  
+  > - [**WFGY Global Fix Map** — main Emergency Room, 300+ structured fixes](../README.md)  
+  > - [**WFGY Problem Map 1.0** — 16 reproducible failure modes](../../README.md)  
+  >
+  > Think of this page as a desk within a ward.  
+  > If you need the full triage and all prescriptions, return to the Emergency Room lobby.
+</details>
+
+
 A focused fix page for post-OCR text where casing, spaces, or token boundaries are corrupted. Use this to normalize the stream **before** chunking/embedding, and verify with measurable targets. Works across Tesseract, Google DocAI, Azure OCR, ABBYY, PaddleOCR, and custom engines.
 
 ## When to use this page
