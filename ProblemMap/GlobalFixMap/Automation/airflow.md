@@ -1,5 +1,22 @@
 # Apache Airflow — Guardrails and Fix Patterns
 
+<details>
+  <summary><strong>🧭 Quick Return to Map</strong></summary>
+
+<br>
+
+  > You are in a sub-page of **Automation Platforms**.  
+  > To reorient, go back here:  
+  >
+  > - [**Automation Platforms** — stabilize no-code workflows and integrations](./README.md)  
+  > - [**WFGY Global Fix Map** — main Emergency Room, 300+ structured fixes](../README.md)  
+  > - [**WFGY Problem Map 1.0** — 16 reproducible failure modes](../../README.md)  
+  >
+  > Think of this page as a desk within a ward.  
+  > If you need the full triage and all prescriptions, return to the Emergency Room lobby.
+</details>
+
+
 Use this when your workflow is orchestrated by **Apache Airflow** (DAGs with PythonOperators, Sensors, KubernetesPodOperator, etc.). If pipelines succeed but the **answers are wrong**, citations miss, or behavior differs between **ad-hoc runs** and **scheduled runs**, anchor your diagnosis here.
 
 **Acceptance targets**
