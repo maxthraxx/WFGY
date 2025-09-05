@@ -1,5 +1,22 @@
 # Time-Sync Failure — Multimodal Long Context
 
+<details>
+  <summary><strong>🧭 Quick Return to Map</strong></summary>
+
+<br>
+
+  > You are in a sub-page of **Multimodal_LongContext**.  
+  > To reorient, go back here:  
+  >
+  > - [**Multimodal_LongContext** — long-context reasoning across text, vision, and audio](./README.md)  
+  > - [**WFGY Global Fix Map** — main Emergency Room, 300+ structured fixes](../README.md)  
+  > - [**WFGY Problem Map 1.0** — 16 reproducible failure modes](../../README.md)  
+  >
+  > Think of this page as a desk within a ward.  
+  > If you need the full triage and all prescriptions, return to the Emergency Room lobby.
+</details>
+
+
 When audio, video, and text streams drift out of sync, reasoning collapses even if each modality looks fine in isolation.  
 This page defines guardrails to detect and repair temporal misalignment across long multimodal contexts.
 
