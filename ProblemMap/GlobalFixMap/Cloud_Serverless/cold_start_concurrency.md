@@ -1,5 +1,22 @@
 # Cold Start and Concurrency — Guardrails
 
+<details>
+  <summary><strong>🧭 Quick Return to Map</strong></summary>
+
+<br>
+
+  > You are in a sub-page of **Cloud_Serverless**.  
+  > To reorient, go back here:  
+  >
+  > - [**Cloud_Serverless** — scalable functions and event-driven pipelines](./README.md)  
+  > - [**WFGY Global Fix Map** — main Emergency Room, 300+ structured fixes](../README.md)  
+  > - [**WFGY Problem Map 1.0** — 16 reproducible failure modes](../../README.md)  
+  >
+  > Think of this page as a desk within a ward.  
+  > If you need the full triage and all prescriptions, return to the Emergency Room lobby.
+</details>
+
+
 A platform-agnostic repair guide for serverless and edge runtimes. Use this page when first calls fail, warm instances drift in behavior, or concurrency spikes break your RAG/agent pipelines. Every step maps to a Problem Map page with measurable targets.
 
 ## When to use this page
