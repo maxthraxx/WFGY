@@ -1,5 +1,22 @@
 # Section Detection: stable boundaries for headings and bodies
 
+<details>
+  <summary><strong>🧭 Quick Return to Map</strong></summary>
+
+<br>
+
+  > You are in a sub-page of **Chunking**.  
+  > To reorient, go back here:  
+  >
+  > - [**Chunking** — text segmentation and context window management](./README.md)  
+  > - [**WFGY Global Fix Map** — main Emergency Room, 300+ structured fixes](../README.md)  
+  > - [**WFGY Problem Map 1.0** — 16 reproducible failure modes](../../README.md)  
+  >
+  > Think of this page as a desk within a ward.  
+  > If you need the full triage and all prescriptions, return to the Emergency Room lobby.
+</details>
+
+
 How to cut documents into audit-ready sections once titles are known. The goal is a deterministic start and end for each section so citations land on the correct text and parents do not swallow child content.
 
 ## Open these first
