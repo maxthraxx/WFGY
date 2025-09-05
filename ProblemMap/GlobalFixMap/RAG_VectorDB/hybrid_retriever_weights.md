@@ -1,5 +1,22 @@
 # Hybrid Retriever Weights — Guardrails and Fix Pattern
 
+<details>
+  <summary><strong>🧭 Quick Return to Map</strong></summary>
+
+<br>
+
+  > You are in a sub-page of **RAG_VectorDB**.  
+  > To reorient, go back here:  
+  >
+  > - [**RAG_VectorDB** — vector databases for retrieval and grounding](./README.md)  
+  > - [**WFGY Global Fix Map** — main Emergency Room, 300+ structured fixes](../README.md)  
+  > - [**WFGY Problem Map 1.0** — 16 reproducible failure modes](../../README.md)  
+  >
+  > Think of this page as a desk within a ward.  
+  > If you need the full triage and all prescriptions, return to the Emergency Room lobby.
+</details>
+
+
 Use this page when **hybrid retrieval underperforms a single retriever** or when results look noisy after fusing BM25, dense vectors, HyDE, or filters. Failures usually come from **score scale mismatch**, **duplicate dominance**, or **query-type priors** not reflected in weights.
 
 ---
