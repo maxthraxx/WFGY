@@ -1,5 +1,22 @@
 # System vs User vs Tool Role Order — Guardrails and Fix Patterns
 
+<details>
+  <summary><strong>🧭 Quick Return to Map</strong></summary>
+
+<br>
+
+  > You are in a sub-page of **Safety_PromptIntegrity**.  
+  > To reorient, go back here:  
+  >
+  > - [**Safety_PromptIntegrity** — prompt injection defense and integrity checks](./README.md)  
+  > - [**WFGY Global Fix Map** — main Emergency Room, 300+ structured fixes](../README.md)  
+  > - [**WFGY Problem Map 1.0** — 16 reproducible failure modes](../../README.md)  
+  >
+  > Think of this page as a desk within a ward.  
+  > If you need the full triage and all prescriptions, return to the Emergency Room lobby.
+</details>
+
+
 A focused guide to keep roles clean and predictable so prompts do not leak policy, tools do not collide with user text, and JSON mode stays stable.
 
 Use this page when replies look like policy text, tools fire inside user turns, or multi-agent handoffs overwrite each other.
