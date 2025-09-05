@@ -1,3 +1,22 @@
+# Locale Collation & Sorting — Consistency Guardrails and Fix Pattern
+
+<details>
+  <summary><strong>🧭 Quick Return to Map</strong></summary>
+
+<br>
+
+  > You are in a sub-page of **LanguageLocale**.  
+  > To reorient, go back here:  
+  >
+  > - [**LanguageLocale** — localization, regional settings, and context adaptation](./README.md)  
+  > - [**WFGY Global Fix Map** — main Emergency Room, 300+ structured fixes](../README.md)  
+  > - [**WFGY Problem Map 1.0** — 16 reproducible failure modes](../../README.md)  
+  >
+  > Think of this page as a desk within a ward.  
+  > If you need the full triage and all prescriptions, return to the Emergency Room lobby.
+</details>
+
+
 A focused guide to stop locale-specific sort/collation bugs that break retrieval order, deduping, join keys, and user-facing lists. Use this when lists look “random,” numbers sort as text (“v10” before “v2”), or non-English letters jump around across environments.
 
 ## Open these first
