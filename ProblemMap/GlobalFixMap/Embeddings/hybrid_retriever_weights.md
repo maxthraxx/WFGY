@@ -1,5 +1,22 @@
 # Hybrid Retriever Weights — Guardrails and Fix Patterns
 
+<details>
+  <summary><strong>🧭 Quick Return to Map</strong></summary>
+
+<br>
+
+  > You are in a sub-page of **Embeddings**.  
+  > To reorient, go back here:  
+  >
+  > - [**Embeddings** — vector representations and semantic search](./README.md)  
+  > - [**WFGY Global Fix Map** — main Emergency Room, 300+ structured fixes](../README.md)  
+  > - [**WFGY Problem Map 1.0** — 16 reproducible failure modes](../../README.md)  
+  >
+  > Think of this page as a desk within a ward.  
+  > If you need the full triage and all prescriptions, return to the Emergency Room lobby.
+</details>
+
+
 Use this page when BM25 plus dense retrieval performs worse than either one alone, when top k flips between runs, or when hybrid recall feels random after an index rebuild. The goal is to put both retrievers on a common score space, then set stable weights, add a single deterministic reranker, and verify with ΔS, coverage, and λ.
 
 ## Open these first
