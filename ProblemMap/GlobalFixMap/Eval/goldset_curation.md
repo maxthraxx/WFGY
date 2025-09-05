@@ -1,5 +1,22 @@
 # Goldset Curation — Guardrails and Fix Patterns
 
+<details>
+  <summary><strong>🧭 Quick Return to Map</strong></summary>
+
+<br>
+
+  > You are in a sub-page of **Eval**.  
+  > To reorient, go back here:  
+  >
+  > - [**Eval** — model evaluation and benchmarking](./README.md)  
+  > - [**WFGY Global Fix Map** — main Emergency Room, 300+ structured fixes](../README.md)  
+  > - [**WFGY Problem Map 1.0** — 16 reproducible failure modes](../../README.md)  
+  >
+  > Think of this page as a desk within a ward.  
+  > If you need the full triage and all prescriptions, return to the Emergency Room lobby.
+</details>
+
+
 A curated gold set is the foundation for evaluation stability. Without strict contracts on the gold data, all eval metrics become meaningless. This page defines how to build, audit, and maintain gold QA sets that align with WFGY acceptance targets.
 
 ---
