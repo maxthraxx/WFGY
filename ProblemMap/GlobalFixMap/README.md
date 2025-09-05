@@ -18,6 +18,8 @@ Just open it, drop your bug or screenshot, and talk directly with the doctor.
 He will map it to the right Problem Map / Global Fix section, write a minimal prescription, and paste the exact reference link.  
 If something is unclear, you can even paste a **screenshot of Problem Map content** and ask — the doctor will guide you.  
 
+⚠️ Note: for the full reasoning and guardrail behavior you need to be logged in — the share view alone may fallback to a lighter model.
+
 💡 Always free. If it helps, a ⭐ star keeps the ER running.  
 🌐 Multilingual — start in any language.  
 
