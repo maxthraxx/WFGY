@@ -1,5 +1,22 @@
 # Locale Drift & Normalization — Guardrails and Fix Pattern
 
+<details>
+  <summary><strong>🧭 Quick Return to Map</strong></summary>
+
+<br>
+
+  > You are in a sub-page of **LanguageLocale**.  
+  > To reorient, go back here:  
+  >
+  > - [**LanguageLocale** — localization, regional settings, and context adaptation](./README.md)  
+  > - [**WFGY Global Fix Map** — main Emergency Room, 300+ structured fixes](../README.md)  
+  > - [**WFGY Problem Map 1.0** — 16 reproducible failure modes](../../README.md)  
+  >
+  > Think of this page as a desk within a ward.  
+  > If you need the full triage and all prescriptions, return to the Emergency Room lobby.
+</details>
+
+
 A focused fix for **locale-specific normalization bugs** that break retrieval or cause answers to flip between runs. Use this page to align **Unicode form, width, accents, digits, quotes, spaces, casing** across **ingest, index, query, and display**. No infra change required.
 
 ## Open these first
