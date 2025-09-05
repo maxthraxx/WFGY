@@ -1,5 +1,22 @@
 # Poisoning and Contamination — Guardrails and Fix Patterns
 
+<details>
+  <summary><strong>🧭 Quick Return to Map</strong></summary>
+
+<br>
+
+  > You are in a sub-page of **Embeddings**.  
+  > To reorient, go back here:  
+  >
+  > - [**Embeddings** — vector representations and semantic search](./README.md)  
+  > - [**WFGY Global Fix Map** — main Emergency Room, 300+ structured fixes](../README.md)  
+  > - [**WFGY Problem Map 1.0** — 16 reproducible failure modes](../../README.md)  
+  >
+  > Think of this page as a desk within a ward.  
+  > If you need the full triage and all prescriptions, return to the Emergency Room lobby.
+</details>
+
+
 Use this page when answers suddenly contradict known anchors after an ingestion, when one domain dominates results with subtle text edits, or when λ becomes spiky only for a subset of sources. Goal is to localize the tainted slice, quarantine it, and rebuild cleanly with measurable gates. No infra change required.
 
 ## Open these first
