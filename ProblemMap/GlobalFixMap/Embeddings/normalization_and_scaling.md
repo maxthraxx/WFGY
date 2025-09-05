@@ -1,5 +1,22 @@
 # Embeddings — Normalization and Scaling
 
+<details>
+  <summary><strong>🧭 Quick Return to Map</strong></summary>
+
+<br>
+
+  > You are in a sub-page of **Embeddings**.  
+  > To reorient, go back here:  
+  >
+  > - [**Embeddings** — vector representations and semantic search](./README.md)  
+  > - [**WFGY Global Fix Map** — main Emergency Room, 300+ structured fixes](../README.md)  
+  > - [**WFGY Problem Map 1.0** — 16 reproducible failure modes](../../README.md)  
+  >
+  > Think of this page as a desk within a ward.  
+  > If you need the full triage and all prescriptions, return to the Emergency Room lobby.
+</details>
+
+
 A repair page for scale and metric mismatches in embedding pipelines. Use this when retrieval quality looks good by similarity numbers but the meaning is wrong, or when different stores or models disagree after a migration.
 
 ## Open these first
