@@ -1,5 +1,22 @@
 # Eval — Cross-Agent Consistency (Scholar ↔ Auditor, Cohen’s κ, Conflict Policy)
 
+<details>
+  <summary><strong>🧭 Quick Return to Map</strong></summary>
+
+<br>
+
+  > You are in a sub-page of **Eval**.  
+  > To reorient, go back here:  
+  >
+  > - [**Eval** — model evaluation and benchmarking](./README.md)  
+  > - [**WFGY Global Fix Map** — main Emergency Room, 300+ structured fixes](../README.md)  
+  > - [**WFGY Problem Map 1.0** — 16 reproducible failure modes](../../README.md)  
+  >
+  > Think of this page as a desk within a ward.  
+  > If you need the full triage and all prescriptions, return to the Emergency Room lobby.
+</details>
+
+
 **Goal**  
 Measure and enforce agreement between two independent validators: a **Scholar** (claims/citations checker) and an **Auditor** (policy/provenance/constraints gate). Produce (1) quantitative agreement (Percent Agreement & Cohen’s κ) and (2) a deterministic **conflict-resolution policy** for ship/no-ship.
 
