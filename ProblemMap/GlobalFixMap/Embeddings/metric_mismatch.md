@@ -1,5 +1,22 @@
 # Metric Mismatch — Guardrails and Fix Pattern
 
+<details>
+  <summary><strong>🧭 Quick Return to Map</strong></summary>
+
+<br>
+
+  > You are in a sub-page of **Embeddings**.  
+  > To reorient, go back here:  
+  >
+  > - [**Embeddings** — vector representations and semantic search](./README.md)  
+  > - [**WFGY Global Fix Map** — main Emergency Room, 300+ structured fixes](../README.md)  
+  > - [**WFGY Problem Map 1.0** — 16 reproducible failure modes](../../README.md)  
+  >
+  > Think of this page as a desk within a ward.  
+  > If you need the full triage and all prescriptions, return to the Emergency Room lobby.
+</details>
+
+
 A focused fix when nearest neighbors look similar in cosine distance but your store runs L2 or dot, or the reverse. Use this page to localize the failure and rebuild the index with the right metric and normalization rules. No infra change needed.
 
 ## Open these first
