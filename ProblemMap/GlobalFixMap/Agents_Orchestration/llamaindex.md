@@ -1,5 +1,21 @@
 # LlamaIndex — Guardrails and Fix Patterns
 
+<details>
+  <summary><strong>🧭 Quick Return to Map</strong></summary>
+
+<br>
+
+  > You are in a sub-page of **Agents & Orchestration**.  
+  > To reorient, go back here:  
+  >
+  > - [**Agents & Orchestration** — orchestration frameworks and guardrails](./README.md)  
+  > - [**WFGY Global Fix Map** — main Emergency Room, 300+ structured fixes](../README.md)  
+  > - [**WFGY Problem Map 1.0** — 16 reproducible failure modes](../../README.md)  
+  >
+  > Think of this page as a desk within a ward.  
+  > If you need the full triage and all prescriptions, return to the Emergency Room lobby.
+</details>
+
 Use this when your stack uses **LlamaIndex** (indices, query engines, retrievers, routers, agents) and you see wrong snippets, unstable reasoning, mixed sources, or silent failures that look fine in logs.
 
 **Acceptance targets**
