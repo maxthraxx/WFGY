@@ -1,5 +1,22 @@
 # Compliance — Enterprise Knowledge Governance
 
+<details>
+  <summary><strong>🧭 Quick Return to Map</strong></summary>
+
+<br>
+
+  > You are in a sub-page of **Enterprise_Knowledge_Gov**.  
+  > To reorient, go back here:  
+  >
+  > - [**Enterprise_Knowledge_Gov** — corporate knowledge management and governance](./README.md)  
+  > - [**WFGY Global Fix Map** — main Emergency Room, 300+ structured fixes](../README.md)  
+  > - [**WFGY Problem Map 1.0** — 16 reproducible failure modes](../../README.md)  
+  >
+  > Think of this page as a desk within a ward.  
+  > If you need the full triage and all prescriptions, return to the Emergency Room lobby.
+</details>
+
+
 Guardrails and fix patterns for aligning enterprise knowledge management with legal, regulatory, and internal compliance requirements. Use this page when retrieval, storage, or reasoning drifts into non-compliant outputs even though the raw system looks healthy.
 
 ---
