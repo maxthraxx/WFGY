@@ -1,5 +1,22 @@
 # Vectorstore Fragmentation: Guardrails and Fix Patterns
 
+<details>
+  <summary><strong>🧭 Quick Return to Map</strong></summary>
+
+<br>
+
+  > You are in a sub-page of **Embeddings**.  
+  > To reorient, go back here:  
+  >
+  > - [**Embeddings** — vector representations and semantic search](./README.md)  
+  > - [**WFGY Global Fix Map** — main Emergency Room, 300+ structured fixes](../README.md)  
+  > - [**WFGY Problem Map 1.0** — 16 reproducible failure modes](../../README.md)  
+  >
+  > Think of this page as a desk within a ward.  
+  > If you need the full triage and all prescriptions, return to the Emergency Room lobby.
+</details>
+
+
 A focused guide to detect and repair fragmented vector indexes. Use this when recall looks fine in pockets yet end answers miss the correct section or flip unpredictably. The fixes below are store agnostic and verified with ΔS, λ, and coverage targets.
 
 ## When to use this page
