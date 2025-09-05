@@ -1,5 +1,22 @@
 # Citation Break in RAG — Guardrails and Fix Pattern
 
+<details>
+  <summary><strong>🧭 Quick Return to Map</strong></summary>
+
+<br>
+
+  > You are in a sub-page of **RAG**.  
+  > To reorient, go back here:  
+  >
+  > - [**RAG** — retrieval-augmented generation and knowledge grounding](./README.md)  
+  > - [**WFGY Global Fix Map** — main Emergency Room, 300+ structured fixes](../README.md)  
+  > - [**WFGY Problem Map 1.0** — 16 reproducible failure modes](../../README.md)  
+  >
+  > Think of this page as a desk within a ward.  
+  > If you need the full triage and all prescriptions, return to the Emergency Room lobby.
+</details>
+
+
 When answers look plausible but the supporting citation is missing, wrong, or broken.  
 Citation breaks cause user trust collapse because retrieval snippets do not line up with the generated text.
 
