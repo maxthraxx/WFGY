@@ -1,5 +1,22 @@
 # Date & Time Format Variants — Guardrails and Fix Pattern
 
+<details>
+  <summary><strong>🧭 Quick Return to Map</strong></summary>
+
+<br>
+
+  > You are in a sub-page of **LanguageLocale**.  
+  > To reorient, go back here:  
+  >
+  > - [**LanguageLocale** — localization, regional settings, and context adaptation](./README.md)  
+  > - [**WFGY Global Fix Map** — main Emergency Room, 300+ structured fixes](../README.md)  
+  > - [**WFGY Problem Map 1.0** — 16 reproducible failure modes](../../README.md)  
+  >
+  > Think of this page as a desk within a ward.  
+  > If you need the full triage and all prescriptions, return to the Emergency Room lobby.
+</details>
+
+
 A focused repair for **ambiguous or mixed date/time formats** across CJK/RTL/Indic/Latin content. Use this page when numeric dates, month names, calendars, or time zones cause retrieval drift or broken citations.
 
 ## What this page is
