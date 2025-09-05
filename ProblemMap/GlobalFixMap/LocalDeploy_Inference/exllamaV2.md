@@ -1,5 +1,22 @@
 # ExLlamaV2: Guardrails and Fix Patterns
 
+<details>
+  <summary><strong>🧭 Quick Return to Map</strong></summary>
+
+<br>
+
+  > You are in a sub-page of **LocalDeploy_Inference**.  
+  > To reorient, go back here:  
+  >
+  > - [**LocalDeploy_Inference** — on-prem deployment and model inference](./README.md)  
+  > - [**WFGY Global Fix Map** — main Emergency Room, 300+ structured fixes](../README.md)  
+  > - [**WFGY Problem Map 1.0** — 16 reproducible failure modes](../../README.md)  
+  >
+  > Think of this page as a desk within a ward.  
+  > If you need the full triage and all prescriptions, return to the Emergency Room lobby.
+</details>
+
+
 ExLlamaV2 is a specialized inference backend for LLaMA-family models with optimized 4-bit quantization.  
 It provides faster throughput and lower VRAM usage compared to generic backends, but introduces new risks in accuracy, schema drift, and numerical stability.  
 This page maps those issues to WFGY structural fixes with measurable acceptance targets.
