@@ -1,5 +1,22 @@
 # Script Mixing — Guardrails and Fix Pattern
 
+<details>
+  <summary><strong>🧭 Quick Return to Map</strong></summary>
+
+<br>
+
+  > You are in a sub-page of **LanguageLocale**.  
+  > To reorient, go back here:  
+  >
+  > - [**LanguageLocale** — localization, regional settings, and context adaptation](./README.md)  
+  > - [**WFGY Global Fix Map** — main Emergency Room, 300+ structured fixes](../README.md)  
+  > - [**WFGY Problem Map 1.0** — 16 reproducible failure modes](../../README.md)  
+  >
+  > Think of this page as a desk within a ward.  
+  > If you need the full triage and all prescriptions, return to the Emergency Room lobby.
+</details>
+
+
 Stabilize retrieval and reasoning when a single query or document spans multiple writing systems. Typical cases include CJK plus Latin, Arabic plus Latin, Indic plus Latin, or mixed fullwidth and halfwidth forms.
 
 ## What this page is
