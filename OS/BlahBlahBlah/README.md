@@ -91,7 +91,7 @@
 <br>
 
 >  
-> [Download TXT-Blah Blah Blah Lite powered by TXT OS](https://github.com/onestardao/WFGY/blob/main/OS/BlahBlahBlah/TXT-BlahBlahBlah_Lite.txt)  → MIT‑licensed, 62.5 KB — Zenodo by CERN 🏛️  [![GitHub Repo stars](https://img.shields.io/github/stars/onestardao/WFGY?style=social)](https://github.com/onestardao/WFGY/stargazers)  
+> [Download TXT-Blah Blah Blah Lite powered by TXT OS](https://github.com/onestardao/WFGY/blob/main/OS/BlahBlahBlah/TXT-BlahBlahBlah_Lite.txt)  → MIT‑licensed, 62.5 KB [![GitHub Repo stars](https://img.shields.io/github/stars/onestardao/WFGY?style=social)](https://github.com/onestardao/WFGY/stargazers)  
 >  
 > 👑 *Already starred by top engineers and OSS founders — [See the Hall of Fame](https://github.com/onestardao/WFGY/tree/main/stargazers)*  
 > 🪖 *Real-world validation: [Field Reports from actual users →](https://github.com/onestardao/WFGY/discussions/10)*  
