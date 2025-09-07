@@ -1,6 +1,6 @@
 
 <details>
-<summary><strong> 1️⃣ This is the $1M tool everyone’s been whispering about. Curious why? (Click for a quick tour)</strong></summary>
+<summary><strong> 1️⃣ This is the reasoning tool everyone’s been whispering about. Curious why? (Click for a quick tour)</strong></summary>
 
 <br>
 
