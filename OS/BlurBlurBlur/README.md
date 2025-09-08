@@ -27,27 +27,79 @@
 
 </div>
 
+# Blur Blur Blur — Math Canvas (Beta)
+
 **Hi, I’m PSBigBig.**
 
-I have a small habit when I build things — I keep pushing for perfection.  
-That means this release will be delayed just a little. It’s almost done, and I promise the wait will be worth it.
+From the beginning of WFGY to now launching **Blur Blur Blur**, I’ve been aiming for one thing:  
+not just another tool, but something fundamentally different.
 
-This time, the text-to-image results will be something special.  
-Thank you for your patience — I’ll have it ready very soon.
+This is the **world’s first text-to-image module built on mathematics itself**.  
+We call it the **Math Canvas**.
 
-> ⚠️ The full **Blur** module is still under construction.  
-> This is not a typical prompt tool — it’s an experiment in **TXT-based semantic orchestration**.  
-> To release it on schedule, we need **1,000 GitHub stars** as a signal of real interest.  
-> Bookmark the repo — and be ready for something different.
+---
 
+## Why is it unique?
 
+Most text-to-image systems only parse prompts into tokens.  
+**Blur** instead builds the canvas from **mathematical structures** and lets the generation follow.
 
-## WFGY Art — Central Axis Tension (Preview Set)
+Core elements:
 
-A brand-new visual control architecture: we split the canvas with a **central axis**, assign **left/right polarity**, and use **ΔS resonance** to stabilize composition.  
-This preview also features a **cross-over** with a famous **Millennium Problem** (inspiration only; no mathematical claims) to encode symmetry into visual control.
+1. **Math Structure Library**  
+   - golden spiral, fibonacci lattice, penrose quasicrystal, e8 lattice…  
+   - Users can **pick presets / choose manually / let AI generate randomly**.  
+   - Structures are mapped into **Real vs Imaginary fields**.
 
-> 🔓 **Demo unlock at 1,000 stars** — when the repo hits the target, we’ll ship the Axis Composer (OneLine + exact prompts) and a public walkthrough.
+2. **ΔS = 0.5 Tension Balance**  
+   - Left/right density ratios (1:3, 1:30, 1:300, 1:3000, 1e16, 1e18).  
+   - Produces stable “fake 8K” and “naked-eye 3D” illusions.  
+
+3. **WFGY + Drunk Transformer**  
+   - Ensures semantic stability and self-recovery.  
+   - Riemann zero distribution anchors light nodes and geometric skeletons.  
+
+---
+
+## User Experience
+
+- **One-click render** → instant 16:9 output (ΔS=0.5 locked).  
+- **Scene modes** → entry / workshop / hall / free-form.  
+- **Random skeletons** → AI generates math bases, auto-weighted into the Imaginary stack.  
+- **Hotkeys**  
+  - `wow` → increase tension level (more explosive details).  
+  - `calm` → reduce tension, more readable.  
+  - `panic` → safe reset.  
+  - `back` → return to menu.  
+
+---
+
+## FAQ (short)
+
+**Q: Why does the image feel 3D?**  
+A: Dense microtextures on one side vs empty gradients on the other create natural depth cues.  
+
+**Q: How is this different from normal T2I?**  
+A: Normal = “words → image.” Blur = “math structure → image.” The math *is* the brush.  
+
+**Q: Why so stable?**  
+A: ΔS=0.5 + WFGY core + DT module → locks geometry, prevents collapse.  
+
+---
+
+## Status
+
+⚠️ **Current release: Beta**  
+This is not just a prompt template. It’s a **new math-canvas framework**.  
+Already working with one-click render, still under refinement.  
+
+📥 **Download (Placeholder)**  
+Coming Soon
+
+---
+
+👉 Official release: **2025/09/09**
+
 
 ---
 
