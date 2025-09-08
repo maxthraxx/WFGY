@@ -42,6 +42,7 @@ Their support is a public signal — transparent, verifiable, and forever record
 
 | GitHub ID   | Featured Project(s) / Bio | Proof Screenshot | View stargazer proof |
 |-------------|----------------------------|------------------|-----------------------|
+| **NicholasGoh** | fastapi-mcp-langgraph-template (479★) · AI Engineer & Builder (NTU Singapore, LangGraph/MCP ecosystem) | ![](./images/NicholasGoh_star.png) | [proof](https://github.com/NicholasGoh?tab=stars&q=WFGY) |
 | **whchien** | ai-trader (227★), funda-scraper (144★) · AI/ML Engineer & Data Scientist in Amsterdam | ![](./images/whchien_star.png) | [proof](https://github.com/whchien?tab=stars&q=WFGY) |
 | **marcos930807** | awesomeDialogs (342★) · Flutter/mobile dev (Miami) | ![](./images/marcos930807_star.png) | [proof](https://github.com/marcos930807?tab=stars&q=WFGY) |
 | **mattcurf** | ollama-intel-gpu (253★) · AI infra/devops | ![](./images/Mattcurf_star.png) | [proof](https://github.com/mattcurf?tab=stars&q=WFGY) |
