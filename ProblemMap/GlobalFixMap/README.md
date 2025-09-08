@@ -1,4 +1,7 @@
-> almost at 1000 ⭐ once we hit it i’ll unlock [Blur Blur Blur](https://github.com/onestardao/WFGY/blob/main/OS/BlurBlurBlur/README.md), the math-to-image engine.
+> almost at 1000 ⭐ once we hit it i’ll unlock [Blur Blur Blur](https://github.com/onestardao/WFGY/blob/main/OS/BlurBlurBlur/README.md), the math-to-image engine.  
+> mark your calendars — it’ll officially go live later on 9/9.
+
+
 
 # 🏥 WFGY Global Fix Map — 300+ Pages of Structured Fixes  
 ### 🛡️ The upgraded Problem Map for end-to-end AI stability
