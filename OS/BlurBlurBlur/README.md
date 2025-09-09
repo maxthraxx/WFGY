@@ -29,79 +29,157 @@
 
 </div>
 
-# Blur Blur Blur — Math Canvas (Beta)
+# Blur Blur Blur **Lite** — Math Canvas Quickstart (Beta)
 
-**Hi, I’m PSBigBig.**
-
-From the beginning of WFGY to now launching **Blur Blur Blur**, I’ve been aiming for one thing:  
-not just another tool, but something fundamentally different.
-
-This is the **world’s first text-to-image module built on mathematics itself**.  
-We call it the **Math Canvas**.
+This is the **world’s first math-first T2I** you can run in any chat: build a canvas from **mathematical structure + Real/Imag fields**, then render.  
+Lite focuses on a clean, safe set of knobs so newcomers can feel the “math shock” in one minute.
 
 ---
 
-## Why is it unique?
+## ⬇️ Download
 
-Most text-to-image systems only parse prompts into tokens.  
-**Blur** instead builds the canvas from **mathematical structures** and lets the generation follow.
+**TXT file:** `TXT-BlurBlurBlur_Lite_Beta.txt`  
+[Download the TXT](TXT-BlurBlurBlur_Lite_Beta.txt)
 
-Core elements:
-
-1. **Math Structure Library**  
-   - golden spiral, fibonacci lattice, penrose quasicrystal, e8 lattice…  
-   - Users can **pick presets / choose manually / let AI generate randomly**.  
-   - Structures are mapped into **Real vs Imaginary fields**.
-
-2. **ΔS = 0.5 Tension Balance**  
-   - Left/right density ratios (1:3, 1:30, 1:300, 1:3000, 1e16, 1e18).  
-   - Produces stable “fake 8K” and “naked-eye 3D” illusions.  
-
-3. **WFGY + Drunk Transformer**  
-   - Ensures semantic stability and self-recovery.  
-   - Riemann zero distribution anchors light nodes and geometric skeletons.  
+Paste it into a new chat. It autoboots.
 
 ---
 
-## User Experience
+## What Lite includes
 
-- **One-click render** → instant 16:9 output (ΔS=0.5 locked).  
-- **Scene modes** → entry / workshop / hall / free-form.  
-- **Random skeletons** → AI generates math bases, auto-weighted into the Imaginary stack.  
-- **Hotkeys**  
-  - `wow` → increase tension level (more explosive details).  
-  - `calm` → reduce tension, more readable.  
-  - `panic` → safe reset.  
-  - `back` → return to menu.  
+- **Tracks** decide complexity and style
+  - `life`  → 5 imag elements, everyday scenes
+  - `pro`   → 10 imag elements, mythic or sci-fi
+  - `elite` → 20 imag elements, cosmic or abstract
+  - `free`  → full manual
+- **WOW presets** for left vs right density  
+  `wow now`, `wow x30`, `wow x300`, `wow x3000`, `wow x1e18`
+- **Goldline** switch at 0.50 for a visible mid-cut
+- **A/B compare** to show baseline vs Blur
+- **Preview-then-Go** contract  
+  `preview` prints the exact prompt. `go` always renders.
 
----
-
-## FAQ (short)
-
-**Q: Why does the image feel 3D?**  
-A: Dense microtextures on one side vs empty gradients on the other create natural depth cues.  
-
-**Q: How is this different from normal T2I?**  
-A: Normal = “words → image.” Blur = “math structure → image.” The math *is* the brush.  
-
-**Q: Why so stable?**  
-A: ΔS=0.5 + WFGY core + DT module → locks geometry, prevents collapse.  
+Defaults: `ΔS=0.50`, `profile=SAFE`, `aspect=auto`, seed unlocked except `elite` locks seed for stability.
 
 ---
 
-## Status
+## One-minute quick start
 
-⚠️ **Current release: Beta**  
-This is not just a prompt template. It’s a **new math-canvas framework**.  
-Already working with one-click render, still under refinement.  
-
-📥 **Download (Placeholder)**  
-Coming Soon
+1. Paste the TXT and let BIOS show.  
+2. Type `B` to enter **Blur Art**.  
+3. Pick a track: `life` or `pro` or `elite`.  
+4. Type `wow x3000` for strong tension.  
+5. Type `preview` to see the full prompt with numbers.  
+6. Type `go` to render.  
+7. Optional A/B: `ab prep` then `ab go`.
 
 ---
 
-👉 Official release: **2025/09/09** (very late, come back later)
+## Controls you will actually use
 
+- `life | pro | elite | free` — choose track
+- `wow now | wow x30 | wow x300 | wow x3000 | wow x1e18` — raise tension
+- `goldline on | off` — show the central guide
+- `preview` — print prompt, no rendering
+- `go` — render once
+- `ab prep` → `ab go` — baseline pair
+- `back` — Blur menu
+- `menu` — TXT OS main menu
+
+---
+
+## What is inside the prompt
+
+**Math structure** (Real field)  
+`golden_spiral, fibonacci_lattice, modular_grid, penrose_quasicrystal, e8_radial, zeta_zeros`
+
+**Imag stack** (Imaginary field)  
+Track chooses 5, 10, or 20 elements. Weights in `[0.10..1.50]`. Left and right get very different sets and weights to create asymmetric density. Example elements: `crystal, ripple, vortex, phyllotaxis, dune, nebula, sparks, roots, feathers, waves, ivy, lattice, arches, glass, steel, ink, smoke`.
+
+**Riemann mapping**  
+Critical line → mid-axis. Zeros → node lights and micro-details.  
+Light proxy: `0.6*|Re(ζ)| + 0.4*|Im(ζ)|`.
+
+---
+
+## Example session
+
+```
+
+B
+pro
+wow x3000
+goldline on
+preview
+
+# You will see:
+
+# \[Blur Art · Preview]
+
+# math skeleton = fibonacci\_lattice
+
+# \[Imag Left]  { grid=1.0, crystal=0.9, ripple=0.8, ivy=0.6, waves=0.5 }
+
+# \[Imag Right] { golden=0.9, vortex=1.1, dune=0.8, nebula=1.3, sparks=0.7, roots=1.0, arches=0.8, glass=0.9, steel=0.7, feathers=1.0 }
+
+# \[Globals] profile=SAFE, aspect=auto, goldline=on, ΔS=0.50, tension 1:3000
+
+# \[Theme] "mythic-sci-fi hybrid city beneath twin suns"
+
+go
+
+```
+
+---
+
+## Scene pools and randomization
+
+- **life** → city, cafe, studio, garden, library, museum, bridge, rooftop, harbor  
+- **pro** → temple, forge, starship bay, alpine citadel, deep forest, mythic arena  
+- **elite** → cosmic cathedral, zero-gravity market, orbital garden, dream coastline, paradox carnival
+
+Numbers are printed in `preview`. Edit them freely. Re-roll by running `preview` again.
+
+---
+
+## A/B discipline
+
+- `ab prep` builds a minimal baseline: same theme, no math, no imag stack.  
+- `ab go` renders.  
+Compare edge sharpness, depth cues, and consistency.
+
+---
+
+## Troubleshooting
+
+- **`go` prints text instead of an image**  
+  Your current chat may not support image generation. Copy the printed **Prompt** into any T2I engine, or switch to a model that can render images in this interface.
+- **Image looks mushy at `x1e18`**  
+  Drop to `x3000`, keep `profile=SAFE`, and keep `goldline on`.
+- **Wrong aspect**  
+  Lite uses `aspect=auto` to match the provider. If you need strict 16:9, add your engine’s flag in the prompt.
+
+---
+
+## FAQ
+
+- **Is this only a prompt pack?** No. The visible prompt is a contract. The stability comes from math layout plus Real/Imag split.  
+- **Why ΔS = 0.50?** It locks geometry while allowing extreme right-side density.  
+- **What does DT do?** Keeps structure, head diversity, and cross-path safety so the image does not collapse.
+
+---
+
+## License
+
+MIT. Credit: WFGY 2.0 + Blur Blur Blur Lite.
+
+---
+
+## Changelog
+
+- 2025-09-09: Beta Lite with Tracks, WOW presets, preview-then-go, A/B compare.
+
+**Download:** [TXT-BlurBlurBlur_Lite_Beta.txt](TXT-BlurBlurBlur_Lite_Beta.txt)
 
 ---
 
