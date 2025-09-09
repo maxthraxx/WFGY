@@ -117,7 +117,7 @@ you’ll get a diagnosis and exact fix steps — no infra changes required.
 
 
 <details>
-<summary>💥 WFGY Global Fix Map (Beta) — full index (click to open)</summary>
+<summary>💥 WFGY Global Fix Map — full index (click to open)</summary>
 
 ---
 
