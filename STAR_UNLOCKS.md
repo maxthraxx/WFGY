@@ -26,7 +26,6 @@ _Type legend: **Theory** (concepts, specs, PDFs) · **Application** (engines, OS
 _Last updated: Aug 19, 2025_
 
 ---
-
 ## PSBigBig — Self-Unlocked
 
 | Date | Product | Type | Description | Status |
@@ -38,8 +37,12 @@ _Last updated: Aug 19, 2025_
 | 07/28 | [Problem Map 2.0](https://github.com/onestardao/WFGY/blob/main/ProblemMap/rag-architecture-and-recovery.md) | Teaching | RAG-focused recovery tree and pipeline with practical playbooks. | ✅ |
 | 07/28 | [Semantic Clinic](https://github.com/onestardao/WFGY/blob/main/ProblemMap/SemanticClinicIndex.md) | Teaching | Injection, memory bugs, drift catalog with triage and treatment patterns. | ✅ |
 | 07/30 | [Semantic Blueprint](https://github.com/onestardao/WFGY/blob/main/SemanticBlueprint/README.md) | Theory | Layer-based symbolic reasoning blueprint and semantic modulation notes. | ✅ |
+| 09/05 | [Global Fix Map](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/README.md) | Teaching | Cross-tool guardrails and fix patterns for VectorDBs, agents, embeddings, dev tools, and more. | ✅ |
+| ??? | **Your Gramma Knows the 16 AI Bugs** | Teaching | Everyday analogies for each failure mode — from coffee machine hallucinations, WiFi retrieval errors, to grandma’s recipe book turning into a vector store. A light but sharp guide that makes the 16 bugs impossible to forget. | ⏳ |
+
 
 **Notes:** Personal unlocks that PSBigBig turned on directly. Links will update as modules evolve.
+
 
 ---
 
@@ -48,6 +51,8 @@ _Last updated: Aug 19, 2025_
 | Date | ⭐Stars | Product | Type | Description | Status |
 |-----:|:----:|---------|------|-------------|:-----:|
 | 08/15 | 500 | [WFGY Core (WFGY 2.0)](https://github.com/onestardao/WFGY/blob/main/core/README.md) | Application | The engine stack: BBMC, Coupler, BBAM, and safety with runnable defaults, hooks, and math. | ✅ |
+| 09/08 | 1000 | [Blur Blur Blur](https://github.com/onestardao/WFGY/blob/main/OS/BlurBlurBlur/README.md) | Application | Math-to-image engine, turning symbolic structures and semantic logic into visual form. | ✅ |
+
 
 **Notes:** Community milestones unlock larger deliverables that require packaging, docs, and testing.
 
@@ -57,7 +62,6 @@ _Last updated: Aug 19, 2025_
 
 | ⭐Stars | Product | Type | What unlocks | ETA |
 |:----:|---------|------|---------------|-----|
-| 1,000 | [Blur Blur Blur](https://github.com/onestardao/WFGY/blob/main/OS/BlurBlurBlur/README.md) | Application | Text-to-image, globally original; a cross-domain combo of the Riemann Hypothesis + T2I. | TBD |
 | 3,000 | [Blow Blow Blow](https://github.com/onestardao/WFGY/blob/main/OS/BlowBlowBlow/README.md) | Application | AIGC game framework and demos. | TBD |
 | 6,000 | **TBD** | Teaching | Candidate: mini-course with labs and grading rubrics. | TBD |
 | 100,000 | **TBD** | Theory + Application | Candidate: end-to-end open playbook with reference implementation. | TBD |
