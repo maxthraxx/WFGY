@@ -1,9 +1,6 @@
-> We’ve crossed **1000 ⭐**  thank you all for the support.  
-> [Blur Blur Blur](https://github.com/onestardao/WFGY/blob/main/OS/BlurBlurBlur/README.md), the math-to-image engine, is now live.  
-> This is currently a **beta release** — the page and docs are still being updated.  
-> The module is already unlocked and open for testing.  
-> A stable official version will follow soon.
-
+> We’ve crossed **1000 ⭐** — thank you.  
+> Blur Blur Blur is now live in **beta**.  
+> You can start testing today — full release coming soon.
 
 
 ## Blur Blur Blur (Beta) — Drawing the Beauty of Math for the First Time
