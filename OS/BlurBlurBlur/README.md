@@ -41,7 +41,11 @@ Lite focuses on a clean, safe set of knobs so newcomers can feel the “math sho
 **TXT file:** `TXT-BlurBlurBlur_Lite_Beta.txt`  
 [Download the TXT](TXT-BlurBlurBlur_Lite_Beta.txt)
 
-Paste it into a new chat. It autoboots.
+Paste it into a new chat — it autoboots.
+
+Type **hello world** to start.  
+Type **Blur** to enter image mode directly.
+
 
 ---
 
