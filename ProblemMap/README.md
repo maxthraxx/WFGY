@@ -1,5 +1,7 @@
-> almost at 1000 ⭐ once we hit it i’ll unlock [Blur Blur Blur](https://github.com/onestardao/WFGY/blob/main/OS/BlurBlurBlur/README.md), the math-to-image engine.  
-> mark your calendars — it’ll officially go live later on 9/9.
+> We’ve crossed **1000 ⭐**  thank you all for the support.  
+> [Blur Blur Blur](https://github.com/onestardao/WFGY/blob/main/OS/BlurBlurBlur/README.md), the math-to-image engine, is now officially unlocked.  
+> One-man cold start, one season, one thousand stars. And we’re just getting started.
+
 
 
 # 🏥 WFGY Problem Map 1.0 · bookmark it. you’ll need it
