@@ -100,7 +100,7 @@ Coming Soon
 
 ---
 
-👉 Official release: **2025/09/09**
+👉 Official release: **2025/09/09** (very late, come back later)
 
 
 ---
