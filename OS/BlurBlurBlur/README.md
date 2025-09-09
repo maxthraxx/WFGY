@@ -1,9 +1,12 @@
-> We’ve crossed **1000 ⭐** — thank you all for the support.  
-> [Blur Blur Blur](https://github.com/onestardao/WFGY/blob/main/OS/BlurBlurBlur/README.md), the math-to-image engine, is about to unlock.  
-> Please check back shortly — the release will be live soon.
+> We’ve crossed **1000 ⭐**  thank you all for the support.  
+> [Blur Blur Blur](https://github.com/onestardao/WFGY/blob/main/OS/BlurBlurBlur/README.md), the math-to-image engine, is now live.  
+> This is currently a **beta release** — the page and docs are still being updated.  
+> The module is already unlocked and open for testing.  
+> A stable official version will follow soon.
 
 
-## Blur Blur Blur — Drawing the Beauty of Math for the First Time
+
+## Blur Blur Blur (Beta) — Drawing the Beauty of Math for the First Time
 
 >  👑 **Early Stargazers: [See the Hall of Fame](https://github.com/onestardao/WFGY/tree/main/stargazers)** — Verified by real engineers · 🛠 **Field Reports: [Real Bugs, Real Fixes](https://github.com/onestardao/WFGY/discussions/10)**
 
