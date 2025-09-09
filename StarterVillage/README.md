@@ -114,20 +114,22 @@ Choose your quest by **difficulty**; the 😈 icons show how spicy each tier is.
 ## 🧙‍♂️ “Errors are ingredients; brew your fix.”  
 ## 4 · Alchemist’s Lab — Debug & Heal 🔧 😈😈😈😈
 
-### The path: 1.0 → 2.0 → Clinic
+### The path: 1.0 → 2.0 → Global Fix Map → Clinic
 
 | Stage | What it is | When to use | Link |
 |------|-------------|-------------|------|
 | **Problem Map 1.0** | Symptom catalog by failure family, fast triage and naming the bug | First touch, you need a clean label and a quick route | **[Open 1.0](https://github.com/onestardao/WFGY/blob/main/ProblemMap/README.md)** |
 | **Problem Map 2.0** | Architecture and recovery guide, pipeline oriented view with the 7-step WFGY recovery flow | After you have a label, you want a step-by-step repair plan | **[Open 2.0](https://github.com/onestardao/WFGY/blob/main/ProblemMap/rag-architecture-and-recovery.md)** |
+| **Global Fix Map** | Cross-tool guardrails and modular patches, covering VectorDBs, agents, dev tools, embeddings, and more | When your failure is tied to a specific infra/tool, open the matching fix page | **[Open Global Fix Map](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/README.md)** |
 | **Semantic Clinic** | Deep dives, exact fixes with runnable recipes and edge-case notes | When the case is tricky or mixed class, you need precise procedures | **[Open Clinic](https://github.com/onestardao/WFGY/blob/main/ProblemMap/SemanticClinicIndex.md)** |
 
 ### How to run the lab
 
 1) Start at **Problem Map 1.0**. Read the quick access, match your symptom, pick the failure code.  
 2) Jump to **Problem Map 2.0** with that code. Walk the recovery pipeline step by step, apply the guardrails and instruments.  
-3) If the issue persists or is multi-factor, enter **Semantic Clinic**. Choose the matching clinic page and follow the recipe.  
-4) Re-run A/B tests. Log **ΔACC**, **ΔSR**, **ΔS** and write one sentence on what changed and why.
+3) If the failure involves a specific tool (VectorDB, agent, embedding, dev tool, etc.), switch to **Global Fix Map** and follow the targeted guardrail page.  
+4) If the issue persists or is multi-factor, enter **Semantic Clinic**. Choose the matching clinic page and follow the recipe.  
+5) Re-run A/B tests. Log **ΔACC**, **ΔSR**, **ΔS** and write one sentence on what changed and why.
 
 *(White coat earned.)*
 
