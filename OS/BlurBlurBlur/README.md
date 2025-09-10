@@ -1,4 +1,4 @@
-> We’ve crossed **1000 ⭐** — thank you.  
+> We’ve crossed **1000 ⭐** thank you.  
 > Blur Blur Blur is now live in **beta**.  
 > You can start testing today — full release coming soon.
 
@@ -41,10 +41,18 @@ Lite focuses on a clean, safe set of knobs so newcomers can feel the “math sho
 **TXT file:** `TXT-BlurBlurBlur_Lite_Beta.txt`  
 [Download the TXT](TXT-BlurBlurBlur_Lite_Beta.txt)
 
-Paste it into a new chat — it autoboots.
+**Checksums**  
+- SHA256: `3c500e62be84e3c88a4e5daf99e5d88c76e904b9d82d72f6d97890288d76d96b`  
+- MD5: `42bdec71fba222db774e763947562d93`  
+- Size: `99,816` bytes  
 
-Type **hello world** to start.  
-Type **Blur** to enter image mode directly.
+---
+
+Paste into a new chat — it autoboots.  
+
+- Type **hello world** to start  
+- Type **Blur** to enter image mode directly
+
 
 
 ---
