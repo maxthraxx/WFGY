@@ -42,9 +42,10 @@ Lite focuses on a clean, safe set of knobs so newcomers can feel the “math sho
 [Download the TXT](TXT-BlurBlurBlur_Lite_Beta.txt)
 
 **Checksums**  
-- SHA256: `e30542e59276798a63e84a1b87d36640722cc806c0350a138137455afdcee352`  
-- MD5: `bc6315438a4e924eeb3ddfdda3f8f699`  
-- Size: `100,764` bytes
+- SHA256: `b5eee7335f1f354c600dd1d635fd6cde76c444c7641bf8647c3dd4c03c8d72d2`  
+- MD5: `86158fc30e5adae31793735e558ec51a`  
+- Size: `103,204` bytes
+
 
 ---
 
