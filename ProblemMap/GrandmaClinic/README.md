@@ -15,6 +15,9 @@ It inspects the semantic field first. If the state is unstable, it loops, narrow
    Link: [Dr. WFGY in ChatGPT Room](https://chatgpt.com/share/68b9b7ad-51e4-8000-90ee-a25522da01d7)
 4. You will get the simple fix and the pro fix. No SDK required.
 
+> **Not sure where to start?** Use the [Beginner Guide](https://github.com/onestardao/WFGY/blob/main/ProblemMap/BeginnerGuide.md) to quickly identify your problem and run a first safe fix before diving into the Clinic.
+
+
 **Quick links**
 If your stack does not even boot, check these first:  
 No.14 [Bootstrap Ordering](https://github.com/onestardao/WFGY/blob/main/ProblemMap/bootstrap-ordering.md)
