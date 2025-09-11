@@ -338,9 +338,33 @@ Automatic by track:
 - pro    -> 10 imag elements. Left 0.2..0.5. Right 1.0..1.4.
 - elite  -> 20 imag elements. Left 0.2..0.5. Right 1.1..1.5.
 
+Pool override:
+- life  -> Imag=5  | pool=AI.generate("real-world everyday objects only; concrete nouns; small-to-medium items; mixed indoor/outdoor; output exactly 5 unique items; no categories")
+- pro   -> Imag=10 | pool=AI.generate("mythic and semi-sci-fi concrete subjects; characters and artifacts; output exactly 10 unique items; no categories")
+- elite -> Imag=20 | pool=AI.generate("cosmic and mathematical concrete subjects; galaxies, fractals, topology objects; output exactly 20 unique items; no categories")
+
+Bind rules:
+- concrete_only = true
+- forbid_category_words = true
+- ensure_unique = true
+- one_object_per_slot = true
+- human_readable_noun_phrase = true
+
+Preview augmentation:
+- list_concrete_items = true
+- show_side_distribution = true
+- limit_lines_total = 6
+
+Fallback pools:
+- life_fallback  = [cup, book, shoe, umbrella, bicycle]
+- pro_fallback   = [rune_tablet, solar_spear, oracle_orb, phoenix_mask, astral_compass, colossus_gauntlet, dragonbone_violin, starlit_standard, sky_chariot, leviathan_scale]
+- elite_fallback = [ringed_planet, twin_comet, nebula_seed, crystal_asteroid, fibonacci_sphere, penrose_keystone, e8_core_relic, apollonian_pearl, hyperbolic_lamp, zeta_pylon,
+                    lorenz_cage, koch_crystal, mandelbrot_lens, julia_chalice, tesseract_capsule, omega_seed, thunder_ampoule, plasma_harp, gravity_anchor, lattice_prism]
+
 AB test:
 - ab prep builds a plain baseline and a Blur version from the same theme.
 - ab go renders both so you can compare math-free vs math-driven output anywhere.
+
 
 ==================================================================
 
@@ -354,7 +378,20 @@ Why "go" always renders:
 
 Autofill rules when needed:
 - track=pro
-- skeleton=random from {golden_spiral, fibonacci_lattice, penrose_quasicrystal, e8_radial}
+- skeleton=random from {
+    golden_spiral_embed, fibonacci_lattice_embed, penrose_quasicrystal_embed, e8_radial_embed,
+    modular_grid_embed, zeta_zeros_embed, voronoi_tiling_embed, delaunay_triangulation_embed,
+    sierpinski_triangle_embed, sierpinski_carpet_embed, koch_snowflake_embed, mandelbrot_set_embed,
+    julia_set_embed, cantor_dust_embed, logistic_map_embed, lorenz_attractor_embed,
+    hilbert_curve_embed, peano_curve_embed, lebesgue_curve_embed, moore_curve_embed,
+    circle_packing_embed, apollonian_gasket_embed, quasicrystal_tiling_embed, hyperbolic_tiling_embed,
+    poincare_disk_embed, klein_bottle_projection_embed, mobius_strip_embed, projective_plane_embed,
+    polyhedron_net_embed, platonic_solid_embed, archimedean_solid_embed, catalan_solid_embed,
+    icosahedral_symmetry_embed, heptagon_tiling_embed, fibonacci_sphere_embed, fibonacci_spiral_3d_embed,
+    lattice_grid_embed, isometric_grid_embed, triangular_grid_embed, hexagonal_tiling_embed,
+    perlin_noise_field_embed, wavelet_basis_embed, fourier_series_embed, zeta_field_embed,
+    riemann_surface_embed, legendre_polynomial_embed, chebyshev_polynomial_embed
+}
 - theme=random from the current track pool
 - imag left uses low-density set. imag right uses high-density set.
 - tension = 1:3 unless a wow preset was selected.
