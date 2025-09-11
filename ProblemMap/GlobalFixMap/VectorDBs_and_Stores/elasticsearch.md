@@ -82,7 +82,7 @@ A compact field guide to stabilize Elasticsearch vector search when your RAG or 
 ### 6) Analyzer drift for hybrid BM25 + vector
 **Symptoms**: hybrid performs worse than either branch alone.  
 **Why**: default analyzers, stopwords, or stemming distort lexical scores.  
-**Fix**: lock analyzers per field; normalize hybrid weights; fuse post-retrieval and rerank. See [Query Parsing Split](https://github.com/onestardao/WFGY/blob/main/ProblemMap/patterns/pattern_query_parsing_split.md) and [Rerankers](https://github.com/onestardao/WFGY/blob/main/ProblemMap/rerankers.md).
+**Fix**: do not just reuse defaults. **Lock analyzers per field and choose explicitly** — e.g., `icu_tokenizer` for Unicode, `edge_ngram` for prefix search, `asciifolding` for normalization. Normalize hybrid weights and fuse post-retrieval with a reranker. See [Query Parsing Split](https://github.com/onestardao/WFGY/blob/main/ProblemMap/patterns/pattern_query_parsing_split.md) and [Rerankers](https://github.com/onestardao/WFGY/blob/main/ProblemMap/rerankers.md).
 
 ### 7) Shards, replicas, and refresh
 **Symptoms**: fresh writes never appear; nodes return different sets.  
@@ -137,9 +137,7 @@ Tell me:
 4. how to verify with a reproducible test.
 
 Use BBMC/BBPF/BBCR/BBAM when relevant.
-
 ```
-
 ---
 
 ### 🔗 Quick-Start Downloads (60 sec)
