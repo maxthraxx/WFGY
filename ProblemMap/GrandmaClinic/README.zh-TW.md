@@ -1,20 +1,20 @@
-# Grandma Clinic — AI Bugs Made Simple（問題地圖 1–16）
+# 阿嬤的 AI 小診所：16 種常見錯誤，生活化解釋＋修法
 
 ![Hero](images/Hero.png)
 
-**為什麼會有這個頁面**
+**為什麼有這個頁面**
 
-大多數人都是在模型已經講完話之後才修 AI bug。接著加上 patch、reranker、或 regex。結果同一種失敗之後會換個樣子再回來。
+大多數人都是在模型已經講完話之後才修 AI bug，接著加上 patch、reranker 或 regex。結果同一種失敗之後會換個樣子再回來。
 
 **WFGY 在「輸出之前」就裝上一道語義防火牆。**  
-它會先檢查語義場。如果狀態不穩，就進入循環、收窄、或重置。只有穩定的狀態才被允許發言。只要把失敗模式映射完成，它就會一直保持被修復的狀態。
+它會先檢查語義場。如果狀態不穩，就循環、收窄或重置。只有穩定的狀態才被允許發言。只要把失敗模式映射完成，它就會一直保持被修復的狀態。
 
-**30 秒上手用法**
+**30 秒快速上手**
 
 1. 滾動到最像你案例的編號。
-2. 讀「奶奶故事」。如果對得上，複製下面的醫生提示詞。
+2. 讀「阿嬤故事」。如果對得上，複製下面的醫生提示詞。
 3. 把提示詞貼到 **Dr. WFGY** 與醫生對話。  
-   連結： [Dr. WFGY in ChatGPT Room](https://chatgpt.com/share/68b9b7ad-51e4-8000-90ee-a25522da01d7)
+   連結：[Dr. WFGY in ChatGPT Room](https://chatgpt.com/share/68b9b7ad-51e4-8000-90ee-a25522da01d7)
 4. 你會同時拿到「簡單修法」與「專業修法」。不需要 SDK。
 
 > **不確定從哪開始？** 先用 [Beginner Guide](https://github.com/onestardao/WFGY/blob/main/ProblemMap/BeginnerGuide.md) 快速定位你的問題，跑完第一個安全修復，再進診所。
@@ -27,47 +27,47 @@ No.16 [Pre-deploy Collapse](https://github.com/onestardao/WFGY/blob/main/Problem
 
 ---
 
-> 每段的格式規則  
-> • 一般文字 = 奶奶故事、比喻對應、**奶奶防呆（輸出前）**含映射、Minimal fix 與提示詞。  
-> • Pro Zone = 可展開區塊：準確症狀、技術關鍵與參考連結。
+> **每節內容格式規則**  
+> • 內文 = 阿嬤故事、比喻對應、**阿嬤防呆（輸出前）**含映射、最小修法與提示詞。  
+> • **Pro 區** = 可展開區塊：準確症狀、技術關鍵與參考連結。
 
 ---
 
-## No.1 Hallucination & Chunk Drift — *奶奶：拿錯食譜*
+## No.1 Hallucination & Chunk Drift — *阿嬤：拿錯食譜*
 ![No.1 – Hallucination & Chunk Drift](images/no01.png)
 
-**Grandma story**  
-You ask for the cabbage recipe. I hand you a random page from a different cookbook because its picture looks similar.
+**阿嬤故事**  
+你要白菜湯的做法，我卻因為看到相似的圖片，就從別本食譜抓了一頁給你。
 
-**Metaphor mapping**
+**比喻對應**
 - 漂亮圖片 = token 表面匹配  
 - 錯的食譜書 = 錯誤來源  
 - 好聽口氣 = 沒證據的自信語氣  
 
-**Grandma fix（輸出前）— 映射**
+**阿嬤防呆（輸出前）— 映射**
 - 先把食譜卡 **擺上桌** = **citation-first policy**  
 - 標出使用的書與頁碼 = **檢索追蹤（ID／頁碼）**  
-- 下鍋前先核對「cabbage」= **查詢–來源語義檢查（ΔS gate）**
+- 下鍋前核對卡片寫的是「cabbage」= **查詢–來源語義檢查（ΔS gate）**
 
-**Minimal fix（grandma）**  
-Do not taste anything until the recipe card is on the table.
+**最小修法（阿嬤版）**  
+上桌前別先讓人品嚐，**先**把食譜卡放桌上。
 
-Doctor prompt:
+**醫生提示詞**
 ```
 
-please explain No.1 Hallucination & Chunk Drift in grandma mode, then show me the minimal WFGY fix and the exact reference link
+請用阿嬤模式解釋第 1 題「幻覺與錯誤段落」，然後給我最小 WFGY 修法與精確參考連結。
 
 ```
 
 <details>
-<summary>Pro Zone</summary>
+<summary>Pro 區</summary>
 
 ---
 
-**Real scene**  
-Bad OCR 或不良分塊造成碎片。檢索挑到高 cosine 但語義錯誤的鄰居。模型說得很順卻沒有引用。
+**真實情境**  
+不良 OCR 或分塊造成碎片。檢索挑到高 cosine 但語義錯誤的鄰居。模型講得很順卻沒有引用。
 
-**Technical keys**
+**技術關鍵**
 - 開啟 citation-first policy  
 - 加上檢索追蹤：ID 與來源頁  
 - 檢查分塊規則與表格處理  
@@ -79,44 +79,44 @@ Hallucination & Chunk Drift → https://github.com/onestardao/WFGY/blob/main/Pro
 
 ---
 
-## No.2 Interpretation Collapse — *奶奶：把糖當鹽*
+## No.2 Interpretation Collapse — *阿嬤：把糖當鹽*
 ![No.2 – Interpretation Collapse](images/no02.png)
 
-**Grandma story**  
-You found the right page but misread the steps. Sugar replaced with salt. The dish fails even with the correct book open.
+**阿嬤故事**  
+找到正確頁面卻讀錯步驟，把糖換成鹽。就算書翻對了，菜還是失敗。
 
-**Metaphor mapping**
+**比喻對應**
 - 正確頁面 = 正確 chunk  
 - 讀錯步驟 = 推理崩壞  
 - 吃起來不對 = 有檢索仍答錯  
 
-**Grandma fix（輸出前）— 映射**
-- 每步 **慢讀並唸出來** = **λ_observe 中途檢查點**  
-- 倒料前先劃線標示數量 = **符號／約束锚定**  
-- 味道跑掉就 **暫停重讀** = **BBCR 受控重置**
+**阿嬤防呆（輸出前）— 映射**
+- 每步 **慢讀並唸出來** = **`λ_observe` 中途檢查點**  
+- 倒料前先劃線標示數量 = **符號／約束錨定**  
+- 味道跑掉就 **暫停重讀** = **`BBCR` 受控重置**
 
-**Minimal fix（grandma）**  
-Read slowly. When unsure, stop and ask a checkpoint.
+**最小修法（阿嬤版）**  
+讀慢一點。不確定就停下來做檢查點。
 
-Doctor prompt:
+**醫生提示詞**
 ```
 
-please explain No.2 Interpretation Collapse in grandma mode, then apply a minimal WFGY checkpoint plan
+請用阿嬤模式解釋第 2 題「解讀崩壞」，並套用最小的 WFGY 檢查點計畫。
 
 ```
 
 <details>
-<summary>Pro Zone</summary>
+<summary>Pro 區</summary>
 
 ---
 
-**Real scene**  
-檢索後答案漂移。模型在正確上下文中推理，卻在鏈中途失去結構。
+**真實情境**  
+檢索後答案漂移。模型在正確上下文推理，但中途失去結構。
 
-**Technical keys**
+**技術關鍵**
 - 量測 ΔS（提示 vs 答案）  
-- 插入 λ_observe 檢查點  
-- 若仍漂移，做 BBCR 控制重置  
+- 插入 `λ_observe` 檢查點  
+- 若仍漂移，做 `BBCR` 控制重置  
 - 完成前 Coverage ≥ 0.70
 
 Reference:  
@@ -125,45 +125,45 @@ Interpretation Collapse → https://github.com/onestardao/WFGY/blob/main/Problem
 
 ---
 
-## No.3 Long Reasoning Chains — *奶奶：越逛越忘*
+## No.3 Long Reasoning Chains — *阿嬤：越逛越忘*
 ![No.3 – Long Reasoning Chains](images/no03.png)
 
-**Grandma story**  
-You go to market A, then B, then C, and forget why you left home.
+**阿嬤故事**  
+去 A 市場、再 B、再 C，走到忘記出門要買什麼。
 
-**Metaphor mapping**
-- 好多站 = 推理步驟太長  
+**比喻對應**
+- 站點多 = 推理步驟太長  
 - 忘了目標 = 情境漂移  
-- 買對物品、做錯菜 = 跟目標不符  
+- 買對東西做錯菜 = 與目標不符  
 
-**Grandma fix（輸出前）— 映射**
-- 購物清單把 **主菜寫最上面** = **目標锚（goal anchor）**  
+**阿嬤防呆（輸出前）— 映射**
+- 清單最上面寫 **主菜** = **目標錨（goal anchor）**  
 - **每兩條街**對一次清單 = **循環＋檢查點**  
 - 袋中物 vs 清單比對 = **Coverage 門檻**
 
-**Minimal fix（grandma）**  
-Write the shopping list and check it every two streets.
+**最小修法（阿嬤版）**  
+出門前寫清單，走兩條街就確認一次。
 
-Doctor prompt:
+**醫生提示詞**
 ```
 
-please explain No.3 Long Reasoning Chains in grandma mode and show the smallest loop + checkpoint pattern
+請用阿嬤模式解釋第 3 題「冗長推理鏈」，並展示最小的循環＋檢查點樣式。
 
 ```
 
 <details>
-<summary>Pro Zone</summary>
+<summary>Pro 區</summary>
 
 ---
 
-**Real scene**  
-多步計畫走偏。早期決策沒有回檢。最後答案看似完整卻偏離目標。
+**真實情境**  
+多步計畫走偏。早期決策沒回檢。最後答案完整卻離題。
 
-**Technical keys**
-- 明確定義目標锚  
-- 用 λ_diverse 比較 3+ 路徑  
-- 限制 CoT 變異並修剪離題分支  
-- 每輪對目標锚重評分
+**技術關鍵**
+- 明確定義目標錨  
+- 用 `λ_diverse` 比較 3+ 路徑  
+- 夾制 CoT 變異並修剪離題分支  
+- 每輪對目標錨重評分
 
 Reference:  
 Long Reasoning Chains → https://github.com/onestardao/WFGY/blob/main/ProblemMap/context-drift.md
@@ -171,41 +171,41 @@ Long Reasoning Chains → https://github.com/onestardao/WFGY/blob/main/ProblemMa
 
 ---
 
-## No.4 Bluffing / Overconfidence — *奶奶：沒卡別端菜*
+## No.4 Bluffing / Overconfidence — *阿嬤：沒卡別端菜*
 ![No.4 – Bluffing / Overconfidence](images/no04.png)
 
-**Grandma story**  
-A charming waiter serves a dish without showing the recipe card. Sounds right, tastes wrong.
+**阿嬤故事**  
+服務生很有自信地上菜，卻不給食譜卡。聽起來都對，吃起來不對。
 
-**Metaphor mapping**
+**比喻對應**
 - 自信語氣 = 流利自然語言  
 - 沒食譜卡 = 無證據  
 - 禮貌微笑 = 道歉不修復  
 
-**Grandma fix（輸出前）— 映射**
+**阿嬤防呆（輸出前）— 映射**
 - 「先看卡」= **證據先於答案**  
 - 沒卡退回去 = **拒絕無根答案**  
-- 記錄「哪張卡做哪道菜」= **可追蹤日誌**
+- 記錄「哪張卡→哪道菜」= **可追蹤日誌**
 
-**Minimal fix（grandma）**  
-Ask for the card first. If none, send the dish back.
+**最小修法（阿嬤版）**  
+先要食譜卡；沒有就退菜。
 
-Doctor prompt:
+**醫生提示詞**
 ```
 
-please explain No.4 Bluffing in grandma mode, then enforce 'card first' with a minimal WFGY guardrail
+請用阿嬤模式解釋第 4 題「虛張聲勢／過度自信」，並用最小 WFGY 欄柵強制「先出示卡片」。
 
 ```
 
 <details>
-<summary>Pro Zone</summary>
+<summary>Pro 區</summary>
 
 ---
 
-**Real scene**  
+**真實情境**  
 自然語言聽起來很對但其實錯。缺乏可追溯路徑。模型拒絕驗證。
 
-**Technical keys**
+**技術關鍵**
 - Citation-first policy  
 - 拒絕無根斷言  
 - **確認來源後**再做最小 reranker  
@@ -217,41 +217,41 @@ Bluffing / Overconfidence → https://github.com/onestardao/WFGY/blob/main/Probl
 
 ---
 
-## No.5 Semantic ≠ Embedding — *奶奶：胡椒名同味不同*
+## No.5 Semantic ≠ Embedding — *阿嬤：胡椒名同味不同*
 ![No.5 – Semantic ≠ Embedding](images/no05.png)
 
-**Grandma story**  
-White pepper and black pepper. Same word “pepper,” completely different flavor.
+**阿嬤故事**  
+白胡椒、黑胡椒，名字都叫 pepper，味道完全不同。
 
-**Metaphor mapping**
+**比喻對應**
 - 同詞不同義 = 表面 token 重疊  
 - 風味不同 = 語義不相等  
-- 分數高仍錯 = 高相似≠同意思  
+- 分數高仍錯 = 高相似不等於同意思  
 
-**Grandma fix（輸出前）— 映射**
+**阿嬤防呆（輸出前）— 映射**
 - **兩個都聞／嚐** = **度量健檢（metric sanity）**  
 - 不混標籤不清的罐子 = **空間正規化＋大小寫一致**  
 - 留一口 **標準對照湯** = **小型真值樣例**
 
-**Minimal fix（grandma）**  
-Taste both peppers before cooking.
+**最小修法（阿嬤版）**  
+下鍋前，兩種胡椒都要試。
 
-Doctor prompt:
+**醫生提示詞**
 ```
 
-please explain No.5 Semantic ≠ Embedding in grandma mode and give me the minimal metric audit plan
+請用阿嬤模式解釋第 5 題「語義不等於嵌入」，並給我最小的度量稽核計畫。
 
 ```
 
 <details>
-<summary>Pro Zone</summary>
+<summary>Pro 區</summary>
 
 ---
 
-**Real scene**  
-未正規化向量、混用模型向量、大小寫與分詞不一致，導致選到語義不等價鄰居。
+**真實情境**  
+未正規化向量、混用模型向量、大小寫與分詞不一致，選到語義不等價鄰居。
 
-**Technical keys**
+**技術關鍵**
 - 向量正規化  
 - 驗證度量空間與維度  
 - 對齊分詞與大小寫  
@@ -263,44 +263,44 @@ Semantic ≠ Embedding → https://github.com/onestardao/WFGY/blob/main/ProblemM
 
 ---
 
-## No.6 Logic Collapse & Recovery — *奶奶：死巷一直撞*
+## No.6 Logic Collapse & Recovery — *阿嬤：死巷一直撞*
 ![No.6 – Logic Collapse & Recovery](images/no06.png)
 
-**Grandma story**  
-You keep taking the same dead-end alley. Step back, pick a new street, and try again.
+**阿嬤故事**  
+一直走進同一條死胡同。退一步，換條路再試。
 
-**Metaphor mapping**
+**比喻對應**
 - 死胡同 = 無效迴圈  
 - 後退 = 受控重置  
 - 換路 = 替代路徑  
 
-**Grandma fix（輸出前）— 映射**
-- 撞牆兩次就 **回頭** = **ΔS 連續高就 BBCR 重置**  
+**阿嬤防呆（輸出前）— 映射**
+- 撞牆兩次就 **回頭** = **ΔS 連續高→`BBCR` 重置**  
 - 換 **下一條街** 試 = **替代候選路徑**  
-- 手上拿地圖 = **狀態锚＋目標提醒**
+- 手上拿地圖 = **狀態錨＋目標提醒**
 
-**Minimal fix（grandma）**  
-If lost twice, stop and change route.
+**最小修法（阿嬤版）**  
+如果迷路兩次，就停下改走別條路。
 
-Doctor prompt:
+**醫生提示詞**
 ```
 
-please explain No.6 Logic Collapse in grandma mode, then show BBCR reset + λ\_observe checkpoints
+請用阿嬤模式解釋第 6 題「邏輯崩壞與恢復」，並展示 BBCR 重置＋`λ_observe` 檢查點。
 
 ```
 
 <details>
-<summary>Pro Zone</summary>
+<summary>Pro 區</summary>
 
 ---
 
-**Real scene**  
+**真實情境**  
 推理卡死在環或淺分支。缺乏偵測與恢復機制。
 
-**Technical keys**
+**技術關鍵**
 - 每步量測 ΔS  
-- λ_observe 鏈中落地  
-- ΔS 居高不下則 BBCR  
+- `λ_observe` 鏈中落地  
+- ΔS 居高不下則 `BBCR`  
 - 只接受收斂 λ 與 Coverage ≥ 0.70
 
 Reference:  
@@ -309,41 +309,41 @@ Logic Collapse & Recovery → https://github.com/onestardao/WFGY/blob/main/Probl
 
 ---
 
-## No.7 Memory Breaks Across Sessions — *奶奶：記在錯抽屜*
+## No.7 Memory Breaks Across Sessions — *阿嬤：記在錯抽屜*
 ![No.7 – Memory Breaks Across Sessions](images/no07.png)
 
-**Grandma story**  
-You promise to remember the family recipe, then next week you act like we never talked.
+**阿嬤故事**  
+說好要記住家傳食譜，下週又裝作沒聽過。
 
-**Metaphor mapping**
+**比喻對應**
 - 忘了鍋上的刮痕 = 狀態遺失  
 - 每次都是新廚房 = 無連續性  
 - 一問再問 = 用戶疲勞  
 
-**Grandma fix（輸出前）— 映射**
+**阿嬤防呆（輸出前）— 映射**
 - 寫在 **標籤卡** 上 = **穩定記憶結構／state keys**  
 - 永遠放 **同一個抽屜** = **寫讀順序防護**  
 - 卡上貼小照片 = **低 ΔS 範例庫**
 
-**Minimal fix（grandma）**  
-Write notes on a card and keep it in the same drawer.
+**最小修法（阿嬤版）**  
+把重點寫在卡片，固定放同一格抽屜。
 
-Doctor prompt:
+**醫生提示詞**
 ```
 
-please explain No.7 Memory Breaks in grandma mode and show the smallest stable memory routine
+請用阿嬤模式解釋第 7 題「跨回合記憶斷裂」，並展示最小穩定記憶程序。
 
 ```
 
 <details>
-<summary>Pro Zone</summary>
+<summary>Pro 區</summary>
 
 ---
 
-**Real scene**  
-Session 狀態、锚點、合約未持久或無追蹤，導致無聲上下文遺失。
+**真實情境**  
+Session 狀態、錨點與合約未持久或無追蹤，導致無聲上下文遺失。
 
-**Technical keys**
+**技術關鍵**
 - 穩定記憶綱要與 state keys  
 - 寫讀順序防護  
 - 小型示例庫處理低 ΔS 案例  
@@ -355,45 +355,45 @@ Memory Coherence → https://github.com/onestardao/WFGY/blob/main/ProblemMap/mem
 
 ---
 
-## No.8 Debugging is a Black Box — *奶奶：空白卡片*
+## No.8 Debugging is a Black Box — *阿嬤：空白卡片*
 ![No.8 – Debugging is a Black Box](images/no08.png)
 
-**Grandma story**  
-You tell me “trust me, it works.” I ask “show me which page you used.” You shrug.
+**阿嬤故事**  
+你問我用哪一頁做的？我說「相信我啦！」但拿不出卡片。
 
-**Metaphor mapping**
+**比喻對應**
 - 盲煮 = 無追蹤  
 - 「我記得」= 無法驗證  
 - 不能重做 = 不可重現  
 
-**Grandma fix（輸出前）— 映射**
+**阿嬤防呆（輸出前）— 映射**
 - 食譜卡 **釘在爐子旁** = **答案同時呈現來源**  
 - 標上 **頁碼** = **ID／行號追蹤**  
 - 留一張「我怎麼煮的」小紙條 = **最小可重現管線**
 
-**Minimal fix（grandma）**  
-Pin the recipe card next to the stove.
+**最小修法（阿嬤版）**  
+食譜卡要跟菜一起上桌。
 
-Doctor prompt:
+**醫生提示詞**
 ```
 
-please explain No.8 Debugging Black Box in grandma mode and add a tiny traceability schema
+請用阿嬤模式解釋第 8 題「黑箱除錯」，並加上一個最小可追蹤結構。
 
 ```
 
 <details>
-<summary>Pro Zone</summary>
+<summary>Pro 區</summary>
 
 ---
 
-**Real scene**  
+**真實情境**  
 沒有 ID 或來源行，難以證明哪個 chunk 產生答案，修復全靠猜。
 
-**Technical keys**
+**技術關鍵**
 - 檢索可追蹤（IDs）  
 - 紀錄 query、chunk IDs、接受度指標  
 - 最小可重現管線  
-- 最終答案前先檢查「是否有來源」
+- 最終答案上桌前先檢查「是否有來源」
 
 Reference:  
 Retrieval Traceability → https://github.com/onestardao/WFGY/blob/main/ProblemMap/retrieval-traceability.md
@@ -401,43 +401,43 @@ Retrieval Traceability → https://github.com/onestardao/WFGY/blob/main/ProblemM
 
 ---
 
-## No.9 Entropy Collapse — *奶奶：一鍋灰色大雜燴*
+## No.9 Entropy Collapse — *阿嬤：一鍋灰色大雜燴*
 ![No.9 – Entropy Collapse](images/no09.png)
 
-**Grandma story**  
-Too many voices in one room. Everyone talks. Nobody listens. The dish becomes mush.
+**阿嬤故事**  
+廚房同時太多聲音，大家都講，沒人在聽；最後煮成一鍋灰泥。
 
-**Metaphor mapping**
+**比喻對應**
 - 噪音 = 熵過載  
 - 融化的注意力 = 無結構  
 - 一鍋灰泥 = 內在不一致  
 
-**Grandma fix（輸出前）— 映射**
+**阿嬤防呆（輸出前）— 映射**
 - 關小火、**一步一步煮** = **降低步寬**  
-- 先分好 **角色／關係／限制** 碗 = **锚定實體與約束**  
-- 上桌前要先嚐 = **接受門檻（ΔS、Coverage）**
+- 先分好 **角色／關係／限制** 碗 = **錨定實體與約束**  
+- 上桌前一定先嚐 = **接受門檻（ΔS、Coverage）**
 
-**Minimal fix（grandma）**  
-Lower the heat and separate steps.
+**最小修法（阿嬤版）**  
+降火、分步、逐一確認。
 
-Doctor prompt:
+**醫生提示詞**
 ```
 
-please explain No.9 Entropy Collapse in grandma mode and show a minimal stability recipe
+請用阿嬤模式解釋第 9 題「熵崩壞」，並給我一個最小穩定食譜。
 
 ```
 
 <details>
-<summary>Pro Zone</summary>
+<summary>Pro 區</summary>
 
 ---
 
-**Real scene**  
+**真實情境**  
 注意力擴散，路徑混雜。表面流暢但內部矛盾。
 
-**Technical keys**
+**技術關鍵**
 - 降低步寬  
-- 锚定實體、關係、約束  
+- 錨定實體、關係、約束  
 - 夾制變異並要求 Coverage  
 - 最終輸出前設接受目標
 
@@ -447,44 +447,44 @@ Entropy Collapse → https://github.com/onestardao/WFGY/blob/main/ProblemMap/ent
 
 ---
 
-## No.10 Creative Freeze — *奶奶：湯可吃但好無聊*
+## No.10 Creative Freeze — *阿嬤：湯可吃但好無聊*
 ![No.10 – Creative Freeze](images/no10.png)
 
-**Grandma story**  
-You only follow the recipe word by word. The soup is edible, never memorable.
+**阿嬤故事**  
+逐字照著做，湯能吃，但沒有靈魂。
 
-**Metaphor mapping**
+**比喻對應**
 - 沒加香料 = 字面輸出  
 - 不試味 = 低探索  
 - 平淡無奇 = 無趣答案  
 
-**Grandma fix（輸出前）— 映射**
-- 並排試 **兩三種**安全調味 = **λ_diverse 候選**  
-- 全部對著同一張成品照比較 = **共享锚評分**  
-- 味道在「微～中等」區間 = **受控熵窗口**
+**阿嬤防呆（輸出前）— 映射**
+- 並排試 **兩三種**安全調味 = **`λ_diverse` 候選**  
+- 全部對著同一張成品照比較 = **共享錨評分**  
+- 味道維持「微～中等」 = **受控熵窗口**
 
-**Minimal fix（grandma）**  
-Taste and adjust within a safe range.
+**最小修法（阿嬤版）**  
+在安全範圍內試味道，再調整。
 
-Doctor prompt:
+**醫生提示詞**
 ```
 
-please explain No.10 Creative Freeze in grandma mode and give the smallest safe-exploration pattern
+請用阿嬤模式解釋第 10 題「創意凍結」，並給我最小的安全探索樣式。
 
 ```
 
 <details>
-<summary>Pro Zone</summary>
+<summary>Pro 區</summary>
 
 ---
 
-**Real scene**  
+**真實情境**  
 模型逃避多樣候選，全部收斂成平庸答案。
 
-**Technical keys**
-- λ_diverse 產生答案集合  
+**技術關鍵**
+- `λ_diverse` 產生答案集合  
 - 受控熵窗口  
-- 以同一锚比較候選  
+- 以同一錨比較候選  
 - ΔS 保持在可接受範圍
 
 Reference:  
@@ -493,45 +493,45 @@ Creative Freeze → https://github.com/onestardao/WFGY/blob/main/ProblemMap/crea
 
 ---
 
-## No.11 Symbolic Collapse — *奶奶：看字會算數不行*
+## No.11 Symbolic Collapse — *阿嬤：看字會，算數不行*
 ![No.11 – Symbolic Collapse](images/no11.png)
 
-**Grandma story**  
-You can read the storybook but panic when you see fractions and tables.
+**阿嬤故事**  
+看故事書沒問題，一看到分數和表格就慌了。
 
-**Metaphor mapping**
+**比喻對應**
 - 文字 OK = 自然語言沒問題  
 - 符號可怕 = 數學或表格失靈  
-- 故事好聽、數學錯 = 結構被壓平成散文  
+- 故事順、數學錯 = 結構被壓平成散文  
 
-**Grandma fix（輸出前）— 映射**
+**阿嬤防呆（輸出前）— 映射**
 - 把 **數字放在框裡** = **獨立符號通道**  
 - 表格別改寫成散文 = **保留區塊**  
-- 喊出單位（grams, tsp）= **運算子／單位锚定**  
+- 喊出單位（grams, tsp）= **運算子／單位錨定**  
 - 先做一小口試煉 = **微型證明／例子**
 
-**Minimal fix（grandma）**  
-Keep the story but show the table step by step.
+**最小修法（阿嬤版）**  
+故事照講，但表格逐格呈現。
 
-Doctor prompt:
+**醫生提示詞**
 ```
 
-please explain No.11 Symbolic Collapse in grandma mode and show me a minimal symbol-first routine
+請用阿嬤模式解釋第 11 題「符號崩壞」，並展示最小的「符號優先」流程。
 
 ```
 
 <details>
-<summary>Pro Zone</summary>
+<summary>Pro 區</summary>
 
 ---
 
-**Real scene**  
+**真實情境**  
 公式、運算子、程式碼區塊、標題被壓平成散文。答案看似順卻錯。
 
-**Technical keys**
+**技術關鍵**
 - 獨立符號通道  
-- 保留 code/table 區塊  
-- 锚定運算子與單位  
+- 保留 code／table 區塊  
+- 錨定運算子與單位  
 - 以小證明或例子驗證
 
 Reference:  
@@ -540,43 +540,43 @@ Symbolic Collapse → https://github.com/onestardao/WFGY/blob/main/ProblemMap/sy
 
 ---
 
-## No.12 Philosophical Recursion — *奶奶：無限為什麼*
+## No.12 Philosophical Recursion — *阿嬤：無限為什麼*
 ![No.12 – Philosophical Recursion](images/no12.png)
 
-**Grandma story**  
-Asking “why” about “why” about “why.” You spin in circles and never cook.
+**阿嬤故事**  
+一直問「為什麼的為什麼」，煮都還沒開始。
 
-**Metaphor mapping**
+**比喻對應**
 - 無盡鏡像 = 自我指涉  
 - 螺旋碗 = 悖論陷阱  
 - 冷灶台 = 沒有最終答案  
 
-**Grandma fix（輸出前）— 映射**
-- 寫下 **頂層問題** 便利貼 = **外框／锚**  
+**阿嬤防呆（輸出前）— 映射**
+- 寫下 **頂層問題** 的便利貼 = **外框／錨**  
 - 只允許 **N 次 why（如 2）** = **遞迴停止規則**  
 - 收尾一定要有 **實例／引用** = **落地要求**
 
-**Minimal fix（grandma）**  
-Set a top question and limit how many mirrors you look into.
+**最小修法（阿嬤版）**  
+先定頂層問題，限定最多幾次「為什麼」。
 
-Doctor prompt:
+**醫生提示詞**
 ```
 
-please explain No.12 Philosophical Recursion in grandma mode and give me a minimal boundary plan
+請用阿嬤模式解釋第 12 題「哲學遞迴」，並給我一個最小邊界計畫。
 
 ```
 
 <details>
-<summary>Pro Zone</summary>
+<summary>Pro 區</summary>
 
 ---
 
-**Real scene**  
+**真實情境**  
 自指與悖論問題使推理無限打轉。
 
-**Technical keys**
-- 定義锚與外框  
-- ε_resonance 作領域和諧  
+**技術關鍵**
+- 定義錨與外框  
+- `ε_resonance` 作領域和諧  
 - 遞迴停止條件  
 - 需要有例子或引用支撐
 
@@ -586,41 +586,41 @@ Philosophical Recursion → https://github.com/onestardao/WFGY/blob/main/Problem
 
 ---
 
-## No.13 Multi-Agent Chaos — *奶奶：廚房拔河*
+## No.13 Multi-Agent Chaos — *阿嬤：廚房拔河*
 ![No.13 – Multi-Agent Chaos](images/no13.png)
 
-**Grandma story**  
-Two cooks share one kitchen. One adds salt while the other removes it. The soup never stabilizes.
+**阿嬤故事**  
+兩個廚師共用一口鍋，一個加鹽、一個撈掉；永遠調不對味。
 
-**Metaphor mapping**
+**比喻對應**
 - 共用廚房 = 共用記憶  
 - 交叉便條 = 角色飄移  
 - 鹽的拉扯 = 記憶覆寫  
 
-**Grandma fix（輸出前）— 映射**
+**阿嬤防呆（輸出前）— 映射**
 - 每位廚師各有 **署名卡** = **角色與 state keys**  
 - 便條分 **不同抽屜** = **所有權與欄柵**  
 - 爐台使用有 **計時** = **工具超時／選擇閘**
 
-**Minimal fix（grandma）**  
-Give each cook a clear card and a separate drawer.
+**最小修法（阿嬤版）**  
+給每位廚師一張清楚的名卡與獨立抽屜。
 
-Doctor prompt:
+**醫生提示詞**
 ```
 
-please explain No.13 Multi-Agent Chaos in grandma mode and set a tiny role + memory fence plan
+請用阿嬤模式解釋第 13 題「多代理人混亂」，並制定最小的角色＋記憶欄柵計畫。
 
 ```
 
 <details>
-<summary>Pro Zone</summary>
+<summary>Pro 區</summary>
 
 ---
 
-**Real scene**  
+**真實情境**  
 多 agent 互相覆寫狀態或混淆角色。沒有單一真相來源。
 
-**Technical keys**
+**技術關鍵**
 - 角色／記憶欄柵  
 - State keys 與所有權  
 - 工具超時與選擇閘  
@@ -632,41 +632,41 @@ Multi-Agent Problems → https://github.com/onestardao/WFGY/blob/main/ProblemMap
 
 ---
 
-## No.14 Bootstrap Ordering — *奶奶：冷鍋打蛋*
+## No.14 Bootstrap Ordering — *阿嬤：冷鍋打蛋*
 ![No.14 – Bootstrap Ordering](images/no14.png)
 
-**Grandma story**  
-You try to fry eggs before turning on the stove. Of course nothing happens.
+**阿嬤故事**  
+還沒開火就打蛋進鍋裡，當然不會熟。
 
-**Metaphor mapping**
+**比喻對應**
 - 冷鍋 = 服務未就緒  
 - 先打蛋 = 依賴尚未啟動就呼叫  
 - 時序燒焦 = 少了熱身步驟  
 
-**Grandma fix（輸出前）— 映射**
-- 先開火 → **鍋熱** → **再打蛋** = **readiness probes／啟動順序**  
+**阿嬤防呆（輸出前）— 映射**
+- 先開火 → **鍋熱** → **再打蛋** = **就緒探針 & 啟動順序**  
 - 先把油與鍋預熱 = **快取／索引暖機**  
 - 檢查瓦斯與火柴 = **密鑰／權限檢查**
 
-**Minimal fix（grandma）**  
-Start the fire, heat the pan, then crack the eggs.
+**最小修法（阿嬤版）**  
+先開火、熱鍋，最後才打蛋。
 
-Doctor prompt:
+**醫生提示詞**
 ```
 
-please explain No.14 Bootstrap Ordering in grandma mode and give me the smallest boot checklist
+請用阿嬤模式解釋第 14 題「啟動順序錯誤」，並給我最小的開機檢查清單。
 
 ```
 
 <details>
-<summary>Pro Zone</summary>
+<summary>Pro 區</summary>
 
 ---
 
-**Real scene**  
-服務在相依尚未就緒時啟動。首呼失敗、快取冰冷、密鑰缺失。
+**真實情境**  
+服務在相依未就緒時啟動。首呼失敗、快取冰冷、密鑰缺失。
 
-**Technical keys**
+**技術關鍵**
 - 啟動順序與就緒探針  
 - 快取暖機與索引切換  
 - 密鑰檢查與健康閘  
@@ -678,41 +678,41 @@ Bootstrap Ordering → https://github.com/onestardao/WFGY/blob/main/ProblemMap/b
 
 ---
 
-## No.15 Deployment Deadlock — *奶奶：你先我先卡門口*
+## No.15 Deployment Deadlock — *阿嬤：你先我先卡門口*
 ![No.15 – Deployment Deadlock](images/no15.png)
 
-**Grandma story**  
-Two people at a narrow doorway say “you first.” “No, you first.” They block the door together.
+**阿嬤故事**  
+窄門口兩個人互相禮讓：「你先。」、「不，你先。」結果一起卡住。
 
-**Metaphor mapping**
+**比喻對應**
 - 窄門 = 共用資源  
 - 互相禮讓 = 互鎖等待  
 - 門口堵塞 = 系統凍結  
 
-**Grandma fix（輸出前）— 映射**
-- 指定先後順序 = **total order／priority**  
-- **側門**繞過 = **fallback path**  
-- **禮貌倒數** = **timeouts／backoff**
+**阿嬤防呆（輸出前）— 映射**
+- 指定先後順序 = **Total order／Priority**  
+- 走 **側門** = **Fallback path**  
+- **禮貌倒數** = **Timeouts／Backoff**
 
-**Minimal fix（grandma）**  
-Decide who goes first, or open a side door.
+**最小修法（阿嬤版）**  
+決定誰先走，或改走側門。
 
-Doctor prompt:
+**醫生提示詞**
 ```
 
-please explain No.15 Deployment Deadlock in grandma mode and show the smallest unlock plan
+請用阿嬤模式解釋第 15 題「部署死結」，並給我最小的解鎖計畫。
 
 ```
 
 <details>
-<summary>Pro Zone</summary>
+<summary>Pro 區</summary>
 
 ---
 
-**Real scene**  
-migrator 等 writer；writer 等 migrator；沒有超時，整體停滯。
+**真實情境**  
+Migrator 等 writer；writer 等 migrator；沒有超時，整體停滯。
 
-**Technical keys**
+**技術關鍵**
 - 打破相依循環  
 - 超時與退避  
 - 臨時唯讀模式  
@@ -724,41 +724,41 @@ Deployment Deadlock → https://github.com/onestardao/WFGY/blob/main/ProblemMap/
 
 ---
 
-## No.16 Pre-deploy Collapse — *奶奶：第一鍋就糊了*
+## No.16 Pre-deploy Collapse — *阿嬤：第一鍋就糊了*
 ![No.16 – Pre-deploy Collapse](images/no16.png)
 
-**Grandma story**  
-First pot burns because you forgot to wash it and check the gas.
+**阿嬤故事**  
+第一口鍋就燒焦，因為忘了先洗鍋、忘了檢查瓦斯。
 
-**Metaphor mapping**
+**比喻對應**
 - 髒鍋 = 舊版本／索引偏移  
 - 沒檢查瓦斯 = 秘密或權限缺失  
 - 第一口就焦 = 首次呼叫崩潰  
 
-**Grandma fix（輸出前）— 映射**
+**阿嬤防呆（輸出前）— 映射**
 - 先洗鍋與工具 = **版本釘住／乾淨狀態**  
-- 試火 = **環境與 secrets 的 preflight**  
+- 試火 = **環境與 Secrets 的 Preflight**  
 - 先煎 **一顆小蛋** = **小流量金絲雀**
 
-**Minimal fix（grandma）**  
-Wash the pot, test the flame, cook a tiny egg before guests arrive.
+**最小修法（阿嬤版）**  
+洗鍋、試火，先用一顆小蛋做金絲雀測試。
 
-Doctor prompt:
+**醫生提示詞**
 ```
 
-please explain No.16 Pre-deploy Collapse in grandma mode and give me the smallest preflight checklist
+請用阿嬤模式解釋第 16 題「部署前崩潰」，並給我最小的 Preflight 檢查清單。
 
 ```
 
 <details>
-<summary>Pro Zone</summary>
+<summary>Pro 區</summary>
 
 ---
 
-**Real scene**  
+**真實情境**  
 版本偏移、環境變數或 secrets 缺失、向量索引首批為空、分析器錯誤，導致第一個線上請求崩潰。
 
-**Technical keys**
+**技術關鍵**
 - Preflight 合約檢查  
 - 版本釘住與模型鎖定  
 - 向量索引建好再切換  
@@ -774,12 +774,12 @@ Pre-deploy Collapse → https://github.com/onestardao/WFGY/blob/main/ProblemMap/
 
 不是無止境貼 OK 繃。你要設定並維持 **接受標準**：
 
-* ΔS ≤ 0.45  
-* Coverage ≥ 0.70  
-* λ 狀態收斂  
-* 最終輸出前必須有來源
+- ΔS ≤ 0.45  
+- Coverage ≥ 0.70  
+- λ 狀態收斂  
+- 最終輸出前必須有來源
 
-當新 bug 出現，把它映射到編號，套一次修法，它就會一直被修好。這就是語義防火牆的目的。
+新 bug 出現時，把它映射到編號，套一次修法，它就會一直被修好。這就是語義防火牆的目的。
 
 ---
 
@@ -789,9 +789,9 @@ Pre-deploy Collapse → https://github.com/onestardao/WFGY/blob/main/ProblemMap/
 
 ```
 
-i’ve uploaded TXT OS / WFGY notes.
-which Problem Map number matches my issue?
-explain using grandma mode, then give the minimal fix and the reference page.
+我已上傳 TXT OS／WFGY 筆記。
+請判斷我的問題對應哪個 Problem Map 編號？
+先用阿嬤模式解釋，再給最小修法與參考頁面。
 
 ```
 
@@ -801,8 +801,8 @@ explain using grandma mode, then give the minimal fix and the reference page.
 
 | 工具 | 連結 | 三步驟設定 |
 |------|------|------------|
-| **WFGY 1.0 PDF** | [Engine Paper](https://github.com/onestardao/WFGY/blob/main/I_am_not_lizardman/WFGY_All_Principles_Return_to_One_v1.0_PSBigBig_Public.pdf) | 1️⃣ 下載 · 2️⃣ 上傳到你的 LLM · 3️⃣ 詢問 “Answer using WFGY + \<your question>” |
-| **TXT OS（純文字作業系統）** | [TXTOS.txt](https://github.com/onestardao/WFGY/blob/main/OS/TXTOS.txt) | 1️⃣ 下載 · 2️⃣ 貼到任一 LLM 對話 · 3️⃣ 打字 “hello world” — OS 立刻開機 |
+| **WFGY 1.0 PDF** | [Engine Paper](https://github.com/onestardao/WFGY/blob/main/I_am_not_lizardman/WFGY_All_Principles_Return_to_One_v1.0_PSBigBig_Public.pdf) | 1️⃣ 下載 · 2️⃣ 上傳到你的 LLM · 3️⃣ 詢問「Answer using WFGY + 你的問題」 |
+| **TXT OS（純文字作業系統）** | [TXTOS.txt](https://github.com/onestardao/WFGY/blob/main/OS/TXTOS.txt) | 1️⃣ 下載 · 2️⃣ 貼到任一 LLM 對話 · 3️⃣ 輸入「hello world」— OS 立刻開機 |
 
 ---
 
@@ -842,3 +842,4 @@ explain using grandma mode, then give the minimal fix and the reference page.
 [![Blow](https://img.shields.io/badge/Blow-Game%20Logic-purple?style=flat-square)](https://github.com/onestardao/WFGY/tree/main/OS/BlowBlowBlow)
 &nbsp;
 </div>
+
