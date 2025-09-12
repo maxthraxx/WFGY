@@ -105,10 +105,12 @@ Choose **Grandma’s Clinic** if you want to understand the bug in plain words.
 
 **WFGY Problem Map = a reasoning layer for your AI.**  
 load [**TXT OS**](https://github.com/onestardao/WFGY/blob/main/OS/README.md) or [**WFGY Core**](https://github.com/onestardao/WFGY/tree/main/core), then ask: *“which problem map number am i hitting?”*  
-you’ll get a diagnosis and exact fix steps — no infra changes required.
+you’ll get a diagnosis and exact fix steps — no infra changes required.  
+> *(tip: you can even paste the Problem Map page or a screenshot into the AI, and it will point you to the right number automatically.)*
 
 **16 reproducible failure modes, each with a clear fix (MIT).** *(e.g. rag drift, broken indexes)*  
-**A semantic firewall you install once, and every failure stays fixed.**  
+**A semantic firewall you install once, and every failure stays fixed.**
+
 
 > most readers found this map useful and left a ⭐ — if it helps you too, please star it so others can discover.
 
