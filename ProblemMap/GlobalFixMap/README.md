@@ -1,7 +1,4 @@
-> We’ve crossed **1000 ⭐**  thank you all for the support.  
-> [Blur Blur Blur](https://github.com/onestardao/WFGY/blob/main/OS/BlurBlurBlur/README.md), the math-to-image engine, is now officially unlocked.  
-> One-man cold start, one season, one thousand stars. And we’re just getting started.
-
+> **1000⭐ unlocked — [Blur Blur Blur](https://github.com/onestardao/WFGY/blob/main/OS/BlurBlurBlur/README.md) is live. One-man cold start, one season.**
 
 # 🏥 WFGY Global Fix Map — 300+ Pages of Structured Fixes  
 ### 🛡️ The upgraded Problem Map for end-to-end AI stability
