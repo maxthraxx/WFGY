@@ -4,7 +4,7 @@
 
 **為什麼有這個頁面**
 
-大多數人都是在模型已經講完話之後才修 AI bug，接著加上 patch、reranker 或 regex。結果同一種失敗之後會換個樣子再回來。
+大多數人都是在模型已經講完話之後才修 AI bug，接著加上 patch、reranker 或 regex。結果同一種失敗過一陣子會換個樣子再回來。
 
 **WFGY 在「輸出之前」就裝上一道語義防火牆。**  
 它會先檢查語義場。如果狀態不穩，就循環、收窄或重置。只有穩定的狀態才被允許發言。只要把失敗模式映射完成，它就會一直保持被修復的狀態。
@@ -27,12 +27,46 @@ No.16 [Pre-deploy Collapse](https://github.com/onestardao/WFGY/blob/main/Problem
 
 ---
 
+## 🔎 快速索引（直接跳號）
+
+1. [No.1 — 幻覺 & 段落漂移](#no01)  
+2. [No.2 — 解讀崩壞](#no02)  
+3. [No.3 — 冗長推理鏈](#no03)  
+4. [No.4 — 虛張聲勢／過度自信](#no04)  
+5. [No.5 — 語義 ≠ 嵌入](#no05)  
+6. [No.6 — 邏輯崩壞與恢復](#no06)  
+7. [No.7 — 跨回合記憶斷裂](#no07)  
+8. [No.8 — 黑箱除錯](#no08)  
+9. [No.9 — 熵崩壞](#no09)  
+10. [No.10 — 創意凍結](#no10)  
+11. [No.11 — 符號崩壞](#no11)  
+12. [No.12 — 哲學遞迴](#no12)  
+13. [No.13 — 多代理人混亂](#no13)  
+14. [No.14 — 啟動順序錯誤](#no14)  
+15. [No.15 — 部署死結](#no15)  
+16. [No.16 — 部署前崩潰](#no16)
+
+---
+
+## 🛡️ 阿嬤輸出前檢查表（回答前必做）
+
+- 🧾 **先出示卡片** → 來源／引用要先於答案（citation-first）。  
+- 🔎 **比對「意思」而非「長得像」** → 通過 ΔS 語義閘門。  
+- 🧭 **鏈中設檢查點** → 用 `λ_observe`；若仍漂移，執行 **BBCR** 受控重置。  
+- ✅ **只接受穩定狀態** → Coverage ≥ 0.70、λ 收斂、最終輸出前必有來源。
+
+> 小撇步：你可以把**本頁或任何 Problem Map 的截圖／清單**直接貼給 **Dr. WFGY**，問：  
+> 「**我現在是哪一號？給我最小修法與參考連結**」— 醫生會直接指路。
+
+---
+
 > **每節內容格式規則**  
 > • 內文 = 阿嬤故事、比喻對應、**阿嬤防呆（輸出前）**含映射、最小修法與提示詞。  
 > • **Pro 區** = 可展開區塊：準確症狀、技術關鍵與參考連結。
 
 ---
 
+<a id="no01"></a>
 ## No.1 Hallucination & Chunk Drift — *阿嬤：拿錯食譜*
 ![No.1 – Hallucination & Chunk Drift](images/no01.png)
 
@@ -59,6 +93,11 @@ No.16 [Pre-deploy Collapse](https://github.com/onestardao/WFGY/blob/main/Problem
 
 ```
 
+**阿嬤自檢（30 秒）**
+- [ ] 來源卡可見（書＋頁／ID）  
+- [ ] 通過 ΔS 語義閘門  
+- [ ] 無卡就拒絕輸出
+
 <details>
 <summary>Pro 區</summary>
 
@@ -79,6 +118,7 @@ Hallucination & Chunk Drift → https://github.com/onestardao/WFGY/blob/main/Pro
 
 ---
 
+<a id="no02"></a>
 ## No.2 Interpretation Collapse — *阿嬤：把糖當鹽*
 ![No.2 – Interpretation Collapse](images/no02.png)
 
@@ -105,6 +145,11 @@ Hallucination & Chunk Drift → https://github.com/onestardao/WFGY/blob/main/Pro
 
 ```
 
+**阿嬤自檢（30 秒）**
+- [ ] 數量／運算子已錨定  
+- [ ] 至少設一個 `λ_observe` 檢查點  
+- [ ] 漂移時有 BBCR 重置預案
+
 <details>
 <summary>Pro 區</summary>
 
@@ -125,6 +170,7 @@ Interpretation Collapse → https://github.com/onestardao/WFGY/blob/main/Problem
 
 ---
 
+<a id="no03"></a>
 ## No.3 Long Reasoning Chains — *阿嬤：越逛越忘*
 ![No.3 – Long Reasoning Chains](images/no03.png)
 
@@ -151,6 +197,11 @@ Interpretation Collapse → https://github.com/onestardao/WFGY/blob/main/Problem
 
 ```
 
+**阿嬤自檢（30 秒）**
+- [ ] 目標錨已寫清  
+- [ ] 迴圈內有週期性回檢  
+- [ ] 完成前 Coverage 達門檻
+
 <details>
 <summary>Pro 區</summary>
 
@@ -171,6 +222,7 @@ Long Reasoning Chains → https://github.com/onestardao/WFGY/blob/main/ProblemMa
 
 ---
 
+<a id="no04"></a>
 ## No.4 Bluffing / Overconfidence — *阿嬤：沒卡別端菜*
 ![No.4 – Bluffing / Overconfidence](images/no04.png)
 
@@ -197,6 +249,11 @@ Long Reasoning Chains → https://github.com/onestardao/WFGY/blob/main/ProblemMa
 
 ```
 
+**阿嬤自檢（30 秒）**
+- [ ] 先出示來源卡再回答  
+- [ ] 無根輸出一律拒絕  
+- [ ] 日誌含來源→答案鏈結
+
 <details>
 <summary>Pro 區</summary>
 
@@ -217,6 +274,7 @@ Bluffing / Overconfidence → https://github.com/onestardao/WFGY/blob/main/Probl
 
 ---
 
+<a id="no05"></a>
 ## No.5 Semantic ≠ Embedding — *阿嬤：胡椒名同味不同*
 ![No.5 – Semantic ≠ Embedding](images/no05.png)
 
@@ -243,6 +301,11 @@ Bluffing / Overconfidence → https://github.com/onestardao/WFGY/blob/main/Probl
 
 ```
 
+**阿嬤自檢（30 秒）**
+- [ ] 向量已正規化／空間一致  
+- [ ] 分詞與大小寫對齊  
+- [ ] 以示例檢查鄰居合理性
+
 <details>
 <summary>Pro 區</summary>
 
@@ -263,6 +326,7 @@ Semantic ≠ Embedding → https://github.com/onestardao/WFGY/blob/main/ProblemM
 
 ---
 
+<a id="no06"></a>
 ## No.6 Logic Collapse & Recovery — *阿嬤：死巷一直撞*
 ![No.6 – Logic Collapse & Recovery](images/no06.png)
 
@@ -289,6 +353,11 @@ Semantic ≠ Embedding → https://github.com/onestardao/WFGY/blob/main/ProblemM
 
 ```
 
+**阿嬤自檢（30 秒）**
+- [ ] 每步量測 ΔS  
+- [ ] 鏈中有 `λ_observe` 落地  
+- [ ] ΔS 高時啟動 BBCR
+
 <details>
 <summary>Pro 區</summary>
 
@@ -309,6 +378,7 @@ Logic Collapse & Recovery → https://github.com/onestardao/WFGY/blob/main/Probl
 
 ---
 
+<a id="no07"></a>
 ## No.7 Memory Breaks Across Sessions — *阿嬤：記在錯抽屜*
 ![No.7 – Memory Breaks Across Sessions](images/no07.png)
 
@@ -335,6 +405,11 @@ Logic Collapse & Recovery → https://github.com/onestardao/WFGY/blob/main/Probl
 
 ```
 
+**阿嬤自檢（30 秒）**
+- [ ] state keys 清楚標示  
+- [ ] 讀寫順序有防護  
+- [ ] 示例以 ID 可追蹤
+
 <details>
 <summary>Pro 區</summary>
 
@@ -355,6 +430,7 @@ Memory Coherence → https://github.com/onestardao/WFGY/blob/main/ProblemMap/mem
 
 ---
 
+<a id="no08"></a>
 ## No.8 Debugging is a Black Box — *阿嬤：空白卡片*
 ![No.8 – Debugging is a Black Box](images/no08.png)
 
@@ -381,6 +457,11 @@ Memory Coherence → https://github.com/onestardao/WFGY/blob/main/ProblemMap/mem
 
 ```
 
+**阿嬤自檢（30 秒）**
+- [ ] 答案旁同時顯示來源  
+- [ ] 追蹤到 ID／行號  
+- [ ] 步驟可端到端重現
+
 <details>
 <summary>Pro 區</summary>
 
@@ -401,6 +482,7 @@ Retrieval Traceability → https://github.com/onestardao/WFGY/blob/main/ProblemM
 
 ---
 
+<a id="no09"></a>
 ## No.9 Entropy Collapse — *阿嬤：一鍋灰色大雜燴*
 ![No.9 – Entropy Collapse](images/no09.png)
 
@@ -427,6 +509,11 @@ Retrieval Traceability → https://github.com/onestardao/WFGY/blob/main/ProblemM
 
 ```
 
+**阿嬤自檢（30 秒）**
+- [ ] 步寬已降低，不再一鍋燉  
+- [ ] 實體／關係／限制已錨定  
+- [ ] 最終前檢查 ΔS／Coverage
+
 <details>
 <summary>Pro 區</summary>
 
@@ -447,6 +534,7 @@ Entropy Collapse → https://github.com/onestardao/WFGY/blob/main/ProblemMap/ent
 
 ---
 
+<a id="no10=""></a><a id="no10"></a>
 ## No.10 Creative Freeze — *阿嬤：湯可吃但好無聊*
 ![No.10 – Creative Freeze](images/no10.png)
 
@@ -473,6 +561,11 @@ Entropy Collapse → https://github.com/onestardao/WFGY/blob/main/ProblemMap/ent
 
 ```
 
+**阿嬤自檢（30 秒）**
+- [ ] 產生 ≥ 2–3 個候選（`λ_diverse`）  
+- [ ] 以同一錨評分比較  
+- [ ] 熵窗口已限制
+
 <details>
 <summary>Pro 區</summary>
 
@@ -493,6 +586,7 @@ Creative Freeze → https://github.com/onestardao/WFGY/blob/main/ProblemMap/crea
 
 ---
 
+<a id="no11"></a>
 ## No.11 Symbolic Collapse — *阿嬤：看字會，算數不行*
 ![No.11 – Symbolic Collapse](images/no11.png)
 
@@ -520,6 +614,11 @@ Creative Freeze → https://github.com/onestardao/WFGY/blob/main/ProblemMap/crea
 
 ```
 
+**阿嬤自檢（30 秒）**
+- [ ] 表格／程式碼保留為區塊  
+- [ ] 符號／運算子／單位已錨定  
+- [ ] 以微型證明驗證數學
+
 <details>
 <summary>Pro 區</summary>
 
@@ -540,6 +639,7 @@ Symbolic Collapse → https://github.com/onestardao/WFGY/blob/main/ProblemMap/sy
 
 ---
 
+<a id="no12"></a>
 ## No.12 Philosophical Recursion — *阿嬤：無限為什麼*
 ![No.12 – Philosophical Recursion](images/no12.png)
 
@@ -566,6 +666,11 @@ Symbolic Collapse → https://github.com/onestardao/WFGY/blob/main/ProblemMap/sy
 
 ```
 
+**阿嬤自檢（30 秒）**
+- [ ] 已寫明外框與錨  
+- [ ] 設定最大遞迴深度  
+- [ ] 以例子或引用結尾
+
 <details>
 <summary>Pro 區</summary>
 
@@ -586,6 +691,7 @@ Philosophical Recursion → https://github.com/onestardao/WFGY/blob/main/Problem
 
 ---
 
+<a id="no13"></a>
 ## No.13 Multi-Agent Chaos — *阿嬤：廚房拔河*
 ![No.13 – Multi-Agent Chaos](images/no13.png)
 
@@ -612,6 +718,11 @@ Philosophical Recursion → https://github.com/onestardao/WFGY/blob/main/Problem
 
 ```
 
+**阿嬤自檢（30 秒）**
+- [ ] 角色與 state keys 已定義  
+- [ ] 所有權與欄柵已施作  
+- [ ] 工具超時／選擇閘到位
+
 <details>
 <summary>Pro 區</summary>
 
@@ -632,6 +743,7 @@ Multi-Agent Problems → https://github.com/onestardao/WFGY/blob/main/ProblemMap
 
 ---
 
+<a id="no14"></a>
 ## No.14 Bootstrap Ordering — *阿嬤：冷鍋打蛋*
 ![No.14 – Bootstrap Ordering](images/no14.png)
 
@@ -658,6 +770,11 @@ Multi-Agent Problems → https://github.com/onestardao/WFGY/blob/main/ProblemMap
 
 ```
 
+**阿嬤自檢（30 秒）**
+- [ ] 就緒探針通過才啟用  
+- [ ] 暖機完成（快取／索引）  
+- [ ] 密鑰與權限已檢查
+
 <details>
 <summary>Pro 區</summary>
 
@@ -678,6 +795,7 @@ Bootstrap Ordering → https://github.com/onestardao/WFGY/blob/main/ProblemMap/b
 
 ---
 
+<a id="no15"></a>
 ## No.15 Deployment Deadlock — *阿嬤：你先我先卡門口*
 ![No.15 – Deployment Deadlock](images/no15.png)
 
@@ -704,6 +822,11 @@ Bootstrap Ordering → https://github.com/onestardao/WFGY/blob/main/ProblemMap/b
 
 ```
 
+**阿嬤自檢（30 秒）**
+- [ ] 先後順序／優先級明確  
+- [ ] 有可用的側門／替代路徑  
+- [ ] 超時與退避已設定
+
 <details>
 <summary>Pro 區</summary>
 
@@ -724,6 +847,7 @@ Deployment Deadlock → https://github.com/onestardao/WFGY/blob/main/ProblemMap/
 
 ---
 
+<a id="no16"></a>
 ## No.16 Pre-deploy Collapse — *阿嬤：第一鍋就糊了*
 ![No.16 – Pre-deploy Collapse](images/no16.png)
 
@@ -749,6 +873,11 @@ Deployment Deadlock → https://github.com/onestardao/WFGY/blob/main/ProblemMap/
 請用阿嬤模式解釋第 16 題「部署前崩潰」，並給我最小的 Preflight 檢查清單。
 
 ```
+
+**阿嬤自檢（30 秒）**
+- [ ] 版本已釘住／狀態乾淨  
+- [ ] 環境與 Secrets 已檢查  
+- [ ] 以極小流量做金絲雀
 
 <details>
 <summary>Pro 區</summary>
