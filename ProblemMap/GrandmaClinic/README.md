@@ -27,12 +27,46 @@ No.16 [Pre-deploy Collapse](https://github.com/onestardao/WFGY/blob/main/Problem
 
 ---
 
+## 🔎 Quick Index (jump to a number)
+
+1. [No.1 — Hallucination & Chunk Drift](#no01)  
+2. [No.2 — Interpretation Collapse](#no02)  
+3. [No.3 — Long Reasoning Chains](#no03)  
+4. [No.4 — Bluffing / Overconfidence](#no04)  
+5. [No.5 — Semantic ≠ Embedding](#no05)  
+6. [No.6 — Logic Collapse & Recovery](#no06)  
+7. [No.7 — Memory Breaks Across Sessions](#no07)  
+8. [No.8 — Debugging is a Black Box](#no08)  
+9. [No.9 — Entropy Collapse](#no09)  
+10. [No.10 — Creative Freeze](#no10)  
+11. [No.11 — Symbolic Collapse](#no11)  
+12. [No.12 — Philosophical Recursion](#no12)  
+13. [No.13 — Multi-Agent Chaos](#no13)  
+14. [No.14 — Bootstrap Ordering](#no14)  
+15. [No.15 — Deployment Deadlock](#no15)  
+16. [No.16 — Pre-deploy Collapse](#no16)
+
+---
+
+## 🛡️ Grandma Pre-Output Checklist (use before answering)
+
+- 🧾 **Card first** → show source/citation before output.  
+- 🔎 **Match meaning, not looks** → pass ΔS semantic gate.  
+- 🧭 **Mid-chain checkpoints** → use λ_observe; if drift persists, **BBCR** reset.  
+- ✅ **Accept only stable states** → coverage ≥ 0.70, λ convergent, source present.
+
+> Tip: You can paste a screenshot of this page or any Problem Map section into **Dr. WFGY** and ask:  
+> *“Which number am I hitting? Give the minimal fix and link.”*
+
+---
+
 > Format rule for every section  
 > • Plain text = Grandma story, metaphor, **grandma fix (before-the-output)** with mapping, minimal fix and prompt.  
 > • Pro Zone = a collapsible block with exact symptoms, technical keys, and the reference link.
 
 ---
 
+<a id="no01"></a>
 ## No.1 Hallucination & Chunk Drift — *Grandma: Wrong Cookbook*
 ![No.1 – Hallucination & Chunk Drift](images/no01.png)
 
@@ -59,6 +93,11 @@ please explain No.1 Hallucination & Chunk Drift in grandma mode, then show me th
 
 ```
 
+**Grandma Test (30s self-check)**
+- [ ] Source card visible (book + page/ID)  
+- [ ] ΔS gate passed (meaning match, not surface)  
+- [ ] Will refuse output if no card
+
 <details>
 <summary>Pro Zone</summary>
 
@@ -79,6 +118,7 @@ Hallucination & Chunk Drift → https://github.com/onestardao/WFGY/blob/main/Pro
 
 ---
 
+<a id="no02"></a>
 ## No.2 Interpretation Collapse — *Grandma: Salt-for-Sugar*
 ![No.2 – Interpretation Collapse](images/no02.png)
 
@@ -105,6 +145,11 @@ please explain No.2 Interpretation Collapse in grandma mode, then apply a minima
 
 ```
 
+**Grandma Test (30s self-check)**
+- [ ] Quantities/operators anchored  
+- [ ] At least one λ_observe checkpoint  
+- [ ] BBCR reset plan ready if drift continues
+
 <details>
 <summary>Pro Zone</summary>
 
@@ -125,6 +170,7 @@ Interpretation Collapse → https://github.com/onestardao/WFGY/blob/main/Problem
 
 ---
 
+<a id="no03"></a>
 ## No.3 Long Reasoning Chains — *Grandma: Lost Shopping Trip*
 ![No.3 – Long Reasoning Chains](images/no03.png)
 
@@ -151,6 +197,11 @@ please explain No.3 Long Reasoning Chains in grandma mode and show the smallest 
 
 ```
 
+**Grandma Test (30s self-check)**
+- [ ] Goal anchor written down  
+- [ ] Loop has periodic checks  
+- [ ] Coverage vs. goal ≥ threshold before finalizing
+
 <details>
 <summary>Pro Zone</summary>
 
@@ -171,6 +222,7 @@ Long Reasoning Chains → https://github.com/onestardao/WFGY/blob/main/ProblemMa
 
 ---
 
+<a id="no04"></a>
 ## No.4 Bluffing / Overconfidence — *Grandma: No Recipe Card*
 ![No.4 – Bluffing / Overconfidence](images/no04.png)
 
@@ -197,6 +249,11 @@ please explain No.4 Bluffing in grandma mode, then enforce 'card first' with a m
 
 ```
 
+**Grandma Test (30s self-check)**
+- [ ] Card (source) displayed before answer  
+- [ ] Ungrounded outputs are rejected  
+- [ ] Trace log includes source→answer linkage
+
 <details>
 <summary>Pro Zone</summary>
 
@@ -217,6 +274,7 @@ Bluffing / Overconfidence → https://github.com/onestardao/WFGY/blob/main/Probl
 
 ---
 
+<a id="no05"></a>
 ## No.5 Semantic ≠ Embedding — *Grandma: Pepper Confusion*
 ![No.5 – Semantic ≠ Embedding](images/no05.png)
 
@@ -243,6 +301,11 @@ please explain No.5 Semantic ≠ Embedding in grandma mode and give me the minim
 
 ```
 
+**Grandma Test (30s self-check)**
+- [ ] Embeddings normalized / spaces+casing aligned  
+- [ ] Metric space & dimension verified  
+- [ ] Exemplars used to sanity-check neighbors
+
 <details>
 <summary>Pro Zone</summary>
 
@@ -263,6 +326,7 @@ Semantic ≠ Embedding → https://github.com/onestardao/WFGY/blob/main/ProblemM
 
 ---
 
+<a id="no06"></a>
 ## No.6 Logic Collapse & Recovery — *Grandma: Dead-End Alley*
 ![No.6 – Logic Collapse & Recovery](images/no06.png)
 
@@ -289,6 +353,11 @@ please explain No.6 Logic Collapse in grandma mode, then show BBCR reset + λ\_o
 
 ```
 
+**Grandma Test (30s self-check)**
+- [ ] ΔS monitored per step  
+- [ ] λ_observe applied mid-chain  
+- [ ] BBCR executed if ΔS stays high
+
 <details>
 <summary>Pro Zone</summary>
 
@@ -309,6 +378,7 @@ Logic Collapse & Recovery → https://github.com/onestardao/WFGY/blob/main/Probl
 
 ---
 
+<a id="no07"></a>
 ## No.7 Memory Breaks Across Sessions — *Grandma: Wrong Drawer Memory*
 ![No.7 – Memory Breaks Across Sessions](images/no07.png)
 
@@ -335,6 +405,11 @@ please explain No.7 Memory Breaks in grandma mode and show the smallest stable m
 
 ```
 
+**Grandma Test (30s self-check)**
+- [ ] State keys defined and labeled  
+- [ ] Read/write order enforced  
+- [ ] Exemplars retrieved with traceable IDs
+
 <details>
 <summary>Pro Zone</summary>
 
@@ -355,6 +430,7 @@ Memory Coherence → https://github.com/onestardao/WFGY/blob/main/ProblemMap/mem
 
 ---
 
+<a id="no08"></a>
 ## No.8 Debugging is a Black Box — *Grandma: Blank Card*
 ![No.8 – Debugging is a Black Box](images/no08.png)
 
@@ -381,6 +457,11 @@ please explain No.8 Debugging Black Box in grandma mode and add a tiny traceabil
 
 ```
 
+**Grandma Test (30s self-check)**
+- [ ] Source shown alongside answer  
+- [ ] IDs/lines captured in trace  
+- [ ] Steps reproducible end-to-end
+
 <details>
 <summary>Pro Zone</summary>
 
@@ -401,6 +482,7 @@ Retrieval Traceability → https://github.com/onestardao/WFGY/blob/main/ProblemM
 
 ---
 
+<a id="no09"></a>
 ## No.9 Entropy Collapse — *Grandma: One-Pot Gray Stew*
 ![No.9 – Entropy Collapse](images/no09.png)
 
@@ -427,6 +509,11 @@ please explain No.9 Entropy Collapse in grandma mode and show a minimal stabilit
 
 ```
 
+**Grandma Test (30s self-check)**
+- [ ] Step width reduced; no big mush  
+- [ ] Entities/relations/constraints anchored  
+- [ ] Acceptance targets checked before final
+
 <details>
 <summary>Pro Zone</summary>
 
@@ -447,6 +534,7 @@ Entropy Collapse → https://github.com/onestardao/WFGY/blob/main/ProblemMap/ent
 
 ---
 
+<a id="no10"></a>
 ## No.10 Creative Freeze — *Grandma: Bland Soup*
 ![No.10 – Creative Freeze](images/no10.png)
 
@@ -473,6 +561,11 @@ please explain No.10 Creative Freeze in grandma mode and give the smallest safe-
 
 ```
 
+**Grandma Test (30s self-check)**
+- [ ] ≥2–3 candidate answers (λ_diverse)  
+- [ ] Scored against the same anchor  
+- [ ] Entropy window constrained
+
 <details>
 <summary>Pro Zone</summary>
 
@@ -493,6 +586,7 @@ Creative Freeze → https://github.com/onestardao/WFGY/blob/main/ProblemMap/crea
 
 ---
 
+<a id="no11"></a>
 ## No.11 Symbolic Collapse — *Grandma: Ignore Fractions*
 ![No.11 – Symbolic Collapse](images/no11.png)
 
@@ -520,6 +614,11 @@ please explain No.11 Symbolic Collapse in grandma mode and show me a minimal sym
 
 ```
 
+**Grandma Test (30s self-check)**
+- [ ] Tables/code kept as blocks  
+- [ ] Symbols/operators/units anchored  
+- [ ] Micro-proof verifies the math
+
 <details>
 <summary>Pro Zone</summary>
 
@@ -540,6 +639,7 @@ Symbolic Collapse → https://github.com/onestardao/WFGY/blob/main/ProblemMap/sy
 
 ---
 
+<a id="no12"></a>
 ## No.12 Philosophical Recursion — *Grandma: Infinite Why Loop*
 ![No.12 – Philosophical Recursion](images/no12.png)
 
@@ -566,6 +666,11 @@ please explain No.12 Philosophical Recursion in grandma mode and give me a minim
 
 ```
 
+**Grandma Test (30s self-check)**
+- [ ] Outer frame written and fixed  
+- [ ] Max recursion depth set  
+- [ ] Ends with example/citation
+
 <details>
 <summary>Pro Zone</summary>
 
@@ -586,6 +691,7 @@ Philosophical Recursion → https://github.com/onestardao/WFGY/blob/main/Problem
 
 ---
 
+<a id="no13"></a>
 ## No.13 Multi-Agent Chaos — *Grandma: Kitchen Tug-of-War*
 ![No.13 – Multi-Agent Chaos](images/no13.png)
 
@@ -612,6 +718,11 @@ please explain No.13 Multi-Agent Chaos in grandma mode and set a tiny role + mem
 
 ```
 
+**Grandma Test (30s self-check)**
+- [ ] Roles & state keys defined  
+- [ ] Ownership and fences enforced  
+- [ ] Tool timeouts / selection gates set
+
 <details>
 <summary>Pro Zone</summary>
 
@@ -632,6 +743,7 @@ Multi-Agent Problems → https://github.com/onestardao/WFGY/blob/main/ProblemMap
 
 ---
 
+<a id="no14"></a>
 ## No.14 Bootstrap Ordering — *Grandma: Cold Pan Egg*
 ![No.14 – Bootstrap Ordering](images/no14.png)
 
@@ -658,6 +770,11 @@ please explain No.14 Bootstrap Ordering in grandma mode and give me the smallest
 
 ```
 
+**Grandma Test (30s self-check)**
+- [ ] Readiness probes pass before use  
+- [ ] Warmups executed (cache/index)  
+- [ ] Secrets/permissions verified
+
 <details>
 <summary>Pro Zone</summary>
 
@@ -678,6 +795,7 @@ Bootstrap Ordering → https://github.com/onestardao/WFGY/blob/main/ProblemMap/b
 
 ---
 
+<a id="no15"></a>
 ## No.15 Deployment Deadlock — *Grandma: You-First Doorway*
 ![No.15 – Deployment Deadlock](images/no15.png)
 
@@ -704,6 +822,11 @@ please explain No.15 Deployment Deadlock in grandma mode and show the smallest u
 
 ```
 
+**Grandma Test (30s self-check)**
+- [ ] Priority/ordering defined  
+- [ ] Fallback path available  
+- [ ] Timeouts and backoff configured
+
 <details>
 <summary>Pro Zone</summary>
 
@@ -724,6 +847,7 @@ Deployment Deadlock → https://github.com/onestardao/WFGY/blob/main/ProblemMap/
 
 ---
 
+<a id="no16"></a>
 ## No.16 Pre-deploy Collapse — *Grandma: Burnt First Pot*
 ![No.16 – Pre-deploy Collapse](images/no16.png)
 
@@ -750,6 +874,11 @@ please explain No.16 Pre-deploy Collapse in grandma mode and give me the smalles
 
 ```
 
+**Grandma Test (30s self-check)**
+- [ ] Version pinned / clean state  
+- [ ] Env & secrets checked  
+- [ ] Canary shipped on tiny traffic
+
 <details>
 <summary>Pro Zone</summary>
 
@@ -767,6 +896,7 @@ Version skew, missing env vars or secrets, empty vector index on first ingestion
 Reference:  
 Pre-deploy Collapse → https://github.com/onestardao/WFGY/blob/main/ProblemMap/predeploy-collapse.md
 </details>
+
 ---
 
 ## What happens after you fix one
@@ -787,9 +917,11 @@ When a new bug appears, map it to a number, apply the fix once, and it stays fix
 If you are unsure which number fits:
 
 ```
+
 i’ve uploaded TXT OS / WFGY notes.
 which Problem Map number matches my issue?
 explain using grandma mode, then give the minimal fix and the reference page.
+
 ```
 
 ---
