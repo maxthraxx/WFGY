@@ -1,5 +1,7 @@
 # Grandma Clinic — AI Bugs Made Simple (Problem Map 1–16)
 
+![Hero](images/Hero.png)
+
 **Why this page exists**
 
 Most people fix AI bugs **after** the model already spoke. You then add patches, rerankers, or regex. The same failure returns later in a different shape.
