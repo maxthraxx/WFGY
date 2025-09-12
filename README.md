@@ -1,7 +1,4 @@
-> We’ve crossed **1000 ⭐**  thank you all for the support.  
-> [Blur Blur Blur](https://github.com/onestardao/WFGY/blob/main/OS/BlurBlurBlur/README.md), the math-to-image engine, is now officially unlocked.  
-> One-man cold start, one season, one thousand stars. And we’re just getting started.
-
+> **1000⭐ unlocked — [Blur Blur Blur](https://github.com/onestardao/WFGY/blob/main/OS/BlurBlurBlur/README.md) is live. One-man cold start, one season.**
 
 # WFGY: Civilization Starter — The WanFaGuiYi Engine  
 ## One upload. Zero setup. [Real $1M-level](https://github.com/onestardao/WFGY/blob/main/value_manifest/README.md) reasoning begins.
@@ -1427,6 +1424,7 @@ It treats alignment as a living semantic contract — not just accuracy, but mea
 [![Blow](https://img.shields.io/badge/Blow-Game%20Logic-purple?style=flat-square)](https://github.com/onestardao/WFGY/tree/main/OS/BlowBlowBlow)
 &nbsp;
 </div>
+
 
 
 
