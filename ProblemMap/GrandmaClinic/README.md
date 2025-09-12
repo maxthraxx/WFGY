@@ -33,7 +33,7 @@ No.16 [Pre-deploy Collapse](https://github.com/onestardao/WFGY/blob/main/Problem
 
 ---
 
-## No.1 Hallucination & Chunk Drift
+## No.1 Hallucination & Chunk Drift — *Grandma: Wrong Cookbook*
 ![No.1 – Hallucination & Chunk Drift](images/no01.png)
 
 **Grandma story**  
@@ -62,6 +62,8 @@ please explain No.1 Hallucination & Chunk Drift in grandma mode, then show me th
 <details>
 <summary>Pro Zone</summary>
 
+---
+
 **Real scene**  
 Bad OCR or bad chunking creates fragments. Retrieval picks a high cosine neighbor that is semantically wrong. Model speaks smoothly and cites nothing.
 
@@ -77,7 +79,7 @@ Hallucination & Chunk Drift → https://github.com/onestardao/WFGY/blob/main/Pro
 
 ---
 
-## No.2 Interpretation Collapse
+## No.2 Interpretation Collapse — *Grandma: Salt-for-Sugar*
 ![No.2 – Interpretation Collapse](images/no02.png)
 
 **Grandma story**  
@@ -106,6 +108,8 @@ please explain No.2 Interpretation Collapse in grandma mode, then apply a minima
 <details>
 <summary>Pro Zone</summary>
 
+---
+
 **Real scene**  
 Answer drifts after retrieval. The model reasons over correct context but loses structure mid-chain.
 
@@ -121,7 +125,7 @@ Interpretation Collapse → https://github.com/onestardao/WFGY/blob/main/Problem
 
 ---
 
-## No.3 Long Reasoning Chains
+## No.3 Long Reasoning Chains — *Grandma: Lost Shopping Trip*
 ![No.3 – Long Reasoning Chains](images/no03.png)
 
 **Grandma story**  
@@ -150,6 +154,8 @@ please explain No.3 Long Reasoning Chains in grandma mode and show the smallest 
 <details>
 <summary>Pro Zone</summary>
 
+---
+
 **Real scene**  
 Multi-step plans wander. Early decisions are not re-checked. The final answer is coherent but off-goal.
 
@@ -165,7 +171,7 @@ Long Reasoning Chains → https://github.com/onestardao/WFGY/blob/main/ProblemMa
 
 ---
 
-## No.4 Bluffing / Overconfidence
+## No.4 Bluffing / Overconfidence — *Grandma: No Recipe Card*
 ![No.4 – Bluffing / Overconfidence](images/no04.png)
 
 **Grandma story**  
@@ -194,6 +200,8 @@ please explain No.4 Bluffing in grandma mode, then enforce 'card first' with a m
 <details>
 <summary>Pro Zone</summary>
 
+---
+
 **Real scene**  
 Natural language is confident and wrong. The path lacks traceability. Model refuses to verify.
 
@@ -209,7 +217,7 @@ Bluffing / Overconfidence → https://github.com/onestardao/WFGY/blob/main/Probl
 
 ---
 
-## No.5 Semantic ≠ Embedding
+## No.5 Semantic ≠ Embedding — *Grandma: Pepper Confusion*
 ![No.5 – Semantic ≠ Embedding](images/no05.png)
 
 **Grandma story**  
@@ -238,6 +246,8 @@ please explain No.5 Semantic ≠ Embedding in grandma mode and give me the minim
 <details>
 <summary>Pro Zone</summary>
 
+---
+
 **Real scene**  
 Cosine similarity on unnormalized vectors, cross-model vector mixing, and casing mismatch select neighbors that do not carry the same meaning.
 
@@ -253,7 +263,7 @@ Semantic ≠ Embedding → https://github.com/onestardao/WFGY/blob/main/ProblemM
 
 ---
 
-## No.6 Logic Collapse & Recovery
+## No.6 Logic Collapse & Recovery — *Grandma: Dead-End Alley*
 ![No.6 – Logic Collapse & Recovery](images/no06.png)
 
 **Grandma story**  
@@ -282,6 +292,8 @@ please explain No.6 Logic Collapse in grandma mode, then show BBCR reset + λ\_o
 <details>
 <summary>Pro Zone</summary>
 
+---
+
 **Real scene**  
 Reasoning locks into a loop or shallow branch. No mechanism exists to detect and recover.
 
@@ -297,7 +309,7 @@ Logic Collapse & Recovery → https://github.com/onestardao/WFGY/blob/main/Probl
 
 ---
 
-## No.7 Memory Breaks Across Sessions
+## No.7 Memory Breaks Across Sessions — *Grandma: Wrong Drawer Memory*
 ![No.7 – Memory Breaks Across Sessions](images/no07.png)
 
 **Grandma story**  
@@ -326,6 +338,8 @@ please explain No.7 Memory Breaks in grandma mode and show the smallest stable m
 <details>
 <summary>Pro Zone</summary>
 
+---
+
 **Real scene**  
 Session state, anchors, and contracts are not persisted or are stored without retrieval trace, causing silent context loss.
 
@@ -341,7 +355,7 @@ Memory Coherence → https://github.com/onestardao/WFGY/blob/main/ProblemMap/mem
 
 ---
 
-## No.8 Debugging is a Black Box
+## No.8 Debugging is a Black Box — *Grandma: Blank Card*
 ![No.8 – Debugging is a Black Box](images/no08.png)
 
 **Grandma story**  
@@ -370,6 +384,8 @@ please explain No.8 Debugging Black Box in grandma mode and add a tiny traceabil
 <details>
 <summary>Pro Zone</summary>
 
+---
+
 **Real scene**  
 No IDs or source lines. Hard to prove which chunk produced the answer, so fixes are guesswork.
 
@@ -385,7 +401,7 @@ Retrieval Traceability → https://github.com/onestardao/WFGY/blob/main/ProblemM
 
 ---
 
-## No.9 Entropy Collapse
+## No.9 Entropy Collapse — *Grandma: One-Pot Gray Stew*
 ![No.9 – Entropy Collapse](images/no09.png)
 
 **Grandma story**  
@@ -414,6 +430,8 @@ please explain No.9 Entropy Collapse in grandma mode and show a minimal stabilit
 <details>
 <summary>Pro Zone</summary>
 
+---
+
 **Real scene**  
 Attention diffuses. The model mixes unrelated paths. Output looks fine on the surface but is internally inconsistent.
 
@@ -429,7 +447,7 @@ Entropy Collapse → https://github.com/onestardao/WFGY/blob/main/ProblemMap/ent
 
 ---
 
-## No.10 Creative Freeze
+## No.10 Creative Freeze — *Grandma: Bland Soup*
 ![No.10 – Creative Freeze](images/no10.png)
 
 **Grandma story**  
@@ -458,6 +476,8 @@ please explain No.10 Creative Freeze in grandma mode and give the smallest safe-
 <details>
 <summary>Pro Zone</summary>
 
+---
+
 **Real scene**  
 Model avoids diverse candidates. Everything converges to bland answers.
 
@@ -473,7 +493,7 @@ Creative Freeze → https://github.com/onestardao/WFGY/blob/main/ProblemMap/crea
 
 ---
 
-## No.11 Symbolic Collapse
+## No.11 Symbolic Collapse — *Grandma: Ignore Fractions*
 ![No.11 – Symbolic Collapse](images/no11.png)
 
 **Grandma story**  
@@ -503,6 +523,8 @@ please explain No.11 Symbolic Collapse in grandma mode and show me a minimal sym
 <details>
 <summary>Pro Zone</summary>
 
+---
+
 **Real scene**  
 Equations, operators, code blocks, and headers get flattened to prose. Answers look smooth and wrong.
 
@@ -518,7 +540,7 @@ Symbolic Collapse → https://github.com/onestardao/WFGY/blob/main/ProblemMap/sy
 
 ---
 
-## No.12 Philosophical Recursion
+## No.12 Philosophical Recursion — *Grandma: Infinite Why Loop*
 ![No.12 – Philosophical Recursion](images/no12.png)
 
 **Grandma story**  
@@ -547,6 +569,8 @@ please explain No.12 Philosophical Recursion in grandma mode and give me a minim
 <details>
 <summary>Pro Zone</summary>
 
+---
+
 **Real scene**  
 Self reference and paradox questions recurse without progress.
 
@@ -562,7 +586,7 @@ Philosophical Recursion → https://github.com/onestardao/WFGY/blob/main/Problem
 
 ---
 
-## No.13 Multi-Agent Chaos
+## No.13 Multi-Agent Chaos — *Grandma: Kitchen Tug-of-War*
 ![No.13 – Multi-Agent Chaos](images/no13.png)
 
 **Grandma story**  
@@ -591,6 +615,8 @@ please explain No.13 Multi-Agent Chaos in grandma mode and set a tiny role + mem
 <details>
 <summary>Pro Zone</summary>
 
+---
+
 **Real scene**  
 Agents overwrite each other’s state or speak with mixed roles. No single source of truth.
 
@@ -606,7 +632,7 @@ Multi-Agent Problems → https://github.com/onestardao/WFGY/blob/main/ProblemMap
 
 ---
 
-## No.14 Bootstrap Ordering
+## No.14 Bootstrap Ordering — *Grandma: Cold Pan Egg*
 ![No.14 – Bootstrap Ordering](images/no14.png)
 
 **Grandma story**  
@@ -635,6 +661,8 @@ please explain No.14 Bootstrap Ordering in grandma mode and give me the smallest
 <details>
 <summary>Pro Zone</summary>
 
+---
+
 **Real scene**  
 Services fire before dependencies are ready. First calls fail, caches cold, secrets missing.
 
@@ -650,7 +678,7 @@ Bootstrap Ordering → https://github.com/onestardao/WFGY/blob/main/ProblemMap/b
 
 ---
 
-## No.15 Deployment Deadlock
+## No.15 Deployment Deadlock — *Grandma: You-First Doorway*
 ![No.15 – Deployment Deadlock](images/no15.png)
 
 **Grandma story**  
@@ -679,6 +707,8 @@ please explain No.15 Deployment Deadlock in grandma mode and show the smallest u
 <details>
 <summary>Pro Zone</summary>
 
+---
+
 **Real scene**  
 Migrator waits for writer. Writer waits for migrator. No timeout. Full stall.
 
@@ -694,7 +724,7 @@ Deployment Deadlock → https://github.com/onestardao/WFGY/blob/main/ProblemMap/
 
 ---
 
-## No.16 Pre-deploy Collapse
+## No.16 Pre-deploy Collapse — *Grandma: Burnt First Pot*
 ![No.16 – Pre-deploy Collapse](images/no16.png)
 
 **Grandma story**  
@@ -722,6 +752,8 @@ please explain No.16 Pre-deploy Collapse in grandma mode and give me the smalles
 
 <details>
 <summary>Pro Zone</summary>
+
+---
 
 **Real scene**  
 Version skew, missing env vars or secrets, empty vector index on first ingestion, wrong analyzer. First production call collapses.
