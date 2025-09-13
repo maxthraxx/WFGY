@@ -46,7 +46,7 @@ No.16 [Pre-deploy Collapse](https://github.com/onestardao/WFGY/blob/main/Problem
 15. [No.15 — Deployment Deadlock](#no15)  
 16. [No.16 — Pre-deploy Collapse](#no16)
 
-Want the full problem list and extended fixes? See: [Problem Map 1.0](https://github.com/onestardao/WFGY/tree/main/ProblemMap/README.md) | [Problem Map 2.0](https://github.com/onestardao/WFGY/blob/main/ProblemMap/SemanticClinicIndex.md) | [Semantic Clinic](https://github.com/onestardao/WFGY/blob/main/ProblemMap/SemanticClinicIndex.md) | [Global Fix Map](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/README.md)
+Want the full problem list and extended fixes? See: [Problem Map 1.0](https://github.com/onestardao/WFGY/tree/main/ProblemMap/README.md) | [Problem Map 2.0](https://github.com/onestardao/WFGY/blob/main/ProblemMap/SemanticClinicIndex.md) | [Semantic Clinic](https://github.com/onestardao/WFGY/blob/main/ProblemMap/SemanticClinicIndex.md) | [Global Fix Map](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/README.md) | [Problem Map FAQ](https://github.com/onestardao/WFGY/blob/main/ProblemMap/FAQ.md)
 
 ---
 
@@ -925,6 +925,23 @@ which Problem Map number matches my issue?
 explain using grandma mode, then give the minimal fix and the reference page.
 
 ```
+
+## ❓ Grandma Clinic FAQ (for beginners)
+
+**Q1. Do I need to install SDKs or special libraries?**  
+No. Just copy the doctor prompt or TXT file into your LLM chat. No extra tools required.
+
+**Q2. Will this slow down my model or cost more tokens?**  
+No. WFGY is text-only. It works as a reasoning guard before output. Over time it usually saves tokens by preventing retries.
+
+**Q3. How do I know if the fix actually worked?**  
+Check the acceptance targets: ΔS ≤ 0.45, Coverage ≥ 0.70, λ convergent.  
+If these hold across 3 paraphrases, the bug is fixed.
+
+**Q4. Is Grandma Clinic enough, or do I need the full Problem Map?**  
+The Clinic covers the 16 most common errors in simple language.  
+For deeper or vendor-specific issues, see the full [Problem Map FAQ](https://github.com/onestardao/WFGY/blob/main/ProblemMap/FAQ.md).
+
 
 ---
 
