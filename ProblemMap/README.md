@@ -235,7 +235,7 @@ you’ll get a diagnosis and exact fix steps — no infra changes required.
 - **Semantic Clinic (triage when unsure):** [Fix symptoms fast →](./SemanticClinicIndex.md)
 - **Getting Started (practical):** [Guard a RAG pipeline with WFGY →](./getting-started.md)
 - **Beginner Guide:** [Find and fix your first failure →](./BeginnerGuide.md)
-- **Problem Map FAQ:** [Beginner + practitioner answers →](./FAQ.md)
+- **Problem Map FAQ:** [Beginner + practitioner answers →](./faq.md)
 - **Diagnose by symptom:** [`Diagnose.md` table →](./Diagnose.md)
 - **Visual RAG Guide:** [`RAG Architecture & Recovery`](./rag-architecture-and-recovery.md)  
   high-altitude map linking symptom × stage × failure class with exact recovery paths.
