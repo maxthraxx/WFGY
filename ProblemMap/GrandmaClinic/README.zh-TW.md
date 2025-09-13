@@ -6,7 +6,7 @@
 
 多數人都是在模型已經開口**之後**才修 AI 錯誤，於是加上補丁、重排序或正則。結果同一種錯誤過陣子又換個樣子回來。
 
-**WFGY 會在輸出 *之前* 安裝一到語義防火牆。**  
+**WFGY 會在輸出 *之前* 安裝到語義防火牆。**  
 它會先看語義場。如果狀態不穩，就循環、收窄或重置。只有穩定狀態才允許輸出。只要把失敗模式映射完成，就能一直保持被修復。
 
 **30 秒快速使用**
@@ -116,6 +116,8 @@ No.16 [預部署崩潰 (Pre-deploy Collapse)](https://github.com/onestardao/WFGY
 <details>
 <summary>Pro 區</summary>
 
+---
+
 **真實情境**  
 壞 OCR/壞分塊造成碎片。檢索挑到高 cosine 但語義錯的鄰居。模型講得很順，卻沒引用。
 
@@ -165,6 +167,8 @@ Hallucination & Chunk Drift → https://github.com/onestardao/WFGY/blob/main/Pro
 
 <details>
 <summary>Pro 區</summary>
+
+---
 
 **真實情境**  
 檢索正確，但中途失去結構，答案偏移。
@@ -216,6 +220,8 @@ Interpretation Collapse → https://github.com/onestardao/WFGY/blob/main/Problem
 <details>
 <summary>Pro 區</summary>
 
+---
+
 **真實情境**  
 多步計畫會走偏；早期決策未回檢，結尾看似完整卻離題。
 
@@ -265,6 +271,9 @@ Long Reasoning Chains → https://github.com/onestardao/WFGY/blob/main/ProblemMa
 
 <details>
 <summary>Pro 區</summary>
+
+---
+
 
 **真實情境**  
 自然語言很流利但錯；路徑不可追，拒驗證。
@@ -316,6 +325,8 @@ Bluffing / Overconfidence → https://github.com/onestardao/WFGY/blob/main/Probl
 <details>
 <summary>Pro 區</summary>
 
+---
+
 **真實情境**  
 未正規化、跨模型向量混用、大小寫不一，導致挑到語義不等價的鄰居。
 
@@ -365,6 +376,8 @@ Semantic ≠ Embedding → https://github.com/onestardao/WFGY/blob/main/ProblemM
 
 <details>
 <summary>Pro 區</summary>
+   
+---
 
 **真實情境**  
 推理鎖在環或淺分支，缺偵測與恢復機制。
@@ -416,6 +429,8 @@ Logic Collapse & Recovery → https://github.com/onestardao/WFGY/blob/main/Probl
 <details>
 <summary>Pro 區</summary>
 
+---
+
 **真實情境**  
 回合狀態、錨點與契約未持久或無追蹤，造成靜默遺失。
 
@@ -465,6 +480,8 @@ Memory Coherence → https://github.com/onestardao/WFGY/blob/main/ProblemMap/mem
 
 <details>
 <summary>Pro 區</summary>
+
+---
 
 **真實情境**  
 沒有 ID 或來源行，無法證明哪個 chunk 產生答案，修復全靠猜。
@@ -516,6 +533,8 @@ Retrieval Traceability → https://github.com/onestardao/WFGY/blob/main/ProblemM
 <details>
 <summary>Pro 區</summary>
 
+---
+
 **真實情境**  
 注意力擴散，路徑混雜；表面流暢，內部矛盾。
 
@@ -565,6 +584,8 @@ Entropy Collapse → https://github.com/onestardao/WFGY/blob/main/ProblemMap/ent
 
 <details>
 <summary>Pro 區</summary>
+
+---
 
 **真實情境**  
 模型逃避多樣候選，全部收斂成平庸答案。
@@ -617,6 +638,8 @@ Creative Freeze → https://github.com/onestardao/WFGY/blob/main/ProblemMap/crea
 <details>
 <summary>Pro 區</summary>
 
+---
+
 **真實情境**  
 公式、運算子、程式碼、標題被壓平成散文；看似流暢其實錯。
 
@@ -666,6 +689,8 @@ Symbolic Collapse → https://github.com/onestardao/WFGY/blob/main/ProblemMap/sy
 
 <details>
 <summary>Pro 區</summary>
+
+---
 
 **真實情境**  
 自指與悖論讓推理空轉。
@@ -717,6 +742,8 @@ Philosophical Recursion → https://github.com/onestardao/WFGY/blob/main/Problem
 <details>
 <summary>Pro 區</summary>
 
+---
+
 **真實情境**  
 代理彼此覆寫狀態或混淆角色，沒有單一真相來源。
 
@@ -766,6 +793,8 @@ Multi-Agent Problems → https://github.com/onestardao/WFGY/blob/main/ProblemMap
 
 <details>
 <summary>Pro 區</summary>
+
+---
 
 **真實情境**  
 服務在相依未就緒時啟動；首呼失敗、快取冰冷、密鑰缺失。
@@ -817,6 +846,8 @@ Bootstrap Ordering → https://github.com/onestardao/WFGY/blob/main/ProblemMap/b
 <details>
 <summary>Pro 區</summary>
 
+---
+
 **真實情境**  
 migrator 等 writer；writer 等 migrator；無超時，全面卡住。
 
@@ -866,6 +897,8 @@ Deployment Deadlock → https://github.com/onestardao/WFGY/blob/main/ProblemMap/
 
 <details>
 <summary>Pro 區</summary>
+
+---
 
 **真實情境**  
 版本偏移、環境變數或密鑰缺、向量索引首批為空、分析器錯，第一個線上請求就崩潰。
