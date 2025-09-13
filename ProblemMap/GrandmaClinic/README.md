@@ -27,26 +27,28 @@ No.16 [Pre-deploy Collapse](https://github.com/onestardao/WFGY/blob/main/Problem
 
 ---
 
-## 🔎 Quick Index — with Grandma labels
+## Quick Index Table (👵Grandma + Class)
 
-| No. | Problem (jump) | Grandma label | Emoji |
-|---:|:----------------|:--------------|:-----:|
-| 1 | [Hallucination & Chunk Drift](#no01) | **Wrong cookbook** | 📕❌ |
-| 2 | [Interpretation Collapse](#no02) | **Salt for sugar** | 🍬🧂 |
-| 3 | [Long Reasoning Chains](#no03) | **Lost shopping trip** | 🛒🧭 |
-| 4 | [Bluffing / Overconfidence](#no04) | **No recipe card** | 🍽️📄 |
-| 5 | [Semantic ≠ Embedding](#no05) | **Pepper confusion** | 🌶️⚪ |
-| 6 | [Logic Collapse & Recovery](#no06) | **Dead end alley** | 🚧🔁 |
-| 7 | [Memory Breaks Across Sessions](#no07) | **Wrong drawer memory** | 🗄️❓ |
-| 8 | [Debugging is a Black Box](#no08) | **Blank card** | 📄🚫 |
-| 9 | [Entropy Collapse](#no09) | **One pot gray stew** | 🍲🌫️ |
-| 10 | [Creative Freeze](#no10) | **Bland soup** | 🍲❄️ |
-| 11 | [Symbolic Collapse](#no11) | **Ignore fractions** | 🔢❌ |
-| 12 | [Philosophical Recursion](#no12) | **Infinite why loop** | ❓🔄 |
-| 13 | [Multi-Agent Chaos](#no13) | **Kitchen tug of war** | 👩‍🍳⚔️👨‍🍳 |
-| 14 | [Bootstrap Ordering](#no14) | **Cold pan egg** | 🍳❄️ |
-| 15 | [Deployment Deadlock](#no15) | **You first doorway** | 🚪⏸️ |
-| 16 | [Pre-deploy Collapse](#no16) | **Burnt first pot** | 🍲🔥 |
+> click a row to jump. each item shows a beginner-friendly class and the grandma tag.
+
+| No. | Problem (jump) | Class | Grandma tag | Emoji |
+|----:|-----------------|-------|-------------|:----:|
+| 1 | [No.1 Hallucination & Chunk Drift](#no01) | Retrieval alignment | Wrong Cookbook | 📖🍽️ |
+| 2 | [No.2 Interpretation Collapse](#no02) | Reasoning interpretation | Salt for Sugar | 🧂🍬 |
+| 3 | [No.3 Long Reasoning Chains](#no03) | Planning control | Lost Shopping Trip | 🛒🧾 |
+| 4 | [No.4 Bluffing / Overconfidence](#no04) | Grounding check | No Recipe Card | 🍽️❌ |
+| 5 | [No.5 Semantic ≠ Embedding](#no05) | Embedding audit | Pepper Confusion | 🌶️⚖️ |
+| 6 | [No.6 Logic Collapse & Recovery](#no06) | Recovery loop | Dead-End Alley | 🚧↩️ |
+| 7 | [No.7 Memory Breaks Across Sessions](#no07) | Session memory | Wrong Drawer Memory | 🗄️📝 |
+| 8 | [No.8 Debugging is a Black Box](#no08) | Traceability | Blank Card | 🃏🔎 |
+| 9 | [No.9 Entropy Collapse](#no09) | Entropy control | One-Pot Gray Stew | 🍲🌫️ |
+| 10 | [No.10 Creative Freeze](#no10) | Safe exploration | Bland Soup | 🥣🧊 |
+| 11 | [No.11 Symbolic Collapse](#no11) | Symbol channel | Ignore Fractions | ➗📐 |
+| 12 | [No.12 Philosophical Recursion](#no12) | Recursion boundary | Infinite Why Loop | 🔁❓ |
+| 13 | [No.13 Multi-Agent Chaos](#no13) | Role and memory fences | Kitchen Tug-of-War | 👩‍🍳👨‍🍳 |
+| 14 | [No.14 Bootstrap Ordering](#no14) | Boot order | Cold Pan Egg | 🍳🧯 |
+| 15 | [No.15 Deployment Deadlock](#no15) | Lock and timeout | You-First Doorway | 🚪⏳ |
+| 16 | [No.16 Pre-deploy Collapse](#no16) | Preflight checks | Burnt First Pot | 🍯🔥 |
 
 
 
