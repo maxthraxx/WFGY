@@ -1,104 +1,181 @@
-# ❓ FAQ — Fast Answers for Busy Builders
+# FAQ — Fast Answers for Busy Builders (Problem Map Edition)
 
-Short, practical answers to the questions we get every day.
+Short, practical answers to the questions we get every day. This FAQ merges previous content with the latest Problem Map guidance, so you have one canonical page.
 
-> **Quick Nav**  
+> Quick Nav  
 > [Getting Started](./getting-started.md) ·
+> [Grandma Clinic (1–16)](./GrandmaClinic/README.md) ·
+> [Problem Map 1–16 Index](./README.md) ·
 > [RAG Map 2.0](./rag-architecture-and-recovery.md) ·
 > [Retrieval Playbook](./retrieval-playbook.md) ·
+> [Chunking](./GlobalFixMap/Chunking/README.md) ·
+> [Embeddings](./GlobalFixMap/Embeddings/README.md) ·
 > [Rerankers](./rerankers.md) ·
-> [Patterns](./patterns/README.md) ·
 > [Eval](./eval/README.md) ·
-> [Ops](./ops/README.md)
+> [Ops](./ops/README.md) ·
+> [Global Fix Map](./GlobalFixMap/README.md)
 
 ---
 
 ## General
 
-**What is WFGY?**  
-A symbolic reasoning layer + diagnostic toolkit that sits *above* your stack. It measures semantic stress (ΔS), shows which layer drifted (λ_observe), and applies repair operators (BBMC/BBPF/BBCR/BBAM). You don’t need to change your infra.
+**What is WFGY, in one line?**  
+A semantic firewall and diagnostic layer that sits above your stack. It measures semantic drift (ΔS), watches stability (λ_observe), and applies repair operators (BBMC / BBPF / BBCR / BBAM). No infra rewrite needed.
 
 **Do I need a GPU?**  
-No. You can prototype on CPU with small embedding models. Rerankers and local LLMs benefit from GPU but are optional. See: [Retrieval Playbook](./retrieval-playbook.md).
-
-**License? Can I use it at work?**  
-MIT. Commercial use allowed. If you ship improvements, we welcome PRs (docs or code).
+No for first fixes. You can prototype on CPU with light embeddings and strict guardrails. GPU helps with heavy rerankers or larger local LLMs, but it is optional. See: [Retrieval Playbook](./retrieval-playbook.md).
 
 **How is this different from LangChain/LlamaIndex?**  
-Those are orchestration layers. **WFGY is a reasoning firewall and diagnostic map**—it detects/repairs *semantic* failure regardless of framework.
+Those orchestrate tools. WFGY hardens reasoning and retrieval with pre-output gates and measurable acceptance targets. It works regardless of framework.
+
+**License and commercial use?**  
+MIT. Commercial use allowed. PRs welcome (docs, patterns, examples).
 
 ---
 
-## Setup & scope
+## Getting started & scope
 
-**What’s the fastest way to try it?**  
-Grab **TXT OS** and **WFGY 1.0 PDF**, paste TXT into any model, and follow the prompts in [Getting Started](./getting-started.md).
+**Fastest 60-second tryout?**  
+Load **TXT OS** and the **WFGY paper**. Paste TXT OS into any LLM, then follow [Getting Started](./getting-started.md) for a minimal “semantic firewall before output” routine.
 
-**Which embedding model should I start with?**  
-General docs: `all-MiniLM-L6-v2` (light) or `bge-base`. Multilingual: `bge-m3` / `LaBSE`. Keep **write/read normalization identical**. See: [Embedding vs Semantic](./embedding-vs-semantic.md).
+**Where do I look if I don’t know the failure type yet?**  
+Open the triage page: [Grandma Clinic (1–16)](./GrandmaClinic/README.md). Each item has a grandma story, a minimal guardrail, and the pro link.
 
-**Do I need a reranker?**  
-Only if first-stage **recall@50 ≥ 0.85** but Top-k precision is weak. Otherwise fix candidate generation. See: [Rerankers](./rerankers.md).
+**Which embedding model to start with?**  
+General English: `all-MiniLM-L6-v2` or `bge-base`. Multilingual: `bge-m3` or `LaBSE`. Keep write/read normalization identical. See: [Embeddings](./GlobalFixMap/Embeddings/README.md) and [Semantic ≠ Embedding](./embedding-vs-semantic.md).
+
+**Do I need a reranker right away?**  
+Not usually. First prove your candidate pool: if `recall@50 ≥ 0.85` and Top-k precision is still weak, add a reranker. Otherwise fix retrieval shape first. See: [Rerankers](./rerankers.md).
 
 **How big can my PDFs be?**  
-Start with a **gold set** (10–50 Q/A with citations). For ingestion, chunk by semantic sections (not fixed tokens). Verify ΔS thresholds before scaling.
+Start with a gold set (10–50 Q/A with citations). Ingestion by sections, not fixed tokens. Verify ΔS thresholds before scaling. See: [Chunking](./GlobalFixMap/Chunking/README.md).
 
 ---
 
 ## Diagnosing failures
 
-**The chunks look right but the answer is wrong—now what?**  
-Measure **ΔS(question, retrieved)**. If ≥ 0.60, fix retrieval first; if ≤ 0.45 and reasoning still fails, open **Interpretation Collapse**.  
-Links: [hallucination.md](./hallucination.md) · [retrieval-collapse.md](./retrieval-collapse.md)
+**The chunks look right but the answer is wrong. Now what?**  
+Measure `ΔS(question, retrieved)`.  
+- If `ΔS ≥ 0.60`, fix retrieval first: [Hallucination & Chunk Drift](./hallucination.md).  
+- If `ΔS ≤ 0.45` and the answer still fails, it is a reasoning path issue: [Interpretation Collapse](./retrieval-collapse.md).
 
-**Hybrid (BM25 + dense) got worse—why?**  
-Likely **Query Parsing Split** (tokenizer/analyzer drift). Unify analyzers and log per-retriever queries.  
-Link: [pattern_query_parsing_split.md](./patterns/pattern_query_parsing_split.md)
+**Hybrid (BM25+dense) made results worse. Why?**  
+Likely analyzer/tokenizer mismatch or query splitting. Unify analyzers and log per-retriever queries. See: [Query Parsing Split](./patterns/pattern_query_parsing_split.md).
 
-**Citations bleed across sources.**  
-Enforce **per-source fences** + “cite-then-explain” schema; this is **SCU**.  
-Links: [retrieval-traceability.md](./retrieval-traceability.md) · [pattern_symbolic_constraint_unlock.md](./patterns/pattern_symbolic_constraint_unlock.md)
+**Citations bleed or point to mixed sources.**  
+Enforce “cite-then-explain”, per-source fences, and retrieval trace with IDs/lines. See: [Retrieval Traceability](./retrieval-traceability.md) and [Symbolic Constraint Unlock](./patterns/pattern_symbolic_constraint_unlock.md).
 
 **Fixes don’t stick after refresh.**  
-You’re seeing **Memory Desync**. Stamp `mem_rev`/`mem_hash`, gate writes, and audit traces.  
-Link: [pattern_memory_desync.md](./patterns/pattern_memory_desync.md)
+You’re hitting Memory Desync. Stamp `mem_rev`/`mem_hash`, gate writes, and audit trace keys. See: [Memory Desync](./patterns/pattern_memory_desync.md).
 
 ---
 
-## Implementation details
+## Retrieval, chunking, and OCR
 
-**How do I compute ΔS quickly?**  
-Use cosine on unit-normalized sentence embeddings: `ΔS = 1 − cos(I, G)`.  
-Thresholds: `<0.40` stable · `0.40–0.60` transitional · `≥0.60` act.  
-Ground anchor `G` can be a section title/snippet you expect.
+**Optimal chunk size and rules?**  
+Prefer structural sections, stable titles, and table/code preservation. Avoid splitting tables/code blocks. See: [Chunking](./GlobalFixMap/Chunking/README.md).
 
-**What are BBMC/BBPF/BBCR/BBAM in one line?**  
-- **BBMC** — minimize semantic residue vs anchors.  
-- **BBPF** — branch safely across multiple paths.  
-- **BBCR** — detect collapse; insert a bridge node and restart cleanly.  
-- **BBAM** — modulate attention variance to avoid entropy melt.
+**OCR keeps breaking layout.**  
+Use layout-aware parsing and keep headers/footers separate. See: [OCR Parsing](./GlobalFixMap/OCR_Parsing/README.md).
 
-**Where are the data shapes?**  
-See: [Data Contracts](./data-contracts.md). They’re JSON-first, easy to log, and versioned.
+**Multilingual retrieval drifts.**  
+Check tokenizer/analyzer per language and enable hybrid multilingual ranking with guardrails. See: [Language](./GlobalFixMap/Language/README.md) and [LanguageLocale](./GlobalFixMap/LanguageLocale/README.md).
 
 ---
 
-## Teams & Ops
+## Embeddings & metrics
 
-**How do we avoid regressions?**  
-Commit `goldset.jsonl`, measure **recall@50**, **nDCG@10**, and ΔS across PRs.  
-Links: [eval_rag_precision_recall.md](./eval/eval_rag_precision_recall.md) · [eval_semantic_stability.md](./eval/eval_semantic_stability.md)
+**Compute ΔS quickly?**  
+Unit-normalize sentence embeddings; `ΔS = 1 − cos(I, G)`. Operating zones: `<0.40` stable, `0.40–0.60` transit, `≥0.60` act.
 
-**Any privacy guidance?**  
-Yes—PII redaction, retention, access control, and provider governance patterns are here: [Privacy & Governance](./privacy-and-governance.md).
+**Why are top neighbors semantically wrong with high cosine?**  
+Cross-space vectors, scale/normalization mismatch, or casing/tokenization skew. Audit metrics first. See: [Embeddings](./GlobalFixMap/Embeddings/README.md) and [Semantic ≠ Embedding](./embedding-vs-semantic.md).
+
+**When to switch dimensions or project?**  
+Only after metric/normalization audit and contract checks. See: [Dimension Mismatch & Projection](./GlobalFixMap/Embeddings/dimension_mismatch_and_projection.md).
+
+---
+
+## Reasoning guardrails
+
+**What are BBMC / BBPF / BBCR / BBAM?**  
+- **BBMC**: minimize semantic residue vs anchors.  
+- **BBPF**: branch safely across multiple paths.  
+- **BBCR**: detect collapse and restart via a clean bridge node.  
+- **BBAM**: modulate attention variance to avoid entropy melt.
+
+**How do I decide when to reset?**  
+Monitor ΔS and λ_observe mid-chain. If ΔS spikes twice or λ diverges, run BBCR and re-anchor. See: [Logic Collapse](./logic-collapse.md).
+
+**How do I clamp chain-of-thought variance without killing creativity?**  
+Run λ_diverse for 2–3 candidates, score against the same anchor, and apply a bounded entropy window. See: [Creative Freeze](./creative-freeze.md).
+
+**Symbols/tables keep getting flattened.**  
+Keep a separate symbol channel, preserve code/table blocks, and anchor units/operators. See: [Symbolic Collapse](./symbolic-collapse.md).
+
+---
+
+## Multi-agent & tool chaos
+
+**Agents overwrite each other’s notes.**  
+Assign role/state keys, memory fences, and tool timeouts. See: [Multi-Agent Problems](./Multi-Agent_Problems.md).
+
+**Debug path is a black box.**  
+Log query → chunk IDs → acceptance metrics; show the card (source) before answer. See: [Retrieval Traceability](./retrieval-traceability.md).
+
+---
+
+## Eval & acceptance targets
+
+**What to measure on every PR?**  
+Commit a gold set and track `recall@50`, `nDCG@10`, and ΔS across prompts. Gate merges on stability. See: [Eval RAG Precision/Recall](./eval/eval_rag_precision_recall.md) and [Eval Semantic Stability](./eval/eval_semantic_stability.md).
+
+**Acceptance targets we use**  
+- ΔS ≤ 0.45  
+- Coverage ≥ 0.70  
+- λ state convergent  
+- Source present before final
+
+---
+
+## Ops & deployment
+
+**First calls fail or stall. Where to look?**  
+- Boot order issues: [Bootstrap Ordering](./bootstrap-ordering.md)  
+- Mutual waiting or locks: [Deployment Deadlock](./deployment-deadlock.md)  
+- Cold caches/secrets/index skew: [Pre-deploy Collapse](./predeploy-collapse.md)
+
+**Index build & swap, shadow traffic, rollback?**  
+See: [Ops](./ops/README.md) and the detailed ops pages in the [Global Fix Map](./GlobalFixMap/README.md).
 
 ---
 
 ## Known limits
 
-- Extremely noisy OCR may require **manual anchors** or **char-level retrieval**.  
-- Cross-domain abstract reasoning (#11/#12) needs stronger models.  
-- Rerankers improve precision but add latency—**prove gains** via nDCG.
+- Noisy OCR may require manual anchors or char-level retrieval.  
+- Abstract cross-domain reasoning (#11/#12) improves with stronger models.  
+- Rerankers add latency; prove gains via nDCG before shipping.
+
+---
+
+## Beginner one-liners (map to Problem Map numbers)
+
+- “Cites the wrong thing or makes stuff up” → [No.1 Hallucination & Chunk Drift](./hallucination.md)  
+- “Right chunks, wrong reasoning” → [No.2 Interpretation Collapse](./retrieval-collapse.md)  
+- “Long chain loses the goal” → [No.3 Long Reasoning Chains](./context-drift.md)  
+- “Confident tone, no evidence” → [No.4 Bluffing](./bluffing.md)  
+- “Cosine is high but meaning is off” → [No.5 Semantic ≠ Embedding](./embedding-vs-semantic.md)  
+- “Looping or shallow branches” → [No.6 Logic Collapse](./logic-collapse.md)  
+- “Forgets state between runs” → [No.7 Memory Coherence](./memory-coherence.md)  
+- “Can’t reproduce a result” → [No.8 Traceability](./retrieval-traceability.md)  
+- “Everything melts into noise” → [No.9 Entropy Collapse](./entropy-collapse.md)  
+- “Too literal, zero spark” → [No.10 Creative Freeze](./creative-freeze.md)  
+- “Table/math becomes prose” → [No.11 Symbolic Collapse](./symbolic-collapse.md)  
+- “Why about why forever” → [No.12 Philosophical Recursion](./philosophical-recursion.md)  
+- “Agents fight over memory” → [No.13 Multi-Agent Chaos](./Multi-Agent_Problems.md)  
+- “Eggs before heating the pan” → [No.14 Bootstrap Ordering](./bootstrap-ordering.md)  
+- “You first / no, you first” → [No.15 Deployment Deadlock](./deployment-deadlock.md)  
+- “First pot always burns” → [No.16 Pre-deploy Collapse](./predeploy-collapse.md)
 
 ---
 
