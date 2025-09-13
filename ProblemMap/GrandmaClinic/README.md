@@ -27,24 +27,29 @@ No.16 [Pre-deploy Collapse](https://github.com/onestardao/WFGY/blob/main/Problem
 
 ---
 
-## 🔎 Quick Index (jump to a number)
+## 🔎 Quick Index — with Grandma labels
 
-1. [No.1 — Hallucination & Chunk Drift](#no01)  
-2. [No.2 — Interpretation Collapse](#no02)  
-3. [No.3 — Long Reasoning Chains](#no03)  
-4. [No.4 — Bluffing / Overconfidence](#no04)  
-5. [No.5 — Semantic ≠ Embedding](#no05)  
-6. [No.6 — Logic Collapse & Recovery](#no06)  
-7. [No.7 — Memory Breaks Across Sessions](#no07)  
-8. [No.8 — Debugging is a Black Box](#no08)  
-9. [No.9 — Entropy Collapse](#no09)  
-10. [No.10 — Creative Freeze](#no10)  
-11. [No.11 — Symbolic Collapse](#no11)  
-12. [No.12 — Philosophical Recursion](#no12)  
-13. [No.13 — Multi-Agent Chaos](#no13)  
-14. [No.14 — Bootstrap Ordering](#no14)  
-15. [No.15 — Deployment Deadlock](#no15)  
-16. [No.16 — Pre-deploy Collapse](#no16)
+| No. | Problem (jump) | Grandma label | Emoji |
+|---:|:----------------|:--------------|:-----:|
+| 1 | [Hallucination & Chunk Drift](#no01) | **Wrong cookbook** | 📕❌ |
+| 2 | [Interpretation Collapse](#no02) | **Salt for sugar** | 🍬🧂 |
+| 3 | [Long Reasoning Chains](#no03) | **Lost shopping trip** | 🛒🧭 |
+| 4 | [Bluffing / Overconfidence](#no04) | **No recipe card** | 🍽️📄 |
+| 5 | [Semantic ≠ Embedding](#no05) | **Pepper confusion** | 🌶️⚪ |
+| 6 | [Logic Collapse & Recovery](#no06) | **Dead end alley** | 🚧🔁 |
+| 7 | [Memory Breaks Across Sessions](#no07) | **Wrong drawer memory** | 🗄️❓ |
+| 8 | [Debugging is a Black Box](#no08) | **Blank card** | 📄🚫 |
+| 9 | [Entropy Collapse](#no09) | **One pot gray stew** | 🍲🌫️ |
+| 10 | [Creative Freeze](#no10) | **Bland soup** | 🍲❄️ |
+| 11 | [Symbolic Collapse](#no11) | **Ignore fractions** | 🔢❌ |
+| 12 | [Philosophical Recursion](#no12) | **Infinite why loop** | ❓🔄 |
+| 13 | [Multi-Agent Chaos](#no13) | **Kitchen tug of war** | 👩‍🍳⚔️👨‍🍳 |
+| 14 | [Bootstrap Ordering](#no14) | **Cold pan egg** | 🍳❄️ |
+| 15 | [Deployment Deadlock](#no15) | **You first doorway** | 🚪⏸️ |
+| 16 | [Pre-deploy Collapse](#no16) | **Burnt first pot** | 🍲🔥 |
+
+
+
 
 Want the full problem list and extended fixes? See: [Problem Map 1.0](https://github.com/onestardao/WFGY/tree/main/ProblemMap/README.md) | [Problem Map 2.0](https://github.com/onestardao/WFGY/blob/main/ProblemMap/SemanticClinicIndex.md) | [Semantic Clinic](https://github.com/onestardao/WFGY/blob/main/ProblemMap/SemanticClinicIndex.md) | [Global Fix Map](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/README.md) | [Problem Map FAQ](https://github.com/onestardao/WFGY/blob/main/ProblemMap/faq.md)
 
