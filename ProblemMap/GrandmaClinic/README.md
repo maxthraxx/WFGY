@@ -65,6 +65,8 @@ No.16 [Pre-deploy Collapse](https://github.com/onestardao/WFGY/blob/main/Problem
 
 Want the full problem list and extended fixes? See: [Problem Map 1.0](https://github.com/onestardao/WFGY/tree/main/ProblemMap/README.md) | [Problem Map 2.0](https://github.com/onestardao/WFGY/blob/main/ProblemMap/SemanticClinicIndex.md) | [Semantic Clinic](https://github.com/onestardao/WFGY/blob/main/ProblemMap/SemanticClinicIndex.md) | [Global Fix Map](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/README.md) | [Problem Map FAQ](https://github.com/onestardao/WFGY/blob/main/ProblemMap/faq.md)
 
+> most readers found this map useful and left a ⭐ — if it helps you too, please star it so others can discover.
+
 ---
 
 ## 🛡️ Grandma Pre-Output Checklist (use before answering)
