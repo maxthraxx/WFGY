@@ -46,6 +46,8 @@ No.16 [Pre-deploy Collapse](https://github.com/onestardao/WFGY/blob/main/Problem
 15. [No.15 — Deployment Deadlock](#no15)  
 16. [No.16 — Pre-deploy Collapse](#no16)
 
+Want the full problem list and extended fixes? See: [Problem Map 1.0](https://github.com/onestardao/WFGY/tree/main/ProblemMap/README.md) | [Problem Map 2.0](https://github.com/onestardao/WFGY/blob/main/ProblemMap/SemanticClinicIndex.md) | [Semantic Clinic](https://github.com/onestardao/WFGY/blob/main/ProblemMap/SemanticClinicIndex.md) | [Global Fix Map](https://github.com/onestardao/WFGY/blob/main/ProblemMap/GlobalFixMap/README.md)
+
 ---
 
 ## 🛡️ Grandma Pre-Output Checklist (use before answering)
