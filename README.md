@@ -1,4 +1,42 @@
-> **1000⭐ unlocked — [Blur Blur Blur](https://github.com/onestardao/WFGY/blob/main/OS/BlurBlurBlur/README.md) is live. One-man cold start, one season.**
+<details>
+<summary><strong>🧭 Lost or curious? Open the WFGY Compass & ⭐ Star Unlocks</strong></summary>
+
+<br>
+
+> 🔴 **YOU ARE HERE → WFGY 1.0 Home**  
+> The original homepage introducing WFGY 1.0.
+
+---
+
+### Navigation Map
+*(One place to see everything; links open the relevant section.)*
+
+| Layer | Page | What it’s for |
+|------|------|----------------|
+| 🧠 Core | [WFGY Core 2.0](../core/README.md) | The symbolic reasoning engine (math & logic) |
+| 🧠 Core | [WFGY 1.0 Home](https://github.com/onestardao/WFGY/) | The original homepage for WFGY 1.0 — **🔴 YOU ARE HERE 🔴** |
+| 🗺️ Map | **[Problem Map 1.0](../ProblemMap/README.md)** | 16 failure modes + fixes  |
+| 🗺️ Map | [Problem Map 2.0](../ProblemMap/rag-architecture-and-recovery.md) | RAG-focused recovery pipeline |
+| 🗺️ Map | [Semantic Clinic](../ProblemMap/SemanticClinicIndex.md) | Symptom → family → exact fix |
+| 🧓 Map | [Grandma Clinic](../ProblemMap/GrandmaClinic.md) | Plain-language stories, mapped to PM 1.0 |
+| 🏡 Onboarding | [Starter Village](../StarterVillage/README.md) | Guided tour for newcomers |
+| 🧰 App | [TXT OS](../OS/README.md) | .txt semantic OS — 60-second boot |
+| 🧰 App | [Blah Blah Blah](../OS/BlahBlahBlah/README.md) | Abstract/paradox Q&A (built on TXT OS) |
+| 🧰 App | [Blur Blur Blur](../OS/BlurBlurBlur/README.md) | Text-to-image with semantic control |
+| 🧰 App | [Blow Blow Blow](../OS/BlowBlowBlow/README.md) | Reasoning game engine & memory demo |
+| 🧪 Research | [Semantic Blueprint](../SemanticBlueprint/README.md) | Modular layer structures (future) |
+| 🧪 Research | [Benchmarks](../benchmarks/benchmark-vs-gpt5/README.md) | Comparisons & how to reproduce |
+| 🧪 Research | [Value Manifest](../value_manifest/README.md) | Why this engine creates $-scale value |
+
+---
+
+> ### ⭐ Star Unlocks
+> - **1,000 ⭐ → Blur Blur Blur unlocked** ✅  
+> - **3,000 ⭐ → Blow Blow Blow unlocked** ⏳  
+
+---
+
+</details>
 
 # WFGY: Civilization Starter — The WanFaGuiYi Engine  
 ## One upload. Zero setup. [Real $1M-level](https://github.com/onestardao/WFGY/blob/main/value_manifest/README.md) reasoning begins.
@@ -1424,6 +1462,7 @@ It treats alignment as a living semantic contract — not just accuracy, but mea
 [![Blow](https://img.shields.io/badge/Blow-Game%20Logic-purple?style=flat-square)](https://github.com/onestardao/WFGY/tree/main/OS/BlowBlowBlow)
 &nbsp;
 </div>
+
 
 
 
