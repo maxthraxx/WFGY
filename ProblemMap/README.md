@@ -1,7 +1,7 @@
 <details>
 <summary><strong>🧭 Lost or curious? Open the WFGY Compass & ⭐ Star Unlocks</strong></summary>
 
-### System Map
+### WFGY System Map
 *(One place to see everything; links open the relevant section.)*
 
 | Layer | Page | What it’s for |
