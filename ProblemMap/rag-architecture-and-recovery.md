@@ -14,7 +14,7 @@
 | Layer | Page | What it’s for |
 |------|------|----------------|
 | 🧠 Core | [WFGY Core 2.0](../core/README.md) | The symbolic reasoning engine (math & logic) |
-| 🧠 Core | [WFGY 1.0 PDF](../I_am_not_lizardman/WFGY_All_Principles_Return_to_One_v1.0_PSBigBig_Public.pdf) | The original paper (full concepts) |
+| 🧠 Core | [WFGY 1.0 Home](https://github.com/onestardao/WFGY/) | The original homepage for WFGY 1.0 |
 | 🗺️ Map | **[Problem Map 1.0](../ProblemMap/README.md)** | 16 failure modes + fixes  |
 | 🗺️ Map | [Problem Map 2.0](../ProblemMap/rag-architecture-and-recovery.md) | RAG-focused recovery pipeline — **🔴 YOU ARE HERE 🔴** |
 | 🗺️ Map | [Semantic Clinic](../ProblemMap/SemanticClinicIndex.md) | Symptom → family → exact fix |
