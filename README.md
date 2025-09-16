@@ -8,8 +8,8 @@
 
 | Layer | Page | What it’s for |
 |------|------|----------------|
-| 🧠 Core | [WFGY Core 2.0](https://github.com/onestardao/WFGY/blob/main/core/README.md) | The symbolic reasoning engine (math & logic) — **🔴 YOU ARE HERE 🔴** |
-| 🧠 Core | [WFGY 1.0 Home](https://github.com/onestardao/WFGY/) | The original homepage for WFGY 1.0  |
+| 🧠 Core | [WFGY Core 2.0](https://github.com/onestardao/WFGY/blob/main/core/README.md) | The symbolic reasoning engine (math & logic)  |
+| 🧠 Core | [WFGY 1.0 Home](https://github.com/onestardao/WFGY/) | The original homepage for WFGY 1.0 — **🔴 YOU ARE HERE 🔴** |
 | 🗺️ Map | [Problem Map 1.0](https://github.com/onestardao/WFGY/tree/main/ProblemMap#readme) | 16 failure modes + fixes |
 | 🗺️ Map | [Problem Map 2.0](https://github.com/onestardao/WFGY/blob/main/ProblemMap/rag-architecture-and-recovery.md) | RAG-focused recovery pipeline |
 | 🗺️ Map | [Semantic Clinic](https://github.com/onestardao/WFGY/blob/main/ProblemMap/SemanticClinicIndex.md) | Symptom → family → exact fix |
@@ -1457,6 +1457,7 @@ It treats alignment as a living semantic contract — not just accuracy, but mea
 [![Blow](https://img.shields.io/badge/Blow-Game%20Logic-purple?style=flat-square)](https://github.com/onestardao/WFGY/tree/main/OS/BlowBlowBlow)
 &nbsp;
 </div>
+
 
 
 
