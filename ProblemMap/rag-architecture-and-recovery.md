@@ -1,3 +1,44 @@
+<details>
+<summary><strong>🧭 Lost or curious? Open the WFGY Compass & ⭐ Star Unlocks</strong></summary>
+
+<br>
+
+> 🔴 **YOU ARE HERE → Problem Map 2.0**  
+> RAG-focused recovery pipeline for retrieval and embeddings.
+
+---
+
+### Navigation Map
+*(One place to see everything; links open the relevant section.)*
+
+| Layer | Page | What it’s for |
+|------|------|----------------|
+| 🧠 Core | [WFGY Core 2.0](../core/README.md) | The symbolic reasoning engine (math & logic) |
+| 🧠 Core | [WFGY 1.0 PDF](../I_am_not_lizardman/WFGY_All_Principles_Return_to_One_v1.0_PSBigBig_Public.pdf) | The original paper (full concepts) |
+| 🗺️ Map | **[Problem Map 1.0](../ProblemMap/README.md)** | 16 failure modes + fixes  |
+| 🗺️ Map | [Problem Map 2.0](../ProblemMap/rag-architecture-and-recovery.md) | RAG-focused recovery pipeline — **🔴 YOU ARE HERE 🔴** |
+| 🗺️ Map | [Semantic Clinic](../ProblemMap/SemanticClinicIndex.md) | Symptom → family → exact fix |
+| 🧓 Map | [Grandma Clinic](../ProblemMap/GrandmaClinic.md) | Plain-language stories, mapped to PM 1.0 |
+| 🏡 Onboarding | [Starter Village](../StarterVillage/README.md) | Guided tour for newcomers |
+| 🧰 App | [TXT OS](../OS/README.md) | .txt semantic OS — 60-second boot |
+| 🧰 App | [Blah Blah Blah](../OS/BlahBlahBlah/README.md) | Abstract/paradox Q&A (built on TXT OS) |
+| 🧰 App | [Blur Blur Blur](../OS/BlurBlurBlur/README.md) | Text-to-image with semantic control |
+| 🧰 App | [Blow Blow Blow](../OS/BlowBlowBlow/README.md) | Reasoning game engine & memory demo |
+| 🧪 Research | [Semantic Blueprint](../SemanticBlueprint/README.md) | Modular layer structures (future) |
+| 🧪 Research | [Benchmarks](../benchmarks/benchmark-vs-gpt5/README.md) | Comparisons & how to reproduce |
+| 🧪 Research | [Value Manifest](../value_manifest/README.md) | Why this engine creates $-scale value |
+
+---
+
+> ### ⭐ Star Unlocks
+> - **1,000 ⭐ → Blur Blur Blur unlocked** ✅  
+> - **3,000 ⭐ → Blow Blow Blow unlocked** ⏳  
+
+---
+
+</details>
+
+
 # 🏥 RAG Architecture & Recovery — WFGY Problem Map 2.0
 
 <details>
