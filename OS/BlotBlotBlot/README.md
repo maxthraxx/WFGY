@@ -1,6 +1,7 @@
 # ⏳ TXT — Blot  Blot Blot · Persona Core Compiler — *Under Construction*
 
-> 👑 **Early Stargazers: [See the Hall of Fame](https://github.com/onestardao/WFGY/tree/main/stargazers)** — Verified by real engineers · 🛠 **Field Reports: [Real Bugs, Real Fixes](https://github.com/onestardao/WFGY/discussions/10)**
+> 👑 **Early Stargazers: [See the Hall of Fame](https://github.com/onestardao/WFGY/tree/main/stargazers)** — Verified by real engineers · 🏆 **Terminal-Bench: [Public Exam — Coming Soon](https://github.com/onestardao/WFGY/blob/main/core/README.md#terminal-bench-proof)**
+
 
 ![Blot Hero](https://github.com/onestardao/WFGY/raw/main/OS/BlotBlotBlot/images/Blot_Hero.png)
 
