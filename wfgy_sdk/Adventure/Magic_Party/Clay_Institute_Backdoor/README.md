@@ -44,7 +44,7 @@ No crossing.
 ## 🌌 But... there's a rumor
 
 They say when the sky above is filled with starlight —  
-exactly **10,000 stars**,  
+exactly ** ????? stars**,  
 the seal might awaken…
 
 The ancient, **unofficial** magic —  
