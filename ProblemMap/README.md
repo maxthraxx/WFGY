@@ -273,7 +273,6 @@ you’ll get a diagnosis and exact fix steps — no infra changes required.
 - **Visual RAG Guide:** [`RAG Architecture & Recovery`](./rag-architecture-and-recovery.md)  
   high-altitude map linking symptom × stage × failure class with exact recovery paths.
 - **Multi-Agent chaos:** [Role drift & memory overwrite →](./Multi-Agent_Problems.md)
-- **Field reports:** [Real bugs and fixes from users →](https://github.com/onestardao/WFGY/discussions/10)
 - **TXT OS directory:** [browse the OS repo →](../OS/README.md)
 - **MVP demos:** [Minimal WFGY examples →](./mvp_demo/README.md)
 
