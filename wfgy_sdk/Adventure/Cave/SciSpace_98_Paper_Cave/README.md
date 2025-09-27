@@ -245,5 +245,5 @@ It’s one of the core WFGY mathematical scrolls.
 Take it. Study it.  
 And remember — the more stars you give, the more this game will evolve. 🌟
 
-https://zenodo.org/records/15564318
+(Sorry, the link Will be updated soon)
 </sup></sub>
