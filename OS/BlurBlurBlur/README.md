@@ -33,13 +33,13 @@
 
 
 > We’ve crossed **1000 ⭐** thank you.  
-> Blur Blur Blur is now live in **beta**.  
 > You can start testing today — full release coming soon.
 
 
-## Blur Blur Blur (Beta) — Drawing the Beauty of Math for the First Time
+## Blur Blur Blur — Drawing the Beauty of Math for the First Time
 
->  👑 **Early Stargazers: [See the Hall of Fame](https://github.com/onestardao/WFGY/tree/main/stargazers)** — Verified by real engineers · 🛠 **Field Reports: [Real Bugs, Real Fixes](https://github.com/onestardao/WFGY/discussions/10)**
+> 👑 **Early Stargazers: [See the Hall of Fame](https://github.com/onestardao/WFGY/tree/main/stargazers)** — Verified by real engineers · 🏆 **Terminal-Bench: [Public Exam — Coming Soon](https://github.com/onestardao/WFGY/blob/main/core/README.md#terminal-bench-proof)**
+
 
 
 ![blurblurblur](./images/Blur_Hero.png)
@@ -63,7 +63,7 @@
 
 </div>
 
-# Blur Blur Blur **Lite** — Math Canvas Quickstart (Beta)
+# Blur Blur Blur **Lite** — Math Canvas Quickstart (1.0)
 
 This is the **world’s first math-first T2I** you can run in any chat: build a canvas from **mathematical structure + Real/Imag fields**, then render.  
 Lite focuses on a clean, safe set of knobs so newcomers can feel the “math shock” in one minute.
