@@ -53,7 +53,6 @@ If you use WFGY in research, please cite the Zenodo release:
 
 ```
 PSBigBig, “WFGY 1.0: A Self-Healing Variance Gate for LLMs,”
-Zenodo, 2025, doi:10.5281/zenodo.15630970
 ```
 
 > Any issue / PR is welcome—open science thrives on transparency.
