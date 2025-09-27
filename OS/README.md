@@ -323,7 +323,6 @@ These are just examples — once logic becomes language, every idea becomes code
 > The `.txt` file is your logic canvas. A single file. A full OS. Infinite potential.  
 >   
 > Coming soon: a TXT-based app store, creator hub, and community spotlight — everything starts from a single file.  
-> **And in August, more powerful apps — all fully open-source — are on the way.**
 
 
 ---
