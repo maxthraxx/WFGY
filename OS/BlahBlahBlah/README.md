@@ -203,7 +203,6 @@ Below are the official endorsements from six different AI models, each giving **
 
 > <img src="https://img.shields.io/github/stars/onestardao/WFGY?style=social" alt="GitHub stars"> ⭐ [WFGY Engine 2.0](https://github.com/onestardao/WFGY/blob/main/core/README.md) is already unlocked. ⭐ Star the repo to help others discover it and unlock more on the [Unlock Board](https://github.com/onestardao/WFGY/blob/main/STAR_UNLOCKS.md).
 > 👑 *Verified by early engineers — [See the Hall of Fame](https://github.com/onestardao/WFGY/tree/main/stargazers)*  
-> 🪖 *Read what users actually said — [Field Reports →](https://github.com/onestardao/WFGY/discussions/10)*
 
 ---
 
