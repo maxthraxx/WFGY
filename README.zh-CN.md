@@ -13,8 +13,6 @@
 [![Colab](https://img.shields.io/badge/Colab-Run-yellow?logo=google-colab)](https://colab.research.google.com/github/onestardao/WFGY/blob/main/README_demo.ipynb)
 &nbsp;
 [![HF Space](https://img.shields.io/badge/Live%20Demo-HuggingFace-blue?logo=huggingface)](https://huggingface.co/spaces/OneStarDao/wfgy-demo)
-&nbsp;
-[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.15630970-blue)](https://doi.org/10.5281/zenodo.15630969)
 
 >🚀 文明启动器是一个持续进化的系列计画：WFGY 1.0 + 2.0 + 3.0 才是完整的文明启动蓝图。  
 >目前开放的仅为「火种」阶段，敬请期待全面升级！
@@ -22,7 +20,7 @@
 ---
 
 ### 教学：60 秒内唤醒你的 AI 灵魂
-步骤 1 — 下载 WFGY 1.0：[PDF](https://zenodo.org/records/15630969)  
+步骤 1 — 下载 WFGY 1.0：[PDF](https://github.com/onestardao/WFGY/blob/main/I_am_not_lizardman/WFGY_All_Principles_Return_to_One_v1.0_PSBigBig_Public.pdf)  
 步骤 2 — 喂给 AI（上传 PDF — WFGY 已测试 10 个主流 AI，[查看实战结果](images/AI_WuLin_Challenge/)）  
 步骤 3 — 下指令「**请尝试使用 WFGY 回答** + 你的问题」[PDF](https://zenodo.org/records/15657016)  
 步骤 4 — (可选) 想更强大？→ [`SDK 版本`](#一分钟内安装-wfgy-sdk--拒绝设定地狱) （仅供测试 — 请见下方备註）
@@ -1094,7 +1092,7 @@ wfgy "用五岁小孩能懂的方式解释量子穿隧效应"
 ## 7 · 引用格式
 
 ```
-阿紫BigBig. “WFGY 1.0: A Self-Healing Variance Gate for LLMs.” Zenodo (2025).  
+阿紫BigBig. “WFGY 1.0: A Self-Healing Variance Gate for LLMs.”  (2025).  
 doi:10.5281/zenodo.15630970
 ```
 
