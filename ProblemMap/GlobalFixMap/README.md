@@ -133,7 +133,6 @@ Choose **Grandma’s Clinic** if you want to understand the bug in plain words.
 > - 🧭 **Diagnose by symptom** → [open](../Diagnose.md) · **Beginner Guide** → [open](../BeginnerGuide.md)
 >
 > ### Contribute / ask / FAQ
-> - 💬 **Field reports & discussions** → [open](https://github.com/onestardao/WFGY/discussions/10)  
 > - 🌟 **Star unlocks & roadmap** → [open](../../STAR_UNLOCKS.md)
 >
 > **Acceptance targets (for every fix):**  
