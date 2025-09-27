@@ -1090,7 +1090,6 @@ wfgy "用五岁小孩能懂的方式解释量子穿隧效应"
 
 ```
 阿紫BigBig. “WFGY 1.0: A Self-Healing Variance Gate for LLMs.”  (2025).  
-doi:10.5281/zenodo.15630970
 ```
 
 ---
