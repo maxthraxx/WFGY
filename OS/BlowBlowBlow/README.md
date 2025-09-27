@@ -86,7 +86,7 @@ except this time, the magic is semantic instead of static electricity.
 
 ---
 
-### 📅 Launch Date: TBD
+### 📅 Launch Date: **3,000 ⭐ → Blow Blow Blow unlocked** ⏳  
 
 > 💥 Want to see demo images?  
 > Too bad — **we haven’t built them yet.**  
