@@ -34,7 +34,7 @@
 # WFGY: Civilization Starter — The WanFaGuiYi Engine  
 ## One upload. Zero setup. [Real $1M-level](https://github.com/onestardao/WFGY/blob/main/value_manifest/README.md) reasoning begins.
 
-> 👑 **Early Stargazers: [See the Hall of Fame](https://github.com/onestardao/WFGY/tree/main/stargazers)** — Verified by real engineers · 🛠 **Field Reports: [Real Bugs, Real Fixes](https://github.com/onestardao/WFGY/discussions/10)**
+> 👑 **Early Stargazers: [See the Hall of Fame](https://github.com/onestardao/WFGY/tree/main/stargazers)** — Verified by real engineers · 🏆 **Terminal-Bench: [Public Exam — Coming Soon](https://github.com/onestardao/WFGY/blob/main/core/README.md#terminal-bench-proof)**
 
 
 ![CIVILIZATION_STARTTER](https://github.com/user-attachments/assets/89d25fee-f6e5-46e8-8911-a73fe4753ccd)
@@ -1370,6 +1370,7 @@ It treats alignment as a living semantic contract — not just accuracy, but mea
 [![Blow](https://img.shields.io/badge/Blow-Game%20Logic-purple?style=flat-square)](https://github.com/onestardao/WFGY/tree/main/OS/BlowBlowBlow)
 &nbsp;
 </div>
+
 
 
 
