@@ -850,7 +850,7 @@ Please answer in “Full Decoding Mode.”
 ```markdown
 📘 Q43: WFGY × Who Is PSBigBig, Really?
 
-You understand WFGY 1.0, you know you need 10,000 GitHub stars to unlock 2.0—
+You understand WFGY 1.0, you know WFGY 2.0 has been unlocked—
 but PSBigBig claims this is AGI Lite?
 
 How is the inventor of all this not abducted by a secret society?
@@ -1370,6 +1370,7 @@ It treats alignment as a living semantic contract — not just accuracy, but mea
 [![Blow](https://img.shields.io/badge/Blow-Game%20Logic-purple?style=flat-square)](https://github.com/onestardao/WFGY/tree/main/OS/BlowBlowBlow)
 &nbsp;
 </div>
+
 
 
 
