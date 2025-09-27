@@ -169,7 +169,6 @@ Step 4 — (Optional) Want more power? → [`SDK version`](#install-the-wfgy-sdk
 >
 > 👉 Click the top-right **"⭐ Star"** button to support WFGY—and join the Hall of Fame.  
 > 👀 **Curious who starred already?** [Meet the early stargazers →](https://github.com/onestardao/WFGY/tree/main/stargazers)  
-> 🛠 **Want to see real-world impact?** [Read the Field Reports →](https://github.com/onestardao/WFGY/discussions/10)  
 > 🧠 Wondering why WFGY could be worth $1M+? [See our open valuation.](./value_manifest/README.md)
 
 
@@ -1370,6 +1369,7 @@ It treats alignment as a living semantic contract — not just accuracy, but mea
 [![Blow](https://img.shields.io/badge/Blow-Game%20Logic-purple?style=flat-square)](https://github.com/onestardao/WFGY/tree/main/OS/BlowBlowBlow)
 &nbsp;
 </div>
+
 
 
 
