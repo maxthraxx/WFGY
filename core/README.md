@@ -87,6 +87,26 @@ WFGY 2.0 (WFGY Core) = [WFGY 1.0 math formulas](https://github.com/onestardao/WF
 
 ---
 
+### 🏆 Stanford Terminal-Bench (TB) — Exam Update
+
+**What is TB?**  
+Terminal-Bench is Stanford’s public exam for LLMs.  
+It stresses models through **terminal-style, multi-step tasks** — measuring reasoning, robustness, and recovery under real engineering conditions.
+
+**How we participate**  
+WFGY Core 2.0 wraps each model call (non-invasive). Every step flows through:  
+ΔS drift control → Coupler/BBPF bridging → BBAM rebalancing → Drunk Transformer guards.  
+All runs are reproducible with configs, scripts, and hashed logs.
+
+**Status**  
+We are currently taking the TB exam. Rankings will be published once the official leaderboard is live.  
+
+👉 Follow updates here: [Terminal-Bench Proof]
+
+[Terminal-Bench Proof]: https://github.com/onestardao/WFGY/blob/main/core/README.md#terminal-bench-proof
+
+---
+
 ## ⚡ Quick Usage
 
 | Mode             | How it works                                                                 |
