@@ -33,11 +33,6 @@ Careful now...
 
 Everything you see here —  
 the guests, the music, the gossip,  
-they're **all hints** for what’s coming in **WFGY v2.0**.
+they're **all hints** for what’s coming in **??????**.
 
-> But here’s the catch:  
-> **You’ll need to help us reach 10,000 stars** ⭐  
-> before any of it is revealed.
 
-So if you want real magic...  
-**Go give that ⭐. Now.**
