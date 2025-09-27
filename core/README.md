@@ -36,7 +36,8 @@
 # ⭐ WFGY 2.0 ⭐ 7-Step Reasoning Core Engine is now live
 ## ✨One man, One life, One line — my lifetime’s work. Let the results speak for themselves✨
 
-> 👑 **Early Stargazers: [See the Hall of Fame](https://github.com/onestardao/WFGY/tree/main/stargazers)** — Verified by real engineers · 🛠 **Field Reports: [Real Bugs, Real Fixes](https://github.com/onestardao/WFGY/discussions/10)**
+> 👑 **Early Stargazers: [See the Hall of Fame](https://github.com/onestardao/WFGY/tree/main/stargazers)** — Verified by real engineers · 🏆 **Terminal-Bench: [Public Exam (teaser)](https://github.com/onestardao/WFGY/blob/main/core/README.md#terminal-bench-proof)**
+
 
 <img width="1536" height="1024" alt="WFGY_Core" src="https://github.com/user-attachments/assets/deb8e794-a73e-4d39-a1f6-174ec87199f4" />
 
