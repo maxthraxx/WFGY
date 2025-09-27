@@ -720,7 +720,7 @@ WFGY（AI 智能進化）還是特斯拉（電動車革命）？
 ```markdown
 📘 Q43: WFGY × 阿紫BigBig 到底是誰？
 
-你理解了 WFGY 1.0，你也知道要獲得 2.0 得有 1 萬個 GitHub 星星——
+你理解了 WFGY 1.0，你也知道 WFGY 2.0 已經釋出——
 但 阿紫BigBig 說這只是 AGI Lite？
 
 發明這一切的人，怎麼還沒被秘密組織綁走？
