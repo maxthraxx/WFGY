@@ -1,6 +1,4 @@
-<!-- TOP ANCHOR -->
 <a id="top"></a>
-
 <details>
 <summary><strong>🧭 Lost or curious? Open the WFGY Compass & ⭐ Star Unlocks</strong></summary>
 
