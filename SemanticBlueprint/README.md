@@ -68,7 +68,7 @@ The inverse (*Product → Function*) view is handled in each product’s own dir
 
 <br>
 
-> All currently published modules (e.g., WFGY 1.0 paper, TXT OS) are **permanently MIT-licensed**, backed on [Zenodo](https://zenodo.org/).  
+> All currently published modules (e.g., WFGY 1.0 paper, TXT OS) are **permanently MIT-licensed**
 > They will **remain open forever**.
 >
 > Modules marked “planned” in this directory may have different licensing or release timing.  
