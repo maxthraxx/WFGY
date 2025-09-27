@@ -56,7 +56,6 @@ PSBigBig, “WFGY 1.0: A Self-Healing Variance Gate for LLMs,”
 Zenodo, 2025, doi:10.5281/zenodo.15630970
 ```
 
-> ⭐ Help us reach **10 000 GitHub stars** to unlock **WFGY 2.0**!
 > Any issue / PR is welcome—open science thrives on transparency.
 
 ```
